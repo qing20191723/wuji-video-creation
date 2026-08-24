@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.2",
+  "project_id": "PROJECT-001",
+  "revision": 1,
+  "task_mode": "full_production",
+  "stage": "S0",
+  "interaction_state": {
+    "current_stage": "S0",
+    "pending_gate": null,
+    "approval_scope": [],
+    "blockers": [],
+    "next_actions": []
+  },
+  "model_profile": {
+    "model": "seedance-2.5",
+    "official_limits": {
+      "duration_seconds": 30,
+      "images": 30,
+      "videos": 10,
+      "audios": 10
+    },
+    "effective_limits": {
+      "duration_seconds": 30,
+      "images": 30,
+      "videos": 10,
+      "audios": 10
+    },
+    "verified_source": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+  },
+  "production_rules": {
+    "default_language": "zh-CN",
+    "default_aspect_ratio": "16:9",
+    "drama_segment_seconds": 30,
+    "action_segment_seconds": 25,
+    "character_identity_asset": {
+      "layout": "single_horizontal_four_panel",
+      "panel_order": [
+        "front_half_body_face_closeup",
+        "front_full_body",
+        "profile_90_full_body",
+        "back_full_body"
+      ],
+      "pose": "natural_neutral_standing",
+      "front_view_gaze": "head_face_eyes_straight_to_camera",
+      "full_body_alignment": "same_height_same_foot_baseline"
+    }
+  },
+  "rhythm_profile": {
+    "platform": "unspecified",
+    "duration_tier": "30s",
+    "pacing": "cinematic_medium",
+    "hook_window_seconds": [0, 5],
+    "progression_interval_seconds": 15,
+    "breathing_shot_rule": "function_required",
+    "locked_revision": null
+  },
+  "approval_gates": {
+    "script_adaptation": {"status": "pending", "approved_revision": null, "note": ""},
+    "shot_breakdown": {"status": "pending", "approved_revision": null, "note": ""},
+    "asset_prompts": {"status": "pending", "approved_revision": null, "note": ""},
+    "character_look": {"status": "pending", "approved_revision": null, "note": ""},
+    "asset_images": {"status": "pending", "approved_revision": null, "note": ""},
+    "storyboard": {"status": "pending", "approved_revision": null, "note": ""},
+    "final_compile": {"status": "pending", "approved_revision": null, "note": ""}
+  },
+  "source_lock": {
+    "source_summary": "",
+    "confirmed_facts": [],
+    "forbidden_changes": [],
+    "allowed_inferences": []
+  },
+  "adapted_script": {
+    "status": "not_started",
+    "source_revision": 1,
+    "approved_revision": null,
+    "scene_ids": [],
+    "suggested_additions": [],
+    "unresolved_assumptions": []
+  },
+  "characters": [],
+  "locations": [],
+  "assets": [],
+  "segments": [],
+  "specialist_tasks": [],
+  "change_log": []
+}

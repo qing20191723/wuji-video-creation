@@ -36,6 +36,9 @@ secrets.json
 .codex/
 .claude/
 
+# Local audit material; never import it into the maintained skill
+/导演内部专用Skill V2/
+
 # Tool and OS noise
 __pycache__/
 *.py[cod]

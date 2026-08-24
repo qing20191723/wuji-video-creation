@@ -9,6 +9,8 @@
 | `品牌AI剪辑协作SOP_v1.pdf` | V1.0 | 历史基线：四阶段流程、脚本/资产/画面三道锁、A/B 类修改分级。 |
 | `品牌AI剪辑协作SOP_v2.pdf` | V1.1 | 当前推荐基线：增加云端初版验收、无水印母版与有水印发布版双版本交付。 |
 
+影视生产方法的可执行事实源是 `skills/seedance-film-production/`。它保留完整项目 G1–G7 确认门禁，并提供剧本会诊、对白精修、平台节奏体检和后期声音设计四个按需专科入口；项目状态模板当前为兼容版 `1.2`。
+
 PDF 原件只做版本留档，不原地覆盖。修改内容时新增明确版本号的源文件或 PDF，并在 `docs/project-state.md` 更新当前基线。
 
 ## 仓库边界
@@ -18,6 +20,7 @@ PDF 原件只做版本留档，不原地覆盖。修改内容时新增明确版�
 - SOP、需求模板、验收表、交付清单和版本说明；
 - 已脱敏的剧本、分镜、提示词、资产清单和连续性台账；
 - 可复用的小型脚本、配置示例和校验工具；
+- 经验证的 Codex/Grok 共用影视 Skill、参考规则与项目状态模板；
 - 经确认需要长期维护的小型参考图与文档。
 
 默认不提交：
@@ -35,7 +38,16 @@ PDF 原件只做版本留档，不原地覆盖。修改内容时新增明确版�
 2. `docs/project-state.md` - 当前基线、活动任务和下一步；
 3. 与当前任务直接相关的文档。
 
+影视任务还必须读取 `skills/seedance-film-production/SKILL.md`。该目录是唯一源码；Codex 本机的 `%USERPROFILE%\.codex\skills\seedance-film-production` 只通过仓库同步脚本更新，Grok 直接读取仓库版本。
+
 默认规则：一个任务、一个负责人、一个独立分支或 worktree。Codex 使用 `codex/<日期>-<主题>`，Grok Build 使用 `grok/<日期>-<主题>`。不得让两个智能体在同一工作目录、同一分支或同一时间修改同一文件。
+
+同步或检查本机 Codex Skill：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-film-skill.ps1
+powershell -ExecutionPolicy Bypass -File scripts/sync-film-skill.ps1 -Check
+```
 
 ## 提交流程
 
@@ -80,6 +92,14 @@ README 只保存稳定、对接手者有用的信息：项目定位、当前基�
 ├── README.md
 ├── 品牌AI剪辑协作SOP_v1.pdf
 ├── 品牌AI剪辑协作SOP_v2.pdf
-└── docs/
-    └── project-state.md
+├── docs/
+│   └── project-state.md
+├── scripts/
+│   └── sync-film-skill.ps1
+└── skills/
+    └── seedance-film-production/
+        ├── SKILL.md
+        ├── assets/
+        ├── references/
+        └── scripts/
 ```
