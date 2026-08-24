@@ -1,0 +1,49 @@
+# Derived and temporary files
+tmp/
+temp/
+cache/
+.cache/
+output/
+outputs/
+render/
+renders/
+exports/
+
+# Large generated media (use Git LFS or external storage when intentionally versioned)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wav
+
+# Secrets and local authentication
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+*.credentials.*
+*.secrets.*
+
+# Agent/session state
+.grok/sessions/
+.grok/logs/
+.codex/
+.claude/
+
+# Tool and OS noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

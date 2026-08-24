@@ -1,0 +1,85 @@
+# 无极视频创作
+
+`wuji-video-creation` 是无极 AI 视频创作与品牌剪辑协作项目的私有事实源，用于维护协作 SOP、版本规则、AI 影视生产方法及后续可复用的项目文档。
+
+## 当前基线
+
+| 文件 | 文档版本 | 定位 |
+| --- | --- | --- |
+| `品牌AI剪辑协作SOP_v1.pdf` | V1.0 | 历史基线：四阶段流程、脚本/资产/画面三道锁、A/B 类修改分级。 |
+| `品牌AI剪辑协作SOP_v2.pdf` | V1.1 | 当前推荐基线：增加云端初版验收、无水印母版与有水印发布版双版本交付。 |
+
+PDF 原件只做版本留档，不原地覆盖。修改内容时新增明确版本号的源文件或 PDF，并在 `docs/project-state.md` 更新当前基线。
+
+## 仓库边界
+
+可以提交：
+
+- SOP、需求模板、验收表、交付清单和版本说明；
+- 已脱敏的剧本、分镜、提示词、资产清单和连续性台账；
+- 可复用的小型脚本、配置示例和校验工具；
+- 经确认需要长期维护的小型参考图与文档。
+
+默认不提交：
+
+- `tmp/` 中的 PDF 渲染页、缓存和中间文件；
+- 成片、渲染输出、大型音视频及可重新生成的派生资产；
+- 客户未授权素材、账号信息、Token、Cookie、API Key、私钥和本机认证文件；
+- Grok、Codex 或其他工具的原始会话和调试日志。
+
+## Codex 与 Grok Build 协作入口
+
+两个智能体开始工作前都必须读取：
+
+1. `AGENTS.md` - 提交、分支、冲突与 README 维护规则；
+2. `docs/project-state.md` - 当前基线、活动任务和下一步；
+3. 与当前任务直接相关的文档。
+
+默认规则：一个任务、一个负责人、一个独立分支或 worktree。Codex 使用 `codex/<日期>-<主题>`，Grok Build 使用 `grok/<日期>-<主题>`。不得让两个智能体在同一工作目录、同一分支或同一时间修改同一文件。
+
+## 提交流程
+
+```powershell
+git fetch origin
+git status
+git switch -c codex/20260824-example
+# 或：git switch -c grok/20260824-example
+
+# 修改并验证后
+git add <明确文件>
+git diff --cached
+git commit -m "docs: describe the change"
+git pull --rebase origin main
+git push -u origin HEAD
+```
+
+- `main` 只接收已经检查过的完整变更，不强推，不直接覆盖远端历史。
+- 提交类型优先使用 `docs:`、`feat:`、`fix:`、`chore:`。
+- 提交正文末尾写 `Agent: Codex` 或 `Agent: Grok Build`；人工提交写 `Agent: Human`。
+- 提交前必须检查暂存区，不使用无范围的批量提交来混入缓存、认证文件或大型媒体。
+- 发现远端已有同文件改动时，停止写入，先同步并解决差异；不得用 `--force` 掩盖冲突。
+
+## README 维护规则
+
+README 只保存稳定、对接手者有用的信息：项目定位、当前基线、仓库边界、目录入口和协作规则。
+
+以下变化必须更新 README：
+
+- 项目定位、交付物或事实源发生变化；
+- 当前推荐 SOP 或核心工作流升级；
+- 新增、删除或重命名关键目录与入口文件；
+- Codex/Grok 的协作、提交或安全规则改变。
+
+以下内容不要写进 README：临时任务进度、聊天摘要、单次排障过程、账号凭据和详细变更流水。动态状态写入 `docs/project-state.md`，版本变化写入提交历史或后续 `CHANGELOG.md`。
+
+## 当前目录
+
+```text
+.
+├── AGENTS.md
+├── README.md
+├── 品牌AI剪辑协作SOP_v1.pdf
+├── 品牌AI剪辑协作SOP_v2.pdf
+└── docs/
+    └── project-state.md
+```
