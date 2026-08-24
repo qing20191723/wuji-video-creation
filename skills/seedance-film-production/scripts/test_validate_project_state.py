@@ -85,6 +85,13 @@ class ProjectStateTests(unittest.TestCase):
         self.assertEqual([], errors)
         self.assertTrue(any("兼容格式" in item for item in warnings))
 
+    def test_collaboration_sheet_fields_are_rejected(self) -> None:
+        state = template()
+        state["google_sheet"] = {"spreadsheet_id": "external-only"}
+        state["watermarked_delivery"] = "approved"
+        errors, _ = validate(state)
+        self.assertTrue(any("外部协作表字段" in item for item in errors))
+
     def test_full_project_waiting_at_g1_cannot_approve_downstream(self) -> None:
         state = template()
         state["approval_gates"]["script_adaptation"]["status"] = "awaiting_confirmation"

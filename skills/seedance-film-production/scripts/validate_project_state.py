@@ -57,6 +57,15 @@ ACTION_TYPES = {"free_combat", "wuxia_weapons", "superpower", "battlefield"}
 OFFICIAL_LIMITS = {"duration_seconds": 30, "images": 30, "videos": 10, "audios": 10}
 REF_LIMIT_KEYS = {"图片": "images", "视频": "videos", "音频": "audios"}
 FULL_REAPPROVAL_CHANGES = {"script", "dialogue", "rhythm"}
+COLLABORATION_ONLY_FIELDS = {
+    "collaboration_sheet",
+    "google_sheet",
+    "review_assignees",
+    "feedback_rollup",
+    "cloud_review_status",
+    "watermarked_delivery",
+    "publishing_status",
+}
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -353,6 +362,12 @@ def _validate_v12(data: dict[str, Any], errors: list[str], warnings: list[str]) 
 def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
+
+    misplaced_fields = sorted(COLLABORATION_ONLY_FIELDS.intersection(data))
+    if misplaced_fields:
+        errors.append(
+            "影视项目状态不得包含外部协作表字段: " + ", ".join(misplaced_fields)
+        )
 
     schema_version = data.get("schema_version")
     if schema_version not in {"1.1", "1.2"}:
