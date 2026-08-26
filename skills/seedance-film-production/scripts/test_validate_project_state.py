@@ -24,6 +24,18 @@ def template() -> dict:
     return json.loads(TEMPLATE_PATH.read_text(encoding="utf-8"))
 
 
+def legacy_state(version: str) -> dict:
+    state = template()
+    state["schema_version"] = version
+    state["production_rules"].update(
+        {"drama_segment_seconds": 30, "action_segment_seconds": 25}
+    )
+    state["rhythm_profile"].update(
+        {"hook_window_seconds": [0, 5], "progression_interval_seconds": 15}
+    )
+    return state
+
+
 def specialist_task(task_type: str = "script_review") -> dict:
     task = {
         "id": "SP-001",
@@ -65,14 +77,18 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v12_template_passes(self) -> None:
+    def test_v13_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
 
+    def test_v12_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.2"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("兼容格式" in item for item in warnings))
+
     def test_v11_is_compatible_with_warning(self) -> None:
-        state = template()
-        state["schema_version"] = "1.1"
+        state = legacy_state("1.1")
         for field in (
             "task_mode",
             "interaction_state",
@@ -170,6 +186,9 @@ class ProjectStateTests(unittest.TestCase):
                 "id": "SEG-01",
                 "mode": "action",
                 "duration_seconds": 25,
+                "dramatic_unit": "一次战术交换",
+                "duration_rationale": "按动作试演估算",
+                "shot_count_rationale": "测试动作类型路由",
                 "rhythm_pacing": "high_density_hook_action",
                 "rhythm_exception_reason": "战斗高潮",
                 "action_types": ["free_combat", "wuxia_weapons", "superpower"],
@@ -180,6 +199,57 @@ class ProjectStateTests(unittest.TestCase):
         ]
         errors, _ = validate(state)
         self.assertTrue(any("混合动作类型最多两个" in item for item in errors))
+
+    def test_adaptive_one_take_and_short_scene_pass(self) -> None:
+        for mode, duration in (("drama", 12), ("drama", 30), ("action", 8)):
+            with self.subTest(mode=mode, duration=duration):
+                state = template()
+                state["approval_gates"]["script_adaptation"]["status"] = "not_required"
+                state["segments"] = [
+                    {
+                        "id": "SEG-01",
+                        "mode": mode,
+                        "duration_seconds": duration,
+                        "dramatic_unit": "人物完成一次不可逆的选择",
+                        "duration_rationale": "按对白、停顿和动作试演估算",
+                        "shot_count_rationale": "单一机位能完整承载表演，不切镜",
+                        "rhythm_pacing": state["rhythm_profile"]["pacing"],
+                        "action_types": ["free_combat"] if mode == "action" else [],
+                        "shots": [
+                            {
+                                "number": 1,
+                                "start": 0,
+                                "end": duration,
+                                "asset_ids": [],
+                            }
+                        ],
+                        "start_state": "A",
+                        "end_state": "B",
+                    }
+                ]
+                errors, _ = validate(state)
+                self.assertEqual([], errors)
+
+    def test_segment_over_model_limit_is_rejected(self) -> None:
+        state = template()
+        state["approval_gates"]["script_adaptation"]["status"] = "not_required"
+        state["segments"] = [
+            {
+                "id": "SEG-01",
+                "mode": "drama",
+                "duration_seconds": 31,
+                "dramatic_unit": "一次关系变化",
+                "duration_rationale": "错误测试",
+                "shot_count_rationale": "单镜",
+                "rhythm_pacing": state["rhythm_profile"]["pacing"],
+                "action_types": [],
+                "shots": [{"number": 1, "start": 0, "end": 31, "asset_ids": []}],
+                "start_state": "A",
+                "end_state": "B",
+            }
+        ]
+        errors, _ = validate(state)
+        self.assertTrue(any("超过有效上限" in item for item in errors))
 
     def test_post_sound_cue_contract_and_bgm_boundary(self) -> None:
         state = template()

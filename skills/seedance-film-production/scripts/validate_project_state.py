@@ -195,7 +195,9 @@ def _require_list(value: Any, field: str, errors: list[str]) -> list[Any]:
     return value
 
 
-def _validate_v12(data: dict[str, Any], errors: list[str], warnings: list[str]) -> None:
+def _validate_v12plus(
+    data: dict[str, Any], errors: list[str], warnings: list[str], schema_version: str
+) -> None:
     task_mode = data.get("task_mode")
     if task_mode not in TASK_MODES:
         errors.append(f"task_mode 必须为 full_production 或 specialist，实际为 {task_mode}")
@@ -250,17 +252,21 @@ def _validate_v12(data: dict[str, Any], errors: list[str], warnings: list[str]) 
     if not isinstance(rhythm.get("duration_tier"), str) or not rhythm.get("duration_tier"):
         errors.append("rhythm_profile.duration_tier 必须是非空字符串")
     hook = rhythm.get("hook_window_seconds")
-    if (
+    if hook is not None and (
         not isinstance(hook, list)
         or len(hook) != 2
         or not all(isinstance(item, (int, float)) for item in hook)
         or hook[0] < 0
         or hook[1] <= hook[0]
     ):
-        errors.append("rhythm_profile.hook_window_seconds 必须是递增的两个非负数字")
+        errors.append("rhythm_profile.hook_window_seconds 必须为 null 或递增的两个非负数字")
+    if schema_version == "1.2" and hook is None:
+        errors.append("schema 1.2 的 rhythm_profile.hook_window_seconds 不能为空")
     interval = rhythm.get("progression_interval_seconds")
-    if not isinstance(interval, int) or interval < 1:
-        errors.append("rhythm_profile.progression_interval_seconds 必须是正整数")
+    if interval is not None and (not isinstance(interval, int) or interval < 1):
+        errors.append("rhythm_profile.progression_interval_seconds 必须为 null 或正整数")
+    if schema_version == "1.2" and interval is None:
+        errors.append("schema 1.2 的 rhythm_profile.progression_interval_seconds 不能为空")
     if rhythm.get("breathing_shot_rule") != "function_required":
         errors.append("rhythm_profile.breathing_shot_rule 必须为 function_required")
     locked_revision = rhythm.get("locked_revision")
@@ -370,12 +376,14 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         )
 
     schema_version = data.get("schema_version")
-    if schema_version not in {"1.1", "1.2"}:
-        errors.append("schema_version 必须为 1.1 或 1.2")
+    if schema_version not in {"1.1", "1.2", "1.3"}:
+        errors.append("schema_version 必须为 1.1、1.2 或 1.3")
     elif schema_version == "1.1":
-        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.2 以使用专科、节奏和模型配置校验")
+        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.3")
     else:
-        _validate_v12(data, errors, warnings)
+        _validate_v12plus(data, errors, warnings, schema_version)
+        if schema_version == "1.2":
+            warnings.append("schema_version 1.2 为兼容格式；建议升级到 1.3 以使用自适应时长和最少充分镜头")
 
     if not data.get("project_id"):
         errors.append("缺少 project_id")
@@ -386,10 +394,20 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     if not isinstance(production_rules, dict):
         errors.append("缺少 production_rules")
         production_rules = {}
-    if production_rules.get("drama_segment_seconds") != 30:
-        errors.append("文戏单元必须固定为30秒")
-    if production_rules.get("action_segment_seconds") != 25:
-        errors.append("武戏单元必须固定为25秒")
+    if schema_version in {"1.1", "1.2"}:
+        if production_rules.get("drama_segment_seconds") != 30:
+            errors.append("兼容状态的文戏单元必须为30秒")
+        if production_rules.get("action_segment_seconds") != 25:
+            errors.append("兼容状态的武戏单元必须为25秒")
+    else:
+        if production_rules.get("duration_policy") != "story_beat_first":
+            errors.append("production_rules.duration_policy 必须为 story_beat_first")
+        if production_rules.get("max_segment_seconds_from_model_profile") is not True:
+            errors.append("production_rules.max_segment_seconds_from_model_profile 必须为 true")
+        if production_rules.get("shot_count_policy") != "minimum_sufficient":
+            errors.append("production_rules.shot_count_policy 必须为 minimum_sufficient")
+        if production_rules.get("storyboard_layout") != "adaptive":
+            errors.append("production_rules.storyboard_layout 必须为 adaptive")
     character_rule = production_rules.get("character_identity_asset")
     if not isinstance(character_rule, dict):
         errors.append("缺少 character_identity_asset 规则")
@@ -432,7 +450,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     if len(awaiting) > 1:
         errors.append("同时等待确认的核心门禁不得超过一个")
 
-    if schema_version == "1.2":
+    if schema_version in {"1.2", "1.3"}:
         interaction = data.get("interaction_state", {})
         declared = interaction.get("pending_gate") if isinstance(interaction, dict) else None
         actual = awaiting[0] if len(awaiting) == 1 else None
@@ -492,7 +510,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         errors.append("同一正式附件引用绑定了多个资产职责")
 
     effective_limits = OFFICIAL_LIMITS
-    if schema_version == "1.2":
+    if schema_version in {"1.2", "1.3"}:
         candidate = data.get("model_profile", {}).get("effective_limits")
         if isinstance(candidate, dict):
             effective_limits = {**OFFICIAL_LIMITS, **candidate}
@@ -528,23 +546,29 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         duration = segment.get("duration_seconds")
         shots = segment.get("shots", [])
 
-        expected_duration = 30 if mode == "drama" else 25 if mode == "action" else None
-        if expected_duration is None:
+        if mode not in {"drama", "action"}:
             errors.append(f"片段 {sid} 的 mode 必须为 drama 或 action")
             continue
-        if duration != expected_duration:
-            errors.append(f"片段 {sid} 时长应为 {expected_duration} 秒，实际为 {duration}")
+        if schema_version in {"1.1", "1.2"}:
+            expected_duration = 30 if mode == "drama" else 25
+            if duration != expected_duration:
+                errors.append(f"兼容片段 {sid} 时长应为 {expected_duration} 秒，实际为 {duration}")
+        else:
+            expected_duration = duration
+            effective_duration = effective_limits.get("duration_seconds", 30)
+            if not isinstance(duration, (int, float)) or isinstance(duration, bool) or duration <= 0:
+                errors.append(f"片段 {sid} duration_seconds 必须为正数")
+                expected_duration = None
+            elif not isinstance(effective_duration, int) or duration > effective_duration:
+                errors.append(f"片段 {sid} 时长 {duration} 秒超过有效上限 {effective_duration}")
+            for field in ("dramatic_unit", "duration_rationale", "shot_count_rationale"):
+                if not isinstance(segment.get(field), str) or not segment.get(field).strip():
+                    errors.append(f"片段 {sid} 缺少 {field}")
         if not isinstance(shots, list):
             errors.append(f"片段 {sid} shots 必须是数组")
             shots = []
 
-        shot_count = len(shots)
-        if mode == "drama" and not 16 <= shot_count <= 22:
-            errors.append(f"文戏片段 {sid} 应有 16–22 镜，实际为 {shot_count}")
-        if mode == "action" and shot_count != 16:
-            errors.append(f"武戏片段 {sid} 应严格16镜，实际为 {shot_count}")
-
-        if schema_version == "1.2":
+        if schema_version in {"1.2", "1.3"}:
             pacing = segment.get("rhythm_pacing", project_pacing)
             if pacing not in PACING_LEVELS:
                 errors.append(f"片段 {sid} rhythm_pacing 无效: {pacing}")
@@ -586,7 +610,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
                     errors.append(f"片段 {sid} 镜头 {number} 引用了不存在的资产 {asset_id}")
             expected_number += 1
 
-        if shots and abs(expected_start - expected_duration) > 0.001:
+        if shots and isinstance(expected_duration, (int, float)) and abs(expected_start - expected_duration) > 0.001:
             errors.append(f"片段 {sid} 末点应为 {expected_duration} 秒，实际为 {expected_start}")
 
         start_state = segment.get("start_state")

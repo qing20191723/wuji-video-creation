@@ -9,7 +9,7 @@ $ErrorActionPreference = 'Stop'
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
 $sourcePath = Join-Path $repositoryRoot 'skills\seedance-film-production'
 if (-not (Test-Path -LiteralPath $sourcePath -PathType Container)) {
-    throw "找不到仓库 Skill 源目录：$sourcePath"
+    throw "Repository Skill source directory not found: $sourcePath"
 }
 
 if ([string]::IsNullOrWhiteSpace($Destination)) {
@@ -32,7 +32,7 @@ function Get-SkillManifest {
             $_.Extension -ne '.pyc'
         } |
         ForEach-Object {
-            $relative = [IO.Path]::GetRelativePath($Root, $_.FullName).Replace('\', '/')
+            $relative = $_.FullName.Substring($Root.TrimEnd('\', '/').Length).TrimStart('\', '/').Replace('\', '/')
             $manifest[$relative] = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash
         }
     return $manifest
@@ -47,15 +47,15 @@ function Compare-SkillManifest {
     $differences = [System.Collections.Generic.List[string]]::new()
     foreach ($relative in $Source.Keys | Sort-Object) {
         if (-not $Target.ContainsKey($relative)) {
-            $differences.Add("缺少：$relative")
+            $differences.Add("Missing: $relative")
         }
         elseif ($Source[$relative] -ne $Target[$relative]) {
-            $differences.Add("内容不同：$relative")
+            $differences.Add("Content differs: $relative")
         }
     }
     foreach ($relative in $Target.Keys | Sort-Object) {
         if (-not $Source.ContainsKey($relative)) {
-            $differences.Add("目标存在额外文件：$relative")
+            $differences.Add("Extra target file: $relative")
         }
     }
     return $differences
@@ -63,7 +63,7 @@ function Compare-SkillManifest {
 
 $sourceManifest = Get-SkillManifest -Root $sourcePath
 if ($sourceManifest.Count -eq 0) {
-    throw "仓库 Skill 源目录没有可同步文件。"
+    throw "Repository Skill source directory contains no syncable files."
 }
 
 if (-not $Check) {
@@ -81,9 +81,9 @@ $targetManifest = Get-SkillManifest -Root $destinationPath
 $differences = Compare-SkillManifest -Source $sourceManifest -Target $targetManifest
 if ($differences.Count -gt 0) {
     $differences | ForEach-Object { Write-Error $_ }
-    throw "仓库版与本机安装版不一致，共 $($differences.Count) 项。"
+    throw "Repository and installed Skill differ in $($differences.Count) item(s)."
 }
 
-Write-Output "Skill 同步校验通过：$($sourceManifest.Count) 个文件，SHA-256 全部一致。"
-Write-Output "源目录：$sourcePath"
-Write-Output "目标目录：$destinationPath"
+Write-Output "Skill sync verified: $($sourceManifest.Count) files have matching SHA-256 hashes."
+Write-Output "Source: $sourcePath"
+Write-Output "Destination: $destinationPath"
