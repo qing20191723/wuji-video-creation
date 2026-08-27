@@ -12,6 +12,7 @@ from validate_project_state import (
     GATE_ORDER,
     apply_change,
     approve_pending_gate,
+    count_prompt_characters,
     validate,
 )
 
@@ -67,11 +68,81 @@ def adult_intimacy_state() -> dict:
     return state
 
 
-def attach_segment(state: dict, segment: dict, lane: str = "normal") -> None:
-    span_id = f"SPAN-{segment['id']}"
+def enrich_segment(segment: dict, lane: str = "normal") -> dict:
     segment["content_lane"] = lane
     segment["target_model"] = "seedance-2.5" if lane == "normal" else "wan3.0"
+    segment.setdefault(
+        "performance_arc",
+        {
+            "goal": "完成当前戏剧动作",
+            "trigger": "上一动作产生可见结果",
+            "dominant_emotion": "克制",
+            "secondary_leak": "短暂迟疑",
+            "intensity_start": "restrained",
+            "intensity_end": "clear",
+            "active_tracks": ["gaze", "body_weight", "breathing_sound"],
+            "residual_state": "呼吸尚未完全平复",
+        },
+    )
+    segment.setdefault(
+        "camera_plan",
+        {
+            "watching_reason": "观察选择如何改变人物关系",
+            "axis_side": "保持人物关系轴同侧",
+            "eyeline_map": "视线在对手与手中物件之间转换",
+            "screen_direction": "主体移动保持由左向右",
+            "framing_and_perspective": "中近景、自然透视",
+            "camera_height_and_angle": "平视",
+            "movement": "轻微跟随主体重心",
+            "movement_motivation": "由人物前移触发",
+            "focus_path": "从眼睛转到手中物件再回到眼睛",
+            "cut_reason": "关系信息完成后结束",
+            "end_composition": "人物停在画面右侧并保留对手视线空间",
+        },
+    )
+    lighting_snapshot = {
+        "motivated_sources": ["窗外日光"],
+        "key_direction": "画面左侧",
+        "color_relationship": "中性日光与室内微暖实景灯",
+        "exposure_priority": "人物眼神与主要动作",
+    }
+    segment.setdefault(
+        "lighting_state",
+        {"start": copy.deepcopy(lighting_snapshot), "end": lighting_snapshot, "change_trigger": None},
+    )
+    segment.setdefault("incoming_transition_id", None)
+    segment.setdefault("outgoing_transition_id", None)
+    return segment
+
+
+def intimacy_beat(span_id: str, duration: float) -> dict:
+    return {
+        "id": "IB-001",
+        "source_span_id": span_id,
+        "start": 0,
+        "end": duration,
+        "initiator": "CHAR-A01",
+        "response": "affirmative_and_reversible",
+        "action_family": "kissing_caressing",
+        "contact_map": ["双方已批准的接触范围"],
+        "support_map": ["双脚稳定着地并由床沿承重"],
+        "movement_vector": "相向靠近后保持稳定",
+        "cadence": "由试探转为连贯",
+        "coverage_before": "按已批准边界保持覆盖",
+        "coverage_after": "覆盖状态不变",
+        "consent_checkpoint": "对方主动回应且可随时停止",
+        "sound": "同步呼吸、衣料与环境声",
+        "camera_boundary": "不越过已批准呈现范围",
+        "end_state": "双方暂停并保持可继续确认的距离",
+    }
+
+
+def attach_segment(state: dict, segment: dict, lane: str = "normal") -> None:
+    span_id = f"SPAN-{segment['id']}"
+    enrich_segment(segment, lane)
     segment["source_span_ids"] = [span_id]
+    if lane == "adult":
+        segment.setdefault("intimacy_beats", [intimacy_beat(span_id, segment["duration_seconds"])])
     state["segments"] = [segment]
     state["source_span_ledger"] = [
         {
@@ -83,6 +154,92 @@ def attach_segment(state: dict, segment: dict, lane: str = "normal") -> None:
             "segment_id": segment["id"],
         }
     ]
+
+
+def sequence_state(lanes: list[str], durations: list[float] | None = None) -> dict:
+    state = adult_intimacy_state() if "adult" in lanes else template()
+    state["approval_gates"]["script_adaptation"]["status"] = "not_required"
+    durations = durations or [12 for _ in lanes]
+    segments = []
+    spans = []
+    for index, (lane, duration) in enumerate(zip(lanes, durations), start=1):
+        segment_id = f"SEG-{index:02d}"
+        span_id = f"SPAN-{index:02d}"
+        segment = enrich_segment(
+            {
+                "id": segment_id,
+                "mode": "drama",
+                "source_span_ids": [span_id],
+                "duration_seconds": duration,
+                "dramatic_unit": f"片段{index}完成一次关系变化",
+                "duration_rationale": "按可见动作、回应、对白和声音试演估算",
+                "shot_count_rationale": "单镜能完整承载当前观看理由",
+                "rhythm_pacing": state["rhythm_profile"]["pacing"],
+                "action_types": [],
+                "shots": [{"number": 1, "start": 0, "end": duration, "asset_ids": []}],
+                "start_state": f"STATE-{index - 1}",
+                "end_state": f"STATE-{index}",
+            },
+            lane,
+        )
+        if lane == "adult":
+            segment["intimacy_beats"] = [intimacy_beat(span_id, duration)]
+        segments.append(segment)
+        spans.append(
+            {
+                "id": span_id,
+                "source_order": index,
+                "source_locator": f"测试原文第{index}段",
+                "lane": lane,
+                "status": "routed",
+                "segment_id": segment_id,
+            }
+        )
+    transitions = []
+    for index in range(len(segments) - 1):
+        from_segment = segments[index]
+        to_segment = segments[index + 1]
+        transition_id = f"TR-{index + 1:02d}"
+        from_segment["outgoing_transition_id"] = transition_id
+        to_segment["incoming_transition_id"] = transition_id
+        lane_change = (
+            "same_lane"
+            if from_segment["content_lane"] == to_segment["content_lane"]
+            else f"{from_segment['content_lane']}_to_{to_segment['content_lane']}"
+        )
+        transitions.append(
+            {
+                "id": transition_id,
+                "from_segment_id": from_segment["id"],
+                "to_segment_id": to_segment["id"],
+                "source_span_ids": [
+                    from_segment["source_span_ids"][0],
+                    to_segment["source_span_ids"][0],
+                ],
+                "lane_change": lane_change,
+                "bridge_types": ["continuous_action", "sound_bridge"],
+                "visual_anchor": "人物位置、视线空间与结束构图连续",
+                "action_carry": "前段动作余势成为后段起点",
+                "performance_residue": "呼吸和迟疑没有瞬间归零",
+                "lighting_carry": "窗光方向、综合色温和曝光重点保持",
+                "lighting_change_trigger": None,
+                "audio_carry": "衣料声尾音有来源地跨段",
+                "wardrobe_and_coverage": "服装与覆盖状态原样继承",
+                "consent_state": "成人边界内持续明确；正常段不新增亲密行为",
+                "shared_boundary_asset_id": None,
+                "handoff_mode": "state_only",
+                "boundary_action": {
+                    "outgoing_event": f"片段{index + 1}完成其末动作",
+                    "incoming_event": f"片段{index + 2}从下一因果动作启动",
+                    "handoff_rule": "non_overlapping_sequential",
+                },
+                "status": "planned",
+            }
+        )
+    state["segments"] = segments
+    state["source_span_ledger"] = spans
+    state["transition_ledger"] = transitions
+    return state
 
 
 def specialist_task(task_type: str = "script_review") -> dict:
@@ -126,10 +283,105 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v15_template_passes(self) -> None:
+    def test_v16_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
+
+    def test_v16_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
+        state = template()
+        state["model_profile"]["prompt_limits"]["official_max_characters"] = 2000
+        state["model_profile"]["prompt_limits"]["official_status"] = "published"
+        state["adult_model_profile"]["prompt_limits"]["official_max_characters"] = 19999
+        errors, _ = validate(state)
+        self.assertTrue(any("Seedance 2.5 官方尚未公布" in item for item in errors))
+        self.assertTrue(any("Wan 3.0 官方提示词上限" in item for item in errors))
+
+    def test_compiled_prompt_count_and_model_are_validated(self) -> None:
+        state = sequence_state(["normal"])
+        text = "雨后的门廊里，她收起伞走向窗边，画面随着脚步缓缓靠近。"
+        state["compiled_prompts"] = [
+            {
+                "id": "PROMPT-01",
+                "segment_id": "SEG-01",
+                "target_model": "wan3.0",
+                "text": text,
+                "character_count": count_prompt_characters(text) - 1,
+                "compiled_revision": 1,
+            }
+        ]
+        errors, _ = validate(state)
+        self.assertTrue(any("character_count 应为" in item for item in errors))
+        self.assertTrue(any("目标模型不一致" in item for item in errors))
+
+    def test_compiled_prompt_rejects_modular_camera_opening(self) -> None:
+        state = sequence_state(["normal"])
+        text = "镜头：中景推进。她从门口走向窗边。"
+        state["compiled_prompts"] = [
+            {
+                "id": "PROMPT-01",
+                "segment_id": "SEG-01",
+                "target_model": "seedance-2.5",
+                "text": text,
+                "character_count": count_prompt_characters(text),
+                "compiled_revision": 1,
+            }
+        ]
+        errors, _ = validate(state)
+        self.assertTrue(any("不得以镜头字段或时长参数开头" in item for item in errors))
+
+    def test_prompt_hard_limit_errors_and_soft_budget_warns(self) -> None:
+        state = sequence_state(["normal"])
+        text = "自然语言提示词超过预算"
+        state["compiled_prompts"] = [
+            {
+                "id": "PROMPT-01",
+                "segment_id": "SEG-01",
+                "target_model": "seedance-2.5",
+                "text": text,
+                "character_count": count_prompt_characters(text),
+                "compiled_revision": 1,
+            }
+        ]
+        state["model_profile"]["prompt_limits"]["production_soft_max_characters"] = 5
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertTrue(any("超过制作软预算" in item for item in warnings))
+
+        state["model_profile"]["prompt_limits"]["effective_max_characters"] = 5
+        errors, _ = validate(state)
+        self.assertTrue(any("超过有效硬限制" in item for item in errors))
+
+    def test_final_compile_requires_one_prompt_per_segment(self) -> None:
+        state = sequence_state(["normal"])
+        for gate in state["approval_gates"].values():
+            gate["status"] = "not_required"
+            gate["approved_revision"] = None
+        errors, _ = validate(state)
+        self.assertTrue(any("缺少最终提示词" in item for item in errors))
+
+    def test_wan_prompt_extend_requires_canon_review(self) -> None:
+        state = sequence_state(["adult"])
+        text = "卧室里，两位已确认自愿的成年人保持相互回应，动作与呼吸自然同步。"
+        state["compiled_prompts"] = [
+            {
+                "id": "PROMPT-ADULT-01",
+                "segment_id": "SEG-01",
+                "target_model": "wan3.0",
+                "text": text,
+                "character_count": count_prompt_characters(text),
+                "compiled_revision": 1,
+                "prompt_extend": True,
+            }
+        ]
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertTrue(any("可能改写已锁定 Canon" in item for item in warnings))
+
+    def test_v15_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.5"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("兼容格式" in item for item in warnings))
 
     def test_v14_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.4"))
@@ -226,6 +478,11 @@ class ProjectStateTests(unittest.TestCase):
             "start_state": "B",
             "end_state": "C",
         }
+        enrich_segment(normal, "normal")
+        enrich_segment(adult, "adult")
+        adult["intimacy_beats"] = [intimacy_beat("SPAN-A01", 30)]
+        normal["outgoing_transition_id"] = "TR-001"
+        adult["incoming_transition_id"] = "TR-001"
         state["segments"] = [normal, adult]
         state["source_span_ledger"] = [
             {
@@ -245,6 +502,31 @@ class ProjectStateTests(unittest.TestCase):
                 "segment_id": "SEG-A01",
             },
         ]
+        state["transition_ledger"] = [
+            {
+                "id": "TR-001",
+                "from_segment_id": "SEG-N01",
+                "to_segment_id": "SEG-A01",
+                "source_span_ids": ["SPAN-N01", "SPAN-A01"],
+                "lane_change": "normal_to_adult",
+                "bridge_types": ["continuous_action", "sound_bridge"],
+                "visual_anchor": "相同人物位置与门框遮挡",
+                "action_carry": "正常段结束于最后一个非明确靠近动作，成人段从首个明确动作开始",
+                "performance_residue": "犹疑仍残留在呼吸中",
+                "lighting_carry": "画面左侧窗光方向与曝光保持",
+                "audio_carry": "衣料声尾音跨入下一段",
+                "wardrobe_and_coverage": "覆盖状态按边界关键帧原样继承",
+                "consent_state": "双方成年、授权且持续明确回应",
+                "shared_boundary_asset_id": None,
+                "handoff_mode": "state_only",
+                "boundary_action": {
+                    "outgoing_event": "停在最后一个非明确靠近动作",
+                    "incoming_event": "从第一个明确且已批准动作启动",
+                    "handoff_rule": "non_overlapping_sequential",
+                },
+                "status": "planned",
+            }
+        ]
         errors, warnings = validate(state)
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
@@ -252,6 +534,174 @@ class ProjectStateTests(unittest.TestCase):
         state["segments"][1]["target_model"] = "seedance-2.5"
         errors, _ = validate(state)
         self.assertTrue(any("adult 路必须指向 wan3.0" in item for item in errors))
+
+    def test_forward_pure_normal_emotional_scene_passes(self) -> None:
+        state = sequence_state(["normal"], [14])
+        state["segments"][0]["performance_arc"].update(
+            {
+                "trigger": "对方把钥匙放回桌面",
+                "dominant_emotion": "强装镇定",
+                "secondary_leak": "手指没有立刻松开杯沿",
+                "active_tracks": ["gaze", "hands_objects", "breathing_sound"],
+                "residual_state": "呼吸变浅，手指压力仍在",
+            }
+        )
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_forward_normal_adult_normal_bridge_passes(self) -> None:
+        state = sequence_state(["normal", "adult", "normal"], [10, 24, 7])
+        state["transition_ledger"][0]["boundary_action"] = {
+            "outgoing_event": "正常段停在双方明确注视并相向靠近",
+            "incoming_event": "成人段从原文第一个明确且已批准的接触启动",
+            "handoff_rule": "non_overlapping_sequential",
+        }
+        state["transition_ledger"][1]["boundary_action"] = {
+            "outgoing_event": "成人段在双方主动暂停后停稳",
+            "incoming_event": "正常段从暂停结果与未平复呼吸继续",
+            "handoff_rule": "non_overlapping_sequential",
+        }
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_forward_short_adult_final_segment_keeps_actual_duration(self) -> None:
+        state = sequence_state(["adult"], [8.5])
+        self.assertEqual(8.5, state["segments"][0]["intimacy_beats"][0]["end"])
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_v16_requires_exactly_one_transition_for_adjacent_segments(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["transition_ledger"] = []
+        errors, _ = validate(state)
+        self.assertTrue(any("必须且只能有一个转场" in item for item in errors))
+
+    def test_transition_rejects_wrong_reference_and_lane_change(self) -> None:
+        state = sequence_state(["normal", "adult"])
+        transition = state["transition_ledger"][0]
+        transition["source_span_ids"] = ["SPAN-MISSING"]
+        transition["lane_change"] = "same_lane"
+        errors, _ = validate(state)
+        self.assertTrue(any("引用了无效原文跨度" in item for item in errors))
+        self.assertTrue(any("lane_change 应为 normal_to_adult" in item for item in errors))
+
+        state = sequence_state(["normal", "adult"])
+        state["segments"][1]["incoming_transition_id"] = "TR-MISSING"
+        errors, _ = validate(state)
+        self.assertTrue(any("incoming_transition_id" in item for item in errors))
+
+    def test_adult_segment_requires_intimacy_beats(self) -> None:
+        state = sequence_state(["adult"])
+        state["segments"][0].pop("intimacy_beats")
+        errors, _ = validate(state)
+        self.assertTrue(any("缺少 intimacy_beats" in item for item in errors))
+
+    def test_lighting_change_requires_local_and_cross_segment_motivation(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        segment = state["segments"][0]
+        segment["lighting_state"]["end"]["key_direction"] = "画面右侧"
+        errors, _ = validate(state)
+        self.assertTrue(any("缺少 change_trigger" in item for item in errors))
+        self.assertTrue(any("缺少 lighting_change_trigger" in item for item in errors))
+
+    def test_transition_rejects_duplicate_boundary_action(self) -> None:
+        state = sequence_state(["normal", "adult"])
+        boundary = state["transition_ledger"][0]["boundary_action"]
+        boundary["incoming_event"] = boundary["outgoing_event"]
+        errors, _ = validate(state)
+        self.assertTrue(any("边界动作重复" in item for item in errors))
+
+    def test_adult_beat_requires_response_support_coverage_consent_and_end_state(self) -> None:
+        state = sequence_state(["adult"], [9])
+        beat = state["segments"][0]["intimacy_beats"][0]
+        beat["response"] = "unclear"
+        beat["support_map"] = []
+        beat["coverage_after"] = ""
+        beat["consent_checkpoint"] = ""
+        beat["end_state"] = ""
+        errors, _ = validate(state)
+        self.assertTrue(any("response 必须明确且可撤回" in item for item in errors))
+        self.assertTrue(any("support_map 不能为空" in item for item in errors))
+        self.assertTrue(any("coverage_after" in item for item in errors))
+        self.assertTrue(any("consent_checkpoint" in item for item in errors))
+        self.assertTrue(any("end_state" in item for item in errors))
+
+    def test_adult_beat_rejects_time_gap_and_duplicate_source_span(self) -> None:
+        state = sequence_state(["adult"], [10])
+        first = state["segments"][0]["intimacy_beats"][0]
+        first["end"] = 4
+        second = copy.deepcopy(first)
+        second.update({"id": "IB-002", "start": 5, "end": 10})
+        state["segments"][0]["intimacy_beats"].append(second)
+        errors, _ = validate(state)
+        self.assertTrue(any("起点不连续" in item for item in errors))
+        self.assertTrue(any("同一原文动作跨度" in item for item in errors))
+
+    def test_lane_specific_storyboard_and_intimacy_fields_are_enforced(self) -> None:
+        normal_state = sequence_state(["normal"])
+        normal_state["segments"][0]["intimacy_beats"] = [
+            intimacy_beat("SPAN-01", 12)
+        ]
+        normal_errors, _ = validate(normal_state)
+        self.assertTrue(any("正常片段" in item and "intimacy_beats" in item for item in normal_errors))
+
+        adult_state = sequence_state(["adult"])
+        adult_state["segments"][0]["storyboard_asset_ids"] = ["BOARD-A01"]
+        adult_errors, _ = validate(adult_state)
+        self.assertTrue(any("不得绑定十六宫格" in item for item in adult_errors))
+
+    def test_shared_boundary_keyframe_must_exist_and_be_approved(self) -> None:
+        state = sequence_state(["normal", "adult"])
+        transition = state["transition_ledger"][0]
+        transition.update(
+            {
+                "handoff_mode": "shared_boundary_keyframe",
+                "shared_boundary_asset_id": "KEY-BOUNDARY-01",
+                "status": "approved",
+            }
+        )
+        errors, _ = validate(state)
+        self.assertTrue(any("不存在的共享边界资产" in item for item in errors))
+
+        state["assets"] = [
+            {
+                "id": "KEY-BOUNDARY-01",
+                "status": "planned",
+                "responsibility": "跨模型中性边界关键帧",
+            }
+        ]
+        errors, _ = validate(state)
+        self.assertTrue(any("共享边界资产尚未 approved" in item for item in errors))
+
+    def test_performance_camera_lighting_transition_changes_reset_g2_to_g7(self) -> None:
+        for change_type in ("performance", "cinematography", "lighting", "transition"):
+            with self.subTest(change_type=change_type):
+                state = template()
+                for gate in state["approval_gates"].values():
+                    gate["status"] = "approved"
+                    gate["approved_revision"] = 1
+                state["adapted_script"].update(
+                    {
+                        "status": "approved",
+                        "approved_revision": 1,
+                        "source_revision": 1,
+                        "scene_ids": ["SCENE-01"],
+                    }
+                )
+                apply_change(state, change_type, "用户批准修改 Canon")
+                self.assertEqual(2, state["revision"])
+                self.assertEqual("approved", state["approval_gates"]["script_adaptation"]["status"])
+                self.assertEqual(2, state["approval_gates"]["script_adaptation"]["approved_revision"])
+                self.assertTrue(
+                    all(
+                        state["approval_gates"][name]["status"] == "pending"
+                        for name in GATE_ORDER[1:]
+                    )
+                )
+                self.assertEqual("S3", state["stage"])
 
     def test_full_project_waiting_at_g1_cannot_approve_downstream(self) -> None:
         state = template()

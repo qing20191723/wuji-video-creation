@@ -1,6 +1,6 @@
 ---
 name: seedance-film-production
-description: 将剧本、想法、小说片段和多模态参考推进为可追溯、非模板化的影视生产包，也可单独执行剧本会诊、对白精修、平台节奏体检或后期声音设计。用于正常/成人剧本分路、AI可生成剧本、自适应时长与最少充分分镜、固定资产、正常段十六宫格、Seedance 2.5与Wan 3.0音画一体编译；不用于团队协作表、Google Sheets、普通影视知识问答或单张图片润色。
+description: 将剧本、想法、小说片段和多模态参考推进为可追溯、非模板化的影视生产包，也可单独执行剧本会诊、对白精修、平台节奏体检或后期声音设计。用于正常/成人剧本分路、事件驱动表演、镜头与光影规划、成人动作节拍、跨模型桥接、自适应时长与最少充分分镜、固定资产、正常段十六宫格、Seedance 2.5与Wan 3.0音画一体编译；不用于团队协作表、Google Sheets、普通影视知识问答或单张图片润色。
 ---
 
 # Seedance 影视创作流水线
@@ -38,6 +38,11 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 12. 已批准剧本中的可处理成人内容必须完整理解并按原文跨度路由；不得省略、跳过、用“略”代替或暗中降级。若命中不可处理边界，显式报告该原文跨度并停止，不静默删除。
 13. 正常段只编译到 Seedance 2.5；成人段只编译到 Wan 3.0。同一原文跨度不得两路重复，也不得无路由。
 14. 两路默认音画一体：台词、呼吸、环境声和动作声写入视频提示词，不再为成人路输出独立配音章节。
+15. 表演按事件触发并保留残留状态；镜头运动和切镜必须有观看理由；连续空间的光向、综合色温或曝光变化必须有场景内动机。
+16. 每两个相邻片段必须有唯一桥接记录。正常→成人在最后一个非明确行为与第一个明确行为之间交接，成人→正常继承真实结果，不得重复、遗漏或复位。
+17. 最终视频提示词从环境、人物和动作出发，镜头作为观看动作自然融入叙述；不得以景别、运镜、灯光字段或摄影术语清单开头。
+18. 成人路在已批准边界和当前执行环境允许范围内使用最大可执行直述尺度：能写清裸体/覆盖、姿态、承重、行为类别、节奏、持续回应、声音与末状态就不含糊；无法展开的细部机制保留中性行为类别和原文跨度，不静默省略或提供规避写法。
+19. 每条成品提示词登记字符数。Wan 3.0 官方硬上限为 20,000 字符；Seedance 2.5 官方未公布字符上限，必须记录当前入口有效上限或保持未知，并使用自适应制作软预算。超限先压缩再按真实节拍拆段，绝不静默截断。
 
 ## 默认生产参数
 
@@ -55,12 +60,12 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 完整项目按以下门禁逐轮推进，不在一轮内从剧本冲到最终提示词：
 
 1. `G1 script_adaptation`：来源锁定、正常/成人原文跨度路由、问题诊断、两部分完整 AI 可生成剧本、改编说明与待确认假设。
-2. `G2 shot_breakdown`：项目圣经、正常路最少充分分镜、成人路动作/声画单元与跨段状态。
+2. `G2 shot_breakdown`：项目镜头/光影圣经、事件驱动表演弧线、正常路最少充分分镜、成人路动作节拍与唯一跨段桥接。
 3. `G3 asset_prompts`：固定资产清单、稳定 ID 与可直接复制的自然语言提示词。
 4. `G4 character_look`：每名主要角色一张横向四栏定妆基准图；实际看图后等待确认。
 5. `G5 asset_images`：场景、道具、武器和 VFX 分批生成、看图与确认。
 6. `G6 storyboard`：仅为正常路输出十六宫格图片提示词，用已批准资产生成 4×4 故事板并实际验收；成人路记为 `not_required`。
-7. `G7 final_compile`：正常路绑定已验收十六宫格编译 Seedance 2.5；成人路绑定已验收资产编译 Wan 3.0。两路均为自然语言音画一体提示词。
+7. `G7 final_compile`：正常路绑定已验收十六宫格编译 Seedance 2.5；成人路绑定已验收资产编译 Wan 3.0。两路均为镜头融入人物行动的自然语言音画一体提示词，并完成软预算、有效硬限制和字符数预检。
 
 只有用户明确说“全自动并放弃中途确认”才可连续推进；仍须保存每阶段状态、执行视觉验收并运行校验。完整阶段规则读取 [references/workflow.md](references/workflow.md)。
 
@@ -69,7 +74,7 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 - **剧本会诊**：读取 [references/review-dialogue.md](references/review-dialogue.md) 的“剧本会诊”。只诊断时不改变 Canon；应用修改时提升 revision，并重新打开 G1–G7。
 - **对白精修**：读取同一文件的“对白精修”。默认只改有明确病灶的台词，保留锁定台词；应用修改时按剧本变更处理。
 - **平台节奏体检**：读取 [references/platform-rhythm.md](references/platform-rhythm.md)。诊断不改 Canon；应用新的节奏档位时提升 revision，并重新打开 G1–G7。
-- **后期声音设计**：读取 [references/post-sound.md](references/post-sound.md)。独立 Cue Sheet 不改变 Canon；若改固定对白或任一生成模型内声音指令，只重新打开 G7。
+- **后期声音设计**：读取 [references/post-sound.md](references/post-sound.md)。独立 Cue Sheet 不改变 Canon；只调最终提示词内声画重叠时重新打开 G7，修改固定对白仍按剧本变更处理。
 
 专科任务不得创建无关资产或门禁，也不得用虚构专家身份、假履历或角色扮演代替证据。
 
@@ -97,8 +102,10 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 - 格斗、追逐、兵器、异能或战场动作：读取 [references/action.md](references/action.md)。
 - 固定资产、故事板、引用与连续性：读取 [references/assets-continuity.md](references/assets-continuity.md)。
 - 资产提示词：同时读取 [references/asset-prompts.md](references/asset-prompts.md)。
-- 情绪动作词库只在用户明确要求表演诊断或微表演备选时读取 [references/emotion-library.md](references/emotion-library.md)；不得把词库逐镜套入成品。
+- G2 镜头规划、运镜、轴线、焦点与光影圣经：读取 [references/cinematography.md](references/cinematography.md)。
+- 情绪动作词库只在用户明确要求表演诊断、微表演备选，或 G2 建立 `performance_arc` 时读取 [references/emotion-library.md](references/emotion-library.md)；不得把词库逐镜套入成品。
 - 性化、裸露、情欲或明确成人亲密场景：读取 [references/adult-intimacy.md](references/adult-intimacy.md)。该模块只在用户明确提出或已批准剧本确实包含此类内容时加载，不改变 `task_mode`，也不自动提高尺度。
+- 成人边界批准后，在 G2 读取 [references/adult-choreography.md](references/adult-choreography.md)，只编排原文已有动作并建立 `intimacy_beats`；需要准确解剖/行为词时才按 `adult-intimacy.md` 路由到 `adult-explicit-language.md`。
 - 同一剧本包含正常与成人内容：同时读取 [references/content-routing.md](references/content-routing.md)，建立无重叠、无遗漏的原文跨度路由。
 - 正常路十六宫格提示词、生成与验收：读取 [references/storyboard-16grid.md](references/storyboard-16grid.md)。
 - Seedance 2.5 编译与最终校验：读取 [references/seedance-output.md](references/seedance-output.md)。
@@ -115,8 +122,11 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 - `SCRIPT_LOCK`：已确认剧本、场次、建议补足与假设。
 - `CHARACTER_LOCK`：身份、外观、声线与语言指纹。
 - `CONTENT_PROFILE`：一般内容或成人亲密路由；成人亲密时记录成年/授权/同意事实、尺度上限、禁止项、镜头与遮挡边界。
+- `VISUAL_BIBLE`：全局镜头策略、轴线/视线基线、光源动机、主光方向、光质、反差、综合色温、曝光重点和锁定 revision。
 - `ASSET_MANIFEST`：资产 ID、版本、状态、真实附件、职责与禁止覆盖项。
-- `SEGMENT_LEDGER`：正常/成人内容路、目标模型、实际时长与理由、戏剧/战术单元、核心变化、起止状态、节奏档位、镜头数与切镜理由。
+- `SEGMENT_LEDGER`：正常/成人内容路、目标模型、实际时长与理由、戏剧/战术单元、核心变化、表演弧线、镜头计划、光影状态、起止状态、节奏档位、镜头数与切镜理由；成人段额外记录 `intimacy_beats`。
+- `COMPILED_PROMPTS`：提示词 ID、片段 ID、目标模型、成品正文、实际字符数、编译 revision；Wan 另记录是否启用 `prompt_extend`。
+- `TRANSITION_LEDGER`：相邻片段、路由变化、桥接类型、动作惯性、表演残留、光影、声音、覆盖、同意状态及共享边界资产。
 - `SHOT_LEDGER`：时间、主体、动作/表演、声音、结束状态和资产 ID。
 
 台账字段未知时明确写“未知/待确认/待生成”，不得补造。进入下游前核对人物、关系、台词、胜负、资产版本、左右手、道具数量、场景破坏、光向、声音尾部和跨段状态；发现差异时停止编译并回退责任阶段。
@@ -138,8 +148,9 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 - 只读诊断不改变项目 revision 或批准状态。
 - 应用剧本、对白或节奏修改：revision 加一，G1–G7 设为 `pending`，重新确认来源与剧本。
 - 修改局部镜头：回退 G2，重算整个片段时间和连续性。
+- 修改已锁定表演、镜头、光影或桥接 Canon：revision 加一，保留 G1 剧本批准并回退 G2–G7。
 - 修改资产外观：提升资产版本，回退相应资产门禁并重验所有引用镜头。
-- 独立后期声音方案不回退；改变固定对白或 Seedance 2.5 / Wan 3.0 内声音指令时仅将 G7 设为 `pending`。
+- 独立后期声音方案不回退；只调整最终提示词措辞、声画重叠或 Seedance 2.5 / Wan 3.0 内声音指令时仅将 G7 设为 `pending`。改变固定对白仍按剧本变更处理。
 
 每次变化记录原因、旧值、新值、影响范围和需重验项目。
 
