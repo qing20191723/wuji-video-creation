@@ -37,6 +37,17 @@ CHARACTER_PANEL_ORDER = [
     "back_full_body",
 ]
 TASK_MODES = {"full_production", "specialist"}
+CONTENT_MODES = {"general", "adult_intimacy"}
+CONTENT_LANES = {"normal", "adult"}
+LANE_TARGET_MODELS = {"normal": "seedance-2.5", "adult": "wan3.0"}
+INTIMACY_LEVELS = {
+    "romantic",
+    "sensual",
+    "implied_intimacy",
+    "non_explicit_nudity",
+    "explicit_adult",
+}
+SOURCE_AUTHORIZATIONS = {"fictional", "verified_self_or_authorized_adult"}
 SPECIALIST_TYPES = {"script_review", "dialogue_polish", "platform_rhythm", "post_sound"}
 SPECIALIST_STATUSES = {
     "draft",
@@ -55,8 +66,23 @@ PACING_LEVELS = {
 }
 ACTION_TYPES = {"free_combat", "wuxia_weapons", "superpower", "battlefield"}
 OFFICIAL_LIMITS = {"duration_seconds": 30, "images": 30, "videos": 10, "audios": 10}
+WAN_OFFICIAL_LIMITS = {
+    "duration_seconds": 30,
+    "images": 10,
+    "videos": 5,
+    "video_total_seconds": 15,
+    "audios": 5,
+    "audio_total_seconds": 15,
+    "multimodal_assets": 20,
+}
 REF_LIMIT_KEYS = {"图片": "images", "视频": "videos", "音频": "audios"}
-FULL_REAPPROVAL_CHANGES = {"script", "dialogue", "rhythm"}
+FULL_REAPPROVAL_CHANGES = {
+    "script",
+    "dialogue",
+    "rhythm",
+    "content_routing",
+    "intimacy_boundary",
+}
 COLLABORATION_ONLY_FIELDS = {
     "collaboration_sheet",
     "google_sheet",
@@ -128,6 +154,11 @@ def apply_change(data: dict[str, Any], change_type: str, reason: str = "") -> No
         if isinstance(rhythm, dict):
             rhythm["locked_revision"] = None
 
+        profile = data.get("content_profile")
+        intimacy = profile.get("intimacy") if isinstance(profile, dict) else None
+        if isinstance(intimacy, dict):
+            intimacy["locked_revision"] = None
+
     elif change_type == "post_sound_prompt":
         gate = gates.get("final_compile")
         if not isinstance(gate, dict):
@@ -193,6 +224,147 @@ def _require_list(value: Any, field: str, errors: list[str]) -> list[Any]:
         errors.append(f"{field} 必须是数组")
         return []
     return value
+
+
+def _validate_content_profile(
+    data: dict[str, Any], errors: list[str], schema_version: str
+) -> None:
+    profile = data.get("content_profile")
+    if not isinstance(profile, dict):
+        errors.append(f"schema {schema_version} 缺少 content_profile")
+        return
+
+    if schema_version == "1.5":
+        if profile.get("routing_policy") != "explicit_normal_adult_split":
+            errors.append("content_profile.routing_policy 必须为 explicit_normal_adult_split")
+        if profile.get("audio_policy") != "integrated_av":
+            errors.append("content_profile.audio_policy 必须为 integrated_av")
+
+    mode = profile.get("mode")
+    if mode not in CONTENT_MODES:
+        errors.append(f"content_profile.mode 无效: {mode}")
+        return
+
+    intimacy = profile.get("intimacy")
+    if mode == "general":
+        if intimacy is not None:
+            errors.append("general 内容不得携带 intimacy 配置")
+        return
+
+    if not isinstance(intimacy, dict):
+        errors.append("adult_intimacy 模式缺少 intimacy 配置")
+        return
+
+    if intimacy.get("content_level") not in INTIMACY_LEVELS:
+        errors.append(f"成人亲密内容等级无效: {intimacy.get('content_level')}")
+    if intimacy.get("consent_status") != "affirmative_and_reversible":
+        errors.append("成人亲密内容必须记录明确、持续且可撤回的同意")
+    if intimacy.get("youth_coding") is not False:
+        errors.append("成人亲密内容不得包含未成年、年龄模糊或校园/幼态编码")
+    if intimacy.get("escalation_policy") != "explicit_approval_required":
+        errors.append("成人亲密内容提高尺度必须明确批准")
+
+    participants = _require_list(intimacy.get("participants"), "content_profile.intimacy.participants", errors)
+    if not participants:
+        errors.append("成人亲密内容至少需要一个参与者")
+    participant_ids: list[str] = []
+    for index, participant in enumerate(participants):
+        if not isinstance(participant, dict):
+            errors.append(f"成人亲密参与者[{index}] 必须是对象")
+            continue
+        character_id = participant.get("character_id")
+        if not isinstance(character_id, str) or not character_id:
+            errors.append(f"成人亲密参与者[{index}] 缺少 character_id")
+        else:
+            participant_ids.append(character_id)
+        if participant.get("adult_confirmed") is not True:
+            errors.append(f"成人亲密参与者 {character_id} 未确认成年")
+        age_years = participant.get("age_years")
+        if not isinstance(age_years, int) or isinstance(age_years, bool) or age_years < 18:
+            errors.append(f"成人亲密参与者 {character_id} age_years 必须为不低于18的整数")
+        if participant.get("adult_coded_presentation") is not True:
+            errors.append(f"成人亲密参与者 {character_id} 缺少明确成人化呈现")
+        if participant.get("source_authorization") not in SOURCE_AUTHORIZATIONS:
+            errors.append(f"成人亲密参与者 {character_id} 来源未获授权")
+    if len(participant_ids) != len(set(participant_ids)):
+        errors.append("成人亲密参与者 character_id 重复")
+
+    for field in ("prohibited_elements", "camera_boundaries", "coverage_boundaries"):
+        _require_list(intimacy.get(field), f"content_profile.intimacy.{field}", errors)
+    locked_revision = intimacy.get("locked_revision")
+    if locked_revision is not None and locked_revision != data.get("revision"):
+        errors.append("content_profile.intimacy.locked_revision 与当前 revision 不一致")
+
+
+def _validate_adult_model_profile(data: dict[str, Any], errors: list[str]) -> None:
+    model = data.get("adult_model_profile")
+    if not isinstance(model, dict):
+        errors.append("schema 1.5 缺少 adult_model_profile")
+        return
+    if model.get("model") != "wan3.0-video":
+        errors.append("adult_model_profile.model 必须为 wan3.0-video")
+    if model.get("official_limits") != WAN_OFFICIAL_LIMITS:
+        errors.append("adult_model_profile.official_limits 与 Wan 3.0 官方基线不一致")
+    effective = model.get("effective_limits")
+    if not isinstance(effective, dict):
+        errors.append("缺少 adult_model_profile.effective_limits")
+    else:
+        for key, official_max in WAN_OFFICIAL_LIMITS.items():
+            value = effective.get(key)
+            if not isinstance(value, int) or isinstance(value, bool) or value < 1 or value > official_max:
+                errors.append(
+                    f"adult_model_profile.effective_limits.{key} 必须为 1–{official_max} 的整数"
+                )
+    if not isinstance(model.get("verified_source"), str) or not model.get("verified_source"):
+        errors.append("adult_model_profile 缺少 verified_source")
+
+
+def _validate_source_spans(
+    data: dict[str, Any], errors: list[str]
+) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
+    ledger = _require_list(data.get("source_span_ledger"), "source_span_ledger", errors)
+    span_map: dict[str, dict[str, Any]] = {}
+    source_orders: list[int] = []
+    for index, span in enumerate(ledger):
+        if not isinstance(span, dict):
+            errors.append(f"source_span_ledger[{index}] 必须是对象")
+            continue
+        span_id = span.get("id")
+        if not isinstance(span_id, str) or not span_id:
+            errors.append(f"source_span_ledger[{index}] 缺少 id")
+            continue
+        if span_id in span_map:
+            errors.append(f"原文跨度 id 重复: {span_id}")
+        span_map[span_id] = span
+        source_order = span.get("source_order")
+        if not isinstance(source_order, int) or isinstance(source_order, bool) or source_order < 1:
+            errors.append(f"原文跨度 {span_id} source_order 必须为正整数")
+        else:
+            source_orders.append(source_order)
+        if not isinstance(span.get("source_locator"), str) or not span.get("source_locator").strip():
+            errors.append(f"原文跨度 {span_id} 缺少 source_locator")
+        if span.get("lane") not in CONTENT_LANES:
+            errors.append(f"原文跨度 {span_id} lane 无效: {span.get('lane')}")
+        if span.get("status") not in {"routed", "blocked"}:
+            errors.append(f"原文跨度 {span_id} status 必须为 routed 或 blocked")
+        if span.get("status") == "blocked" and not span.get("block_reason"):
+            errors.append(f"被阻断原文跨度 {span_id} 缺少 block_reason")
+    if len(source_orders) != len(set(source_orders)):
+        errors.append("原文跨度 source_order 重复")
+
+    segments = data.get("segments")
+    segment_map = {
+        segment.get("id"): segment
+        for segment in segments
+        if isinstance(segments, list) and isinstance(segment, dict) and segment.get("id")
+    } if isinstance(segments, list) else {}
+    for span_id, span in span_map.items():
+        segment_id = span.get("segment_id")
+        if span.get("status") == "routed" and segment_id not in segment_map:
+            errors.append(f"原文跨度 {span_id} 已路由但 segment_id 不存在: {segment_id}")
+        if segment_id in segment_map and span.get("lane") != segment_map[segment_id].get("content_lane"):
+            errors.append(f"原文跨度 {span_id} lane 与片段 {segment_id} 不一致")
+    return span_map, segment_map
 
 
 def _validate_v12plus(
@@ -376,14 +548,18 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         )
 
     schema_version = data.get("schema_version")
-    if schema_version not in {"1.1", "1.2", "1.3"}:
-        errors.append("schema_version 必须为 1.1、1.2 或 1.3")
+    if schema_version not in {"1.1", "1.2", "1.3", "1.4", "1.5"}:
+        errors.append("schema_version 必须为 1.1、1.2、1.3、1.4 或 1.5")
     elif schema_version == "1.1":
-        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.3")
+        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.5")
     else:
         _validate_v12plus(data, errors, warnings, schema_version)
-        if schema_version == "1.2":
-            warnings.append("schema_version 1.2 为兼容格式；建议升级到 1.3 以使用自适应时长和最少充分镜头")
+        if schema_version in {"1.2", "1.3", "1.4"}:
+            warnings.append(f"schema_version {schema_version} 为兼容格式；建议升级到 1.5")
+        if schema_version in {"1.4", "1.5"}:
+            _validate_content_profile(data, errors, schema_version)
+        if schema_version == "1.5":
+            _validate_adult_model_profile(data, errors)
 
     if not data.get("project_id"):
         errors.append("缺少 project_id")
@@ -399,7 +575,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append("兼容状态的文戏单元必须为30秒")
         if production_rules.get("action_segment_seconds") != 25:
             errors.append("兼容状态的武戏单元必须为25秒")
-    else:
+    elif schema_version in {"1.3", "1.4"}:
         if production_rules.get("duration_policy") != "story_beat_first":
             errors.append("production_rules.duration_policy 必须为 story_beat_first")
         if production_rules.get("max_segment_seconds_from_model_profile") is not True:
@@ -408,6 +584,23 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append("production_rules.shot_count_policy 必须为 minimum_sufficient")
         if production_rules.get("storyboard_layout") != "adaptive":
             errors.append("production_rules.storyboard_layout 必须为 adaptive")
+    else:
+        if production_rules.get("duration_policy") != "story_beat_first":
+            errors.append("production_rules.duration_policy 必须为 story_beat_first")
+        if production_rules.get("max_segment_seconds_from_model_profile") is not True:
+            errors.append("production_rules.max_segment_seconds_from_model_profile 必须为 true")
+        if production_rules.get("shot_count_policy") != "minimum_sufficient":
+            errors.append("production_rules.shot_count_policy 必须为 minimum_sufficient")
+        if production_rules.get("storyboard_layout") != "normal_lane_4x4_16_panel":
+            errors.append("schema 1.5 正常段故事板必须为 4x4 十六宫格")
+        if production_rules.get("adult_storyboard_layout") != "not_required":
+            errors.append("schema 1.5 成人段不得生成十六宫格")
+        if production_rules.get("adult_segment_target_seconds") != 30:
+            errors.append("成人段单次最大目标容器必须为 30 秒")
+        if production_rules.get("adult_final_segment_policy") != "actual_duration_no_padding":
+            errors.append("成人末段必须使用实际时长且不得注水")
+        if production_rules.get("audio_generation") != "integrated_av":
+            errors.append("完整生产默认必须使用音画一体生成")
     character_rule = production_rules.get("character_identity_asset")
     if not isinstance(character_rule, dict):
         errors.append("缺少 character_identity_asset 规则")
@@ -450,7 +643,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     if len(awaiting) > 1:
         errors.append("同时等待确认的核心门禁不得超过一个")
 
-    if schema_version in {"1.2", "1.3"}:
+    if schema_version in {"1.2", "1.3", "1.4", "1.5"}:
         interaction = data.get("interaction_state", {})
         declared = interaction.get("pending_gate") if isinstance(interaction, dict) else None
         actual = awaiting[0] if len(awaiting) == 1 else None
@@ -510,7 +703,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         errors.append("同一正式附件引用绑定了多个资产职责")
 
     effective_limits = OFFICIAL_LIMITS
-    if schema_version in {"1.2", "1.3"}:
+    if schema_version in {"1.2", "1.3", "1.4", "1.5"}:
         candidate = data.get("model_profile", {}).get("effective_limits")
         if isinstance(candidate, dict):
             effective_limits = {**OFFICIAL_LIMITS, **candidate}
@@ -536,6 +729,10 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     if len(segment_ids) != len(set(segment_ids)):
         errors.append("片段 id 重复")
 
+    span_map: dict[str, dict[str, Any]] = {}
+    if schema_version == "1.5":
+        span_map, _ = _validate_source_spans(data, errors)
+
     project_pacing = data.get("rhythm_profile", {}).get("pacing")
     previous_end_state = None
     for segment in segments:
@@ -546,6 +743,29 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         duration = segment.get("duration_seconds")
         shots = segment.get("shots", [])
 
+        content_lane = segment.get("content_lane") if schema_version == "1.5" else "normal"
+        target_model = segment.get("target_model") if schema_version == "1.5" else "seedance-2.5"
+        if schema_version == "1.5":
+            if content_lane not in CONTENT_LANES:
+                errors.append(f"片段 {sid} content_lane 无效: {content_lane}")
+            elif target_model != LANE_TARGET_MODELS[content_lane]:
+                errors.append(
+                    f"片段 {sid} 的 {content_lane} 路必须指向 {LANE_TARGET_MODELS[content_lane]}"
+                )
+            if content_lane == "adult" and data.get("content_profile", {}).get("mode") != "adult_intimacy":
+                errors.append(f"成人片段 {sid} 缺少 adult_intimacy 内容档案")
+            source_span_ids = _require_list(
+                segment.get("source_span_ids"), f"片段 {sid} source_span_ids", errors
+            )
+            if not source_span_ids:
+                errors.append(f"片段 {sid} 至少需要一个 source_span_id")
+            for span_id in source_span_ids:
+                span = span_map.get(span_id)
+                if span is None:
+                    errors.append(f"片段 {sid} 引用了不存在的原文跨度 {span_id}")
+                elif span.get("lane") != content_lane:
+                    errors.append(f"片段 {sid} 与原文跨度 {span_id} 的 lane 不一致")
+
         if mode not in {"drama", "action"}:
             errors.append(f"片段 {sid} 的 mode 必须为 drama 或 action")
             continue
@@ -555,7 +775,12 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
                 errors.append(f"兼容片段 {sid} 时长应为 {expected_duration} 秒，实际为 {duration}")
         else:
             expected_duration = duration
-            effective_duration = effective_limits.get("duration_seconds", 30)
+            if schema_version == "1.5" and content_lane == "adult":
+                effective_duration = data.get("adult_model_profile", {}).get(
+                    "effective_limits", WAN_OFFICIAL_LIMITS
+                ).get("duration_seconds", 30)
+            else:
+                effective_duration = effective_limits.get("duration_seconds", 30)
             if not isinstance(duration, (int, float)) or isinstance(duration, bool) or duration <= 0:
                 errors.append(f"片段 {sid} duration_seconds 必须为正数")
                 expected_duration = None
@@ -568,7 +793,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append(f"片段 {sid} shots 必须是数组")
             shots = []
 
-        if schema_version in {"1.2", "1.3"}:
+        if schema_version in {"1.2", "1.3", "1.4", "1.5"}:
             pacing = segment.get("rhythm_pacing", project_pacing)
             if pacing not in PACING_LEVELS:
                 errors.append(f"片段 {sid} rhythm_pacing 无效: {pacing}")

@@ -1,8 +1,14 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.5",
   "project_id": "PROJECT-001",
   "revision": 1,
   "task_mode": "full_production",
+  "content_profile": {
+    "mode": "general",
+    "routing_policy": "explicit_normal_adult_split",
+    "audio_policy": "integrated_av",
+    "intimacy": null
+  },
   "stage": "S0",
   "interaction_state": {
     "current_stage": "S0",
@@ -27,13 +33,39 @@
     },
     "verified_source": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
   },
+  "adult_model_profile": {
+    "model": "wan3.0-video",
+    "official_limits": {
+      "duration_seconds": 30,
+      "images": 10,
+      "videos": 5,
+      "video_total_seconds": 15,
+      "audios": 5,
+      "audio_total_seconds": 15,
+      "multimodal_assets": 20
+    },
+    "effective_limits": {
+      "duration_seconds": 30,
+      "images": 10,
+      "videos": 5,
+      "video_total_seconds": 15,
+      "audios": 5,
+      "audio_total_seconds": 15,
+      "multimodal_assets": 20
+    },
+    "verified_source": "https://help.aliyun.com/zh/model-studio/wan3-video-generation-guide"
+  },
   "production_rules": {
     "default_language": "zh-CN",
     "default_aspect_ratio": "16:9",
     "duration_policy": "story_beat_first",
     "max_segment_seconds_from_model_profile": true,
     "shot_count_policy": "minimum_sufficient",
-    "storyboard_layout": "adaptive",
+    "storyboard_layout": "normal_lane_4x4_16_panel",
+    "adult_storyboard_layout": "not_required",
+    "adult_segment_target_seconds": 30,
+    "adult_final_segment_policy": "actual_duration_no_padding",
+    "audio_generation": "integrated_av",
     "character_identity_asset": {
       "layout": "single_horizontal_four_panel",
       "panel_order": [
@@ -71,6 +103,7 @@
     "forbidden_changes": [],
     "allowed_inferences": []
   },
+  "source_span_ledger": [],
   "adapted_script": {
     "status": "not_started",
     "source_revision": 1,

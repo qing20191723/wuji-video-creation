@@ -33,7 +33,56 @@ def legacy_state(version: str) -> dict:
     state["rhythm_profile"].update(
         {"hook_window_seconds": [0, 5], "progression_interval_seconds": 15}
     )
+    if version in {"1.3", "1.4"}:
+        state["production_rules"]["storyboard_layout"] = "adaptive"
     return state
+
+
+def adult_intimacy_state() -> dict:
+    state = template()
+    state["content_profile"] = {
+        "mode": "adult_intimacy",
+        "routing_policy": "explicit_normal_adult_split",
+        "audio_policy": "integrated_av",
+        "intimacy": {
+            "content_level": "explicit_adult",
+            "consent_status": "affirmative_and_reversible",
+            "youth_coding": False,
+            "escalation_policy": "explicit_approval_required",
+            "participants": [
+                {
+                    "character_id": "CHAR-A01",
+                    "age_years": 20,
+                    "adult_confirmed": True,
+                    "adult_coded_presentation": True,
+                    "source_authorization": "fictional",
+                }
+            ],
+            "prohibited_elements": ["coercion", "incapacitation"],
+            "camera_boundaries": ["no_voyeuristic_hidden_camera"],
+            "coverage_boundaries": [],
+            "locked_revision": 1,
+        },
+    }
+    return state
+
+
+def attach_segment(state: dict, segment: dict, lane: str = "normal") -> None:
+    span_id = f"SPAN-{segment['id']}"
+    segment["content_lane"] = lane
+    segment["target_model"] = "seedance-2.5" if lane == "normal" else "wan3.0"
+    segment["source_span_ids"] = [span_id]
+    state["segments"] = [segment]
+    state["source_span_ledger"] = [
+        {
+            "id": span_id,
+            "source_order": 1,
+            "source_locator": "测试原文第1段",
+            "lane": lane,
+            "status": "routed",
+            "segment_id": segment["id"],
+        }
+    ]
 
 
 def specialist_task(task_type: str = "script_review") -> dict:
@@ -77,10 +126,20 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v13_template_passes(self) -> None:
+    def test_v15_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
+
+    def test_v14_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.4"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("兼容格式" in item for item in warnings))
+
+    def test_v13_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.3"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("兼容格式" in item for item in warnings))
 
     def test_v12_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.2"))
@@ -107,6 +166,92 @@ class ProjectStateTests(unittest.TestCase):
         state["watermarked_delivery"] = "approved"
         errors, _ = validate(state)
         self.assertTrue(any("外部协作表字段" in item for item in errors))
+
+    def test_confirmed_twenty_year_old_adult_profile_passes(self) -> None:
+        errors, warnings = validate(adult_intimacy_state())
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_adult_profile_rejects_age_consent_and_youth_coding_failures(self) -> None:
+        state = adult_intimacy_state()
+        intimacy = state["content_profile"]["intimacy"]
+        intimacy["participants"][0]["age_years"] = 17
+        intimacy["consent_status"] = "unclear"
+        intimacy["youth_coding"] = True
+        errors, _ = validate(state)
+        self.assertTrue(any("age_years" in item for item in errors))
+        self.assertTrue(any("持续且可撤回" in item for item in errors))
+        self.assertTrue(any("校园/幼态编码" in item for item in errors))
+
+    def test_adult_profile_rejects_unverified_source(self) -> None:
+        state = adult_intimacy_state()
+        state["content_profile"]["intimacy"]["participants"][0][
+            "source_authorization"
+        ] = "unknown_real_person"
+        errors, _ = validate(state)
+        self.assertTrue(any("来源未获授权" in item for item in errors))
+
+    def test_mixed_routes_bind_each_lane_to_its_model(self) -> None:
+        state = adult_intimacy_state()
+        state["approval_gates"]["script_adaptation"]["status"] = "not_required"
+        normal = {
+            "id": "SEG-N01",
+            "mode": "drama",
+            "content_lane": "normal",
+            "target_model": "seedance-2.5",
+            "source_span_ids": ["SPAN-N01"],
+            "duration_seconds": 12,
+            "dramatic_unit": "正常剧情完成一次关系变化",
+            "duration_rationale": "按对白和动作试演估算",
+            "shot_count_rationale": "单镜足以承载",
+            "rhythm_pacing": state["rhythm_profile"]["pacing"],
+            "action_types": [],
+            "shots": [{"number": 1, "start": 0, "end": 12, "asset_ids": []}],
+            "start_state": "A",
+            "end_state": "B",
+        }
+        adult = {
+            "id": "SEG-A01",
+            "mode": "drama",
+            "content_lane": "adult",
+            "target_model": "wan3.0",
+            "source_span_ids": ["SPAN-A01"],
+            "duration_seconds": 30,
+            "dramatic_unit": "已批准成人动作单元",
+            "duration_rationale": "按动作、回应和声音试演估算",
+            "shot_count_rationale": "连续动作由一个长镜头承载",
+            "rhythm_pacing": state["rhythm_profile"]["pacing"],
+            "action_types": [],
+            "shots": [{"number": 1, "start": 0, "end": 30, "asset_ids": []}],
+            "start_state": "B",
+            "end_state": "C",
+        }
+        state["segments"] = [normal, adult]
+        state["source_span_ledger"] = [
+            {
+                "id": "SPAN-N01",
+                "source_order": 1,
+                "source_locator": "测试原文第1段",
+                "lane": "normal",
+                "status": "routed",
+                "segment_id": "SEG-N01",
+            },
+            {
+                "id": "SPAN-A01",
+                "source_order": 2,
+                "source_locator": "测试原文第2段",
+                "lane": "adult",
+                "status": "routed",
+                "segment_id": "SEG-A01",
+            },
+        ]
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+        state["segments"][1]["target_model"] = "seedance-2.5"
+        errors, _ = validate(state)
+        self.assertTrue(any("adult 路必须指向 wan3.0" in item for item in errors))
 
     def test_full_project_waiting_at_g1_cannot_approve_downstream(self) -> None:
         state = template()
@@ -181,7 +326,8 @@ class ProjectStateTests(unittest.TestCase):
     def test_action_route_rejects_more_than_two_types(self) -> None:
         state = template()
         state["approval_gates"]["script_adaptation"]["status"] = "not_required"
-        state["segments"] = [
+        attach_segment(
+            state,
             {
                 "id": "SEG-01",
                 "mode": "action",
@@ -195,8 +341,8 @@ class ProjectStateTests(unittest.TestCase):
                 "shots": [],
                 "start_state": "A",
                 "end_state": "B",
-            }
-        ]
+            },
+        )
         errors, _ = validate(state)
         self.assertTrue(any("混合动作类型最多两个" in item for item in errors))
 
@@ -205,7 +351,8 @@ class ProjectStateTests(unittest.TestCase):
             with self.subTest(mode=mode, duration=duration):
                 state = template()
                 state["approval_gates"]["script_adaptation"]["status"] = "not_required"
-                state["segments"] = [
+                attach_segment(
+                    state,
                     {
                         "id": "SEG-01",
                         "mode": mode,
@@ -225,15 +372,16 @@ class ProjectStateTests(unittest.TestCase):
                         ],
                         "start_state": "A",
                         "end_state": "B",
-                    }
-                ]
+                    },
+                )
                 errors, _ = validate(state)
                 self.assertEqual([], errors)
 
     def test_segment_over_model_limit_is_rejected(self) -> None:
         state = template()
         state["approval_gates"]["script_adaptation"]["status"] = "not_required"
-        state["segments"] = [
+        attach_segment(
+            state,
             {
                 "id": "SEG-01",
                 "mode": "drama",
@@ -246,8 +394,8 @@ class ProjectStateTests(unittest.TestCase):
                 "shots": [{"number": 1, "start": 0, "end": 31, "asset_ids": []}],
                 "start_state": "A",
                 "end_state": "B",
-            }
-        ]
+            },
+        )
         errors, _ = validate(state)
         self.assertTrue(any("超过有效上限" in item for item in errors))
 
