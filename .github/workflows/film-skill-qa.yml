@@ -1,0 +1,48 @@
+name: Film Skill QA
+
+on:
+  pull_request:
+    paths:
+      - "AGENTS.md"
+      - "README.md"
+      - "docs/project-state.md"
+      - "scripts/**"
+      - "skills/seedance-film-production/**"
+      - ".github/**"
+  push:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - "README.md"
+      - "docs/project-state.md"
+      - "scripts/**"
+      - "skills/seedance-film-production/**"
+      - ".github/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run project-state tests
+        run: python skills/seedance-film-production/scripts/test_validate_project_state.py
+      - name: Validate template
+        run: python skills/seedance-film-production/scripts/validate_project_state.py skills/seedance-film-production/assets/project-state.template.json
+      - name: Validate Skill structure
+        run: python scripts/validate-film-skill-structure.py
+      - name: Check whitespace errors
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git diff --check "${{ github.event.pull_request.base.sha }}"...HEAD
+          else
+            git diff --check "${{ github.event.before }}" HEAD
+          fi

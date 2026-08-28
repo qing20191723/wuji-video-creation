@@ -1,7 +1,7 @@
 interface:
   display_name: "Seedance影视创作工作流"
-  short_description: "完整影视生产、剧本会诊、对白精修与声音设计"
-  default_prompt: "使用 $seedance-film-production 判断任务模式，并把我的素材推进为可确认、可追溯的影视产物。"
+  short_description: "双模型影视生产、自然镜头提示词与可追溯成人编排"
+  default_prompt: "使用 $seedance-film-production 判断任务模式，把我的素材推进为可确认、可追溯的影视产物，并用镜头自然融入人物行动的方式编译提示词。"
 
 policy:
   allow_implicit_invocation: true

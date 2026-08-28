@@ -15,9 +15,9 @@
 
 ## 时长层级
 
-- 15–30 秒：开场直接给困境、反差、问题或强画面；只承载一个核心变化。
+- 15–30 秒：短视频分发需要时尽快给出困境、反差、问题或强画面；电影感或人物观察型片段可用更安静但有信息的开场。通常只承载一个核心变化。
 - 30–90 秒：每 10–15 秒出现信息、关系、情绪或行动增量。
-- 90 秒–3 分钟：允许小型三段推进；每 15–20 秒应有可感知变化。
+- 90 秒–3 分钟：允许小型多阶段推进；变化间隔由内容决定，不机械要求固定秒点。
 - 3–10 分钟：允许呼吸，但开场需给出继续观看的理由，重复信息必须压缩。
 - 10 分钟以上：按场和序列管理节拍，不机械套短视频秒点。
 
@@ -55,7 +55,7 @@
 
 ## 状态与回退
 
-`rhythm_profile` 至少记录：`platform`、`duration_tier`、`pacing`、`hook_window_seconds`、`progression_interval_seconds`、`breathing_shot_rule`、`locked_revision`。
+`rhythm_profile` 至少记录：`platform`、`duration_tier`、`pacing`、`hook_window_seconds`、`progression_interval_seconds`、`breathing_shot_rule`、`locked_revision`。没有明确平台或内容依据时，钩子窗口与推进间隔写 `null`，不得为了填字段虚构固定秒点。
 
 - 完整项目在 S0 建立草案，并随 G1 一起锁定。
 - 只读体检不改状态。
