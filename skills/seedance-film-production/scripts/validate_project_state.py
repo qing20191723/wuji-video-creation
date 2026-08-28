@@ -52,7 +52,13 @@ INTIMACY_LEVELS = {
     "explicit_adult",
 }
 SOURCE_AUTHORIZATIONS = {"fictional", "verified_self_or_authorized_adult"}
-SPECIALIST_TYPES = {"script_review", "dialogue_polish", "platform_rhythm", "post_sound"}
+SPECIALIST_TYPES = {
+    "script_review",
+    "dialogue_polish",
+    "performance_design",
+    "platform_rhythm",
+    "post_sound",
+}
 SPECIALIST_STATUSES = {
     "draft",
     "in_progress",
@@ -1073,6 +1079,51 @@ def _validate_v12plus(
             risk = task.get("natural_speech_risk")
             if risk not in {"low", "medium", "high"}:
                 errors.append(f"对白任务 {task_id} natural_speech_risk 必须为 low/medium/high")
+
+        if task_type == "performance_design":
+            scope = task.get("performance_scope")
+            if not isinstance(scope, dict):
+                errors.append(f"表演任务 {task_id} 缺少 performance_scope")
+                scope = {}
+            source_span_ids = _require_list(
+                scope.get("source_span_ids"),
+                f"表演任务 {task_id} performance_scope.source_span_ids",
+                errors,
+            )
+            character_ids = _require_list(
+                scope.get("character_ids"),
+                f"表演任务 {task_id} performance_scope.character_ids",
+                errors,
+            )
+            proposed_arcs = _require_list(
+                task.get("proposed_performance_arcs"),
+                f"表演任务 {task_id} proposed_performance_arcs",
+                errors,
+            )
+            if not source_span_ids:
+                errors.append(f"表演任务 {task_id} 至少需要一个 source_span_id")
+            if not character_ids:
+                errors.append(f"表演任务 {task_id} 至少需要一个 character_id")
+            if task.get("status") in {"approved", "completed"} and not proposed_arcs:
+                errors.append(f"表演任务 {task_id} 已完成但缺少 proposed_performance_arcs")
+            for arc_index, arc in enumerate(proposed_arcs):
+                if not isinstance(arc, dict):
+                    errors.append(f"表演任务 {task_id} arc[{arc_index}] 必须是对象")
+                    continue
+                for field in ("target_id", "trigger", "residual_state"):
+                    if not isinstance(arc.get(field), str) or not arc.get(field).strip():
+                        errors.append(f"表演任务 {task_id} arc[{arc_index}] 缺少 {field}")
+                tracks = _require_list(
+                    arc.get("active_tracks"),
+                    f"表演任务 {task_id} arc[{arc_index}].active_tracks",
+                    errors,
+                )
+                invalid_tracks = set(tracks) - PERFORMANCE_TRACKS
+                if invalid_tracks:
+                    errors.append(
+                        f"表演任务 {task_id} arc[{arc_index}] 存在无效表演轨: "
+                        f"{sorted(invalid_tracks)}"
+                    )
 
         if task_type == "post_sound":
             output_layer = task.get("output_layer")

@@ -261,6 +261,23 @@ def specialist_task(task_type: str = "script_review") -> dict:
     }
     if task_type == "dialogue_polish":
         task["natural_speech_risk"] = "high"
+    if task_type == "performance_design":
+        task.update(
+            {
+                "performance_scope": {
+                    "source_span_ids": ["SPAN-N01"],
+                    "character_ids": ["CHAR-A01", "CHAR-A02"],
+                },
+                "proposed_performance_arcs": [
+                    {
+                        "target_id": "SEG-01",
+                        "trigger": "一人说出关键事实，另一人先移开视线再重新看回去",
+                        "active_tracks": ["gaze", "breathing_sound"],
+                        "residual_state": "回应后的迟疑继续留在呼吸里",
+                    }
+                ],
+            }
+        )
     if task_type == "post_sound":
         task.update(
             {
@@ -760,6 +777,21 @@ class ProjectStateTests(unittest.TestCase):
                     all(state["approval_gates"][name]["status"] == "pending" for name in GATE_ORDER)
                 )
                 self.assertEqual(2, state["adapted_script"]["source_revision"])
+
+    def test_performance_specialist_requires_traceable_arc_contract(self) -> None:
+        state = template()
+        state["task_mode"] = "specialist"
+        state["interaction_state"]["current_stage"] = "specialist"
+        task = specialist_task("performance_design")
+        state["specialist_tasks"] = [task]
+        errors, _ = validate(state)
+        self.assertEqual([], errors)
+
+        task["performance_scope"]["source_span_ids"] = []
+        task["proposed_performance_arcs"][0]["active_tracks"] = ["fixed_face_quota"]
+        errors, _ = validate(state)
+        self.assertTrue(any("至少需要一个 source_span_id" in item for item in errors))
+        self.assertTrue(any("无效表演轨" in item for item in errors))
 
     def test_post_sound_prompt_reopens_only_g7(self) -> None:
         state = template()

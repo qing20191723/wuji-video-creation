@@ -1,18 +1,31 @@
 ---
 name: seedance-film-production
-description: 将剧本、想法、小说片段和多模态参考推进为可追溯、非模板化的影视生产包，也可单独执行剧本会诊、对白精修、平台节奏体检或后期声音设计。用于正常/成人剧本分路、事件驱动表演、镜头与光影规划、成人动作节拍、跨模型桥接、自适应时长与最少充分分镜、固定资产、正常段十六宫格、Seedance 2.5与Wan 3.0音画一体编译；不用于团队协作表、Google Sheets、普通影视知识问答或单张图片润色。
+description: 将剧本与多模态参考推进为可追溯的双模型影视生产包，或单独诊断剧本、对白、表演、节奏和声音。
+license: proprietary
+metadata:
+  version: "1.7.0"
+  author: "Qingchen + Codex"
+  hermes:
+    tags: [film-production, seedance, wan, cinematography, performance]
+    related_skills: [imagegen]
 ---
 
 # Seedance 影视创作流水线
 
 以“人物与因果先成立，再决定怎么拍，最后编译”为核心。完整项目使用生产门禁；单点专科只处理用户指定范围，不强迫进入整条流水线。镜头数、节奏点和字段模板不能反过来支配故事。
 
+## When to Use
+
+- 用户要把剧本、小说、想法或多模态参考推进为剧本、分镜、资产、十六宫格和视频提示词时使用。
+- 用户只要剧本会诊、对白精修、表演设计、平台节奏体检或后期声音设计时，也可进入单点专科模式。
+- 团队审批表、Google Sheets、普通影视知识问答或单张图片润色不由本 Skill 接管。
+
 ## 先选择任务模式
 
 开始时只选择一个模式并写入 `task_mode`：
 
 - `full_production`：从故事、剧本或素材推进完整生产包，执行 S0–S10 和 G1–G7。
-- `specialist`：用户明确要求剧本会诊、对白精修、平台节奏体检或后期声音设计，只读取对应参考文件。
+- `specialist`：用户明确要求剧本会诊、对白精修、表演设计、平台节奏体检或后期声音设计，只读取对应参考文件。
 
 不要因为用户粘贴了剧本就自动改写。任务不清楚但已有可执行的单点要求时，先完成该单点；只有选择会改变故事、授权范围或交付物时才追问。
 
@@ -73,6 +86,7 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 
 - **剧本会诊**：读取 [references/review-dialogue.md](references/review-dialogue.md) 的“剧本会诊”。只诊断时不改变 Canon；应用修改时提升 revision，并重新打开 G1–G7。
 - **对白精修**：读取同一文件的“对白精修”。默认只改有明确病灶的台词，保留锁定台词；应用修改时按剧本变更处理。
+- **表演设计**：读取 [references/emotion-library.md](references/emotion-library.md)。诊断只给证据、影响和建议；应用修改时写入受影响片段的 `performance_arc`，按表演 Canon 变更提升 revision 并回退 G2–G7。
 - **平台节奏体检**：读取 [references/platform-rhythm.md](references/platform-rhythm.md)。诊断不改 Canon；应用新的节奏档位时提升 revision，并重新打开 G1–G7。
 - **后期声音设计**：读取 [references/post-sound.md](references/post-sound.md)。独立 Cue Sheet 不改变 Canon；只调最终提示词内声画重叠时重新打开 G7，修改固定对白仍按剧本变更处理。
 
@@ -153,6 +167,10 @@ G1–G7 只管理用户与影视创作智能体之间的内容锁定：剧本、
 - 独立后期声音方案不回退；只调整最终提示词措辞、声画重叠或 Seedance 2.5 / Wan 3.0 内声音指令时仅将 G7 设为 `pending`。改变固定对白仍按剧本变更处理。
 
 每次变化记录原因、旧值、新值、影响范围和需重验项目。
+
+## 商用结论边界
+
+生成质量通过不等于“可商用”。只有剧本、肖像与声线、参考素材、音乐、字体、标识、场地等权利链可追溯，模型和平台条款已核验，并完成必要的人工法律/平台复核时，才可使用“可商用”结论；否则只能报告已完成的创作与技术检查以及尚未核验的风险。
 
 ## 机械校验与结束标准
 
