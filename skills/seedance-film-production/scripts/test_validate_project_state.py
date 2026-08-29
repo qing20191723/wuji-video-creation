@@ -34,6 +34,8 @@ def legacy_state(version: str) -> dict:
     state["rhythm_profile"].update(
         {"hook_window_seconds": [0, 5], "progression_interval_seconds": 15}
     )
+    if version in {"1.3", "1.4", "1.5", "1.6"}:
+        state["production_rules"]["duration_policy"] = "story_beat_first"
     if version in {"1.3", "1.4"}:
         state["production_rules"]["storyboard_layout"] = "adaptive"
     return state
@@ -85,19 +87,36 @@ def enrich_segment(segment: dict, lane: str = "normal") -> dict:
         },
     )
     segment.setdefault(
+        "narrative_paragraph",
+        {
+            "meaning": "人物的选择改变了当前关系",
+            "development": "人物观察结果后作出行动，对方以可见反应回应",
+            "completion_cue": "双方都看见选择造成的关系结果",
+            "forward_impulse": "人物准备执行下一项尚未开始的行动",
+        },
+    )
+    segment.setdefault(
+        "reentry_plan",
+        {
+            "anchor": "人物继承的动作结果",
+            "opening_action": "人物从稳定状态开始新的选择",
+            "inherited_state": "人物身份、位置、服装、道具、光线、呼吸和关系结果不变",
+            "first_new_information": "观众先看见人物正在采取不同策略",
+        },
+    )
+    segment.setdefault(
         "camera_plan",
         {
-            "watching_reason": "观察选择如何改变人物关系",
-            "axis_side": "保持人物关系轴同侧",
-            "eyeline_map": "视线在对手与手中物件之间转换",
-            "screen_direction": "主体移动保持由左向右",
-            "framing_and_perspective": "中近景、自然透视",
-            "camera_height_and_angle": "平视",
-            "movement": "轻微跟随主体重心",
-            "movement_motivation": "由人物前移触发",
-            "focus_path": "从眼睛转到手中物件再回到眼睛",
-            "cut_reason": "关系信息完成后结束",
-            "end_composition": "人物停在画面右侧并保留对手视线空间",
+            "entry_view": "从人物继承的动作结果重新找到双方关系",
+            "attention_progression": "注意力从人物选择转向对方回应，再回到关系结果",
+            "viewpoint_turns": [
+                {
+                    "trigger": "对方作出改变关系的回应",
+                    "camera_response": "观看位置让出两人的新距离",
+                    "revealed_meaning": "选择已经改变双方关系",
+                }
+            ],
+            "closing_view": "双方停在已经改变的关系状态上",
         },
     )
     lighting_snapshot = {
@@ -217,20 +236,16 @@ def sequence_state(lanes: list[str], durations: list[float] | None = None) -> di
                     to_segment["source_span_ids"][0],
                 ],
                 "lane_change": lane_change,
-                "bridge_types": ["continuous_action", "sound_bridge"],
-                "visual_anchor": "人物位置、视线空间与结束构图连续",
-                "action_carry": "前段动作余势成为后段起点",
-                "performance_residue": "呼吸和迟疑没有瞬间归零",
-                "lighting_carry": "窗光方向、综合色温和曝光重点保持",
+                "completed_meaning": from_segment["narrative_paragraph"]["meaning"],
+                "forward_impulse": from_segment["narrative_paragraph"]["forward_impulse"],
+                "reentry_anchor": to_segment["reentry_plan"]["anchor"],
+                "inherited_state": to_segment["reentry_plan"]["inherited_state"],
                 "lighting_change_trigger": None,
-                "audio_carry": "衣料声尾音有来源地跨段",
-                "wardrobe_and_coverage": "服装与覆盖状态原样继承",
-                "consent_state": "成人边界内持续明确；正常段不新增亲密行为",
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
                 "boundary_action": {
                     "outgoing_event": f"片段{index + 1}完成其末动作",
-                    "incoming_event": f"片段{index + 2}从下一因果动作启动",
+                    "incoming_event": to_segment["reentry_plan"]["opening_action"],
                     "handoff_rule": "non_overlapping_sequential",
                 },
                 "status": "planned",
@@ -300,12 +315,12 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v16_template_passes(self) -> None:
+    def test_v17_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
 
-    def test_v16_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
+    def test_v17_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
         state = template()
         state["model_profile"]["prompt_limits"]["official_max_characters"] = 2000
         state["model_profile"]["prompt_limits"]["official_status"] = "published"
@@ -394,6 +409,11 @@ class ProjectStateTests(unittest.TestCase):
         errors, warnings = validate(state)
         self.assertEqual([], errors)
         self.assertTrue(any("可能改写已锁定 Canon" in item for item in warnings))
+
+    def test_v16_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.6"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("建议升级到 1.7" in item for item in warnings))
 
     def test_v15_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.5"))
@@ -526,19 +546,16 @@ class ProjectStateTests(unittest.TestCase):
                 "to_segment_id": "SEG-A01",
                 "source_span_ids": ["SPAN-N01", "SPAN-A01"],
                 "lane_change": "normal_to_adult",
-                "bridge_types": ["continuous_action", "sound_bridge"],
-                "visual_anchor": "相同人物位置与门框遮挡",
-                "action_carry": "正常段结束于最后一个非明确靠近动作，成人段从首个明确动作开始",
-                "performance_residue": "犹疑仍残留在呼吸中",
-                "lighting_carry": "画面左侧窗光方向与曝光保持",
-                "audio_carry": "衣料声尾音跨入下一段",
-                "wardrobe_and_coverage": "覆盖状态按边界关键帧原样继承",
-                "consent_state": "双方成年、授权且持续明确回应",
+                "completed_meaning": normal["narrative_paragraph"]["meaning"],
+                "forward_impulse": normal["narrative_paragraph"]["forward_impulse"],
+                "reentry_anchor": adult["reentry_plan"]["anchor"],
+                "inherited_state": adult["reentry_plan"]["inherited_state"],
+                "lighting_change_trigger": None,
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
                 "boundary_action": {
                     "outgoing_event": "停在最后一个非明确靠近动作",
-                    "incoming_event": "从第一个明确且已批准动作启动",
+                    "incoming_event": adult["reentry_plan"]["opening_action"],
                     "handoff_rule": "non_overlapping_sequential",
                 },
                 "status": "planned",
@@ -569,14 +586,20 @@ class ProjectStateTests(unittest.TestCase):
 
     def test_forward_normal_adult_normal_bridge_passes(self) -> None:
         state = sequence_state(["normal", "adult", "normal"], [10, 24, 7])
+        state["segments"][1]["reentry_plan"]["opening_action"] = (
+            "成人段从原文第一个明确且已批准的接触启动"
+        )
+        state["segments"][2]["reentry_plan"]["opening_action"] = (
+            "正常段从暂停结果与未平复呼吸继续"
+        )
         state["transition_ledger"][0]["boundary_action"] = {
             "outgoing_event": "正常段停在双方明确注视并相向靠近",
-            "incoming_event": "成人段从原文第一个明确且已批准的接触启动",
+            "incoming_event": state["segments"][1]["reentry_plan"]["opening_action"],
             "handoff_rule": "non_overlapping_sequential",
         }
         state["transition_ledger"][1]["boundary_action"] = {
             "outgoing_event": "成人段在双方主动暂停后停稳",
-            "incoming_event": "正常段从暂停结果与未平复呼吸继续",
+            "incoming_event": state["segments"][2]["reentry_plan"]["opening_action"],
             "handoff_rule": "non_overlapping_sequential",
         }
         errors, warnings = validate(state)
@@ -590,7 +613,76 @@ class ProjectStateTests(unittest.TestCase):
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
 
-    def test_v16_requires_exactly_one_transition_for_adjacent_segments(self) -> None:
+    def test_narrative_paragraph_and_reentry_plan_are_required(self) -> None:
+        state = sequence_state(["normal"])
+        state["segments"][0].pop("narrative_paragraph")
+        state["segments"][0].pop("reentry_plan")
+        errors, _ = validate(state)
+        self.assertTrue(any("缺少 narrative_paragraph" in item for item in errors))
+        self.assertTrue(any("缺少 reentry_plan" in item for item in errors))
+
+    def test_viewpoint_turn_requires_story_revelation(self) -> None:
+        state = sequence_state(["normal"])
+        state["segments"][0]["camera_plan"]["viewpoint_turns"][0][
+            "revealed_meaning"
+        ] = ""
+        errors, _ = validate(state)
+        self.assertTrue(any("revealed_meaning" in item for item in errors))
+
+    def test_reentry_can_change_camera_position_without_resetting_story_world(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["segments"][0]["camera_plan"]["closing_view"] = (
+            "从门边看见人物已经接受谈话结果"
+        )
+        state["segments"][1]["camera_plan"]["entry_view"] = (
+            "从桌上仍在震动的手机重新找到人物的新动作"
+        )
+        state["segments"][1]["reentry_plan"].update(
+            {
+                "anchor": "桌上仍在震动的手机",
+                "first_new_information": "人物没有接电话，而是把钥匙推向对方",
+            }
+        )
+        state["transition_ledger"][0]["reentry_anchor"] = (
+            state["segments"][1]["reentry_plan"]["anchor"]
+        )
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_transition_semantics_must_match_adjacent_paragraphs(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["transition_ledger"][0]["completed_meaning"] = "另一个未发生的结果"
+        state["transition_ledger"][0]["reentry_anchor"] = "不存在的物体"
+        errors, _ = validate(state)
+        self.assertTrue(any("completed_meaning" in item for item in errors))
+        self.assertTrue(any("reentry_anchor" in item for item in errors))
+
+    def test_related_normal_paragraphs_may_share_one_storyboard_asset(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        for segment in state["segments"]:
+            segment["storyboard_asset_ids"] = ["BOARD-01"]
+        errors, warnings = validate(state)
+        self.assertEqual([], errors)
+        self.assertEqual([], warnings)
+
+    def test_adult_reentry_state_cannot_silently_reset(self) -> None:
+        state = sequence_state(["adult", "adult"])
+        state["segments"][1]["reentry_plan"]["inherited_state"] = (
+            "人物身份连续，但服装、支撑、呼吸和同意状态全部重置"
+        )
+        errors, _ = validate(state)
+        self.assertTrue(any("inherited_state" in item for item in errors))
+
+    def test_generation_units_depend_on_canonical_assets_not_previous_clip(self) -> None:
+        state = template()
+        state["production_rules"]["generation_dependency_policy"] = (
+            "extend_previous_generated_clip"
+        )
+        errors, _ = validate(state)
+        self.assertTrue(any("generation_dependency_policy" in item for item in errors))
+
+    def test_v17_requires_exactly_one_transition_for_adjacent_segments(self) -> None:
         state = sequence_state(["normal", "normal"])
         state["transition_ledger"] = []
         errors, _ = validate(state)

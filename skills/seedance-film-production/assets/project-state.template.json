@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "project_id": "PROJECT-001",
   "revision": 1,
   "task_mode": "full_production",
@@ -76,7 +76,7 @@
   "production_rules": {
     "default_language": "zh-CN",
     "default_aspect_ratio": "16:9",
-    "duration_policy": "story_beat_first",
+    "duration_policy": "narrative_paragraph_first",
     "max_segment_seconds_from_model_profile": true,
     "shot_count_policy": "minimum_sufficient",
     "storyboard_layout": "normal_lane_4x4_16_panel",
@@ -89,6 +89,10 @@
     "lane_transition_policy": "explicit_state_handoff",
     "performance_timing_policy": "event_driven",
     "prompt_prose_policy": "camera_embedded_natural_prose",
+    "segment_semantics": "narrative_paragraph",
+    "continuity_policy": "story_world_inherits_camera_may_reenter",
+    "generation_dependency_policy": "canonical_assets_not_previous_generated_clip",
+    "storyboard_grouping_policy": "adaptive_after_approved_shot_breakdown",
     "adult_description_policy": "maximum_non_graphic_detail_no_silent_omission",
     "prompt_length_policy": "official_hard_limit_plus_adaptive_soft_budget",
     "character_identity_asset": {
