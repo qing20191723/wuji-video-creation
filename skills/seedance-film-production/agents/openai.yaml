@@ -1,7 +1,7 @@
 interface:
   display_name: "Seedance影视创作工作流"
-  short_description: "双模型影视生产、自然镜头提示词与可追溯成人编排"
-  default_prompt: "使用 $seedance-film-production 判断任务模式，把我的素材推进为可确认、可追溯的影视产物，并用镜头自然融入人物行动的方式编译提示词。"
+  short_description: "叙事段落、镜头再入场与双模型影视生产"
+  default_prompt: "使用 $seedance-film-production 把素材按已经讲完的故事意义划分叙事段落，让下一段从新的专业观看位置进入同一世界，再推进分镜、资产、十六宫格和双模型提示词。"
 
 policy:
   allow_implicit_invocation: true

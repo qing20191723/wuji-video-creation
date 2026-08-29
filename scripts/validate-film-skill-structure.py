@@ -10,6 +10,10 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = REPOSITORY_ROOT / "skills" / "seedance-film-production"
 ENTRYPOINT = SKILL_ROOT / "SKILL.md"
+EXPECTED_VERSION = "1.8.0"
+MAX_ENTRYPOINT_LINES = 120
+MAX_ENTRYPOINT_CHARACTERS = 6000
+MAX_MARKDOWN_LINES = 1500
 
 
 def fail(message: str) -> None:
@@ -23,6 +27,7 @@ def main() -> int:
         SKILL_ROOT / "assets" / "project-state.template.json",
         SKILL_ROOT / "scripts" / "validate_project_state.py",
         SKILL_ROOT / "scripts" / "test_validate_project_state.py",
+        SKILL_ROOT / "references" / "narrative-direction.md",
     ]
     missing = [str(path.relative_to(REPOSITORY_ROOT)) for path in required if not path.is_file()]
     if missing:
@@ -45,15 +50,72 @@ def main() -> int:
         fail("frontmatter description is required")
     if len(description.group(1).strip()) > 240:
         fail("frontmatter description is too broad; keep it under 240 characters")
-    if not version or version.group(1).strip() != "1.7.0":
-        fail("metadata.version must be 1.7.0")
+    if not version or version.group(1).strip() != EXPECTED_VERSION:
+        fail(f"metadata.version must be {EXPECTED_VERSION}")
     if "## When to Use" not in body:
         fail("SKILL.md must contain a When to Use section")
+    if len(text.splitlines()) > MAX_ENTRYPOINT_LINES:
+        fail(f"SKILL.md exceeds {MAX_ENTRYPOINT_LINES} lines")
+    if len(text) > MAX_ENTRYPOINT_CHARACTERS:
+        fail(f"SKILL.md exceeds {MAX_ENTRYPOINT_CHARACTERS} characters")
+
+    stage_markers = (
+        "## 按阶段读取",
+        "G1 剧本",
+        "G2 分镜",
+        "G3–G5 资产",
+        "G6 正常故事板",
+        "G7 编译",
+    )
+    missing_stage_markers = [marker for marker in stage_markers if marker not in body]
+    if missing_stage_markers:
+        fail("missing staged-loading markers: " + ", ".join(missing_stage_markers))
+    if "references/narrative-direction.md" not in body:
+        fail("SKILL.md must route narrative direction to narrative-direction.md")
 
     routed_refs = set(re.findall(r"\((references/[^)#]+\.md)\)", body))
     missing_refs = [reference for reference in sorted(routed_refs) if not (SKILL_ROOT / reference).is_file()]
     if missing_refs:
         fail("missing routed references: " + ", ".join(missing_refs))
+
+    markdown_paths = sorted(SKILL_ROOT.rglob("*.md"))
+    markdown_lines = sum(
+        len(path.read_text(encoding="utf-8").splitlines()) for path in markdown_paths
+    )
+    if markdown_lines > MAX_MARKDOWN_LINES:
+        fail(f"Markdown package exceeds {MAX_MARKDOWN_LINES} lines ({markdown_lines})")
+
+    link_pattern = re.compile(r"\[[^\]]+\]\(([^)#]+\.md)(?:#[^)]+)?\)")
+    broken_links: list[str] = []
+    for path in markdown_paths:
+        document = path.read_text(encoding="utf-8")
+        for target in link_pattern.findall(document):
+            if re.match(r"^[a-z]+://", target, re.IGNORECASE):
+                continue
+            resolved = (path.parent / target).resolve()
+            if not resolved.is_file():
+                broken_links.append(
+                    f"{path.relative_to(SKILL_ROOT)} -> {target}"
+                )
+    if broken_links:
+        fail("broken Markdown links: " + ", ".join(sorted(broken_links)))
+
+    rule_owners: dict[str, Path] = {}
+    duplicate_rules: list[str] = []
+    rule_signal = re.compile(r"必须|不得|禁止|不能|只允许|只负责|需要")
+    for path in markdown_paths:
+        for raw_line in path.read_text(encoding="utf-8").splitlines():
+            line = re.sub(r"^\s*(?:[-*]|\d+\.)\s+", "", raw_line).strip()
+            normalized = re.sub(r"\s+", " ", line)
+            if len(normalized) < 45 or not rule_signal.search(normalized):
+                continue
+            owner = rule_owners.setdefault(normalized, path)
+            if owner != path:
+                duplicate_rules.append(
+                    f"{owner.relative_to(SKILL_ROOT)} = {path.relative_to(SKILL_ROOT)}: {normalized}"
+                )
+    if duplicate_rules:
+        fail("duplicated hard-rule text: " + " | ".join(duplicate_rules))
 
     unfinished = re.compile(r"\b(?:TODO|FIXME|PLACEHOLDER)\b|\[TODO\]", re.IGNORECASE)
     for path in SKILL_ROOT.rglob("*"):
@@ -62,7 +124,8 @@ def main() -> int:
                 fail(f"unfinished scaffold marker in {path.relative_to(REPOSITORY_ROOT)}")
 
     print(
-        f"Skill structure valid: version 1.7.0, {len(routed_refs)} routed references, "
+        f"Skill structure valid: version {EXPECTED_VERSION}, {len(routed_refs)} routed references, "
+        f"{markdown_lines} Markdown lines, "
         f"{sum(1 for path in SKILL_ROOT.rglob('*') if path.is_file() and '__pycache__' not in path.parts)} files."
     )
     return 0
