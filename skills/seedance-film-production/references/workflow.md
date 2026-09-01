@@ -52,7 +52,7 @@ G1–G7 不记录负责人、审核人、Google Sheet、意见汇总、云端验
 
 ### G6 正常十六宫格
 
-根据批准分镜决定每张画板覆盖哪些正常叙事段落。先交付图片提示词，再用批准资产生成并逐格验收。成人段为 `not_required`。
+根据批准分镜决定每张画板覆盖哪些正常叙事段落。先交付图片提示词，再用批准资产生成并逐格验收。若扩展到相关正常段落后仍不足 16 个有因果价值的状态，且继续补格只会注水，则记录理由，把 G6 标为 `not_required`，以已批准关键帧或分镜资产进入 G7。成人段为 `not_required`。
 
 ### G7 最终编译
 
@@ -71,11 +71,11 @@ G1–G7 不记录负责人、审核人、Google Sheet、意见汇总、云端验
 修改后失效项｜下一步与所需材料
 ```
 
-## Schema 1.7 契约
+## Schema 1.8 契约
 
-片段在 1.6 状态基础上新增 `narrative_paragraph` 与 `reentry_plan`，并使用语义化 `camera_plan`。相邻片段仍各有唯一 `transition_ledger`，但它移交完成意义、前向冲动、再入场锚点和继承状态；精确动作确需连续时才附共享边界资产。成人段继续要求覆盖实际时长的 `intimacy_beats`，正常段不得携带。
+片段保留 1.7 的 `narrative_paragraph` 与 `reentry_plan`，新增 `composition_plan`；`camera_plan` 增加轴线、视线、屏幕方向和入/出镜动静状态，`viewpoint_turns` 使用统一摄影响应枚举。相邻片段各有唯一 `transition_ledger`，并以 `edit_bridge` 记录匹配依据、桥接方式、理由和主动断裂。精确动作确需连续时才附共享边界资产。成人段继续要求覆盖实际时长的 `intimacy_beats`，正常段不得携带。
 
-`compiled_prompts` 每段只能有一条当前 revision 提示词。Wan 官方上限 20,000 字符；Seedance 官方上限保持未知，除非当前入口给出可核验数值。校验器兼容 1.1–1.6 并提示升级。
+`compiled_prompts` 每段只能有一条当前 revision 提示词。Wan 官方上限 20,000 字符；Seedance 官方上限保持未知，除非当前入口给出可核验数值。校验器兼容 1.1–1.7 并提示升级。
 
 ## 回退
 

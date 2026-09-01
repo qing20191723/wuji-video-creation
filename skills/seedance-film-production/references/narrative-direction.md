@@ -48,8 +48,10 @@ G2 分段、正常分镜、成人动作段落和 G7 提示词都以本文件为�
 
 - `entry_view`：本段如何进入观看，并与 `reentry_plan` 一致；
 - `attention_progression`：注意力随故事怎样推进；
-- `viewpoint_turns`：仅列真正改变理解的变化，每项写 `trigger / camera_response / revealed_meaning`；没有变化时用空数组；
+- `viewpoint_turns`：仅列真正改变理解的变化，每项写固定枚举 `response_type`、自然语言 `trigger / camera_response / revealed_meaning`；没有变化时用空数组；
 - `closing_view`：本段结束时观众最后看懂什么。
+
+`response_type` 使用 `static / descend / pull-back / push-in / pan-tilt / follow / lateral-track / ascend / focus-shift / other`。这是摄影响应，不是效果清单。每段还以 `composition_plan` 记录主导点、对比方式、引导线、前中后景、留白、视觉重量和起止画面；以 `camera_plan.continuity` 记录轴线侧、视线目标、屏幕方向及入/出镜的动静状态。
 
 摄影机响应可以是移动、切换、焦点变化或保持不动。术语不能单独构成 `camera_response`；删掉术语后，触发与揭示仍应成立。轴线、屏幕方向和光影技术连续读取 `cinematography.md`。
 

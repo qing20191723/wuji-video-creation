@@ -3,7 +3,7 @@ name: seedance-film-production
 description: 将剧本与多模态参考推进为可追溯的双模型影视生产包，或单独诊断剧本、对白、表演、节奏和声音。
 license: proprietary
 metadata:
-  version: "1.8.0"
+  version: "1.9.0"
   author: "Qingchen + Codex"
   hermes:
     tags: [film-production, seedance, wan, narrative-direction, performance]
@@ -27,7 +27,7 @@ metadata:
 3. 最终编译只转换已批准内容，不新增剧情、人物、道具、行为、台词或结局。
 4. 正常跨度只进入 Seedance 2.5；成人跨度只进入 Wan 3.0；每个跨度有且只有一个路由。
 5. 两路均原生音画一体。片长按实际可拍内容估算，不填满 30 秒，不设镜头配额。
-6. 正常完整生产使用 4×4 十六宫格做视觉锁定；成人段不做十六宫格。
+6. 正常完整生产默认使用 4×4 十六宫格做视觉锁定；若批准内容无法提供 16 个有因果价值的状态且扩展画板范围仍会注水，将 G6 记为 `not_required` 并写明理由，改用已批准关键帧/分镜资产。成人段不做十六宫格。
 7. 成人内容仅处理清楚成年、成人化呈现、虚构或获授权且持续自愿的参与者；边界不清时停止询问。禁止未成年人/幼态校园化、真实第三方或公众人物性化、非自愿或失能、偷拍泄露、乱伦、人口剥削、兽交、恋尸及审核规避。
 8. 已批准且可处理的成人跨度不能静默删除、概括或升级；当前环境不能展开的细部保留中性行为类别与来源跨度。
 9. Wan 3.0 官方提示词上限 20,000 字符；Seedance 2.5 官方未公布字符上限。记录当前入口限制，超限时压缩或在真实叙事段落处拆分，不截断。
@@ -68,7 +68,7 @@ G1 后的所有分段、摄影和提示词先读取 [叙事段落与镜头再入
 
 ## 状态与回退
 
-从 `assets/project-state.template.json` 建立状态。Schema 1.7 的片段以 `narrative_paragraph` 说明本段意义、发展、完成信号和前向冲动，以 `reentry_plan` 说明入场锚点、首个新动作、继承状态和第一条新信息；`camera_plan` 只记录入场观看、注意力推进、真正改变理解的视点变化和结束观看。`transition_ledger` 移交已完成意义、前向冲动、再入场锚点和故事状态，而不是要求摄影机连续。
+从 `assets/project-state.template.json` 建立状态。Schema 1.8 保留 1.7 的叙事段落与再入场，并新增 `composition_plan`、`camera_plan.continuity`、带 `response_type` 的视点变化及 `transition_ledger.edit_bridge`。点、线、面必须写成具体空间关系；动接动、静接静只是默认倾向，静动切换可以由表演、动作、声音或叙事转折直接成立。1.7 项目继续兼容并提示升级。
 
 - 应用剧本、对白、节奏或成人边界变化：提升 revision，回退 G1–G7。
 - 改变表演、叙事分段、再入场、镜头、光影或跨段 Canon：保留 G1，回退 G2–G7。

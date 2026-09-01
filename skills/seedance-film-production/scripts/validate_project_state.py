@@ -140,6 +140,58 @@ COLLABORATION_ONLY_FIELDS = {
     "watermarked_delivery",
     "publishing_status",
 }
+CAMERA_RESPONSE_TYPES = {
+    "static",
+    "descend",
+    "pull-back",
+    "push-in",
+    "pan-tilt",
+    "follow",
+    "lateral-track",
+    "ascend",
+    "focus-shift",
+    "other",
+}
+SCREEN_DIRECTIONS = {
+    "left-to-right",
+    "right-to-left",
+    "toward",
+    "away",
+    "neutral",
+    "variable",
+}
+AXIS_SIDES = {"left", "right", "on-axis", "not-applicable"}
+MOTION_STATES = {"static", "moving"}
+MATCH_BASES = {"action", "direction", "shape", "gaze", "sound", "light", "position", "none"}
+EDIT_BRIDGES = {
+    "none",
+    "direct",
+    "action-match",
+    "gaze-match",
+    "shape-match",
+    "sound-bridge",
+    "light-match",
+    "story-reaction",
+    "motivated-break",
+}
+VAGUE_COMPOSITION_VALUES = {
+    "电影感",
+    "高级感",
+    "点线面",
+    "cinematic",
+    "cinematic composition",
+    "好看",
+    "高级",
+}
+GENERIC_EDIT_REASONS = {
+    "缓冲",
+    "缓冲一下",
+    "过渡",
+    "更顺滑",
+    "避免跳切",
+    "buffer",
+    "smoother transition",
+}
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -318,7 +370,7 @@ def _validate_content_profile(
         errors.append(f"schema {schema_version} 缺少 content_profile")
         return
 
-    if schema_version in {"1.5", "1.6", "1.7"}:
+    if schema_version in {"1.5", "1.6", "1.7", "1.8"}:
         if profile.get("routing_policy") != "explicit_normal_adult_split":
             errors.append("content_profile.routing_policy 必须为 explicit_normal_adult_split")
         if profile.get("audio_policy") != "integrated_av":
@@ -587,6 +639,15 @@ def _require_nonempty_string(value: Any, field: str, errors: list[str]) -> bool:
     return True
 
 
+def _require_concrete_composition(value: Any, field: str, errors: list[str]) -> bool:
+    if not _require_nonempty_string(value, field, errors):
+        return False
+    if value.strip().casefold() in {item.casefold() for item in VAGUE_COMPOSITION_VALUES}:
+        errors.append(f"{field} 必须描述真实空间关系，不能只写风格标签")
+        return False
+    return True
+
+
 def _validate_visual_bible(data: dict[str, Any], errors: list[str]) -> None:
     bible = data.get("visual_bible")
     if not isinstance(bible, dict):
@@ -668,6 +729,44 @@ def _validate_reentry_plan(segment: dict[str, Any], errors: list[str]) -> None:
         _require_nonempty_string(plan.get(field), f"片段 {sid} reentry_plan.{field}", errors)
 
 
+def _validate_composition_plan(segment: dict[str, Any], errors: list[str]) -> None:
+    sid = segment.get("id", "<unknown>")
+    plan = segment.get("composition_plan")
+    if not isinstance(plan, dict):
+        errors.append(f"片段 {sid} 缺少 composition_plan")
+        return
+    for field in (
+        "dominant_point",
+        "point_contrast",
+        "negative_space",
+        "visual_weight",
+        "start_frame",
+        "end_frame",
+    ):
+        _require_concrete_composition(
+            plan.get(field), f"片段 {sid} composition_plan.{field}", errors
+        )
+    guiding_lines = _require_list(
+        plan.get("guiding_lines"), f"片段 {sid} composition_plan.guiding_lines", errors
+    )
+    for index, line in enumerate(guiding_lines):
+        if not isinstance(line, dict):
+            errors.append(f"片段 {sid} guiding_lines[{index}] 必须是对象")
+            continue
+        for field in ("source", "direction", "destination", "purpose"):
+            _require_concrete_composition(
+                line.get(field), f"片段 {sid} guiding_lines[{index}].{field}", errors
+            )
+    planes = plan.get("planes")
+    if not isinstance(planes, dict):
+        errors.append(f"片段 {sid} composition_plan.planes 必须是对象")
+    else:
+        for field in ("foreground", "midground", "background"):
+            _require_concrete_composition(
+                planes.get(field), f"片段 {sid} composition_plan.planes.{field}", errors
+            )
+
+
 def _validate_camera_plan(
     segment: dict[str, Any], errors: list[str], schema_version: str
 ) -> None:
@@ -704,6 +803,37 @@ def _validate_camera_plan(
             _require_nonempty_string(
                 turn.get(field), f"片段 {sid} viewpoint_turns[{index}].{field}", errors
             )
+        if schema_version == "1.8":
+            response_type = turn.get("response_type")
+            if response_type not in CAMERA_RESPONSE_TYPES:
+                errors.append(
+                    f"片段 {sid} viewpoint_turns[{index}].response_type 无效: {response_type}"
+                )
+            if response_type == "other":
+                _require_nonempty_string(
+                    turn.get("other_description"),
+                    f"片段 {sid} viewpoint_turns[{index}].other_description",
+                    errors,
+                )
+    if schema_version == "1.8":
+        continuity = plan.get("continuity")
+        if not isinstance(continuity, dict):
+            errors.append(f"片段 {sid} camera_plan.continuity 必须是对象")
+            return
+        if continuity.get("axis_side") not in AXIS_SIDES:
+            errors.append(f"片段 {sid} camera_plan.continuity.axis_side 无效")
+        _require_nonempty_string(
+            continuity.get("eyeline_target"),
+            f"片段 {sid} camera_plan.continuity.eyeline_target",
+            errors,
+        )
+        if continuity.get("screen_direction") not in SCREEN_DIRECTIONS:
+            errors.append(f"片段 {sid} camera_plan.continuity.screen_direction 无效")
+        for field in ("motion_in", "motion_out"):
+            if continuity.get(field) not in MOTION_STATES:
+                errors.append(
+                    f"片段 {sid} camera_plan.continuity.{field} 必须为 static 或 moving"
+                )
 
 
 def _validate_lighting_state(segment: dict[str, Any], errors: list[str]) -> None:
@@ -922,6 +1052,55 @@ def _validate_transition_ledger(
                     errors.append(
                         f"叙事移交 {transition_id}.{field} 与相邻片段已批准状态不一致"
                     )
+        if schema_version == "1.8":
+            edit_bridge = entry.get("edit_bridge")
+            if not isinstance(edit_bridge, dict):
+                errors.append(f"转场 {transition_id} 缺少 edit_bridge")
+            else:
+                bases = _require_list(
+                    edit_bridge.get("match_basis"),
+                    f"转场 {transition_id}.edit_bridge.match_basis",
+                    errors,
+                )
+                if not bases:
+                    errors.append(f"转场 {transition_id}.edit_bridge.match_basis 不能为空")
+                elif not all(isinstance(item, str) and item in MATCH_BASES for item in bases):
+                    errors.append(f"转场 {transition_id}.edit_bridge.match_basis 含无效值")
+                elif "none" in bases and len(bases) != 1:
+                    errors.append(f"转场 {transition_id}.edit_bridge.match_basis 的 none 不得与其他依据并用")
+                if edit_bridge.get("bridge") not in EDIT_BRIDGES:
+                    errors.append(f"转场 {transition_id}.edit_bridge.bridge 无效")
+                reason = edit_bridge.get("reason")
+                if _require_nonempty_string(
+                    reason, f"转场 {transition_id}.edit_bridge.reason", errors
+                ) and reason.strip().casefold() in {
+                    item.casefold() for item in GENERIC_EDIT_REASONS
+                }:
+                    errors.append(f"转场 {transition_id}.edit_bridge.reason 不能只是无信息缓冲")
+                intentional_break = edit_bridge.get("intentional_break")
+                if not isinstance(intentional_break, bool):
+                    errors.append(f"转场 {transition_id}.edit_bridge.intentional_break 必须是布尔值")
+
+                from_continuity = from_segment.get("camera_plan", {}).get("continuity", {})
+                to_continuity = to_segment.get("camera_plan", {}).get("continuity", {})
+                from_axis = from_continuity.get("axis_side")
+                to_axis = to_continuity.get("axis_side")
+                if (
+                    from_axis in {"left", "right"}
+                    and to_axis in {"left", "right"}
+                    and from_axis != to_axis
+                    and intentional_break is not True
+                ):
+                    errors.append(f"转场 {transition_id} 越轴但未记录可见重建或主动断裂")
+                from_direction = from_continuity.get("screen_direction")
+                to_direction = to_continuity.get("screen_direction")
+                if (
+                    from_direction in {"left-to-right", "right-to-left"}
+                    and to_direction in {"left-to-right", "right-to-left"}
+                    and from_direction != to_direction
+                    and intentional_break is not True
+                ):
+                    errors.append(f"转场 {transition_id} 屏幕方向反转但未记录主动断裂")
         if entry.get("handoff_mode") not in HANDOFF_MODES:
             errors.append(f"转场 {transition_id}.handoff_mode 无效")
         asset_id = entry.get("shared_boundary_asset_id")
@@ -960,7 +1139,7 @@ def _validate_transition_ledger(
                 and outgoing_event.strip() == incoming_event.strip()
             ):
                 errors.append(f"转场 {transition_id} 的边界动作重复，必须拆成前后不重叠事件")
-            if schema_version == "1.7":
+            if schema_version in {"1.7", "1.8"}:
                 opening_action = to_segment.get("reentry_plan", {}).get("opening_action")
                 if (
                     isinstance(opening_action, str)
@@ -1242,19 +1421,19 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         )
 
     schema_version = data.get("schema_version")
-    if schema_version not in {"1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
-        errors.append("schema_version 必须为 1.1、1.2、1.3、1.4、1.5、1.6 或 1.7")
+    if schema_version not in {"1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8"}:
+        errors.append("schema_version 必须为 1.1、1.2、1.3、1.4、1.5、1.6、1.7 或 1.8")
     elif schema_version == "1.1":
-        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.7")
+        warnings.append("schema_version 1.1 为兼容格式；建议升级到 1.8")
     else:
         _validate_v12plus(data, errors, warnings, schema_version)
-        if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6"}:
-            warnings.append(f"schema_version {schema_version} 为兼容格式；建议升级到 1.7")
-        if schema_version in {"1.4", "1.5", "1.6", "1.7"}:
+        if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
+            warnings.append(f"schema_version {schema_version} 为兼容格式；建议升级到 1.8")
+        if schema_version in {"1.4", "1.5", "1.6", "1.7", "1.8"}:
             _validate_content_profile(data, errors, schema_version)
-        if schema_version in {"1.5", "1.6", "1.7"}:
+        if schema_version in {"1.5", "1.6", "1.7", "1.8"}:
             _validate_adult_model_profile(data, errors)
-        if schema_version in {"1.6", "1.7"}:
+        if schema_version in {"1.6", "1.7", "1.8"}:
             _validate_visual_bible(data, errors)
             _validate_prompt_limits(data.get("model_profile"), "model_profile", "seedance-2.5", errors)
             _validate_prompt_limits(
@@ -1289,7 +1468,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append("production_rules.storyboard_layout 必须为 adaptive")
     else:
         expected_duration_policy = (
-            "narrative_paragraph_first" if schema_version == "1.7" else "story_beat_first"
+            "narrative_paragraph_first" if schema_version in {"1.7", "1.8"} else "story_beat_first"
         )
         if production_rules.get("duration_policy") != expected_duration_policy:
             errors.append(
@@ -1309,7 +1488,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append("成人末段必须使用实际时长且不得注水")
         if production_rules.get("audio_generation") != "integrated_av":
             errors.append("完整生产默认必须使用音画一体生成")
-        if schema_version in {"1.6", "1.7"}:
+        if schema_version in {"1.6", "1.7", "1.8"}:
             expected_rules = {
                 "camera_movement_policy": "motivated_only",
                 "lighting_continuity_policy": "change_requires_motivation",
@@ -1322,7 +1501,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             for field, expected in expected_rules.items():
                 if production_rules.get(field) != expected:
                     errors.append(f"production_rules.{field} 必须为 {expected}")
-        if schema_version == "1.7":
+        if schema_version in {"1.7", "1.8"}:
             expected_narrative_rules = {
                 "segment_semantics": "narrative_paragraph",
                 "continuity_policy": "story_world_inherits_camera_may_reenter",
@@ -1374,7 +1553,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
     if len(awaiting) > 1:
         errors.append("同时等待确认的核心门禁不得超过一个")
 
-    if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
+    if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8"}:
         interaction = data.get("interaction_state", {})
         declared = interaction.get("pending_gate") if isinstance(interaction, dict) else None
         actual = awaiting[0] if len(awaiting) == 1 else None
@@ -1434,7 +1613,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         errors.append("同一正式附件引用绑定了多个资产职责")
 
     effective_limits = OFFICIAL_LIMITS
-    if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
+    if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8"}:
         candidate = data.get("model_profile", {}).get("effective_limits")
         if isinstance(candidate, dict):
             effective_limits = {**OFFICIAL_LIMITS, **candidate}
@@ -1461,7 +1640,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         errors.append("片段 id 重复")
 
     span_map: dict[str, dict[str, Any]] = {}
-    if schema_version in {"1.5", "1.6", "1.7"}:
+    if schema_version in {"1.5", "1.6", "1.7", "1.8"}:
         span_map, _ = _validate_source_spans(data, errors)
 
     project_pacing = data.get("rhythm_profile", {}).get("pacing")
@@ -1474,9 +1653,9 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
         duration = segment.get("duration_seconds")
         shots = segment.get("shots", [])
 
-        content_lane = segment.get("content_lane") if schema_version in {"1.5", "1.6", "1.7"} else "normal"
-        target_model = segment.get("target_model") if schema_version in {"1.5", "1.6", "1.7"} else "seedance-2.5"
-        if schema_version in {"1.5", "1.6", "1.7"}:
+        content_lane = segment.get("content_lane") if schema_version in {"1.5", "1.6", "1.7", "1.8"} else "normal"
+        target_model = segment.get("target_model") if schema_version in {"1.5", "1.6", "1.7", "1.8"} else "seedance-2.5"
+        if schema_version in {"1.5", "1.6", "1.7", "1.8"}:
             if content_lane not in CONTENT_LANES:
                 errors.append(f"片段 {sid} content_lane 无效: {content_lane}")
             elif target_model != LANE_TARGET_MODELS[content_lane]:
@@ -1497,14 +1676,16 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
                 elif span.get("lane") != content_lane:
                     errors.append(f"片段 {sid} 与原文跨度 {span_id} 的 lane 不一致")
 
-        if schema_version in {"1.6", "1.7"}:
+        if schema_version in {"1.6", "1.7", "1.8"}:
             for transition_field in ("incoming_transition_id", "outgoing_transition_id"):
                 if transition_field not in segment:
                     errors.append(f"片段 {sid} 缺少 {transition_field}")
             _validate_performance_arc(segment, errors)
-            if schema_version == "1.7":
+            if schema_version in {"1.7", "1.8"}:
                 _validate_narrative_paragraph(segment, errors)
                 _validate_reentry_plan(segment, errors)
+            if schema_version == "1.8":
+                _validate_composition_plan(segment, errors)
             _validate_camera_plan(segment, errors, schema_version)
             _validate_lighting_state(segment, errors)
             _validate_intimacy_beats(segment, span_map, errors)
@@ -1520,7 +1701,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
                 errors.append(f"兼容片段 {sid} 时长应为 {expected_duration} 秒，实际为 {duration}")
         else:
             expected_duration = duration
-            if schema_version in {"1.5", "1.6", "1.7"} and content_lane == "adult":
+            if schema_version in {"1.5", "1.6", "1.7", "1.8"} and content_lane == "adult":
                 effective_duration = data.get("adult_model_profile", {}).get(
                     "effective_limits", WAN_OFFICIAL_LIMITS
                 ).get("duration_seconds", 30)
@@ -1538,7 +1719,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             errors.append(f"片段 {sid} shots 必须是数组")
             shots = []
 
-        if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
+        if schema_version in {"1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8"}:
             pacing = segment.get("rhythm_pacing", project_pacing)
             if pacing not in PACING_LEVELS:
                 errors.append(f"片段 {sid} rhythm_pacing 无效: {pacing}")
@@ -1593,7 +1774,7 @@ def validate(data: dict[str, Any]) -> tuple[list[str], list[str]]:
             warnings.append(f"片段 {sid} 的 start_state 与上一段 end_state 不完全一致，请人工核对")
         previous_end_state = end_state
 
-    if schema_version in {"1.6", "1.7"}:
+    if schema_version in {"1.6", "1.7", "1.8"}:
         _validate_transition_ledger(
             data, segments, span_map, asset_ids, errors, schema_version
         )

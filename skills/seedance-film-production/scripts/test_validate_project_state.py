@@ -105,18 +105,50 @@ def enrich_segment(segment: dict, lane: str = "normal") -> dict:
         },
     )
     segment.setdefault(
+        "composition_plan",
+        {
+            "dominant_point": "画面右侧人物抬起的眼睛",
+            "point_contrast": "眼睛由窗边高光提亮，背景保持低对比",
+            "guiding_lines": [
+                {
+                    "source": "左侧窗框",
+                    "direction": "向右下",
+                    "destination": "人物视线落点",
+                    "purpose": "把注意力带到关系变化",
+                }
+            ],
+            "planes": {
+                "foreground": "失焦门框轻遮挡左侧",
+                "midground": "两名人物与动作关系",
+                "background": "窗户和固定空间地标",
+            },
+            "negative_space": "人物视线前方保留约四分之一空间",
+            "visual_weight": "右侧人物较亮，左侧人物以较大暗面平衡",
+            "start_frame": "门框内先看见两人维持原距离",
+            "end_frame": "回应后两人间距缩短且视线相接",
+        },
+    )
+    segment.setdefault(
         "camera_plan",
         {
             "entry_view": "从人物继承的动作结果重新找到双方关系",
             "attention_progression": "注意力从人物选择转向对方回应，再回到关系结果",
             "viewpoint_turns": [
                 {
+                    "response_type": "pull-back",
                     "trigger": "对方作出改变关系的回应",
                     "camera_response": "观看位置让出两人的新距离",
                     "revealed_meaning": "选择已经改变双方关系",
                 }
             ],
             "closing_view": "双方停在已经改变的关系状态上",
+            "continuity": {
+                "axis_side": "left",
+                "eyeline_target": "对方双眼",
+                "screen_direction": "left-to-right",
+                "motion_in": "static",
+                "motion_out": "static",
+            },
         },
     )
     lighting_snapshot = {
@@ -240,6 +272,12 @@ def sequence_state(lanes: list[str], durations: list[float] | None = None) -> di
                 "forward_impulse": from_segment["narrative_paragraph"]["forward_impulse"],
                 "reentry_anchor": to_segment["reentry_plan"]["anchor"],
                 "inherited_state": to_segment["reentry_plan"]["inherited_state"],
+                "edit_bridge": {
+                    "match_basis": ["gaze"],
+                    "bridge": "gaze-match",
+                    "reason": "把上一段未执行的意图交给下一段的新选择",
+                    "intentional_break": False,
+                },
                 "lighting_change_trigger": None,
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
@@ -315,12 +353,12 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v17_template_passes(self) -> None:
+    def test_v18_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
 
-    def test_v17_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
+    def test_v18_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
         state = template()
         state["model_profile"]["prompt_limits"]["official_max_characters"] = 2000
         state["model_profile"]["prompt_limits"]["official_status"] = "published"
@@ -410,10 +448,15 @@ class ProjectStateTests(unittest.TestCase):
         self.assertEqual([], errors)
         self.assertTrue(any("可能改写已锁定 Canon" in item for item in warnings))
 
+    def test_v17_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.7"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("建议升级到 1.8" in item for item in warnings))
+
     def test_v16_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.6"))
         self.assertEqual([], errors)
-        self.assertTrue(any("建议升级到 1.7" in item for item in warnings))
+        self.assertTrue(any("建议升级到 1.8" in item for item in warnings))
 
     def test_v15_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.5"))
@@ -550,6 +593,12 @@ class ProjectStateTests(unittest.TestCase):
                 "forward_impulse": normal["narrative_paragraph"]["forward_impulse"],
                 "reentry_anchor": adult["reentry_plan"]["anchor"],
                 "inherited_state": adult["reentry_plan"]["inherited_state"],
+                "edit_bridge": {
+                    "match_basis": ["gaze"],
+                    "bridge": "gaze-match",
+                    "reason": "把正常段确认的关系意图交给成人段的新行动",
+                    "intentional_break": False,
+                },
                 "lighting_change_trigger": None,
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
@@ -1039,6 +1088,53 @@ class ProjectStateTests(unittest.TestCase):
                 self.assertTrue(
                     any(f"{limit_key}引用数量 {count}" in item for item in modality_errors)
                 )
+
+    def test_v18_requires_concrete_composition_and_camera_trigger(self) -> None:
+        state = sequence_state(["normal"])
+        state["segments"][0]["composition_plan"]["dominant_point"] = "电影感"
+        state["segments"][0]["camera_plan"]["viewpoint_turns"][0]["trigger"] = ""
+        errors, _ = validate(state)
+        self.assertTrue(any("真实空间关系" in item for item in errors))
+        self.assertTrue(any("viewpoint_turns[0].trigger" in item for item in errors))
+
+    def test_v18_all_motion_state_pairs_are_allowed(self) -> None:
+        for outgoing, incoming in (
+            ("moving", "moving"),
+            ("static", "static"),
+            ("static", "moving"),
+            ("moving", "static"),
+        ):
+            with self.subTest(outgoing=outgoing, incoming=incoming):
+                state = sequence_state(["normal", "normal"])
+                state["segments"][0]["camera_plan"]["continuity"]["motion_out"] = outgoing
+                state["segments"][1]["camera_plan"]["continuity"]["motion_in"] = incoming
+                errors, _ = validate(state)
+                self.assertEqual([], errors)
+
+    def test_v18_axis_and_direction_change_needs_motivated_break(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["segments"][1]["camera_plan"]["continuity"].update(
+            {"axis_side": "right", "screen_direction": "right-to-left"}
+        )
+        errors, _ = validate(state)
+        self.assertTrue(any("越轴" in item for item in errors))
+        self.assertTrue(any("屏幕方向反转" in item for item in errors))
+
+        state["transition_ledger"][0]["edit_bridge"].update(
+            {
+                "bridge": "motivated-break",
+                "reason": "人物作出相反决定，重拍切到对侧建立心理断裂",
+                "intentional_break": True,
+            }
+        )
+        errors, _ = validate(state)
+        self.assertEqual([], errors)
+
+    def test_v18_rejects_meaningless_buffer_reason(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["transition_ledger"][0]["edit_bridge"]["reason"] = "缓冲一下"
+        errors, _ = validate(state)
+        self.assertTrue(any("无信息缓冲" in item for item in errors))
 
 
 if __name__ == "__main__":
