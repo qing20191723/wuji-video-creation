@@ -10,10 +10,11 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = REPOSITORY_ROOT / "skills" / "seedance-film-production"
 ENTRYPOINT = SKILL_ROOT / "SKILL.md"
-EXPECTED_VERSION = "1.8.0"
-MAX_ENTRYPOINT_LINES = 120
+EXPECTED_VERSION = "2.0.0"
+MAX_ENTRYPOINT_LINES = 70
 MAX_ENTRYPOINT_CHARACTERS = 6000
-MAX_MARKDOWN_LINES = 1500
+MAX_MARKDOWN_LINES = 750
+MAX_REFERENCE_FILES = 19
 
 
 def fail(message: str) -> None:
@@ -59,14 +60,7 @@ def main() -> int:
     if len(text) > MAX_ENTRYPOINT_CHARACTERS:
         fail(f"SKILL.md exceeds {MAX_ENTRYPOINT_CHARACTERS} characters")
 
-    stage_markers = (
-        "## 按阶段读取",
-        "G1 剧本",
-        "G2 分镜",
-        "G3–G5 资产",
-        "G6 正常故事板",
-        "G7 编译",
-    )
+    stage_markers = ("## 四个生产包与门禁", "剧本包（G1）", "导演分镜包（G2）", "资产包（G3–G6）", "模型编译包（G7）")
     missing_stage_markers = [marker for marker in stage_markers if marker not in body]
     if missing_stage_markers:
         fail("missing staged-loading markers: " + ", ".join(missing_stage_markers))
@@ -79,11 +73,15 @@ def main() -> int:
         fail("missing routed references: " + ", ".join(missing_refs))
 
     markdown_paths = sorted(SKILL_ROOT.rglob("*.md"))
+    reference_count = len(list((SKILL_ROOT / "references").glob("*.md")))
+    if reference_count > MAX_REFERENCE_FILES:
+        fail(f"reference file count exceeds {MAX_REFERENCE_FILES} ({reference_count})")
     markdown_lines = sum(
-        len(path.read_text(encoding="utf-8").splitlines()) for path in markdown_paths
+        sum(1 for line in path.read_text(encoding="utf-8").splitlines() if line.strip())
+        for path in markdown_paths
     )
     if markdown_lines > MAX_MARKDOWN_LINES:
-        fail(f"Markdown package exceeds {MAX_MARKDOWN_LINES} lines ({markdown_lines})")
+        fail(f"Markdown package exceeds {MAX_MARKDOWN_LINES} nonblank instruction lines ({markdown_lines})")
 
     link_pattern = re.compile(r"\[[^\]]+\]\(([^)#]+\.md)(?:#[^)]+)?\)")
     broken_links: list[str] = []
@@ -125,7 +123,7 @@ def main() -> int:
 
     print(
         f"Skill structure valid: version {EXPECTED_VERSION}, {len(routed_refs)} routed references, "
-        f"{markdown_lines} Markdown lines, "
+        f"{markdown_lines} nonblank Markdown instruction lines, "
         f"{sum(1 for path in SKILL_ROOT.rglob('*') if path.is_file() and '__pycache__' not in path.parts)} files."
     )
     return 0

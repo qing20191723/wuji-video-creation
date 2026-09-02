@@ -1,6 +1,6 @@
 # 平台节奏体检
 
-本文件用于单点平台节奏体检，或在完整项目 S0/G1 建立 `rhythm_profile`。节奏由平台、目标时长、内容类型和观众预期共同决定，不由横屏或竖屏单独决定。
+本文件用于单点平台节奏体检，或在完整项目 G1 建立 `rhythm_profile`。节奏由平台、目标时长、内容类型和观众预期共同决定，不由横屏或竖屏单独决定。
 
 ## 四档节奏
 
@@ -57,7 +57,7 @@
 
 `rhythm_profile` 至少记录：`platform`、`duration_tier`、`pacing`、`hook_window_seconds`、`progression_interval_seconds`、`breathing_shot_rule`、`locked_revision`。没有明确平台或内容依据时，钩子窗口与推进间隔写 `null`，不得为了填字段虚构固定秒点。
 
-- 完整项目在 S0 建立草案，并随 G1 一起锁定。
+- 完整项目在 G1 建立草案并一并锁定。
 - 只读体检不改状态。
 - G1 之后应用平台、时长层级或节奏档位变化时，revision 加一并重新打开 G1–G7。
 - 每个片段应继承项目节奏档位；局部例外必须写原因，不能静默漂移。

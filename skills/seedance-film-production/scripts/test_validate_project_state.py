@@ -28,6 +28,8 @@ def template() -> dict:
 def legacy_state(version: str) -> dict:
     state = template()
     state["schema_version"] = version
+    state["stage"] = "S0"
+    state["interaction_state"]["current_stage"] = "S0"
     state["production_rules"].update(
         {"drama_segment_seconds": 30, "action_segment_seconds": 25}
     )
@@ -105,18 +107,52 @@ def enrich_segment(segment: dict, lane: str = "normal") -> dict:
         },
     )
     segment.setdefault(
+        "composition_plan",
+        {
+            "dominant_point": "画面右侧人物抬起的眼睛",
+            "attention_path": "注意力从左侧窗框沿人物视线移向右侧人物抬起的眼睛",
+            "depth_and_balance": "失焦门框为前景，两人在中景，窗户为背景；右侧亮面与左侧较大暗面平衡",
+            "point_contrast": "眼睛由窗边高光提亮，背景保持低对比",
+            "guiding_lines": [
+                {
+                    "source": "左侧窗框",
+                    "direction": "向右下",
+                    "destination": "人物视线落点",
+                    "purpose": "把注意力带到关系变化",
+                }
+            ],
+            "planes": {
+                "foreground": "失焦门框轻遮挡左侧",
+                "midground": "两名人物与动作关系",
+                "background": "窗户和固定空间地标",
+            },
+            "negative_space": "人物视线前方保留约四分之一空间",
+            "visual_weight": "右侧人物较亮，左侧人物以较大暗面平衡",
+            "start_frame": "门框内先看见两人维持原距离",
+            "end_frame": "回应后两人间距缩短且视线相接",
+        },
+    )
+    segment.setdefault(
         "camera_plan",
         {
             "entry_view": "从人物继承的动作结果重新找到双方关系",
             "attention_progression": "注意力从人物选择转向对方回应，再回到关系结果",
             "viewpoint_turns": [
                 {
+                    "response_type": "pull-back",
                     "trigger": "对方作出改变关系的回应",
                     "camera_response": "观看位置让出两人的新距离",
                     "revealed_meaning": "选择已经改变双方关系",
                 }
             ],
             "closing_view": "双方停在已经改变的关系状态上",
+            "continuity": {
+                "axis_side": "left",
+                "eyeline_target": "对方双眼",
+                "screen_direction": "left-to-right",
+                "motion_in": "static",
+                "motion_out": "static",
+            },
         },
     )
     lighting_snapshot = {
@@ -240,6 +276,18 @@ def sequence_state(lanes: list[str], durations: list[float] | None = None) -> di
                 "forward_impulse": from_segment["narrative_paragraph"]["forward_impulse"],
                 "reentry_anchor": to_segment["reentry_plan"]["anchor"],
                 "inherited_state": to_segment["reentry_plan"]["inherited_state"],
+                "edit_bridge": {
+                    "match_basis": ["gaze"],
+                    "bridge": "gaze-match",
+                    "reason": "把上一段未执行的意图交给下一段的新选择",
+                    "intentional_break": False,
+                },
+                "assembly_contract": {
+                    "join_mode": "straight-cut",
+                    "visual_join": "上一段人物停下的视线成为下一段新选择的起点",
+                    "sound_join": "两段使用同一房间环境底声并在动作落点处直接切接",
+                    "combined_meaning": "上一段未执行的意图在下一段转化为人物的新选择",
+                },
                 "lighting_change_trigger": None,
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
@@ -315,12 +363,12 @@ def specialist_task(task_type: str = "script_review") -> dict:
 
 
 class ProjectStateTests(unittest.TestCase):
-    def test_v17_template_passes(self) -> None:
+    def test_v19_template_passes(self) -> None:
         errors, warnings = validate(template())
         self.assertEqual([], errors)
         self.assertEqual([], warnings)
 
-    def test_v17_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
+    def test_v19_rejects_invented_seedance_and_wrong_wan_prompt_limits(self) -> None:
         state = template()
         state["model_profile"]["prompt_limits"]["official_max_characters"] = 2000
         state["model_profile"]["prompt_limits"]["official_status"] = "published"
@@ -410,10 +458,20 @@ class ProjectStateTests(unittest.TestCase):
         self.assertEqual([], errors)
         self.assertTrue(any("可能改写已锁定 Canon" in item for item in warnings))
 
+    def test_v18_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.8"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("建议升级到 1.9" in item for item in warnings))
+
+    def test_v17_is_compatible_with_warning(self) -> None:
+        errors, warnings = validate(legacy_state("1.7"))
+        self.assertEqual([], errors)
+        self.assertTrue(any("建议升级到 1.9" in item for item in warnings))
+
     def test_v16_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.6"))
         self.assertEqual([], errors)
-        self.assertTrue(any("建议升级到 1.7" in item for item in warnings))
+        self.assertTrue(any("建议升级到 1.9" in item for item in warnings))
 
     def test_v15_is_compatible_with_warning(self) -> None:
         errors, warnings = validate(legacy_state("1.5"))
@@ -550,6 +608,18 @@ class ProjectStateTests(unittest.TestCase):
                 "forward_impulse": normal["narrative_paragraph"]["forward_impulse"],
                 "reentry_anchor": adult["reentry_plan"]["anchor"],
                 "inherited_state": adult["reentry_plan"]["inherited_state"],
+                "edit_bridge": {
+                    "match_basis": ["gaze"],
+                    "bridge": "gaze-match",
+                    "reason": "把正常段确认的关系意图交给成人段的新行动",
+                    "intentional_break": False,
+                },
+                "assembly_contract": {
+                    "join_mode": "straight-cut",
+                    "visual_join": "正常段的关系确认直接成为成人段已批准行动的起点",
+                    "sound_join": "两段共享同一空间底声并在靠近动作落点直切",
+                    "combined_meaning": "关系意图从口头与距离变化转为双方明确回应的行动",
+                },
                 "lighting_change_trigger": None,
                 "shared_boundary_asset_id": None,
                 "handoff_mode": "state_only",
@@ -810,7 +880,7 @@ class ProjectStateTests(unittest.TestCase):
                         for name in GATE_ORDER[1:]
                     )
                 )
-                self.assertEqual("S3", state["stage"])
+                self.assertEqual("G2", state["stage"])
 
     def test_full_project_waiting_at_g1_cannot_approve_downstream(self) -> None:
         state = template()
@@ -1039,6 +1109,115 @@ class ProjectStateTests(unittest.TestCase):
                 self.assertTrue(
                     any(f"{limit_key}引用数量 {count}" in item for item in modality_errors)
                 )
+
+    def test_v19_requires_concrete_composition_and_camera_trigger(self) -> None:
+        state = sequence_state(["normal"])
+        state["segments"][0]["composition_plan"]["dominant_point"] = "电影感"
+        state["segments"][0]["camera_plan"]["viewpoint_turns"][0]["trigger"] = ""
+        errors, _ = validate(state)
+        self.assertTrue(any("真实空间关系" in item for item in errors))
+        self.assertTrue(any("viewpoint_turns[0].trigger" in item for item in errors))
+
+    def test_v19_all_motion_state_pairs_are_allowed(self) -> None:
+        for outgoing, incoming in (
+            ("moving", "moving"),
+            ("static", "static"),
+            ("static", "moving"),
+            ("moving", "static"),
+        ):
+            with self.subTest(outgoing=outgoing, incoming=incoming):
+                state = sequence_state(["normal", "normal"])
+                state["segments"][0]["camera_plan"]["continuity"]["motion_out"] = outgoing
+                state["segments"][1]["camera_plan"]["continuity"]["motion_in"] = incoming
+                errors, _ = validate(state)
+                self.assertEqual([], errors)
+
+    def test_v19_continuity_may_be_not_applicable(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["segments"][0]["camera_plan"]["continuity"] = "not-applicable"
+        state["segments"][1]["camera_plan"]["continuity"] = "not-applicable"
+        errors, _ = validate(state)
+        self.assertEqual([], errors)
+
+    def test_v19_rejects_meaningless_assembly_meaning(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["transition_ledger"][0]["assembly_contract"]["combined_meaning"] = "过渡"
+        errors, _ = validate(state)
+        self.assertTrue(any("新增故事意义" in item for item in errors))
+
+    def test_v19_requires_sound_bible(self) -> None:
+        state = template()
+        del state["sound_bible"]
+        errors, _ = validate(state)
+        self.assertTrue(any("缺少 sound_bible" in item for item in errors))
+
+    def test_v19_requires_chinese_short_drama_script_format(self) -> None:
+        state = template()
+        state["production_rules"]["script_format"] = "generic_markdown"
+        errors, _ = validate(state)
+        self.assertTrue(any("集数-场次格式" in item for item in errors))
+
+    def test_v19_five_montage_relations_add_meaning(self) -> None:
+        for relation in (
+            "narrative-compression",
+            "rhythm",
+            "contrast",
+            "parallel",
+            "expressive",
+        ):
+            with self.subTest(relation=relation):
+                state = sequence_state(["normal", "normal"])
+                state["transition_ledger"][0]["assembly_contract"].update(
+                    {
+                        "join_mode": "montage-cut",
+                        "montage_relation": relation,
+                        "combined_meaning": f"{relation} 让前段结果改变后段选择的理解",
+                    }
+                )
+                errors, _ = validate(state)
+                self.assertEqual([], errors)
+
+    def test_v19_cross_unit_jl_overlap_is_rejected(self) -> None:
+        state = sequence_state(["normal", "normal"])
+        state["transition_ledger"][0]["assembly_contract"]["sound_join"] = (
+            "使用 J/L 声音预入覆盖两个独立文件"
+        )
+        errors, _ = validate(state)
+        self.assertTrue(any("J/L 音轨重叠" in item for item in errors))
+
+    def test_v19_rejects_fixed_shot_formula_and_prompt_opening(self) -> None:
+        state = sequence_state(["normal"])
+        state["segments"][0]["shot_count_rationale"] = "凑够远中近"
+        text = "远中近：人物走入房间并坐下。"
+        state["compiled_prompts"] = [
+            {
+                "id": "PROMPT-FORMULA",
+                "segment_id": "SEG-01",
+                "target_model": "seedance-2.5",
+                "text": text,
+                "character_count": count_prompt_characters(text),
+                "compiled_revision": 1,
+            }
+        ]
+        errors, _ = validate(state)
+        self.assertTrue(any("固定景别或强制运镜公式" in item for item in errors))
+        self.assertTrue(any("不得以镜头字段或时长参数开头" in item for item in errors))
+
+    def test_v19_reaction_then_reveal_and_attention_carrier_pass(self) -> None:
+        state = sequence_state(["normal"])
+        segment = state["segments"][0]
+        segment["camera_plan"]["attention_progression"] = (
+            "注意力先停在人物听见异响后的反应，再沿她的视线找到门后的湿雨伞"
+        )
+        segment["camera_plan"]["viewpoint_turns"][0].update(
+            {
+                "trigger": "人物先停下动作并看向门后",
+                "camera_response": "观看随后越过她的肩膀找到尚在滴水的雨伞",
+                "revealed_meaning": "观众在反应成立后才知道有人刚刚进入",
+            }
+        )
+        errors, _ = validate(state)
+        self.assertEqual([], errors)
 
 
 if __name__ == "__main__":
