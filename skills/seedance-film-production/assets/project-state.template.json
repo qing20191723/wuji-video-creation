@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.8",
+  "schema_version": "1.9",
   "project_id": "PROJECT-001",
   "revision": 1,
   "task_mode": "full_production",
@@ -9,9 +9,9 @@
     "audio_policy": "integrated_av",
     "intimacy": null
   },
-  "stage": "S0",
+  "stage": "G1",
   "interaction_state": {
-    "current_stage": "S0",
+    "current_stage": "G1",
     "pending_gate": null,
     "approval_scope": [],
     "blockers": [],
@@ -89,6 +89,7 @@
     "lane_transition_policy": "explicit_state_handoff",
     "performance_timing_policy": "event_driven",
     "prompt_prose_policy": "camera_embedded_natural_prose",
+    "script_format": "chinese_short_drama_episode_scene",
     "segment_semantics": "narrative_paragraph",
     "continuity_policy": "story_world_inherits_camera_may_reenter",
     "generation_dependency_policy": "canonical_assets_not_previous_generated_clip",
@@ -133,6 +134,14 @@
       "practicals": [],
       "locked_revision": null
     }
+  },
+  "sound_bible": {
+    "character_voices": [],
+    "scene_ambience": [],
+    "music_policy": "story_motivated_or_none",
+    "priority_order": ["dialogue", "story_action", "ambience", "music"],
+    "authorization_evidence": [],
+    "locked_revision": null
   },
   "approval_gates": {
     "script_adaptation": {"status": "pending", "approved_revision": null, "note": ""},

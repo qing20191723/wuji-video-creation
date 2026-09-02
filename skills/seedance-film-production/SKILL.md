@@ -1,9 +1,9 @@
 ---
 name: seedance-film-production
-description: 将剧本与多模态参考推进为可追溯的双模型影视生产包，或单独诊断剧本、对白、表演、节奏和声音。
+description: 将想法、剧本与多模态参考推进为可追溯、可独立生成并可直接切接的 Seedance 2.5 / Wan 3.0 影视生产包，或单独诊断剧本、对白、表演、节奏和声音。
 license: proprietary
 metadata:
-  version: "1.9.0"
+  version: "2.0.0"
   author: "Qingchen + Codex"
   hermes:
     tags: [film-production, seedance, wan, narrative-direction, performance]
@@ -12,67 +12,44 @@ metadata:
 
 # Seedance 影视创作流水线
 
-把每个生成片段当成一个叙事段落：先让这一层故事意思成立并结束，再从新的观看位置进入下一层；继承故事世界，不机械延长上一台摄影机。镜头数、片长、宫格和模型上限都不能反推剧情。
+先讲清故事，再选择观众从哪里看。每个生成单元完成一层可辨认的故事意义；下一单元从新的专业观看位置进入同一世界，继承已发生的一切，而非机械延长上一台摄影机。顺序直拼成立是这种叙事设计的结果。
 
 ## When to Use
 
-- `full_production`：把想法、小说、剧本或参考素材推进为剧本、分镜、资产、正常段十六宫格及 Seedance 2.5 / Wan 3.0 音画一体提示词。
-- `specialist`：只做剧本会诊、对白精修、表演设计、平台节奏或后期声音。不要因用户贴出剧本就自动启动全流程。
-- 不用于团队协作表、普通影视知识问答或单图润色。G1–G7 只锁创作产物，不替代负责人、审核、发布与交付表。
+- `full_production`：交付剧本包、导演分镜包、资产包和模型编译包。
+- `specialist`：只做剧本会诊、对白精修、表演设计、平台节奏或后期声音；不要因用户贴出剧本就自动跑完整流程。
+- 不用于团队协作表、普通影视知识问答或单图润色。G1–G7 只确认创作产物，不替代人员、审核、发布和交付管理。
 
 ## 硬约束
 
-1. 用户确认内容、原始素材与批准边界是 Canon；下游只读取当前 revision 的批准产物。
-2. 稳定 ID、版本、来源跨度和真实附件必须可追溯。未验收附件不能写成 `@图片N/@视频N/@音频N`。
-3. 最终编译只转换已批准内容，不新增剧情、人物、道具、行为、台词或结局。
-4. 正常跨度只进入 Seedance 2.5；成人跨度只进入 Wan 3.0；每个跨度有且只有一个路由。
-5. 两路均原生音画一体。片长按实际可拍内容估算，不填满 30 秒，不设镜头配额。
-6. 正常完整生产默认使用 4×4 十六宫格做视觉锁定；若批准内容无法提供 16 个有因果价值的状态且扩展画板范围仍会注水，将 G6 记为 `not_required` 并写明理由，改用已批准关键帧/分镜资产。成人段不做十六宫格。
-7. 成人内容仅处理清楚成年、成人化呈现、虚构或获授权且持续自愿的参与者；边界不清时停止询问。禁止未成年人/幼态校园化、真实第三方或公众人物性化、非自愿或失能、偷拍泄露、乱伦、人口剥削、兽交、恋尸及审核规避。
-8. 已批准且可处理的成人跨度不能静默删除、概括或升级；当前环境不能展开的细部保留中性行为类别与来源跨度。
-9. Wan 3.0 官方提示词上限 20,000 字符；Seedance 2.5 官方未公布字符上限。记录当前入口限制，超限时压缩或在真实叙事段落处拆分，不截断。
-10. 自检不等于用户确认；改变 Canon 时写变更记录并按影响范围回退门禁。
+1. 用户确认内容、原始素材和批准边界是 Canon；下游只读取当前 revision 的批准产物。
+2. 稳定 ID、版本、来源跨度和真实附件可追溯；未验收附件不能伪装为 `@图片N/@视频N/@音频N`。
+3. 最终编译不新增剧情、人物、道具、行为、台词或结局；正常跨度只进 Seedance 2.5，成人跨度只进 Wan 3.0。
+4. 两路默认原生音画一体。片长由实际可拍内容决定，不填满 30 秒，不设镜头配额。
+5. 正常完整生产默认以 4×4 十六宫格锁视觉；若相关批准内容仍不足 16 个有因果价值的状态，G6 可写明理由后记为 `not_required`。成人段不做宫格。
+6. 成人内容只处理明确成年、成人化呈现、虚构或获授权且持续自愿的参与者；边界不清时停在必要询问。禁止未成年人/幼态校园化、真实第三方或公众人物性化、非自愿或失能、偷拍泄露、乱伦、人口剥削、兽交、恋尸及审核规避。
+7. 可处理的成人跨度不静默删除、概括或升级；无法展开的细部保留中性行为类别和来源跨度。
+8. Wan 3.0 官方提示词上限 20,000 字符；Seedance 2.5 官方未公布字符上限。记录当前入口限制，超限时压缩或在真实叙事边界拆分，禁止截断。
+9. 自检不等于用户确认；改变 Canon 时记录影响并按门禁回退。
 
-## 创作主轴
+## 四个生产包与门禁
 
-G1 后的所有分段、摄影和提示词先读取 [叙事段落与镜头再入场](references/narrative-direction.md)。它是以下规则的唯一创作事实源：
+1. `剧本包（G1）`：锁来源和路由，把文学材料写成没有镜号、资产或模型参数的可演场景稿。读取 [剧本](references/story-drama.md)；混合内容加读 [路由](references/content-routing.md)，成人边界加读 [亲密边界](references/adult-intimacy.md)。
+2. `导演分镜包（G2）`：先设计承载主要剧情的观看位置，再补真正带来揭示、反应、悬念、强调或空间重建的视点。读取 [叙事导演](references/narrative-direction.md)，按需加读 [摄影连续](references/cinematography.md)、[表演](references/emotion-library.md)、[动作](references/action.md) 或 [成人编排](references/adult-choreography.md)。
+3. `资产包（G3–G6）`：G3 资产提示词，G4 人物四栏母版，G5 场景/道具/状态资产，G6 正常十六宫格。读取 [连续性](references/assets-continuity.md)、[资产提示词](references/asset-prompts.md)，G6 加读 [十六宫格](references/storyboard-16grid.md)。
+4. `模型编译包（G7）`：逐叙事段落输出外部制作卡和一段自然导演稿；正常读 [Seedance](references/seedance-output.md)，成人读 [Wan](references/wan3-output.md)，一次只加载当前模型。
 
-- 一个片段只承担一层明确意义，不强制完整起承转合；意义已经被读懂且继续拍只会重复时结束。
-- 下一片段从人物、动作、结果、物体、空间或声音重新入场，迅速说明“仍在何处、谁仍在场、继承了什么、现在开始什么”。
-- 必须继承人物、环境、身体、服装、道具、情绪、行为结果和下一步因果；摄影机位置、景别、焦点和运动可以重新选择。
-- 摄影变化由人物或环境事件引发，并让观众获得新的故事理解；术语本身不是理由。
-- 最终提示词像一段具体的影视叙述，从环境中的人物和动作开始，让摄影随注意力自然出现。
+除非用户明确放弃中途确认，每次只推进一个门禁。阶段交付、状态卡与回退读 [工作流](references/workflow.md)。删 AI 套话时读 [去模板化](references/human-writing.md)；剧本/对白专科读 [会诊](references/review-dialogue.md)，节奏读 [平台节奏](references/platform-rhythm.md)，后期声音读 [声音](references/post-sound.md)。
 
-## 完整生产门禁
+## 创作与状态
 
-1. `G1 script_adaptation`：锁来源与正常/成人跨度，交付完整可生成剧本和假设，等待确认。
-2. `G2 shot_breakdown`：按叙事段落估时，建立表演、再入场、镜头/光影与跨段状态，等待确认。
-3. `G3 asset_prompts`：交付稳定资产清单和自然语言提示词，等待确认。
-4. `G4 character_look`：生成并验收每名主要角色的横向四栏定妆母版。
-5. `G5 asset_images`：分批生成并实际查看场景、道具、VFX 和所需状态资产。
-6. `G6 storyboard`：仅为正常路生成并验收十六宫格；成人路为 `not_required`。
-7. `G7 final_compile`：逐叙事段落编译 Seedance/Wan 自然语言音画提示词，登记引用、字符数与 revision。
+[叙事导演](references/narrative-direction.md) 是分段、观看设计、再入场、蒙太奇关系和自然视频提示词的唯一创作事实源。结构台账可以用字段，剧本正文和模型正文不能把字段、镜头名词或模块清单当成成品。
 
-除非用户明确放弃中途确认，否则每次只推进当前唯一门禁。完整步骤、状态卡和回退读取 [工作流](references/workflow.md)。
+从 `assets/project-state.template.json` 建立 Schema 1.9 状态。它保留叙事段落、再入场、表演与光影；使用精简 `composition_plan`、条件式 `camera_plan.continuity`、全局 `sound_bible` 和 `transition_ledger.assembly_contract`。兼容读取 1.1–1.8 并提示升级。
 
-## 按阶段读取
+- 剧情、对白、节奏、路由或亲密边界变化：提升 revision，回退 G1–G7。
+- 叙事分段、表演、摄影、光影或接合变化：保留 G1，回退 G2–G7。
+- 资产变化：提升资产版本，回退相应资产门禁并重验引用。
+- 只改最终措辞或模型内声音表达：回退 G7。
 
-- G1 剧本：读取 [story-drama.md](references/story-drama.md)；混合内容加读 [content-routing.md](references/content-routing.md)，成人边界加读 [adult-intimacy.md](references/adult-intimacy.md)。
-- G2 分镜：读取 [narrative-direction.md](references/narrative-direction.md)；按需加读 [cinematography.md](references/cinematography.md)、[emotion-library.md](references/emotion-library.md)、[action.md](references/action.md) 或 [adult-choreography.md](references/adult-choreography.md)。
-- G3–G5 资产：读取 [assets-continuity.md](references/assets-continuity.md) 与 [asset-prompts.md](references/asset-prompts.md)。
-- G6 正常故事板：只加读 [storyboard-16grid.md](references/storyboard-16grid.md)。
-- G7 编译：正常段读 [seedance-output.md](references/seedance-output.md)，成人段读 [wan3-output.md](references/wan3-output.md)；一次只加载当前模型。
-- 写剧本、分镜或提示词需要删模板痕迹时读 [human-writing.md](references/human-writing.md)。
-
-专科入口：剧本/对白读 [review-dialogue.md](references/review-dialogue.md)，表演读叙事导演与情绪库，节奏读 [platform-rhythm.md](references/platform-rhythm.md)，后期声音读 [post-sound.md](references/post-sound.md)。只读诊断不改变 Canon，也不创建无关资产。
-
-## 状态与回退
-
-从 `assets/project-state.template.json` 建立状态。Schema 1.8 保留 1.7 的叙事段落与再入场，并新增 `composition_plan`、`camera_plan.continuity`、带 `response_type` 的视点变化及 `transition_ledger.edit_bridge`。点、线、面必须写成具体空间关系；动接动、静接静只是默认倾向，静动切换可以由表演、动作、声音或叙事转折直接成立。1.7 项目继续兼容并提示升级。
-
-- 应用剧本、对白、节奏或成人边界变化：提升 revision，回退 G1–G7。
-- 改变表演、叙事分段、再入场、镜头、光影或跨段 Canon：保留 G1，回退 G2–G7。
-- 修改资产：提升资产版本，回退相应资产门禁并重验引用。
-- 只改最终提示词措辞或模型内声音表达：回退 G7。
-
-状态未知时写“未知/待确认/待生成”，不补造。最终运行项目状态、Skill 结构和引用校验；机械通过只证明结构与事实一致，叙事完成度和摄影意义仍须人工复核。
+未知事实写“未知/待确认/待生成”，不补造。最终运行项目状态、Skill 结构、引用、体量和完整测试；机械通过只证明结构一致，Codex 仍需人工复核剧本是否像人写、每次换镜是否增加理解、各单元直拼后因果与声音是否成立。
