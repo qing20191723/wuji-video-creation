@@ -18,7 +18,7 @@ from validate_project_state import (
 
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
-TEMPLATE_PATH = SKILL_ROOT / "assets" / "project-state.template.json"
+TEMPLATE_PATH = SKILL_ROOT / "scripts" / "fixtures" / "project-state-1.9.json"
 
 
 def template() -> dict:

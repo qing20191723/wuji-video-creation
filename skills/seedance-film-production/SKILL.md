@@ -1,55 +1,44 @@
 ---
 name: seedance-film-production
-description: 将想法、剧本与多模态参考推进为可追溯、可独立生成并可直接切接的 Seedance 2.5 / Wan 3.0 影视生产包，或单独诊断剧本、对白、表演、节奏和声音。
+description: 将创意、小说或剧本推进为短剧剧本、文字分镜、必要资产、黑白线稿宫格与视频提示词；也可单独做剧本、对白、表演、节奏或声音诊断。
 license: proprietary
 metadata:
-  version: "2.0.0"
+  version: "3.0.0"
   author: "Qingchen + Codex"
   hermes:
-    tags: [film-production, seedance, wan, narrative-direction, performance]
+    tags: [film-production, narrative-direction, performance]
     related_skills: [imagegen]
 ---
 
-# Seedance 影视创作流水线
+# 无极影视创作
 
-先讲清故事，再选择观众从哪里看。每个生成单元完成一层可辨认的故事意义；下一单元从新的专业观看位置进入同一世界，继承已发生的一切，而非机械延长上一台摄影机。顺序直拼成立是这种叙事设计的结果。
+故事成立、分镜有效、资产准确、生成可控。下游继承上游成果，不重新编故事。
 
 ## When to Use
 
-- `full_production`：交付剧本包、导演分镜包、资产包和模型编译包。
-- `specialist`：只做剧本会诊、对白精修、表演设计、平台节奏或后期声音；不要因用户贴出剧本就自动跑完整流程。
-- 不用于团队协作表、普通影视知识问答或单图润色。G1–G7 只确认创作产物，不替代人员、审核、发布和交付管理。
+- 完整制作按以下五步推进；单项诊断用 specialist 模式，只交付用户请求的范围。
+- 本目录是唯一技能源码；不建立另一套动画状态，不要求看板或修改 Grok Bot。
+- 默认止于资产图、黑白宫格和视频提示词，不自动生成视频、剪辑或发布。
 
-## 硬约束
+## 流程与四次确认
 
-1. 用户确认内容、原始素材和批准边界是 Canon；下游只读取当前 revision 的批准产物。
-2. 稳定 ID、版本、来源跨度和真实附件可追溯；未验收附件不能伪装为 `@图片N/@视频N/@音频N`。
-3. 最终编译不新增剧情、人物、道具、行为、台词或结局；正常跨度只进 Seedance 2.5，成人跨度只进 Wan 3.0。
-4. 两路默认原生音画一体。片长由实际可拍内容决定，不填满 30 秒，不设镜头配额。
-5. 正常完整生产默认以 4×4 十六宫格锁视觉；若相关批准内容仍不足 16 个有因果价值的状态，G6 可写明理由后记为 `not_required`。成人段不做宫格。
-6. 成人内容只处理明确成年、成人化呈现、虚构或获授权且持续自愿的参与者；边界不清时停在必要询问。禁止未成年人/幼态校园化、真实第三方或公众人物性化、非自愿或失能、偷拍泄露、乱伦、人口剥削、兽交、恋尸及审核规避。
-7. 可处理的成人跨度不静默删除、概括或升级；无法展开的细部保留中性行为类别和来源跨度。
-8. Wan 3.0 官方提示词上限 20,000 字符；Seedance 2.5 官方未公布字符上限。记录当前入口限制，超限时压缩或在真实叙事边界拆分，禁止截断。
-9. 自检不等于用户确认；改变 Canon 时记录影响并按门禁回退。
+1. **剧本 / script**：读 [剧本](references/story-drama.md)。交付完整可演正文、实质改编与未决问题，第一次确认这版剧本。
+2. **文字分镜 / shot_plan**：读 [导演](references/narrative-direction.md)，按需读 [表演](references/emotion-library.md)、[摄影](references/cinematography.md)、[动作](references/action.md)。按场输出六列表格，第二次确认镜头及大致可拍时长。
+3. **必要资产 / assets**：读 [连续性](references/assets-continuity.md)、[资产提示词](references/asset-prompts.md)。复用合适素材，人物先半身定脸，按镜头补必要视图。默认内置 imagegen，生成后实际查看；第三次确认实际图片，提示词随图保存。
+4. **黑白线稿宫格 / storyboard**：读 [宫格](references/storyboard-16grid.md)。有效状态决定格数、短行和分页，镜号映射写在图外。逐格检查后第四次确认实际画板。
+5. **视频提示词 / compile**：宫格通过后直接交付。读 [编译](references/seedance-output.md)，指定 Wan 时加读 [适配](references/wan3-output.md)。每单元交付制作信息、真实参考及职责、一段自然语言正文。
 
-## 四个生产包与门禁
+默认在四次成果确认处等待用户；阶段内方向明确就继续。定脸和补图同属资产阶段，提示词无需另行审批。用户已有授权不重复询问；自检不冒充用户确认。无必要资产时说明原因，不制作凑数素材。
 
-1. `剧本包（G1）`：锁来源和路由，把文学材料写成没有镜号、资产或模型参数的可演场景稿。读取 [剧本](references/story-drama.md)；混合内容加读 [路由](references/content-routing.md)，成人边界加读 [亲密边界](references/adult-intimacy.md)。
-2. `导演分镜包（G2）`：先设计承载主要剧情的观看位置，再补真正带来揭示、反应、悬念、强调或空间重建的视点。读取 [叙事导演](references/narrative-direction.md)，按需加读 [摄影连续](references/cinematography.md)、[表演](references/emotion-library.md)、[动作](references/action.md) 或 [成人编排](references/adult-choreography.md)。
-3. `资产包（G3–G6）`：G3 资产提示词，G4 人物四栏母版，G5 场景/道具/状态资产，G6 正常十六宫格。读取 [连续性](references/assets-continuity.md)、[资产提示词](references/asset-prompts.md)，G6 加读 [十六宫格](references/storyboard-16grid.md)。
-4. `模型编译包（G7）`：逐叙事段落输出外部制作卡和一段自然导演稿；正常读 [Seedance](references/seedance-output.md)，成人读 [Wan](references/wan3-output.md)，一次只加载当前模型。
+## 按需读取
 
-除非用户明确放弃中途确认，每次只推进一个门禁。阶段交付、状态卡与回退读 [工作流](references/workflow.md)。删 AI 套话时读 [去模板化](references/human-writing.md)；剧本/对白专科读 [会诊](references/review-dialogue.md)，节奏读 [平台节奏](references/platform-rhythm.md)，后期声音读 [声音](references/post-sound.md)。
+[工作流](references/workflow.md) 管理推进与异常；使用工具或迁移时读 [状态协议](references/state-schema.md)。
+表演只检索当前冲突相关条目，不加载全部词库；普通短剧不加载专项内容和动画引擎。
+对白读 [会诊](references/review-dialogue.md)，节奏读 [节奏](references/platform-rhythm.md)，声音读 [声音](references/post-sound.md)，自然写作读 [去模板化](references/human-writing.md)；特殊内容先读 [边界](references/content-routing.md)，遵循当前执行环境，不按内容自动选择另一模型。
 
-## 创作与状态
+## 状态与真实产物
 
-[叙事导演](references/narrative-direction.md) 是分段、观看设计、再入场、蒙太奇关系和自然视频提示词的唯一创作事实源。结构台账可以用字段，剧本正文和模型正文不能把字段、镜头名词或模块清单当成成品。
-
-从 `assets/project-state.template.json` 建立 Schema 1.9 状态。它保留叙事段落、再入场、表演与光影；使用精简 `composition_plan`、条件式 `camera_plan.continuity`、全局 `sound_bible` 和 `transition_ledger.assembly_contract`。兼容读取 1.1–1.8 并提示升级。
-
-- 剧情、对白、节奏、路由或亲密边界变化：提升 revision，回退 G1–G7。
-- 叙事分段、表演、摄影、光影或接合变化：保留 G1，回退 G2–G7。
-- 资产变化：提升资产版本，回退相应资产门禁并重验引用。
-- 只改最终措辞或模型内声音表达：回退 G7。
-
-未知事实写“未知/待确认/待生成”，不补造。最终运行项目状态、Skill 结构、引用、体量和完整测试；机械通过只证明结构一致，Codex 仍需人工复核剧本是否像人写、每次换镜是否增加理解、各单元直拼后因果与声音是否成立。
+新项目使用 Schema 2.0 模板。稳定 ID、成果版本和直接依赖形成一个事实源；确认绑定具体成果，全局 revision 只记变更。局部修改只传播到受影响依赖；纯提示词措辞不回退剧本。
+旧 1.x 仍走原校验路径。显式迁移另存新文件，保留旧数据和批准证据，不伪造新批准、不冒充黑白画板、不要求历史项目全部重做。
+中性定脸图不限制情绪强度；线稿只控制构图、位置和状态，彩色资产控制身份、服装、材质、颜色与空间，不把视频变成线稿动画。
+图像或工具失败时保存待生成/blocked 状态及问题，不把提示词当作已生成图、不虚构附件。模型限制在编译时按实际入口核验。

@@ -10,11 +10,11 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = REPOSITORY_ROOT / "skills" / "seedance-film-production"
 ENTRYPOINT = SKILL_ROOT / "SKILL.md"
-EXPECTED_VERSION = "2.0.0"
+EXPECTED_VERSION = "3.0.0"
 MAX_ENTRYPOINT_LINES = 70
 MAX_ENTRYPOINT_CHARACTERS = 6000
 MAX_MARKDOWN_LINES = 750
-MAX_REFERENCE_FILES = 19
+MAX_REFERENCE_FILES = 20
 
 
 def fail(message: str) -> None:
@@ -29,6 +29,11 @@ def main() -> int:
         SKILL_ROOT / "scripts" / "validate_project_state.py",
         SKILL_ROOT / "scripts" / "test_validate_project_state.py",
         SKILL_ROOT / "references" / "narrative-direction.md",
+        SKILL_ROOT / "references" / "state-schema.md",
+        SKILL_ROOT / "scripts" / "project_state_v2.py",
+        SKILL_ROOT / "scripts" / "migrate_project_state.py",
+        SKILL_ROOT / "scripts" / "legacy_project_state.py",
+        SKILL_ROOT / "scripts" / "fixtures" / "project-state-1.9.json",
     ]
     missing = [str(path.relative_to(REPOSITORY_ROOT)) for path in required if not path.is_file()]
     if missing:
@@ -60,10 +65,9 @@ def main() -> int:
     if len(text) > MAX_ENTRYPOINT_CHARACTERS:
         fail(f"SKILL.md exceeds {MAX_ENTRYPOINT_CHARACTERS} characters")
 
-    stage_markers = ("## 四个生产包与门禁", "剧本包（G1）", "导演分镜包（G2）", "资产包（G3–G6）", "模型编译包（G7）")
-    missing_stage_markers = [marker for marker in stage_markers if marker not in body]
-    if missing_stage_markers:
-        fail("missing staged-loading markers: " + ", ".join(missing_stage_markers))
+    stage_markers = ("script", "shot_plan", "assets", "storyboard", "compile")
+    if any(marker not in body for marker in stage_markers):
+        fail("missing stage routes")
     if "references/narrative-direction.md" not in body:
         fail("SKILL.md must route narrative direction to narrative-direction.md")
 

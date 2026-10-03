@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.9",
+  "project_id": "PROJECT-001",
+  "revision": 1,
+  "task_mode": "full_production",
+  "content_profile": {
+    "mode": "general",
+    "routing_policy": "explicit_normal_adult_split",
+    "audio_policy": "integrated_av",
+    "intimacy": null
+  },
+  "stage": "G1",
+  "interaction_state": {
+    "current_stage": "G1",
+    "pending_gate": null,
+    "approval_scope": [],
+    "blockers": [],
+    "next_actions": []
+  },
+  "model_profile": {
+    "model": "seedance-2.5",
+    "official_limits": {
+      "duration_seconds": 30,
+      "images": 30,
+      "videos": 10,
+      "audios": 10
+    },
+    "effective_limits": {
+      "duration_seconds": 30,
+      "images": 30,
+      "videos": 10,
+      "audios": 10
+    },
+    "prompt_limits": {
+      "official_max_characters": null,
+      "official_status": "not_published",
+      "effective_max_characters": null,
+      "production_soft_max_characters": 1600,
+      "counting_rule": "verify_current_entry",
+      "overflow_policy": "compress_then_split_never_truncate",
+      "verified_source": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+    },
+    "verified_source": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+  },
+  "adult_model_profile": {
+    "model": "wan3.0-video",
+    "official_limits": {
+      "duration_seconds": 30,
+      "images": 10,
+      "videos": 5,
+      "video_total_seconds": 15,
+      "audios": 5,
+      "audio_total_seconds": 15,
+      "multimodal_assets": 20
+    },
+    "effective_limits": {
+      "duration_seconds": 30,
+      "images": 10,
+      "videos": 5,
+      "video_total_seconds": 15,
+      "audios": 5,
+      "audio_total_seconds": 15,
+      "multimodal_assets": 20
+    },
+    "prompt_limits": {
+      "official_max_characters": 20000,
+      "official_status": "published",
+      "effective_max_characters": 20000,
+      "production_soft_max_characters": 1600,
+      "counting_rule": "one_chinese_character_or_letter_equals_one",
+      "overflow_policy": "compress_then_split_never_truncate",
+      "verified_source": "https://help.aliyun.com/en/model-studio/wan3-video-generation-api-reference"
+    },
+    "verified_source": "https://help.aliyun.com/en/model-studio/wan3-video-generation-api-reference"
+  },
+  "production_rules": {
+    "default_language": "zh-CN",
+    "default_aspect_ratio": "16:9",
+    "duration_policy": "narrative_paragraph_first",
+    "max_segment_seconds_from_model_profile": true,
+    "shot_count_policy": "minimum_sufficient",
+    "storyboard_layout": "normal_lane_4x4_16_panel",
+    "adult_storyboard_layout": "not_required",
+    "adult_segment_target_seconds": 30,
+    "adult_final_segment_policy": "actual_duration_no_padding",
+    "audio_generation": "integrated_av",
+    "camera_movement_policy": "motivated_only",
+    "lighting_continuity_policy": "change_requires_motivation",
+    "lane_transition_policy": "explicit_state_handoff",
+    "performance_timing_policy": "event_driven",
+    "prompt_prose_policy": "camera_embedded_natural_prose",
+    "script_format": "chinese_short_drama_episode_scene",
+    "segment_semantics": "narrative_paragraph",
+    "continuity_policy": "story_world_inherits_camera_may_reenter",
+    "generation_dependency_policy": "canonical_assets_not_previous_generated_clip",
+    "storyboard_grouping_policy": "adaptive_after_approved_shot_breakdown",
+    "adult_description_policy": "maximum_non_graphic_detail_no_silent_omission",
+    "prompt_length_policy": "official_hard_limit_plus_adaptive_soft_budget",
+    "character_identity_asset": {
+      "layout": "single_horizontal_four_panel",
+      "panel_order": [
+        "front_half_body_face_closeup",
+        "front_full_body",
+        "profile_90_full_body",
+        "back_full_body"
+      ],
+      "pose": "natural_neutral_standing",
+      "front_view_gaze": "head_face_eyes_straight_to_camera",
+      "full_body_alignment": "same_height_same_foot_baseline"
+    }
+  },
+  "rhythm_profile": {
+    "platform": "unspecified",
+    "duration_tier": "adaptive_up_to_30s",
+    "pacing": "cinematic_medium",
+    "hook_window_seconds": null,
+    "progression_interval_seconds": null,
+    "breathing_shot_rule": "function_required",
+    "locked_revision": null
+  },
+  "visual_bible": {
+    "camera_policy": "motivated_only",
+    "axis_and_eyeline_policy": "preserve_or_motivate_change",
+    "lighting": {
+      "time_weather": "unspecified",
+      "motivated_sources": [],
+      "key_direction": "unspecified",
+      "key_quality": "unspecified",
+      "contrast_level": "unspecified",
+      "fill_policy": "motivated_or_none",
+      "separation": "unspecified",
+      "color_relationship": "unspecified",
+      "exposure_priority": "faces_and_story_action",
+      "practicals": [],
+      "locked_revision": null
+    }
+  },
+  "sound_bible": {
+    "character_voices": [],
+    "scene_ambience": [],
+    "music_policy": "story_motivated_or_none",
+    "priority_order": ["dialogue", "story_action", "ambience", "music"],
+    "authorization_evidence": [],
+    "locked_revision": null
+  },
+  "approval_gates": {
+    "script_adaptation": {"status": "pending", "approved_revision": null, "note": ""},
+    "shot_breakdown": {"status": "pending", "approved_revision": null, "note": ""},
+    "asset_prompts": {"status": "pending", "approved_revision": null, "note": ""},
+    "character_look": {"status": "pending", "approved_revision": null, "note": ""},
+    "asset_images": {"status": "pending", "approved_revision": null, "note": ""},
+    "storyboard": {"status": "pending", "approved_revision": null, "note": ""},
+    "final_compile": {"status": "pending", "approved_revision": null, "note": ""}
+  },
+  "source_lock": {
+    "source_summary": "",
+    "confirmed_facts": [],
+    "forbidden_changes": [],
+    "allowed_inferences": []
+  },
+  "source_span_ledger": [],
+  "transition_ledger": [],
+  "adapted_script": {
+    "status": "not_started",
+    "source_revision": 1,
+    "approved_revision": null,
+    "scene_ids": [],
+    "suggested_additions": [],
+    "unresolved_assumptions": []
+  },
+  "characters": [],
+  "locations": [],
+  "assets": [],
+  "segments": [],
+  "compiled_prompts": [],
+  "specialist_tasks": [],
+  "change_log": []
+}

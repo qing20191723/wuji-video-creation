@@ -7,13 +7,17 @@ param(
     [string]$CodexDestination,
     [string]$GrokDestination,
     [string]$HermesDestination,
-    [string]$HermesDistro = 'Ubuntu-22.04',
-    [string]$HermesHome = '$HOME'
+    [string]$BackupRoot,
+    [string]$HermesDistro,
+    [string]$HermesHome
 )
 
 $ErrorActionPreference = 'Stop'
 
 $repositoryRoot = Split-Path -Parent $PSScriptRoot
+if ([string]::IsNullOrWhiteSpace($BackupRoot)) {
+    $BackupRoot = Join-Path $repositoryRoot 'output\skill-install-backups'
+}
 $sourcePath = [IO.Path]::GetFullPath((Join-Path $repositoryRoot 'skills\seedance-film-production'))
 if (-not (Test-Path -LiteralPath $sourcePath -PathType Container)) {
     throw "Repository Skill source directory not found: $sourcePath"
@@ -36,13 +40,24 @@ if ([string]::IsNullOrWhiteSpace($GrokDestination)) {
     $GrokDestination = Join-Path $userProfilePath '.grok\skills\seedance-film-production'
 }
 if ([string]::IsNullOrWhiteSpace($HermesDestination)) {
-    $hermesRelative = $HermesHome.Trim('/').Replace('/', '\')
-    $HermesDestination = "\\wsl.localhost\$HermesDistro\$hermesRelative\.hermes\skills\creative\seedance-film-production"
+    if ($HermesDistro -and $HermesHome) {
+        $hermesRelative = $HermesHome.Trim('/').Replace('/', '\')
+        $HermesDestination = "\\wsl.localhost\$HermesDistro\$hermesRelative\.hermes\skills\creative\seedance-film-production"
+    }
+    elseif ($env:HERMES_HOME -and (Test-Path -LiteralPath $env:HERMES_HOME -PathType Container)) {
+        $HermesDestination = Join-Path $env:HERMES_HOME 'skills\creative\seedance-film-production'
+    }
+    elseif (Test-Path -LiteralPath (Join-Path $userProfilePath '.hermes') -PathType Container) {
+        $HermesDestination = Join-Path $userProfilePath '.hermes\skills\creative\seedance-film-production'
+    }
+    elseif ($Target -in @('Hermes', 'All')) {
+        throw 'Hermes location is unknown. Inspect this computer and pass -HermesDestination explicitly. WSL is not assumed.'
+    }
 }
 
 $codexPath = [IO.Path]::GetFullPath($CodexDestination)
 $grokPath = [IO.Path]::GetFullPath($GrokDestination)
-$hermesPath = [IO.Path]::GetFullPath($HermesDestination)
+$hermesPath = if ($HermesDestination) { [IO.Path]::GetFullPath($HermesDestination) } else { $null }
 
 function Get-SkillManifest {
     param([Parameter(Mandatory)][string]$Root)
@@ -90,8 +105,11 @@ function Compare-SkillManifest {
 function Assert-SafeDestination {
     param([Parameter(Mandatory)][string]$Path)
 
-    if ($Path.TrimEnd('\', '/') -eq $sourcePath.TrimEnd('\', '/')) {
-        throw "Installed destination must not be the repository source: $Path"
+    $candidate = [IO.Path]::GetFullPath($Path).TrimEnd('\', '/')
+    $source = $sourcePath.TrimEnd('\', '/')
+    if ($candidate -eq $source -or $source.StartsWith($candidate + '\', [StringComparison]::OrdinalIgnoreCase) -or
+        $candidate.StartsWith($source + '\', [StringComparison]::OrdinalIgnoreCase)) {
+        throw "Installed destination must not overlap repository source: $Path"
     }
 }
 
@@ -103,6 +121,10 @@ function Sync-PhysicalSkill {
     )
 
     Assert-SafeDestination -Path $Path
+    $destinationItem = Get-Item -LiteralPath $Path -Force -ErrorAction SilentlyContinue
+    if ($destinationItem -and $destinationItem.LinkType) {
+        throw "$Name physical destination must not be a filesystem link: $Path"
+    }
     $existing = Get-SkillManifest -Root $Path
     $extra = @($existing.Keys | Where-Object { -not $SourceManifest.ContainsKey($_) } | Sort-Object)
     if ($extra.Count -gt 0) {
@@ -110,6 +132,13 @@ function Sync-PhysicalSkill {
     }
 
     if (-not $Check) {
+        $changed = @($existing.Keys | Where-Object { $existing[$_] -ne $SourceManifest[$_] })
+        if ($changed.Count -gt 0) {
+            New-Item -ItemType Directory -Path $BackupRoot -Force | Out-Null
+            $backupPath = Join-Path $BackupRoot ($Name + '.backup-' + (Get-Date -Format 'yyyyMMdd-HHmmss-ffff'))
+            Copy-Item -LiteralPath $Path -Destination $backupPath -Recurse
+            Write-Output "$Name previous installation preserved at $backupPath"
+        }
         New-Item -ItemType Directory -Path $Path -Force | Out-Null
         foreach ($relative in $SourceManifest.Keys) {
             $sourceFile = Join-Path $sourcePath $relative
@@ -133,6 +162,7 @@ function Sync-GrokJunction {
     param([Parameter(Mandatory)][hashtable]$SourceManifest)
 
     Assert-SafeDestination -Path $grokPath
+    Assert-SafeDestination -Path $codexPath
     $item = Get-Item -LiteralPath $grokPath -Force -ErrorAction SilentlyContinue
     if ($null -eq $item) {
         if ($Check) {

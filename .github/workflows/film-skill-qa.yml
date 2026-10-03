@@ -23,6 +23,13 @@ permissions:
   contents: read
 
 jobs:
+  windows-sync:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify native Windows skill synchronization
+        shell: pwsh
+        run: ./scripts/test-sync-film-skill.ps1
   validate:
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +40,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run project-state tests
-        run: python skills/seedance-film-production/scripts/test_validate_project_state.py
+        run: python -m unittest discover -s skills/seedance-film-production/scripts -p "test_*.py"
       - name: Validate template
         run: python skills/seedance-film-production/scripts/validate_project_state.py skills/seedance-film-production/assets/project-state.template.json
       - name: Validate Skill structure
