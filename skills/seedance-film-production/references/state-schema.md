@@ -6,12 +6,14 @@
 ## 数据约定
 
 根：schema_version、project_id、revision、task_mode、stage、format、source_lock、artifacts、pending_review、approvals、change_log、model_profiles、delivery。specialist_tasks 记录单项诊断，不创建第二份生产状态。
+新项目format=null表示未定；剧本可继续，分镜及后续视觉成果标ready前必须选定。已有项目画幅保留，后续修改画幅时对受影响镜头及画板登记visual变更，不能改全局字段后保留旧视觉批准。
 stage 为 script / shot_plan / assets / storyboard / compile。前四阶段分别对应 scene / shot / asset / board；编译有 unit 和 prompt 两类。每项含 id、kind、version、status、content、aspect_versions、depends_on、approved_version。
 状态 draft / ready / awaiting_confirmation / approved / stale / blocked。ready 指制作与自检完成，approved 才是用户确认。图片缺失或失败用 blocked，不创建虚假 media。
 content 的普通必填字段：scene(heading,text)，shot(size,camera,action,sound,join)，asset(role,description)，unit(duration_seconds,start_state,end_state,join)，prompt(text,profile_id,references)。镜头预计时长可另存 content.duration_seconds，用户仍看六列表格。
 asset.content.used_by 列出使用它的镜头 ID，用于外观变更重验；画板和提示词直接依赖资产。资产本身依赖源场或已确认分镜；不要为登记使用而改变已批准镜头正文。
 board.content 包含 style（black_white_lineart 或 color）、panel_aspect、row_lengths 和 panels；每格有 id、shot_id、state，直接引用该镜头。跨页用独立 board ID，panel ID 项目内应保持稳定。
 样式选择证据保存在 board.content.style_evidence，形式与实际图一致；旧2.0黑白项目无需新增字段即可校验。修改已有画板样式走 visual 变更并重新审阅，只影响该板及其下游，不回退资产、镜头和剧本。
+board.content.blocking_issues记录未解决的剧情、空间、站位、画幅问题；非空时禁止ready/审批。宫格导演稿与实际调用提示词路径写入content，逐格原文依据和空间约束集中于该稿，不另造平行状态表。校验器只验证结构和已记录问题，不能自动证明图像语义正确。
 图片 media 必须含 path、sha256、reviewed=true、reviewed_version、review_note；相对路径基于状态文件目录，实际查看后才填写。提示词保存在 content.prompt，已有素材来源存 content.source。
 prompt.references 每项包含 id、name（如 @图片1）、role。asset 的 role 为 identity_appearance_space；board 为 composition_action。每个引用同时是直接依赖，且对应实际文件。
 model_profiles 每项有 id、model、entry、verified_at、source、supports_combined_refs、limits(duration_seconds,prompt_characters,images)。来源是本轮当前入口或官方文档，不能复制旧参数。未知写 null；不支持所需参考时保留 blocked。入口人像接入、附件方式等未决项写 profile.blockers；存在 blocker 的提示词不能标 ready。

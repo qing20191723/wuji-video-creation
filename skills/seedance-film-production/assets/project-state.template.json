@@ -4,7 +4,7 @@
   "revision": 1,
   "task_mode": "full_production",
   "stage": "script",
-  "format": "16:9",
+  "format": null,
   "source_lock": {
     "confirmed_facts": [],
     "forbidden_changes": [],

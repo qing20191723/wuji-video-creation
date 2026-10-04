@@ -10,7 +10,7 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 SKILL_ROOT = REPOSITORY_ROOT / "skills" / "seedance-film-production"
 ENTRYPOINT = SKILL_ROOT / "SKILL.md"
-EXPECTED_VERSION = "3.1.0"
+EXPECTED_VERSION = "3.2.0"
 MAX_ENTRYPOINT_LINES = 70
 MAX_ENTRYPOINT_CHARACTERS = 6000
 MAX_MARKDOWN_LINES = 750

@@ -32,7 +32,7 @@ def positive(value):
     return isinstance(value, int) and not isinstance(value, bool) and value > 0
 
 
-def new_state(project_id="PROJECT-001", aspect="16:9"):
+def new_state(project_id="PROJECT-001", aspect=None):
     return dict(schema_version="2.0", project_id=project_id, revision=1,
                 task_mode="full_production", stage="script", format=aspect,
                 source_lock={"confirmed_facts": [], "forbidden_changes": [], "allowed_inferences": []},
@@ -92,8 +92,8 @@ def validate(data):
         errors.append("Unknown stage")
     if data.get("task_mode") not in ("full_production", "specialist"):
         errors.append("Unknown task_mode")
-    if not re.fullmatch(r"[1-9]\d*:[1-9]\d*", str(data.get("format", ""))):
-        errors.append("format must be a positive aspect ratio")
+    if data.get("format") is not None and not re.fullmatch(r"[1-9]\d*:[1-9]\d*", str(data["format"])):
+        errors.append("format must be a positive aspect ratio or null while undecided")
     for field in ("artifacts", "approvals", "change_log", "specialist_tasks", "model_profiles"):
         if not isinstance(data.get(field), list):
             errors.append(f"{field} must be a list")
@@ -163,6 +163,10 @@ def validate(data):
     for a in items.values():
         aid, kind, content = a["id"], a["kind"], a["content"]
         active = a["status"] in ("ready", "awaiting_confirmation", "approved")
+        if active and kind in ("shot", "board", "unit", "prompt") and data.get("format") is None:
+            errors.append(f"{aid}: project aspect must be selected before visual planning is ready")
+        if active and kind == "board" and content.get("blocking_issues"):
+            errors.append(f"{aid}: unresolved storyboard blocking issues")
         for approval in data["approvals"]:
             for record in approval["items"]:
                 if record.get("id") == aid and record.get("version") == a["version"] and record.get("digest") != digest(a):

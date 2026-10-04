@@ -27,7 +27,7 @@ class StateTests(unittest.TestCase):
         return v.approve_pending_gate(v.submit_review(state, stage, self.base), 'Fixture user confirms these exact results', self.base)
 
     def production(self, board_style='black_white_lineart'):
-        s = v.new_state('TEST')
+        s = v.new_state('TEST', aspect='16:9')
         for suffix in ('A', 'B'):
             a = v.new_artifact('SC-' + suffix, 'scene', dict(heading='01－01｜修理铺｜日｜内', text='女孩接过修好的表。'))
             a['status'] = 'ready'
@@ -81,6 +81,31 @@ class StateTests(unittest.TestCase):
         self.assertEqual([], v.verify_media(s, self.base))
         with self.assertRaises(ValueError):
             v.submit_review(s, 'compile', self.base)
+
+    def test_unselected_aspect_allows_script_but_blocks_ready_shot(self):
+        s = v.new_state('UNDECIDED')
+        self.assertIsNone(s['format'])
+        scene = v.new_artifact('SC', 'scene', dict(heading='1－1｜店内｜日｜内', text='店主递出手表。'))
+        scene['status'] = 'ready'
+        s['artifacts'].append(scene)
+        s = self.confirm(s, 'script')
+        shot = v.new_artifact('SH', 'shot', dict(size='中景', camera='固定', action='递表', sound='谢谢', join='切'),
+                              [v.dependency(v.index(s)['SC'])])
+        shot['status'] = 'ready'
+        s['artifacts'].append(shot)
+        with self.assertRaisesRegex(ValueError, 'aspect must be selected'):
+            v.submit_review(s, 'shot_plan', self.base)
+        s['format'] = '9:16'
+        self.assertEqual('shot_plan', self.confirm(s, 'shot_plan')['approvals'][-1]['stage'])
+
+    def test_logged_spatial_failure_blocks_board_review(self):
+        s = v.apply_change(self.production(), ['BOARD-A'], 'visual', 'Wrong doorway and actor positions')
+        board = v.index(s)['BOARD-A']
+        board['content']['blocking_issues'] = ['Door replaces a window']
+        self.image(board)
+        board['status'] = 'ready'
+        with self.assertRaisesRegex(ValueError, 'unresolved storyboard'):
+            v.submit_review(s, 'storyboard', self.base)
 
     def test_color_board_uses_same_four_gates_and_reference_roles(self):
         s = self.production('color')
