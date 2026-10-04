@@ -26,7 +26,7 @@ class StateTests(unittest.TestCase):
     def confirm(self, state, stage):
         return v.approve_pending_gate(v.submit_review(state, stage, self.base), 'Fixture user confirms these exact results', self.base)
 
-    def production(self):
+    def production(self, board_style='black_white_lineart'):
         s = v.new_state('TEST')
         for suffix in ('A', 'B'):
             a = v.new_artifact('SC-' + suffix, 'scene', dict(heading='01－01｜修理铺｜日｜内', text='女孩接过修好的表。'))
@@ -51,7 +51,7 @@ class StateTests(unittest.TestCase):
             deps = [v.dependency(v.index(s)['SH-' + suffix], ('visual', 'performance')), v.dependency(v.index(s)['CHAR'], ('visual',))]
             if suffix == 'B':
                 deps.append(v.dependency(v.index(s)['PROP'], ('visual',)))
-            a = v.new_artifact('BOARD-' + suffix, 'board', dict(style='black_white_lineart', panel_aspect='16:9', row_lengths=[1],
+            a = v.new_artifact('BOARD-' + suffix, 'board', dict(style=board_style, panel_aspect='16:9', row_lengths=[1],
                                panels=[dict(id='P-' + suffix, shot_id='SH-' + suffix, state='表已在女孩手中')]), deps)
             self.image(a)
             a['status'] = 'ready'
@@ -81,6 +81,39 @@ class StateTests(unittest.TestCase):
         self.assertEqual([], v.verify_media(s, self.base))
         with self.assertRaises(ValueError):
             v.submit_review(s, 'compile', self.base)
+
+    def test_color_board_uses_same_four_gates_and_reference_roles(self):
+        s = self.production('color')
+        self.assertEqual(4, len(s['approvals']))
+        self.assertEqual('compile', s['stage'])
+        self.assertEqual([], v.verify_media(s, self.base))
+        self.assertEqual('composition_action', v.index(s)['PROMPT-A']['content']['references'][1]['role'])
+
+    def test_style_change_only_invalidates_board_and_its_downstream(self):
+        original = self.production()
+        s = v.apply_change(original, ['BOARD-A'], 'visual', 'User chooses color for this board')
+        self.assertEqual({'BOARD-A', 'UNIT-A', 'PROMPT-A'}, set(s['change_log'][-1]['affected']))
+        for aid in ('SC-A', 'SH-A', 'CHAR', 'BOARD-B', 'PROMPT-B'):
+            self.assertEqual(v.index(original)[aid], v.index(s)[aid])
+        board = v.index(s)['BOARD-A']
+        board['content']['style'] = 'color'
+        self.assertIsNone(board['approved_version'])
+        self.image(board)
+        board['status'] = 'ready'
+        s['delivery']['status'] = 'draft'
+        s = v.submit_review(s, 'storyboard', self.base)
+        self.assertEqual(['BOARD-A'], [r['id'] for r in s['pending_review']['items']])
+        s = v.approve_pending_gate(s, 'Fixture confirms revised color image', self.base)
+        self.assertEqual('approved', v.index(s)['BOARD-A']['status'])
+        self.assertEqual('stale', v.index(s)['PROMPT-A']['status'])
+
+    def test_unknown_board_style_and_silent_style_edit_rejected(self):
+        s = self.production('color')
+        v.index(s)['BOARD-A']['content']['style'] = 'sepia_unknown'
+        self.assertTrue(any('board requires' in e for e in v.validate(s)[0]))
+        s = self.production()
+        v.index(s)['BOARD-A']['content']['style'] = 'color'
+        self.assertTrue(any('approval does not bind' in e for e in v.validate(s)[0]))
 
     def test_dialogue_change_preserves_other_scene_and_shared_appearance(self):
         s = self.production()

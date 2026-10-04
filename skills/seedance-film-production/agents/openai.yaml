@@ -1,6 +1,6 @@
 interface:
   display_name: "无极影视创作"
-  short_description: "以剧本为先，四次成果确认，完成分镜、必要资产、黑白宫格和视频提示词"
-  default_prompt: "使用 $seedance-film-production 从剧本开始，推进文字分镜、必要资产、黑白线稿宫格和自然语言视频提示词。"
+  short_description: "以剧本为先，四次成果确认，完成分镜、必要资产、可选彩色或黑白宫格和视频提示词"
+  default_prompt: "使用 $seedance-film-production 从剧本开始，推进文字分镜、必要资产、可选彩色或黑白线稿的宫格和自然语言视频提示词。"
 policy:
   allow_implicit_invocation: true

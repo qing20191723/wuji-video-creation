@@ -205,8 +205,8 @@ def validate(data):
                 errors.append(f"{aid}: actual, visually reviewed image required")
         if kind == "board":
             panels, rows = content.get("panels"), content.get("row_lengths")
-            if content.get("style") != "black_white_lineart" or content.get("panel_aspect") != data["format"]:
-                errors.append(f"{aid}: board requires black_white_lineart and project panel aspect")
+            if content.get("style") not in ("black_white_lineart", "color") or content.get("panel_aspect") != data["format"]:
+                errors.append(f"{aid}: board requires black_white_lineart or color and project panel aspect")
             if (not isinstance(panels, list) or not panels or not isinstance(rows, list) or not rows
                     or not all(positive(v) for v in rows)):
                 errors.append(f"{aid}: panels and positive row_lengths required")
