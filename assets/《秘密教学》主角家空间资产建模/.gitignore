@@ -1,0 +1,11 @@
+预览/
+*.log
+*.blend1
+校验/browser_*.png
+校验/浏览器*.png
+校验/离线*.png
+校验/页面*.png
+校验/*.webm
+__pycache__/
+模型/秘密教学_主角家_直接渲染_v4.2.blend
+scripts/port_package.py

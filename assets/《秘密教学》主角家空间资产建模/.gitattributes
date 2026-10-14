@@ -1,0 +1,10 @@
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+参照/*.png filter=lfs diff=lfs merge=lfs -text
+参照/*.jpeg filter=lfs diff=lfs merge=lfs -text
+品牌/*.png filter=lfs diff=lfs merge=lfs -text
+图纸/*.png filter=lfs diff=lfs merge=lfs -text
+资源/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+资源/**/*.png filter=lfs diff=lfs merge=lfs -text
+资源/**/*.exr filter=lfs diff=lfs merge=lfs -text
+vendor/* -whitespace
