@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-14",
+  "remote": "https://github.com/qing20191723/wuji-video-creation.git",
+  "branch": "codex/20261014-secret-teaching-home-assets",
+  "verified_commit": "2d125323eee9f9df2c7891e41bd06a70a4362524",
+  "fresh_https_clone": true,
+  "lfs_paths_checked": 42,
+  "unique_lfs_objects": 38,
+  "lfs_bytes_unique": 268419684,
+  "lfs_checksum_pass": true,
+  "structural_objects_checked": 329,
+  "structural_changes": [],
+  "all_used_texture_images_packed": true,
+  "offline_preview_pass": true,
+  "saved_model_render_pass": true,
+  "local_remote_render_sha256_identical": false,
+  "render_sha256": "d268084873f62791baca1a771e4ccaf40c1855aea35ffb9b86ca146d33f56951",
+  "files": [
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R101_客厅_前视图.png",
+      "sha256": "e9d9476dc8f31cec8f31c899ed7fa9905a78b6c300b7542b4a4549270934e65a",
+      "bytes": 1943911
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R102_餐厅_前视图.png",
+      "sha256": "b4b2830620aa29901068b9704cc1f0f740d3ae1694c25130cfce6aef810bd6d6",
+      "bytes": 1711053
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R103_厨房_俯拍图.png",
+      "sha256": "d30f2f6505a88f6b2dbdee32e0225e8ea296df4e697e5ea583ec87a9a8c71087",
+      "bytes": 1680747
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R104_周家洗衣房.jpeg",
+      "sha256": "86ff1205ef0fb59eda21e832b31349d21b2a369186e890a05b26c6d89df820a8",
+      "bytes": 256419
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R106_一楼走廊到主卧（正面视角）.png",
+      "sha256": "0ba9057ab52cf44b2e16fcd93b9ea4ac9fe05da8bcaed0d6e850492be85f7391",
+      "bytes": 1612440
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R107_主卧与浴室_联合俯视_门洞对齐.png",
+      "sha256": "0e8f1a2e332621e989c0434bfe23b300490d72a48dfd351f3c749d1ed7a9959a",
+      "bytes": 1670261
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R108_主卧浴室_俯拍.png",
+      "sha256": "ba9820ee51bea6e64c4a795a6fc078b6fca3637a30efcee930e7d706787cc635",
+      "bytes": 1819873
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R111_别墅玄关.png",
+      "sha256": "1d781ee24b59814f457b25db8e1e80cfc5983bd6bb9e737cc8525efbc5530701",
+      "bytes": 1803266
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R201_大姐卧室_俯拍视角.png",
+      "sha256": "5f3f49a7c6af4c578e91bd6468f89f0738378d225f62c1621a969e2d375a9da4",
+      "bytes": 2479161
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R202_男主卧室俯拍视角.png",
+      "sha256": "08e83912058a9d9a75cb8ceaa356d29c5512141b8a3fc8b58d1edd771deb2743",
+      "bytes": 2072867
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R203_二姐房间_正视图.png",
+      "sha256": "72b2120407597a36f17f101972fddc32fe34d30cf6ce7c4197dc934c54e6396f",
+      "bytes": 2023721
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R206_别墅二楼到楼梯间参考图.png",
+      "sha256": "4cde228e0ce9b826c4190279bcfe018a2086d75978010527603088cd16aaf991",
+      "bytes": 1846440
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R207_别墅楼梯间参考.png",
+      "sha256": "c9e4d1f963a980de6540560ac9c208aff71a34a3464ad3273ab665379ecb86a5",
+      "bytes": 1722656
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R210_别墅俯拍视角.png",
+      "sha256": "c02c34bf8ab0e63fbbe42bce9309ce81dede3a4b464a2fa78d05e1a2406b552f",
+      "bytes": 3136781
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/R211_别墅正面视角.png",
+      "sha256": "d2d7dccbfb6fa67b7ccb848469d172619b0c762aab1fe14533516350a273fc7b",
+      "bytes": 2653115
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅二楼到楼梯间参考图.png",
+      "sha256": "4cde228e0ce9b826c4190279bcfe018a2086d75978010527603088cd16aaf991",
+      "bytes": 1846440
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅二楼走廊.png",
+      "sha256": "2a89b14a90ab0e8e790bf070194e13e5aeaf426626bcff1df7efb7951dae9bbe",
+      "bytes": 2479750
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅侧面参考.png",
+      "sha256": "c313be4ec1e082ed88fcaeda1d90313e822fe07bb0e1d8ce32dc670bd084897a",
+      "bytes": 2749314
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅俯拍视角.png",
+      "sha256": "c02c34bf8ab0e63fbbe42bce9309ce81dede3a4b464a2fa78d05e1a2406b552f",
+      "bytes": 3136781
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅楼梯间参考.png",
+      "sha256": "c9e4d1f963a980de6540560ac9c208aff71a34a3464ad3273ab665379ecb86a5",
+      "bytes": 1722656
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅正面视角.png",
+      "sha256": "d2d7dccbfb6fa67b7ccb848469d172619b0c762aab1fe14533516350a273fc7b",
+      "bytes": 2653115
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/别墅背面视角.png",
+      "sha256": "2acc499890f38f83e4e52e6c7063d4747aae8466ef788c7f7695ea504124ec8f",
+      "bytes": 2857248
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/参照/木制小门牌_用户参考.png",
+      "sha256": "89bb0da3ddf6d890e36a5728781ba1cfb3d38f7411137026ef1ae98d25d69679",
+      "bytes": 48552
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/品牌/黄瓜短剧_无域名_透明底.png",
+      "sha256": "789b401301ae7e77d7f1761eae7db78acfb527af3ceef268006813593982fed5",
+      "bytes": 681496
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/图纸/两层同向平面图.png",
+      "sha256": "1cece32546779c7ae2eb7b97ac6261041e85d9744096ccc57c0ed5f432bff149",
+      "bytes": 830994
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/模型/秘密教学_主角家_v4.1.blend",
+      "sha256": "4c34a91a4f1350c93437af924dd28acfd00e8768da1140b0fd7528791143cadf",
+      "bytes": 10631901
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/模型/秘密教学_主角家_v4.1.glb",
+      "sha256": "d65847c7a07ee4f86e53d802d17055be58792444362dc1179c31322c9d4c8577",
+      "bytes": 3439916
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/模型/秘密教学_主角家_直接渲染_v4.3.blend",
+      "sha256": "2558f9c8a39ce9283f5764423f97f109b7123eba3dcb831d2eae4c567180beee",
+      "bytes": 123576112
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/模型/秘密教学_全屋空间_v4.blend",
+      "sha256": "037329c383197d5bdd7bc5339d99417fe2c74935fcfcb87a50aacb21a0768971",
+      "bytes": 6507769
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/模型/秘密教学_全屋空间_v4.glb",
+      "sha256": "ed18b405af381cbdf203388222ab141d688218dc225f0c0500345ccdf74d1d90",
+      "bytes": 1064992
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/potted_plant_01_2k.blend",
+      "sha256": "2dfc6297b611f991e1847ffc20514dee561aa23b8fa064870a8cce48c3d52627",
+      "bytes": 2784329
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_alpha_2k.png",
+      "sha256": "06f49590ff6e0480528ded4b69c3e19eb4009cb81b3031e28b52c5a6e662bd8f",
+      "bytes": 199855
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_diff_2k.png",
+      "sha256": "7733751794e26966f8d8bf7b7d67c909dd35d725f43f745c49f30a936dfa9603",
+      "bytes": 12648810
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.png",
+      "sha256": "aa0d16ce0a0880370f37844408ca2d62af9a90cc30e29851bf8fabeb73bfac5c",
+      "bytes": 14782653
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.png",
+      "sha256": "dcbc6c5783fe82107d8634d427270621eadad73ddebaf6d8a997ebd547ae4421",
+      "bytes": 3726462
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_diff_2k.png",
+      "sha256": "6aefc6c9ec2e4a9096167a101aa61798f2a42e07e310ec02f83da6731723ba4e",
+      "bytes": 17994581
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.png",
+      "sha256": "1edf19e5c739ae4aa6dc619a865b361db6467d36ee459f994eb814d472fa1e4c",
+      "bytes": 18083982
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_rough_2k.png",
+      "sha256": "04d6c79beb5333c87be60069bd7d67fe141fd8172714298c1a54b7ad9533f3a3",
+      "bytes": 5865763
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_04/potted_plant_04_2k.blend",
+      "sha256": "7c917f78e527ee5b882b53893c2b4dc9bc495da4f07dbb19aa7cf05428501003",
+      "bytes": 297303
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_04/textures/potted_plant_04_diff_2k.jpg",
+      "sha256": "72e6160fc0d3a15f6ec5f4df72220bafe123a6311432d57ab99c8b4c71b8b93d",
+      "bytes": 1804144
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_04/textures/potted_plant_04_nor_gl_2k.exr",
+      "sha256": "c2cc78e35e9c83bc3647aeef124dbb3343d28a0d58b713cfcb543dd795c353da",
+      "bytes": 5472710
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/资源/PolyHaven/potted_plant_04/textures/potted_plant_04_rough_2k.exr",
+      "sha256": "cb53f3ac88b49cd394a0b703e9e14ed20fae68fe79d89fae7c9fe385dcdf7415",
+      "bytes": 1458337
+    }
+  ],
+  "scope": "模型和依赖备份验证；不代表95张最终场景完成",
+  "render_pixels_identical": false,
+  "render_mean_absolute_pixel_error": [
+    3.6651234567901234e-05,
+    2.8935185185185186e-05,
+    3.472222222222222e-05
+  ]
+}
