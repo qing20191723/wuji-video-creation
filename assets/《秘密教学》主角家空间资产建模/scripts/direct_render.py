@@ -180,13 +180,9 @@ for o in bpy.data.objects:
     b=room['box'] if room else [0,0,3,3];o['room_area']=(b[2]-b[0])*(b[3]-b[1]);o.data.size=max(.35,min(2.5,b[2]-b[0]-.5,b[3]-b[1]-.5))
    else:o.data.size=12
 def time_state(night):
- bg=s.world.node_tree.nodes['Background'];bg.inputs[0].default_value=(.84,.89,1,1) if not night else (.12,.18,.32,1);bg.inputs[1].default_value=.65 if not night else .045
- for o in bpy.data.objects:
-  if o.type!='LIGHT':continue
-  inside='检查光' in o.name
-  o.data.energy=max(25,min(370,o.get('room_area',20)*(9 if night else 4))) if inside else (20 if night else 3800)
-  o.data.color=(1,.94,.84) if night and inside else (1,1,1)
- s['time_state']='night' if night else 'day';s.view_settings.exposure=.15
+ sys.path.insert(0,str(R/'scripts'))
+ from lighting import set_time
+ set_time(s,bpy.data.objects,night)
 jobs=[]
 for id,pos,target,lens in [
  ('二姐卧室_前视图',[8.3,9.65,4.92],[3.7,9.65,4.92],22),

@@ -15,6 +15,15 @@
 
 要求 Blender 4.5、Python 3.10+。依赖从项目目录定位；系统工具位置由调用者配置。先执行 `git lfs pull`。
 
+在本资产目录运行下列命令。直接拍摄已有模型使用 `render_saved.py`，它只切换真实摄影机和灯光，不重新建模，也不调用 AI：
+
+```powershell
+blender -b --disable-autoexec --python scripts/render_saved.py -- --list
+blender -b --disable-autoexec --python scripts/render_saved.py -- --camera "DIRECT_客厅_后视图" --time both
+```
+
+默认输出到 `预览/保存模型拍摄/`。需要修改家具后重建模型时，才使用下面的制作命令：
+
 ```powershell
 python scripts/check_and_draw.py
 blender -b --python scripts/verify_blend.py
