@@ -1,0 +1,385 @@
+{
+  "scope": "影视参考尺寸；边界面积不是净使用面积。单张透视图不足以唯一反推尺寸。",
+  "rooms": [
+    {
+      "id": "R101",
+      "room": "客厅",
+      "boundary_size_m": [
+        7.4,
+        5.5
+      ],
+      "boundary_area_m2": 40.7,
+      "furniture_ids": [
+        "F101",
+        "F102",
+        "F103",
+        "F104",
+        "F105",
+        "F106"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R102",
+      "room": "餐厅",
+      "boundary_size_m": [
+        4.2,
+        3.7
+      ],
+      "boundary_area_m2": 15.54,
+      "furniture_ids": [
+        "F107",
+        "DIN_C0",
+        "DIN_C1",
+        "DIN_C2",
+        "DIN_C3",
+        "DIN_C4",
+        "DIN_C5"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R103",
+      "room": "厨房",
+      "boundary_size_m": [
+        4.2,
+        3.7
+      ],
+      "boundary_area_m2": 15.54,
+      "furniture_ids": [
+        "K_COUNTER0",
+        "K_COUNTER1",
+        "K_COUNTER2",
+        "K_COUNTER3",
+        "K_FRIDGE",
+        "K_SINK"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R104",
+      "room": "洗衣房",
+      "boundary_size_m": [
+        3.4,
+        3.7
+      ],
+      "boundary_area_m2": 12.58,
+      "furniture_ids": [
+        "L_WASHER",
+        "L_DRYER",
+        "L_COUNTER",
+        "L_BASKET"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R105",
+      "room": "餐厨前厅与家政",
+      "boundary_size_m": [
+        4.2,
+        3.1
+      ],
+      "boundary_area_m2": 13.02,
+      "furniture_ids": [
+        "L_STORAGE",
+        "L_FOLD"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R106",
+      "room": "主卧独立走廊",
+      "boundary_size_m": [
+        1.6,
+        6.8
+      ],
+      "boundary_area_m2": 10.88,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R107",
+      "room": "主卧",
+      "boundary_size_m": [
+        5.0,
+        5.2
+      ],
+      "boundary_area_m2": 26.0,
+      "furniture_ids": [
+        "MASTER_BED",
+        "M_BEDSIDE1",
+        "M_BEDSIDE2",
+        "M_WARDROBE",
+        "M_VANITY"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R108",
+      "room": "主卫",
+      "boundary_size_m": [
+        3.2,
+        3.2
+      ],
+      "boundary_area_m2": 10.24,
+      "furniture_ids": [
+        "M_TUB",
+        "M_WC",
+        "M_SINK"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R109",
+      "room": "客卫",
+      "boundary_size_m": [
+        1.8,
+        2.3
+      ],
+      "boundary_area_m2": 4.14,
+      "furniture_ids": [
+        "G_WC",
+        "G_SINK"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R110",
+      "room": "公共走廊",
+      "boundary_size_m": [
+        1.6,
+        10.6
+      ],
+      "boundary_area_m2": 16.96,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R111",
+      "room": "玄关",
+      "boundary_size_m": [
+        3.4,
+        1.7
+      ],
+      "boundary_area_m2": 5.78,
+      "furniture_ids": [
+        "ENTRY_C"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R112",
+      "room": "楼梯B端落地平台",
+      "boundary_size_m": [
+        1.8,
+        1.98
+      ],
+      "boundary_area_m2": 3.564,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R113",
+      "room": "阅读角",
+      "boundary_size_m": [
+        3.4,
+        3.7
+      ],
+      "boundary_area_m2": 12.58,
+      "furniture_ids": [
+        "READ_C",
+        "READ_BOOK"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R114",
+      "room": "主卧门前廊",
+      "boundary_size_m": [
+        5.0,
+        1.6
+      ],
+      "boundary_area_m2": 8.0,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R201",
+      "room": "大姐卧室",
+      "boundary_size_m": [
+        7.4,
+        3.8
+      ],
+      "boundary_area_m2": 28.12,
+      "furniture_ids": [
+        "E_BED",
+        "E_WARD",
+        "E_VANITY",
+        "E_BIKE",
+        "E_DESK",
+        "E_BOOK",
+        "E_RUG"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R202",
+      "room": "男主卧室",
+      "boundary_size_m": [
+        7.4,
+        3.8
+      ],
+      "boundary_area_m2": 28.12,
+      "furniture_ids": [
+        "M_BED",
+        "M_DESK",
+        "M_WARD",
+        "M_TELESCOPE",
+        "M_GUITAR",
+        "M_TV",
+        "M_COFFEE"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R203",
+      "room": "二姐卧室",
+      "boundary_size_m": [
+        7.4,
+        3.8
+      ],
+      "boundary_area_m2": 28.12,
+      "furniture_ids": [
+        "Y_BED",
+        "Y_DESK",
+        "Y_DRAWERS",
+        "Y_COLLECTION",
+        "Y_RUG"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R204",
+      "room": "公用浴室",
+      "boundary_size_m": [
+        3.5,
+        3.1
+      ],
+      "boundary_area_m2": 10.85,
+      "furniture_ids": [
+        "U_SINK",
+        "U_WC",
+        "U_SHOWER"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R205",
+      "room": "布草储物",
+      "boundary_size_m": [
+        3.3,
+        3.1
+      ],
+      "boundary_area_m2": 10.23,
+      "furniture_ids": [
+        "LIN_SHELF1",
+        "LIN_SHELF2"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R206",
+      "room": "二楼并排走廊",
+      "boundary_size_m": [
+        1.6,
+        11.2
+      ],
+      "boundary_area_m2": 17.92,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R207",
+      "room": "A端上平台",
+      "boundary_size_m": [
+        3.4,
+        1.7
+      ],
+      "boundary_area_m2": 5.78,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R208",
+      "room": "二楼服务过厅",
+      "boundary_size_m": [
+        10.8,
+        1.5
+      ],
+      "boundary_area_m2": 16.2,
+      "furniture_ids": [],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R209",
+      "room": "后露台",
+      "boundary_size_m": [
+        7.4,
+        3.1
+      ],
+      "boundary_area_m2": 22.94,
+      "furniture_ids": [
+        "TER_SOFA",
+        "TER_C",
+        "TER_TABLE",
+        "TER_P"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R210",
+      "room": "侧露台",
+      "boundary_size_m": [
+        3.4,
+        5.4
+      ],
+      "boundary_area_m2": 18.36,
+      "furniture_ids": [
+        "SIDE_P"
+      ],
+      "net_area_claimed": false
+    },
+    {
+      "id": "R211",
+      "room": "临街阳台",
+      "boundary_size_m": [
+        10.8,
+        1.6
+      ],
+      "boundary_area_m2": 17.28,
+      "furniture_ids": [
+        "BAL_C",
+        "BAL_P"
+      ],
+      "net_area_claimed": false
+    }
+  ],
+  "door_centers_y": [
+    3.025,
+    5.825,
+    10.725
+  ],
+  "door_center_gaps_m": [
+    2.8,
+    4.9
+  ],
+  "corridor_clear_width_m": 1.48,
+  "wall_height_m": 3.08,
+  "guard_including_cap_m": 1.16,
+  "geometry_changes": [],
+  "deferred": [
+    "三间卧室同为7.4×3.8米，原图家具方向各异，尚不足以唯一反推尺寸；本轮不伪造尺寸校准完成。",
+    "服务过厅16.2㎡及布草区10.23㎡为边界面积，使用效率需进一步房内反向机位验证。",
+    "外立面窗口与原外景不能逐窗一一对应，延续既有冲突记录。"
+  ]
+}

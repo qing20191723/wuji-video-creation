@@ -1,11 +1,11 @@
 {
   "date": "2026-10-14",
-  "reason": "用户要求直接对同一个模型设置多个摄影机并渲染，避免AI重绘导致空间变化",
-  "active_method": "Blender Cycles direct render",
-  "abandoned_method": "灰模参考 + imagegen整图重绘",
+  "active_method": "模型确定摄影机和结构，imagegen结合原图编辑材质，逐张复核结构与文字",
+  "model": "v4.4",
   "formal_scene_ready": 0,
   "formal_scene_target": 95,
   "auxiliary_target": 2,
   "pilot_renders": 32,
-  "quality_limit": "首批可验证固定机位、门牌和日夜状态；家具精度、布艺、照片收藏、生活陈设仍未达到原图质感"
+  "prior_renders_role": "结构参考，不能当作合格正式场景",
+  "user_authorization": "开始实施，末尾那句是旧计划遗留文字"
 }

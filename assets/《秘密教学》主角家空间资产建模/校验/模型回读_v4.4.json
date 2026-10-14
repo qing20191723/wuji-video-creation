@@ -1,0 +1,90 @@
+{
+  "checked_structural_objects": 329,
+  "issues": [],
+  "exact_model_door_text": {
+    "TEXT_D203": "薇亚的窝",
+    "TEXT_D204": "子豪の窝",
+    "TEXT_D205": "舒亚の窝"
+  },
+  "image_dependencies": [
+    {
+      "name": "potted_plant_01_leaves_alpha.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_leaves_diff.png.001",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_leaves_nor_gl.png.001",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_leaves_rough.png.001",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_pot_diff.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_pot_nor_gl.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_01_pot_rough.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_diff.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_diff.png.001",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_nor_gl.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_nor_gl.png.001",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_rough.png",
+      "packed": true
+    },
+    {
+      "name": "potted_plant_04_rough.png.001",
+      "packed": true
+    },
+    {
+      "name": "黄瓜短剧_无域名_透明底.png",
+      "packed": true
+    }
+  ],
+  "camera": {
+    "id": "H203",
+    "name": "后露台方向看三间卧室·真实高位日景",
+    "pos": [
+      1.98,
+      12.78,
+      5.55
+    ],
+    "target": [
+      2.3986876499435508,
+      4.790963721963409,
+      3.4064064605510183
+    ],
+    "lens": 20,
+    "mode": "all",
+    "ref": "别墅二楼走廊.png",
+    "camera_height_above_floor": 2.25,
+    "downward_pitch_degrees": 15,
+    "sensor_width_mm": 36,
+    "aspect": 1.7777777777777777,
+    "cutaway": false
+  },
+  "proof_limit": "几何一致不等于原房间比例已校准；门牌模型精确不等于生成图中小字逐字可辨。"
+}
