@@ -29,6 +29,7 @@ v4.4 修复预览默认截矮墙体及视场换算，增加 H203 后露台方向
 blender -b --disable-autoexec --python scripts/build_v44.py
 python scripts/check_v44.py
 blender -b --disable-autoexec --python scripts/check_saved_v44.py
+blender -b --disable-autoexec --python scripts/project_openings_v44.py
 python scripts/diagnostics_v44.py
 python scripts/package_review.py
 ```
@@ -69,3 +70,5 @@ python scripts/package_direct_review.py
 模型、必要参考、品牌和图纸以 LFS 保存；代码、清单、提示词和检查结果以 Git 保存。最终场景图和漫游保存在本地场景全集，仓库只记录相对文件名、状态与 SHA-256。原始用户素材不删除；旧生成图仅在对应替代图通过检查后移出最新目录。
 
 私有仓库专用分支为 `codex/20261014-secret-teaching-home-assets`，不修改 main。旧版远端恢复证据见 `制作记录/远端恢复校验.json`；v4.4 的备份状态以另存的 v4.4 验证记录为准，不能沿用旧版成功结果。
+
+v4.4 已完成独立 HTTPS 克隆及新增 LFS 文件恢复验证：模型、GLB、图纸 PNG 的 SHA-256 一致，保存模型可打开且贴图已内嵌，离线预览通过。证据见 `制作记录/远端恢复校验_v4.4.json`。此结论只涵盖备份，不代表样图或全屋尺寸已验收。

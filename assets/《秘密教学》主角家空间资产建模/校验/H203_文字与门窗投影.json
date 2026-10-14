@@ -98,5 +98,121 @@
     ],
     "exact_text": "",
     "in_front": true
+  },
+  "OPENING_W201": {
+    "pixel_box": [
+      1055.3,
+      204.0,
+      1175.7,
+      435.6
+    ],
+    "pixel_corners": [
+      [
+        1164.2,
+        435.6
+      ],
+      [
+        1055.3,
+        434.7
+      ],
+      [
+        1060.7,
+        204.2
+      ],
+      [
+        1175.7,
+        204.0
+      ]
+    ],
+    "exact_text": "W201",
+    "in_front": true,
+    "visibility": "projected opening; may be partly occluded by guard"
+  },
+  "OPENING_D201": {
+    "pixel_box": [
+      920.8,
+      204.3,
+      1021.2,
+      446.7
+    ],
+    "pixel_corners": [
+      [
+        1017.7,
+        446.7
+      ],
+      [
+        923.0,
+        445.8
+      ],
+      [
+        920.8,
+        204.6
+      ],
+      [
+        1021.2,
+        204.3
+      ]
+    ],
+    "exact_text": "D201",
+    "in_front": true,
+    "visibility": "projected opening; may be partly occluded by guard"
+  },
+  "OPENING_W202": {
+    "pixel_box": [
+      1215.4,
+      384.5,
+      1289.3,
+      506.7
+    ],
+    "pixel_corners": [
+      [
+        1215.4,
+        442.2
+      ],
+      [
+        1283.2,
+        506.7
+      ],
+      [
+        1289.3,
+        430.1
+      ],
+      [
+        1219.0,
+        384.5
+      ]
+    ],
+    "exact_text": "W202",
+    "in_front": true,
+    "visibility": "projected opening; may be partly occluded by guard"
+  },
+  "OPENING_W203": {
+    "pixel_box": [
+      1381.5,
+      108.7,
+      1526.4,
+      731.2
+    ],
+    "pixel_corners": [
+      [
+        1381.5,
+        658.9
+      ],
+      [
+        1446.5,
+        731.2
+      ],
+      [
+        1526.4,
+        108.7
+      ],
+      [
+        1438.8,
+        133.8
+      ]
+    ],
+    "exact_text": "W203",
+    "in_front": true,
+    "visibility": "projected opening; may be partly occluded by guard"
   }
 }
