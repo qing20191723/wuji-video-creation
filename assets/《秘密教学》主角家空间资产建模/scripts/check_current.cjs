@@ -8,7 +8,7 @@ const results=[];for(const id of ['AX1','AX2','AXS','C01','C02','C03','EXT']){aw
 await p.evaluate(()=>review.setCamera('AX2'));await p.screenshot({path:path.join(R,'校验/页面_当前二楼.png')});
 const audit=await p.evaluate(()=>({version:review.D.version,objects:review.D.objects.length,bedrooms:review.D.rooms.filter(x=>['R201','R202','R203'].includes(x.id)).map(x=>({name:x.name,box:x.box})),links:[...document.querySelectorAll('a[href]')].map(x=>x.getAttribute('href'))}));
 const missing=audit.links.filter(x=>!fs.existsSync(path.join(R,x)));if(missing.length)throw Error('Missing links: '+missing);
-const q=await b.newPage({viewport:{width:1800,height:1260},deviceScaleFactor:2});await q.goto(pathToFileURL(path.join(R,'图纸/两层同向平面图.svg')).href);const png=path.join(R,'图纸/两层同向平面图.png');await q.screenshot({path:png});
-for(const [name,left] of [['一楼平面图',0],['二楼平面图',1800]])await sharp(png).extract({left,top:190,width:1800,height:2330}).png().toFile(path.join(R,'图纸',name+'.png'));
+// New 2D review sheets are independent of this unchanged V4 viewer.
+// Use render_plan_review.cjs to export them; never recreate superseded V4 plans here.
 fs.writeFileSync(path.join(R,'校验/当前入口检查.json'),JSON.stringify({errors,cameras:results,...audit,missing},null,2));await b.close();console.log(JSON.stringify({errors,cameras:results.length,missing,version:audit.version}));if(errors.length)process.exitCode=1;
 })().catch(e=>{console.error(e);process.exit(1)});

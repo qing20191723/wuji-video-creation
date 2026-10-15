@@ -1,0 +1,2562 @@
+{
+  "status": "待用户确认；二维方案，未写入V4模型",
+  "revision": "P1_20261015",
+  "units": "m",
+  "axis": "X东/Y项目北；南为临街侧",
+  "rooms": [
+    {
+      "id": "B1",
+      "name": "薇亚 / 大姐卧室",
+      "level": 2,
+      "box": [
+        3.6,
+        0.2,
+        10.2,
+        6.4
+      ],
+      "color": "#f3e3e6",
+      "net_area": 40.92
+    },
+    {
+      "id": "B2",
+      "name": "子豪 / 男主卧室",
+      "level": 2,
+      "box": [
+        3.6,
+        6.6,
+        10.2,
+        12.0
+      ],
+      "color": "#e6eddf",
+      "net_area": 35.64
+    },
+    {
+      "id": "B3",
+      "name": "舒亚 / 二姐卧室",
+      "level": 2,
+      "box": [
+        3.6,
+        12.2,
+        10.2,
+        17.8
+      ],
+      "color": "#e5e7f0",
+      "net_area": 36.96
+    },
+    {
+      "id": "H2",
+      "name": "直走廊",
+      "level": 2,
+      "box": [
+        1.8,
+        1.7,
+        3.4,
+        18.0
+      ],
+      "color": "#e8efed",
+      "net_area": 26.08
+    },
+    {
+      "id": "A",
+      "name": "A端上平台",
+      "level": 2,
+      "box": [
+        0.2,
+        0.2,
+        3.4,
+        1.7
+      ],
+      "color": "#e8efed",
+      "net_area": 4.8
+    },
+    {
+      "id": "WB",
+      "name": "公用浴室",
+      "level": 2,
+      "box": [
+        -1.6,
+        8.8,
+        1.6,
+        11.2
+      ],
+      "color": "#deebef",
+      "net_area": 7.68
+    },
+    {
+      "id": "LT",
+      "name": "后露台",
+      "level": 2,
+      "box": [
+        -1.6,
+        18.2,
+        10.2,
+        20.0
+      ],
+      "color": "#eee9df",
+      "net_area": 21.24
+    },
+    {
+      "id": "FB",
+      "name": "临街阳台",
+      "level": 2,
+      "box": [
+        0.2,
+        -1.5,
+        10.2,
+        -0.2
+      ],
+      "color": "#eee9df",
+      "net_area": 13.0
+    },
+    {
+      "id": "L",
+      "name": "客厅",
+      "level": 1,
+      "box": [
+        3.6,
+        0.2,
+        10.2,
+        5.6
+      ],
+      "color": "#f2e9df",
+      "net_area": 35.64
+    },
+    {
+      "id": "D",
+      "name": "开放餐厅",
+      "level": 1,
+      "box": [
+        3.6,
+        5.8,
+        10.2,
+        10.0
+      ],
+      "color": "#eee6d8",
+      "net_area": 27.72
+    },
+    {
+      "id": "K",
+      "name": "开放厨房",
+      "level": 1,
+      "box": [
+        5.8,
+        10.2,
+        10.2,
+        13.2
+      ],
+      "color": "#e3ecea",
+      "net_area": 13.2
+    },
+    {
+      "id": "MH",
+      "name": "主卧直走廊",
+      "level": 1,
+      "box": [
+        4.0,
+        10.2,
+        5.6,
+        13.4
+      ],
+      "color": "#e8efed",
+      "net_area": 5.12
+    },
+    {
+      "id": "MB",
+      "name": "主卧",
+      "level": 1,
+      "box": [
+        3.6,
+        13.6,
+        10.2,
+        19.4
+      ],
+      "color": "#ede0df",
+      "net_area": 38.28
+    },
+    {
+      "id": "MW",
+      "name": "主卫",
+      "level": 1,
+      "box": [
+        0.2,
+        15.4,
+        3.4,
+        19.4
+      ],
+      "color": "#deebef",
+      "net_area": 12.8
+    },
+    {
+      "id": "LA",
+      "name": "洗衣房",
+      "level": 1,
+      "box": [
+        -1.6,
+        8.8,
+        1.6,
+        11.2
+      ],
+      "color": "#e3ecea",
+      "net_area": 7.68
+    },
+    {
+      "id": "WC",
+      "name": "客卫",
+      "level": 1,
+      "box": [
+        0.2,
+        11.4,
+        1.6,
+        13.8
+      ],
+      "color": "#deebef",
+      "net_area": 3.36
+    },
+    {
+      "id": "H1",
+      "name": "公共通路",
+      "level": 1,
+      "box": [
+        1.8,
+        1.7,
+        3.4,
+        13.8
+      ],
+      "color": "#e8efed",
+      "net_area": 19.36
+    },
+    {
+      "id": "E",
+      "name": "玄关",
+      "level": 1,
+      "box": [
+        0.2,
+        0.2,
+        3.4,
+        1.5
+      ],
+      "color": "#eee6d8",
+      "net_area": 4.16
+    }
+  ],
+  "walls": [
+    {
+      "id": "1-S",
+      "level": 1,
+      "a": [
+        0,
+        0.1
+      ],
+      "b": [
+        10.4,
+        0.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-STW",
+      "level": 1,
+      "a": [
+        0.1,
+        1.6
+      ],
+      "b": [
+        0.1,
+        8.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-LWW",
+      "level": 1,
+      "a": [
+        -1.7,
+        8.7
+      ],
+      "b": [
+        -1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-LWS",
+      "level": 1,
+      "a": [
+        -1.7,
+        8.7
+      ],
+      "b": [
+        1.7,
+        8.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-LWN",
+      "level": 1,
+      "a": [
+        -1.7,
+        11.3
+      ],
+      "b": [
+        1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-LWE",
+      "level": 1,
+      "a": [
+        1.7,
+        8.7
+      ],
+      "b": [
+        1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-STG",
+      "level": 1,
+      "a": [
+        1.65,
+        1.7
+      ],
+      "b": [
+        1.65,
+        7.02
+      ],
+      "thickness": 0.1
+    },
+    {
+      "id": "2-S",
+      "level": 2,
+      "a": [
+        0,
+        0.1
+      ],
+      "b": [
+        10.4,
+        0.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-STW",
+      "level": 2,
+      "a": [
+        0.1,
+        1.6
+      ],
+      "b": [
+        0.1,
+        8.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LWW",
+      "level": 2,
+      "a": [
+        -1.7,
+        8.7
+      ],
+      "b": [
+        -1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LWS",
+      "level": 2,
+      "a": [
+        -1.7,
+        8.7
+      ],
+      "b": [
+        1.7,
+        8.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LWN",
+      "level": 2,
+      "a": [
+        -1.7,
+        11.3
+      ],
+      "b": [
+        1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LWE",
+      "level": 2,
+      "a": [
+        1.7,
+        8.7
+      ],
+      "b": [
+        1.7,
+        11.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-STG",
+      "level": 2,
+      "a": [
+        1.65,
+        1.7
+      ],
+      "b": [
+        1.65,
+        8.7
+      ],
+      "thickness": 0.1
+    },
+    {
+      "id": "2-BW",
+      "level": 2,
+      "a": [
+        3.5,
+        0.1
+      ],
+      "b": [
+        3.5,
+        18.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-B12",
+      "level": 2,
+      "a": [
+        3.5,
+        6.5
+      ],
+      "b": [
+        10.3,
+        6.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-B23",
+      "level": 2,
+      "a": [
+        3.5,
+        12.1
+      ],
+      "b": [
+        10.3,
+        12.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-BN",
+      "level": 2,
+      "a": [
+        3.5,
+        17.9
+      ],
+      "b": [
+        10.3,
+        17.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-BE",
+      "level": 2,
+      "a": [
+        10.3,
+        0.1
+      ],
+      "b": [
+        10.3,
+        17.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-HW",
+      "level": 2,
+      "a": [
+        1.7,
+        11.3
+      ],
+      "b": [
+        1.7,
+        18.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LIN-W",
+      "level": 2,
+      "a": [
+        0.9,
+        11.3
+      ],
+      "b": [
+        0.9,
+        12.2
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-LIN-N",
+      "level": 2,
+      "a": [
+        0.9,
+        12.2
+      ],
+      "b": [
+        1.7,
+        12.2
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-HN",
+      "level": 2,
+      "a": [
+        1.7,
+        18.1
+      ],
+      "b": [
+        3.5,
+        18.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "2-AW",
+      "level": 2,
+      "a": [
+        0.1,
+        0.1
+      ],
+      "b": [
+        0.1,
+        1.6
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-EAST",
+      "level": 1,
+      "a": [
+        10.3,
+        0.1
+      ],
+      "b": [
+        10.3,
+        19.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-NORTH",
+      "level": 1,
+      "a": [
+        0.1,
+        19.5
+      ],
+      "b": [
+        10.3,
+        19.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MWEST",
+      "level": 1,
+      "a": [
+        3.5,
+        13.5
+      ],
+      "b": [
+        3.5,
+        19.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MENTRY",
+      "level": 1,
+      "a": [
+        3.5,
+        13.5
+      ],
+      "b": [
+        10.3,
+        13.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MHW",
+      "level": 1,
+      "a": [
+        3.9,
+        10.2
+      ],
+      "b": [
+        3.9,
+        13.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MHE",
+      "level": 1,
+      "a": [
+        5.7,
+        10.2
+      ],
+      "b": [
+        5.7,
+        13.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-KN",
+      "level": 1,
+      "a": [
+        5.7,
+        13.3
+      ],
+      "b": [
+        10.3,
+        13.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WC-W",
+      "level": 1,
+      "a": [
+        0.1,
+        11.3
+      ],
+      "b": [
+        0.1,
+        13.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WC-E",
+      "level": 1,
+      "a": [
+        1.7,
+        11.3
+      ],
+      "b": [
+        1.7,
+        13.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WC-N",
+      "level": 1,
+      "a": [
+        0.1,
+        13.9
+      ],
+      "b": [
+        3.9,
+        13.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MW-W",
+      "level": 1,
+      "a": [
+        0.1,
+        15.3
+      ],
+      "b": [
+        0.1,
+        19.5
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MW-S",
+      "level": 1,
+      "a": [
+        0.1,
+        15.3
+      ],
+      "b": [
+        3.5,
+        15.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WENTRY",
+      "level": 1,
+      "a": [
+        0.1,
+        0.1
+      ],
+      "b": [
+        0.1,
+        1.6
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-H-E",
+      "level": 1,
+      "a": [
+        3.5,
+        1.6
+      ],
+      "b": [
+        3.5,
+        10.2
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-TV",
+      "level": 1,
+      "a": [
+        5.35,
+        5.7
+      ],
+      "b": [
+        8.05,
+        5.7
+      ],
+      "thickness": 0.2
+    }
+  ],
+  "openings": [
+    {
+      "id": "D101",
+      "wall": "1-S",
+      "level": 1,
+      "start": 1.95,
+      "end": 3.05,
+      "type": "door",
+      "side": 1
+    },
+    {
+      "id": "W113",
+      "wall": "1-S",
+      "level": 1,
+      "start": 4.6,
+      "end": 9.4,
+      "type": "window",
+      "sill": 0.4,
+      "head": 2.8
+    },
+    {
+      "id": "W102",
+      "wall": "1-STW",
+      "level": 1,
+      "start": 2.2,
+      "end": 5,
+      "type": "window",
+      "sill": 0.45,
+      "head": 1.02
+    },
+    {
+      "id": "W103",
+      "wall": "1-STW",
+      "level": 1,
+      "start": 7.2,
+      "end": 8.4,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "W104",
+      "wall": "1-LWW",
+      "level": 1,
+      "start": 9.0,
+      "end": 10.5,
+      "type": "window",
+      "sill": 1.2,
+      "head": 2.6
+    },
+    {
+      "id": "D104",
+      "wall": "1-LWE",
+      "level": 1,
+      "start": 8.9,
+      "end": 9.9,
+      "type": "door",
+      "side": -1
+    },
+    {
+      "id": "W201",
+      "wall": "2-S",
+      "level": 2,
+      "start": 0.25,
+      "end": 1.45,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "G201",
+      "wall": "2-S",
+      "level": 2,
+      "start": 5.35,
+      "end": 7.95,
+      "type": "glass",
+      "sill": 0,
+      "head": 2.8
+    },
+    {
+      "id": "W202",
+      "wall": "2-STW",
+      "level": 2,
+      "start": 2.2,
+      "end": 5,
+      "type": "window",
+      "sill": 0.45,
+      "head": 1.02
+    },
+    {
+      "id": "W203",
+      "wall": "2-STW",
+      "level": 2,
+      "start": 7.2,
+      "end": 8.4,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "W204",
+      "wall": "2-LWW",
+      "level": 2,
+      "start": 9.0,
+      "end": 10.5,
+      "type": "window",
+      "sill": 1.2,
+      "head": 2.6
+    },
+    {
+      "id": "D207",
+      "wall": "2-LWE",
+      "level": 2,
+      "start": 8.9,
+      "end": 9.9,
+      "type": "door",
+      "side": -1
+    },
+    {
+      "id": "D203",
+      "wall": "2-BW",
+      "level": 2,
+      "start": 3.35,
+      "end": 4.35,
+      "type": "door",
+      "side": 1
+    },
+    {
+      "id": "D204",
+      "wall": "2-BW",
+      "level": 2,
+      "start": 10.4,
+      "end": 11.4,
+      "type": "door",
+      "side": 1
+    },
+    {
+      "id": "D205",
+      "wall": "2-BW",
+      "level": 2,
+      "start": 16.2,
+      "end": 17.2,
+      "type": "door",
+      "side": 1
+    },
+    {
+      "id": "W205a",
+      "wall": "2-BE",
+      "level": 2,
+      "start": 1.15,
+      "end": 3.05,
+      "type": "window",
+      "sill": 0.65,
+      "head": 2.8
+    },
+    {
+      "id": "W205b",
+      "wall": "2-BE",
+      "level": 2,
+      "start": 3.9,
+      "end": 6.05,
+      "type": "window",
+      "sill": 0.65,
+      "head": 2.8
+    },
+    {
+      "id": "W206",
+      "wall": "2-BE",
+      "level": 2,
+      "start": 7.0,
+      "end": 9.9,
+      "type": "window",
+      "sill": 0.45,
+      "head": 2.8
+    },
+    {
+      "id": "W207",
+      "wall": "2-BE",
+      "level": 2,
+      "start": 13,
+      "end": 16,
+      "type": "window",
+      "sill": 0.55,
+      "head": 2.8
+    },
+    {
+      "id": "C201",
+      "wall": "2-HW",
+      "level": 2,
+      "start": 11.45,
+      "end": 12.1,
+      "type": "open"
+    },
+    {
+      "id": "W208",
+      "wall": "2-HW",
+      "level": 2,
+      "start": 12.4,
+      "end": 14.6,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "W209",
+      "wall": "2-HW",
+      "level": 2,
+      "start": 15,
+      "end": 17.7,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "G202",
+      "wall": "2-HN",
+      "level": 2,
+      "start": 1.95,
+      "end": 3.2,
+      "type": "glass",
+      "sill": 0,
+      "head": 2.7
+    },
+    {
+      "id": "W210",
+      "wall": "2-AW",
+      "level": 2,
+      "start": 0.3,
+      "end": 1.35,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.8
+    },
+    {
+      "id": "W105",
+      "wall": "1-EAST",
+      "level": 1,
+      "start": 1.0,
+      "end": 4.8,
+      "type": "window",
+      "sill": 0.3,
+      "head": 2.8
+    },
+    {
+      "id": "W106",
+      "wall": "1-EAST",
+      "level": 1,
+      "start": 6.4,
+      "end": 9.25,
+      "type": "window",
+      "sill": 0.55,
+      "head": 2.8
+    },
+    {
+      "id": "W107",
+      "wall": "1-EAST",
+      "level": 1,
+      "start": 11.1,
+      "end": 12.6,
+      "type": "window",
+      "sill": 1.15,
+      "head": 1.7
+    },
+    {
+      "id": "W108",
+      "wall": "1-EAST",
+      "level": 1,
+      "start": 14.5,
+      "end": 18.9,
+      "type": "window",
+      "sill": 0.3,
+      "head": 2.8
+    },
+    {
+      "id": "W109",
+      "wall": "1-NORTH",
+      "level": 1,
+      "start": 0.6,
+      "end": 2.6,
+      "type": "window",
+      "sill": 1.45,
+      "head": 2.1
+    },
+    {
+      "id": "D107",
+      "wall": "1-MWEST",
+      "level": 1,
+      "start": 17.1,
+      "end": 18.05,
+      "type": "door",
+      "side": -1
+    },
+    {
+      "id": "D106",
+      "wall": "1-MENTRY",
+      "level": 1,
+      "start": 4.3,
+      "end": 5.3,
+      "type": "door",
+      "side": 1
+    },
+    {
+      "id": "O104",
+      "wall": "1-MHW",
+      "level": 1,
+      "start": 11.4,
+      "end": 12.6,
+      "type": "open"
+    },
+    {
+      "id": "W111",
+      "wall": "1-WC-W",
+      "level": 1,
+      "start": 12.1,
+      "end": 13,
+      "type": "window",
+      "sill": 1.5,
+      "head": 2.5
+    },
+    {
+      "id": "D105",
+      "wall": "1-WC-E",
+      "level": 1,
+      "start": 12.6,
+      "end": 13.5,
+      "type": "door",
+      "side": -1
+    },
+    {
+      "id": "W112",
+      "wall": "1-WENTRY",
+      "level": 1,
+      "start": 0.3,
+      "end": 1.35,
+      "type": "window",
+      "sill": 0.1,
+      "head": 2.7
+    },
+    {
+      "id": "O101",
+      "wall": "1-H-E",
+      "level": 1,
+      "start": 1.8,
+      "end": 3.4,
+      "type": "open"
+    },
+    {
+      "id": "O102",
+      "wall": "1-H-E",
+      "level": 1,
+      "start": 6.0,
+      "end": 9.9,
+      "type": "open"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "S01",
+      "name": "浅灰沙发",
+      "level": 1,
+      "box": [
+        5.5,
+        0.5,
+        9.4,
+        1.45
+      ],
+      "kind": "sofa",
+      "color": "#d5d6d4",
+      "room": "L"
+    },
+    {
+      "id": "S02",
+      "name": "贵妃位",
+      "level": 1,
+      "box": [
+        8.45,
+        1.45,
+        9.4,
+        2.65
+      ],
+      "kind": "sofa",
+      "color": "#d5d6d4",
+      "room": "L"
+    },
+    {
+      "id": "S03",
+      "name": "玻璃茶几",
+      "level": 1,
+      "box": [
+        6.15,
+        2.35,
+        7.55,
+        3.15
+      ],
+      "kind": "table",
+      "color": "#dce9e7",
+      "room": "L"
+    },
+    {
+      "id": "S04",
+      "name": "抽象地毯",
+      "level": 1,
+      "box": [
+        5.15,
+        1.8,
+        9.35,
+        4.5
+      ],
+      "kind": "rug",
+      "color": "#ded9ce",
+      "room": "L"
+    },
+    {
+      "id": "S05",
+      "name": "电视隔断",
+      "level": 1,
+      "box": [
+        5.4,
+        5.25,
+        8,
+        5.6
+      ],
+      "kind": "cabinet",
+      "color": "#cbd3d0",
+      "room": "L"
+    },
+    {
+      "id": "S06",
+      "name": "书架",
+      "level": 1,
+      "box": [
+        9.75,
+        4.3,
+        10.2,
+        5.5
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "L"
+    },
+    {
+      "id": "DT",
+      "name": "玻璃餐桌",
+      "level": 1,
+      "box": [
+        5.0,
+        7.1,
+        7.1,
+        8.1
+      ],
+      "kind": "table",
+      "color": "#dce9e7",
+      "room": "D"
+    },
+    {
+      "id": "DC0",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        5.2,
+        6.45,
+        5.7,
+        6.95
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DC1",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        6.35,
+        6.45,
+        6.85,
+        6.95
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DC2",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        5.2,
+        8.25,
+        5.7,
+        8.75
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DC3",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        6.35,
+        8.25,
+        6.85,
+        8.75
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DC4",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        4.35,
+        7.35,
+        4.85,
+        7.85
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DC5",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        7.25,
+        7.35,
+        7.75,
+        7.85
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "DS",
+      "name": "餐厅壁架",
+      "level": 1,
+      "box": [
+        9.75,
+        9.35,
+        10.2,
+        9.95
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "D"
+    },
+    {
+      "id": "K1",
+      "name": "北侧台面",
+      "level": 1,
+      "box": [
+        6.9,
+        12.55,
+        10.2,
+        13.2
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K"
+    },
+    {
+      "id": "K2",
+      "name": "水槽台面",
+      "level": 1,
+      "box": [
+        9.55,
+        10.2,
+        10.2,
+        12.55
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K"
+    },
+    {
+      "id": "K3",
+      "name": "开放半岛台",
+      "level": 1,
+      "box": [
+        5.8,
+        10.2,
+        8.15,
+        10.85
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K"
+    },
+    {
+      "id": "K4",
+      "name": "半岛转角",
+      "level": 1,
+      "box": [
+        5.8,
+        10.85,
+        6.45,
+        11.2
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K"
+    },
+    {
+      "id": "KF",
+      "name": "双门冰箱",
+      "level": 1,
+      "box": [
+        6,
+        12.2,
+        6.9,
+        13.2
+      ],
+      "kind": "fridge",
+      "color": "#dce0df",
+      "room": "K"
+    },
+    {
+      "id": "KH",
+      "name": "灶台/烟机",
+      "level": 1,
+      "box": [
+        7.3,
+        12.55,
+        8.2,
+        13.2
+      ],
+      "kind": "hob",
+      "color": "#67747a",
+      "room": "K"
+    },
+    {
+      "id": "KS",
+      "name": "水槽",
+      "level": 1,
+      "box": [
+        9.55,
+        11.1,
+        10.2,
+        12.1
+      ],
+      "kind": "sink",
+      "color": "#c8dee4",
+      "room": "K"
+    },
+    {
+      "id": "LM",
+      "name": "洗烘设备",
+      "level": 1,
+      "box": [
+        -1.6,
+        9.6,
+        -0.9,
+        11.1
+      ],
+      "kind": "washer",
+      "color": "#dce0df",
+      "room": "LA"
+    },
+    {
+      "id": "LC",
+      "name": "洗衣台",
+      "level": 1,
+      "box": [
+        -0.9,
+        10.55,
+        1.6,
+        11.2
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "LA"
+    },
+    {
+      "id": "LB",
+      "name": "洗衣篮",
+      "level": 1,
+      "box": [
+        -1.4,
+        8.9,
+        -0.8,
+        9.5
+      ],
+      "kind": "circle",
+      "color": "#d9c8b1",
+      "room": "LA"
+    },
+    {
+      "id": "WC1",
+      "name": "坐便",
+      "level": 1,
+      "box": [
+        0.4,
+        11.65,
+        1.1,
+        12.4
+      ],
+      "kind": "wc",
+      "color": "#edf1ee",
+      "room": "WC"
+    },
+    {
+      "id": "WC2",
+      "name": "台盆",
+      "level": 1,
+      "box": [
+        0.2,
+        13.3,
+        0.65,
+        13.8
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "WC"
+    },
+    {
+      "id": "SH",
+      "name": "玄关柜",
+      "level": 1,
+      "box": [
+        0.2,
+        0.3,
+        0.7,
+        1.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "E"
+    },
+    {
+      "id": "MBED",
+      "name": "酒红床 / 2.0×2.2",
+      "level": 1,
+      "box": [
+        7.1,
+        13.85,
+        9.1,
+        16.05
+      ],
+      "kind": "bed",
+      "color": "#9c6269",
+      "room": "MB"
+    },
+    {
+      "id": "MN1",
+      "name": "床头柜",
+      "level": 1,
+      "box": [
+        6.35,
+        13.85,
+        6.95,
+        14.45
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MN2",
+      "name": "床头柜",
+      "level": 1,
+      "box": [
+        9.3,
+        13.85,
+        9.9,
+        14.45
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MC",
+      "name": "衣柜",
+      "level": 1,
+      "box": [
+        3.6,
+        14.9,
+        4.2,
+        17.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MV",
+      "name": "深木梳妆台",
+      "level": 1,
+      "box": [
+        3.6,
+        18.1,
+        4.2,
+        19.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MS",
+      "name": "梳妆椅",
+      "level": 1,
+      "box": [
+        4.5,
+        18.5,
+        5.0,
+        19.0
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MR",
+      "name": "衣架",
+      "level": 1,
+      "box": [
+        6.0,
+        18.8,
+        7.4,
+        19.35
+      ],
+      "kind": "rack",
+      "color": "#d9c8b1",
+      "room": "MB"
+    },
+    {
+      "id": "MT",
+      "name": "浴缸",
+      "level": 1,
+      "box": [
+        0.5,
+        18.5,
+        2.4,
+        19.2
+      ],
+      "kind": "tub",
+      "color": "#d8e8ed",
+      "room": "MW"
+    },
+    {
+      "id": "MWC",
+      "name": "坐便",
+      "level": 1,
+      "box": [
+        2.45,
+        15.65,
+        3.15,
+        16.45
+      ],
+      "kind": "wc",
+      "color": "#edf1ee",
+      "room": "MW"
+    },
+    {
+      "id": "MVS",
+      "name": "台盆柜",
+      "level": 1,
+      "box": [
+        0.2,
+        16.2,
+        0.85,
+        17.7
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "MW"
+    },
+    {
+      "id": "AB",
+      "name": "灰格床 / 2.0×2.2",
+      "level": 2,
+      "box": [
+        5.0,
+        4.0,
+        7.0,
+        6.2
+      ],
+      "kind": "bed",
+      "color": "#b4b6b8",
+      "room": "B1"
+    },
+    {
+      "id": "AN",
+      "name": "床头柜",
+      "level": 2,
+      "box": [
+        4.2,
+        5.25,
+        4.8,
+        5.85
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AS",
+      "name": "白色书架",
+      "level": 2,
+      "box": [
+        3.7,
+        6.05,
+        4.9,
+        6.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AW",
+      "name": "衣柜",
+      "level": 2,
+      "box": [
+        3.7,
+        0.2,
+        5.1,
+        0.8
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AD",
+      "name": "电脑桌",
+      "level": 2,
+      "box": [
+        9.55,
+        3.7,
+        10.2,
+        5.5
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AC",
+      "name": "电脑椅",
+      "level": 2,
+      "box": [
+        8.55,
+        4.3,
+        9.1,
+        4.9
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AV",
+      "name": "白色梳妆台",
+      "level": 2,
+      "box": [
+        8.15,
+        0.2,
+        9.45,
+        0.75
+      ],
+      "kind": "desk",
+      "color": "#e9e7df",
+      "room": "B1"
+    },
+    {
+      "id": "AVC",
+      "name": "粉色圆凳",
+      "level": 2,
+      "box": [
+        8.5,
+        1.05,
+        9,
+        1.55
+      ],
+      "kind": "circle",
+      "color": "#d5b2bc",
+      "room": "B1"
+    },
+    {
+      "id": "AM",
+      "name": "穿衣镜",
+      "level": 2,
+      "box": [
+        9.6,
+        0.2,
+        10.15,
+        0.4
+      ],
+      "kind": "mirror",
+      "color": "#d9c8b1",
+      "room": "B1"
+    },
+    {
+      "id": "AR",
+      "name": "粉色圆毯",
+      "level": 2,
+      "box": [
+        5.4,
+        1.05,
+        8.1,
+        3.75
+      ],
+      "kind": "roundrug",
+      "color": "#d9acb7",
+      "room": "B1"
+    },
+    {
+      "id": "AT",
+      "name": "蹦床",
+      "level": 2,
+      "box": [
+        3.85,
+        1.9,
+        4.95,
+        3.0
+      ],
+      "kind": "trampoline",
+      "color": "#b8bbba",
+      "room": "B1"
+    },
+    {
+      "id": "AY",
+      "name": "瑜伽球",
+      "level": 2,
+      "box": [
+        5.2,
+        0.9,
+        5.9,
+        1.6
+      ],
+      "kind": "circle",
+      "color": "#d58ba5",
+      "room": "B1"
+    },
+    {
+      "id": "AX",
+      "name": "健身车",
+      "level": 2,
+      "box": [
+        9.25,
+        1.8,
+        10,
+        3.1
+      ],
+      "kind": "bike",
+      "color": "#aab3b3",
+      "room": "B1"
+    },
+    {
+      "id": "BB",
+      "name": "绿色床 / 1.8×2.2",
+      "level": 2,
+      "box": [
+        6.8,
+        9.6,
+        8.6,
+        11.8
+      ],
+      "kind": "bed",
+      "color": "#a0b58d",
+      "room": "B2"
+    },
+    {
+      "id": "BN",
+      "name": "床头柜",
+      "level": 2,
+      "box": [
+        6.1,
+        11.1,
+        6.65,
+        11.7
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BW",
+      "name": "衣柜",
+      "level": 2,
+      "box": [
+        9.6,
+        10.1,
+        10.2,
+        11.9
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BD",
+      "name": "电脑桌",
+      "level": 2,
+      "box": [
+        8.1,
+        6.6,
+        9.9,
+        7.25
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BC",
+      "name": "电脑椅",
+      "level": 2,
+      "box": [
+        8.6,
+        7.65,
+        9.2,
+        8.25
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BTV",
+      "name": "电视柜",
+      "level": 2,
+      "box": [
+        4,
+        6.6,
+        6.1,
+        7.05
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BR",
+      "name": "地毯",
+      "level": 2,
+      "box": [
+        4.85,
+        7.6,
+        8.0,
+        9.25
+      ],
+      "kind": "rug",
+      "color": "#deded3",
+      "room": "B2"
+    },
+    {
+      "id": "BT",
+      "name": "茶几",
+      "level": 2,
+      "box": [
+        5.7,
+        8.1,
+        6.9,
+        8.7
+      ],
+      "kind": "table",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BTE",
+      "name": "望远镜",
+      "level": 2,
+      "box": [
+        9.05,
+        8.5,
+        9.9,
+        9.35
+      ],
+      "kind": "scope",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BG",
+      "name": "吉他",
+      "level": 2,
+      "box": [
+        6.2,
+        9.7,
+        6.55,
+        10.25
+      ],
+      "kind": "guitar",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "BS",
+      "name": "书架",
+      "level": 2,
+      "box": [
+        3.6,
+        7.4,
+        4.05,
+        9.3
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2"
+    },
+    {
+      "id": "CB",
+      "name": "灰蓝床 / 1.6×2.1",
+      "level": 2,
+      "box": [
+        7,
+        15.5,
+        8.6,
+        17.6
+      ],
+      "kind": "bed",
+      "color": "#9aa9bd",
+      "room": "B3"
+    },
+    {
+      "id": "CN",
+      "name": "床头柜",
+      "level": 2,
+      "box": [
+        8.85,
+        17,
+        9.45,
+        17.6
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CD",
+      "name": "电脑桌",
+      "level": 2,
+      "box": [
+        3.6,
+        13.2,
+        4.25,
+        15.2
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CC",
+      "name": "电脑椅",
+      "level": 2,
+      "box": [
+        4.65,
+        13.8,
+        5.25,
+        14.4
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CW",
+      "name": "衣物/收藏架",
+      "level": 2,
+      "box": [
+        4.4,
+        12.2,
+        7.4,
+        12.85
+      ],
+      "kind": "rack",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CL",
+      "name": "窗下收藏柜",
+      "level": 2,
+      "box": [
+        9.75,
+        13.2,
+        10.2,
+        15.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CM",
+      "name": "穿衣镜",
+      "level": 2,
+      "box": [
+        3.6,
+        12.3,
+        3.8,
+        13.0
+      ],
+      "kind": "mirror",
+      "color": "#d9c8b1",
+      "room": "B3"
+    },
+    {
+      "id": "CR",
+      "name": "星形地毯",
+      "level": 2,
+      "box": [
+        5.5,
+        13.2,
+        8.8,
+        15.3
+      ],
+      "kind": "starrug",
+      "color": "#a2abc5",
+      "room": "B3"
+    },
+    {
+      "id": "WS",
+      "name": "浴室台盆",
+      "level": 2,
+      "box": [
+        -1.6,
+        9.5,
+        -0.95,
+        11.1
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "WB"
+    },
+    {
+      "id": "WT",
+      "name": "淋浴",
+      "level": 2,
+      "box": [
+        -0.1,
+        10,
+        1.6,
+        11.2
+      ],
+      "kind": "tub",
+      "color": "#d9c8b1",
+      "room": "WB"
+    },
+    {
+      "id": "WW",
+      "name": "坐便",
+      "level": 2,
+      "box": [
+        -0.6,
+        8.9,
+        0.1,
+        9.6
+      ],
+      "kind": "wc",
+      "color": "#d9c8b1",
+      "room": "WB"
+    },
+    {
+      "id": "LIN",
+      "name": "嵌入布草柜",
+      "level": 2,
+      "box": [
+        1.0,
+        11.45,
+        1.6,
+        12.1
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "H2"
+    }
+  ],
+  "clearances": [
+    {
+      "id": "CA1",
+      "level": 2,
+      "a": [
+        7,
+        4.6
+      ],
+      "b": [
+        8.55,
+        4.6
+      ],
+      "label": "床侧至椅区 1.55m",
+      "value": 1.55
+    },
+    {
+      "id": "CA2",
+      "level": 2,
+      "a": [
+        6,
+        2.8
+      ],
+      "b": [
+        6,
+        4.0
+      ],
+      "label": "床尾活动带 1.20m",
+      "value": 1.2
+    },
+    {
+      "id": "CB1",
+      "level": 2,
+      "a": [
+        8.6,
+        10.4
+      ],
+      "b": [
+        9.6,
+        10.4
+      ],
+      "label": "床侧 1.00m",
+      "value": 1.0
+    },
+    {
+      "id": "CB2",
+      "level": 2,
+      "a": [
+        7.7,
+        7.25
+      ],
+      "b": [
+        7.7,
+        9.6
+      ],
+      "label": "床尾至柜线 2.35m",
+      "value": 2.35
+    },
+    {
+      "id": "CC1",
+      "level": 2,
+      "a": [
+        8.6,
+        16.2
+      ],
+      "b": [
+        10.2,
+        16.2
+      ],
+      "label": "床侧 1.60m",
+      "value": 1.6
+    },
+    {
+      "id": "CC2",
+      "level": 2,
+      "a": [
+        7.8,
+        14.3
+      ],
+      "b": [
+        7.8,
+        15.5
+      ],
+      "label": "床尾活动带 1.20m",
+      "value": 1.2
+    },
+    {
+      "id": "CM1",
+      "level": 1,
+      "a": [
+        9.1,
+        15.2
+      ],
+      "b": [
+        10.2,
+        15.2
+      ],
+      "label": "床侧 1.10m",
+      "value": 1.1
+    },
+    {
+      "id": "CM2",
+      "level": 1,
+      "a": [
+        8.1,
+        16.05
+      ],
+      "b": [
+        8.1,
+        17.25
+      ],
+      "label": "床尾活动带 1.20m",
+      "value": 1.2
+    },
+    {
+      "id": "CK1",
+      "level": 1,
+      "a": [
+        8.15,
+        11.4
+      ],
+      "b": [
+        9.55,
+        11.4
+      ],
+      "label": "操作/进入净宽 1.40m",
+      "value": 1.4
+    },
+    {
+      "id": "CK2",
+      "level": 1,
+      "a": [
+        7.6,
+        10.85
+      ],
+      "b": [
+        7.6,
+        12.55
+      ],
+      "label": "台面间净宽 1.70m",
+      "value": 1.7
+    },
+    {
+      "id": "CH",
+      "level": 2,
+      "a": [
+        1.8,
+        15.5
+      ],
+      "b": [
+        3.4,
+        15.5
+      ],
+      "label": "走廊净宽 1.60m",
+      "value": 1.6
+    },
+    {
+      "id": "CD1",
+      "level": 1,
+      "a": [
+        6.55,
+        9.05
+      ],
+      "b": [
+        6.55,
+        10.2
+      ],
+      "label": "拉椅后通路 1.15m",
+      "value": 1.15
+    }
+  ],
+  "usage_zones": [
+    {
+      "room": "B1",
+      "level": 2,
+      "box": [
+        3.7,
+        0.8,
+        5.1,
+        1.8
+      ],
+      "label": "柜前 1.00m",
+      "allow": [
+        "AW"
+      ]
+    },
+    {
+      "room": "B1",
+      "level": 2,
+      "box": [
+        8.35,
+        3.7,
+        9.55,
+        5.5
+      ],
+      "label": "椅区 1.20m",
+      "allow": [
+        "AC",
+        "AD"
+      ]
+    },
+    {
+      "room": "B1",
+      "level": 2,
+      "box": [
+        8.15,
+        0.75,
+        9.45,
+        1.75
+      ],
+      "label": "梳妆使用区",
+      "allow": [
+        "AVC",
+        "AV"
+      ]
+    },
+    {
+      "room": "B2",
+      "level": 2,
+      "box": [
+        8.7,
+        10.1,
+        9.6,
+        11.9
+      ],
+      "label": "柜前 0.90m",
+      "allow": [
+        "BW"
+      ]
+    },
+    {
+      "room": "B2",
+      "level": 2,
+      "box": [
+        8.1,
+        7.25,
+        9.9,
+        8.45
+      ],
+      "label": "椅区 1.20m",
+      "allow": [
+        "BC",
+        "BD"
+      ]
+    },
+    {
+      "room": "B3",
+      "level": 2,
+      "box": [
+        4.4,
+        12.85,
+        7.4,
+        13.75
+      ],
+      "label": "柜前 0.90m",
+      "allow": [
+        "CW"
+      ]
+    },
+    {
+      "room": "B3",
+      "level": 2,
+      "box": [
+        4.25,
+        13.2,
+        5.45,
+        15.2
+      ],
+      "label": "椅区 1.20m",
+      "allow": [
+        "CC",
+        "CD"
+      ]
+    },
+    {
+      "room": "MB",
+      "level": 1,
+      "box": [
+        4.2,
+        14.9,
+        5.2,
+        17.0
+      ],
+      "label": "柜前 1.00m",
+      "allow": [
+        "MC"
+      ]
+    },
+    {
+      "room": "MB",
+      "level": 1,
+      "box": [
+        4.2,
+        18.1,
+        5.4,
+        19.4
+      ],
+      "label": "梳妆使用区",
+      "allow": [
+        "MS",
+        "MV"
+      ]
+    },
+    {
+      "room": "K",
+      "level": 1,
+      "box": [
+        6,
+        11.2,
+        6.9,
+        12.2
+      ],
+      "label": "冰箱开启区",
+      "allow": [
+        "KF"
+      ]
+    },
+    {
+      "room": "D",
+      "level": 1,
+      "box": [
+        5.2,
+        8.55,
+        5.7,
+        9.05
+      ],
+      "label": "拉椅",
+      "allow": [
+        "DC2"
+      ]
+    },
+    {
+      "room": "D",
+      "level": 1,
+      "box": [
+        6.35,
+        8.55,
+        6.85,
+        9.05
+      ],
+      "label": "拉椅",
+      "allow": [
+        "DC3"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "主卧直达",
+      "level": 1,
+      "points": [
+        [
+          4.8,
+          9.4
+        ],
+        [
+          4.8,
+          12.8
+        ],
+        [
+          4.8,
+          14.4
+        ]
+      ]
+    },
+    {
+      "id": "楼梯至卧室",
+      "level": 2,
+      "points": [
+        [
+          0.85,
+          1.6
+        ],
+        [
+          0.85,
+          0.85
+        ],
+        [
+          2.6,
+          0.85
+        ],
+        [
+          2.6,
+          16.7
+        ],
+        [
+          3.9,
+          16.7
+        ]
+      ]
+    },
+    {
+      "id": "一楼落地至餐厅",
+      "level": 1,
+      "points": [
+        [
+          0.85,
+          7.3
+        ],
+        [
+          0.85,
+          7.65
+        ],
+        [
+          2.6,
+          7.65
+        ],
+        [
+          3.0,
+          9.5
+        ],
+        [
+          4.8,
+          9.5
+        ]
+      ]
+    }
+  ],
+  "site": {
+    "bounds": [
+      -4,
+      -10,
+      13,
+      23
+    ],
+    "garage_net": [
+      -1.8,
+      -9.6,
+      4.8,
+      -3.4
+    ]
+  },
+  "reference_policy": "本轮图片与纠正优先，其余V3；绝对尺寸为补充设计"
+}

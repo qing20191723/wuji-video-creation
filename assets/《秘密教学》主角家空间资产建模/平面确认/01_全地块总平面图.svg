@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1700" viewBox="0 0 1800 1700">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
+<rect width="1800" height="1700" fill="#faf9f5"/>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜全地块总平面图</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">室内先定尺度 → 外墙随之调整 → 配置院落与围墙。项目南向为临街侧。</text>
+<text x="65.00" y="1656.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P1 · 2026-10-15 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<path d="M65 1628H1735" stroke="#bec9c5"/>
+<rect x="98.00" y="241.00" width="561.00" height="1089.00" fill="#e6ecdf" stroke="#425861" stroke-width="5" rx="0"/>
+<rect x="98.00" y="1330.00" width="561.00" height="132.00" fill="#d9dedd" stroke="none" stroke-width="1" rx="0"/>
+<text x="378.50" y="1402.60" font-size="16" text-anchor="middle" font-weight="400">临街道路 / 画面下方为项目南</text>
+<rect x="659.00" y="241.00" width="66.00" height="1089.00" fill="#e1e4e1" stroke="none" stroke-width="1" rx="0"/>
+<text x="692.00" y="439.00" font-size="13" text-anchor="middle" font-weight="400">侧巷</text>
+<polygon points="230.00,1000.00 573.20,1000.00 573.20,353.20 230.00,353.20 230.00,498.40 342.20,498.40 342.20,538.00 230.00,538.00 230.00,623.80 170.60,623.80 170.60,716.20 230.00,716.20" fill="#f3e8da" stroke="#425861" stroke-width="2"/>
+<rect x="348.80" y="359.80" width="217.80" height="191.40" fill="#e9dbdb" stroke="none" stroke-width="1" rx="0"/>
+<text x="457.70" y="455.50" font-size="17" text-anchor="middle" font-weight="400">主卧套房</text>
+<text x="414.80" y="769.00" font-size="22" text-anchor="middle" font-weight="700">别墅主体</text>
+<text x="414.80" y="805.30" font-size="13" text-anchor="middle" font-weight="400">室内先定 / 外轮廓已扩展</text>
+<rect x="230.00" y="1000.00" width="343.20" height="56.10" fill="none" stroke="#4188a0" stroke-width="2" rx="0" stroke-dasharray="7 4"/>
+<rect x="170.60" y="333.40" width="402.60" height="72.60" fill="none" stroke="#4188a0" stroke-width="2" rx="0" stroke-dasharray="7 4"/>
+<text x="395.00" y="343.30" font-size="12" text-anchor="middle" font-weight="400" style="fill:#4188a0">二楼后露台投影</text>
+<rect x="164.00" y="1105.60" width="231.00" height="217.80" fill="#dce2e0" stroke="#425861" stroke-width="2" rx="0"/>
+<text x="279.50" y="1128.70" font-size="14" text-anchor="middle" font-weight="400">车库净 6.60×6.20m</text>
+<rect x="241.55" y="1138.60" width="62.70" height="158.40" fill="#b4c3c8" stroke="#263c45" stroke-width="1" rx="7"/>
+<rect x="246.50" y="1178.20" width="52.80" height="72.60" fill="#d7e3e7" stroke="#263c45" stroke-width="1" rx="6"/>
+<text x="272.90" y="1221.10" font-size="13" text-anchor="middle" font-weight="400">车辆</text>
+<text x="272.90" y="1240.90" font-size="12" text-anchor="middle" font-weight="400">1.9×4.8m</text>
+<rect x="215.15" y="1138.60" width="115.50" height="158.40" fill="none" stroke="#c27b35" stroke-width="1" rx="0" stroke-dasharray="5 4"/>
+<path d="M183.80 1330.00L368.60 1330.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
+<path d="M183.80 1323.40L368.60 1323.40" fill="none" stroke="#faf9f5" stroke-width="8"/>
+<path d="M183.80 1328.35L368.60 1328.35" fill="none" stroke="#4188a0" stroke-width="2"/>
+<path d="M395.00 1178.20L395.00 1145.20" fill="none" stroke="#faf9f5" stroke-width="5"/>
+<path d="M395.00 1178.20L362.00 1178.20" fill="none" stroke="#8e7859" stroke-width="1.5"/>
+<path d="M272.90 1422.40L272.90 1287.10" fill="none" stroke="#3b887a" stroke-width="3" marker-end="url(#arr)"/>
+<text x="272.90" y="1353.10" font-size="13" text-anchor="middle" font-weight="400">车行门 5.60m</text>
+<path d="M546.80 1330.00L593.00 1330.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
+<text x="569.90" y="1353.10" font-size="13" text-anchor="middle" font-weight="400">人行门</text>
+<rect x="546.80" y="1052.80" width="49.50" height="273.90" fill="#eeebe3" stroke="none" stroke-width="1" rx="0"/>
+<rect x="296.00" y="1003.30" width="300.30" height="49.50" fill="#eeebe3" stroke="none" stroke-width="1" rx="0"/>
+<path d="M571.55 1316.80L571.55 1028.05" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M571.55 1028.05L314.15 1028.05" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M314.15 1028.05L314.15 976.90" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="467.60" y="1148.50" font-size="18" text-anchor="middle" font-weight="400">前院</text>
+<text x="467.60" y="1174.90" font-size="13" text-anchor="middle" font-weight="400">入口与绿化</text>
+<text x="395.00" y="283.90" font-size="15" text-anchor="middle" font-weight="400">后院 / 净深 3.40m</text>
+<circle cx="131.00" cy="934.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="131.00" cy="835.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="131.00" cy="505.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="137.60" cy="290.50" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="619.40" cy="868.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="619.40" cy="736.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="619.40" cy="472.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="527.00" cy="274.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="467.60" cy="1231.00" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<circle cx="467.60" cy="1108.90" r="14.85" fill="#a3b891" stroke="#7f9a75"/>
+<path d="M98.00 1488.40L659.00 1488.40" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M98.00 1491.04L98.00 1485.76" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M659.00 1491.04L659.00 1485.76" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="378.50" y="1484.44" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">地块参考宽 17.00m</text>
+<path d="M74.90 1330.00L74.90 241.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M77.54 1330.00L72.26 1330.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M77.54 241.00L72.26 241.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="65.90" y="785.50" font-size="16" text-anchor="middle" transform="rotate(-90 65.90 785.50)" style="fill:#c27b35">地块参考深 33.00m</text>
+<path d="M573.20 604.00L659.00 604.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M573.20 606.64L573.20 601.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M659.00 606.64L659.00 601.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="616.10" y="600.04" font-size="13" text-anchor="middle" font-weight="400" style="fill:#c27b35">侧距 2.60m</text>
+<path d="M98.00 670.00L170.60 670.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M98.00 672.64L98.00 667.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M170.60 672.64L170.60 667.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="134.30" y="666.04" font-size="13" text-anchor="middle" font-weight="400" style="fill:#c27b35">2.20m</text>
+<rect x="900" y="156" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="914.00" y="180.00" font-size="20" text-anchor="start" font-weight="700">场地与外观基准</text>
+<text x="914.00" y="215.00" font-size="16" text-anchor="start" font-weight="400">地块参考：17.00×33.00m，约561㎡。</text>
+<text x="914.00" y="244.00" font-size="16" text-anchor="start" font-weight="400">别墅主体参考外包络：10.40×19.60m。</text>
+<text x="914.00" y="273.00" font-size="16" text-anchor="start" font-weight="400">洗衣 / 公卫在西侧局部突出1.80m。</text>
+<text x="914.00" y="302.00" font-size="16" text-anchor="start" font-weight="400">地块与外轮廓为本次补充设计，不是实测。</text>
+<rect x="900" y="332" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="914.00" y="356.00" font-size="20" text-anchor="start" font-weight="700">车库与人员入口</text>
+<text x="914.00" y="391.00" font-size="16" text-anchor="start" font-weight="400">沿用V3正立面：临街车库＋右侧独立人行门。</text>
+<text x="914.00" y="420.00" font-size="16" text-anchor="start" font-weight="400">车库按一辆车校准，净6.60×6.20m。</text>
+<text x="914.00" y="449.00" font-size="16" text-anchor="start" font-weight="400">车辆按1.90×4.80m；两侧开门带各0.80m。</text>
+<text x="914.00" y="478.00" font-size="16" text-anchor="start" font-weight="400">直进直出；不声称库内可以完成180°掉头。</text>
+<text x="914.00" y="507.00" font-size="16" text-anchor="start" font-weight="400">车库后侧与住宅之间留3.20m前庭。</text>
+<text x="914.00" y="536.00" font-size="16" text-anchor="start" font-weight="400">人行通道净1.50m，与车行路线分开。</text>
+<rect x="900" y="566" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="914.00" y="590.00" font-size="20" text-anchor="start" font-weight="700">围墙 / 庭院 / 外窗</text>
+<text x="914.00" y="625.00" font-size="16" text-anchor="start" font-weight="400">围墙闭合，只有车行门、人行门两处入口。</text>
+<text x="914.00" y="654.00" font-size="16" text-anchor="start" font-weight="400">东侧通路2.60m；西侧突出部最窄2.20m。</text>
+<text x="914.00" y="683.00" font-size="16" text-anchor="start" font-weight="400">住宅后墙至围墙3.40m。</text>
+<text x="914.00" y="712.00" font-size="16" text-anchor="start" font-weight="400">蓝色虚线是二楼阳台 / 后露台投影。</text>
+<text x="914.00" y="741.00" font-size="16" text-anchor="start" font-weight="400">大窗外侧有室外空间，不对着新增室内房间。</text>
+<rect x="900" y="771" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="914.00" y="795.00" font-size="20" text-anchor="start" font-weight="700">外景变化必须确认</text>
+<text x="914.00" y="830.00" font-size="16" text-anchor="start" font-weight="400">保留浅外墙、黑窗框、平屋顶和临街车库语言。</text>
+<text x="914.00" y="859.00" font-size="16" text-anchor="start" font-weight="400">主体纵深、窗位和阳台分段随室内布局调整。</text>
+<text x="914.00" y="888.00" font-size="16" text-anchor="start" font-weight="400">不承诺新平面能与全部旧外景逐像素对应。</text>
+<text x="914.00" y="917.00" font-size="16" text-anchor="start" font-weight="400">本次不生成外景图，也不更新三维模型。</text>
+</svg>

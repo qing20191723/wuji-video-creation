@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1500" viewBox="0 0 1800 1500">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
+<rect width="1800" height="1500" fill="#faf9f5"/>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜本次修改与确认要点</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">这是一套二维待确认方案；旧模型尚未反映下面的修改。</text>
+<text x="65.00" y="1456.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P1 · 2026-10-15 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<path d="M65 1428H1735" stroke="#bec9c5"/>
+<rect x="70" y="156" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="84.00" y="180.00" font-size="20" text-anchor="start" font-weight="700">先修正关系，再制作模型</text>
+<text x="84.00" y="215.00" font-size="16" text-anchor="start" font-weight="400">厨房：取消滑门及中间家政前厅，直接面向开放餐厅。</text>
+<text x="84.00" y="244.00" font-size="16" text-anchor="start" font-weight="400">主卧：直走廊尽头即主卧门，门中心与走廊中心同轴；主卫只从主卧进入。</text>
+<text x="84.00" y="273.00" font-size="16" text-anchor="start" font-weight="400">二楼：大姐—子豪—二姐连续并排；保留A上口、A→B下楼、B一楼落地。</text>
+<text x="84.00" y="302.00" font-size="16" text-anchor="start" font-weight="400">二姐门外：取消横向服务大厅，公共浴室移至走廊西侧，布草柜嵌入墙边。</text>
+<rect x="70" y="332" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="84.00" y="356.00" font-size="20" text-anchor="start" font-weight="700">房间不再是统一长条</text>
+<text x="84.00" y="391.00" font-size="16" text-anchor="start" font-weight="400">大姐：旧边界框28.12㎡ → 新室内净40.92㎡。</text>
+<text x="84.00" y="420.00" font-size="16" text-anchor="start" font-weight="400">子豪：旧边界框28.12㎡ → 新室内净35.64㎡。</text>
+<text x="84.00" y="449.00" font-size="16" text-anchor="start" font-weight="400">二姐：旧边界框28.12㎡ → 新室内净36.96㎡。</text>
+<text x="84.00" y="478.00" font-size="16" text-anchor="start" font-weight="400">主卧：旧边界框26.00㎡ → 新室内净38.28㎡。</text>
+<text x="84.00" y="507.00" font-size="16" text-anchor="start" font-weight="400">旧值为边界框面积，新值为内墙面净面积，不能当作同口径增长率。</text>
+<rect x="70" y="537" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="84.00" y="561.00" font-size="20" text-anchor="start" font-weight="700">来自参考的内容</text>
+<text x="84.00" y="596.00" font-size="16" text-anchor="start" font-weight="400">用户本轮厨房后视 / 侧视：开放台面、冰箱灶台、水槽横窗与餐厅连接。</text>
+<text x="84.00" y="625.00" font-size="16" text-anchor="start" font-weight="400">本轮餐厅侧视：六人玻璃餐桌、灰色吊灯、大窗与开放通行。</text>
+<text x="84.00" y="654.00" font-size="16" text-anchor="start" font-weight="400">V3各卧室：家具种类、床品身份、工作区 / 梳妆区 / 收藏及运动器材。</text>
+<text x="84.00" y="683.00" font-size="16" text-anchor="start" font-weight="400">楼道参考：直梯、实体护栏、高窗、尽头露台玻璃门。</text>
+<text x="84.00" y="712.00" font-size="16" text-anchor="start" font-weight="400">V3外景：围墙、临街车库、独立人行门、平屋顶与黑框玻璃。</text>
+<rect x="940" y="156" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="954.00" y="180.00" font-size="20" text-anchor="start" font-weight="700">本次补充设计 / 需要你确认</text>
+<text x="954.00" y="215.00" font-size="16" text-anchor="start" font-weight="400">所有绝对尺寸、净距、地块17×33m和车库6.6×6.2m。</text>
+<text x="954.00" y="244.00" font-size="16" text-anchor="start" font-weight="400">三间卧室新的比例、具体门距与外窗在外墙上的精确位置。</text>
+<text x="954.00" y="273.00" font-size="16" text-anchor="start" font-weight="400">公用浴室西侧突出体量、下层洗衣房的上下叠合关系。</text>
+<text x="954.00" y="302.00" font-size="16" text-anchor="start" font-weight="400">主卧套房向后展开，外墙纵深和外景窗位随之调整。</text>
+<rect x="940" y="332" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="954.00" y="356.00" font-size="20" text-anchor="start" font-weight="700">原图矛盾的处理</text>
+<text x="954.00" y="391.00" font-size="16" text-anchor="start" font-weight="400">二姐俯拍出现疑似两个门：仅一扇连接公共走廊；另一处按柜门待核。</text>
+<text x="954.00" y="420.00" font-size="16" text-anchor="start" font-weight="400">厨房部分视角有不同水槽边界：采用本轮侧视确定水槽靠外墙横窗，</text>
+<text x="954.00" y="449.00" font-size="16" text-anchor="start" font-weight="400">后视确定半岛面向餐厅；不把反射或画面边缘再复制成一套水槽。</text>
+<text x="954.00" y="478.00" font-size="16" text-anchor="start" font-weight="400">卧室局部角度存在镜头夸张，尺寸以家具和活动净距推导，非照片测量。</text>
+<rect x="940" y="508" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="954.00" y="532.00" font-size="20" text-anchor="start" font-weight="700">本次验收范围</text>
+<text x="954.00" y="567.00" font-size="16" text-anchor="start" font-weight="400">查看七张图：总地块、一楼、二楼、四卧室放大。</text>
+<text x="954.00" y="596.00" font-size="16" text-anchor="start" font-weight="400">平面净距、门扇、家具占地与楼梯上下定位已进行图面检查。</text>
+<text x="954.00" y="625.00" font-size="16" text-anchor="start" font-weight="400">窗台 / 窗顶高度在门窗表记录；家具真实占地在JSON和放大图记录。</text>
+<text x="954.00" y="654.00" font-size="16" text-anchor="start" font-weight="400">不作结构、承重、消防或施工合规结论；不将二维检查看作三维验收。</text>
+<text x="954.00" y="683.00" font-size="16" text-anchor="start" font-weight="400">本轮确认后才改模型；不会拿旧模型继续批量出图。</text>
+<rect x="940" y="713" width="790" height="34" fill="#e3ebe6" rx="4"/>
+<text x="954.00" y="737.00" font-size="20" text-anchor="start" font-weight="700">确认后推进</text>
+<text x="954.00" y="772.00" font-size="16" text-anchor="start" font-weight="400">将通过的平面坐标作为下一轮唯一输入。</text>
+<text x="954.00" y="801.00" font-size="16" text-anchor="start" font-weight="400">更新模型、相机和外立面，再核对卧室原图身份。</text>
+<text x="954.00" y="830.00" font-size="16" text-anchor="start" font-weight="400">正式场景制作继续等待模型及机位检查完成。</text>
+</svg>

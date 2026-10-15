@@ -1,0 +1,63 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "file": "01_全地块总平面图.svg",
+      "width": 3600,
+      "height": 3400,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "02_一楼家具平面图.svg",
+      "width": 3600,
+      "height": 3400,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "03_二楼家具平面图.svg",
+      "width": 3600,
+      "height": 3400,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "04_主卧家具放大图.svg",
+      "width": 3600,
+      "height": 2800,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "05_大姐卧室家具放大图.svg",
+      "width": 3600,
+      "height": 2800,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "06_子豪卧室家具放大图.svg",
+      "width": 3600,
+      "height": 2800,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "07_二姐卧室家具放大图.svg",
+      "width": 3600,
+      "height": 2800,
+      "text_outside_canvas": []
+    },
+    {
+      "file": "08_修改说明与确认要点.svg",
+      "width": 3600,
+      "height": 3000,
+      "text_outside_canvas": []
+    }
+  ],
+  "galleryResults": [
+    "01_%E5%85%A8%E5%9C%B0%E5%9D%97%E6%80%BB%E5%B9%B3%E9%9D%A2%E5%9B%BE.svg",
+    "02_%E4%B8%80%E6%A5%BC%E5%AE%B6%E5%85%B7%E5%B9%B3%E9%9D%A2%E5%9B%BE.svg",
+    "03_%E4%BA%8C%E6%A5%BC%E5%AE%B6%E5%85%B7%E5%B9%B3%E9%9D%A2%E5%9B%BE.svg",
+    "04_%E4%B8%BB%E5%8D%A7%E5%AE%B6%E5%85%B7%E6%94%BE%E5%A4%A7%E5%9B%BE.svg",
+    "05_%E5%A4%A7%E5%A7%90%E5%8D%A7%E5%AE%A4%E5%AE%B6%E5%85%B7%E6%94%BE%E5%A4%A7%E5%9B%BE.svg",
+    "06_%E5%AD%90%E8%B1%AA%E5%8D%A7%E5%AE%A4%E5%AE%B6%E5%85%B7%E6%94%BE%E5%A4%A7%E5%9B%BE.svg",
+    "07_%E4%BA%8C%E5%A7%90%E5%8D%A7%E5%AE%A4%E5%AE%B6%E5%85%B7%E6%94%BE%E5%A4%A7%E5%9B%BE.svg",
+    "08_%E4%BF%AE%E6%94%B9%E8%AF%B4%E6%98%8E%E4%B8%8E%E7%A1%AE%E8%AE%A4%E8%A6%81%E7%82%B9.svg"
+  ]
+}

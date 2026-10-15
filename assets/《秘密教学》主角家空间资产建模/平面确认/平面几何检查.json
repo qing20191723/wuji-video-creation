@@ -1,0 +1,161 @@
+{
+  "scope": "二维方案检查；0.50m直径人物足迹、门扇采样、家具占地；不含三维净高/承重/施工合规。",
+  "issues": [],
+  "checks": {
+    "unique_openings": true,
+    "door_sweeps": [
+      {
+        "door": "D101",
+        "hits": []
+      },
+      {
+        "door": "D104",
+        "hits": []
+      },
+      {
+        "door": "D207",
+        "hits": []
+      },
+      {
+        "door": "D203",
+        "hits": []
+      },
+      {
+        "door": "D204",
+        "hits": []
+      },
+      {
+        "door": "D205",
+        "hits": []
+      },
+      {
+        "door": "D107",
+        "hits": []
+      },
+      {
+        "door": "D106",
+        "hits": []
+      },
+      {
+        "door": "D105",
+        "hits": []
+      }
+    ],
+    "usage_zones_checked": 12,
+    "reachable_regions": [
+      {
+        "room": "L",
+        "reachable": true
+      },
+      {
+        "room": "D",
+        "reachable": true
+      },
+      {
+        "room": "K",
+        "reachable": true
+      },
+      {
+        "room": "MH",
+        "reachable": true
+      },
+      {
+        "room": "MB",
+        "reachable": true
+      },
+      {
+        "room": "MW",
+        "reachable": true
+      },
+      {
+        "room": "LA",
+        "reachable": true
+      },
+      {
+        "room": "WC",
+        "reachable": true
+      },
+      {
+        "room": "H1",
+        "reachable": true
+      },
+      {
+        "room": "E",
+        "reachable": true
+      },
+      {
+        "room": "B1",
+        "reachable": true
+      },
+      {
+        "room": "B2",
+        "reachable": true
+      },
+      {
+        "room": "B3",
+        "reachable": true
+      },
+      {
+        "room": "H2",
+        "reachable": true
+      },
+      {
+        "room": "A",
+        "reachable": true
+      },
+      {
+        "room": "WB",
+        "reachable": true
+      },
+      {
+        "room": "LT",
+        "reachable": true
+      },
+      {
+        "room": "FB",
+        "reachable": true
+      }
+    ],
+    "routes": [
+      {
+        "name": "主卧直达",
+        "samples": 168,
+        "hits": []
+      },
+      {
+        "name": "楼梯至卧室",
+        "samples": 658,
+        "hits": []
+      },
+      {
+        "name": "一楼落地至餐厅",
+        "samples": 195,
+        "hits": []
+      }
+    ],
+    "master_door_on_axis": true,
+    "kitchen_dining_no_door": true,
+    "stair_lower_landing_depth_m": 1.58,
+    "stair_top_landing_depth_m": 1.5,
+    "net_bedroom_areas": {
+      "B1": 40.92,
+      "B2": 35.64,
+      "B3": 36.96,
+      "MB": 38.28
+    },
+    "model_unchanged": [
+      {
+        "file": "模型/空间主数据_v4.json",
+        "unchanged": true
+      },
+      {
+        "file": "模型/秘密教学_全屋空间_v4.blend",
+        "unchanged": true
+      },
+      {
+        "file": "模型/秘密教学_全屋空间_v4.glb",
+        "unchanged": true
+      }
+    ]
+  }
+}
