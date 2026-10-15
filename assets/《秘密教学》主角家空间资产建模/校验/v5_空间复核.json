@@ -1,0 +1,18 @@
+{
+  "version": "v5.0-reference-calibration",
+  "module_count": 8,
+  "object_count": 1974,
+  "preserved_room_objects": 656,
+  "schema_failures": [],
+  "route_samples": 538,
+  "route_assumptions": "0.52m body diameter, 1.75m height; doors open; sampled centers every <=0.08m; excludes rail/door swing and vehicle motion",
+  "route_collisions": {},
+  "design_gaps_failed": [],
+  "not_checked": [
+    "structural engineering",
+    "full door swing sweeps",
+    "all possible human routes",
+    "vehicle turning swept area",
+    "material/detail identity"
+  ]
+}

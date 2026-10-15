@@ -1,5 +1,31 @@
 # 《秘密教学》主角家空间资产建模
 
+当前工作为 **v5 原图校准与采光院拼接提案**。用户选择优先保留 V3 卧室，允许走廊转折或增加采光院；正式场景图片暂停，等模型复核后恢复。下方 v4.4 内容保留作历史记录，不是当前生产基线。
+
+- [打开 V5 可旋转模型](打开V5校准模型.html)：单文件离线预览，支持一楼、二楼、楼梯及独立房间检查。
+- [V5 两层同向平面图](图纸/全屋两层同向平面_v5.svg)：同一数据生成的可编辑 SVG；旁有 PNG 与门窗编号 CSV。
+- [模型与复核说明](制作记录/V5采光院拼接与复核说明.md)：原图依据、尺寸、补充设计、局限及下次验收重点。
+- `模型/秘密教学_V3校准模块_v5.blend`、同名 GLB：8 个分组（6 个房间模块、旧外部体量研究、全屋提案），各模块沿 X 轴分隔存放；HOME 是新全屋，SITE 仅用于对照。
+- `模型/空间校准主数据_v5.json`：所有几何和机位的唯一坐标来源。
+- `预览/v5/对照与复核.html`：本地原图对照，预览目录不进 Git，可用原素材重建。
+
+在本资产目录构建 v5：
+
+```powershell
+python scripts/build_v5_modules.py
+python scripts/check_v5.py
+python scripts/check_v5_access.py
+python scripts/plan_v5.py
+blender -b --disable-autoexec --python scripts/export_v5_blender.py
+blender -b --disable-autoexec --python scripts/check_saved_v5.py
+python scripts/package_v5.py --reference-root "你的场景图V3版目录"
+node scripts/verify_v5.cjs
+```
+
+检查依赖 NumPy、Playwright 和 Chrome；`NODE_PATH` / `CHROME_PATH` 按环境配置。浏览器验证同时输出 PNG 图纸。模型保持实际墙高，去顶图仅供检查。42 张必要 V3 参考按校验值保存于 `参照/V3/`，`package_v5.py` 不传参数时使用它们；本地渲染需重新运行 Blender 导出脚本。单文件模型预览和 Blend 打开不依赖原图路径。
+
+## 历史：v4.4 路线
+
 2026-10-14，用户认可 v4 基本空间后，进一步明确：模型作为空间参考，先确定摄影机，再由 imagegen 结合原场景修正材质。当前工作版为 v4.4，旧直接渲染流程作为历史保留。
 
 v4.4 修复预览默认截矮墙体及视场换算，增加 H203 后露台方向高位摄影机，将走廊唯一 Logo 固定到护栏端墙。首张材质修正版仍为待核对样图：远端两块门牌不能逐字验清，生成边线也不是逐像素锁定。房间比例、辅助区效率尚未完成校准；95 张场景终稿不能据此宣称完成。

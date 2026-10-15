@@ -1,0 +1,734 @@
+{
+  "source_label": "用户指定 场景图V3版",
+  "files": [
+    {
+      "id": "V3_001",
+      "relative_path": "一楼客卫/客卫_侧视图（日景）.png",
+      "size": [
+        1671,
+        941
+      ],
+      "sha256": "79f5c6da6652ec668b0b089fbe0ee43260618a632cd5a0a33a40501ba7ef8b04"
+    },
+    {
+      "id": "V3_002",
+      "relative_path": "一楼客卫/客卫_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "06dc5fd616aaeb03c20921719f53c75666cb074918fcaed95953acd2add15599"
+    },
+    {
+      "id": "V3_003",
+      "relative_path": "一楼客卫/客卫_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "18f3ebba29cf993b24966d33c4bb096ac6172434a7adc7c2e565ee6c2c9694c0"
+    },
+    {
+      "id": "V3_004",
+      "relative_path": "一楼客卫/客卫_正视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "bbda3372cf42e864a58cc1cf7455a354837c791a75072490a5f8ffbf88952e09"
+    },
+    {
+      "id": "V3_005",
+      "relative_path": "临街阳台/临街阳台_侧视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "52ce2b0c937923bc31f73362fb904e02beb78b55f7e12374645bf2405387078a"
+    },
+    {
+      "id": "V3_006",
+      "relative_path": "临街阳台/临街阳台_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "3f6fc2c77f9c2332d832bc23f836cf8f9511ac27a02d4d45b6b1a337eadad137"
+    },
+    {
+      "id": "V3_007",
+      "relative_path": "临街阳台/临街阳台_前视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "7e4c959a08aed2b949b0188ff0c173fbf2447f075098d307b8609f2b63b4da03"
+    },
+    {
+      "id": "V3_008",
+      "relative_path": "临街阳台/临街阳台_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "dda1503b18be6cc8cb4435ea6b2a34e9f25aaabfcec9876fa8b45b23966eddbe"
+    },
+    {
+      "id": "V3_009",
+      "relative_path": "二姐卧室/二姐房间_侧视图（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "82d3c748c9654bfd5536ced1b4bd1b1f1edb1ef136135be99ec51f1745ec9f70"
+    },
+    {
+      "id": "V3_010",
+      "relative_path": "二姐卧室/二姐房间_俯拍图（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "4f659ce89510f17861b9a60c47700cfdc66331f3e83f0d1b11dd415cb88e02a1"
+    },
+    {
+      "id": "V3_011",
+      "relative_path": "二姐卧室/二姐房间_正视图（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "91ba987ba35bc5f67d594b0f878ec9e8cc2a72189d7c5eae565cf906c6883f77"
+    },
+    {
+      "id": "V3_012",
+      "relative_path": "二姐卧室/二姐房间_正视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "463d85cc3cdb2435d2ee95ec3430674d7feea1fca395c2fa2b2b22e523a99734"
+    },
+    {
+      "id": "V3_013",
+      "relative_path": "二姐卧室/二姐房间_背面视图（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "e8849fb1599b43f12cbe3383f3a81710c508de34e66773d4e01d8ae3ed94c12a"
+    },
+    {
+      "id": "V3_014",
+      "relative_path": "二姐卧室/二姐房间_背面视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d01b5775941ced4b8fd5b668e8ec02a972552b8cbd0ebb6f872ba5ee015202ce"
+    },
+    {
+      "id": "V3_015",
+      "relative_path": "二楼公用浴室/公用浴室_侧视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "f0d9918b8928771e7a9ade41ec4197c1f7c8e6e480d33dabe8f718c9b4d7964c"
+    },
+    {
+      "id": "V3_016",
+      "relative_path": "二楼公用浴室/公用浴室_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "e8f2c8e06accca4ee21a2f8bbf898d45ca7847df9c8a770b839b4181fcb05b1f"
+    },
+    {
+      "id": "V3_017",
+      "relative_path": "二楼公用浴室/公用浴室_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "ed221b2d58198ee3b558249b5a11fc7e971ef940af244704539ddf0e55df57a7"
+    },
+    {
+      "id": "V3_018",
+      "relative_path": "二楼公用浴室/公用浴室_正视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "5d7156d2e5074ca3f94ca7db371b666610006a0fef783e67c9391e8ec13e137e"
+    },
+    {
+      "id": "V3_019",
+      "relative_path": "侧后露台/侧后露台_侧视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c6f0d00c806727eaaad788ebfa4c03b1f3a58e6c77dc29d237ccaa87c8fb6e46"
+    },
+    {
+      "id": "V3_020",
+      "relative_path": "侧后露台/侧后露台_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c9524f0abab68c6ac4385d224002a2322ff4f3e1a9668de13c3395a387aa1dff"
+    },
+    {
+      "id": "V3_021",
+      "relative_path": "侧后露台/侧后露台_前视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "48ccba8742717edc7f3c742e2090021ff9c1a3a4f1fbb33a88dd894806b96a6a"
+    },
+    {
+      "id": "V3_022",
+      "relative_path": "侧后露台/侧后露台_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "8b5dce585ce0397ea33d487dabde2bbf23308b31f11c54f047a04ae049442595"
+    },
+    {
+      "id": "V3_023",
+      "relative_path": "别墅外景/别墅_侧面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "812d7aa9d1b842c706b237cab2c742141905f2c632bb64d9a361ab26a5ab38ce"
+    },
+    {
+      "id": "V3_024",
+      "relative_path": "别墅外景/别墅_俯拍视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "97bd6c8d34dbaf58cb05e9ace45f18f18b6bc6a2e878b5db8f9b8f2e28521037"
+    },
+    {
+      "id": "V3_025",
+      "relative_path": "别墅外景/别墅_正面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c3916722871c009672eac5219221b48180b6a288183e75a154b8447b3de1ceec"
+    },
+    {
+      "id": "V3_026",
+      "relative_path": "别墅外景/别墅_正面视角（晚上）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c0c53b7416c13e5f7c40ad6a2de6e37961941a5df3d5fe9a1c386b21e8a191f7"
+    },
+    {
+      "id": "V3_027",
+      "relative_path": "别墅外景/别墅_背面视角（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "b1f4ed805291dfa8072fa00319cc88a58ce904e765449f70a4e5f655ab971802"
+    },
+    {
+      "id": "V3_028",
+      "relative_path": "别墅外景/别墅_背面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "5d4585ad5363a8f923d108a74081cfee1158262550987c8c315d1204c2233b7c"
+    },
+    {
+      "id": "V3_029",
+      "relative_path": "别墅外景/别墅外景深夜图.jpg",
+      "size": [
+        2560,
+        1440
+      ],
+      "sha256": "435ebb26a367179f020de809709e719ad63b8658454b12b00ae9d676420fc94e"
+    },
+    {
+      "id": "V3_030",
+      "relative_path": "别墅外景参考/主角家别墅外参考.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "b4083bf4556be7c204813b001c811e97e410fc96919b7cf748dccd8fb82013a0"
+    },
+    {
+      "id": "V3_031",
+      "relative_path": "别墅外景参考/别墅侧面参考.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c313be4ec1e082ed88fcaeda1d90313e822fe07bb0e1d8ce32dc670bd084897a"
+    },
+    {
+      "id": "V3_032",
+      "relative_path": "别墅外景参考/别墅俯拍视角.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c02c34bf8ab0e63fbbe42bce9309ce81dede3a4b464a2fa78d05e1a2406b552f"
+    },
+    {
+      "id": "V3_033",
+      "relative_path": "别墅外景参考/别墅正面视角.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d2d7dccbfb6fa67b7ccb848469d172619b0c762aab1fe14533516350a273fc7b"
+    },
+    {
+      "id": "V3_034",
+      "relative_path": "别墅外景参考/别墅背面视角.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "2acc499890f38f83e4e52e6c7063d4747aae8466ef788c7f7695ea504124ec8f"
+    },
+    {
+      "id": "V3_035",
+      "relative_path": "别墅玄关/别墅玄关_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "f3219e5797cef9108906e81fb4b529db64a1b73e8177e02fe262912f0e4f06fa"
+    },
+    {
+      "id": "V3_036",
+      "relative_path": "别墅玄关/别墅玄关_后视图（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "62c72ee884c54b0f50f01b0a7295c211150205cc3ddfb23fd9c2ffea36ea92c1"
+    },
+    {
+      "id": "V3_037",
+      "relative_path": "别墅玄关/别墅玄关_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "121711ee91e12e9d7a4c5c32d8504e032df21b092cb32ca1bc8e00551e3232d0"
+    },
+    {
+      "id": "V3_038",
+      "relative_path": "厨房/厨房_侧视图（日景）.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "95eb4969c4f1ec4e3705be09abfb2e8a767272836f58543550096b3622c57368"
+    },
+    {
+      "id": "V3_039",
+      "relative_path": "厨房/厨房_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "7be085f97c183802a89aeac6e171f04e3cf01d99902dd6f379cfd731033419ea"
+    },
+    {
+      "id": "V3_040",
+      "relative_path": "厨房/厨房_前视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "86086896d4bfe33bb03dc72d04123c76647c21bb729b7f96b208c4e96dfc229b"
+    },
+    {
+      "id": "V3_041",
+      "relative_path": "厨房/厨房_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d13d6ce186afbabddff3a3f630443c0063cc199dc4f7254f925fc7830047e229"
+    },
+    {
+      "id": "V3_042",
+      "relative_path": "大姐卧室/大姐卧室_侧面俯拍视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "3c91e9bd19faf0374759a32bd1eadde1ce104d77bf9c77b982d97ffcaf90e158"
+    },
+    {
+      "id": "V3_043",
+      "relative_path": "大姐卧室/大姐卧室_俯拍视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d35d57538455adeba576d40efa9bf23efe5f6a8ff8e6bcbfc4ec1bcd8c24cb03"
+    },
+    {
+      "id": "V3_044",
+      "relative_path": "大姐卧室/大姐卧室_床头看床尾视角（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "9fa7dbd2e9a3d9d72f90710ee1451c2eb65a3111c29360a6a8d10582bbf0f64f"
+    },
+    {
+      "id": "V3_045",
+      "relative_path": "大姐卧室/大姐卧室_床头看床尾视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "79517eaad927dfdacc25d9f702aea1f03de711cba0b9f4d71996c82a9b1c0531"
+    },
+    {
+      "id": "V3_046",
+      "relative_path": "大姐卧室/大姐卧室_床尾看床头视角（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "1cecf92b11eb0bc81416be651409b301e65a86a01b48fb666256013469c1c52d"
+    },
+    {
+      "id": "V3_047",
+      "relative_path": "大姐卧室/大姐卧室_床尾看床头视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "052082b50935d00edfead77f7ab809188f2dda44478ef950af8aa5f0badb8eb8"
+    },
+    {
+      "id": "V3_048",
+      "relative_path": "客厅/客厅_侧视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "a9275dba2cffc3d38efe13e04a8c6511344c9b092edec6144bb7d2a14a83961b"
+    },
+    {
+      "id": "V3_049",
+      "relative_path": "客厅/客厅_俯拍图（日景）.png",
+      "size": [
+        1672,
+        940
+      ],
+      "sha256": "f3ddbbec0f1ec1b1f6241e65cd94de5277848be70eca313107a42f9ab76cf309"
+    },
+    {
+      "id": "V3_050",
+      "relative_path": "客厅/客厅_前视图（夜间）.png",
+      "size": [
+        1673,
+        940
+      ],
+      "sha256": "737d3614da4f42c502dc624d732dcb22046b1851439ff3c1201b936af0f7db86"
+    },
+    {
+      "id": "V3_051",
+      "relative_path": "客厅/客厅_前视图（日景）.png",
+      "size": [
+        1673,
+        940
+      ],
+      "sha256": "4f1ad7a7e0332e2724f011e7eb222a5d573ba6803752d5fef4ed72f3056b4874"
+    },
+    {
+      "id": "V3_052",
+      "relative_path": "客厅/客厅_后视图（夜间）.png",
+      "size": [
+        1673,
+        940
+      ],
+      "sha256": "16313c1db6d8e57bd6623f983c1fb6bc9e67e8d0f263bf7fdeac082ff17b7e86"
+    },
+    {
+      "id": "V3_053",
+      "relative_path": "客厅/客厅_后视图（日景）.png",
+      "size": [
+        1673,
+        940
+      ],
+      "sha256": "9c109ebfad38df6d677528aabcc70118d7445d7a06a3a00978e5227a1e9ca8f6"
+    },
+    {
+      "id": "V3_054",
+      "relative_path": "布草储物区/布草储物区_俯拍图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "59fb95999ed674ac2152f1d299595fad226f26cabc18ae8ddbdfc4af58d1343a"
+    },
+    {
+      "id": "V3_055",
+      "relative_path": "布草储物区/布草储物区_门口朝内（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "9fcde2aef289029ce04b7b1f5e776e4d7d3cdf5aaf5330261eeee768e6518d16"
+    },
+    {
+      "id": "V3_056",
+      "relative_path": "洗衣房/洗衣房_侧视图（日景）.png",
+      "size": [
+        1672,
+        940
+      ],
+      "sha256": "0948496ee107a4a4580431492d8a60f22812cc73ed2d8559f77dbd2e7649c65a"
+    },
+    {
+      "id": "V3_057",
+      "relative_path": "洗衣房/洗衣房_前视图（日景）.png",
+      "size": [
+        1674,
+        940
+      ],
+      "sha256": "49ac3e62381c564b3caefe0cc015ec96730242bc43d2b35c5ee9408071eb2c7e"
+    },
+    {
+      "id": "V3_058",
+      "relative_path": "洗衣房/洗衣房_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "a1d816279cb6a281ab377f44a218577c7963bb4f065889c4214bad2cc850d9c4"
+    },
+    {
+      "id": "V3_059",
+      "relative_path": "男主卧室/男主卧室_侧面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "6966ce00c4ba7879a7b5815deea68057dcb4dd6af047d3b8e5290aa56bd13882"
+    },
+    {
+      "id": "V3_060",
+      "relative_path": "男主卧室/男主卧室_正面视角（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "17469815ede4091d6af79d1f5c495013b11b8f701226a3d12b784d85576924f3"
+    },
+    {
+      "id": "V3_061",
+      "relative_path": "男主卧室/男主卧室_正面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "74588ccf743b0519494c574b541934a4206dded1fd5c3631e2de4ec7006405c1"
+    },
+    {
+      "id": "V3_062",
+      "relative_path": "男主卧室/男主卧室_背面视角（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "d271cae5dbe84088dd49e4eb29a50301990b6fabdaccb62fcc2a7ef8a4cde570"
+    },
+    {
+      "id": "V3_063",
+      "relative_path": "男主卧室/男主卧室_背面视角（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "0d8446088824f4f136ab587190eb5ef3261906fff4e3620064e58465e8af2620"
+    },
+    {
+      "id": "V3_064",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_侧拍（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "f379abbfc71e56d0c988c7602d1ac4defeb8a2ecc15dcea5c27aa2705bdd017a"
+    },
+    {
+      "id": "V3_065",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_俯拍（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "99f46ad0fccae088fcbd1c35ca94ead74a179a0b256a48911038fbed7dd87b62"
+    },
+    {
+      "id": "V3_066",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_床头看床尾（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "e9672921671681991bb6c354d764f583bc2f60f28a8fd56224af62e19bbccb43"
+    },
+    {
+      "id": "V3_067",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_床头看床尾（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "46c4d2ef16d8063632ac81fcba3480dbe43aa1d987a14b601ad2a711865d68b8"
+    },
+    {
+      "id": "V3_068",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_床尾看床头（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "b330d0711416d6b1c9160bb9860a83f59f77db93de5db7b9c7ac185f66dbc3b7"
+    },
+    {
+      "id": "V3_069",
+      "relative_path": "阿姨卧室/卧室/主卧卧室_床尾看床头（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "33588c2d88e363e37298fb0eb8a31ee7399297eafc12d7c7e5012f0406300759"
+    },
+    {
+      "id": "V3_070",
+      "relative_path": "阿姨卧室/浴室（logo位置有问题）/主卧浴室_侧向_朝台盆（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "305fb0d46f887d33bffe613ceca108cb62c913a13031a4a62a267c52abe352e8"
+    },
+    {
+      "id": "V3_071",
+      "relative_path": "阿姨卧室/浴室（logo位置有问题）/主卧浴室_俯拍（日景）.png",
+      "size": [
+        1294,
+        1216
+      ],
+      "sha256": "9001c090bd79509c2a9f7195425b31e5ffd334b3371e89ac012bfcee2c007aff"
+    },
+    {
+      "id": "V3_072",
+      "relative_path": "阿姨卧室/浴室（logo位置有问题）/主卧浴室_反向_朝入口（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "33ba1e632e020ad498bd63dd91b429f59648d85e6a0e4af54d0b84a57fba8948"
+    },
+    {
+      "id": "V3_073",
+      "relative_path": "阿姨卧室/浴室（logo位置有问题）/主卧浴室_正向_朝浴缸（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c3ac59ac0b38833c61b203e93aa0d174f3f9c68a3d6e1cbeeac212ddb82f6d17"
+    },
+    {
+      "id": "V3_074",
+      "relative_path": "阿姨卧室/走廊/主卧走廊_主卧门看公共区（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "9bfcf3f5120f85b992d27f599c980da275ab7d6baa3aba938b388d1169f5b393"
+    },
+    {
+      "id": "V3_075",
+      "relative_path": "阿姨卧室/走廊/主卧走廊_主卧门看公共区（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "5d909e7b45ecf2cd5d19f37e1c7cf2f2003acd21b6740f4c1d8793ceec408703"
+    },
+    {
+      "id": "V3_076",
+      "relative_path": "阿姨卧室/走廊/主卧走廊_公共区看主卧门（夜间）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "f64c89162146fd80c6ad3bcb37f2c408de9109d71202394ddbc71f590fdfe968"
+    },
+    {
+      "id": "V3_077",
+      "relative_path": "阿姨卧室/走廊/主卧走廊_公共区看主卧门（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "4233f85bbced571739a82c6d5c66c2d9446875654add86518c38d69c77db969c"
+    },
+    {
+      "id": "V3_078",
+      "relative_path": "阿姨卧室/走廊/主卧走廊_联合俯拍（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "71cf808b822617fcfeac3eb09c020f83ca3be8a25ac4cbf7fdd74e3ffeb0270e"
+    },
+    {
+      "id": "V3_079",
+      "relative_path": "餐厅/餐厅_侧视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "7478cc0f5620f970a3b3551f3aa8711fca1543948b002145da889b27491bca2a"
+    },
+    {
+      "id": "V3_080",
+      "relative_path": "餐厅/餐厅_前视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "eb161c25cdb6cef50efee717bd0c7d62cdad843e31c8e25bff88ed0cfd97dc46"
+    },
+    {
+      "id": "V3_081",
+      "relative_path": "餐厅/餐厅_后视图（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "c3634a319692dd7f15432c1cea39c56b9e86a4337fd3326d236f01e4f0467c34"
+    }
+  ]
+}

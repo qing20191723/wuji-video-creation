@@ -1,0 +1,7 @@
+{
+  "embedded_data_equal": true,
+  "expected_objects": 1974,
+  "missing": [],
+  "default_camera": "HOME_floor2",
+  "note": "Object presence and embedded data check; not full mesh topology or material identity validation."
+}
