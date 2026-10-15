@@ -78,7 +78,7 @@ print(json.dumps({k:v for k,v in report.items() if k not in ['room_access','door
 # Editable SVG drawings, same model data and true coordinates for every piece.
 S=49;W=1800;H=1260;svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}"><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#b36828"/></marker></defs><rect width="100%" height="100%" fill="#fafbf9"/><style>text{{font-family:Microsoft YaHei,sans-serif;fill:#263f48}}.tiny{{font-size:9px}}.name{{font-size:13px;font-weight:bold}}.small{{font-size:12px}}</style>']
 def text(x,y,t,size=14,extra=''):svg.append(f'<text x="{x:.2f}" y="{y:.2f}" font-size="{size}" {extra}>{html.escape(str(t))}</text>')
-text(45,46,'《秘密教学》全屋空间模型 v4 · 两层同向平面',28);text(45,76,'同一主数据导出｜项目南向为临街正面（图纸下方）｜影视场景设计参考尺寸，非实测 / 非施工图',14)
+text(45,46,'《秘密教学》当前确认布局 · V4 两层同向平面',28);text(45,76,'三个卧室沿同一直走廊排列｜不含已撤销的 V5 采光院｜影视设计参考尺寸',14)
 for l,ox in [(1,65),(2,950)]:
  oy=960
  def pt(x,y):return ox+x*S,oy-y*S
@@ -102,6 +102,7 @@ for l,ox in [(1,65),(2,950)]:
    for k in range(21):
     a=k*math.pi/40;vx=w*math.cos(a);vy=side*w*math.sin(a);points.append(pt(h[0]+(vx if o['axis']==0 else vy),h[1]+(vy if o['axis']==0 else vx)))
    svg.append('<polyline points="'+' '.join(f'{a},{b}' for a,b in points)+'" fill="none" stroke="#638084" stroke-width=".8"/>')
+  elif o['type']=='open':line(o['a'],o['b'],'#36a481',1.3,'stroke-dasharray="3 4"')
   x,y=pt((o['a'][0]+o['b'][0])/2,(o['a'][1]+o['b'][1])/2);text(x+4,y-4,o['id'],9)
  for k in range(20):line([.2,1.7+k*.28],[1.5,1.7+k*.28],'#6f8287',.8)
  line([.85,2],[.85,6.7],'#b36828',2,'marker-end="url(#arr)"');x,y=pt(.85,4.5);text(x+7,y,'下 A→B',11,'transform="rotate(-90 '+str(x+7)+' '+str(y)+')"')
@@ -119,7 +120,7 @@ for l,ox in [(1,65),(2,950)]:
   if (l==2 and p[2]>3.0) or (l==1 and p[2]<4.9):points.append(pt(p[0],p[1]))
  svg.append('<polyline points="'+' '.join(f'{a},{b}' for a,b in points)+'" fill="none" stroke="#b36828" stroke-width="2" stroke-dasharray="5 4"/>')
  line([0,-2.4],[14.2,-2.4],'#607780',1);text(ox+S*7.1,oy+S*2.4-6,'最大宽度 14.20 m',12,'text-anchor="middle"');line([15.0,0],[15.0,16],'#607780',1);text(ox+S*15.15,oy-S*8,'16.00 m',12)
- text(ox,1120,'北 ↑　南 / 临街 ↓',13);text(ox,1150,'深色：墙体剖切　蓝线：窗　弧线：门扇　橙线：路线 / Logo 载体',12)
- text(ox,1174,'浅蓝：既有空间身份　浅橙：补充功能与过渡区　编号对应 CSV / Blender',12)
+ text(ox,1120,'北 ↑　南 / 临街 ↓',13);text(ox,1150,'O 编号 / 绿虚线：无门通道　D 编号 / 弧线：平开门　灰虚线：滑门',12)
+ text(ox,1174,'蓝线：窗　橙线：路线 / Logo　门窗编号沿用 V4，不使用 V5 的 1-03',12)
 text(45,1230,'楼层高差 3.30 m · 20 个踢面 × 0.165 m · 19 个踏面 × 0.28 m · 梯段净宽 1.30 m · 开口与图纸均来自空间主数据_v4.json',14)
 svg.append('</svg>');(R/'图纸/两层同向平面图.svg').write_text('\n'.join(svg),encoding='utf8')

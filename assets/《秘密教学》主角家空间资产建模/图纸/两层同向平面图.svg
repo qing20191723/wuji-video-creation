@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1260" viewBox="0 0 1800 1260"><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#b36828"/></marker></defs><rect width="100%" height="100%" fill="#fafbf9"/><style>text{font-family:Microsoft YaHei,sans-serif;fill:#263f48}.tiny{font-size:9px}.name{font-size:13px;font-weight:bold}.small{font-size:12px}</style>
-<text x="45.00" y="46.00" font-size="28" >《秘密教学》全屋空间模型 v4 · 两层同向平面</text>
-<text x="45.00" y="76.00" font-size="14" >同一主数据导出｜项目南向为临街正面（图纸下方）｜影视场景设计参考尺寸，非实测 / 非施工图</text>
+<text x="45.00" y="46.00" font-size="28" >《秘密教学》当前确认布局 · V4 两层同向平面</text>
+<text x="45.00" y="76.00" font-size="14" >三个卧室沿同一直走廊排列｜不含已撤销的 V5 采光院｜影视设计参考尺寸</text>
 <text x="65.00" y="128.00" font-size="21" >1F  /  公共生活与主卧套房</text>
 <rect x="231.6" y="690.5" width="362.6" height="269.5" fill="#edf3f3" stroke="#dce4e4" stroke-width="0.5" />
 <rect x="231.6" y="509.20000000000005" width="205.79999999999995" height="181.29999999999995" fill="#edf3f3" stroke="#dce4e4" stroke-width="0.5" />
@@ -159,6 +159,7 @@
 <text x="409.55" y="956.00" font-size="9" >W103</text>
 <line x1="594.2" y1="901.2" x2="594.2" y2="754.2" stroke="#42a0bb" stroke-width="3" />
 <text x="598.20" y="823.70" font-size="9" >W104</text>
+<line x1="471.70000000000005" y1="690.5" x2="555.0" y2="690.5" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="517.35" y="686.50" font-size="9" >O110</text>
 <line x1="638.3" y1="666" x2="726.5" y2="666" stroke="#42a0bb" stroke-width="3" />
 <text x="686.40" y="662.00" font-size="9" >W107</text>
@@ -168,13 +169,21 @@
 <text x="147.40" y="172.00" font-size="9" >W109</text>
 <line x1="275.7" y1="176" x2="363.9" y2="176" stroke="#42a0bb" stroke-width="3" />
 <text x="323.80" y="172.00" font-size="9" >W110</text>
+<line x1="231.6" y1="950.2" x2="231.6" y2="881.6" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="235.60" y="911.90" font-size="9" >O101</text>
+<line x1="231.6" y1="793.4" x2="231.6" y2="710.1" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="235.60" y="747.75" font-size="9" >O102</text>
+<line x1="231.6" y1="609.65" x2="231.6" y2="528.8" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="235.60" y="565.22" font-size="9" >O103</text>
+<line x1="231.6" y1="443.04999999999995" x2="231.6" y2="374.44999999999993" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="235.60" y="404.75" font-size="9" >O104</text>
+<line x1="243.85" y1="690.5" x2="292.85" y2="690.5" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="272.35" y="686.50" font-size="9" >O105</text>
+<line x1="376.15" y1="690.5" x2="425.15" y2="690.5" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="404.65" y="686.50" font-size="9" >O106</text>
+<line x1="261.0" y1="509.20000000000005" x2="398.2" y2="509.20000000000005" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="333.60" y="505.20" font-size="9" >O107</text>
+<line x1="437.4" y1="626.8" x2="437.4" y2="543.5" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="441.40" y="581.15" font-size="9" >O108</text>
 <line x1="324.7" y1="357.29999999999995" x2="378.6" y2="357.29999999999995" stroke="#647f88" stroke-width="2" stroke-dasharray="6 3"/>
 <text x="355.65" y="353.30" font-size="9" >D103</text>
@@ -256,8 +265,8 @@
 <line x1="800.0" y1="960" x2="800.0" y2="176" stroke="#607780" stroke-width="1" />
 <text x="807.35" y="568.00" font-size="12" >16.00 m</text>
 <text x="65.00" y="1120.00" font-size="13" >北 ↑　南 / 临街 ↓</text>
-<text x="65.00" y="1150.00" font-size="12" >深色：墙体剖切　蓝线：窗　弧线：门扇　橙线：路线 / Logo 载体</text>
-<text x="65.00" y="1174.00" font-size="12" >浅蓝：既有空间身份　浅橙：补充功能与过渡区　编号对应 CSV / Blender</text>
+<text x="65.00" y="1150.00" font-size="12" >O 编号 / 绿虚线：无门通道　D 编号 / 弧线：平开门　灰虚线：滑门</text>
+<text x="65.00" y="1174.00" font-size="12" >蓝线：窗　橙线：路线 / Logo　门窗编号沿用 V4，不使用 V5 的 1-03</text>
 <text x="950.00" y="128.00" font-size="21" >2F  /  三间卧室与公共走廊</text>
 <rect x="1116.6" y="773.8" width="362.6" height="186.2" fill="#edf3f3" stroke="#dce4e4" stroke-width="0.5" />
 <rect x="1116.6" y="587.6" width="362.6" height="186.2" fill="#edf3f3" stroke="#dce4e4" stroke-width="0.5" />
@@ -426,6 +435,7 @@
 <line x1="1116.6" y1="457.75" x2="1163.15" y2="457.75" stroke="#638084" stroke-width="1.2" />
 <polyline points="1116.6,411.20000000000005 1120.2522709061311,411.3434981147228 1123.8820243476227,411.77310774529633 1127.4668816874923,412.48618020548815 1130.984741088154,413.47831916646066 1134.4139137765949,414.74340776159954 1137.7332577628758,416.2736462990315 1140.9223081875275,418.05960034931707 1143.9614034942147,420.09025891184626 1146.83180664977,422.3531023013186 1149.5158206642338,424.8341793357662 1151.9968976986813,427.5181933502299 1154.2597410881538,430.38859650578536 1156.290399650683,433.42769181247263 1158.0763537009684,436.6167422371241 1159.6065922384005,439.93608622340514 1160.8716808335394,443.36525891184624 1161.863819794512,446.8831183125076 1162.5768922547036,450.4679756523772 1163.006501885277,454.09772909386885 1163.15,457.75" fill="none" stroke="#638084" stroke-width=".8"/>
 <text x="1120.60" y="430.48" font-size="9" >D205</text>
+<line x1="1116.6" y1="396.5" x2="1116.6" y2="332.79999999999995" stroke="#36a481" stroke-width="1.3" stroke-dasharray="3 4"/>
 <text x="1120.60" y="360.65" font-size="9" >O201</text>
 <line x1="1045.55" y1="327.9" x2="1104.35" y2="327.9" stroke="#647f88" stroke-width="2" stroke-dasharray="6 3"/>
 <text x="1078.95" y="323.90" font-size="9" >D206</text>
@@ -501,7 +511,7 @@
 <line x1="1685.0" y1="960" x2="1685.0" y2="176" stroke="#607780" stroke-width="1" />
 <text x="1692.35" y="568.00" font-size="12" >16.00 m</text>
 <text x="950.00" y="1120.00" font-size="13" >北 ↑　南 / 临街 ↓</text>
-<text x="950.00" y="1150.00" font-size="12" >深色：墙体剖切　蓝线：窗　弧线：门扇　橙线：路线 / Logo 载体</text>
-<text x="950.00" y="1174.00" font-size="12" >浅蓝：既有空间身份　浅橙：补充功能与过渡区　编号对应 CSV / Blender</text>
+<text x="950.00" y="1150.00" font-size="12" >O 编号 / 绿虚线：无门通道　D 编号 / 弧线：平开门　灰虚线：滑门</text>
+<text x="950.00" y="1174.00" font-size="12" >蓝线：窗　橙线：路线 / Logo　门窗编号沿用 V4，不使用 V5 的 1-03</text>
 <text x="45.00" y="1230.00" font-size="14" >楼层高差 3.30 m · 20 个踢面 × 0.165 m · 19 个踏面 × 0.28 m · 梯段净宽 1.30 m · 开口与图纸均来自空间主数据_v4.json</text>
 </svg>

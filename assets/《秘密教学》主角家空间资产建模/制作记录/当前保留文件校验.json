@@ -1,0 +1,20 @@
+{
+  "selection": "用户明确保留 V4 直走廊布局，删除 V5 和其他旧建模版本",
+  "files": [
+    {
+      "file": "模型/空间主数据_v4.json",
+      "sha256": "3ad531c8578c7204f76d8d72e8c3cbcde45948d866971bf5c28a6e2d5aae20fb",
+      "bytes": 260436
+    },
+    {
+      "file": "模型/秘密教学_全屋空间_v4.blend",
+      "sha256": "037329c383197d5bdd7bc5339d99417fe2c74935fcfcb87a50aacb21a0768971",
+      "bytes": 6507769
+    },
+    {
+      "file": "模型/秘密教学_全屋空间_v4.glb",
+      "sha256": "ed18b405af381cbdf203388222ab141d688218dc225f0c0500345ccdf74d1d90",
+      "bytes": 1064992
+    }
+  ]
+}

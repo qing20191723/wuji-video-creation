@@ -1,0 +1,1209 @@
+{
+  "kept_layout": "V4 straight corridor; user explicitly selected",
+  "source_images_preserved": true,
+  "removed": [
+    {
+      "bytes": 6325867,
+      "file": "打开V5校准模型.html"
+    },
+    {
+      "bytes": 4455,
+      "file": "模型检查.html"
+    },
+    {
+      "bytes": 10167,
+      "file": "直接渲染首批检查.html"
+    },
+    {
+      "bytes": 16030743,
+      "file": "direct.log"
+    },
+    {
+      "bytes": 1594,
+      "file": "model-check.log"
+    },
+    {
+      "bytes": 1815828,
+      "file": "production.log"
+    },
+    {
+      "bytes": 529385,
+      "file": "saved-render.log"
+    },
+    {
+      "bytes": 2079,
+      "file": "v4.4首张对照检查.html"
+    },
+    {
+      "bytes": 5806,
+      "file": "v5-viewer.js"
+    },
+    {
+      "bytes": 3167,
+      "file": "V5校准检查.html"
+    },
+    {
+      "bytes": 10853,
+      "file": "viewer.js"
+    },
+    {
+      "bytes": 1170,
+      "file": "scripts/backup_v5_references.py"
+    },
+    {
+      "bytes": 4440,
+      "file": "scripts/batch5_assets.py"
+    },
+    {
+      "bytes": 3540,
+      "file": "scripts/batch5_render.py"
+    },
+    {
+      "bytes": 3623,
+      "file": "scripts/batch5_setup.py"
+    },
+    {
+      "bytes": 3130,
+      "file": "scripts/browser_check.cjs"
+    },
+    {
+      "bytes": 3778,
+      "file": "scripts/build_v44.py"
+    },
+    {
+      "bytes": 17121,
+      "file": "scripts/build_v5_modules.py"
+    },
+    {
+      "bytes": 1739,
+      "file": "scripts/check_direct_model.py"
+    },
+    {
+      "bytes": 2347,
+      "file": "scripts/check_saved_v44.py"
+    },
+    {
+      "bytes": 1516,
+      "file": "scripts/check_saved_v5.py"
+    },
+    {
+      "bytes": 573,
+      "file": "scripts/check_v44.py"
+    },
+    {
+      "bytes": 3097,
+      "file": "scripts/check_v5_access.py"
+    },
+    {
+      "bytes": 2561,
+      "file": "scripts/check_v5.py"
+    },
+    {
+      "bytes": 714,
+      "file": "scripts/contact_sheet.py"
+    },
+    {
+      "bytes": 14034,
+      "file": "scripts/detail_rooms.py"
+    },
+    {
+      "bytes": 1636,
+      "file": "scripts/diagnostics_v44.py"
+    },
+    {
+      "bytes": 17885,
+      "file": "scripts/direct_render.py"
+    },
+    {
+      "bytes": 5301,
+      "file": "scripts/export_v5_blender.py"
+    },
+    {
+      "bytes": 1731,
+      "file": "scripts/fetch_cc0.py"
+    },
+    {
+      "bytes": 1548,
+      "file": "scripts/index_v3_references.py"
+    },
+    {
+      "bytes": 1250,
+      "file": "scripts/lighting.py"
+    },
+    {
+      "bytes": 3547,
+      "file": "scripts/package_direct_review.py"
+    },
+    {
+      "bytes": 5934,
+      "file": "scripts/package_v44.py"
+    },
+    {
+      "bytes": 5657,
+      "file": "scripts/package_v5.py"
+    },
+    {
+      "bytes": 4625,
+      "file": "scripts/plan_v5.py"
+    },
+    {
+      "bytes": 2001,
+      "file": "scripts/port_package.py"
+    },
+    {
+      "bytes": 2944,
+      "file": "scripts/prepare_current.py"
+    },
+    {
+      "bytes": 3819,
+      "file": "scripts/prepare_production.py"
+    },
+    {
+      "bytes": 7027,
+      "file": "scripts/production_blender.py"
+    },
+    {
+      "bytes": 1445,
+      "file": "scripts/project_openings_v44.py"
+    },
+    {
+      "bytes": 2552,
+      "file": "scripts/record_walk.cjs"
+    },
+    {
+      "bytes": 3211,
+      "file": "scripts/render_saved.py"
+    },
+    {
+      "bytes": 2583,
+      "file": "scripts/review_v44.cjs"
+    },
+    {
+      "bytes": 4916,
+      "file": "scripts/revise_v44.py"
+    },
+    {
+      "bytes": 640,
+      "file": "scripts/sanitize_records.py"
+    },
+    {
+      "bytes": 1656,
+      "file": "scripts/smoke_preview.cjs"
+    },
+    {
+      "bytes": 14023,
+      "file": "scripts/v5_assembly.py"
+    },
+    {
+      "bytes": 8571,
+      "file": "scripts/v5_other_rooms.py"
+    },
+    {
+      "bytes": 5571,
+      "file": "scripts/v5_social.py"
+    },
+    {
+      "bytes": 2476,
+      "file": "scripts/verify_remote_restore.py"
+    },
+    {
+      "bytes": 2167,
+      "file": "scripts/verify_v44_backup.py"
+    },
+    {
+      "bytes": 2203,
+      "file": "scripts/verify_v5_restoration.py"
+    },
+    {
+      "bytes": 2302,
+      "file": "scripts/verify_v5.cjs"
+    },
+    {
+      "bytes": 9303,
+      "file": "scripts/__pycache__/build_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 5777,
+      "file": "scripts/__pycache__/check_saved_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 1154,
+      "file": "scripts/__pycache__/check_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 2438,
+      "file": "scripts/__pycache__/diagnostics_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 2399,
+      "file": "scripts/__pycache__/lighting.cpython-311.pyc"
+    },
+    {
+      "bytes": 7602,
+      "file": "scripts/__pycache__/package_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 7928,
+      "file": "scripts/__pycache__/revise_v44.cpython-312.pyc"
+    },
+    {
+      "bytes": 3089,
+      "file": "制作记录/灯光与机位.json"
+    },
+    {
+      "bytes": 3995,
+      "file": "制作记录/建模返工复盘与恢复条件_20261014.md"
+    },
+    {
+      "bytes": 429,
+      "file": "制作记录/流程变更.json"
+    },
+    {
+      "bytes": 320,
+      "file": "制作记录/模型认可基线.json"
+    },
+    {
+      "bytes": 7166,
+      "file": "制作记录/五空间五时段配置.json"
+    },
+    {
+      "bytes": 36673,
+      "file": "制作记录/五空间五时段清单.json"
+    },
+    {
+      "bytes": 158017,
+      "file": "制作记录/原95张制作清单.json"
+    },
+    {
+      "bytes": 5254,
+      "file": "制作记录/原始生活空间一致性复核_20261014.md"
+    },
+    {
+      "bytes": 1392,
+      "file": "制作记录/远端恢复校验_v4.4.json"
+    },
+    {
+      "bytes": 9685,
+      "file": "制作记录/远端恢复校验_v5.json"
+    },
+    {
+      "bytes": 11167,
+      "file": "制作记录/远端恢复校验.json"
+    },
+    {
+      "bytes": 19561,
+      "file": "制作记录/直接渲染首批.json"
+    },
+    {
+      "bytes": 100448,
+      "file": "制作记录/制作清单.json"
+    },
+    {
+      "bytes": 1711,
+      "file": "制作记录/H201_attempt1.json"
+    },
+    {
+      "bytes": 824,
+      "file": "制作记录/H203_门牌局部修正提示词_v4.4.txt"
+    },
+    {
+      "bytes": 2916,
+      "file": "制作记录/H203_实际提示词_v4.4.txt"
+    },
+    {
+      "bytes": 1743,
+      "file": "制作记录/H203_制作与检查_v4.4.json"
+    },
+    {
+      "bytes": 1575,
+      "file": "制作记录/LIV01_attempt1.json"
+    },
+    {
+      "bytes": 12879,
+      "file": "制作记录/V5必要参考备份清单.json"
+    },
+    {
+      "bytes": 5324,
+      "file": "制作记录/V5采光院拼接与复核说明.md"
+    },
+    {
+      "bytes": 1520,
+      "file": "制作记录/YOU01_attempt1.json"
+    },
+    {
+      "bytes": 993,
+      "file": "制作记录/YOU05_attempt1.json"
+    },
+    {
+      "bytes": 1836,
+      "file": "制作记录/五空间提示词/E01_noon.txt"
+    },
+    {
+      "bytes": 1911,
+      "file": "制作记录/五空间提示词/E02_noon.txt"
+    },
+    {
+      "bytes": 1873,
+      "file": "制作记录/五空间提示词/E03_noon.txt"
+    },
+    {
+      "bytes": 1927,
+      "file": "制作记录/五空间提示词/E04_noon.txt"
+    },
+    {
+      "bytes": 1794,
+      "file": "制作记录/五空间提示词/elder_inputs.json"
+    },
+    {
+      "bytes": 1164,
+      "file": "制作记录/五空间提示词/H02_noon.txt"
+    },
+    {
+      "bytes": 1160,
+      "file": "制作记录/五空间提示词/H03_noon.txt"
+    },
+    {
+      "bytes": 521,
+      "file": "制作记录/历史/流程变更_v4.3.json"
+    },
+    {
+      "bytes": 160707,
+      "file": "制作记录/历史/制作清单_v4.3.json"
+    },
+    {
+      "bytes": 132133,
+      "file": "图纸/两层同向平面图_v4.4.png"
+    },
+    {
+      "bytes": 65556,
+      "file": "图纸/两层同向平面图_v4.4.svg"
+    },
+    {
+      "bytes": 2220,
+      "file": "图纸/门窗编号_v5.csv"
+    },
+    {
+      "bytes": 109120,
+      "file": "图纸/全屋两层同向平面_v5.png"
+    },
+    {
+      "bytes": 77518,
+      "file": "图纸/全屋两层同向平面_v5.svg"
+    },
+    {
+      "bytes": 2585,
+      "file": "校验/参考资产对应表.csv"
+    },
+    {
+      "bytes": 3394,
+      "file": "校验/冲突与修订清单.csv"
+    },
+    {
+      "bytes": 6081,
+      "file": "校验/几何检查结果_v4.4.json"
+    },
+    {
+      "bytes": 7895,
+      "file": "校验/空间尺寸复核_v4.4.json"
+    },
+    {
+      "bytes": 4176,
+      "file": "校验/空间复核_v4.4.md"
+    },
+    {
+      "bytes": 162480,
+      "file": "校验/离线模型检查.png"
+    },
+    {
+      "bytes": 273,
+      "file": "校验/离线预览_v4.4.json"
+    },
+    {
+      "bytes": 195870,
+      "file": "校验/浏览器_AX1.png"
+    },
+    {
+      "bytes": 251572,
+      "file": "校验/浏览器_AX2.png"
+    },
+    {
+      "bytes": 162480,
+      "file": "校验/浏览器_AXS.png"
+    },
+    {
+      "bytes": 180592,
+      "file": "校验/浏览器_C01.png"
+    },
+    {
+      "bytes": 93047,
+      "file": "校验/浏览器_C02.png"
+    },
+    {
+      "bytes": 167829,
+      "file": "校验/浏览器_C03.png"
+    },
+    {
+      "bytes": 204381,
+      "file": "校验/浏览器_EXT.png"
+    },
+    {
+      "bytes": 2073,
+      "file": "校验/模型回读_v4.4.json"
+    },
+    {
+      "bytes": 655,
+      "file": "校验/视觉身份保留项.json"
+    },
+    {
+      "bytes": 4458,
+      "file": "校验/验收说明.md"
+    },
+    {
+      "bytes": 1602,
+      "file": "校验/直接渲染模型回读.json"
+    },
+    {
+      "bytes": 1860,
+      "file": "校验/直接渲染视觉复核.md"
+    },
+    {
+      "bytes": 4566533,
+      "file": "校验/blender_build.log"
+    },
+    {
+      "bytes": 3919,
+      "file": "校验/browser_check.json"
+    },
+    {
+      "bytes": 3442,
+      "file": "校验/H203_文字与门窗投影.json"
+    },
+    {
+      "bytes": 631,
+      "file": "校验/portable_preview.json"
+    },
+    {
+      "bytes": 229,
+      "file": "校验/v5_保存模型回读.json"
+    },
+    {
+      "bytes": 9684,
+      "file": "校验/v5_参考尺寸与净距.json"
+    },
+    {
+      "bytes": 3789,
+      "file": "校验/v5_房间可达性.json"
+    },
+    {
+      "bytes": 573,
+      "file": "校验/v5_空间复核.json"
+    },
+    {
+      "bytes": 178781,
+      "file": "校验/v5_blender_export.log"
+    },
+    {
+      "bytes": 212,
+      "file": "校验/v5_browser.json"
+    },
+    {
+      "bytes": 502,
+      "file": "校验/v5_saved.log"
+    },
+    {
+      "bytes": 776486,
+      "file": "模型/空间校准主数据_v5.json"
+    },
+    {
+      "bytes": 263540,
+      "file": "模型/空间制作配置_v4.1.json"
+    },
+    {
+      "bytes": 263953,
+      "file": "模型/空间主数据_v4.4.json"
+    },
+    {
+      "bytes": 2581176,
+      "file": "模型/秘密教学_空间结构_v4.4.glb"
+    },
+    {
+      "bytes": 125360175,
+      "file": "模型/秘密教学_五空间机位_v4.4.blend"
+    },
+    {
+      "bytes": 20813091,
+      "file": "模型/秘密教学_主角家_直接渲染_v4.2.blend"
+    },
+    {
+      "bytes": 123576112,
+      "file": "模型/秘密教学_主角家_直接渲染_v4.3.blend"
+    },
+    {
+      "bytes": 10631901,
+      "file": "模型/秘密教学_主角家_v4.1.blend"
+    },
+    {
+      "bytes": 3439916,
+      "file": "模型/秘密教学_主角家_v4.1.glb"
+    },
+    {
+      "bytes": 125128459,
+      "file": "模型/秘密教学_主角家_v4.4.blend"
+    },
+    {
+      "bytes": 23088934,
+      "file": "模型/秘密教学_V3校准模块_v5.blend"
+    },
+    {
+      "bytes": 7192644,
+      "file": "模型/秘密教学_V3校准模块_v5.glb"
+    },
+    {
+      "bytes": 4583,
+      "file": "资源/PolyHaven/来源与许可.json"
+    },
+    {
+      "bytes": 2784329,
+      "file": "资源/PolyHaven/potted_plant_01/potted_plant_01_2k.blend"
+    },
+    {
+      "bytes": 199855,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_alpha_2k.png"
+    },
+    {
+      "bytes": 12648810,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_diff_2k.png"
+    },
+    {
+      "bytes": 14782653,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.png"
+    },
+    {
+      "bytes": 3726462,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.png"
+    },
+    {
+      "bytes": 17994581,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_diff_2k.png"
+    },
+    {
+      "bytes": 18083982,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.png"
+    },
+    {
+      "bytes": 5865763,
+      "file": "资源/PolyHaven/potted_plant_01/textures/potted_plant_01_pot_rough_2k.png"
+    },
+    {
+      "bytes": 297303,
+      "file": "资源/PolyHaven/potted_plant_04/potted_plant_04_2k.blend"
+    },
+    {
+      "bytes": 1804144,
+      "file": "资源/PolyHaven/potted_plant_04/textures/potted_plant_04_diff_2k.jpg"
+    },
+    {
+      "bytes": 5472710,
+      "file": "资源/PolyHaven/potted_plant_04/textures/potted_plant_04_nor_gl_2k.exr"
+    },
+    {
+      "bytes": 1458337,
+      "file": "资源/PolyHaven/potted_plant_04/textures/potted_plant_04_rough_2k.exr"
+    },
+    {
+      "bytes": 9680089,
+      "file": "预览/batch5_render.log"
+    },
+    {
+      "bytes": 278053,
+      "file": "预览/contact_1.jpg"
+    },
+    {
+      "bytes": 261788,
+      "file": "预览/contact_2.jpg"
+    },
+    {
+      "bytes": 380894,
+      "file": "预览/contact_3.jpg"
+    },
+    {
+      "bytes": 346943,
+      "file": "预览/contact_4.jpg"
+    },
+    {
+      "bytes": 2901980,
+      "file": "预览/H2_ELEV_day.png"
+    },
+    {
+      "bytes": 2928599,
+      "file": "预览/H2_ELEV_night.png"
+    },
+    {
+      "bytes": 3316916,
+      "file": "预览/H2_PAN_day.png"
+    },
+    {
+      "bytes": 3319004,
+      "file": "预览/H2_PAN_night.png"
+    },
+    {
+      "bytes": 3351844,
+      "file": "预览/LIV_MAIN_day.png"
+    },
+    {
+      "bytes": 3342291,
+      "file": "预览/LIV_MAIN_night.png"
+    },
+    {
+      "bytes": 528828,
+      "file": "预览/v44_build.log"
+    },
+    {
+      "bytes": 50782,
+      "file": "预览/v44_check.log"
+    },
+    {
+      "bytes": 258,
+      "file": "预览/v44_openings.log"
+    },
+    {
+      "bytes": 3181339,
+      "file": "预览/YOU_MAIN_day.png"
+    },
+    {
+      "bytes": 3184017,
+      "file": "预览/YOU_MAIN_night.png"
+    },
+    {
+      "bytes": 359665,
+      "file": "预览/V3参考盘点/阿姨卧室_卧室_1.jpg"
+    },
+    {
+      "bytes": 212128,
+      "file": "预览/V3参考盘点/阿姨卧室_卧室_2.jpg"
+    },
+    {
+      "bytes": 339863,
+      "file": "预览/V3参考盘点/阿姨卧室_浴室（logo位置有问题）_1.jpg"
+    },
+    {
+      "bytes": 301701,
+      "file": "预览/V3参考盘点/阿姨卧室_走廊_1.jpg"
+    },
+    {
+      "bytes": 106033,
+      "file": "预览/V3参考盘点/阿姨卧室_走廊_2.jpg"
+    },
+    {
+      "bytes": 610583,
+      "file": "预览/V3参考盘点/别墅外景_1.jpg"
+    },
+    {
+      "bytes": 396889,
+      "file": "预览/V3参考盘点/别墅外景_2.jpg"
+    },
+    {
+      "bytes": 648488,
+      "file": "预览/V3参考盘点/别墅外景参考_1.jpg"
+    },
+    {
+      "bytes": 177829,
+      "file": "预览/V3参考盘点/别墅外景参考_2.jpg"
+    },
+    {
+      "bytes": 269260,
+      "file": "预览/V3参考盘点/别墅玄关_1.jpg"
+    },
+    {
+      "bytes": 142473,
+      "file": "预览/V3参考盘点/布草储物区_1.jpg"
+    },
+    {
+      "bytes": 265350,
+      "file": "预览/V3参考盘点/餐厅_1.jpg"
+    },
+    {
+      "bytes": 587521,
+      "file": "预览/V3参考盘点/侧后露台_1.jpg"
+    },
+    {
+      "bytes": 289059,
+      "file": "预览/V3参考盘点/厨房_1.jpg"
+    },
+    {
+      "bytes": 504131,
+      "file": "预览/V3参考盘点/大姐卧室_1.jpg"
+    },
+    {
+      "bytes": 232872,
+      "file": "预览/V3参考盘点/大姐卧室_2.jpg"
+    },
+    {
+      "bytes": 442620,
+      "file": "预览/V3参考盘点/二姐卧室_1.jpg"
+    },
+    {
+      "bytes": 240060,
+      "file": "预览/V3参考盘点/二姐卧室_2.jpg"
+    },
+    {
+      "bytes": 425545,
+      "file": "预览/V3参考盘点/二楼公用浴室_1.jpg"
+    },
+    {
+      "bytes": 409201,
+      "file": "预览/V3参考盘点/客厅_1.jpg"
+    },
+    {
+      "bytes": 185040,
+      "file": "预览/V3参考盘点/客厅_2.jpg"
+    },
+    {
+      "bytes": 607156,
+      "file": "预览/V3参考盘点/临街阳台_1.jpg"
+    },
+    {
+      "bytes": 464405,
+      "file": "预览/V3参考盘点/男主卧室_1.jpg"
+    },
+    {
+      "bytes": 129071,
+      "file": "预览/V3参考盘点/男主卧室_2.jpg"
+    },
+    {
+      "bytes": 261837,
+      "file": "预览/V3参考盘点/洗衣房_1.jpg"
+    },
+    {
+      "bytes": 327344,
+      "file": "预览/V3参考盘点/一楼客卫_1.jpg"
+    },
+    {
+      "bytes": 140880,
+      "file": "预览/v4.4/离线检查器_H203.png"
+    },
+    {
+      "bytes": 1970714,
+      "file": "预览/v4.4/H203_材质初稿.png"
+    },
+    {
+      "bytes": 1868521,
+      "file": "预览/v4.4/H203_材质修正版.png"
+    },
+    {
+      "bytes": 1560000,
+      "file": "预览/v4.4/H203_门窗轮廓核对.png"
+    },
+    {
+      "bytes": 2743,
+      "file": "预览/v4.4/H203_门窗轮廓核对.svg"
+    },
+    {
+      "bytes": 2315339,
+      "file": "预览/v4.4/H203_模型底图.png"
+    },
+    {
+      "bytes": 1548856,
+      "file": "预览/v4.4/H203_文字位置核对.png"
+    },
+    {
+      "bytes": 1509,
+      "file": "预览/v4.4/H203_文字位置核对.svg"
+    },
+    {
+      "bytes": 2175248,
+      "file": "预览/v5/参考_V3_010.png"
+    },
+    {
+      "bytes": 2309822,
+      "file": "预览/v5/参考_V3_026.png"
+    },
+    {
+      "bytes": 1604374,
+      "file": "预览/v5/参考_V3_040.png"
+    },
+    {
+      "bytes": 1777482,
+      "file": "预览/v5/参考_V3_041.png"
+    },
+    {
+      "bytes": 2317011,
+      "file": "预览/v5/参考_V3_042.png"
+    },
+    {
+      "bytes": 2313446,
+      "file": "预览/v5/参考_V3_043.png"
+    },
+    {
+      "bytes": 1793630,
+      "file": "预览/v5/参考_V3_057.png"
+    },
+    {
+      "bytes": 2091454,
+      "file": "预览/v5/参考_V3_061.png"
+    },
+    {
+      "bytes": 1811007,
+      "file": "预览/v5/参考_V3_065.png"
+    },
+    {
+      "bytes": 5169,
+      "file": "预览/v5/对照与复核.html"
+    },
+    {
+      "bytes": 150380,
+      "file": "预览/v5/交互模型_大姐.png"
+    },
+    {
+      "bytes": 135163,
+      "file": "预览/v5/交互模型_默认二楼.png"
+    },
+    {
+      "bytes": 222384,
+      "file": "预览/v5/交互模型_全屋.png"
+    },
+    {
+      "bytes": 10060,
+      "file": "预览/v5/access_F1.npz"
+    },
+    {
+      "bytes": 9496,
+      "file": "预览/v5/access_F2.npz"
+    },
+    {
+      "bytes": 14236,
+      "file": "预览/v5/E_平面.svg"
+    },
+    {
+      "bytes": 1870645,
+      "file": "预览/v5/E_cut.png"
+    },
+    {
+      "bytes": 1795282,
+      "file": "预览/v5/E_reverse.png"
+    },
+    {
+      "bytes": 1755366,
+      "file": "预览/v5/E_side.png"
+    },
+    {
+      "bytes": 1696748,
+      "file": "预览/v5/HOME_A.png"
+    },
+    {
+      "bytes": 1865846,
+      "file": "预览/v5/HOME_court.png"
+    },
+    {
+      "bytes": 2005391,
+      "file": "预览/v5/HOME_exterior.png"
+    },
+    {
+      "bytes": 1730859,
+      "file": "预览/v5/HOME_floor1.png"
+    },
+    {
+      "bytes": 1720914,
+      "file": "预览/v5/HOME_floor2.png"
+    },
+    {
+      "bytes": 1700069,
+      "file": "预览/v5/HOME_stairs_up.png"
+    },
+    {
+      "bytes": 1700323,
+      "file": "预览/v5/HOME_turn.png"
+    },
+    {
+      "bytes": 23381,
+      "file": "预览/v5/KLD_平面.svg"
+    },
+    {
+      "bytes": 1773610,
+      "file": "预览/v5/KLD_cut.png"
+    },
+    {
+      "bytes": 1738608,
+      "file": "预览/v5/KLD_K_front.png"
+    },
+    {
+      "bytes": 1726864,
+      "file": "预览/v5/KLD_K_reverse.png"
+    },
+    {
+      "bytes": 3549,
+      "file": "预览/v5/LA_平面.svg"
+    },
+    {
+      "bytes": 1724025,
+      "file": "预览/v5/LA_cut.png"
+    },
+    {
+      "bytes": 1747594,
+      "file": "预览/v5/LA_front.png"
+    },
+    {
+      "bytes": 7797,
+      "file": "预览/v5/M_平面.svg"
+    },
+    {
+      "bytes": 1791548,
+      "file": "预览/v5/M_cut.png"
+    },
+    {
+      "bytes": 1799032,
+      "file": "预览/v5/M_front.png"
+    },
+    {
+      "bytes": 8170,
+      "file": "预览/v5/P_平面.svg"
+    },
+    {
+      "bytes": 1629731,
+      "file": "预览/v5/P_cut.png"
+    },
+    {
+      "bytes": 1825767,
+      "file": "预览/v5/P_front.png"
+    },
+    {
+      "bytes": 15836,
+      "file": "预览/v5/SITE_平面.svg"
+    },
+    {
+      "bytes": 2048293,
+      "file": "预览/v5/SITE_front.png"
+    },
+    {
+      "bytes": 1805885,
+      "file": "预览/v5/SITE_garden.png"
+    },
+    {
+      "bytes": 6949,
+      "file": "预览/v5/Y_平面.svg"
+    },
+    {
+      "bytes": 1849189,
+      "file": "预览/v5/Y_cut.png"
+    },
+    {
+      "bytes": 1903708,
+      "file": "预览/v5/Y_front.png"
+    },
+    {
+      "bytes": 2317159,
+      "file": "预览/五空间五时段/模型底图/D01.png"
+    },
+    {
+      "bytes": 2307805,
+      "file": "预览/五空间五时段/模型底图/D02.png"
+    },
+    {
+      "bytes": 2391291,
+      "file": "预览/五空间五时段/模型底图/D03.png"
+    },
+    {
+      "bytes": 2587929,
+      "file": "预览/五空间五时段/模型底图/D04.png"
+    },
+    {
+      "bytes": 2317140,
+      "file": "预览/五空间五时段/模型底图/E01.png"
+    },
+    {
+      "bytes": 2560335,
+      "file": "预览/五空间五时段/模型底图/E02.png"
+    },
+    {
+      "bytes": 2400404,
+      "file": "预览/五空间五时段/模型底图/E03.png"
+    },
+    {
+      "bytes": 2674845,
+      "file": "预览/五空间五时段/模型底图/E04.png"
+    },
+    {
+      "bytes": 2269470,
+      "file": "预览/五空间五时段/模型底图/H02.png"
+    },
+    {
+      "bytes": 2352670,
+      "file": "预览/五空间五时段/模型底图/H03.png"
+    },
+    {
+      "bytes": 2015217,
+      "file": "预览/五空间五时段/模型底图/K01.png"
+    },
+    {
+      "bytes": 2104567,
+      "file": "预览/五空间五时段/模型底图/K02.png"
+    },
+    {
+      "bytes": 2062406,
+      "file": "预览/五空间五时段/模型底图/K03.png"
+    },
+    {
+      "bytes": 2075247,
+      "file": "预览/五空间五时段/模型底图/K04.png"
+    },
+    {
+      "bytes": 2298097,
+      "file": "预览/五空间五时段/模型底图/L01.png"
+    },
+    {
+      "bytes": 2250172,
+      "file": "预览/五空间五时段/模型底图/L02.png"
+    },
+    {
+      "bytes": 2257828,
+      "file": "预览/五空间五时段/模型底图/L03.png"
+    },
+    {
+      "bytes": 2503248,
+      "file": "预览/五空间五时段/模型底图/L04.png"
+    },
+    {
+      "bytes": 612255,
+      "file": "预览/保存模型拍摄/客厅_后视图（日景）.png"
+    },
+    {
+      "bytes": 543,
+      "file": "预览/保存模型拍摄/拍摄记录.json"
+    },
+    {
+      "bytes": 2456393,
+      "file": "预览/直接渲染/餐厅_后视图（日景）.png"
+    },
+    {
+      "bytes": 2443463,
+      "file": "预览/直接渲染/餐厅_后视图（夜间）.png"
+    },
+    {
+      "bytes": 2412504,
+      "file": "预览/直接渲染/餐厅_前视图（日景）.png"
+    },
+    {
+      "bytes": 2385656,
+      "file": "预览/直接渲染/餐厅_前视图（夜间）.png"
+    },
+    {
+      "bytes": 2537098,
+      "file": "预览/直接渲染/大姐卧室_前视图（日景）.png"
+    },
+    {
+      "bytes": 2512197,
+      "file": "预览/直接渲染/大姐卧室_前视图（夜间）.png"
+    },
+    {
+      "bytes": 2212928,
+      "file": "预览/直接渲染/二姐卧室_侧视图（日景）.png"
+    },
+    {
+      "bytes": 2198798,
+      "file": "预览/直接渲染/二姐卧室_侧视图（夜间）.png"
+    },
+    {
+      "bytes": 2449351,
+      "file": "预览/直接渲染/二姐卧室_俯拍图（日景）.png"
+    },
+    {
+      "bytes": 2407956,
+      "file": "预览/直接渲染/二姐卧室_俯拍图（夜间）.png"
+    },
+    {
+      "bytes": 2239766,
+      "file": "预览/直接渲染/二姐卧室_后视图（日景）.png"
+    },
+    {
+      "bytes": 2155060,
+      "file": "预览/直接渲染/二姐卧室_后视图（夜间）.png"
+    },
+    {
+      "bytes": 2192317,
+      "file": "预览/直接渲染/二姐卧室_前视图（日景）.png"
+    },
+    {
+      "bytes": 2180394,
+      "file": "预览/直接渲染/二姐卧室_前视图（夜间）.png"
+    },
+    {
+      "bytes": 2207387,
+      "file": "预览/直接渲染/二楼走廊_三门同框平视全景（日景）.png"
+    },
+    {
+      "bytes": 2218131,
+      "file": "预览/直接渲染/二楼走廊_三门同框平视全景（夜间）.png"
+    },
+    {
+      "bytes": 2951755,
+      "file": "预览/直接渲染/二楼走廊_三门正面关系图（日景）.png"
+    },
+    {
+      "bytes": 2718458,
+      "file": "预览/直接渲染/二楼走廊_三门正面关系图（夜间）.png"
+    },
+    {
+      "bytes": 2262116,
+      "file": "预览/直接渲染/客厅_侧视图（日景）.png"
+    },
+    {
+      "bytes": 2211048,
+      "file": "预览/直接渲染/客厅_侧视图（夜间）.png"
+    },
+    {
+      "bytes": 2491719,
+      "file": "预览/直接渲染/客厅_俯拍图（日景）.png"
+    },
+    {
+      "bytes": 2475481,
+      "file": "预览/直接渲染/客厅_俯拍图（夜间）.png"
+    },
+    {
+      "bytes": 2254837,
+      "file": "预览/直接渲染/客厅_后视图（日景）.png"
+    },
+    {
+      "bytes": 2119617,
+      "file": "预览/直接渲染/客厅_后视图（夜间）.png"
+    },
+    {
+      "bytes": 2266845,
+      "file": "预览/直接渲染/客厅_前视图（日景）.png"
+    },
+    {
+      "bytes": 2240871,
+      "file": "预览/直接渲染/客厅_前视图（夜间）.png"
+    },
+    {
+      "bytes": 2459960,
+      "file": "预览/直接渲染/男主卧室_前视图（日景）.png"
+    },
+    {
+      "bytes": 2396334,
+      "file": "预览/直接渲染/男主卧室_前视图（夜间）.png"
+    },
+    {
+      "bytes": 2272288,
+      "file": "预览/直接渲染/主卧卧室_侧视图（日景）.png"
+    },
+    {
+      "bytes": 2207350,
+      "file": "预览/直接渲染/主卧卧室_侧视图（夜间）.png"
+    },
+    {
+      "bytes": 2204154,
+      "file": "预览/直接渲染/主卧卧室_床尾看床头（日景）.png"
+    },
+    {
+      "bytes": 2198150,
+      "file": "预览/直接渲染/主卧卧室_床尾看床头（夜间）.png"
+    }
+  ],
+  "asset_removed_count": 299,
+  "external_duplicate_directories": [
+    "local-assets\\《秘密教学》全屋空间模型_v4",
+    "local-assets\\校验恢复\\secret-home-v5-20261015"
+  ],
+  "asset_removed_bytes": 793075429.0,
+  "git_history_rewritten": false
+}
