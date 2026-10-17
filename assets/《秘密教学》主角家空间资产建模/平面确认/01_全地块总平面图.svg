@@ -3,8 +3,8 @@
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
 <rect width="1800" height="1280" fill="#faf9f5"/>
 <text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜横向地块总平面</text>
-<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">P2 待确认 · 宽展开主体 + 临街单车库 + 独立人行门 · 非实测地块</text>
-<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">P2.1 待确认 · 宽展开主体 + 临街单车库 + 独立人行门 · 非实测地块</text>
+<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1208H1735" stroke="#bec9c5"/>
 <rect x="94.00" y="190.00" width="1020.00" height="850.00" fill="#e5eddf" stroke="#425861" stroke-width="4" rx="0"/>
 <rect x="94.00" y="1040.00" width="1020.00" height="102.00" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>

@@ -2,9 +2,9 @@
 <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
 <rect width="1800" height="1200" fill="#faf9f5"/>
-<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜P2 修改与逻辑复核</text>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜P2.1 修改与逻辑复核</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">参考可确定相对关系；尺寸和未显示的接法仍需确认。</text>
-<text x="65.00" y="1156.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1156.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1128H1735" stroke="#bec9c5"/>
 <rect x="70" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="84.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">已修正的关系</text>
@@ -17,20 +17,20 @@
 <text x="84.00" y="375.00" font-size="20" text-anchor="start" font-weight="700">卧室从原图恢复的内容</text>
 <text x="84.00" y="410.00" font-size="16" text-anchor="start" font-weight="400">薇亚：床头西、双窗北、梳妆/镜/阳台东，衣柜南。</text>
 <text x="84.00" y="439.00" font-size="16" text-anchor="start" font-weight="400">子豪：床和电视对置、桌接电视、望远镜面窗。</text>
-<text x="84.00" y="468.00" font-size="16" text-anchor="start" font-weight="400">舒亚：床桌同墙、对面窗下收藏、另一墙衣物架。</text>
+<text x="84.00" y="468.00" font-size="16" text-anchor="start" font-weight="400">舒亚：南墙左床中桌右门（北向南看），西墙衣物架。</text>
 <text x="84.00" y="497.00" font-size="16" text-anchor="start" font-weight="400">主卧：整间关系统一转90°，头侧入口、尾侧主卫。</text>
 <text x="84.00" y="526.00" font-size="16" text-anchor="start" font-weight="400">网页附四房原图与平面并排，避免只靠文字声称一致。</text>
 <rect x="70" y="556" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="84.00" y="580.00" font-size="20" text-anchor="start" font-weight="700">相对关系与绝对尺度分开</text>
-<text x="84.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">舒亚35.96㎡；子豪35.44㎡；薇亚38.28㎡。</text>
+<text x="84.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">舒亚35.96㎡；子豪恢复37.12㎡；薇亚38.28㎡。</text>
 <text x="84.00" y="644.00" font-size="16" text-anchor="start" font-weight="400">主卧27.84㎡＋主卫8.64㎡，床尾3.40m、侧向1.50m。</text>
 <text x="84.00" y="673.00" font-size="16" text-anchor="start" font-weight="400">原图没有实测尺寸，不能把图片像素比当成精确米数。</text>
 <text x="84.00" y="702.00" font-size="16" text-anchor="start" font-weight="400">采用标准尺寸家具起拟，并检查门扇和活动范围。</text>
 <rect x="940" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
-<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">还不能声称已解决的地方</text>
-<text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">舒亚原图两扇门：入口保留东南，西北门拟接后露台。</text>
-<text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">第二门的用途是补充设计，原图不足以证明。</text>
-<text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">为保留东南门，子豪西南角退让1.68㎡形成小凹位。</text>
+<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">本次纠错及尚待复核</text>
+<text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">P2把房内参考方向误当绝对朝向，导致入口接错。</text>
+<text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">P2.1按用户标注顺时针转关系，入口直接接南侧直廊。</text>
+<text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">撤销凹位与未证实第二门；后露台走公共侧通道。</text>
 <text x="954.00" y="292.00" font-size="16" text-anchor="start" font-weight="400">公用浴室位于楼下公共区上方，后续需校核管线和隔声。</text>
 <text x="954.00" y="321.00" font-size="16" text-anchor="start" font-weight="400">大姐双窗＋侧阳台可成立，但新窗位与旧外景并非完全一致。</text>
 <rect x="940" y="351" width="790" height="34" fill="#e3ebe6" rx="4"/>
@@ -42,7 +42,7 @@
 <text x="954.00" y="526.00" font-size="16" text-anchor="start" font-weight="400">本图不是施工图，也不能据此宣布建筑结构已验收。</text>
 <rect x="940" y="556" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="954.00" y="580.00" font-size="20" text-anchor="start" font-weight="700">当前文件与下一步</text>
-<text x="954.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">本页替换P1平面；原始参考和V4模型保留。</text>
+<text x="954.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">本页替换P2错误门位；原始参考和V4模型保留。</text>
 <text x="954.00" y="644.00" font-size="16" text-anchor="start" font-weight="400">不修改三维模型，不生成正式场景图。</text>
 <text x="954.00" y="673.00" font-size="16" text-anchor="start" font-weight="400">先确认本图中的房间接法与原图家具关系。</text>
 <text x="954.00" y="702.00" font-size="16" text-anchor="start" font-weight="400">通过后才把同一组坐标写入唯一模型。</text>

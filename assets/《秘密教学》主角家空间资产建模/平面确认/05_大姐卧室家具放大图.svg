@@ -4,7 +4,7 @@
 <rect width="1800" height="1150" fill="#faf9f5"/>
 <text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜薇亚 / 大姐 · 原图关系复核</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">床头、外窗、工作区、门位为固定锚点；右侧逐项说明。</text>
-<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1078H1735" stroke="#bec9c5"/>
 <rect x="110.00" y="291.00" width="693.00" height="609.00" fill="#f2e2e5" stroke="none" stroke-width="1" rx="0"/>
 <defs><clipPath id="clip"><rect x="89.0" y="270.0000000000002" width="735.0000000000002" height="650.9999999999999"/></clipPath></defs><g clip-path="url(#clip)">
@@ -39,29 +39,11 @@
 <text x="293.75" y="585.53" font-size="14" text-anchor="middle" font-weight="700">A12</text>
 <circle cx="230.75" cy="695.25" r="57.75" fill="#d9c8b1" stroke="#263c45"/>
 <text x="230.75" y="701.02" font-size="14" text-anchor="middle" font-weight="700">A13</text>
-<path d="M-1265.50 280.50L-1213.00 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
-<path d="M-1213.00 280.50L-1213.00 375.00" fill="none" stroke="#8e7859" stroke-width="1.8"/>
-<path d="M-1118.50 280.50L-1118.79 287.91" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1118.79 287.91L-1119.66 295.28" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1119.66 295.28L-1121.11 302.56" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1121.11 302.56L-1123.13 309.70" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1123.13 309.70L-1125.69 316.66" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1125.69 316.66L-1128.80 323.40" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1128.80 323.40L-1132.43 329.88" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1132.43 329.88L-1136.55 336.05" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1136.55 336.05L-1141.14 341.87" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1141.14 341.87L-1146.18 347.32" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1146.18 347.32L-1151.63 352.36" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1151.63 352.36L-1157.45 356.95" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1157.45 356.95L-1163.62 361.07" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1163.62 361.07L-1170.10 364.70" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1170.10 364.70L-1176.84 367.81" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1176.84 367.81L-1183.80 370.37" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1183.80 370.37L-1190.94 372.39" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1190.94 372.39L-1198.22 373.84" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1198.22 373.84L-1205.59 374.71" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1205.59 374.71L-1213.00 375.00" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
-<path d="M-1118.50 280.50L-415.00 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
+<path d="M-1265.50 280.50L-1097.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
+<path d="M-1097.50 284.17L-740.50 284.17" fill="none" stroke="#4188a0" stroke-width="1.8"/>
+<path d="M-1097.50 276.82L-740.50 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
+<path d="M-920.58 280.50L-917.42 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
+<path d="M-740.50 280.50L-415.00 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M-415.00 284.17L-26.50 284.17" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M-415.00 276.82L-26.50 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M-222.33 280.50L-219.17 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
@@ -74,7 +56,7 @@
 <path d="M456.50 276.82L719.00 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M586.17 280.50L589.33 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
 <path d="M719.00 280.50L813.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
-<path d="M-467.50 910.50L-436.00 910.50" fill="none" stroke="#425861" stroke-width="21.0"/>
+<path d="M-593.50 910.50L-436.00 910.50" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M-436.00 910.50L-436.00 805.50" fill="none" stroke="#8e7859" stroke-width="1.8"/>
 <path d="M-331.00 910.50L-331.32 902.26" fill="none" stroke="#b0a28e" stroke-width="0.8"/>
 <path d="M-331.32 902.26L-332.29 894.07" fill="none" stroke="#b0a28e" stroke-width="0.8"/>

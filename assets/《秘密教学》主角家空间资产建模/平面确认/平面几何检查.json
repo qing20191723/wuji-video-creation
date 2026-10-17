@@ -29,10 +29,6 @@
         "hits": []
       },
       {
-        "door": "D209",
-        "hits": []
-      },
-      {
         "door": "D205",
         "hits": []
       },
@@ -112,10 +108,6 @@
       },
       {
         "room": "H2",
-        "reachable": true
-      },
-      {
-        "room": "N2",
         "reachable": true
       },
       {
@@ -233,7 +225,7 @@
       },
       {
         "name": "舒亚入口",
-        "samples": 89,
+        "samples": 108,
         "hits": []
       }
     ],
@@ -244,10 +236,18 @@
     "stair_top_landing_depth_m": 1.6,
     "stair_rise_total_m": 3.3000000000000003,
     "stair_run_total_m": 5.32,
+    "shuya_reference_orientation": {
+      "bed_head_south": true,
+      "entry_on_south_corridor_wall": true,
+      "north_view_left_bed_middle_desk_right_door": true,
+      "bed_desk_same_south_wall": true,
+      "no_invented_notch": true,
+      "no_unverified_second_door": true
+    },
     "net_bedroom_areas": {
       "MB": 27.84,
       "B3": 35.96,
-      "B2": 35.44,
+      "B2": 37.12,
       "B1": 38.28
     },
     "model_unchanged": [

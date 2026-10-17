@@ -58,7 +58,7 @@ for o in p.OPEN:
     if hits:issues.append('Door sweep '+o['id']+': '+','.join(hits))
 checks['door_sweeps']=sweeps
 # Actual walkable footprints; stair well and closed roofs are excluded below.
-regions={1:[[0,0,22,10.4]],2:[[0,2.5,20,10.4],[6.4,4.2,7.8,5.8],[0,0,5,2.6],[5,-1.5,9.8,2.6],[16.72,1,18.42,2.6],[20,4.3,22,10.4],[-1.4,2.6,.2,12],[.0,10.2,6.4,12]]}
+regions={1:[[0,0,22,10.4]],2:[[0,2.5,20,10.4],[0,0,5,2.6],[5,-1.5,9.8,2.6],[16.72,1,18.42,2.6],[20,4.3,22,10.4],[-1.4,2.6,.2,12],[.0,10.2,6.4,12]]}
 body=.25;step=.05;xx=np.arange(-1.6,22.3,step);yy=np.arange(-1.6,12.3,step);X,Y=np.meshgrid(xx,yy);nav={};reachable=[]
 for l in [1,2]:
     m=np.ones(X.shape,bool)
@@ -82,7 +82,7 @@ for l in [1,2]:
     nav[l]=(m,seen)
 checks['reachable_regions']=reachable
 # Reach actual use positions, not merely one free cell at each entrance.
-targets={1:[('master bed foot',17.3,8.6),('master bath',20.9,8.7),('laundry work',12,8.3),('guest WC',20,1),('storage',19.2,3.8),('B lower landing',10.5,1.8),('kitchen work',2.5,8.7)],2:[('big sister activity',17,7),('big sister balcony',20.9,6.5),('little sister bedside',3,8.5),('boy bedside',10,8.5),('public bath',2.7,1.2),('linen',4.3,1.3),('A upper landing',17.5,1.8)]}
+targets={1:[('master bed foot',17.3,8.6),('master bath',20.9,8.7),('laundry work',12,8.3),('guest WC',20,1),('storage',19.2,3.8),('B lower landing',10.5,1.8),('kitchen work',2.5,8.7)],2:[('big sister activity',17,7),('big sister balcony',20.9,6.5),('little sister bedside',4.9,7.7),('boy bedside',10,8.5),('public bath',2.7,1.2),('linen',4.3,1.3),('A upper landing',17.5,1.8)]}
 positions=[]
 for l,ts in targets.items():
     m,seen=nav[l]
@@ -112,6 +112,18 @@ checks['stair_lower_landing_depth_m']=1.6
 checks['stair_top_landing_depth_m']=1.6
 checks['stair_rise_total_m']=20*.165
 checks['stair_run_total_m']=19*.28
+byid={f['id']:f for f in p.F}
+entry=next(o for o in p.OPEN if o['id']=='D205')
+checks['shuya_reference_orientation']={
+    'bed_head_south':byid['C01']['head']=='S',
+    'entry_on_south_corridor_wall':entry['wall']=='2-B3S',
+    'north_view_left_bed_middle_desk_right_door':byid['C01']['box'][0]>=byid['C03']['box'][2] and byid['C03']['box'][0]>entry['end'],
+    'bed_desk_same_south_wall':abs(byid['C01']['box'][1]-byid['C03']['box'][1])<1e-8,
+    'no_invented_notch':not any(w['id'].startswith('2-NICHE') for w in p.WALLS) and next(r for r in p.ROOMS if r['id']=='B2')['polygon'] is None,
+    'no_unverified_second_door':not any(o['id']=='D209' for o in p.OPEN)
+}
+for name,ok in checks['shuya_reference_orientation'].items():
+    if not ok:issues.append('Shuya reference relationship: '+name)
 checks['net_bedroom_areas']={r['id']:r['net_area'] for r in p.ROOMS if r['id'] in ['B1','B2','B3','MB']}
 old=json.loads((R/'制作记录/当前保留文件校验.json').read_text(encoding='utf8'));unchanged=[]
 for r in old['files']:

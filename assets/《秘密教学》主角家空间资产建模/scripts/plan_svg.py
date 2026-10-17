@@ -9,7 +9,7 @@ class Sheet:
         self.title=title;self.bounds=bounds;self.scale=scale;self.ox,self.oy=offset;self.w,self.h=size
         self.p=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.w}" height="{self.h}" viewBox="0 0 {self.w} {self.h}">', '<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>', '<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>',f'<rect width="{self.w}" height="{self.h}" fill="#faf9f5"/>']
         self.txt(65,65,title,32,weight=700);self.txt(65,102,sub,17)
-        self.txt(65,self.h-44,'待确认平面方案 P2 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型',16)
+        self.txt(65,self.h-44,'待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型',16)
         self.p.append(f'<path d="M65 {self.h-72}H{self.w-65}" stroke="#bec9c5"/>')
     def xy(self,x,y):return (self.ox+x*self.scale,self.oy-y*self.scale)
     def txt(self,x,y,t,size=16,anchor='start',weight=400,color=None):
@@ -47,7 +47,7 @@ def furniture(s,f,detail=False):
     elif k in ['circle','roundrug','trampoline']:s.circ(cx,cy,min(xx-x,yy-y)/2,c)
     else:s.rect(b,c,'#7b8987',1,rx=3)
     if k=='bed':
-        # Master headboard south, all upstairs beds headboard north.
+        # Explicit orientation from the current room's reference arrangement.
         hd=f.get('head','N')
         if hd in ['N','S']:
             hy=yy-.45 if hd=='N' else y+.05
@@ -56,7 +56,9 @@ def furniture(s,f,detail=False):
             hx=xx-.45 if hd=='E' else x+.05
             s.rect([hx,y+.08,hx+.35,yy-.08],'#f4f0e7','#82908d',.7,rx=4)
     elif k=='desk':
-        if xx-x>yy-y:s.rect([cx-.26,yy-.18,cx+.26,yy-.07],'#597078',INK,.5)
+        if xx-x>yy-y:
+            sy=y+.07 if f.get('head')=='S' else yy-.18
+            s.rect([cx-.26,sy,cx+.26,sy+.11],'#597078',INK,.5)
         else:s.rect([x+.08,cy-.26,x+.19,cy+.26],'#597078',INK,.5)
     elif k=='hob':
         for a in [x+.2,xx-.2]:

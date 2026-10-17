@@ -1,3 +1,3 @@
-"""Current 2D drafting entry point. P1 replaced by P2; model untouched."""
+"""Current 2D drafting entry point. Current P2.1 replaces the incorrect P2 entry orientation; model untouched."""
 from plan_p2 import *
 if __name__=="__main__": main()
