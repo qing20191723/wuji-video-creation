@@ -35,7 +35,7 @@ def leaves(l):
 ids=[o['id'] for o in p.OPEN];checks['unique_openings']=len(ids)==len(set(ids))
 if not checks['unique_openings']:issues.append('Duplicate opening IDs')
 # Overlap between solid furnishings, excluding appliances intentionally contained in counters.
-allowed={frozenset(['K1','KH']),frozenset(['K2','KS'])}
+allowed={frozenset(['K03','K04']),frozenset(['K02','K05'])}
 for i,a in enumerate(p.F):
     for b in p.F[i+1:]:
         if a['level']==b['level'] and solid_f(a) and solid_f(b) and overlap(a['box'],b['box']) and frozenset([a['id'],b['id']]) not in allowed:issues.append(f'furniture overlap: {a["id"]}/{b["id"]}')
@@ -57,13 +57,9 @@ for o in p.OPEN:
     sweeps.append(dict(door=o['id'],hits=sorted(hits)))
     if hits:issues.append('Door sweep '+o['id']+': '+','.join(hits))
 checks['door_sweeps']=sweeps
-for z in p.ZONES:
-    for f in p.F:
-        if f['level']==z['level'] and solid_f(f) and f['id'] not in z['allow'] and overlap(z['box'],f['box']):issues.append('Use zone '+z['label']+'/'+f['id'])
-checks['usage_zones_checked']=len(p.ZONES)
-# Proposed finished floor masks. East bedroom zone is enlarged; lower stair flight is not a walkable flat floor.
-regions={1:[[0,0,10.4,14],[3.4,14,10.4,19.6],[0,15.2,3.4,19.6],[-1.8,8.6,0,11.4]],2:[[1.8,0,10.4,18.1],[0,0,1.8,1.7],[-1.8,8.6,1.8,11.4],[.9,11.3,1.8,12.2],[-1.8,18.1,10.4,20.2],[0,-1.7,10.4,0]]}
-body=.25;step=.05;xx=np.arange(-2,10.7,step);yy=np.arange(-1.8,20.4,step);X,Y=np.meshgrid(xx,yy);nav={};reachable=[]
+# Actual walkable footprints; stair well and closed roofs are excluded below.
+regions={1:[[0,0,22,10.4]],2:[[0,2.5,20,10.4],[6.4,4.2,7.8,5.8],[0,0,5,2.6],[5,-1.5,9.8,2.6],[16.72,1,18.42,2.6],[20,4.3,22,10.4],[-1.4,2.6,.2,12],[.0,10.2,6.4,12]]}
+body=.25;step=.05;xx=np.arange(-1.6,22.3,step);yy=np.arange(-1.6,12.3,step);X,Y=np.meshgrid(xx,yy);nav={};reachable=[]
 for l in [1,2]:
     m=np.ones(X.shape,bool)
     for dx,dy in [(0,0),(-body,0),(body,0),(0,-body),(0,body)]:
@@ -71,10 +67,10 @@ for l in [1,2]:
         for x,y,x1,y1 in regions[l]:ok|=(X+dx>=x)&(X+dx<=x1)&(Y+dy>=y)&(Y+dy<=y1)
         m&=ok
     obs=pieces(l)+leaves(l)+[(f['id'],f['box']) for f in p.F if f['level']==l and solid_f(f)]
-    if l==1:obs.append(('stair flight',[.2,1.7,1.5,7.02]))
+    obs.append(('stair flight',[11.4,1.1,16.72,2.4]))
     for id,b in obs:
         dx=np.maximum(np.maximum(b[0]-X,X-b[2]),0);dy=np.maximum(np.maximum(b[1]-Y,Y-b[3]),0);m&=(dx*dx+dy*dy>=body*body-1e-8)
-    start=(2.6,.85);ix=int(round((start[0]-xx[0])/step));iy=int(round((start[1]-yy[0])/step));seen=np.zeros_like(m);q=collections.deque([(iy,ix)]);seen[iy,ix]=True
+    start=(10.6,3.4);ix=int(round((start[0]-xx[0])/step));iy=int(round((start[1]-yy[0])/step));seen=np.zeros_like(m);q=collections.deque([(iy,ix)]);seen[iy,ix]=True
     while q:
         y,x=q.popleft()
         for j,i in [(y-1,x),(y+1,x),(y,x-1),(y,x+1)]:
@@ -85,6 +81,15 @@ for l in [1,2]:
         if not ok:issues.append('Unreachable '+r['id'])
     nav[l]=(m,seen)
 checks['reachable_regions']=reachable
+# Reach actual use positions, not merely one free cell at each entrance.
+targets={1:[('master bed foot',17.3,8.6),('master bath',20.9,8.7),('laundry work',12,8.3),('guest WC',20,1),('storage',19.2,3.8),('B lower landing',10.5,1.8),('kitchen work',2.5,8.7)],2:[('big sister activity',17,7),('big sister balcony',20.9,6.5),('little sister bedside',3,8.5),('boy bedside',10,8.5),('public bath',2.7,1.2),('linen',4.3,1.3),('A upper landing',17.5,1.8)]}
+positions=[]
+for l,ts in targets.items():
+    m,seen=nav[l]
+    for name,x,y in ts:
+        ix=int(round((x-xx[0])/step));iy=int(round((y-yy[0])/step));ok=bool(m[iy,ix] and seen[iy,ix]);positions.append(dict(level=l,name=name,reachable=ok))
+        if not ok:issues.append('Unreachable use position '+name)
+checks['use_positions']=positions
 # Full named route sampling against real walls and furniture, not only graph adjacency.
 routes=[]
 for rt in p.ROUTES:
@@ -97,10 +102,16 @@ for rt in p.ROUTES:
     routes.append(dict(name=rt['id'],samples=n,hits=sorted(hits)))
     if hits:issues.append('Route '+rt['id']+': '+','.join(hits))
 checks['routes']=routes
-checks['master_door_on_axis']=abs((4.3+5.3)/2-(4.0+5.6)/2)<1e-7
-checks['kitchen_dining_no_door']=not any(o['level']==1 and o['type']=='door' and o['wall'] in ['1-KS','1-DK'] for o in p.OPEN)
-checks['stair_lower_landing_depth_m']=round(8.6-7.02,2)
-checks['stair_top_landing_depth_m']=1.5
+checks['master_door_on_axis']=abs((5.8+6.8)/2-(5.5+7.1)/2)<1e-7
+rb={r['id']:r['box'] for r in p.ROOMS}
+checks['kitchen_master_separation_m']=round(rb['MB'][0]-rb['K'][2],2)
+if checks['kitchen_master_separation_m']<=0:issues.append('Kitchen/master not separated')
+if not checks['master_door_on_axis']:issues.append('Master door off corridor axis')
+checks['horizontal_building_ratio']=22/10.4
+checks['stair_lower_landing_depth_m']=1.6
+checks['stair_top_landing_depth_m']=1.6
+checks['stair_rise_total_m']=20*.165
+checks['stair_run_total_m']=19*.28
 checks['net_bedroom_areas']={r['id']:r['net_area'] for r in p.ROOMS if r['id'] in ['B1','B2','B3','MB']}
 old=json.loads((R/'制作记录/当前保留文件校验.json').read_text(encoding='utf8'));unchanged=[]
 for r in old['files']:

@@ -19,7 +19,10 @@ const root=path.resolve(__dirname,'..','平面确认');
    galleryResults.push(await gallery.locator('#drawing').getAttribute('src'));
  }
  const broken=await gallery.evaluate(async()=>{const links=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));return links;});
- for(const link of broken)if(!fs.existsSync(path.join(root,decodeURI(link))))errors.push('Missing gallery link '+link);
+ for(const link of broken)if(!link.startsWith('#')&&!fs.existsSync(path.join(root,decodeURI(link))))errors.push('Missing gallery link '+link);
+ await gallery.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>null))));
+ const badImages=await gallery.evaluate(()=>[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.getAttribute('src')));
+ errors.push(...badImages.map(i=>'Missing reference image '+i));
  await browser.close();fs.writeFileSync(path.join(root,'图纸输出检查.json'),JSON.stringify({errors,results,galleryResults},null,2));console.log(JSON.stringify({errors,results,galleryResults},null,2));
  if(errors.length||results.some(r=>r.text_outside_canvas.length))process.exitCode=1;
 })().catch(e=>{console.error(e);process.exit(1)});

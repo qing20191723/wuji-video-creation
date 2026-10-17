@@ -9,23 +9,7 @@
         "hits": []
       },
       {
-        "door": "D104",
-        "hits": []
-      },
-      {
-        "door": "D207",
-        "hits": []
-      },
-      {
-        "door": "D203",
-        "hits": []
-      },
-      {
-        "door": "D204",
-        "hits": []
-      },
-      {
-        "door": "D205",
+        "door": "D106",
         "hits": []
       },
       {
@@ -33,26 +17,53 @@
         "hits": []
       },
       {
-        "door": "D106",
+        "door": "D104",
         "hits": []
       },
       {
         "door": "D105",
         "hits": []
+      },
+      {
+        "door": "D108",
+        "hits": []
+      },
+      {
+        "door": "D209",
+        "hits": []
+      },
+      {
+        "door": "D205",
+        "hits": []
+      },
+      {
+        "door": "D204",
+        "hits": []
+      },
+      {
+        "door": "D203",
+        "hits": []
+      },
+      {
+        "door": "D207",
+        "hits": []
+      },
+      {
+        "door": "D208",
+        "hits": []
       }
     ],
-    "usage_zones_checked": 12,
     "reachable_regions": [
       {
         "room": "L",
         "reachable": true
       },
       {
-        "room": "D",
+        "room": "K",
         "reachable": true
       },
       {
-        "room": "K",
+        "room": "D",
         "reachable": true
       },
       {
@@ -72,23 +83,19 @@
         "reachable": true
       },
       {
-        "room": "WC",
-        "reachable": true
-      },
-      {
-        "room": "H1",
-        "reachable": true
-      },
-      {
         "room": "E",
         "reachable": true
       },
       {
-        "room": "B1",
+        "room": "R",
         "reachable": true
       },
       {
-        "room": "B2",
+        "room": "WC",
+        "reachable": true
+      },
+      {
+        "room": "ST",
         "reachable": true
       },
       {
@@ -96,11 +103,19 @@
         "reachable": true
       },
       {
+        "room": "B2",
+        "reachable": true
+      },
+      {
+        "room": "B1",
+        "reachable": true
+      },
+      {
         "room": "H2",
         "reachable": true
       },
       {
-        "room": "A",
+        "room": "N2",
         "reachable": true
       },
       {
@@ -108,40 +123,132 @@
         "reachable": true
       },
       {
-        "room": "LT",
+        "room": "LC",
+        "reachable": true
+      },
+      {
+        "room": "A",
         "reachable": true
       },
       {
         "room": "FB",
+        "reachable": true
+      },
+      {
+        "room": "RT",
+        "reachable": true
+      },
+      {
+        "room": "AB",
+        "reachable": true
+      }
+    ],
+    "use_positions": [
+      {
+        "level": 1,
+        "name": "master bed foot",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "master bath",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "laundry work",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "guest WC",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "storage",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "B lower landing",
+        "reachable": true
+      },
+      {
+        "level": 1,
+        "name": "kitchen work",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "big sister activity",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "big sister balcony",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "little sister bedside",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "boy bedside",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "public bath",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "linen",
+        "reachable": true
+      },
+      {
+        "level": 2,
+        "name": "A upper landing",
         "reachable": true
       }
     ],
     "routes": [
       {
         "name": "主卧直达",
-        "samples": 168,
+        "samples": 208,
         "hits": []
       },
       {
-        "name": "楼梯至卧室",
-        "samples": 658,
+        "name": "开放客餐厨",
+        "samples": 314,
         "hits": []
       },
       {
-        "name": "一楼落地至餐厅",
-        "samples": 195,
+        "name": "二楼主通路",
+        "samples": 612,
+        "hits": []
+      },
+      {
+        "name": "舒亚入口",
+        "samples": 89,
         "hits": []
       }
     ],
     "master_door_on_axis": true,
-    "kitchen_dining_no_door": true,
-    "stair_lower_landing_depth_m": 1.58,
-    "stair_top_landing_depth_m": 1.5,
+    "kitchen_master_separation_m": 9.4,
+    "horizontal_building_ratio": 2.1153846153846154,
+    "stair_lower_landing_depth_m": 1.6,
+    "stair_top_landing_depth_m": 1.6,
+    "stair_rise_total_m": 3.3000000000000003,
+    "stair_run_total_m": 5.32,
     "net_bedroom_areas": {
-      "B1": 40.92,
-      "B2": 35.64,
-      "B3": 36.96,
-      "MB": 38.28
+      "MB": 27.84,
+      "B3": 35.96,
+      "B2": 35.44,
+      "B1": 38.28
     },
     "model_unchanged": [
       {
