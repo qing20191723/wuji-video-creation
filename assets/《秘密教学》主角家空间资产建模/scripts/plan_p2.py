@@ -64,7 +64,7 @@ f('B02','电视矮柜',2,[6.6,6.05,7.05,8],r='B2');f('B03','电脑桌',2,[6.6,8.
 f('B05','窗边衣柜',2,[12.35,8.9,13,10.2],r='B2');f('B06','穿衣镜',2,[12.85,8.3,13,8.85],'mirror',r='B2');f('B07','衣帽架',2,[12.4,7.9,13,8.3],'rack',r='B2')
 f('B08','吉他 / 床头侧',2,[11.85,7.85,12.25,8.3],r='B2');f('B09','望远镜',2,[10.3,9.05,11.15,9.95],'scope',r='B2')
 f('B10','灰地毯',2,[7.5,6.25,10.3,8.65],'rug','#ccc9c4','B2');f('B11','矮茶几',2,[8.15,7.1,9.35,7.8],'table',r='B2');f('B12','入口抽屉柜',2,[9.35,4.4,10.1,4.95],r='B2');f('B13','入口书架',2,[11.7,4.4,12.9,4.8],r='B2')
-# P2.2: rotate the reference-relative arrangement clockwise; preserve furniture sizes.
+# P2.3: rotate the reference-relative arrangement clockwise; preserve furniture sizes.
 # Outer room envelope remains 6.2 x 5.8m; unused edge margins are refitted, not scaled.
 f('C01','灰蓝格床（床头南）',2,[4.5,4.4,6,6.6],'bed','#99a2b8','B3','S');f('C02','床尾小书架',2,[5.05,6.75,5.75,7.35],r='B3')
 f('C03','电脑桌 / 与床头及入口同墙',2,[2,4.4,4,5.05],'desk',r='B3',head='S');f('C04','白色电脑椅',2,[2.65,5.45,3.25,6.05],'chair',r='B3');f('C05','窗下收藏矮柜',2,[1.7,9.75,4,10.2],r='B3')
@@ -142,7 +142,7 @@ def floor(s,l):
 
 def floors():
     for l,n in [(1,'02_一楼家具平面图'),(2,'03_二楼家具平面图')]:
-        s=g.Sheet('《秘密教学》｜'+('一楼：餐厨西侧，主卧东侧' if l==1 else '二楼：卧室比例与东侧露台修订'),'P2.2 待确认 · 项目北在上，临街南在下 · 四卧室放大图和原图对照见网页',[0,0,22,12],63,(160,940),(1800,1280))
+        s=g.Sheet('《秘密教学》｜'+('一楼：餐厨西侧，主卧东侧' if l==1 else '二楼：卧室比例与东侧露台修订'),'P2.3 待确认 · 项目北在上，临街南在下 · 四卧室放大图和原图对照见网页',[0,0,22,12],63,(160,940),(1800,1280))
         floor(s,l);s.dim((0,-2),(22,-2),'主体横向展开 22.00m');s.dim((23,0),(23,10.4),'主体进深 10.40m')
         s.txt(1590,250,'N ↑',22,weight=700);s.txt(1590,280,'项目北',14)
         if l==1:
@@ -183,20 +183,26 @@ def details():
         s.txt(110,1020,'尺寸为拟定值；原图用于确定相对关系，不能提供实测尺寸。详见网页“原图对照”。',16)
         s.finish(n)
 
-SITE=dict(bounds=[-1.8,-8,24.2,13.4],building=[0,0,22,10.4],garage_outer=[5,-8,17,-2.2],garage_net=[5.2,-7.8,16.8,-2.4],garage_gate=[6,14],pedestrian_gate=[20.5,22.1],road=[-1.8,-13.4,29.2,-8],east_lane=[24.2,-13.4,29.2,13.4],car_length=4.8,car_width=1.9,turn_radius=4.2)
+# Keep villa coordinates and the accepted street-side garage arrangement.
+# Extend the site southward instead of taking space from the rear or the rooms.
+FRONT_EXTENSION=2.3
+SITE=dict(bounds=[-1.8,-10.3,24.2,13.4],building=[0,0,22,10.4],garage_outer=[5,-10.3,17,-4.5],garage_net=[5.2,-10.1,16.8,-4.7],garage_gate=[6,14],pedestrian_gate=[20.5,22.1],road=[-1.8,-15.7,29.2,-10.3],east_lane=[24.2,-15.7,29.2,13.4],car_length=4.8,car_width=1.9,turn_radius=4.2,front_garden_depth=4.5,path_width=1.4)
+GARDEN_BEDS=[[.4,-1.25,9.5,-.25],[11.6,-1.25,19.6,-.25],[5.3,-4.25,16.7,-3.15],[17.5,-4.25,19.6,-3.15]]
+GARDEN_PATHS=[[4.8,-2.9,22.1,-1.5],[9.85,-2.9,11.25,.2],[20.5,-10.1,22.1,-1.5],[17,-6.5,22.1,-5.1]]
+GARDEN_ROUTES=[[(21.3,-10.2),(21.3,-2.2),(10.55,-2.2),(10.55,0)],[(16.65,-5.8),(21.3,-5.8),(21.3,-2.2)],[(5.5,-2.2),(10.55,-2.2)]]
 def vehicle_trace():
     # Slow reverse quarter-circle from transverse parked pose; reverse for entry.
     poses=[]
     for i in range(91):
         t=math.pi/2*i/90;poses.append((12.8-4.2*math.sin(t),-4.9-4.2*(1-math.cos(t)),t))
     poses += [(8.6,-9.1-d,math.pi/2) for d in [.2,.4,.6,.8,1,1.2,1.4]]
-    return poses
+    return [(x,y-FRONT_EXTENSION,t) for x,y,t in poses]
 VEHICLE_POSES=vehicle_trace()
 def car_corners(x,y,t):
     return [(x+a*math.cos(t)-b*math.sin(t),y+a*math.sin(t)+b*math.cos(t)) for a,b in [(-2.4,-.95),(2.4,-.95),(2.4,.95),(-2.4,.95)]]
 
 def site():
-    s=g.Sheet('《秘密教学》｜V3外景校准总平面','P2.2 待确认 · 正面及俯拍为主；北↑ / 临街南↓；侧巷在东 · 比例草案，具体尺寸待用户校准',[-1.8,-8,24.2,13.4],37,(180,700),(1800,1280))
+    s=g.Sheet('《秘密教学》｜前庭花园修订总平面','P2.3 · 保留已确认布局；拉开车库与别墅间距，花草＋步道为主 · 尺寸待用户校准',SITE['bounds'],32,(175,650),(1800,1280))
     s.rect(SITE['road'],'#d5dcd9','none');s.rect(SITE['east_lane'],'#d5dcd9','none')
     s.rect(SITE['bounds'],'#e5eddf',g.WALL,4)
     s.rect(SITE['building'],'#efe6dc',g.WALL,2)
@@ -205,45 +211,55 @@ def site():
     s.wt(11,4,'主体 22.00 × 10.40m',21,anchor='middle',weight=700)
     for rid in ['FB','AB']:
         r=next(r for r in ROOMS if r['id']==rid);s.poly(r['polygon'],'none',g.BLUE,1.5)
-    s.wt(8,-.8,'上层连续阳台投影',12,anchor='middle',color=g.BLUE)
+    for box in GARDEN_PATHS:s.rect(box,'#efe4cf','none')
+    for box in GARDEN_BEDS:
+        s.rect(box,'#a7c093','#7b9974',1)
+        for i in range(int((box[2]-box[0])/.6)):
+            x=box[0]+.3+.6*i;y=(box[1]+box[3])/2
+            s.circ(x,y,.11,['#dca3b3','#e5c66b','#afa0cb'][i%3],'none')
+    s.wt(5,-.95,'窗前低矮花草',11,anchor='middle')
+    s.wt(15.6,-.95,'低矮种植带',11,anchor='middle')
+    s.wt(11,-3.9,'车库后花境',11,anchor='middle')
+    s.wt(5.5,-1.9,'花园步道 1.40m',12,anchor='middle')
+    s.wt(3,-3.9,'前庭花园',16,anchor='middle')
+    s.dim((18.8,-4.5),(18.8,0),'花园净深4.50m')
     s.rect(SITE['garage_outer'],'#d9e1de',g.WALL,3)
-    s.wt(11,-3,'沿街车库 / 净11.60×5.40m',15,anchor='middle')
-    s.line((6,-8),(14,-8),'#faf9f5',8);s.line((6,-8),(14,-8),g.BLUE,2)
-    s.wt(10,-8.65,'车库卷闸 8.00m',13,anchor='middle')
-    # Side exit from garage and independent pedestrian gate.
-    s.line((17,-4),(17,-3),'#faf9f5',6);s.line((17,-4),(16,-4),'#8e7859',1.5)
-    s.wt(18.1,-3.5,'车库侧门',11,anchor='middle')
-    s.line((20.5,-8),(22.1,-8),'#faf9f5',8);s.line((20.5,-8),(20.5,-6.4),'#8e7859',1.5)
-    s.wt(21.3,-8.65,'独立人行门1.60m',12,anchor='middle')
-    s.rect([20.5,-7.8,22.1,-.2],'#f0eade','none');s.rect([9.8,-2,22.1,-.2],'#f0eade','none')
-    for a,b in [((21.3,-7.7),(21.3,-1.1)),((21.3,-1.1),(10.55,-1.1)),((10.55,-1.1),(10.55,.6))]:s.line(a,b,g.TEAL,2,arrow=True)
+    s.wt(11,-5.3,'沿街车库 / 净11.60×5.40m',15,anchor='middle')
+    s.line((6,-10.3),(14,-10.3),'#faf9f5',8);s.line((6,-10.3),(14,-10.3),g.BLUE,2)
+    s.wt(10,-10.95,'车库卷闸 8.00m',13,anchor='middle')
+    s.line((17,-6.3),(17,-5.3),'#faf9f5',6);s.line((17,-6.3),(16,-6.3),'#8e7859',1.5)
+    s.wt(18.4,-6.9,'车库侧门接步道',11,anchor='middle')
+    s.line((20.5,-10.3),(22.1,-10.3),'#faf9f5',8);s.line((20.5,-10.3),(20.5,-8.7),'#8e7859',1.5)
+    s.wt(21.3,-10.95,'独立人行门1.60m',12,anchor='middle')
+    for route in GARDEN_ROUTES:
+        for a,b in zip(route,route[1:]):s.line(a,b,g.TEAL,2,arrow=True)
     for pose in VEHICLE_POSES[::15]:s.poly(car_corners(*pose),'none','#a7b7be',.8)
     for a,b in zip(VEHICLE_POSES,VEHICLE_POSES[1:]):s.line(a[:2],b[:2],g.ORANGE,1.5)
     s.poly(car_corners(*VEHICLE_POSES[0]),'#a9bec7',g.INK,1.5)
-    s.wt(12.8,-4.9,'4.8×1.9m 横停',12,anchor='middle')
-    s.rect([10.4,-6.65,15.2,-3.15],'none',g.ORANGE,.8,'5 4')
-    s.wt(7.7,-4.2,'倒车转向区',12,anchor='middle');s.wt(10,-1.7,'前庭净深2.20m',12,anchor='middle')
-    s.wt(3,-4,'前院种植',16,anchor='middle');s.wt(11,11.9,'后院净深3.00m',16,anchor='middle')
-    s.wt(26.6,6,'东侧巷道',16,anchor='middle');s.wt(17,-11.9,'临街道路（5.40m为本次转弯校准假设）',13,anchor='middle')
-    for x,y in [(-.9,2),(-.9,6),(-.9,11.5),(23.2,6),(23.2,10.8),(4,12),(18,12),(1,-4),(2.8,-6)]:s.circ(x,y,.45,'#9db88f','#7b9974')
-    s.dim((-1.8,14.1),(24.2,14.1),'地块横向26.00m');s.dim((-2.6,-8),(-2.6,13.4),'地块进深21.40m')
-    s.dim((0,-9.5),(22,-9.5),'临街建筑面宽22.00m');s.dim((22,4.4),(24.2,4.4),'东侧2.20m')
-    s.notes(1320,190,[('按外景恢复',['前部宽车库＋右侧独立人行门。','车库后是浅前庭，不是大空场。','二层临街窄阳台向右侧露台延续。','正面右侧巷道；背面看时在左。']),('尺寸如何确定',['主体22×10.4m暂保留室内所需。','地块由30×25收至26×21.4m。','围墙至主体8m，车库后净2.2m。','侧院1.8/2.2m，后院3.0m。']),('尚未证明的部分',['车辆4.8×1.9m；转弯半径拟4.2m。','轨迹仅低速车身包络，不是车型认证。','上层南侧是公共区，窗位与原图有差异。','右侧木饰面小体量用途待定，未补造房间。'])],410)
-    s.txt(70,1160,'蓝线＝上层阳台露台投影；橙线＝倒车示意。围墙、车库、人行门与建筑使用同一坐标。',17)
+    s.wt(12.8,-7.2,'4.8×1.9m 横停',12,anchor='middle')
+    s.rect([10.4,-8.95,15.2,-5.45],'none',g.ORANGE,.8,'5 4')
+    s.wt(7.7,-6.5,'倒车转向区',12,anchor='middle')
+    s.wt(3,-7,'前院种植',16,anchor='middle');s.wt(11,11.9,'后院净深3.00m',16,anchor='middle')
+    s.wt(26.6,6,'东侧巷道',16,anchor='middle');s.wt(17,-14.2,'临街道路（宽5.40m为转弯校准假设）',13,anchor='middle')
+    for x,y in [(-.9,2),(-.9,6),(-.9,11.5),(23.2,6),(23.2,10.8),(4,12),(18,12),(1,-7),(2.8,-8.3)]:s.circ(x,y,.45,'#9db88f','#7b9974')
+    s.dim((-1.8,14.1),(24.2,14.1),'地块横向26.00m');s.dim((-2.6,-10.3),(-2.6,13.4),'地块进深23.70m')
+    s.dim((0,-11.8),(22,-11.8),'临街建筑面宽22.00m');s.dim((22,4.4),(24.2,4.4),'东侧2.20m')
+    s.notes(1260,190,[('本轮只调整前庭',['车库沿街横向位置与右侧人行门保留。','车库—别墅间距由2.20m增至4.50m。','花草种植＋步道，不安排座椅。','室内、阳台露台及后院不移动。']),('花园与入户关系',['主步道净宽拟1.40m，右侧通路1.60m。','独立人行门与车库侧门汇入步道。','入户门前保留通道，不以花坛堵门。','窗前用低矮植物，花境不占行走范围。']),('用地与尺寸待校准',['前界、车库及街道整体向南平移2.30m。','地块26×21.4m改为26×23.7m。','增加59.8㎡设计用地，不挤占房间。','原照片不能证明地界，待你校准。']),('保留的复核事项',['车身轨迹随车库平移，出入关系不变。','南侧窗位及右侧木体量仍需立面核对。','具体植物、铺装与排水留待后续细化。'])],475)
+    s.txt(70,1190,'蓝线＝阳台投影；橙线＝倒车轨迹；绿色箭头＝步行动线。仅二维修订，未修改三维模型。',16)
     s.finish('01_全地块总平面图')
 
 def notes():
-    s=g.Sheet('《秘密教学》｜P2.2 修改与逻辑复核','参考可确定相对关系；尺寸和未显示的接法仍需确认。',[0,0,1,1],1,(0,0),(1800,1200))
+    s=g.Sheet('《秘密教学》｜P2.3 修改与逻辑复核','参考可确定相对关系；尺寸和未显示的接法仍需确认。',[0,0,1,1],1,(0,0),(1800,1200))
     s.notes(70,170,[('已修正的关系',['主体22.0×10.4m，街面为长边，不再纵向排成长条。','厨房西北、主卧东北，无共墙；横向边界间隔9.40m。','餐厨开放；主卧直通廊轴线与门中心同为Y=6.30m。','二楼相邻三房：舒亚—子豪—薇亚；主走廊保持笔直。','楼梯A上口在薇亚端，向西下降到B端一楼落地。']),('卧室从原图恢复的内容',['薇亚：床头西、双窗北、梳妆/镜/阳台东，衣柜南。','子豪：床和电视对置、桌接电视、望远镜面窗。','舒亚：南墙左床中桌右门（北向南看），西墙衣物架。','主卧：整间关系统一转90°，头侧入口、尾侧主卫。','网页附四房原图与平面并排，避免只靠文字声称一致。']),('相对关系与绝对尺度分开',['舒亚35.96㎡；子豪恢复37.12㎡；薇亚27.00㎡。','大姐床尾至镜前4.00→2.75m；主卧及其他卧室未缩小。','原图没有实测尺寸，不能把图片像素比当成精确米数。','尺寸仅供比例推敲，最终由用户校准。'])],790)
-    s.notes(940,170,[('本次纠错及尚待复核',['本次大姐房由38.28㎡收至27㎡，床架占比11.5%→17.5%。','床架微调为长2.25×宽2.10m，不靠造超大床填空地。','前庭收紧，横向车库移至前部；阳台延续至东侧露台。','公用浴室位于楼下公共区上方，后续需校核管线和隔声。','南侧公共区窗位与原图不完全相同；不把外景当实测立面。']),('检查的范围与局限',['二维检查墙体开口、家具占地、门扇及主要路径。','楼梯两层同坐标，20踢面×0.165m、19踏面×0.28m。','平台1.60×1.50m，梯宽1.30m，挑空边界不得通行。','承重、楼梯头部净高、露台支承仍需下一轮模型复核。','本图不是施工图，也不能据此宣布建筑结构已验收。']),('当前文件与下一步',['P2.2替换P2.1图纸；本次只修平面，模型仍为V4。','不修改三维模型，不生成正式场景图。','先确认本图中的房间接法与原图家具关系。','通过后才把同一组坐标写入唯一模型。'])],790)
+    s.notes(940,170,[('本次纠错及尚待复核',['沿用大姐房27㎡与床架占比17.5%，本轮未改室内。','车库保持沿街横向布局，与前界一同向南移2.30m。','前庭加深至4.50m，以花草和1.40m步道为主。','公用浴室位于楼下公共区上方，后续需校核管线和隔声。','南侧公共区窗位与原图不完全相同；不把外景当实测立面。']),('检查的范围与局限',['二维检查墙体开口、家具占地、门扇及主要路径。','楼梯两层同坐标，20踢面×0.165m、19踏面×0.28m。','平台1.60×1.50m，梯宽1.30m，挑空边界不得通行。','承重、楼梯头部净高、露台支承仍需下一轮模型复核。','本图不是施工图，也不能据此宣布建筑结构已验收。']),('当前文件与下一步',['P2.3替换P2.2图纸；本次只修平面，模型仍为V4。','不修改三维模型，不生成正式场景图。','房间关系保留，待确认前庭间距并校准尺寸。','通过后才把同一组坐标写入唯一模型。'])],790)
     s.finish('08_修改说明与确认要点')
 
 def save():
-    data=dict(revision='P2.2_20261020',status='比例修订待确认；具体尺寸由用户校准；未更新模型',units='m',rooms=ROOMS,furniture=F,walls=WALLS,openings=OPEN,clearances=CLEAR,routes=ROUTES,site=SITE,vehicle_trace=VEHICLE_POSES,stairs=dict(footprint=[11.4,1.1,16.72,2.4],A=[16.72,1.1,18.32,2.6],B=[9.8,1.1,11.4,2.4],rises=20,rise=.165,treads=19,tread=.28),reference_relationships=REFS)
+    data=dict(revision='P2.3_20261020',status='比例修订待确认；具体尺寸由用户校准；未更新模型',units='m',rooms=ROOMS,furniture=F,walls=WALLS,openings=OPEN,clearances=CLEAR,routes=ROUTES,site=SITE,garden=dict(beds=GARDEN_BEDS,paths=GARDEN_PATHS,routes=GARDEN_ROUTES),vehicle_trace=VEHICLE_POSES,stairs=dict(footprint=[11.4,1.1,16.72,2.4],A=[16.72,1.1,18.32,2.6],B=[9.8,1.1,11.4,2.4],rises=20,rise=.165,treads=19,tread=.28),reference_relationships=REFS)
     (OUT/'平面方案数据.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
-    table=['# P2.2 门窗表','','编号 | 层 | 类型 | 宽m | 窗台m | 顶高m','---|---|---|---:|---:|---:']+[f'{o["id"]} | {o["level"]} | {o["type"]} | {o["end"]-o["start"]:.2f} | {o.get("sill","—")} | {o.get("head","—")}' for o in OPEN]
+    table=['# P2.3 门窗表','','编号 | 层 | 类型 | 宽m | 窗台m | 顶高m','---|---|---|---:|---:|---:']+[f'{o["id"]} | {o["level"]} | {o["type"]} | {o["end"]-o["start"]:.2f} | {o.get("sill","—")} | {o.get("head","—")}' for o in OPEN]
     (OUT/'门窗表.md').write_text('\n'.join(table),encoding='utf8')
-    table=['# P2.2 家具与净尺寸','','## 房间（开放区域面积为功能分区面积）','','空间 | 净包络m | 净面积㎡','---|---:|---:']
+    table=['# P2.3 家具与净尺寸','','## 房间（开放区域面积为功能分区面积）','','空间 | 净包络m | 净面积㎡','---|---:|---:']
     for r in ROOMS:
         b=r['box'];table.append(f'{r["name"]} | {b[2]-b[0]:.2f} × {b[3]-b[1]:.2f} | {r["net_area"]:.2f}')
     table+=['','子豪房已撤销入口凹位，恢复完整矩形37.12㎡；所有数值为比例推敲暂定值，最终由用户校准。','','## 家具','','编号 | 空间 | 名称 | 占地m','---|---|---|---:']
@@ -267,16 +283,16 @@ def save():
             match=next(x for x in idx if x['relative_path']==name)
             cards.append(f'<figure><img src="../参照/V3/{match["id"]}.png"><figcaption>{name}</figcaption></figure>')
         refs.append(f'<article><h2>{group}</h2><div class="pair">'+''.join(cards)+'</div></article>')
-    doc='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>秘密教学 P2.2 横向平面确认</title><style>
+    doc='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>秘密教学 P2.3 横向平面确认</title><style>
 body{margin:0;font:16px "Microsoft YaHei",sans-serif;background:#edf0eb;color:#263c45}header{background:#263c45;color:white;padding:20px 28px}header p{font-size:14px}nav{display:flex;flex-wrap:wrap;gap:8px;padding:16px 24px}button,a{padding:9px 12px;background:#faf9f5;border:1px solid #b7c8bd;border-radius:5px;text-decoration:none;color:#263c45;cursor:pointer}button.active{background:#3b887a;color:white}#tools{padding:8px 24px 18px;display:flex;gap:10px}#canvas{overflow:auto;padding:0 24px 24px}#drawing{width:100%;display:block}#canvas.actual #drawing{width:1800px}article{padding:24px;background:white;margin:24px}article p{line-height:1.8}.pair{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:12px}.pair img{width:100%}h2{font-size:18px}footer{padding:24px}</style>
-<header><b>《秘密教学》｜P2.2 横向展开 · 待确认平面</b><p>厨房与主卧分处东西两端；大姐床房比例、临街车库及东侧露台已调整。下方附原图对照。三维模型未更新。</p></header><nav>BUTTONS</nav><div id="tools"><a id="png" download>高清PNG</a><a id="svg" download>可编辑SVG</a><button id="zoom">切换原尺寸</button><a href="#references">卧室与外景原图对照 ↓</a><a href="门窗表.md">门窗表</a><a href="说明.md">说明</a></div><div id="canvas"><img id="drawing" alt="P2.2平面"></div><section id="references">REFS</section><footer>仅保留当前待确认图纸；P2.1已被本轮图纸替换。比例修订稿，具体尺寸由用户校准；非实测或施工图。</footer>
+<header><b>《秘密教学》｜P2.3 横向展开 · 待确认平面</b><p>厨房与主卧分处东西两端；车库位置保留，前庭加深为花草步道小花园。下方附原图对照。三维模型未更新。</p></header><nav>BUTTONS</nav><div id="tools"><a id="png" download>高清PNG</a><a id="svg" download>可编辑SVG</a><button id="zoom">切换原尺寸</button><a href="#references">卧室与外景原图对照 ↓</a><a href="门窗表.md">门窗表</a><a href="说明.md">说明</a></div><div id="canvas"><img id="drawing" alt="P2.3平面"></div><section id="references">REFS</section><footer>仅保留当前待确认图纸；P2.2已被本轮图纸替换。比例修订稿，具体尺寸由用户校准；非实测或施工图。</footer>
 <script>const sheetVersions=SHEET_VERSIONS;function select(n){const v='?v='+sheetVersions[n];document.querySelector('#drawing').src=n+'.svg'+v;document.querySelector('#png').href=n+'.png'+v;document.querySelector('#svg').href=n+'.svg'+v;document.querySelectorAll('[data-sheet]').forEach(b=>b.classList.toggle('active',b.dataset.sheet===n));}document.querySelectorAll('[data-sheet]').forEach(b=>b.onclick=()=>select(b.dataset.sheet));document.querySelector('#zoom').onclick=()=>document.querySelector('#canvas').classList.toggle('actual');select('01_全地块总平面图');</script></html>'''.replace('BUTTONS',buttons).replace('REFS',''.join(refs)).replace('SHEET_VERSIONS',json.dumps(sheet_versions,ensure_ascii=False))
     doc=doc.replace('<a href="门窗表.md">门窗表</a>', '<a href="门窗表.md">门窗表</a><a href="家具与净尺寸表.md">家具尺寸</a><a href="逻辑复核.md">逻辑复核</a>')
     (OUT/'打开平面图.html').write_text(doc,encoding='utf8')
-    md=['# P2.2 横向展开平面（待确认）','','仅修订二维平面；模型未修改。本次P2.2校准外景与大姐床房比例，替换P2.1。具体尺寸由用户校准，本图数字不构成尺寸定稿。','',
-    '- 主体22.00×10.40m；厨房与主卧无共墙，横向边界间隔9.40m。','- 四卧室逐项按参考布局复核，主卧整套关系旋转90°。','- 二姐房内关系顺时针90°，床头、电脑桌与入口同在南墙；凹位与未证实第二门撤销，子豪恢复矩形。','- 大姐床架长2.25×宽2.10m；房间27㎡，床架占比17.5%，旧稿11.5%。','- 地块26×21.4m；临街横向车库净11.6×5.4m，右侧人行入口，车库后净前庭2.2m。','- 连续临街阳台通东侧木露台；旧西侧后露台取消，公共露台入口在走廊东端。','- 主体22×10.4m暂保留；南侧浴室、楼梯窗位和屋顶体量仍需立面复核，不宣称原图完全吻合。','', '## 图纸']+[f'- [{n} PNG]({n}.png) / [SVG]({n}.svg)' for n in pages]
+    md=['# P2.3 横向展开平面（待确认）','','仅修订二维平面；模型未修改。本次P2.3仅将前庭加深并加入花草步道，替换P2.2。具体尺寸由用户校准，本图数字不构成尺寸定稿。','',
+    '- 主体22.00×10.40m；厨房与主卧无共墙，横向边界间隔9.40m。','- 四卧室逐项按参考布局复核，主卧整套关系旋转90°。','- 二姐房内关系顺时针90°，床头、电脑桌与入口同在南墙；凹位与未证实第二门撤销，子豪恢复矩形。','- 大姐床架长2.25×宽2.10m；房间27㎡，床架占比17.5%，旧稿11.5%。','- 地块26×23.7m；车库净11.6×5.4m及右侧人行门保留，前庭由2.2m加深至4.5m，布置花草及1.4m步道；向南增地59.8㎡。','- 连续临街阳台通东侧木露台；旧西侧后露台取消，公共露台入口在走廊东端。','- 主体22×10.4m暂保留；南侧浴室、楼梯窗位和屋顶体量仍需立面复核，不宣称原图完全吻合。','', '## 图纸']+[f'- [{n} PNG]({n}.png) / [SVG]({n}.svg)' for n in pages]
     for rid,(p,items) in REFS.items():md+=['',f'## {rid}: {p}']+['- '+t for t in items]
     (OUT/'说明.md').write_text('\n'.join(md),encoding='utf8')
 def main():
-    OUT.mkdir(exist_ok=True);floors();details();site();notes();save();print('P2.2: eight sheets and source-comparison gallery generated. Models unchanged.')
+    OUT.mkdir(exist_ok=True);floors();details();site();notes();save();print('P2.3: eight sheets and source-comparison gallery generated. Models unchanged.')
 if __name__=='__main__':main()

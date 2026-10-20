@@ -270,7 +270,7 @@
       "scope": "低速平面车身包络；半径为拟定，未含后视镜/具体车型转向系统"
     },
     "exterior_site": {
-      "front_court_depth_m": 2.2,
+      "front_court_depth_m": 4.5,
       "east_side_clear_m": 2.2,
       "west_side_clear_m": 1.8,
       "rear_clear_m": 3,
@@ -279,7 +279,16 @@
         5.4
       ],
       "pedestrian_gate_m": 1.6,
-      "street_width_assumed_m": 5.4
+      "street_width_assumed_m": 5.4,
+      "site_depth_m": 23.7,
+      "added_site_area_m2": 59.8
+    },
+    "garden_walks": {
+      "body_diameter_m": 0.5,
+      "main_path_m": 1.4,
+      "routes": 3,
+      "hits": [],
+      "scope": "人行门/车库侧门至入户门外；未检查园艺、排水或无障碍标准"
     },
     "model_unchanged": [
       {

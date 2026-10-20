@@ -136,6 +136,7 @@ def polygon_overlap(poly,box):
             if max(u)<=min(v)+1e-8 or max(v)<=min(u)+1e-8:return False
     return True
 site_obstacles=[('garage west',[4.9,-8,5.1,-2.2]),('garage rear',[5,-2.3,17,-2.1]),('garage east south',[16.9,-8,17.1,-4]),('garage east north',[16.9,-3,17.1,-2.2]),('gate west pier',[5,-8.1,6,-7.9]),('gate east pier',[14,-8.1,17,-7.9]),('front west wall',[-1.8,-8.1,5,-7.9]),('front east wall',[17,-8.1,20.5,-7.9]),('building',[0,0,22,10.4])]
+site_obstacles=[(name,[b[0],b[1]-p.FRONT_EXTENSION,b[2],b[3]-p.FRONT_EXTENSION] if name!='building' else b) for name,b in site_obstacles]
 vehicle_hits=[]
 for i,pose in enumerate(p.VEHICLE_POSES):
     poly=p.car_corners(*pose)
@@ -144,7 +145,19 @@ for i,pose in enumerate(p.VEHICLE_POSES):
     if min(y for x,y in poly)<p.SITE['road'][1]:vehicle_hits.append((i,'road boundary'))
 checks['vehicle_swept_body']={'poses':len(p.VEHICLE_POSES),'car_m':[4.8,1.9],'centre_turn_radius_m':4.2,'hits':vehicle_hits,'scope':'低速平面车身包络；半径为拟定，未含后视镜/具体车型转向系统'}
 if vehicle_hits:issues.append('Vehicle swept body hits '+str(vehicle_hits[:5]))
-checks['exterior_site']={'front_court_depth_m':2.2,'east_side_clear_m':2.2,'west_side_clear_m':1.8,'rear_clear_m':3,'garage_net_m':[11.6,5.4],'pedestrian_gate_m':1.6,'street_width_assumed_m':5.4}
+checks['exterior_site']={'front_court_depth_m':p.SITE['front_garden_depth'],'east_side_clear_m':2.2,'west_side_clear_m':1.8,'rear_clear_m':3,'garage_net_m':[11.6,5.4],'pedestrian_gate_m':1.6,'street_width_assumed_m':5.4,'site_depth_m':23.7,'added_site_area_m2':59.8}
+garden_hits=[]
+for i,bed in enumerate(p.GARDEN_BEDS):
+    for j,path in enumerate(p.GARDEN_PATHS):
+        if overlap(bed,path):garden_hits.append(f'planting {i} / path {j}')
+for i,route in enumerate(p.GARDEN_ROUTES):
+    for a,b in zip(route,route[1:]):
+        for t in np.linspace(0,1,max(2,math.ceil(math.dist(a,b)/.03))):
+            x=a[0]+(b[0]-a[0])*t;y=a[1]+(b[1]-a[1])*t
+            for name,box in [z for z in site_obstacles if z[0]!='building']+[(f'planting {j}',bb) for j,bb in enumerate(p.GARDEN_BEDS)]:
+                if dist(x,y,box)<body-.001:garden_hits.append(f'route {i} / {name}')
+checks['garden_walks']={'body_diameter_m':2*body,'main_path_m':p.SITE['path_width'],'routes':len(p.GARDEN_ROUTES),'hits':sorted(set(garden_hits)),'scope':'人行门/车库侧门至入户门外；未检查园艺、排水或无障碍标准'}
+if garden_hits:issues.append('Garden route/planting conflicts '+str(sorted(set(garden_hits))))
 old=json.loads((R/'制作记录/当前保留文件校验.json').read_text(encoding='utf8'));unchanged=[]
 for r in old['files']:
     ok=hashlib.sha256((R/r['file']).read_bytes()).hexdigest()==r['sha256'];unchanged.append(dict(file=r['file'],unchanged=ok))

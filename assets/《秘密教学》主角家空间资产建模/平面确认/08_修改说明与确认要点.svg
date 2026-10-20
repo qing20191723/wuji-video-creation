@@ -2,9 +2,9 @@
 <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
 <rect width="1800" height="1200" fill="#faf9f5"/>
-<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜P2.2 修改与逻辑复核</text>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜P2.3 修改与逻辑复核</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">参考可确定相对关系；尺寸和未显示的接法仍需确认。</text>
-<text x="65.00" y="1156.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.2 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1156.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.3 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1128H1735" stroke="#bec9c5"/>
 <rect x="70" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="84.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">已修正的关系</text>
@@ -28,9 +28,9 @@
 <text x="84.00" y="702.00" font-size="16" text-anchor="start" font-weight="400">尺寸仅供比例推敲，最终由用户校准。</text>
 <rect x="940" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">本次纠错及尚待复核</text>
-<text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">本次大姐房由38.28㎡收至27㎡，床架占比11.5%→17.5%。</text>
-<text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">床架微调为长2.25×宽2.10m，不靠造超大床填空地。</text>
-<text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">前庭收紧，横向车库移至前部；阳台延续至东侧露台。</text>
+<text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">沿用大姐房27㎡与床架占比17.5%，本轮未改室内。</text>
+<text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">车库保持沿街横向布局，与前界一同向南移2.30m。</text>
+<text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">前庭加深至4.50m，以花草和1.40m步道为主。</text>
 <text x="954.00" y="292.00" font-size="16" text-anchor="start" font-weight="400">公用浴室位于楼下公共区上方，后续需校核管线和隔声。</text>
 <text x="954.00" y="321.00" font-size="16" text-anchor="start" font-weight="400">南侧公共区窗位与原图不完全相同；不把外景当实测立面。</text>
 <rect x="940" y="351" width="790" height="34" fill="#e3ebe6" rx="4"/>
@@ -42,8 +42,8 @@
 <text x="954.00" y="526.00" font-size="16" text-anchor="start" font-weight="400">本图不是施工图，也不能据此宣布建筑结构已验收。</text>
 <rect x="940" y="556" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="954.00" y="580.00" font-size="20" text-anchor="start" font-weight="700">当前文件与下一步</text>
-<text x="954.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">P2.2替换P2.1图纸；本次只修平面，模型仍为V4。</text>
+<text x="954.00" y="615.00" font-size="16" text-anchor="start" font-weight="400">P2.3替换P2.2图纸；本次只修平面，模型仍为V4。</text>
 <text x="954.00" y="644.00" font-size="16" text-anchor="start" font-weight="400">不修改三维模型，不生成正式场景图。</text>
-<text x="954.00" y="673.00" font-size="16" text-anchor="start" font-weight="400">先确认本图中的房间接法与原图家具关系。</text>
+<text x="954.00" y="673.00" font-size="16" text-anchor="start" font-weight="400">房间关系保留，待确认前庭间距并校准尺寸。</text>
 <text x="954.00" y="702.00" font-size="16" text-anchor="start" font-weight="400">通过后才把同一组坐标写入唯一模型。</text>
 </svg>
