@@ -16,10 +16,13 @@ const root=path.resolve(__dirname,'..','平面确认');
  const gallery=await browser.newPage();await gallery.goto(pathToFileURL(path.join(root,'打开平面图.html')).href);
  const galleryResults=[];for(const button of await gallery.locator('button[data-sheet]').all()){
    await button.click();await gallery.waitForFunction(()=>{const i=document.querySelector('#drawing');return i.complete&&i.naturalWidth>0});
-   galleryResults.push(await gallery.locator('#drawing').getAttribute('src'));
+   const src=await gallery.locator('#drawing').getAttribute('src');
+   const expected=require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,src.split('?')[0]))).digest('hex').slice(0,16);
+   if(!src.endsWith('?v='+expected))errors.push('Stale or missing drawing version '+src);
+   galleryResults.push(src);
  }
  const broken=await gallery.evaluate(async()=>{const links=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));return links;});
- for(const link of broken)if(!link.startsWith('#')&&!fs.existsSync(path.join(root,decodeURI(link))))errors.push('Missing gallery link '+link);
+ for(const link of broken)if(!link.startsWith('#')&&!fs.existsSync(path.join(root,decodeURI(link.split('?')[0]))))errors.push('Missing gallery link '+link);
  await gallery.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>null))));
  const badImages=await gallery.evaluate(()=>[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.getAttribute('src')));
  errors.push(...badImages.map(i=>'Missing reference image '+i));
