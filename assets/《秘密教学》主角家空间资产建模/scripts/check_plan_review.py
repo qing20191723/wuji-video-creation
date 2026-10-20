@@ -58,7 +58,7 @@ for o in p.OPEN:
     if hits:issues.append('Door sweep '+o['id']+': '+','.join(hits))
 checks['door_sweeps']=sweeps
 # Actual walkable footprints; stair well and closed roofs are excluded below.
-regions={1:[[0,0,22,10.4]],2:[[0,2.5,20,10.4],[0,0,5,2.6],[5,-1.5,9.8,2.6],[16.72,1,18.42,2.6],[20,4.3,22,10.4],[-1.4,2.6,.2,12],[.0,10.2,6.4,12]]}
+regions={1:[[0,0,22,10.4]],2:[[0,2.5,13.2,10.4],[13.1,4.3,18.8,9.6],[13.1,2.5,20,4.4],[18.8,4.4,22,10.2],[20,0,22,4.4],[0,-1.4,22,0],[5,0,9.8,2.6],[0,0,5,2.6],[16.72,1,18.42,2.6]]}
 body=.25;step=.05;xx=np.arange(-1.6,22.3,step);yy=np.arange(-1.6,12.3,step);X,Y=np.meshgrid(xx,yy);nav={};reachable=[]
 for l in [1,2]:
     m=np.ones(X.shape,bool)
@@ -125,6 +125,26 @@ checks['shuya_reference_orientation']={
 for name,ok in checks['shuya_reference_orientation'].items():
     if not ok:issues.append('Shuya reference relationship: '+name)
 checks['net_bedroom_areas']={r['id']:r['net_area'] for r in p.ROOMS if r['id'] in ['B1','B2','B3','MB']}
+# Bed/room proportion and real use positions are separate from visual perspective ratios.
+checks['weiya_bed_room']={'room_area_m2':27.0,'frame_length_m':2.25,'frame_width_m':2.10,'frame_area_ratio':round(2.25*2.1/27,4),'previous_ratio':round(2.2*2/38.28,4),'foot_to_mirror_m':2.75}
+# SAT: complete rotated vehicle rectangle versus wall rectangles, not just its centre line.
+def polygon_overlap(poly,box):
+    other=[(box[0],box[1]),(box[2],box[1]),(box[2],box[3]),(box[0],box[3])]
+    for polygon in [poly,other]:
+        for a,b in zip(polygon,polygon[1:]+polygon[:1]):
+            axis=(-(b[1]-a[1]),b[0]-a[0]);u=[x*axis[0]+y*axis[1] for x,y in poly];v=[x*axis[0]+y*axis[1] for x,y in other]
+            if max(u)<=min(v)+1e-8 or max(v)<=min(u)+1e-8:return False
+    return True
+site_obstacles=[('garage west',[4.9,-8,5.1,-2.2]),('garage rear',[5,-2.3,17,-2.1]),('garage east south',[16.9,-8,17.1,-4]),('garage east north',[16.9,-3,17.1,-2.2]),('gate west pier',[5,-8.1,6,-7.9]),('gate east pier',[14,-8.1,17,-7.9]),('front west wall',[-1.8,-8.1,5,-7.9]),('front east wall',[17,-8.1,20.5,-7.9]),('building',[0,0,22,10.4])]
+vehicle_hits=[]
+for i,pose in enumerate(p.VEHICLE_POSES):
+    poly=p.car_corners(*pose)
+    for name,box in site_obstacles:
+        if polygon_overlap(poly,box):vehicle_hits.append((i,name))
+    if min(y for x,y in poly)<p.SITE['road'][1]:vehicle_hits.append((i,'road boundary'))
+checks['vehicle_swept_body']={'poses':len(p.VEHICLE_POSES),'car_m':[4.8,1.9],'centre_turn_radius_m':4.2,'hits':vehicle_hits,'scope':'低速平面车身包络；半径为拟定，未含后视镜/具体车型转向系统'}
+if vehicle_hits:issues.append('Vehicle swept body hits '+str(vehicle_hits[:5]))
+checks['exterior_site']={'front_court_depth_m':2.2,'east_side_clear_m':2.2,'west_side_clear_m':1.8,'rear_clear_m':3,'garage_net_m':[11.6,5.4],'pedestrian_gate_m':1.6,'street_width_assumed_m':5.4}
 old=json.loads((R/'制作记录/当前保留文件校验.json').read_text(encoding='utf8'));unchanged=[]
 for r in old['files']:
     ok=hashlib.sha256((R/r['file']).read_bytes()).hexdigest()==r['sha256'];unchanged.append(dict(file=r['file'],unchanged=ok))

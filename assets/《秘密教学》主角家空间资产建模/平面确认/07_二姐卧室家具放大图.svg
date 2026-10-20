@@ -4,7 +4,7 @@
 <rect width="1800" height="1150" fill="#faf9f5"/>
 <text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜舒亚 / 二姐 · 原图关系复核</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">床头、外窗、工作区、门位为固定锚点；右侧逐项说明。</text>
-<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.2 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1078H1735" stroke="#bec9c5"/>
 <rect x="110.00" y="291.00" width="651.00" height="609.00" fill="#e5e7f0" stroke="none" stroke-width="1" rx="0"/>
 <defs><clipPath id="clip"><rect x="89.0" y="270.0000000000002" width="693.0" height="650.9999999999999"/></clipPath></defs><g clip-path="url(#clip)">
@@ -37,20 +37,11 @@
 <path d="M950.00 284.17L1338.50 284.17" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M950.00 276.82L1338.50 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M1142.67 280.50L1145.83 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
-<path d="M1338.50 280.50L1538.00 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
-<path d="M1538.00 284.17L1748.00 284.17" fill="none" stroke="#4188a0" stroke-width="1.8"/>
-<path d="M1538.00 276.82L1748.00 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
-<path d="M1641.42 280.50L1644.58 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
-<path d="M1748.00 280.50L1821.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
-<path d="M1821.50 284.17L2084.00 284.17" fill="none" stroke="#4188a0" stroke-width="1.8"/>
-<path d="M1821.50 276.82L2084.00 276.82" fill="none" stroke="#4188a0" stroke-width="1.8"/>
-<path d="M1951.17 280.50L1954.33 280.50" fill="none" stroke="#4188a0" stroke-width="7"/>
-<path d="M2084.00 280.50L2178.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
+<path d="M1338.50 280.50L1464.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M99.50 1099.50L99.50 1068.00" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M95.83 1068.00L95.83 942.00" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M103.17 1068.00L103.17 942.00" fill="none" stroke="#4188a0" stroke-width="1.8"/>
 <path d="M99.50 1006.58L99.50 1003.42" fill="none" stroke="#4188a0" stroke-width="7"/>
-<path d="M113.15 1057.50L113.15 952.50" fill="none" stroke="#3b887a" stroke-width="1.2" marker-end="url(#arr)"/>
 <path d="M99.50 942.00L99.50 280.50" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M99.50 910.50L141.50 910.50" fill="none" stroke="#425861" stroke-width="21.0"/>
 <path d="M141.50 910.50L141.50 816.00" fill="none" stroke="#8e7859" stroke-width="1.8"/>
@@ -120,12 +111,12 @@
 <text x="799.25" y="595.50" font-size="16" text-anchor="middle" transform="rotate(-90 799.25 595.50)" style="fill:#c27b35">净深 5.80m</text>
 <text x="435.50" y="228.00" font-size="18" text-anchor="middle" font-weight="700">项目北 ↑ · 净面积 35.96㎡</text>
 <rect x="940" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
-<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">原图必须保持的相对关系</text>
+<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">原图关系与本次拟定尺度</text>
 <text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">房内关系顺时针转90°；外轮廓暂保持6.20×5.80m。</text>
 <text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">床头、抽屉柜、电脑桌、入口均在南墙。</text>
 <text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">从北向南看：左床、中桌、右门；衣物架在右侧西墙。</text>
 <text x="954.00" y="292.00" font-size="16" text-anchor="start" font-weight="400">入口直接接直走廊，无凹位；北窗沿用辅助视角关系。</text>
-<text x="954.00" y="321.00" font-size="16" text-anchor="start" font-weight="400">取消未证实的第二门；后露台从公共侧通道进入。</text>
+<text x="954.00" y="321.00" font-size="16" text-anchor="start" font-weight="400">无第二门；本轮露台在东侧，从走廊东端进入。</text>
 <rect x="940" y="351" width="790" height="34" fill="#e3ebe6" rx="4"/>
 <text x="954.00" y="375.00" font-size="20" text-anchor="start" font-weight="700">家具编号 / 设计占地</text>
 <text x="954.00" y="410.00" font-size="16" text-anchor="start" font-weight="400">C01  灰蓝格床（床头南）  [1.50×2.20m]</text>

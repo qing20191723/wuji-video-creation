@@ -4,7 +4,7 @@
 <rect width="1800" height="1150" fill="#faf9f5"/>
 <text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜主卧 · 原图关系复核</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">床头、外窗、工作区、门位为固定锚点；右侧逐项说明。</text>
-<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1106.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.2 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1078H1735" stroke="#bec9c5"/>
 <rect x="110.00" y="396.00" width="609.00" height="504.00" fill="#ecdfdf" stroke="none" stroke-width="1" rx="0"/>
 <defs><clipPath id="clip"><rect x="89.0" y="375.0000000000002" width="651.0000000000001" height="545.9999999999999"/></clipPath></defs><g clip-path="url(#clip)">
@@ -180,7 +180,7 @@
 <text x="757.25" y="648.00" font-size="16" text-anchor="middle" transform="rotate(-90 757.25 648.00)" style="fill:#c27b35">净深 4.80m</text>
 <text x="414.50" y="333.00" font-size="18" text-anchor="middle" font-weight="700">项目北 ↑ · 净面积 27.84㎡</text>
 <rect x="940" y="146" width="790" height="34" fill="#e3ebe6" rx="4"/>
-<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">原图必须保持的相对关系</text>
+<text x="954.00" y="170.00" font-size="20" text-anchor="start" font-weight="700">原图关系与本次拟定尺度</text>
 <text x="954.00" y="205.00" font-size="16" text-anchor="start" font-weight="400">原图整体逆时针旋转90°，没有镜像或单独搬家具。</text>
 <text x="954.00" y="234.00" font-size="16" text-anchor="start" font-weight="400">床头与入口仍同墙；主卫仍在床尾对墙。</text>
 <text x="954.00" y="263.00" font-size="16" text-anchor="start" font-weight="400">外窗与衣柜/梳妆台/衣架分处床的两侧。</text>

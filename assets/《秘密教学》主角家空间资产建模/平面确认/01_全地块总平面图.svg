@@ -2,92 +2,193 @@
 <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
 <rect width="1800" height="1280" fill="#faf9f5"/>
-<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜横向地块总平面</text>
-<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">P2.1 待确认 · 宽展开主体 + 临街单车库 + 独立人行门 · 非实测地块</text>
-<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.1 · 横向展开 · 2026-10-17 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜V3外景校准总平面</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">P2.2 待确认 · 正面及俯拍为主；北↑ / 临街南↓；侧巷在东 · 比例草案，具体尺寸待用户校准</text>
+<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.2 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
 <path d="M65 1208H1735" stroke="#bec9c5"/>
-<rect x="94.00" y="190.00" width="1020.00" height="850.00" fill="#e5eddf" stroke="#425861" stroke-width="4" rx="0"/>
-<rect x="94.00" y="1040.00" width="1020.00" height="102.00" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>
-<text x="604.00" y="1091.00" font-size="18" text-anchor="middle" font-weight="400">临街道路 / 项目南</text>
-<rect x="230.00" y="346.40" width="748.00" height="353.60" fill="#efe6dc" stroke="#425861" stroke-width="2" rx="0"/>
-<rect x="236.80" y="353.20" width="149.60" height="142.80" fill="#dce9e3" stroke="none" stroke-width="1" rx="0"/>
-<text x="311.60" y="428.00" font-size="15" text-anchor="middle" font-weight="400">厨房</text>
-<rect x="706.00" y="353.20" width="265.20" height="163.20" fill="#ebdcdc" stroke="none" stroke-width="1" rx="0"/>
-<text x="835.20" y="428.00" font-size="17" text-anchor="middle" font-weight="400">主卧套房</text>
-<text x="604.00" y="564.00" font-size="22" text-anchor="middle" font-weight="700">别墅主体 22.00 × 10.40m</text>
-<rect x="236.80" y="292.00" width="210.80" height="54.40" fill="none" stroke="#4188a0" stroke-width="1.5" rx="0" stroke-dasharray="6 4"/>
-<rect x="182.40" y="292.00" width="40.80" height="319.60" fill="none" stroke="#4188a0" stroke-width="1.5" rx="0" stroke-dasharray="6 4"/>
-<rect x="910.00" y="353.20" width="61.20" height="197.20" fill="none" stroke="#4188a0" stroke-width="1.5" rx="0" stroke-dasharray="6 4"/>
-<rect x="400.00" y="618.40" width="163.20" height="132.60" fill="none" stroke="#4188a0" stroke-width="1.5" rx="0" stroke-dasharray="6 4"/>
-<rect x="145.00" y="808.80" width="217.60" height="224.40" fill="#d9e1de" stroke="#425861" stroke-width="2" rx="0"/>
-<text x="253.80" y="832.60" font-size="14" text-anchor="middle" font-weight="400">车库净6.0×6.2m</text>
-<rect x="216.40" y="842.80" width="64.60" height="163.20" fill="#a9bec7" stroke="#263c45" stroke-width="1" rx="5"/>
-<rect x="189.20" y="842.80" width="119.00" height="163.20" fill="none" stroke="#c27b35" stroke-width="1" rx="0" stroke-dasharray="4 3"/>
-<text x="248.70" y="921.00" font-size="11" text-anchor="middle" font-weight="400">1.9×4.8</text>
-<path d="M168.80 1040.00L338.80 1040.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
-<path d="M168.80 1033.20L338.80 1033.20" fill="none" stroke="#faf9f5" stroke-width="8"/>
-<path d="M168.80 1036.60L338.80 1036.60" fill="none" stroke="#4188a0" stroke-width="2"/>
-<path d="M248.70 1125.00L248.70 995.80" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
-<path d="M362.60 883.60L362.60 849.60" fill="none" stroke="#faf9f5" stroke-width="5"/>
-<path d="M362.60 883.60L328.60 883.60" fill="none" stroke="#8e7859" stroke-width="1.4"/>
-<text x="389.80" y="863.20" font-size="11" text-anchor="middle" font-weight="400">侧门</text>
-<path d="M808.00 1040.00L859.00 1040.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
-<text x="833.50" y="1063.80" font-size="12" text-anchor="middle" font-weight="400">人行门1.5m</text>
-<rect x="808.00" y="757.80" width="51.00" height="278.80" fill="#f0eade" stroke="none" stroke-width="1" rx="0"/>
-<rect x="570.00" y="706.80" width="289.00" height="51.00" fill="#f0eade" stroke="none" stroke-width="1" rx="0"/>
-<path d="M833.50 1023.00L833.50 730.60" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
-<path d="M833.50 730.60L588.70 730.60" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
-<path d="M588.70 730.60L588.70 679.60" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
-<text x="570.00" y="876.80" font-size="20" text-anchor="middle" font-weight="400">前院 / 门前缓冲</text>
-<text x="672.00" y="251.20" font-size="18" text-anchor="middle" font-weight="400">后院</text>
-<circle cx="128.00" cy="632.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="128.00" cy="496.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="128.00" cy="292.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="1046.00" cy="632.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="1046.00" cy="462.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="1046.00" cy="292.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="536.00" cy="258.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="842.00" cy="258.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="468.00" cy="938.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="672.00" cy="938.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<circle cx="978.00" cy="904.00" r="20.40" fill="#9db88f" stroke="#7b9974"/>
-<path d="M94.00 166.20L1114.00 166.20" fill="none" stroke="#c27b35" stroke-width="1.3"/>
-<path d="M94.00 168.92L94.00 163.48" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<path d="M1114.00 168.92L1114.00 163.48" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<text x="604.00" y="162.12" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">地块横向30.00m</text>
-<path d="M1148.00 1040.00L1148.00 190.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
-<path d="M1150.72 1040.00L1145.28 1040.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<path d="M1150.72 190.00L1145.28 190.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<text x="1139.00" y="615.00" font-size="16" text-anchor="middle" transform="rotate(-90 1139.00 615.00)" style="fill:#c27b35">地块进深25.00m</text>
-<path d="M230.00 778.20L978.00 778.20" fill="none" stroke="#c27b35" stroke-width="1.3"/>
-<path d="M230.00 780.92L230.00 775.48" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<path d="M978.00 780.92L978.00 775.48" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<text x="604.00" y="774.12" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">建筑宽22.00m / 深10.40m（宽深比2.12）</text>
-<path d="M978.00 496.00L1114.00 496.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
-<path d="M978.00 498.72L978.00 493.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<path d="M1114.00 498.72L1114.00 493.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<text x="1046.00" y="491.92" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">东侧4m</text>
-<path d="M94.00 666.00L230.00 666.00" fill="none" stroke="#c27b35" stroke-width="1.3"/>
-<path d="M94.00 668.72L94.00 663.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<path d="M230.00 668.72L230.00 663.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
-<text x="162.00" y="661.92" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">西侧4m</text>
-<rect x="1240" y="186" width="480" height="34" fill="#e3ebe6" rx="4"/>
-<text x="1254.00" y="210.00" font-size="20" text-anchor="start" font-weight="700">横向展开</text>
-<text x="1254.00" y="245.00" font-size="16" text-anchor="start" font-weight="400">临街立面宽22.00m。</text>
-<text x="1254.00" y="274.00" font-size="16" text-anchor="start" font-weight="400">主体进深10.40m。</text>
-<text x="1254.00" y="303.00" font-size="16" text-anchor="start" font-weight="400">地块30.00×25.00m。</text>
-<text x="1254.00" y="332.00" font-size="16" text-anchor="start" font-weight="400">项目北↑，临街为南。</text>
-<rect x="1240" y="362" width="480" height="34" fill="#e3ebe6" rx="4"/>
-<text x="1254.00" y="386.00" font-size="20" text-anchor="start" font-weight="700">独立进出</text>
-<text x="1254.00" y="421.00" font-size="16" text-anchor="start" font-weight="400">左侧车库单车直进直出。</text>
-<text x="1254.00" y="450.00" font-size="16" text-anchor="start" font-weight="400">右侧人行门至玄关。</text>
-<text x="1254.00" y="479.00" font-size="16" text-anchor="start" font-weight="400">车库后侧留3.20m前庭。</text>
-<text x="1254.00" y="508.00" font-size="16" text-anchor="start" font-weight="400">两侧通路连通后院。</text>
-<rect x="1240" y="538" width="480" height="34" fill="#e3ebe6" rx="4"/>
-<text x="1254.00" y="562.00" font-size="20" text-anchor="start" font-weight="700">尺寸边界</text>
-<text x="1254.00" y="597.00" font-size="16" text-anchor="start" font-weight="400">庭院尺寸为拟定值。</text>
-<text x="1254.00" y="626.00" font-size="16" text-anchor="start" font-weight="400">蓝虚线是二楼投影。</text>
-<text x="1254.00" y="655.00" font-size="16" text-anchor="start" font-weight="400">围墙只开车行/人行两门。</text>
-<text x="1254.00" y="684.00" font-size="16" text-anchor="start" font-weight="400">外立面需随平面重新核对。</text>
-<text x="80.00" y="1170.00" font-size="16" text-anchor="start" font-weight="400">地块750㎡；车库单车直进直出；后院4.60m，露台外侧3.00m；西侧最窄2.60m。蓝虚线＝上层投影。</text>
+<rect x="113.40" y="996.00" width="1147.00" height="199.80" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>
+<rect x="1075.40" y="204.20" width="185.00" height="991.60" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>
+<rect x="113.40" y="204.20" width="962.00" height="791.80" fill="#e5eddf" stroke="#425861" stroke-width="4" rx="0"/>
+<rect x="180.00" y="315.20" width="814.00" height="384.80" fill="#efe6dc" stroke="#425861" stroke-width="2" rx="0"/>
+<rect x="187.40" y="322.60" width="162.80" height="155.40" fill="#dce9e3" stroke="none" stroke-width="1" rx="0"/>
+<text x="268.80" y="404.00" font-size="15" text-anchor="middle" font-weight="400">开放厨房</text>
+<rect x="698.00" y="322.60" width="288.60" height="177.60" fill="#ebdcdc" stroke="none" stroke-width="1" rx="0"/>
+<text x="838.60" y="404.00" font-size="17" text-anchor="middle" font-weight="400">主卧套房</text>
+<text x="587.00" y="552.00" font-size="21" text-anchor="middle" font-weight="700">主体 22.00 × 10.40m</text>
+<polygon points="187.40,751.80 986.60,751.80 986.60,700.00 542.60,700.00 542.60,611.20 365.00,611.20 365.00,700.00 187.40,700.00" fill="none" stroke="#4188a0" stroke-width="1.5"/>
+<polygon points="920.00,700.00 986.60,700.00 986.60,322.60 875.60,322.60 875.60,537.20 920.00,537.20" fill="none" stroke="#4188a0" stroke-width="1.5"/>
+<text x="476.00" y="729.60" font-size="12" text-anchor="middle" font-weight="400" style="fill:#4188a0">上层连续阳台投影</text>
+<rect x="365.00" y="781.40" width="444.00" height="214.60" fill="#d9e1de" stroke="#425861" stroke-width="3" rx="0"/>
+<text x="587.00" y="811.00" font-size="15" text-anchor="middle" font-weight="400">沿街车库 / 净11.60×5.40m</text>
+<path d="M402.00 996.00L698.00 996.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
+<path d="M402.00 996.00L698.00 996.00" fill="none" stroke="#4188a0" stroke-width="2"/>
+<text x="550.00" y="1020.05" font-size="13" text-anchor="middle" font-weight="400">车库卷闸 8.00m</text>
+<path d="M809.00 848.00L809.00 811.00" fill="none" stroke="#faf9f5" stroke-width="6"/>
+<path d="M809.00 848.00L772.00 848.00" fill="none" stroke="#8e7859" stroke-width="1.5"/>
+<text x="849.70" y="829.50" font-size="11" text-anchor="middle" font-weight="400">车库侧门</text>
+<path d="M938.50 996.00L997.70 996.00" fill="none" stroke="#faf9f5" stroke-width="8"/>
+<path d="M938.50 996.00L938.50 936.80" fill="none" stroke="#8e7859" stroke-width="1.5"/>
+<text x="968.10" y="1020.05" font-size="12" text-anchor="middle" font-weight="400">独立人行门1.60m</text>
+<rect x="938.50" y="707.40" width="59.20" height="281.20" fill="#f0eade" stroke="none" stroke-width="1" rx="0"/>
+<rect x="542.60" y="707.40" width="455.10" height="66.60" fill="#f0eade" stroke="none" stroke-width="1" rx="0"/>
+<path d="M968.10 984.90L968.10 740.70" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M968.10 740.70L570.35 740.70" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M570.35 740.70L570.35 677.80" fill="none" stroke="#3b887a" stroke-width="2" marker-end="url(#arr)"/>
+<polygon points="564.80,916.45 742.40,916.45 742.40,846.15 564.80,846.15" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="536.70,943.53 708.25,897.56 690.06,829.66 518.51,875.63" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="516.57,976.96 670.38,888.16 635.23,827.28 481.42,916.08" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="505.78,1014.46 631.36,888.88 581.65,839.17 456.07,964.75" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="505.06,1053.48 593.86,899.67 532.98,864.52 444.18,1018.33" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="514.46,1091.35 560.43,919.80 492.53,901.61 446.56,1073.16" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<polygon points="533.35,1125.50 533.35,947.90 463.05,947.90 463.05,1125.50" fill="none" stroke="#a7b7be" stroke-width="0.8"/>
+<path d="M653.60 881.30L650.89 881.32" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M650.89 881.32L648.18 881.39" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M648.18 881.39L645.47 881.51" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M645.47 881.51L642.76 881.68" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M642.76 881.68L640.06 881.89" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M640.06 881.89L637.36 882.15" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M637.36 882.15L634.66 882.46" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M634.66 882.46L631.97 882.81" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M631.97 882.81L629.29 883.21" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M629.29 883.21L626.62 883.66" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M626.62 883.66L623.95 884.16" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M623.95 884.16L621.29 884.70" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M621.29 884.70L618.64 885.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M618.64 885.28L616.01 885.92" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M616.01 885.92L613.38 886.60" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M613.38 886.60L610.77 887.32" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M610.77 887.32L608.17 888.09" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M608.17 888.09L605.58 888.91" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M605.58 888.91L603.01 889.77" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M603.01 889.77L600.45 890.67" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M600.45 890.67L597.91 891.62" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M597.91 891.62L595.39 892.62" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M595.39 892.62L592.88 893.65" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M592.88 893.65L590.39 894.74" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M590.39 894.74L587.93 895.86" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M587.93 895.86L585.48 897.03" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M585.48 897.03L583.05 898.24" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M583.05 898.24L580.64 899.49" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M580.64 899.49L578.26 900.78" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M578.26 900.78L575.90 902.12" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M575.90 902.12L573.56 903.50" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M573.56 903.50L571.25 904.91" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M571.25 904.91L568.96 906.37" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M568.96 906.37L566.70 907.87" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M566.70 907.87L564.47 909.40" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M564.47 909.40L562.26 910.98" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M562.26 910.98L560.08 912.59" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M560.08 912.59L557.93 914.24" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M557.93 914.24L555.80 915.93" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M555.80 915.93L553.71 917.66" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M553.71 917.66L551.65 919.42" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M551.65 919.42L549.62 921.22" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M549.62 921.22L547.62 923.05" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M547.62 923.05L545.65 924.91" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M545.65 924.91L543.72 926.82" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M543.72 926.82L541.81 928.75" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M541.81 928.75L539.95 930.72" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M539.95 930.72L538.12 932.72" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M538.12 932.72L536.32 934.75" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M536.32 934.75L534.56 936.81" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M534.56 936.81L532.83 938.90" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M532.83 938.90L531.14 941.03" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M531.14 941.03L529.49 943.18" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M529.49 943.18L527.88 945.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M527.88 945.36L526.30 947.57" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M526.30 947.57L524.77 949.80" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M524.77 949.80L523.27 952.06" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M523.27 952.06L521.81 954.35" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M521.81 954.35L520.40 956.66" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M520.40 956.66L519.02 959.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M519.02 959.00L517.68 961.36" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M517.68 961.36L516.39 963.74" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M516.39 963.74L515.14 966.15" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M515.14 966.15L513.93 968.58" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M513.93 968.58L512.76 971.03" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M512.76 971.03L511.64 973.49" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M511.64 973.49L510.55 975.98" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M510.55 975.98L509.52 978.49" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M509.52 978.49L508.52 981.01" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M508.52 981.01L507.57 983.55" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M507.57 983.55L506.67 986.11" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M506.67 986.11L505.81 988.68" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M505.81 988.68L504.99 991.27" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M504.99 991.27L504.22 993.87" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M504.22 993.87L503.50 996.48" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M503.50 996.48L502.82 999.11" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M502.82 999.11L502.18 1001.74" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M502.18 1001.74L501.60 1004.39" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M501.60 1004.39L501.06 1007.05" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M501.06 1007.05L500.56 1009.72" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M500.56 1009.72L500.11 1012.39" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M500.11 1012.39L499.71 1015.07" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M499.71 1015.07L499.36 1017.76" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M499.36 1017.76L499.05 1020.46" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M499.05 1020.46L498.79 1023.16" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.79 1023.16L498.58 1025.86" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.58 1025.86L498.41 1028.57" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.41 1028.57L498.29 1031.28" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.29 1031.28L498.22 1033.99" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.22 1033.99L498.20 1036.70" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1036.70L498.20 1044.10" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1044.10L498.20 1051.50" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1051.50L498.20 1058.90" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1058.90L498.20 1066.30" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1066.30L498.20 1073.70" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1073.70L498.20 1081.10" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M498.20 1081.10L498.20 1088.50" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<polygon points="564.80,916.45 742.40,916.45 742.40,846.15 564.80,846.15" fill="#a9bec7" stroke="#263c45" stroke-width="1.5"/>
+<text x="653.60" y="881.30" font-size="12" text-anchor="middle" font-weight="400">4.8×1.9m 横停</text>
+<rect x="564.80" y="816.55" width="177.60" height="129.50" fill="none" stroke="#c27b35" stroke-width="0.8" rx="0" stroke-dasharray="5 4"/>
+<text x="464.90" y="855.40" font-size="12" text-anchor="middle" font-weight="400">倒车转向区</text>
+<text x="550.00" y="762.90" font-size="12" text-anchor="middle" font-weight="400">前庭净深2.20m</text>
+<text x="291.00" y="848.00" font-size="16" text-anchor="middle" font-weight="400">前院种植</text>
+<text x="587.00" y="259.70" font-size="16" text-anchor="middle" font-weight="400">后院净深3.00m</text>
+<text x="1164.20" y="478.00" font-size="16" text-anchor="middle" font-weight="400">东侧巷道</text>
+<text x="809.00" y="1140.30" font-size="13" text-anchor="middle" font-weight="400">临街道路（5.40m为本次转弯校准假设）</text>
+<circle cx="146.70" cy="626.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="146.70" cy="478.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="146.70" cy="274.50" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="1038.40" cy="478.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="1038.40" cy="300.40" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="328.00" cy="256.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="846.00" cy="256.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="217.00" cy="848.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<circle cx="283.60" cy="922.00" r="16.65" fill="#9db88f" stroke="#7b9974"/>
+<path d="M113.40 178.30L1075.40 178.30" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M113.40 181.26L113.40 175.34" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M1075.40 181.26L1075.40 175.34" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="594.40" y="173.86" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">地块横向26.00m</text>
+<path d="M83.80 996.00L83.80 204.20" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M86.76 996.00L80.84 996.00" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M86.76 204.20L80.84 204.20" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="74.80" y="600.10" font-size="16" text-anchor="middle" transform="rotate(-90 74.80 600.10)" style="fill:#c27b35">地块进深21.40m</text>
+<path d="M180.00 1051.50L994.00 1051.50" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M180.00 1054.46L180.00 1048.54" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M994.00 1054.46L994.00 1048.54" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="587.00" y="1047.06" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">临街建筑面宽22.00m</text>
+<path d="M994.00 537.20L1075.40 537.20" fill="none" stroke="#c27b35" stroke-width="1.3"/>
+<path d="M994.00 540.16L994.00 534.24" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<path d="M1075.40 540.16L1075.40 534.24" fill="none" stroke="#c27b35" stroke-width="1.5"/>
+<text x="1034.70" y="532.76" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">东侧2.20m</text>
+<rect x="1320" y="166" width="410" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1334.00" y="190.00" font-size="20" text-anchor="start" font-weight="700">按外景恢复</text>
+<text x="1334.00" y="225.00" font-size="16" text-anchor="start" font-weight="400">前部宽车库＋右侧独立人行门。</text>
+<text x="1334.00" y="254.00" font-size="16" text-anchor="start" font-weight="400">车库后是浅前庭，不是大空场。</text>
+<text x="1334.00" y="283.00" font-size="16" text-anchor="start" font-weight="400">二层临街窄阳台向右侧露台延续。</text>
+<text x="1334.00" y="312.00" font-size="16" text-anchor="start" font-weight="400">正面右侧巷道；背面看时在左。</text>
+<rect x="1320" y="342" width="410" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1334.00" y="366.00" font-size="20" text-anchor="start" font-weight="700">尺寸如何确定</text>
+<text x="1334.00" y="401.00" font-size="16" text-anchor="start" font-weight="400">主体22×10.4m暂保留室内所需。</text>
+<text x="1334.00" y="430.00" font-size="16" text-anchor="start" font-weight="400">地块由30×25收至26×21.4m。</text>
+<text x="1334.00" y="459.00" font-size="16" text-anchor="start" font-weight="400">围墙至主体8m，车库后净2.2m。</text>
+<text x="1334.00" y="488.00" font-size="16" text-anchor="start" font-weight="400">侧院1.8/2.2m，后院3.0m。</text>
+<rect x="1320" y="518" width="410" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1334.00" y="542.00" font-size="20" text-anchor="start" font-weight="700">尚未证明的部分</text>
+<text x="1334.00" y="577.00" font-size="16" text-anchor="start" font-weight="400">车辆4.8×1.9m；转弯半径拟4.2m。</text>
+<text x="1334.00" y="606.00" font-size="16" text-anchor="start" font-weight="400">轨迹仅低速车身包络，不是车型认证。</text>
+<text x="1334.00" y="635.00" font-size="16" text-anchor="start" font-weight="400">上层南侧是公共区，窗位与原图有差异。</text>
+<text x="1334.00" y="664.00" font-size="16" text-anchor="start" font-weight="400">右侧木饰面小体量用途待定，未补造房间。</text>
+<text x="70.00" y="1160.00" font-size="17" text-anchor="start" font-weight="400">蓝线＝上层阳台露台投影；橙线＝倒车示意。围墙、车库、人行门与建筑使用同一坐标。</text>
 </svg>

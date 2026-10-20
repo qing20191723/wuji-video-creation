@@ -127,10 +127,6 @@
         "reachable": true
       },
       {
-        "room": "RT",
-        "reachable": true
-      },
-      {
         "room": "AB",
         "reachable": true
       }
@@ -227,6 +223,11 @@
         "name": "舒亚入口",
         "samples": 108,
         "hits": []
+      },
+      {
+        "name": "薇亚入口至活动区",
+        "samples": 208,
+        "hits": []
       }
     ],
     "master_door_on_axis": true,
@@ -248,7 +249,37 @@
       "MB": 27.84,
       "B3": 35.96,
       "B2": 37.12,
-      "B1": 38.28
+      "B1": 27.0
+    },
+    "weiya_bed_room": {
+      "room_area_m2": 27.0,
+      "frame_length_m": 2.25,
+      "frame_width_m": 2.1,
+      "frame_area_ratio": 0.175,
+      "previous_ratio": 0.1149,
+      "foot_to_mirror_m": 2.75
+    },
+    "vehicle_swept_body": {
+      "poses": 98,
+      "car_m": [
+        4.8,
+        1.9
+      ],
+      "centre_turn_radius_m": 4.2,
+      "hits": [],
+      "scope": "低速平面车身包络；半径为拟定，未含后视镜/具体车型转向系统"
+    },
+    "exterior_site": {
+      "front_court_depth_m": 2.2,
+      "east_side_clear_m": 2.2,
+      "west_side_clear_m": 1.8,
+      "rear_clear_m": 3,
+      "garage_net_m": [
+        11.6,
+        5.4
+      ],
+      "pedestrian_gate_m": 1.6,
+      "street_width_assumed_m": 5.4
     },
     "model_unchanged": [
       {
