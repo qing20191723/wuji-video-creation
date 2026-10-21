@@ -16,6 +16,7 @@ check('A可绕护栏端头侧向接走廊',st['A'][2]-par['b'][0]>=1.3)
 check('22级连续升至3.30m',abs(st['rises']*st['rise']-3.3)<1e-6 and st['treads']==st['rises']-1)
 check('二楼只有三道卧室木门',set(o['id'] for o in D['openings'] if o['level']==2 and o['type']=='door')=={'D203','D204','D205'})
 check('A端为大窗，C端为高窗，梯侧为横窗',all(any(o['id']==x and o['type']=='window' for o in D['openings']) for x in ['W_A_END','W_C_HIGH','W_STRIP']))
+check('西侧屋面外围护栏闭合至建筑边界',[[0,-1.4],[0,10.4]] in D['exterior_rails'] and [[0,10.4],[7.7,10.4]] in D['exterior_rails'] and any(o['id']=='rail_top_6' for o in M['objects']))
 bed=next(f['box'] for f in D['furniture'] if f['id']=='A01');check('大姐床仍为2.25×2.10m',abs(bed[2]-bed[0]-2.25)<1e-6 and abs(bed[3]-bed[1]-2.1)<1e-6)
 outside=[];collisions=[]
 for f in D['furniture']:
@@ -56,13 +57,14 @@ for a,b in zip(route,route[1:]):
  for i in range(max(2,math.ceil(dist/.04))+1):
   n=max(2,math.ceil(dist/.04));u=i/n;p=[x+(y-x)*u for x,y in zip(a['pos'],b['pos'])];x,y,z=p
   if 9.4<=x<16.96 and 1.1<=y<=2.4:z=1.6+.15*(math.floor((x-9.4)/.36+1e-7)+1)
+  else:z=4.9 if z>4 else 1.6
   foot=z-1.6;samples+=1
   for id,bb in obstacles:
    # Walking step nosings and support walls below foot are not body obstructions.
    if bb[5]<=foot+.2 or bb[2]>=foot+1.8:continue
    dx=max(bb[0]-x,0,x-bb[3]);dy=max(bb[1]-y,0,y-bb[4])
    if dx*dx+dy*dy<.25**2:route_hits.append(id)
-  supports=[ob for ob in M['objects'] if ob['category'] in ['slab','stairs'] and ob['box'][0]-1e-5<=x<=ob['box'][3]+1e-5 and ob['box'][1]-1e-5<=y<=ob['box'][4]+1e-5 and abs(ob['box'][5]-foot)<.17]
+  supports=[ob for ob in M['objects'] if ob['category'] in ['slab','stairs'] and ob['box'][0]-1e-5<=x<=ob['box'][3]+1e-5 and ob['box'][1]-1e-5<=y<=ob['box'][4]+1e-5 and abs(ob['box'][5]-foot)<.0001]
   if not supports:floor_holes.append([round(x,2),round(y,2),round(foot,2)])
   ceilings=[ob['box'][2]-foot for ob in M['objects'] if ob['category'] in ['slab','roof'] and ob['box'][0]<=x<=ob['box'][3] and ob['box'][1]<=y<=ob['box'][4] and ob['box'][2]>foot+.2]
   if ceilings:clearances.append(min(ceilings))

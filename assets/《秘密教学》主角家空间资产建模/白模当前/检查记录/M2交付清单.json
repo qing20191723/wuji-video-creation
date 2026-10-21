@@ -7,7 +7,7 @@
       "kind": "真实机位",
       "file": "空间/H2/白模视角/F4_DOWN.png",
       "annotated": "空间/H2/方位检查/F4_DOWN_标注.png",
-      "sha256": "839c8e114e69eb1e26190f05e5fea1ad2da986bd1a60e45f4b01b0d6f43abe74"
+      "sha256": "8ee131f42ab242bc6ec813eda858aa767acf5d9d4b565986fc14f01a57349766"
     },
     {
       "id": "F4_REVERSE",
@@ -15,7 +15,7 @@
       "kind": "真实机位",
       "file": "空间/H2/白模视角/F4_REVERSE.png",
       "annotated": "空间/H2/方位检查/F4_REVERSE_标注.png",
-      "sha256": "ed9bedd2f0a12cb95c58798c3383ee0d195feaca0419e07ab4ba83c18ee7a985"
+      "sha256": "05869cdb169e364b64d0c7c5221d9a6b1b77bf02577fe892b7f5220187aeda62"
     },
     {
       "id": "F4_C",
@@ -23,7 +23,7 @@
       "kind": "真实机位",
       "file": "空间/H2/白模视角/F4_C.png",
       "annotated": "空间/H2/方位检查/F4_C_标注.png",
-      "sha256": "a05517452bc80080651aae3e2de90c5eb9a2c71c2d4514ae93f31d10b3f6dea3"
+      "sha256": "b2b28f2126321e55f54cdac0f7d739a9337b114549ca584539ced3bd342b0c35"
     },
     {
       "id": "F4_UP",
@@ -31,7 +31,7 @@
       "kind": "真实机位",
       "file": "空间/B/白模视角/F4_UP.png",
       "annotated": "空间/B/方位检查/F4_UP_标注.png",
-      "sha256": "2792203865cd1b8fe9cb1af8773487cb4298a97c704515b1810076a0514a2885"
+      "sha256": "f0e47c7f2757d9b277ae58ec65bb6b506fda5d326265d851acac6b6c9297116c"
     },
     {
       "id": "F4_STAIR_DOWN",
@@ -39,7 +39,7 @@
       "kind": "真实机位",
       "file": "空间/A/白模视角/F4_STAIR_DOWN.png",
       "annotated": "空间/A/方位检查/F4_STAIR_DOWN_标注.png",
-      "sha256": "d2a47648f9369456b372d2697f2d328e6000d905733245b17e7c9da31dde9161"
+      "sha256": "d0dadc9d878284d5f6dfee645ec4e2f59fbf6a7e2d3f13b80ff10a42575a82b9"
     },
     {
       "id": "F4_B_CONNECT",
@@ -47,7 +47,7 @@
       "kind": "真实机位",
       "file": "空间/B/白模视角/F4_B_CONNECT.png",
       "annotated": "空间/B/方位检查/F4_B_CONNECT_标注.png",
-      "sha256": "d4daaee9f087822945ee6dded98ea63f2b764fa07420f1b2e843f61304959259"
+      "sha256": "f76a0b11742229d736596bca4c4784f72bd4df6730a59ead5f4a04ef5b0cf065"
     },
     {
       "id": "F4_PLAN",
@@ -55,7 +55,7 @@
       "kind": "顶视检查",
       "file": "空间/H2/方位检查/F4_PLAN.png",
       "annotated": "空间/H2/方位检查/F4_PLAN_标注.png",
-      "sha256": "78016d84584a81e8c42198e737dc449613dbeb79034c75bbec8205999f78e6c8"
+      "sha256": "00ad173d23757ac27c256dc40efc6091e38d07dc0aeb670d951e724776ad6f4b"
     },
     {
       "id": "B1_01",
@@ -63,7 +63,7 @@
       "kind": "真实机位",
       "file": "空间/B1/白模视角/B1_01.png",
       "annotated": "空间/B1/方位检查/B1_01_标注.png",
-      "sha256": "3f83fad3471a57a363e1c68ead5326ab164ffb9c8c81fa0019554b33dd49aca0"
+      "sha256": "f7e94aa4190ef6622a72e9c13293bc5e6714c6a122e41917bf81481ebdb9bbc5"
     },
     {
       "id": "B1_TOP",
@@ -71,7 +71,7 @@
       "kind": "顶视检查",
       "file": "空间/B1/方位检查/B1_TOP.png",
       "annotated": "空间/B1/方位检查/B1_TOP_标注.png",
-      "sha256": "f6853b17545d3ff0cc479cff392848b05ad41f818818b07a6850f0fdffdf6f13"
+      "sha256": "498100529887ffbdd090323febf78ae85597065411db5b49e5a23bd121c830cb"
     },
     {
       "id": "B2_TOP",
@@ -79,7 +79,7 @@
       "kind": "顶视检查",
       "file": "空间/B2/方位检查/B2_TOP.png",
       "annotated": "空间/B2/方位检查/B2_TOP_标注.png",
-      "sha256": "fdc58cf4623326416b990174a9b626065b64232a39bf065808ecf49769b5f66d"
+      "sha256": "752769438fe4fc9ba9a43ea07324f32455fd0be9addb665c5e565e08ecc80d1c"
     },
     {
       "id": "B3_TOP",
@@ -87,7 +87,7 @@
       "kind": "顶视检查",
       "file": "空间/B3/方位检查/B3_TOP.png",
       "annotated": "空间/B3/方位检查/B3_TOP_标注.png",
-      "sha256": "90c1381c5cb1a9d8c73fa2996ea7314c21a83b1280e2cd7ec1eb7c1619a6cb34"
+      "sha256": "5eac14da809a190af98a226216ad172d0b04c659d9346a83154bcf417dad1bb9"
     },
     {
       "id": "EXT_01",
@@ -95,149 +95,149 @@
       "kind": "真实机位",
       "file": "空间/外部/白模视角/EXT_01.png",
       "annotated": "空间/外部/方位检查/EXT_01_标注.png",
-      "sha256": "10293bbe41f181b2c604b2e04509d6c06869e73e9c924d49aebbc841aaadc987"
+      "sha256": "fb601313e56d4d47badac36da50520183036cf258aed43d84c38b2176c95d90c"
     }
   ],
   "files": [
     {
       "path": "模型/秘密教学_P2.4-M2.blend",
-      "bytes": 7581596,
-      "sha256": "947fdd63a1682f1b4b04c4bb30c15f428f110b79b6ddd1403f850a0d87c85203"
+      "bytes": 7863163,
+      "sha256": "1b3b0593cb05bb2e8155011259dcb2d4fc255f0981bb406182eb734c79760d39"
     },
     {
       "path": "模型/秘密教学_P2.4-M2.glb",
-      "bytes": 2089992,
-      "sha256": "59926189e64ca9f71ba91231826eb41783c9dfe42772d9e53f534a890c013238"
+      "bytes": 2209476,
+      "sha256": "2d5a54ea52ea223e951aec173c2e8c5a5aff887facf3e928d7fe0d827eb28a6a"
     },
     {
       "path": "模型/建模方案.json",
-      "bytes": 68826,
-      "sha256": "a2cc1e00084669f615728d6b0183eee59729941c779309b073703a0f1e7ded5d"
+      "bytes": 69598,
+      "sha256": "11958766828356e4e96e14a54bfb3d666427d105632c6f7afdf1aa412e495bf5"
     },
     {
       "path": "模型/空间数据.json",
-      "bytes": 2892224,
-      "sha256": "f46b344492ca4bfecbfe0e74bc9356be2cffa698d60b591843f4b932a2d0b271"
+      "bytes": 3080977,
+      "sha256": "5c8824ce84c551b5a9d5bc0bcba570acd0899b85efc6e4c0a68bd0e308ab86ff"
     },
     {
       "path": "空间/H2/白模视角/F4_DOWN.png",
-      "bytes": 1962882,
-      "sha256": "839c8e114e69eb1e26190f05e5fea1ad2da986bd1a60e45f4b01b0d6f43abe74"
+      "bytes": 1964573,
+      "sha256": "8ee131f42ab242bc6ec813eda858aa767acf5d9d4b565986fc14f01a57349766"
     },
     {
       "path": "空间/H2/方位检查/F4_DOWN_标注.png",
-      "bytes": 1359877,
-      "sha256": "69ee3382a0e92d416413f8180e8dbd818ed74ba674f48dbfaef12bc6cc13d46b"
+      "bytes": 1361239,
+      "sha256": "2fec602a17c4d4c1ee3e5b769e3edc87057fde0ae6dd59f72f59073555db7ccf"
     },
     {
       "path": "空间/H2/白模视角/F4_REVERSE.png",
-      "bytes": 1916018,
-      "sha256": "ed9bedd2f0a12cb95c58798c3383ee0d195feaca0419e07ab4ba83c18ee7a985"
+      "bytes": 1916249,
+      "sha256": "05869cdb169e364b64d0c7c5221d9a6b1b77bf02577fe892b7f5220187aeda62"
     },
     {
       "path": "空间/H2/方位检查/F4_REVERSE_标注.png",
-      "bytes": 1317126,
-      "sha256": "85cb13974b17e169d97969293c7bbc1d924e8a58269da291f6b595c1c19e7065"
+      "bytes": 1317460,
+      "sha256": "2ef6e0ee700d4fca23c75ad27bf371d5dd61bcc93b108af19e6e57b300087aa8"
     },
     {
       "path": "空间/H2/白模视角/F4_C.png",
-      "bytes": 1860828,
-      "sha256": "a05517452bc80080651aae3e2de90c5eb9a2c71c2d4514ae93f31d10b3f6dea3"
+      "bytes": 1866532,
+      "sha256": "b2b28f2126321e55f54cdac0f7d739a9337b114549ca584539ced3bd342b0c35"
     },
     {
       "path": "空间/H2/方位检查/F4_C_标注.png",
-      "bytes": 1268734,
-      "sha256": "5f4d0f149272f5aef765928bec918e42bc67ab0c4c2adcb8daa17b31aa202ad9"
+      "bytes": 1273394,
+      "sha256": "d10509ec52bdf2fdcfaaade6a26915cac0920476967fe3e9d33427f7d19a462b"
     },
     {
       "path": "空间/B/白模视角/F4_UP.png",
-      "bytes": 2001729,
-      "sha256": "2792203865cd1b8fe9cb1af8773487cb4298a97c704515b1810076a0514a2885"
+      "bytes": 2001377,
+      "sha256": "f0e47c7f2757d9b277ae58ec65bb6b506fda5d326265d851acac6b6c9297116c"
     },
     {
       "path": "空间/B/方位检查/F4_UP_标注.png",
-      "bytes": 1396268,
-      "sha256": "c1446a19d8a7bca0e4c2155db5637bce260ce739fe8385aa9e3c263422d45138"
+      "bytes": 1396169,
+      "sha256": "12f940ba672c6c0fe6b04b0ff2a1f9dac92bc0b67bc6f3f50a6e2e3c48885119"
     },
     {
       "path": "空间/A/白模视角/F4_STAIR_DOWN.png",
-      "bytes": 1993865,
-      "sha256": "d2a47648f9369456b372d2697f2d328e6000d905733245b17e7c9da31dde9161"
+      "bytes": 1996062,
+      "sha256": "d0dadc9d878284d5f6dfee645ec4e2f59fbf6a7e2d3f13b80ff10a42575a82b9"
     },
     {
       "path": "空间/A/方位检查/F4_STAIR_DOWN_标注.png",
-      "bytes": 1385920,
-      "sha256": "295e651b80f201205334148ef448f1062266de2032b29907f15991fefdf92912"
+      "bytes": 1388199,
+      "sha256": "3b8be0e03f3f3e378577608fc99a967c09bc363cd1aff162378ad77c8fca5841"
     },
     {
       "path": "空间/B/白模视角/F4_B_CONNECT.png",
-      "bytes": 1855999,
-      "sha256": "d4daaee9f087822945ee6dded98ea63f2b764fa07420f1b2e843f61304959259"
+      "bytes": 1857222,
+      "sha256": "f76a0b11742229d736596bca4c4784f72bd4df6730a59ead5f4a04ef5b0cf065"
     },
     {
       "path": "空间/B/方位检查/F4_B_CONNECT_标注.png",
-      "bytes": 1246197,
-      "sha256": "a736cfd298baf86a8e4e45c13edf0688ba7c24822792edc3d94bf7473d9dc066"
+      "bytes": 1246896,
+      "sha256": "ffbda40db250ef27d48188ba280f0a3984252d2fc85fb838f1afffe165207bb6"
     },
     {
       "path": "空间/H2/方位检查/F4_PLAN.png",
-      "bytes": 1819992,
-      "sha256": "78016d84584a81e8c42198e737dc449613dbeb79034c75bbec8205999f78e6c8"
+      "bytes": 1820983,
+      "sha256": "00ad173d23757ac27c256dc40efc6091e38d07dc0aeb670d951e724776ad6f4b"
     },
     {
       "path": "空间/H2/方位检查/F4_PLAN_标注.png",
-      "bytes": 1236795,
-      "sha256": "0ca0c756e359b9df3dbc01aed59a9b7aea73651e68fbc4ed6d97c9983ffb1e86"
+      "bytes": 1237865,
+      "sha256": "70b621eeb6006f49c52f4ff4b8598c2c7ad43e65ee4b5a7a4b8acbf270d84aec"
     },
     {
       "path": "空间/B1/白模视角/B1_01.png",
-      "bytes": 1991373,
-      "sha256": "3f83fad3471a57a363e1c68ead5326ab164ffb9c8c81fa0019554b33dd49aca0"
+      "bytes": 1991897,
+      "sha256": "f7e94aa4190ef6622a72e9c13293bc5e6714c6a122e41917bf81481ebdb9bbc5"
     },
     {
       "path": "空间/B1/方位检查/B1_01_标注.png",
-      "bytes": 1376468,
-      "sha256": "921e6b636e522424d84272e29f8f4d0b1baabbc9e8e6224427c72cddfa99da73"
+      "bytes": 1376482,
+      "sha256": "5bd2a80117c1556cf3dfaaccc534c6267247b15e981c5268b1caab885ef8ddf1"
     },
     {
       "path": "空间/B1/方位检查/B1_TOP.png",
-      "bytes": 1785914,
-      "sha256": "f6853b17545d3ff0cc479cff392848b05ad41f818818b07a6850f0fdffdf6f13"
+      "bytes": 1785888,
+      "sha256": "498100529887ffbdd090323febf78ae85597065411db5b49e5a23bd121c830cb"
     },
     {
       "path": "空间/B1/方位检查/B1_TOP_标注.png",
-      "bytes": 1213269,
-      "sha256": "9f4d7ab70da869391c6f75e3e924d45b24fda0f06b02adef766c722e30613a79"
+      "bytes": 1213194,
+      "sha256": "ee432c2aa3862e6b00960ac4b073bec240bf00286ea9ad351a5ae65516a49a51"
     },
     {
       "path": "空间/B2/方位检查/B2_TOP.png",
-      "bytes": 1841483,
-      "sha256": "fdc58cf4623326416b990174a9b626065b64232a39bf065808ecf49769b5f66d"
+      "bytes": 1841452,
+      "sha256": "752769438fe4fc9ba9a43ea07324f32455fd0be9addb665c5e565e08ecc80d1c"
     },
     {
       "path": "空间/B2/方位检查/B2_TOP_标注.png",
-      "bytes": 1249472,
-      "sha256": "c48246bff63d86f03f2ff0ae235eb2a19c169f636414e49f24fbdb1d1ad20dc6"
+      "bytes": 1249440,
+      "sha256": "ffa9a2c0c5f85d7617da28b7a668f5b5a9eac8fa169e947be18d75caf272a6b1"
     },
     {
       "path": "空间/B3/方位检查/B3_TOP.png",
-      "bytes": 1812964,
-      "sha256": "90c1381c5cb1a9d8c73fa2996ea7314c21a83b1280e2cd7ec1eb7c1619a6cb34"
+      "bytes": 1813545,
+      "sha256": "5eac14da809a190af98a226216ad172d0b04c659d9346a83154bcf417dad1bb9"
     },
     {
       "path": "空间/B3/方位检查/B3_TOP_标注.png",
-      "bytes": 1227829,
-      "sha256": "a21c2c1efd472a7b54627106ef9a8b06afc1cde8793896bf2577320e6944d593"
+      "bytes": 1227842,
+      "sha256": "9d7f807e05fb11e6e0f3ef45c842c4be717165f697f210c829f8ac31da620232"
     },
     {
       "path": "空间/外部/白模视角/EXT_01.png",
-      "bytes": 1997361,
-      "sha256": "10293bbe41f181b2c604b2e04509d6c06869e73e9c924d49aebbc841aaadc987"
+      "bytes": 2005155,
+      "sha256": "fb601313e56d4d47badac36da50520183036cf258aed43d84c38b2176c95d90c"
     },
     {
       "path": "空间/外部/方位检查/EXT_01_标注.png",
-      "bytes": 1377352,
-      "sha256": "c8a9403e3fea4a951558efcf0e56a8e369b7a26e97f0719c4bddcd350f15a4c4"
+      "bytes": 1386557,
+      "sha256": "0120078f0c53562cc0e202798cf159960d8b3e0115b2d4ac5af70f32e965e543"
     },
     {
       "path": "方位检查/M2_一楼建模平面.svg",

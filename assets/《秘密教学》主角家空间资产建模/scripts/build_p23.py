@@ -97,7 +97,7 @@ for i in range(st['treads']):
  box(f'STAIR_{i+1:02}',[x,sy,0,x+st['tread'],ey,top],1,'stairs','stairs','floor')
 bar('stair_handrail',[sx,sy+.05,st['rise']+.9],[ex,sy+.05,3.3+.9],.035,1,'stairs')
 # Balcony perimeter rails, no rail across an indoor entry.
-for i,(a,b) in enumerate([((0,-1.4),(22,-1.4)),((0,-1.4),(0,1)),((22,-1.4),(22,10.4)),((18.8,10.4),(22,10.4)),((18.8,4.4),(22,4.4)),((18.8,9.6),(18.8,10.4))]):
+for i,(a,b) in enumerate(D.get('exterior_rails',[((0,-1.4),(22,-1.4)),((0,-1.4),(0,1)),((22,-1.4),(22,10.4)),((18.8,10.4),(22,10.4)),((18.8,4.4),(22,4.4)),((18.8,9.6),(18.8,10.4))])):
  length=math.dist(a,b)
  for j in range(math.ceil(length/.9)+1):
   u=j/math.ceil(length/.9);x=a[0]+(b[0]-a[0])*u;y=a[1]+(b[1]-a[1])*u
