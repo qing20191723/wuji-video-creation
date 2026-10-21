@@ -1,0 +1,18 @@
+{
+  "revision": "P2.4-M3",
+  "commit": "e1e632ee5209523f2156fff9b302a086ce0b54d9",
+  "remote_verified": true,
+  "method": "独立LFS缓存从私有远端回读，与本地SHA256一致",
+  "files": [
+    {
+      "path": "模型/秘密教学_P2.4-M3.blend",
+      "sha256": "2a1097d7e2849f4b8f217e08b8df234c1e1e7302e85dd79602e9381acc03747a",
+      "bytes": 7892729
+    },
+    {
+      "path": "模型/秘密教学_P2.4-M3.glb",
+      "sha256": "5f1ee9aa54de8e015471a410b8b145193a56f168d92550fb943dcd517b1bfd60",
+      "bytes": 2206768
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "backup_commit": "e1e632ee5209523f2156fff9b302a086ce0b54d9",
+  "files": [
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_DOWN.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_DOWN_M3.png",
+      "sha256": "8ee131f42ab242bc6ec813eda858aa767acf5d9d4b565986fc14f01a57349766",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_DOWN_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_DOWN_M3_标注.png",
+      "sha256": "2fec602a17c4d4c1ee3e5b769e3edc87057fde0ae6dd59f72f59073555db7ccf",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_REVERSE.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_REVERSE_M3.png",
+      "sha256": "05869cdb169e364b64d0c7c5221d9a6b1b77bf02577fe892b7f5220187aeda62",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_REVERSE_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_REVERSE_M3_标注.png",
+      "sha256": "2ef6e0ee700d4fca23c75ad27bf371d5dd61bcc93b108af19e6e57b300087aa8",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_C.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\白模视角\\F4_C_M3.png",
+      "sha256": "b2b28f2126321e55f54cdac0f7d739a9337b114549ca584539ced3bd342b0c35",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_C_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_C_M3_标注.png",
+      "sha256": "d10509ec52bdf2fdcfaaade6a26915cac0920476967fe3e9d33427f7d19a462b",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\白模视角\\F4_UP.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\白模视角\\F4_UP_M3.png",
+      "sha256": "f0e47c7f2757d9b277ae58ec65bb6b506fda5d326265d851acac6b6c9297116c",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\方位检查\\F4_UP_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\方位检查\\F4_UP_M3_标注.png",
+      "sha256": "12f940ba672c6c0fe6b04b0ff2a1f9dac92bc0b67bc6f3f50a6e2e3c48885119",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\A\\白模视角\\F4_STAIR_DOWN.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\A\\白模视角\\F4_STAIR_DOWN_M3.png",
+      "sha256": "d0dadc9d878284d5f6dfee645ec4e2f59fbf6a7e2d3f13b80ff10a42575a82b9",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\A\\方位检查\\F4_STAIR_DOWN_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\A\\方位检查\\F4_STAIR_DOWN_M3_标注.png",
+      "sha256": "3b8be0e03f3f3e378577608fc99a967c09bc363cd1aff162378ad77c8fca5841",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\白模视角\\F4_B_CONNECT.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\白模视角\\F4_B_CONNECT_M3.png",
+      "sha256": "f76a0b11742229d736596bca4c4784f72bd4df6730a59ead5f4a04ef5b0cf065",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\方位检查\\F4_B_CONNECT_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B\\方位检查\\F4_B_CONNECT_M3_标注.png",
+      "sha256": "ffbda40db250ef27d48188ba280f0a3984252d2fc85fb838f1afffe165207bb6",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_PLAN.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_PLAN_M3.png",
+      "sha256": "00ad173d23757ac27c256dc40efc6091e38d07dc0aeb670d951e724776ad6f4b",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_PLAN_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\H2\\方位检查\\F4_PLAN_M3_标注.png",
+      "sha256": "70b621eeb6006f49c52f4ff4b8598c2c7ad43e65ee4b5a7a4b8acbf270d84aec",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\白模视角\\B1_01.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\白模视角\\B1_01_M3.png",
+      "sha256": "f7e94aa4190ef6622a72e9c13293bc5e6714c6a122e41917bf81481ebdb9bbc5",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_01_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_01_M3_标注.png",
+      "sha256": "5bd2a80117c1556cf3dfaaccc534c6267247b15e981c5268b1caab885ef8ddf1",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_TOP.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_TOP_M3.png",
+      "sha256": "498100529887ffbdd090323febf78ae85597065411db5b49e5a23bd121c830cb",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_TOP_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B1\\方位检查\\B1_TOP_M3_标注.png",
+      "sha256": "ee432c2aa3862e6b00960ac4b073bec240bf00286ea9ad351a5ae65516a49a51",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B2\\方位检查\\B2_TOP.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B2\\方位检查\\B2_TOP_M3.png",
+      "sha256": "752769438fe4fc9ba9a43ea07324f32455fd0be9addb665c5e565e08ecc80d1c",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B2\\方位检查\\B2_TOP_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B2\\方位检查\\B2_TOP_M3_标注.png",
+      "sha256": "ffa9a2c0c5f85d7617da28b7a668f5b5a9eac8fa169e947be18d75caf272a6b1",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B3\\方位检查\\B3_TOP.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B3\\方位检查\\B3_TOP_M3.png",
+      "sha256": "5eac14da809a190af98a226216ad172d0b04c659d9346a83154bcf417dad1bb9",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B3\\方位检查\\B3_TOP_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\B3\\方位检查\\B3_TOP_M3_标注.png",
+      "sha256": "9d7f807e05fb11e6e0f3ef45c842c4be717165f697f210c829f8ac31da620232",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\外部\\白模视角\\EXT_01.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\外部\\白模视角\\EXT_01_M3.png",
+      "sha256": "fb601313e56d4d47badac36da50520183036cf258aed43d84c38b2176c95d90c",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\外部\\方位检查\\EXT_01_标注.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\空间\\外部\\方位检查\\EXT_01_M3_标注.png",
+      "sha256": "0120078f0c53562cc0e202798cf159960d8b3e0115b2d4ac5af70f32e965e543",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\模型\\秘密教学_P2.4-M2.blend",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\模型\\秘密教学_P2.4-M3.blend",
+      "sha256": "1b3b0593cb05bb2e8155011259dcb2d4fc255f0981bb406182eb734c79760d39",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\模型\\秘密教学_P2.4-M2.glb",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\模型\\秘密教学_P2.4-M3.glb",
+      "sha256": "2d5a54ea52ea223e951aec173c2e8c5a5aff887facf3e928d7fe0d827eb28a6a",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\方位检查\\M2_一楼建模平面.svg",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\方位检查\\M3_一楼建模平面.svg",
+      "sha256": "cdde0e9b710fcf34eabac3c2c3e91122100f02b423d0889063fe6184748b8fe6",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\方位检查\\M2_二楼建模平面.svg",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\方位检查\\M3_二楼建模平面.svg",
+      "sha256": "42417e3f36f5b38120a5244962a950bc442bf97d271fc09d11236b20cc9fe420",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2交付清单.json",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3交付清单.json",
+      "sha256": "aa1cf31de13fba3f4f50e84e949306ec880862662a6b9ae5ffb27a82515ad38e",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2几何与动线检查.json",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3几何与动线检查.json",
+      "sha256": "52bcad68be50009e963cd06b12b122d62238e23651c44181b589b8ea530f0f81",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2模型回读检查.json",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3模型回读检查.json",
+      "sha256": "fadafa08b7370041d9d245db53188dfe31a5e8fd76a44697c5b33512fe50dc1f",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2浏览器检查.json",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3浏览器检查.json",
+      "sha256": "f95524bd985621a37a9ef2813eebfd417dfa7d75dcb7e0fd9743b868a1d94af1",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2浏览器回看.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3浏览器回看.png",
+      "sha256": "57586e701b62cf78b13424fce19656c7bcfced1a35cdf4f2303a3a63c4558fa9",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2_一楼建模平面.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3_一楼建模平面.png",
+      "sha256": "914996a3e665d5f4029d0948e28f860a95e9bb57145cc79b33b44b0d2bfcac34",
+      "status": "recycled"
+    },
+    {
+      "original": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M2_二楼建模平面.png",
+      "replacement": "assets\\《秘密教学》主角家空间资产建模\\白模当前\\检查记录\\M3_二楼建模平面.png",
+      "sha256": "737d0ea701c9a269d1cf70ea007bd0db9b89dc26028239ef7c9485adb273fccc",
+      "status": "recycled"
+    }
+  ]
+}
