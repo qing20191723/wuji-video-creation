@@ -1,36 +1,20 @@
 {
-  "revision": "P2.4-F3_20261021",
-  "checks": {
-    "bedroom_furniture_unchanged": true,
-    "bedroom_doors_unchanged": true,
-    "guard_reduced_14_92_to_5_42": true,
-    "tall_window_at_user_mark": true,
-    "slot_window_at_user_mark": true,
-    "stairs_rise_preserved": true,
-    "auxiliary_doors_absent": true,
+  "revision": "P2.4-F4",
+  "file_checks": {
     "秘密教学_P2.3-M1.blend_unchanged": true,
     "秘密教学_P2.3-M1.glb_unchanged": true
   },
-  "overall_build_ready": false,
-  "conflicts": [
-    {
-      "id": "F1-ENTRY",
-      "description": "拟移梯段与一楼原玄关通路平面交叠，需解决通行净高",
-      "x_interval": [
-        10,
-        11.2
-      ]
-    },
-    {
-      "id": "F1-L03",
-      "description": "拟移下平台与客厅地毯交叠",
-      "area_m2": 0.42
-    }
+  "build_ready": false,
+  "metric_floor_plan_delivered": false,
+  "withdrawn": [
+    "F3西移3.90m",
+    "F3收短4.00m",
+    "F3护栏5.42m作为确认尺寸"
   ],
-  "limitations": [
-    "补充设计尺寸非实测",
-    "一楼楼梯及通路未同步",
-    "公卫布草未定",
-    "三维冻结"
+  "unresolved": [
+    "局部关系尚未与卧室实际门距及全屋坐标结合",
+    "B与C精确投影范围及梁底踏步净空",
+    "公卫布草与一楼公共区接续",
+    "参考图端头木门与玻璃门冲突、玻璃后台阶差异"
   ]
 }

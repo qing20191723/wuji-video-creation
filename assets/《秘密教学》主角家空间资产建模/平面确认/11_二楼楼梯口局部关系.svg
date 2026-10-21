@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
+<rect width="2200" height="1500" fill="#faf9f5"/>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜二楼楼梯口：局部关系重绘</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">横向：舒亚端 ← → 薇亚／上平台端。房门只示先后，不表示已确定门距。</text>
+<text x="65.00" y="1456.00" font-size="16" text-anchor="start" font-weight="400">P2.4-F4 · 2026-10-21 · 局部非比例关系图 / 不能按图量尺寸 / 三维未修改</text>
+<path d="M65 1428H2135" stroke="#bec9c5"/>
+<rect x="180.00" y="331.00" width="1716.00" height="264.00" fill="#e3eee8" stroke="none" stroke-width="1" rx="0"/>
+<rect x="180.00" y="595.00" width="275.00" height="275.00" fill="#e3eee8" stroke="none" stroke-width="1" rx="0"/>
+<rect x="1621.00" y="595.00" width="275.00" height="275.00" fill="#e3eee8" stroke="none" stroke-width="1" rx="0"/>
+<rect x="455.00" y="595.00" width="1166.00" height="275.00" fill="#d9e8ef" stroke="#4188a0" stroke-width="1" rx="0"/>
+<path d="M523.59 859.00L523.59 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M592.18 859.00L592.18 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M660.76 859.00L660.76 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M729.35 859.00L729.35 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M797.94 859.00L797.94 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M866.53 859.00L866.53 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M935.12 859.00L935.12 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1003.71 859.00L1003.71 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1072.29 859.00L1072.29 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1140.88 859.00L1140.88 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1209.47 859.00L1209.47 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1278.06 859.00L1278.06 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1346.65 859.00L1346.65 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1415.24 859.00L1415.24 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1483.82 859.00L1483.82 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1552.41 859.00L1552.41 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M180.00 870.00L1896.00 870.00" fill="none" stroke="#425861" stroke-width="14"/>
+<path d="M180.00 870.00L180.00 331.00" fill="none" stroke="#425861" stroke-width="14"/>
+<path d="M1896.00 870.00L1896.00 331.00" fill="none" stroke="#425861" stroke-width="14"/>
+<path d="M180.00 331.00L1896.00 331.00" fill="none" stroke="#425861" stroke-width="14"/>
+<path d="M279.00 331.00L389.00 331.00" fill="none" stroke="#faf9f5" stroke-width="18"/>
+<path d="M279.00 331.00L279.00 221.00" fill="none" stroke="#91704c" stroke-width="2"/>
+<path d="M279.00 221.00L389.00 331.00" fill="none" stroke="#baaa96" stroke-width="1" stroke-dasharray="4 5"/>
+<text x="334.00" y="174.80" font-size="23" text-anchor="middle" font-weight="700">舒亚房门</text>
+<path d="M895.00 331.00L1005.00 331.00" fill="none" stroke="#faf9f5" stroke-width="18"/>
+<path d="M895.00 331.00L895.00 221.00" fill="none" stroke="#91704c" stroke-width="2"/>
+<path d="M895.00 221.00L1005.00 331.00" fill="none" stroke="#baaa96" stroke-width="1" stroke-dasharray="4 5"/>
+<text x="950.00" y="174.80" font-size="23" text-anchor="middle" font-weight="700">子豪房门</text>
+<path d="M1522.00 331.00L1632.00 331.00" fill="none" stroke="#faf9f5" stroke-width="18"/>
+<path d="M1522.00 331.00L1522.00 221.00" fill="none" stroke="#91704c" stroke-width="2"/>
+<path d="M1522.00 221.00L1632.00 331.00" fill="none" stroke="#baaa96" stroke-width="1" stroke-dasharray="4 5"/>
+<text x="1577.00" y="174.80" font-size="23" text-anchor="middle" font-weight="700">薇亚房门</text>
+<path d="M180.00 562.00L180.00 364.00" fill="none" stroke="#faf9f5" stroke-width="16"/>
+<path d="M180.00 562.00L180.00 364.00" fill="none" stroke="#4188a0" stroke-width="6"/>
+<path d="M246.00 870.00L400.00 870.00" fill="none" stroke="#faf9f5" stroke-width="16"/>
+<path d="M246.00 870.00L400.00 870.00" fill="none" stroke="#4188a0" stroke-width="6"/>
+<path d="M620.00 870.00L1324.00 870.00" fill="none" stroke="#faf9f5" stroke-width="16"/>
+<path d="M620.00 870.00L1324.00 870.00" fill="none" stroke="#4188a0" stroke-width="6"/>
+<path d="M1676.00 870.00L1830.00 870.00" fill="none" stroke="#faf9f5" stroke-width="16"/>
+<path d="M1676.00 870.00L1830.00 870.00" fill="none" stroke="#4188a0" stroke-width="6"/>
+<path d="M1896.00 848.00L1896.00 364.00" fill="none" stroke="#faf9f5" stroke-width="16"/>
+<path d="M1896.00 848.00L1896.00 364.00" fill="none" stroke="#4188a0" stroke-width="6"/>
+<path d="M202.00 540.00L202.00 386.00" fill="none" stroke="#3b887a" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="98.60" y="485.00" font-size="14" text-anchor="middle" font-weight="400" style="fill:#4188a0">玻璃门</text>
+<path d="M455.00 595.00L1621.00 595.00" fill="none" stroke="#aa825c" stroke-width="11"/>
+<path d="M455.00 870.00L455.00 595.00" fill="none" stroke="#aa825c" stroke-width="8"/>
+<path d="M1742.00 738.00L1742.00 474.00" fill="none" stroke="#3b887a" stroke-width="4" marker-end="url(#arr)"/>
+<path d="M1742.00 474.00L334.00 474.00" fill="none" stroke="#3b887a" stroke-width="4" marker-end="url(#arr)"/>
+<path d="M1544.00 738.00L532.00 738.00" fill="none" stroke="#4188a0" stroke-width="4" marker-end="url(#arr)"/>
+<text x="1016.00" y="408.00" font-size="23" text-anchor="middle" font-weight="700">二楼同层直走廊</text>
+<text x="1038.00" y="683.00" font-size="23" text-anchor="middle" font-weight="700">楼梯洞口：由右向左下楼</text>
+<text x="1038.00" y="562.00" font-size="19" text-anchor="middle" font-weight="400" style="fill:#9b6842">矮护栏仅沿洞口；两端均有收头</text>
+<text x="316.40" y="683.00" font-size="23" text-anchor="middle" font-weight="700">C</text>
+<text x="316.40" y="749.00" font-size="15" text-anchor="middle" font-weight="400">二楼端部地面</text>
+<text x="316.40" y="804.00" font-size="15" text-anchor="middle" font-weight="400">下方附近是B</text>
+<text x="1753.00" y="661.00" font-size="23" text-anchor="middle" font-weight="700">A</text>
+<text x="1753.00" y="804.00" font-size="16" text-anchor="middle" font-weight="400">二楼上平台</text>
+<text x="323.00" y="940.40" font-size="18" text-anchor="middle" font-weight="400" style="fill:#4188a0">高落地窗</text>
+<text x="972.00" y="940.40" font-size="18" text-anchor="middle" font-weight="400" style="fill:#4188a0">横向窄长采光窗</text>
+<text x="1731.00" y="940.40" font-size="18" text-anchor="middle" font-weight="400" style="fill:#4188a0">回看侧窗</text>
+<text x="1984.00" y="540.00" font-size="20" text-anchor="middle" font-weight="400" style="fill:#4188a0">大窗</text>
+<rect x="110" y="1026" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="124.00" y="1050.00" font-size="20" text-anchor="start" font-weight="700">这次纠正的是上下关系</text>
+<text x="124.00" y="1085.00" font-size="16" text-anchor="start" font-weight="400">C只是窗旁端部地面及洞口收头，不是前稿补出的宽大空场。</text>
+<text x="124.00" y="1114.00" font-size="16" text-anchor="start" font-weight="400">B在一楼；平面上与C接近或重叠，应分层画，不能与C当成同层并排。</text>
+<rect x="1130" y="1026" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1144.00" y="1050.00" font-size="20" text-anchor="start" font-weight="700">不再以任意米数迁移楼梯</text>
+<text x="1144.00" y="1085.00" font-size="16" text-anchor="start" font-weight="400">撤回F3的西移3.90m及收短4.00m方案；此图不绑定全屋坐标。</text>
+<text x="1144.00" y="1114.00" font-size="16" text-anchor="start" font-weight="400">端头木门／玻璃后额外台阶有参考差异，不能合并增加房门或梯段。</text>
+</svg>

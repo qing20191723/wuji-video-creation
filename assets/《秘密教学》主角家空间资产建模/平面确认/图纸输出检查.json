@@ -2,27 +2,27 @@
   "errors": [],
   "results": [
     {
-      "file": "03_二楼家具平面图.svg",
-      "width": 4800,
-      "height": 3140,
+      "file": "11_二楼楼梯口局部关系.svg",
+      "width": 4400,
+      "height": 3000,
       "text_outside_canvas": []
     },
     {
-      "file": "09_二楼走廊关系放大图.svg",
-      "width": 4800,
-      "height": 2840,
+      "file": "12_一楼下平台与上层投影.svg",
+      "width": 4400,
+      "height": 3000,
       "text_outside_canvas": []
     },
     {
-      "file": "10_走廊窗墙立面与楼梯位移.svg",
-      "width": 4800,
+      "file": "13_楼梯纵剖与上下层关系.svg",
+      "width": 4400,
       "height": 3000,
       "text_outside_canvas": []
     }
   ],
   "galleryResults": [
-    "03_二楼家具平面图.svg?v=ee52189c935b",
-    "09_二楼走廊关系放大图.svg?v=3698e982c745",
-    "10_走廊窗墙立面与楼梯位移.svg?v=2118b7a40c48"
+    "11_二楼楼梯口局部关系.svg?v=1375d438b59e",
+    "12_一楼下平台与上层投影.svg?v=64123b6b9477",
+    "13_楼梯纵剖与上下层关系.svg?v=0fc8d2cce8e5"
   ]
 }

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
+<rect width="2200" height="1500" fill="#faf9f5"/>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜一楼落脚位置：与二楼同向叠合</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">保持与上一张相同的局部坐标；蓝灰虚线为上方投影，不能作为一楼可走地面。</text>
+<text x="65.00" y="1456.00" font-size="16" text-anchor="start" font-weight="400">P2.4-F4 · 2026-10-21 · 局部非比例关系图 / 不能按图量尺寸 / 三维未修改</text>
+<path d="M65 1428H2135" stroke="#bec9c5"/>
+<rect x="180.00" y="595.00" width="275.00" height="275.00" fill="#e3eee8" stroke="#425861" stroke-width="2" rx="0"/>
+<rect x="455.00" y="595.00" width="1166.00" height="275.00" fill="#d9e8ef" stroke="#425861" stroke-width="2" rx="0"/>
+<path d="M523.59 859.00L523.59 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M592.18 859.00L592.18 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M660.76 859.00L660.76 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M729.35 859.00L729.35 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M797.94 859.00L797.94 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M866.53 859.00L866.53 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M935.12 859.00L935.12 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1003.71 859.00L1003.71 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1072.29 859.00L1072.29 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1140.88 859.00L1140.88 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1209.47 859.00L1209.47 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1278.06 859.00L1278.06 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1346.65 859.00L1346.65 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1415.24 859.00L1415.24 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1483.82 859.00L1483.82 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<path d="M1552.41 859.00L1552.41 606.00" fill="none" stroke="#91a9b3" stroke-width="1"/>
+<rect x="180.00" y="331.00" width="1716.00" height="264.00" fill="none" stroke="#a9b8bc" stroke-width="2" rx="0" stroke-dasharray="10 7"/>
+<rect x="1621.00" y="595.00" width="275.00" height="275.00" fill="none" stroke="#a9b8bc" stroke-width="2" rx="0" stroke-dasharray="10 7"/>
+<rect x="180.00" y="595.00" width="275.00" height="275.00" fill="none" stroke="#a78461" stroke-width="5" rx="0" stroke-dasharray="9 7"/>
+<path d="M521.00 738.00L1544.00 738.00" fill="none" stroke="#3b887a" stroke-width="4" marker-end="url(#arr)"/>
+<path d="M312.00 716.00L312.00 452.00" fill="none" stroke="#3b887a" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arr)"/>
+<text x="312.00" y="738.00" font-size="23" text-anchor="middle" font-weight="700">B</text>
+<text x="312.00" y="808.40" font-size="16" text-anchor="middle" font-weight="400">一楼下平台</text>
+<text x="1060.00" y="430.00" font-size="23" text-anchor="middle" font-weight="700">二楼走廊投影</text>
+<text x="1060.00" y="507.00" font-size="20" text-anchor="middle" font-weight="400">一楼用途与外接通路尚未定位</text>
+<text x="1753.00" y="738.00" font-size="23" text-anchor="middle" font-weight="700">A上方</text>
+<text x="1038.00" y="672.00" font-size="21" text-anchor="middle" font-weight="400">单一直跑梯段：由左向右上楼</text>
+<text x="312.00" y="936.00" font-size="17" text-anchor="middle" font-weight="400" style="fill:#9b6842">C二楼地面在上方附近</text>
+<rect x="110" y="1026" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="124.00" y="1050.00" font-size="20" text-anchor="start" font-weight="700">落脚后再接一楼</text>
+<text x="124.00" y="1085.00" font-size="16" text-anchor="start" font-weight="400">参考图可看见B及侧向空间，但不能证明它在旧玄关的哪一个坐标。</text>
+<text x="124.00" y="1114.00" font-size="16" text-anchor="start" font-weight="400">绿色虚线只表示需有侧向接续，不新画一扇门，也不宣称已接通客厅。</text>
+<rect x="1130" y="1026" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1144.00" y="1050.00" font-size="20" text-anchor="start" font-weight="700">投影与净空必须共同校核</text>
+<text x="1144.00" y="1085.00" font-size="16" text-anchor="start" font-weight="400">C下的B、第一批踏步以及梁底要在纵剖中核对净空。</text>
+<text x="1144.00" y="1114.00" font-size="16" text-anchor="start" font-weight="400">本图未指定一楼房间及家具，不用搬动客厅去补此前任意位移。</text>
+</svg>

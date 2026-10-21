@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#3b887a"/></marker></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#263c45} .small{font-size:15px} .num{font-family:Arial,sans-serif}</style>
+<rect width="2200" height="1500" fill="#faf9f5"/>
+<text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜纵剖：C在上，B在下，A在梯顶</text>
+<text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">沿梯段方向看，左为舒亚端、右为薇亚端。楼层线只表达高低，不给出实测标高。</text>
+<text x="65.00" y="1456.00" font-size="16" text-anchor="start" font-weight="400">P2.4-F4 · 2026-10-21 · 局部非比例关系图 / 不能按图量尺寸 / 三维未修改</text>
+<path d="M65 1428H2135" stroke="#bec9c5"/>
+<path d="M158.00 1010.00L1940.00 1010.00" fill="none" stroke="#425861" stroke-width="3"/>
+<text x="1973.00" y="1010.00" font-size="18" text-anchor="start" font-weight="400">一楼</text>
+<path d="M180.00 504.00L455.00 504.00" fill="none" stroke="#425861" stroke-width="9"/>
+<path d="M1621.00 504.00L1896.00 504.00" fill="none" stroke="#425861" stroke-width="9"/>
+<path d="M455.00 504.00L1621.00 504.00" fill="none" stroke="#aebec2" stroke-width="2" stroke-dasharray="9 8"/>
+<text x="1973.00" y="504.00" font-size="18" text-anchor="start" font-weight="400">二楼</text>
+<rect x="180.00" y="504.00" width="275.00" height="44.00" fill="#dde1db" stroke="#425861" stroke-width="1" rx="0"/>
+<rect x="1621.00" y="504.00" width="275.00" height="44.00" fill="#dde1db" stroke="#425861" stroke-width="1" rx="0"/>
+<path d="M455.00 1010.00L455.00 980.24" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M455.00 980.24L523.59 980.24" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M523.59 980.24L523.59 950.47" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M523.59 950.47L592.18 950.47" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M592.18 950.47L592.18 920.71" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M592.18 920.71L660.76 920.71" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M660.76 920.71L660.76 890.94" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M660.76 890.94L729.35 890.94" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M729.35 890.94L729.35 861.18" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M729.35 861.18L797.94 861.18" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M797.94 861.18L797.94 831.41" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M797.94 831.41L866.53 831.41" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M866.53 831.41L866.53 801.65" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M866.53 801.65L935.12 801.65" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M935.12 801.65L935.12 771.88" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M935.12 771.88L1003.71 771.88" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1003.71 771.88L1003.71 742.12" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1003.71 742.12L1072.29 742.12" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1072.29 742.12L1072.29 712.35" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1072.29 712.35L1140.88 712.35" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1140.88 712.35L1140.88 682.59" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1140.88 682.59L1209.47 682.59" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1209.47 682.59L1209.47 652.82" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1209.47 652.82L1278.06 652.82" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1278.06 652.82L1278.06 623.06" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1278.06 623.06L1346.65 623.06" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1346.65 623.06L1346.65 593.29" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1346.65 593.29L1415.24 593.29" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1415.24 593.29L1415.24 563.53" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1415.24 563.53L1483.82 563.53" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1483.82 563.53L1483.82 533.76" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1483.82 533.76L1552.41 533.76" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1552.41 533.76L1552.41 504.00" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1552.41 504.00L1621.00 504.00" fill="none" stroke="#425861" stroke-width="3"/>
+<path d="M1621.00 323.60L455.00 323.60" fill="none" stroke="#aa825c" stroke-width="4" stroke-dasharray="10 6"/>
+<text x="1060.00" y="284.00" font-size="18" text-anchor="middle" font-weight="400" style="fill:#9b6842">侧面矮护栏顶投影</text>
+<text x="312.00" y="449.00" font-size="23" text-anchor="middle" font-weight="700">C 二楼端部地面</text>
+<text x="312.00" y="955.00" font-size="23" text-anchor="middle" font-weight="700">B 一楼下平台</text>
+<text x="1753.00" y="449.00" font-size="23" text-anchor="middle" font-weight="700">A 二楼上平台</text>
+<path d="M455.00 966.00L455.00 548.00" fill="none" stroke="#ad7051" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="543.00" y="680.00" font-size="19" text-anchor="start" font-weight="400" style="fill:#ad7051">梁底／踏步净空待核</text>
+<path d="M312.00 603.00L312.00 889.00" fill="none" stroke="#4188a0" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<text x="1016.00" y="449.00" font-size="19" text-anchor="middle" font-weight="400" style="fill:#4188a0">洞口上方不能再铺整块二楼楼板</text>
+<text x="1148.00" y="944.00" font-size="19" text-anchor="middle" font-weight="400">踏步数量、坡度、平台尺寸仅示意</text>
+<rect x="110" y="1136" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="124.00" y="1160.00" font-size="20" text-anchor="start" font-weight="700">参考①②⑥共同可见</text>
+<text x="124.00" y="1195.00" font-size="16" text-anchor="start" font-weight="400">舒亚端的二楼地面／收头跨在下方空间上方；下楼尽头另见一楼地面。</text>
+<text x="124.00" y="1224.00" font-size="16" text-anchor="start" font-weight="400">本稿把它们拆为C与B，精确投影范围仍待尺度校准。</text>
+<rect x="1130" y="1136" width="960" height="34" fill="#e3ebe6" rx="4"/>
+<text x="1144.00" y="1160.00" font-size="20" text-anchor="start" font-weight="700">本轮分析的边界</text>
+<text x="1144.00" y="1195.00" font-size="16" text-anchor="start" font-weight="400">共识：平行的走廊与直梯、两端接续、上下平台、侧窗类型。</text>
+<text x="1144.00" y="1224.00" font-size="16" text-anchor="start" font-weight="400">差异：舒亚端木门或玻璃门、玻璃后额外台阶；不混入统一几何。</text>
+</svg>

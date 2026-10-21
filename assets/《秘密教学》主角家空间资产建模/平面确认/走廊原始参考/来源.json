@@ -1,26 +1,44 @@
 [
   {
+    "file": "别墅二楼到楼梯间参考图（俯拍图）.png",
+    "label": "① 俯拍下楼",
+    "note": "梯段与卧室走廊并排；远端二楼地面下方可见一楼平台。端头木门与其他图不同，不据此新增门。",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅二楼到楼梯间参考图（俯拍图）.png",
+    "sha256": "30e552238e32b9e576302d1e54e2b4d6c46532b59fee94ce729288e38cee1112"
+  },
+  {
+    "file": "别墅二楼到楼梯间参考图.png",
+    "label": "② 平视下楼",
+    "note": "舒亚端高窗旁是二楼端部地面；梯段落到其下方附近。玻璃后台阶仅此图出现，不增加第二部楼梯。",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅二楼到楼梯间参考图.png",
+    "sha256": "4cde228e0ce9b826c4190279bcfe018a2086d75978010527603088cd16aaf991"
+  },
+  {
     "file": "别墅二楼走廊.png",
+    "label": "③ 回看上楼端",
+    "note": "卧室在左，护栏与楼梯在右；前方大窗。护栏在窗前结束，上平台需侧向连通走廊。",
     "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅二楼走廊.png",
-    "sha256": "2a89b14a90ab0e8e790bf070194e13e5aeaf426626bcff1df7efb7951dae9bbe",
-    "use": "最新用户指定回看：上平台端大窗，无辅助房门"
-  },
-  {
-    "file": "二楼走廊夜景后视图.jpg",
-    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\二楼走廊夜景后视图.jpg",
-    "sha256": "509bb69c2e1b62cdafff8d6a7c46462332c41f15442ef74d7e2fce1e1da055d9",
-    "use": "夜间回看交叉印证"
-  },
-  {
-    "file": "二楼走廊夜景正视图.jpg",
-    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\二楼走廊夜景正视图.jpg",
-    "sha256": "8a31b119d11236b4299d711f2417d28396f28af8ca68e978edba63032aecb906",
-    "use": "反向：三卧室门序、楼梯和舒亚端玻璃门"
+    "sha256": "2a89b14a90ab0e8e790bf070194e13e5aeaf426626bcff1df7efb7951dae9bbe"
   },
   {
     "file": "别墅楼梯间参考.png",
+    "label": "④ 从楼下向上",
+    "note": "直跑上升到大窗前；顶部侧转接二楼走廊。窗口不能被房间或新增木门挡住。",
     "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅楼梯间参考.png",
-    "sha256": "c9e4d1f963a980de6540560ac9c208aff71a34a3464ad3273ab665379ecb86a5",
-    "use": "由下向上：梯顶大窗、平台连接"
+    "sha256": "c9e4d1f963a980de6540560ac9c208aff71a34a3464ad3273ab665379ecb86a5"
+  },
+  {
+    "file": "楼梯间参考（黄瓜短剧版）.jpg",
+    "label": "⑤ 夜间上楼",
+    "note": "与④对应同一梯段和顶部大窗，不据此另设楼梯。",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\楼梯间参考（黄瓜短剧版）.jpg",
+    "sha256": "a4033704797d21fdb859cc4ac303aced79a204732280ee947e83c0df33a92ab4"
+  },
+  {
+    "file": "图片.png",
+    "label": "⑥ 舒亚端近景",
+    "note": "高落地窗、短端部地面、楼梯洞口收头与玻璃门相邻。横向窄窗是同一侧外墙另一处采光。",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\图片.png",
+    "sha256": "ecf976ba12fadfdf785a1d892bc365e4c3d6cf98a37aef73e69c6e1784e476b3"
   }
 ]
