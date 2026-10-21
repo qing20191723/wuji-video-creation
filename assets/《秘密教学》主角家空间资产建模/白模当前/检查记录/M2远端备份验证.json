@@ -1,0 +1,18 @@
+{
+  "commit": "4426dcd5c5083d99c437491243a1ca0fa8c989c1",
+  "passed": true,
+  "method": "independent LFS storage fetch from private remote",
+  "models": [
+    {
+      "file": "秘密教学_P2.4-M2.blend",
+      "sha256": "947fdd63a1682f1b4b04c4bb30c15f428f110b79b6ddd1403f850a0d87c85203",
+      "remote_download_match": true
+    },
+    {
+      "file": "秘密教学_P2.4-M2.glb",
+      "sha256": "59926189e64ca9f71ba91231826eb41783c9dfe42772d9e53f534a890c013238",
+      "remote_download_match": true
+    }
+  ],
+  "render_policy": "render PNG files local; checksums in repository"
+}
