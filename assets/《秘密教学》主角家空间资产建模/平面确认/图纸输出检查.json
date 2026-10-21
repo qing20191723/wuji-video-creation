@@ -2,62 +2,20 @@
   "errors": [],
   "results": [
     {
-      "file": "01_全地块总平面图.svg",
-      "width": 3600,
-      "height": 2560,
-      "text_outside_canvas": []
-    },
-    {
-      "file": "02_一楼家具平面图.svg",
-      "width": 3600,
-      "height": 2560,
-      "text_outside_canvas": []
-    },
-    {
       "file": "03_二楼家具平面图.svg",
-      "width": 3600,
-      "height": 2560,
+      "width": 4800,
+      "height": 3140,
       "text_outside_canvas": []
     },
     {
-      "file": "04_主卧家具放大图.svg",
-      "width": 3600,
-      "height": 2300,
-      "text_outside_canvas": []
-    },
-    {
-      "file": "05_大姐卧室家具放大图.svg",
-      "width": 3600,
-      "height": 2300,
-      "text_outside_canvas": []
-    },
-    {
-      "file": "06_子豪卧室家具放大图.svg",
-      "width": 3600,
-      "height": 2300,
-      "text_outside_canvas": []
-    },
-    {
-      "file": "07_二姐卧室家具放大图.svg",
-      "width": 3600,
-      "height": 2300,
-      "text_outside_canvas": []
-    },
-    {
-      "file": "08_修改说明与确认要点.svg",
-      "width": 3600,
-      "height": 2400,
+      "file": "09_二楼走廊关系放大图.svg",
+      "width": 4800,
+      "height": 2840,
       "text_outside_canvas": []
     }
   ],
   "galleryResults": [
-    "01_全地块总平面图.svg?v=2f426b57de6aa527",
-    "02_一楼家具平面图.svg?v=6367813155269fe0",
-    "03_二楼家具平面图.svg?v=85905c329f2c634b",
-    "04_主卧家具放大图.svg?v=466e14644c2f257f",
-    "05_大姐卧室家具放大图.svg?v=f5283d123ad42b96",
-    "06_子豪卧室家具放大图.svg?v=ee277174513aadc1",
-    "07_二姐卧室家具放大图.svg?v=a6e057ea3044cabb",
-    "08_修改说明与确认要点.svg?v=f939baf22b12c2b6"
+    "03_二楼家具平面图.svg?v=018a13065585",
+    "09_二楼走廊关系放大图.svg?v=b41909644e04"
   ]
 }

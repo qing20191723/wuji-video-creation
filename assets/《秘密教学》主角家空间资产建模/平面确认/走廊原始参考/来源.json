@@ -1,0 +1,26 @@
+[
+  {
+    "file": "别墅二楼走廊.png",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅二楼走廊.png",
+    "sha256": "2a89b14a90ab0e8e790bf070194e13e5aeaf426626bcff1df7efb7951dae9bbe",
+    "use": "最新用户指定回看：上平台端大窗，无辅助房门"
+  },
+  {
+    "file": "二楼走廊夜景后视图.jpg",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\二楼走廊夜景后视图.jpg",
+    "sha256": "509bb69c2e1b62cdafff8d6a7c46462332c41f15442ef74d7e2fce1e1da055d9",
+    "use": "夜间回看交叉印证"
+  },
+  {
+    "file": "二楼走廊夜景正视图.jpg",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\二楼走廊夜景正视图.jpg",
+    "sha256": "8a31b119d11236b4299d711f2417d28396f28af8ca68e978edba63032aecb906",
+    "use": "反向：三卧室门序、楼梯和舒亚端玻璃门"
+  },
+  {
+    "file": "别墅楼梯间参考.png",
+    "source": "local-assets/global\\场景资产\\别墅楼道和楼梯间参考\\别墅楼梯间参考.png",
+    "sha256": "c9e4d1f963a980de6540560ac9c208aff71a34a3464ad3273ab665379ecb86a5",
+    "use": "由下向上：梯顶大窗、平台连接"
+  }
+]

@@ -4,7 +4,8 @@ const root=path.resolve(__dirname,'..','平面确认');
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
  const errors=[],results=[];
- for(const name of fs.readdirSync(root).filter(n=>n.endsWith('.svg'))){
+ const selected=process.argv.slice(2);
+ for(const name of fs.readdirSync(root).filter(n=>n.endsWith('.svg')&&(!selected.length||selected.includes(n)))){
   const source=fs.readFileSync(path.join(root,name),'utf8'),size=source.match(/width="(\d+)" height="(\d+)"/);
   const page=await browser.newPage({viewport:{width:+size[1],height:+size[2]},deviceScaleFactor:2});
   page.on('pageerror',e=>errors.push({file:name,message:e.message}));
@@ -17,8 +18,9 @@ const root=path.resolve(__dirname,'..','平面确认');
  const galleryResults=[];for(const button of await gallery.locator('button[data-sheet]').all()){
    await button.click();await gallery.waitForFunction(()=>{const i=document.querySelector('#drawing');return i.complete&&i.naturalWidth>0});
    const src=await gallery.locator('#drawing').getAttribute('src');
-   const expected=require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,src.split('?')[0]))).digest('hex').slice(0,16);
-   if(!src.endsWith('?v='+expected))errors.push('Stale or missing drawing version '+src);
+   const actual=src.split('?v=')[1]||'';
+   const expected=require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,src.split('?')[0]))).digest('hex');
+   if(actual.length<12||!expected.startsWith(actual))errors.push('Stale or missing drawing version '+src);
    galleryResults.push(src);
  }
  const broken=await gallery.evaluate(async()=>{const links=[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'));return links;});

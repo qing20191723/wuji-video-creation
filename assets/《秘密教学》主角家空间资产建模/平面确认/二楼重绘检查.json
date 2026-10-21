@@ -1,0 +1,16 @@
+{
+  "revision": "P2.4-F2_20261021",
+  "checks": {
+    "bedroom_furniture_unchanged": true,
+    "bedroom_doors_unchanged": true,
+    "auxiliary_doors_removed": true,
+    "end_is_window": true,
+    "秘密教学_P2.3-M1.blend_unchanged": true,
+    "秘密教学_P2.3-M1.glb_unchanged": true
+  },
+  "limitations": [
+    "辅助空间未落位",
+    "栏外楼板未闭合",
+    "非已批准建模方案"
+  ]
+}
