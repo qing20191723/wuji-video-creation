@@ -17,3 +17,5 @@ vendor/* -whitespace
 
 平面确认/走廊原始参考/*.png filter=lfs diff=lfs merge=lfs -text
 平面确认/走廊原始参考/*.jpg filter=lfs diff=lfs merge=lfs -text
+
+白模当前/空间/**/原始参考/*.png filter=lfs diff=lfs merge=lfs -text

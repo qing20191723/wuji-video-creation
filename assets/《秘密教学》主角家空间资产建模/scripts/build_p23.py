@@ -1,11 +1,12 @@
-"""P2.3-M1 only. Run with Blender -b --python this_file -- [--render].
-Footprints/openings read exclusively from approved plan; derived heights provisional.
+"""Current build: Blender -b --python this_file -- --f4 [--render].
+F4 uses the authorized M2 metric realization; all dimensions remain provisional.
+Legacy mode is retained only for historical reproducibility, never current delivery.
 """
 import bpy, json, math, sys, hashlib
 from pathlib import Path
 from mathutils import Vector
 R=Path(__file__).resolve().parents[1]
-P=R/'平面确认/平面方案数据.json'
+P=R/('白模当前/模型/建模方案.json' if '--f4' in sys.argv else '平面确认/平面方案数据.json')
 D=json.loads(P.read_text(encoding='utf8'))
 OUT=R/'白模当前'; OUT.mkdir(exist_ok=True)
 for sub in ['模型','检查记录','空间']: (OUT/sub).mkdir(exist_ok=True)
@@ -28,6 +29,9 @@ def material(name,value):
   MAT[name]=m
  return MAT[name]
 for n,v in [('wall',.82),('floor',.56),('frame',.22),('furniture',.68),('fabric',.47),('detail',.32),('garden',.38),('glass',.7)]:material(n,v)
+MAT['glass'].diffuse_color=(.7,.7,.7,.08)
+MAT['glass'].node_tree.nodes['Principled BSDF'].inputs['Alpha'].default_value=.08
+MAT['glass'].surface_render_method='DITHERED'
 def register(o,id,level,category,source='',mat='wall'):
  o.name=id;o.data.materials.append(MAT[mat]);key=f'F{level}_{category}'
  if key not in COL:COL[key]=bpy.data.collections.new(key);s.collection.children.link(COL[key])
@@ -53,7 +57,7 @@ def slab(id,b,z,l,cat='slab'):return box(id,[b[0],b[1],z-.22,b[2],b[3],z],l,cat,
 slab('F1_floor',[0,0,22,10.4],0,1)
 for r in D['rooms']:
  if r['id']=='WT':slab('west_public_terrace',r['box'],3.3,2)
-# R2: the extended void and roof are shared with the floor-plan source.
+# Floor openings and roof use the selected source, never patched display geometry.
 for i,b in enumerate(D['architecture']['floor2_rects']):slab('F2_slab_'+str(i),b,3.3,2)
 roofrects=D['architecture']['roof_rects']
 for i,b in enumerate(roofrects):slab('roof_'+str(i),b,6.6,2,'roof')
@@ -74,10 +78,11 @@ for w in D['walls']:
   for tag,u,uu,k,kk in [('left',a,a+.045,sill,head),('right',b-.045,b,sill,head),('head',a,b,head-.045,head)]+([] if op['type']=='door' else [('sill',a,b,sill,sill+.045)]):part(oid+'_'+tag,u,uu,k,kk,'frame','frame',t+.01)
   if op['type']=='door':
    leaf=part(oid+'_leaf',a+.045,b-.045,.02,head-.045,'furniture','door',.021)
-   pivot=[a+.045,v,z];angle=(1 if h else -1)*op.get('side',1)*math.pi/2
+   pivot=[a+.045,v,z] if h else [v,a+.045,z];angle=(1 if h else -1)*op.get('side',1)*math.pi/2
    leaf['motion_pivot']=pivot;leaf['motion_angle']=angle
    MOT.append(dict(id=leaf.name,pivot=pivot,angle=angle))
-   part(oid+'_handle',b-.22,b-.08,.96,1,'detail','door',.065)
+   handle=part(oid+'_handle',b-.22,b-.08,.96,1,'detail','door',.065)
+   MOT.append(dict(id=handle.name,pivot=pivot,angle=angle))
   else:
    # Boundary markers and center mullion; non-reflective clear inspection glazing.
    if op.get('panes',2)>1:part(oid+'_mullion',(a+b)/2-.025,(a+b)/2+.025,sill,head,'frame','frame',.03)
@@ -85,11 +90,12 @@ for w in D['walls']:
    pane.hide_render=True;pane['inspection_clear_glass']=True
   lo=b
  if height<2:part('cap',w['a'][0] if h else w['a'][1],end,height,height+.06,'frame','guard',t+.025)
-# Stair steps: 19 treads, last rise to A at 3.3m; descending east to west.
-for i in range(19):
- x=11.4+i*.28;top=(i+1)*.165
- box(f'STAIR_{i+1:02}',[x,1.1,0,x+.28,2.4,top],1,'stairs','stairs','floor')
-bar('stair_handrail',[11.4,1.15,1.065],[16.72,1.15,4.2],.035,1,'stairs')
+# Stair steps are parameterized; final rise joins A at 3.3m.
+st=D['stairs'];sx,sy,ex,ey=st['footprint']
+for i in range(st['treads']):
+ x=sx+i*st['tread'];top=(i+1)*st['rise']
+ box(f'STAIR_{i+1:02}',[x,sy,0,x+st['tread'],ey,top],1,'stairs','stairs','floor')
+bar('stair_handrail',[sx,sy+.05,st['rise']+.9],[ex,sy+.05,3.3+.9],.035,1,'stairs')
 # Balcony perimeter rails, no rail across an indoor entry.
 for i,(a,b) in enumerate([((0,-1.4),(22,-1.4)),((0,-1.4),(0,1)),((22,-1.4),(22,10.4)),((18.8,10.4),(22,10.4)),((18.8,4.4),(22,4.4)),((18.8,9.6),(18.8,10.4))]):
  length=math.dist(a,b)
@@ -98,7 +104,7 @@ for i,(a,b) in enumerate([((0,-1.4),(22,-1.4)),((0,-1.4),(0,1)),((22,-1.4),(22,1
   cyl(f'rail_{i}_{j}',[x,y,3.85],.025,1.1,2,'guard',mat='frame')
  bar(f'rail_top_{i}',[*a,4.4],[*b,4.4],.035,2)
 # Named furniture; dimensions are exact plan footprints. Heights are provisional.
-for i,(a,b) in enumerate([((-1.5,1.3),(-1.5,4.5)),((-1.5,1.3),(0,1.3)),((-1.5,4.5),(0,4.5))]):
+for i,(a,b) in enumerate([] if '--f4' in sys.argv else [((-1.5,1.3),(-1.5,4.5)),((-1.5,1.3),(0,1.3)),((-1.5,4.5),(0,4.5))]):
  length=math.dist(a,b)
  for j in range(math.ceil(length/.8)+1):
   u=j/math.ceil(length/.8);x=a[0]+(b[0]-a[0])*u;y=a[1]+(b[1]-a[1])*u
@@ -185,6 +191,7 @@ def camera(id,rid,pos,target,lens=28,kind='真实机位'):
  CAM.append(dict(id=id,room=rid,pos=pos,target=target,lens=lens,kind=kind));return o
 # Camera seeds are provisional until collision/visibility audit.
 for r in D['rooms']:
+ if r['id'] in ['A','B','C','H2','WT','FB','AB'] and '--f4' in sys.argv:continue
  if r['id'] in ['A','FB','AB']:continue
  x,y,X,Y=r['box'];cx=(x+X)/2;cy=(y+Y)/2;z=(r['level']-1)*3.3
  seeds=[(x+.35,y+.35),(X-.35,Y-.35),(x+.35,Y-.35),(X-.35,y+.35)]
@@ -199,32 +206,39 @@ for r in D['rooms']:
   camera(r['id']+f'_{i+1:02}',r['id'],[*p,z+(2.65 if i>=4 else 1.6)],[cx,cy,z+.95],28)
  camera(r['id']+'_TOP',r['id'],[cx,cy,z+12],[cx,cy,z],kind='顶视检查')
  bpy.context.object.data.type='ORTHO';bpy.context.object.data.ortho_scale=max(X-x,(Y-y)*16/9)+.6
-camera('EXT_01','外部',[31,-30,20],[11,2,2.5],35)
-camera('STAIR_UP','楼梯',[10.5,1.75,1.6],[17.3,1.75,4.4],24)
-camera('STAIR_DOWN','楼梯',[17.5,1.75,4.9],[10.5,1.75,1],24)
-camera('H2_END_W','H2',[17.6,3.4,4.9],[.1,3.4,4.5],28)
-camera('H2_END_E','H2',[.65,3.4,4.9],[18.1,3.4,4.5],28)
-camera('H2_MID_W','H2',[8.9,3.1,4.9],[.1,3.4,4.6],28)
-camera('H2_REFERENCE','H2',[17.9,2.1,4.9],[3,3.3,2.5],24)
-camera('H2_VOID_CHECK','H2',[16.7,3.8,5.65],[5.5,1.8,3.4],28)
-camera('H2_PLAN','H2',[10.5,4.5,22],[10.5,4.5,0],kind='顶视检查')
-bpy.context.object.data.type='ORTHO';bpy.context.object.data.ortho_scale=25
-camera('WT_ENTRY','WT',[-1.15,3.4,4.9],[3,3.4,4.6],24)
+if '--f4' in sys.argv:
+ for c in D['cameras_override']:
+  ob=camera(c['id'],c['room'],c['pos'],c['target'],c['lens'],c['kind'])
+  if c['kind']=='顶视检查':ob.data.type='ORTHO';ob.data.ortho_scale=19.4
+else:
+ camera('EXT_01','外部',[31,-30,20],[11,2,2.5],35)
+ camera('STAIR_UP','楼梯',[10.5,1.75,1.6],[17.3,1.75,4.4],24)
+ camera('STAIR_DOWN','楼梯',[17.5,1.75,4.9],[10.5,1.75,1],24)
+ camera('H2_END_W','H2',[17.6,3.4,4.9],[.1,3.4,4.5],28)
+ camera('H2_END_E','H2',[.65,3.4,4.9],[18.1,3.4,4.5],28)
+ camera('H2_MID_W','H2',[8.9,3.1,4.9],[.1,3.4,4.6],28)
+ camera('H2_REFERENCE','H2',[17.9,2.1,4.9],[3,3.3,2.5],24)
+ camera('H2_VOID_CHECK','H2',[16.7,3.8,5.65],[5.5,1.8,3.4],28)
+ camera('H2_PLAN','H2',[10.5,4.5,22],[10.5,4.5,0],kind='顶视检查')
+ bpy.context.object.data.type='ORTHO';bpy.context.object.data.ortho_scale=25
+ camera('WT_ENTRY','WT',[-1.15,3.4,4.9],[3,3.4,4.6],24)
 for r in D['rooms']:
  if r['id'] in ['A','FB','AB']:continue
  x,y,X,Y=r['box'];z=(r['level']-1)*3.3
  bpy.ops.object.light_add(type='AREA',location=((x+X)/2,(y+Y)/2,z+2.98));o=bpy.context.object;o.data.energy=55*math.sqrt((X-x)*(Y-y));o.data.shape='DISK';o.data.size=min(3,X-x,Y-y)
 for pos in [[10,-12,18],[-12,5,15],[29,8,15]]:
  bpy.ops.object.light_add(type='AREA',location=pos);o=bpy.context.object;o.data.energy=2500;o.data.size=10;o.rotation_euler=(Vector((11,4,2))-o.location).to_track_quat('-Z','Y').to_euler()
-s['model_revision']='P2.3-M1-R2';s['status']='走廊局部校核稿；全屋机位与覆盖待核验';s['source_sha256']=hashlib.sha256(P.read_bytes()).hexdigest()
+revision='P2.4-M2' if '--f4' in sys.argv else 'P2.3-M1-R2'
+s['model_revision']=revision;s['status']='F4关系重建；尺寸暂定；全屋覆盖待核验';s['source_sha256']=hashlib.sha256(P.read_bytes()).hexdigest()
 bpy.context.preferences.filepaths.save_version=0;s.camera=bpy.data.objects['EXT_01']
-data=dict(revision='P2.3-M1-R2',change='走廊挑空与辅助空间重排',status='局部校核稿，未通过全屋验收',source_sha256=s['source_sha256'],plan=D,objects=GEO,cameras=CAM,motions=MOT)
+data=dict(revision=revision,change='依据已确认F4重建楼梯间及调整二楼比例',status=s['status'],source_sha256=s['source_sha256'],plan=D,objects=GEO,cameras=CAM,motions=MOT)
 (OUT/'模型/空间数据.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
 txt=bpy.data.texts.new('空间数据.json');txt.write(json.dumps(data,ensure_ascii=False))
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'模型/秘密教学_P2.3-M1.blend'))
-bpy.ops.export_scene.gltf(filepath=str(OUT/'模型/秘密教学_P2.3-M1.glb'),export_format='GLB',export_cameras=True,export_extras=True)
+stem='秘密教学_P2.4-M2' if '--f4' in sys.argv else '秘密教学_P2.3-M1'
+bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'模型'/(stem+'.blend')))
+bpy.ops.export_scene.gltf(filepath=str(OUT/'模型'/(stem+'.glb')),export_format='GLB',export_cameras=True,export_extras=True)
 if '--render' in sys.argv:
- selected=(sys.argv[sys.argv.index('--cameras')+1].split(',') if '--cameras' in sys.argv else [c['id'] for c in CAM] if '--all' in sys.argv else ['EXT_01','B1_01','B3_02','K_02','STAIR_UP','STAIR_DOWN'])
+ selected=(sys.argv[sys.argv.index('--cameras')+1].split(',') if '--cameras' in sys.argv else [c['id'] for c in CAM] if '--all' in sys.argv else ['F4_DOWN','F4_REVERSE','F4_UP','F4_PLAN','EXT_01'] if '--f4' in sys.argv else ['EXT_01','B1_01','B3_02','K_02','STAIR_UP','STAIR_DOWN'])
  for cid in selected:
   c=next(c for c in CAM if c['id']==cid);p=OUT/'空间'/c['room']/'白模视角';p.mkdir(parents=True,exist_ok=True)
   hidden=[]

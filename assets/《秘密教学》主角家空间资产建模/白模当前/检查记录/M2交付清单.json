@@ -1,0 +1,253 @@
+{
+  "revision": "P2.4-M2",
+  "images": [
+    {
+      "id": "F4_DOWN",
+      "title": "A上平台看舒亚端：楼梯与三道卧室门",
+      "kind": "真实机位",
+      "file": "空间/H2/白模视角/F4_DOWN.png",
+      "annotated": "空间/H2/方位检查/F4_DOWN_标注.png",
+      "sha256": "839c8e114e69eb1e26190f05e5fea1ad2da986bd1a60e45f4b01b0d6f43abe74"
+    },
+    {
+      "id": "F4_REVERSE",
+      "title": "舒亚端回看A平台：尽头为大窗",
+      "kind": "真实机位",
+      "file": "空间/H2/白模视角/F4_REVERSE.png",
+      "annotated": "空间/H2/方位检查/F4_REVERSE_标注.png",
+      "sha256": "ed9bedd2f0a12cb95c58798c3383ee0d195feaca0419e07ab4ba83c18ee7a985"
+    },
+    {
+      "id": "F4_C",
+      "title": "C二楼端部地面、高窗与洞口收头",
+      "kind": "真实机位",
+      "file": "空间/H2/白模视角/F4_C.png",
+      "annotated": "空间/H2/方位检查/F4_C_标注.png",
+      "sha256": "a05517452bc80080651aae3e2de90c5eb9a2c71c2d4514ae93f31d10b3f6dea3"
+    },
+    {
+      "id": "F4_UP",
+      "title": "梯段向上：A平台与大窗",
+      "kind": "真实机位",
+      "file": "空间/B/白模视角/F4_UP.png",
+      "annotated": "空间/B/方位检查/F4_UP_标注.png",
+      "sha256": "2792203865cd1b8fe9cb1af8773487cb4298a97c704515b1810076a0514a2885"
+    },
+    {
+      "id": "F4_STAIR_DOWN",
+      "title": "A平台下看：直梯到B下平台",
+      "kind": "真实机位",
+      "file": "空间/A/白模视角/F4_STAIR_DOWN.png",
+      "annotated": "空间/A/方位检查/F4_STAIR_DOWN_标注.png",
+      "sha256": "d2a47648f9369456b372d2697f2d328e6000d905733245b17e7c9da31dde9161"
+    },
+    {
+      "id": "F4_B_CONNECT",
+      "title": "B下平台侧转接一楼客厅",
+      "kind": "真实机位",
+      "file": "空间/B/白模视角/F4_B_CONNECT.png",
+      "annotated": "空间/B/方位检查/F4_B_CONNECT_标注.png",
+      "sha256": "d4daaee9f087822945ee6dded98ea63f2b764fa07420f1b2e843f61304959259"
+    },
+    {
+      "id": "F4_PLAN",
+      "title": "二楼顶视检查：隐藏屋顶，墙体未截矮",
+      "kind": "顶视检查",
+      "file": "空间/H2/方位检查/F4_PLAN.png",
+      "annotated": "空间/H2/方位检查/F4_PLAN_标注.png",
+      "sha256": "78016d84584a81e8c42198e737dc449613dbeb79034c75bbec8205999f78e6c8"
+    },
+    {
+      "id": "B1_01",
+      "title": "薇亚卧室：大床与房间比例",
+      "kind": "真实机位",
+      "file": "空间/B1/白模视角/B1_01.png",
+      "annotated": "空间/B1/方位检查/B1_01_标注.png",
+      "sha256": "3f83fad3471a57a363e1c68ead5326ab164ffb9c8c81fa0019554b33dd49aca0"
+    },
+    {
+      "id": "B1_TOP",
+      "title": "薇亚卧室家具顶视检查",
+      "kind": "顶视检查",
+      "file": "空间/B1/方位检查/B1_TOP.png",
+      "annotated": "空间/B1/方位检查/B1_TOP_标注.png",
+      "sha256": "f6853b17545d3ff0cc479cff392848b05ad41f818818b07a6850f0fdffdf6f13"
+    },
+    {
+      "id": "B2_TOP",
+      "title": "子豪卧室家具顶视检查",
+      "kind": "顶视检查",
+      "file": "空间/B2/方位检查/B2_TOP.png",
+      "annotated": "空间/B2/方位检查/B2_TOP_标注.png",
+      "sha256": "fdc58cf4623326416b990174a9b626065b64232a39bf065808ecf49769b5f66d"
+    },
+    {
+      "id": "B3_TOP",
+      "title": "舒亚卧室家具顶视检查",
+      "kind": "顶视检查",
+      "file": "空间/B3/方位检查/B3_TOP.png",
+      "annotated": "空间/B3/方位检查/B3_TOP_标注.png",
+      "sha256": "90c1381c5cb1a9d8c73fa2996ea7314c21a83b1280e2cd7ec1eb7c1619a6cb34"
+    },
+    {
+      "id": "EXT_01",
+      "title": "全屋外部：二楼体量已按授权调整",
+      "kind": "真实机位",
+      "file": "空间/外部/白模视角/EXT_01.png",
+      "annotated": "空间/外部/方位检查/EXT_01_标注.png",
+      "sha256": "10293bbe41f181b2c604b2e04509d6c06869e73e9c924d49aebbc841aaadc987"
+    }
+  ],
+  "files": [
+    {
+      "path": "模型/秘密教学_P2.4-M2.blend",
+      "bytes": 7581596,
+      "sha256": "947fdd63a1682f1b4b04c4bb30c15f428f110b79b6ddd1403f850a0d87c85203"
+    },
+    {
+      "path": "模型/秘密教学_P2.4-M2.glb",
+      "bytes": 2089992,
+      "sha256": "59926189e64ca9f71ba91231826eb41783c9dfe42772d9e53f534a890c013238"
+    },
+    {
+      "path": "模型/建模方案.json",
+      "bytes": 68826,
+      "sha256": "a2cc1e00084669f615728d6b0183eee59729941c779309b073703a0f1e7ded5d"
+    },
+    {
+      "path": "模型/空间数据.json",
+      "bytes": 2892224,
+      "sha256": "f46b344492ca4bfecbfe0e74bc9356be2cffa698d60b591843f4b932a2d0b271"
+    },
+    {
+      "path": "空间/H2/白模视角/F4_DOWN.png",
+      "bytes": 1962882,
+      "sha256": "839c8e114e69eb1e26190f05e5fea1ad2da986bd1a60e45f4b01b0d6f43abe74"
+    },
+    {
+      "path": "空间/H2/方位检查/F4_DOWN_标注.png",
+      "bytes": 1359877,
+      "sha256": "69ee3382a0e92d416413f8180e8dbd818ed74ba674f48dbfaef12bc6cc13d46b"
+    },
+    {
+      "path": "空间/H2/白模视角/F4_REVERSE.png",
+      "bytes": 1916018,
+      "sha256": "ed9bedd2f0a12cb95c58798c3383ee0d195feaca0419e07ab4ba83c18ee7a985"
+    },
+    {
+      "path": "空间/H2/方位检查/F4_REVERSE_标注.png",
+      "bytes": 1317126,
+      "sha256": "85cb13974b17e169d97969293c7bbc1d924e8a58269da291f6b595c1c19e7065"
+    },
+    {
+      "path": "空间/H2/白模视角/F4_C.png",
+      "bytes": 1860828,
+      "sha256": "a05517452bc80080651aae3e2de90c5eb9a2c71c2d4514ae93f31d10b3f6dea3"
+    },
+    {
+      "path": "空间/H2/方位检查/F4_C_标注.png",
+      "bytes": 1268734,
+      "sha256": "5f4d0f149272f5aef765928bec918e42bc67ab0c4c2adcb8daa17b31aa202ad9"
+    },
+    {
+      "path": "空间/B/白模视角/F4_UP.png",
+      "bytes": 2001729,
+      "sha256": "2792203865cd1b8fe9cb1af8773487cb4298a97c704515b1810076a0514a2885"
+    },
+    {
+      "path": "空间/B/方位检查/F4_UP_标注.png",
+      "bytes": 1396268,
+      "sha256": "c1446a19d8a7bca0e4c2155db5637bce260ce739fe8385aa9e3c263422d45138"
+    },
+    {
+      "path": "空间/A/白模视角/F4_STAIR_DOWN.png",
+      "bytes": 1993865,
+      "sha256": "d2a47648f9369456b372d2697f2d328e6000d905733245b17e7c9da31dde9161"
+    },
+    {
+      "path": "空间/A/方位检查/F4_STAIR_DOWN_标注.png",
+      "bytes": 1385920,
+      "sha256": "295e651b80f201205334148ef448f1062266de2032b29907f15991fefdf92912"
+    },
+    {
+      "path": "空间/B/白模视角/F4_B_CONNECT.png",
+      "bytes": 1855999,
+      "sha256": "d4daaee9f087822945ee6dded98ea63f2b764fa07420f1b2e843f61304959259"
+    },
+    {
+      "path": "空间/B/方位检查/F4_B_CONNECT_标注.png",
+      "bytes": 1246197,
+      "sha256": "a736cfd298baf86a8e4e45c13edf0688ba7c24822792edc3d94bf7473d9dc066"
+    },
+    {
+      "path": "空间/H2/方位检查/F4_PLAN.png",
+      "bytes": 1819992,
+      "sha256": "78016d84584a81e8c42198e737dc449613dbeb79034c75bbec8205999f78e6c8"
+    },
+    {
+      "path": "空间/H2/方位检查/F4_PLAN_标注.png",
+      "bytes": 1236795,
+      "sha256": "0ca0c756e359b9df3dbc01aed59a9b7aea73651e68fbc4ed6d97c9983ffb1e86"
+    },
+    {
+      "path": "空间/B1/白模视角/B1_01.png",
+      "bytes": 1991373,
+      "sha256": "3f83fad3471a57a363e1c68ead5326ab164ffb9c8c81fa0019554b33dd49aca0"
+    },
+    {
+      "path": "空间/B1/方位检查/B1_01_标注.png",
+      "bytes": 1376468,
+      "sha256": "921e6b636e522424d84272e29f8f4d0b1baabbc9e8e6224427c72cddfa99da73"
+    },
+    {
+      "path": "空间/B1/方位检查/B1_TOP.png",
+      "bytes": 1785914,
+      "sha256": "f6853b17545d3ff0cc479cff392848b05ad41f818818b07a6850f0fdffdf6f13"
+    },
+    {
+      "path": "空间/B1/方位检查/B1_TOP_标注.png",
+      "bytes": 1213269,
+      "sha256": "9f4d7ab70da869391c6f75e3e924d45b24fda0f06b02adef766c722e30613a79"
+    },
+    {
+      "path": "空间/B2/方位检查/B2_TOP.png",
+      "bytes": 1841483,
+      "sha256": "fdc58cf4623326416b990174a9b626065b64232a39bf065808ecf49769b5f66d"
+    },
+    {
+      "path": "空间/B2/方位检查/B2_TOP_标注.png",
+      "bytes": 1249472,
+      "sha256": "c48246bff63d86f03f2ff0ae235eb2a19c169f636414e49f24fbdb1d1ad20dc6"
+    },
+    {
+      "path": "空间/B3/方位检查/B3_TOP.png",
+      "bytes": 1812964,
+      "sha256": "90c1381c5cb1a9d8c73fa2996ea7314c21a83b1280e2cd7ec1eb7c1619a6cb34"
+    },
+    {
+      "path": "空间/B3/方位检查/B3_TOP_标注.png",
+      "bytes": 1227829,
+      "sha256": "a21c2c1efd472a7b54627106ef9a8b06afc1cde8793896bf2577320e6944d593"
+    },
+    {
+      "path": "空间/外部/白模视角/EXT_01.png",
+      "bytes": 1997361,
+      "sha256": "10293bbe41f181b2c604b2e04509d6c06869e73e9c924d49aebbc841aaadc987"
+    },
+    {
+      "path": "空间/外部/方位检查/EXT_01_标注.png",
+      "bytes": 1377352,
+      "sha256": "c8a9403e3fea4a951558efcf0e56a8e369b7a26e97f0719c4bddcd350f15a4c4"
+    },
+    {
+      "path": "方位检查/M2_一楼建模平面.svg",
+      "bytes": 34120,
+      "sha256": "c3032fbdfacc5cf50572ffc1c9edbdea4f9a6c8e2303c1c963936e580c9aed7f"
+    },
+    {
+      "path": "方位检查/M2_二楼建模平面.svg",
+      "bytes": 27163,
+      "sha256": "96f9154ade70973c7a54d440fb6438bd0b69d014507b93276611942bb93d0b46"
+    }
+  ]
+}
