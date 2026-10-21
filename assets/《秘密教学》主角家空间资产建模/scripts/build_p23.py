@@ -205,11 +205,13 @@ for r in D['rooms']:
   p=seeds[i%4];p=min(candidates,key=lambda v:math.dist(p,v)) if candidates else p
   camera(r['id']+f'_{i+1:02}',r['id'],[*p,z+(2.65 if i>=4 else 1.6)],[cx,cy,z+.95],28)
  camera(r['id']+'_TOP',r['id'],[cx,cy,z+12],[cx,cy,z],kind='顶视检查')
+ CAM[-1]['ortho_scale']=max(X-x,(Y-y)*16/9)+.6
  bpy.context.object.data.type='ORTHO';bpy.context.object.data.ortho_scale=max(X-x,(Y-y)*16/9)+.6
 if '--f4' in sys.argv:
  for c in D['cameras_override']:
   ob=camera(c['id'],c['room'],c['pos'],c['target'],c['lens'],c['kind'])
-  if c['kind']=='顶视检查':ob.data.type='ORTHO';ob.data.ortho_scale=19.4
+  if 'ortho_scale' in c:CAM[-1]['ortho_scale']=c['ortho_scale']
+  if c['kind']=='顶视检查':ob.data.type='ORTHO';ob.data.ortho_scale=c.get('ortho_scale',19.4)
 else:
  camera('EXT_01','外部',[31,-30,20],[11,2,2.5],35)
  camera('STAIR_UP','楼梯',[10.5,1.75,1.6],[17.3,1.75,4.4],24)
@@ -228,13 +230,13 @@ for r in D['rooms']:
  bpy.ops.object.light_add(type='AREA',location=((x+X)/2,(y+Y)/2,z+2.98));o=bpy.context.object;o.data.energy=55*math.sqrt((X-x)*(Y-y));o.data.shape='DISK';o.data.size=min(3,X-x,Y-y)
 for pos in [[10,-12,18],[-12,5,15],[29,8,15]]:
  bpy.ops.object.light_add(type='AREA',location=pos);o=bpy.context.object;o.data.energy=2500;o.data.size=10;o.rotation_euler=(Vector((11,4,2))-o.location).to_track_quat('-Z','Y').to_euler()
-revision='P2.4-M2' if '--f4' in sys.argv else 'P2.3-M1-R2'
+revision=D['revision'] if '--f4' in sys.argv else 'P2.3-M1-R2'
 s['model_revision']=revision;s['status']='F4关系重建；尺寸暂定；全屋覆盖待核验';s['source_sha256']=hashlib.sha256(P.read_bytes()).hexdigest()
 bpy.context.preferences.filepaths.save_version=0;s.camera=bpy.data.objects['EXT_01']
 data=dict(revision=revision,change='依据已确认F4重建楼梯间及调整二楼比例',status=s['status'],source_sha256=s['source_sha256'],plan=D,objects=GEO,cameras=CAM,motions=MOT)
 (OUT/'模型/空间数据.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
 txt=bpy.data.texts.new('空间数据.json');txt.write(json.dumps(data,ensure_ascii=False))
-stem='秘密教学_P2.4-M2' if '--f4' in sys.argv else '秘密教学_P2.3-M1'
+stem='秘密教学_'+D['revision'] if '--f4' in sys.argv else '秘密教学_P2.3-M1'
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'模型'/(stem+'.blend')))
 bpy.ops.export_scene.gltf(filepath=str(OUT/'模型'/(stem+'.glb')),export_format='GLB',export_cameras=True,export_extras=True)
 if '--render' in sys.argv:
@@ -247,6 +249,6 @@ if '--render' in sys.argv:
    level=next(r['level'] for r in D['rooms'] if r['id']==c['room'])
    for ob in bpy.data.objects:
     if ob.type=='MESH' and not ob.hide_render and (ob.get('category')=='roof' or ob.get('level',0)>level):ob.hide_render=True;hidden.append(ob)
-  s.camera=bpy.data.objects[cid];s.render.filepath=str(p/(cid+'.png'));bpy.ops.render.render(write_still=True)
+  s.camera=bpy.data.objects[cid];s.render.filepath=str(p/(cid+'_'+D['revision'].split('-')[-1]+'.png'));bpy.ops.render.render(write_still=True)
   for ob in hidden:ob.hide_render=False
 print('P23_BUILD_COMPLETE',len(GEO),len(CAM))

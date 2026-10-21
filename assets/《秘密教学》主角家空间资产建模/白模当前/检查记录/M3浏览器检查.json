@@ -1,0 +1,15 @@
+{
+  "revision": "P2.4-M3",
+  "passed": true,
+  "objects": 777,
+  "images": 17,
+  "door_switch": true,
+  "walkStart": [
+    12.35,
+    4.599275,
+    4.9
+  ],
+  "annotation": "M3_F2_PLAN：x=7.1%，y=10.0%。",
+  "missing": [],
+  "errors": []
+}

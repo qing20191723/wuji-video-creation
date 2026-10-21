@@ -81,5 +81,7 @@ dict(id='F4_STAIR_DOWN',room='A',pos=[17.7,1.75,4.9],target=[8.6,1.75,1.6],lens=
 dict(id='F4_B_CONNECT',room='B',pos=[8.6,1.75,1.6],target=[6.8,4.4,1.3],lens=28,kind='真实机位'),
 dict(id='F4_PLAN',room='H2',pos=[13.2,5.65,23],target=[13.2,5.65,0],lens=28,kind='顶视检查'),
 dict(id='EXT_01',room='外部',pos=[31,-30,23],target=[11,3,2.8],lens=35,kind='真实机位')]
+from restore_bedrooms import apply
+D=apply(D,old)
 (O/'模型/建模方案.json').write_text(json.dumps(D,ensure_ascii=False,indent=2),encoding='utf8')
-print('P2.4-M2 source prepared; F4 unchanged; rooms resized with user authorization.')
+print('P2.4-M3 source prepared; approved corridor unchanged; bedrooms expanded.')
