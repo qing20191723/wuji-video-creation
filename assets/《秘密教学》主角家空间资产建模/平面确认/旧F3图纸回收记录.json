@@ -1,0 +1,50 @@
+[
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\03_二楼家具平面图.png",
+    "sha256": "1D90F84F5359B5C463D4C89E11D401E55622ECE4A14036544D6C3AFDA5CB621F",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  },
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\03_二楼家具平面图.svg",
+    "sha256": "EE52189C935BF44EA25631DFF48E074A8D2E40213571827F935F0FB70D785028",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  },
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\09_二楼走廊关系放大图.png",
+    "sha256": "E0959FF6E0B212143699D74D61550397DCDE7EEBE0328B48118BA2D8D2D8F032",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  },
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\09_二楼走廊关系放大图.svg",
+    "sha256": "3698E982C745727A1A1EF83864DFBCA83004587557E7E079D5DF259BD8138413",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  },
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\10_走廊窗墙立面与楼梯位移.png",
+    "sha256": "F2979692268725ABB4887B93BE532F27F16621B82F6C7C40BBF52A8176AB2D39",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  },
+  {
+    "originalPath": "assets\\《秘密教学》主角家空间资产建模\\平面确认\\10_走廊窗墙立面与楼梯位移.svg",
+    "sha256": "2118B7A40C480BB11ED6BB10C8F126D34C32433B83985154F1180E269236A36A",
+    "recycled": true,
+    "replacement": "打开平面图.html / F4局部关系稿；完整全屋平面仍待整合",
+    "backupCommit": "45785c2",
+    "reason": "用户已否定F3，避免旧图混入当前成果"
+  }
+]
