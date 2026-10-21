@@ -4,7 +4,7 @@
 <rect width="1800" height="1280" fill="#faf9f5"/>
 <text x="65.00" y="65.00" font-size="32" text-anchor="start" font-weight="700">《秘密教学》｜前庭花园修订总平面</text>
 <text x="65.00" y="102.00" font-size="17" text-anchor="start" font-weight="400">P2.3 · 保留已确认布局；拉开车库与别墅间距，花草＋步道为主 · 尺寸待用户校准</text>
-<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">待确认平面方案 P2.3 · 横向展开 · 2026-10-20 · 影视设计参考尺寸，非实测 / 非施工图 · 尚未写入 V4 模型</text>
+<text x="65.00" y="1236.00" font-size="16" text-anchor="start" font-weight="400">P2.3-R2 · 2026-10-21 · 走廊空间局部校核 · 同步 P2.3-M1 白模 · 影视参考，非施工图</text>
 <path d="M65 1208H1735" stroke="#bec9c5"/>
 <rect x="117.40" y="979.60" width="992.00" height="172.80" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>
 <rect x="949.40" y="221.20" width="160.00" height="931.20" fill="#d5dcd9" stroke="none" stroke-width="1" rx="0"/>
@@ -15,8 +15,9 @@
 <rect x="623.00" y="323.60" width="249.60" height="153.60" fill="#ebdcdc" stroke="none" stroke-width="1" rx="0"/>
 <text x="744.60" y="394.00" font-size="17" text-anchor="middle" font-weight="400">主卧套房</text>
 <text x="527.00" y="522.00" font-size="21" text-anchor="middle" font-weight="700">主体 22.00 × 10.40m</text>
-<polygon points="181.40,694.80 872.60,694.80 872.60,650.00 488.60,650.00 488.60,573.20 335.00,573.20 335.00,650.00 181.40,650.00" fill="none" stroke="#4188a0" stroke-width="1.5"/>
-<polygon points="815.00,650.00 872.60,650.00 872.60,323.60 776.60,323.60 776.60,509.20 815.00,509.20" fill="none" stroke="#4188a0" stroke-width="1.5"/>
+<polygon points="181.40,694.80 872.60,694.80 872.60,650.00 761.24,650.00 761.24,621.20 181.40,621.20" fill="none" stroke="#4188a0" stroke-width="1.5"/>
+<polygon points="776.60,509.20 872.60,509.20 872.60,323.60 776.60,323.60" fill="none" stroke="#4188a0" stroke-width="1.5"/>
+<polygon points="127.00,608.40 175.00,608.40 175.00,506.00 127.00,506.00" fill="none" stroke="#4188a0" stroke-width="1.5"/>
 <rect x="328.60" y="698.00" width="553.60" height="44.80" fill="#efe4cf" stroke="none" stroke-width="1" rx="0"/>
 <rect x="490.20" y="643.60" width="44.80" height="99.20" fill="#efe4cf" stroke="none" stroke-width="1" rx="0"/>
 <rect x="831.00" y="698.00" width="51.20" height="275.20" fill="#efe4cf" stroke="none" stroke-width="1" rx="0"/>
@@ -239,11 +240,11 @@
 <path d="M949.40 511.76L949.40 506.64" fill="none" stroke="#c27b35" stroke-width="1.5"/>
 <text x="914.20" y="505.36" font-size="16" text-anchor="middle" font-weight="400" style="fill:#c27b35">东侧2.20m</text>
 <rect x="1260" y="166" width="475" height="34" fill="#e3ebe6" rx="4"/>
-<text x="1274.00" y="190.00" font-size="20" text-anchor="start" font-weight="700">本轮只调整前庭</text>
+<text x="1274.00" y="190.00" font-size="20" text-anchor="start" font-weight="700">本轮走廊空间纠错</text>
 <text x="1274.00" y="225.00" font-size="16" text-anchor="start" font-weight="400">车库沿街横向位置与右侧人行门保留。</text>
 <text x="1274.00" y="254.00" font-size="16" text-anchor="start" font-weight="400">车库—别墅间距由2.20m增至4.50m。</text>
 <text x="1274.00" y="283.00" font-size="16" text-anchor="start" font-weight="400">花草种植＋步道，不安排座椅。</text>
-<text x="1274.00" y="312.00" font-size="16" text-anchor="start" font-weight="400">室内、阳台露台及后院不移动。</text>
+<text x="1274.00" y="312.00" font-size="16" text-anchor="start" font-weight="400">二姐端恢复公共露台，房间与花园不移动。</text>
 <rect x="1260" y="342" width="475" height="34" fill="#e3ebe6" rx="4"/>
 <text x="1274.00" y="366.00" font-size="20" text-anchor="start" font-weight="700">花园与入户关系</text>
 <text x="1274.00" y="401.00" font-size="16" text-anchor="start" font-weight="400">主步道净宽拟1.40m，右侧通路1.60m。</text>
@@ -261,5 +262,5 @@
 <text x="1274.00" y="753.00" font-size="16" text-anchor="start" font-weight="400">车身轨迹随车库平移，出入关系不变。</text>
 <text x="1274.00" y="782.00" font-size="16" text-anchor="start" font-weight="400">南侧窗位及右侧木体量仍需立面核对。</text>
 <text x="1274.00" y="811.00" font-size="16" text-anchor="start" font-weight="400">具体植物、铺装与排水留待后续细化。</text>
-<text x="70.00" y="1190.00" font-size="16" text-anchor="start" font-weight="400">蓝线＝阳台投影；橙线＝倒车轨迹；绿色箭头＝步行动线。仅二维修订，未修改三维模型。</text>
+<text x="70.00" y="1190.00" font-size="16" text-anchor="start" font-weight="400">蓝线＝阳台投影；橙线＝倒车轨迹；绿色箭头＝步行动线。走廊开口同步白模；尺寸为设计参考。</text>
 </svg>
