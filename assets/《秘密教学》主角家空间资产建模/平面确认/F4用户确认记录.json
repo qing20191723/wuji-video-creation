@@ -1,0 +1,41 @@
+{
+  "revision": "P2.4-F4",
+  "confirmed_on": "2026-10-21",
+  "user_statement": "这版平面图是正确的",
+  "status": "用户已确认楼梯间局部平面与上下层关系",
+  "scope": "当前三张F4关系图；作为全屋整合及后续白模的关系基准",
+  "dimensions_confirmed": false,
+  "whole_house_integration_complete": false,
+  "files": [
+    {
+      "file": "11_二楼楼梯口局部关系.svg",
+      "sha256": "1375d438b59e5eda4baa25de3364051a37f53458ecb86e3faec3c8a16e3afc16"
+    },
+    {
+      "file": "11_二楼楼梯口局部关系.png",
+      "sha256": "9d213871f1d6f6a958fb2bb92c8304288804bf0fb37253410aaf612ccadb113f"
+    },
+    {
+      "file": "12_一楼下平台与上层投影.svg",
+      "sha256": "64123b6b9477c401f1120cc182c254eccd1194a44c5c49faaae5831b566df71f"
+    },
+    {
+      "file": "12_一楼下平台与上层投影.png",
+      "sha256": "d98b9d04378f3319e3190aefce2d6abe56546acd535c09b4fdf21a3f1025a616"
+    },
+    {
+      "file": "13_楼梯纵剖与上下层关系.svg",
+      "sha256": "0fc8d2cce8e5a882ee5ed498975212eca5a7aa7121ade23e5da2cd1003a2a1d6"
+    },
+    {
+      "file": "13_楼梯纵剖与上下层关系.png",
+      "sha256": "69f28ca3a3540df5ce50a8fcf9eeb907687bd718f5cae5d1d12ba28d33929589"
+    }
+  ],
+  "remaining": [
+    "具体尺寸由用户校准",
+    "全屋坐标整合及一楼公共通路衔接",
+    "楼板、梁底与踏步净空复核"
+  ],
+  "rule": "不得继续将F4标为未获用户确认；整合时保持已确认空间关系，不能恢复被否定的F3方案。"
+}
