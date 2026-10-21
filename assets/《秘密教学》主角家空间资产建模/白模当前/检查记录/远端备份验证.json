@@ -1,0 +1,18 @@
+{
+  "remote_commit": "a279fd1f7b1819b2d12039e8e58668fb9fc2be88",
+  "lfs_objects": [
+    {
+      "bytes": 291852,
+      "sha256": "8a31b119d11236b4299d711f2417d28396f28af8ca68e978edba63032aecb906"
+    },
+    {
+      "bytes": 2273972,
+      "sha256": "a0d40cb309c5ac05140c25fa0f14e7fefa575bb511eda9007cc925f881cc3e24"
+    },
+    {
+      "bytes": 8295305,
+      "sha256": "ec2214e0ca945eba9def44a923dd6effcc823f792ba47b7115016aa0df923870"
+    }
+  ],
+  "status": "remote_readback_verified"
+}

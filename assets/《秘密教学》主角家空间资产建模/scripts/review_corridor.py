@@ -56,7 +56,7 @@ for cid,title in zip(cams,titles):
             d.rectangle((b[0]-6,b[1]-4,b[2]+6,b[3]+4),fill='#edf1f1');d.text((px,py),label,font=small,fill='#234b56')
     q=O/'空间'/c['room']/'方位检查'/(cid+'_标注.png');q.parent.mkdir(parents=True,exist_ok=True);out.save(q)
     manifest.append(dict(id=cid,title=title,file=p.relative_to(O).as_posix(),annotated=q.relative_to(O).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),size=list(im.size)))
-report=dict(revision=M['revision'],checks=checks,passed=all(c['passed'] for c in checks),current_images=manifest,limitations=['连续挑空14.92m长，大于5.32m实际梯段；系保持卧室间距的补充设计，不是从照片测出的尺寸。','下方一楼公共区出现额外挑空；承重梁、楼板支承及声学未设计。','公卫、布草后移占用部分原东南露台；外立面与排水尚待核对。','局部机位已视检；全屋覆盖、人物碰撞与连续漫游未验收。','旧批次图片不在当前对照入口展示，备份验证后再回收。'])
+report=dict(revision=M['revision'],checks=checks,passed=all(c['passed'] for c in checks),current_images=manifest,limitations=['连续挑空14.92m长，大于5.32m实际梯段；系保持卧室间距的补充设计，不是从照片测出的尺寸。','下方一楼公共区出现额外挑空；承重梁、楼板支承及声学未设计。','公卫、布草后移占用部分原东南露台；外立面与排水尚待核对。','局部机位已视检；全屋覆盖、人物碰撞与连续漫游未验收。','已验证私有远端可回读模型；106张旧候选图与3份旧检查记录已移入系统回收站。'])
 (O/'检查记录/走廊空间复核.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 cards=''.join('<section><h2>'+x['title']+'</h2><img class="markable" src="'+x['annotated']+'?v='+x['sha256'][:12]+'" alt="'+x['id']+'"><p><a href="'+x['file']+'">干净 PNG</a> · <a href="'+x['annotated']+'">标注 PNG</a></p></section>' for x in manifest)
 doc='''<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>走廊 R2 原图与白模对照</title><style>
