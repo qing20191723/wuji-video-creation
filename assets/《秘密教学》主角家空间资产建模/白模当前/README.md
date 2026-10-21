@@ -19,3 +19,7 @@
 ## 再生成
 
 使用Blender运行 `scripts/build_p23.py -- --f4 --render --cameras F4_DOWN,F4_REVERSE,F4_C,F4_UP,F4_STAIR_DOWN,F4_B_CONNECT,F4_PLAN,B1_01,B1_TOP,B2_TOP,B3_TOP,EXT_01`；前置运行`prepare_f4_model.py`，后续运行`audit_f4_model.py`、`verify_m2_blend.py`（Blender）、`package_m2.py`和`check_m2.cjs`。依赖本地Blender、Python/Pillow与Node/Playwright。
+
+## 数据字段范围
+
+`rooms/furniture/walls/openings/stairs/architecture/exterior_rails`是本版建模依据，`walk_route`是本版连续检查路线。继承的`clearances/routes/reference_relationships`仅保留旧方案记录，未作为本版空间验收或当前路线依据；当前检查结论以`检查记录/M2几何与动线检查.json`为准。

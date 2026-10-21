@@ -1,16 +1,16 @@
 {
-  "commit": "4426dcd5c5083d99c437491243a1ca0fa8c989c1",
+  "commit": "9293ebb1186578491a641d8d3254a977f48d869d",
   "passed": true,
-  "method": "independent LFS storage fetch from private remote",
+  "method": "independent LFS storage fetch of FINAL terrace-complete model from private remote",
   "models": [
     {
       "file": "秘密教学_P2.4-M2.blend",
-      "sha256": "947fdd63a1682f1b4b04c4bb30c15f428f110b79b6ddd1403f850a0d87c85203",
+      "sha256": "1b3b0593cb05bb2e8155011259dcb2d4fc255f0981bb406182eb734c79760d39",
       "remote_download_match": true
     },
     {
       "file": "秘密教学_P2.4-M2.glb",
-      "sha256": "59926189e64ca9f71ba91231826eb41783c9dfe42772d9e53f534a890c013238",
+      "sha256": "2d5a54ea52ea223e951aec173c2e8c5a5aff887facf3e928d7fe0d827eb28a6a",
       "remote_download_match": true
     }
   ],
