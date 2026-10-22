@@ -1,0 +1,217 @@
+{
+  "version": "EP7-日景首批",
+  "method": "Blender M3 camera reference + built-in image_gen; local edits by image_gen; not geometry-exact model render",
+  "items": [
+    {
+      "id": "H1",
+      "source": "local-assets/generated\\exec-2f5a39e5-18a7-4688-af52-5d593bba13c8.png",
+      "file": "楼道（日景）/01_上平台看向舒亚与浴室（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "fc91fa824e007c06a63dfd107768cd81a710989bfbc4859f654b4ae8b1bf03c2"
+    },
+    {
+      "id": "H2",
+      "source": "local-assets/generated\\exec-b9bef102-26b2-43db-a672-fc5adf225f25.png",
+      "file": "楼道（日景）/02_舒亚端回看上平台（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "2dac2ea5fab0fb076db900a9b9ea602a927f0880b2a5dae2015ee1fd2bf52d22"
+    },
+    {
+      "id": "H3",
+      "source": "local-assets/generated\\exec-048ef215-7cca-4118-a91b-866b3e43373c.png",
+      "file": "楼道（日景）/03_楼梯中段向上（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "5f206c37f4e4e93aa3c13c303914dd795a9ab9f21e029fdb439e2bdf75f922a4"
+    },
+    {
+      "id": "H4",
+      "source": "local-assets/generated\\exec-36191f27-74d0-4f83-a077-f7411536321c.png",
+      "file": "楼道（日景）/04_上平台向下（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "fad674c784642ac4718fff1fbd411579824b8890f7acca8239f9a062bb5575b6"
+    },
+    {
+      "id": "B1",
+      "source": "local-assets/generated\\exec-084d9470-666a-4bc7-85c2-e94a96147765.png",
+      "file": "大姐卧室（日景）/01_入口斜看床与书桌（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "0837fa2bbd1011d60f67e7d21f2d062606eac9db6adce666a7ef119110585769"
+    },
+    {
+      "id": "B2",
+      "source": "local-assets/generated\\exec-e4d0383f-9c43-4204-b893-f0f6a5ec8065.png",
+      "file": "大姐卧室（日景）/02_床尾看床头（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "a0ccc44b20c9ed8b9eeeee2764cf8ddb17e9cf929a556aaff7c802c375df77bd"
+    },
+    {
+      "id": "B3",
+      "source": "local-assets/generated\\exec-c1f3a09b-d57f-4352-bebd-d2eef458eb5e.png",
+      "file": "大姐卧室（日景）/03_床头看床尾（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "54ed000ba25771ac37e4b2157672eb445424978071f7f8b0ad3805c891bc91e9"
+    }
+  ],
+  "changes": [
+    "统一日景，沿用V3外观",
+    "大姐卧室黄色品牌墙牌移除",
+    "卧室门牌：薇亚の窝、子豪の窝、舒亚の窝",
+    "舒亚旁走廊尽头为公共浴室，玻璃门；舒亚门对面巨大落地窗保留",
+    "不修改当前Blend/GLB"
+  ],
+  "limits": [
+    "生成图仍可能出现家具细节和镜面反射漂移，不能作为测量依据",
+    "远处门牌受透视及生成文字影响，正式门牌特写需独立核对",
+    "浴室内部尚未重建，磨砂玻璃门细节为本批暂定表现",
+    "原计划卧室6图收敛为3图，反打和高位图未通过空间一致性核对"
+  ],
+  "rejected": [
+    {
+      "id": "B6",
+      "source": "local-assets/generated\\exec-47e42df3-261d-44c7-89ea-1fe6685ef54f.png",
+      "reason": "用户明确作废：房间随视角扭曲",
+      "status": "已移入系统回收站，见作废高位图回收记录.json"
+    },
+    {
+      "id": "B4",
+      "source": "local-assets/generated\\exec-b1d3071c-fd91-48fb-bb90-1c0b30449fd1.png",
+      "reason": "新增反打未通过几何一致性核对，不交付"
+    },
+    {
+      "id": "B5",
+      "source": "local-assets/generated\\exec-1788914a-6c96-4631-9632-6372db9d990e.png",
+      "reason": "新增反打未通过几何一致性核对，不交付"
+    }
+  ],
+  "pending": [
+    "公共浴室内部布局、尺寸、设备位置与玻璃门框/开启方式的漫画近景",
+    "二姐卧室正确布局对应原图",
+    "二楼外部空间与室内开窗关系",
+    "新增卧室机位的几何一致性，需要在固定空间模型中还原V3陈设后验证"
+  ],
+  "prompts": {
+    "hallInitial": "Use case: sketch-to-render. Asset: Episode 7 photorealistic daytime interior scene, one standalone 16:9 landscape image, ideally 2048x1152 or higher.\nImage 1 is the EXACT camera/composition and architectural geometry target: existing approved 3D white model of the upstairs corridor looking from upper landing toward the far bedroom end. Image 2 is MATERIAL/STYLE reference only, not permission to alter geometry.\nConvert image 1 into a finished realistic photographic interior matching image 2: warm light oak floorboards, oak stair treads and wood handrail caps, soft off-white plaster walls and ceiling, natural oak bedroom doors with brushed silver lever handles, dark slim window frames, green trees and blue sky outdoors, warm neutral daylight, gentle ceiling downlights, fine believable wood grain. Keep all vanishing lines, camera position, wall planes, opening sizes and positions, low guard wall length and actual straight downward stairwell from image 1. Three bedroom doors on the right-hand wall (nearest may be partly cropped); horizontal narrow daylight window on left above the stairs, tall narrow window at far left, far end GLASS door. No new doorway, no extra stair behind the far glass door, no extra staircase, no wall across corridor, no widening, no mirror flip. Downstairs glimpses stay subordinate and match model. Place fine oak skirting where appropriate. No people, no floating labels, no overlaid text, no watermark, no split-screen, no collage. Small physical door nameplates may remain as unobtrusive reference details, do not add prominent labels. Bright natural daytime, not night. Preserve this model composition while replacing ONLY the white prototype surface treatment with fully detailed V3-style realism.",
+    "hallJobs": [
+      {
+        "key": "ep7H2",
+        "prompt": "Use case: sketch-to-render. Produce ONE standalone 16:9 photorealistic daytime interior scene for a film background, not a collage. Image 1 is the exact architectural geometry/camera target from the current white model. Other images are surface appearance/style references only. Replace prototype materials with natural light oak floors/stairs/handrails, warm off-white plaster, slim dark window frames, brushed silver door handles, outdoor leafy green trees and blue sky. Fine realistic surface textures, neutral-warm sunny daylight and soft indirect fill, match established reference. Preserve target perspective, all existing walls, openings, low guards, landings and staircase direction. No invented rooms, extra doors, relocated windows, extra flights, mirror reversal, people, overlaid text or watermark. Reverse view looking along the corridor toward the UPPER landing A. The bedroom doors are on LEFT, stair void and white low guard with oak cap on RIGHT. At the very end is a single large full-height FIXED WINDOW revealing outdoor foliage, NOT a door: no handle, no mullion splitting into door leaves. At right near that end is the tall narrow side window. Horizontal slit window stays on the right exterior wall above the stairs. Do not follow the style image's crop; keep image 1 composition.",
+        "paths": [
+          "assets/《秘密教学》主角家空间资产建模/白模当前/空间/H2/白模视角/F4_REVERSE_M3.png",
+          "local-assets/global/场景资产/别墅楼道和楼梯间参考/别墅二楼走廊.png",
+          "local-assets/generated/exec-47023459-e252-4041-a18c-7f0b374d2f27.png"
+        ]
+      },
+      {
+        "key": "ep7H3",
+        "prompt": "Use case: sketch-to-render. Produce ONE standalone 16:9 photorealistic daytime interior scene for a film background, not a collage. Image 1 is the exact architectural geometry/camera target from the current white model. Other images are surface appearance/style references only. Replace prototype materials with natural light oak floors/stairs/handrails, warm off-white plaster, slim dark window frames, brushed silver door handles, outdoor leafy green trees and blue sky. Fine realistic surface textures, neutral-warm sunny daylight and soft indirect fill, match established reference. Preserve target perspective, all existing walls, openings, low guards, landings and staircase direction. No invented rooms, extra doors, relocated windows, extra flights, mirror reversal, people, overlaid text or watermark. Camera on the straight stair flight looking UP to the second-floor upper landing A and the enormous clear FIXED WINDOW ahead. Oak treads ascend away from camera. The left wall bounds the corridor; the right exterior wall contains a horizontal slit window high in this camera view and tall side window near the top, and a continuous oak wall-mounted stair handrail. Fixed end glazing must stay transparent with trees outdoors; no door leaf/handle, no extra flight beyond it. Follow image 1 geometry even where style reference framing differs.",
+        "paths": [
+          "assets/《秘密教学》主角家空间资产建模/白模当前/空间/B/白模视角/F4_UP_M3.png",
+          "local-assets/global/场景资产/别墅楼道和楼梯间参考/别墅楼梯间参考.png",
+          "local-assets/generated/exec-47023459-e252-4041-a18c-7f0b374d2f27.png"
+        ]
+      }
+    ],
+    "hallDown": "Use case: sketch-to-render. One 16:9 photorealistic daytime architectural background, no collage. Image 1 is the exact model camera and geometry: camera at upper landing A, looking steeply DOWN the existing single straight stair flight toward lower landing B and a limited glimpse of the ground-floor living room. Image 2 establishes the already-produced scene appearance; image 3 gives original oak/plaster material style. Replace the gray-white model surfaces with matching pale honey oak stair treads, oak handrail and guard cap, warm off-white finely textured plaster, slim black exterior glazing with green trees, naturally sunlit wood floor below, cream living room sofa and small pale wood table exactly in the model positions. Stair flight descends away from camera; hallway and bedroom door edges remain behind the RIGHT low wall; horizontal slit window remains on LEFT above the stair handrail. Preserve exact camera direction, single straight stair geometry, all walls/window positions, rail extent and downstairs opening. No extra stairs, no sideways branch, no new door, no large plant/obstruction, no people. Do not replace this with a straight corridor view or a copy of image 2. Daylight, clean film-ready empty set, crisp believable surface texture, no overlaid text, labels, logos or watermark.",
+    "bed12": [
+      {
+        "id": "B1",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. V3 physical wall decor may remain where appropriate. Target: entrance looking diagonally across room. Bed on left foreground, desk at the back under second window, vanity and arched mirror on right, balcony doorway far right. Match image 1 framing; dress entire scene with V3 realism.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_01_入口看全室.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_俯拍视角（日景）.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_床尾看床头视角（日景）.png"
+        ]
+      },
+      {
+        "id": "B2",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. V3 physical wall decor may remain where appropriate. Target: from bed foot looking toward west headboard, bed dominating foreground center, tall white bookcase and bedside chest left, north window right. Match image 1 composition and reference photograph bed styling; no bed shrinking.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_02_床尾看床头.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_床尾看床头视角（日景）.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_俯拍视角（日景）.png"
+        ]
+      }
+    ],
+    "bed34": [
+      {
+        "id": "B3",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. IMPORTANT: No black/gold or yellow branded wall plaque, no 黄瓜短剧 logo anywhere; retain botanical framed artwork and photos. Image 1 target viewpoint is from bed head looking across to east balcony: desk left, vanity and arched mirror center-left, balcony glass door center-right, black exercise bike right. Duvet edge in foreground. Image 2 supplies the appearance; ignore its branded plaque completely. Preserve the room arrangement and geometry of model.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_03_床头看床尾.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_床头看床尾视角（日景）.png",
+          "local-assets/generated/exec-084d9470-666a-4bc7-85c2-e94a96147765.png"
+        ]
+      },
+      {
+        "id": "B4",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. IMPORTANT: No black/gold or yellow branded wall plaque, no 黄瓜短剧 logo anywhere; retain botanical framed artwork and photos. Image 1 target is north window side looking southwest back at bedroom entrance: white wardrobe left, plain closed pale oak room entrance door middle, white bookshelf right, bedside chest and large bed edge right foreground, pink ball and black/yellow trampoline near bookshelf. One entrance door only, no nameplate on its inside face. Other images provide furniture appearance, do NOT copy their camera. Preserve original entrance and furniture locations.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_04_窗边回看入口.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_俯拍视角（日景）.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_床尾看床头视角（日景）.png"
+        ]
+      }
+    ],
+    "bed56": [
+      {
+        "id": "B5",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. IMPORTANT: No black/gold or yellow branded wall plaque, no 黄瓜短剧 logo anywhere; retain botanical framed artwork and photos. TARGET CAMERA: east balcony side looking WEST across bed toward bookshelf and entrance. Use image 1 framing: bed on right, bookcase center, pink ball and small trampoline left of bed, entrance on far left and white wardrobe edge left. Keep a clear walking route to the entry; trampoline is by the bookcase, not blocking doorway. Image 2 is material/furniture identity. No yellow or black branded plaque.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_05_阳台侧回看.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_床尾看床头视角（日景）.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_俯拍视角（日景）.png"
+        ]
+      },
+      {
+        "id": "B6",
+        "prompt": "Photorealistic daytime bedroom film background, one full frame landscape 16:9 image, no people. Image 1 is the exact camera/composition and spatial arrangement from the current 3D model. Other images are V3 appearance references of this SAME room: preserve its existing interior design. Replace the white model materials and simple proxy furniture with the matching recognizable V3 furniture at the same positions. Soft blush pink walls, pale oak floor, white bed/headboard, gray duvet with fine white grid, dark teal pillows and a small rose pink cushion; large bed relative to room, no oversized empty floor. Tall white bookcase with trailing plants and books, wood bedside chest west, two black-framed north windows, wood desktop white legs and white office chair, white vanity with pink round stool, tall arched wood-frame mirror on east, pink circular rug, pink exercise ball, black/yellow small trampoline, black exercise bike beside east balcony door; white wardrobe south. Natural soft daytime greenery outside. Preserve camera, room orientation, doors and windows, bed scale and all furniture positions. Don't mirror the room, add doors, remove furnishings, or redesign the interior. No collages, captions, people, watermark, measurement lines or white-model artifacts. IMPORTANT: No black/gold or yellow branded wall plaque, no 黄瓜短剧 logo anywhere; retain botanical framed artwork and photos. TARGET CAMERA: interior elevated southeast corner looking northwest downward. Follow image 1 camera and perspective: headboard west upper left, large bed upper middle, two north windows top, desk under second window upper right, bookshelf and exercise ball/trampoline left, pink rug foreground, vanity at right edge. This is an interior photograph with intact walls, NOT cutaway or isometric, no removed roof apparent. Same large bed occupying the room and restrained open floor as image 2. No yellow or black branded wall plaque.",
+        "refs": [
+          "local-assets/tmp/ep7-generation/B1_06_室内高位总览.png",
+          "local-assets/global/场景图V3版/大姐卧室/大姐卧室_俯拍视角（日景）.png",
+          "local-assets/generated/exec-084d9470-666a-4bc7-85c2-e94a96147765.png"
+        ]
+      }
+    ],
+    "bedPlaqueRemoval": "Edit this image with a single strictly localized removal only. Remove the small vertical BLACK AND YELLOW/GOLD wall plaque at x=85% y=20%, immediately right of the framed artwork and above/left of the arched standing mirror (the user marked approximately x87.2%,y16.1%). It is a black rounded vertical sign with yellow Chinese lettering and green/yellow logo. Replace the entire plaque and its shadow with seamless matching plain blush pink wall. Keep the adjacent framed botanical artwork, arched mirror, all furniture, plants, window views, bed, pillows, rug, floor, framing, camera, lighting, colors and every other detail exactly unchanged. Do not replace the plaque with anything. No other edits.",
+    "hallEdits": [
+      {
+        "id": "H1Final",
+        "refs": [
+          "local-assets/generated/exec-47023459-e252-4041-a18c-7f0b374d2f27.png",
+          "local-assets/temp/codex-clipboard-39a8fa86-69eb-494c-bc5c-b8b22d6909fc.png"
+        ],
+        "prompt": "Edit image 1 as a photoreal daylight scene with ONLY these updates. Keep camera, composition, floor, stairs, short guard, and all SIDE exterior windows unchanged. The three wooden bedroom doors along RIGHT wall must carry small rounded hanging room plaques inspired by the shape of image 2 (off-white rounded plaque with dark rim and dark lettering, single small hanging loop, physically mounted). From CLOSEST/right foreground to FARTHEST/right background, exact text respectively: '薇亚の窝', '子豪の窝', '舒亚の窝'. Make the three names correct, each name only on its corresponding door, scaled naturally with perspective. At the axial END of hallway (back wall, currently glass sliding doors), beside the farthest Shuya door, replace that end opening with a CLOSED single light-oak public bathroom door in a matching pale wall, with a small plaque '公共浴室'. This bathroom is adjacent to Shuya at the hallway terminus, NEVER on the LEFT wall opposite Shuya. Specifically preserve the tall floor-to-ceiling LEFT side window opposite Shuya, the horizontal strip window over the stairs, and all other glazing. No bathroom interior revealed. Do not add another room, extra stairs, people, signage overlays, logos or text elsewhere. Preserve the bright V3 natural materials and lighting; one landscape image."
+      },
+      {
+        "id": "H2Final",
+        "refs": [
+          "local-assets/generated/exec-f41570bc-50fe-460c-b99a-85e4ca87b06f.png",
+          "local-assets/temp/codex-clipboard-39a8fa86-69eb-494c-bc5c-b8b22d6909fc.png"
+        ],
+        "prompt": "Make only a small signage edit to image 1, preserve this photograph exactly otherwise. Add matching small rounded hanging room plaques like the shape of image 2, off-white face dark rim/dark lettering, small hanging loop. On the NEAR wooden door on LEFT write exactly '子豪の窝'; on the FAR wooden door on LEFT write exactly '薇亚の窝'. These are opposite viewing direction to the other hallway view. Shuya door and bathroom are behind the camera and must NOT be added in view. Keep the huge fixed floor-to-ceiling glass window straight ahead, side windows, horizontal daylight strip window, short guard, stairs, all geometry and lighting entirely unchanged. No extra doors, no bath door in front of the big window, no people, no overlays or logo. Photoreal 16:9 daytime."
+      }
+    ],
+    "bathGlass": "Localized edit of the END BATHROOM DOOR ONLY, the door at x=55%, y=26% in this photo, straight ahead at the far terminus next to Shuya's room. Replace that incorrect SOLID WOODEN bathroom door with a bathroom-style glazed door: tall translucent FROSTED GLASS panels in a slim warm silver aluminum frame, sliding glass bathroom entrance, modest frame, no timber door leaf. Use the existing opening location; frosted glass shows only diffuse warm interior light, no outdoors, no people or invented bathroom objects. The public bathroom marker can remain small and discreet. Preserve all THREE wooden bedroom doors on the RIGHT and their nameplates, all SIDE windows (especially the tall floor-to-ceiling window opposite Shuya and horizontal strip daylight window on LEFT), stairs, guard, walls, floor, camera, furnishings, lighting and all other contents EXACTLY unchanged. This is a material/door-type correction only, not a spatial redesign. One full-frame photorealistic landscape image."
+  }
+}
