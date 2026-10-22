@@ -1,0 +1,128 @@
+{
+  "version": "EP7-APPROVED-20261022",
+  "basis": "用户本次明确选择的七张附件；覆盖助手此前B4/B5暂缓判断；不自动扩展到未选中的图片或全屋模型。",
+  "counts": {
+    "楼道": 2,
+    "大姐卧室": 5
+  },
+  "assets": [
+    {
+      "id": "EP7-OK-01",
+      "user_image_number": 1,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "楼道（日景）/01_上平台看向舒亚与浴室（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "fc91fa824e007c06a63dfd107768cd81a710989bfbc4859f654b4ae8b1bf03c2",
+      "pixel_sha256": "4763def346e8b4df3356984cf515d0033fea174a26e1964bfd7f97f4f7b27b44",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-9a603909-c7cd-4480-aa3a-f6ffd600af13.png",
+      "attachment_sha256": "dd4393fee1ccfdb6c4546f9921d0c9ce38c3636ae5a3018092d1b2e32160ca79",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-02",
+      "user_image_number": 2,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "楼道（日景）/02_舒亚端回看上平台（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "2dac2ea5fab0fb076db900a9b9ea602a927f0880b2a5dae2015ee1fd2bf52d22",
+      "pixel_sha256": "ce428893d52a69ae83e2e5aaf8af822d41567295548a813e2c2e7279a9e75066",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-8b8955c9-e995-48e0-a796-066dcf96f171.png",
+      "attachment_sha256": "e34dacd593b63510b7a0d2114fe5f5fe10a0219fe31fd3f755c860c122b793be",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-03",
+      "user_image_number": 3,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "大姐卧室（日景）/04_阳台侧回看（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "be2c0c1e844e97625db12e376e474591135ae2020d001be1a46bd2ae65f38b97",
+      "pixel_sha256": "ee09187a7bfb106e4d0185f641fb7b0617ac116db5e0bcd0b7850358f3755894",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-9bea8dd7-c4dd-4244-baac-850c87817fdf.png",
+      "attachment_sha256": "be2c0c1e844e97625db12e376e474591135ae2020d001be1a46bd2ae65f38b97",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-04",
+      "user_image_number": 4,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "大姐卧室（日景）/05_窗边回看入口（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "227000d5aa67f69be07d21a567df75f6ca182755cd848a6ec9993e33476cad73",
+      "pixel_sha256": "8bf37fdc3860a4548c327dd74a5ea77fe6fed4dbe75c9e7e6ef6dd06224bbab9",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-5046c814-4743-48ff-bcc2-363264e070f2.png",
+      "attachment_sha256": "227000d5aa67f69be07d21a567df75f6ca182755cd848a6ec9993e33476cad73",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-05",
+      "user_image_number": 5,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "大姐卧室（日景）/03_床头看床尾（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "54ed000ba25771ac37e4b2157672eb445424978071f7f8b0ad3805c891bc91e9",
+      "pixel_sha256": "44bb6510f3e5945f99589d96533b6e37581178c097cd758080417d03221b0bc4",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-cb59fd76-8cb5-49a3-9265-3cc3f7b46274.png",
+      "attachment_sha256": "804da7d5e562f9330b458a11c95f095560163f0ff96ceaeff0f6849a42e3eb53",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-06",
+      "user_image_number": 6,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "大姐卧室（日景）/01_入口斜看床与书桌（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "0837fa2bbd1011d60f67e7d21f2d062606eac9db6adce666a7ef119110585769",
+      "pixel_sha256": "539392cdc8e31336f4d28af9435807a53dbca036b834af6b97c608d00de25c22",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-788c14e7-35fd-4e75-8136-863fbbe5fc06.png",
+      "attachment_sha256": "5440b601977de365f9c761cd53f57f313393f35f740e52de1ce84ecda4ad6593",
+      "matches_attachment_pixels": true
+    },
+    {
+      "id": "EP7-OK-07",
+      "user_image_number": 7,
+      "status": "用户明确认可：合格可用",
+      "approved_date": "2026-10-22",
+      "file": "大姐卧室（日景）/02_床尾看床头（日景）.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "a0ccc44b20c9ed8b9eeeee2764cf8ddb17e9cf929a556aaff7c802c375df77bd",
+      "pixel_sha256": "0a420f92d51ba456299c6a1ebe5fa0b03febad09d930ba68be109dfdbf95d84d",
+      "approval_attachment": "local-assets/temp\\codex-clipboard-75f4f41b-8af5-490c-b1f6-ba7164cc079c.png",
+      "attachment_sha256": "3edf69f8d5b2f941995b2ca1e2e2456a590ad32d8792300836342ce08d2bdac4",
+      "matches_attachment_pixels": true
+    }
+  ],
+  "not_approved_this_round": [
+    "楼道（日景）/03_楼梯中段向上（日景）.png",
+    "楼道（日景）/04_上平台向下（日景）.png"
+  ],
+  "not_approved_note": "未选中只表示本次未确认，不是用户作废。",
+  "still_rejected": "exec-47e42df3-261d-44c7-89ea-1fe6685ef54f.png，扭曲高位图，已回收。"
+}
