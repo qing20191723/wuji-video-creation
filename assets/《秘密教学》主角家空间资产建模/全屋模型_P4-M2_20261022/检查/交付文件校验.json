@@ -1,0 +1,260 @@
+{
+  "revision": "P4-M2",
+  "files": [
+    {
+      "file": "交付说明.md",
+      "bytes": 1876,
+      "sha256": "01449e05ba4f99312f4b0a25f64dfd9e6ec019811cca6d22c8582966686146dd"
+    },
+    {
+      "file": "图纸/01_二楼整体平面.png",
+      "bytes": 285874,
+      "sha256": "dc3e36c0fbda2827bc98cdcd4d7fad1dedc8eb8252a606ac0e2062dc20dba352"
+    },
+    {
+      "file": "图纸/01_二楼整体平面.svg",
+      "bytes": 27141,
+      "sha256": "0bb2aa2ba321d41c094c50e09bc05c4a4fa5cbfd6630e69ce85d88877a516cbd"
+    },
+    {
+      "file": "图纸/02_屋顶平面.png",
+      "bytes": 191636,
+      "sha256": "9c2bd7b09ef40a0358aab9f9cba6d44fbaf5d3c5f2face64019ec0b46fc3190c"
+    },
+    {
+      "file": "图纸/02_屋顶平面.svg",
+      "bytes": 9553,
+      "sha256": "b2f3e9071ed03283e75875c7b8eeee4af674e0a8a3b7fb05b1c94fa451bf5600"
+    },
+    {
+      "file": "图纸/03_楼梯剖面.png",
+      "bytes": 191331,
+      "sha256": "1dce3e5f4f85ca71c4235c1b392590bb17a15bd55946d11b9fc49144bed0798e"
+    },
+    {
+      "file": "图纸/03_楼梯剖面.svg",
+      "bytes": 6693,
+      "sha256": "117223a36f2627793611596cf794ba6b403190625993731d9a5b37d4e9f5e2a0"
+    },
+    {
+      "file": "图纸/04_客餐厅品牌布置.png",
+      "bytes": 243726,
+      "sha256": "5c88ac9098bba4b7a44ae144db2e43692d6e14be814cee4ff153da05b1721f00"
+    },
+    {
+      "file": "图纸/04_客餐厅品牌布置.svg",
+      "bytes": 24341,
+      "sha256": "f88dbd3f6d7f1fdc26c1e247ffc8b73992eb34a06028ed75f570ab2e0bcea36f"
+    },
+    {
+      "file": "图纸/05_外部总平面.png",
+      "bytes": 177792,
+      "sha256": "67a325870dad15d7fd3540390eff66669fa8698327b1e76a704479a7d87a80e1"
+    },
+    {
+      "file": "图纸/05_外部总平面.svg",
+      "bytes": 10274,
+      "sha256": "800c2f83a1a8bf89de2b6214f936ea0ff5ee0f4aa72278da570f1b737c969b2d"
+    },
+    {
+      "file": "数据/修订尺寸.csv",
+      "bytes": 502,
+      "sha256": "a04c27dcda64c180c84698d4079f4a19ec24ec5f7a91215209b06c565696798b"
+    },
+    {
+      "file": "数据/品牌固定变换.json",
+      "bytes": 18133,
+      "sha256": "dbd45379539fc927906d7e4d78f02bb50bf6f822df7fe4f614fb5e8288534a22"
+    },
+    {
+      "file": "数据/整体空间方案_P4-M2.json",
+      "bytes": 97986,
+      "sha256": "e85d030c6218dfdc7f5e15b61a7bf60477d37ac8878521aef3e40d9761038d91"
+    },
+    {
+      "file": "数据/模型空间数据.json",
+      "bytes": 567950,
+      "sha256": "baf7d4b5ce4718b1103a10d89e2fdeaebab5d9304e960b7f9fa73b6038788591"
+    },
+    {
+      "file": "检查/查看页检查.json",
+      "bytes": 2141,
+      "sha256": "b0cce8fbcc21d4ff0df1e90406c26a66b0d1ef40ee7cc6654bb5ec34043a51f9"
+    },
+    {
+      "file": "检查/模型回读与几何核对.json",
+      "bytes": 24215,
+      "sha256": "532c06a2a29f5882490b7f9cff0c86e70a3c9ec1aca679f90b2a094c61ae5021"
+    },
+    {
+      "file": "检查/目视与镜像检查.json",
+      "bytes": 599,
+      "sha256": "8d2de6e1ad99a7cbbbb752ba28d7d1d94670e2482f9750e740ecef3761a076f0"
+    },
+    {
+      "file": "模型/秘密教学_P4-M2.blend",
+      "bytes": 7357164,
+      "sha256": "9eff3dabd9d984820b3a69625cad9dbd1e79d424f52e0c79f7c367f48ad7e75a"
+    },
+    {
+      "file": "模型/秘密教学_P4-M2.glb",
+      "bytes": 12607488,
+      "sha256": "63a80e2d2058052db01ad6d76f44a25a22b12bb556d87599c9e92e2b136851da"
+    },
+    {
+      "file": "统一查看页.html",
+      "bytes": 6552,
+      "sha256": "0b9780ffc8bbac0de5aede7d854efb8fe95fe1c19a3a52a1052ce165650cb309"
+    },
+    {
+      "file": "贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "贴图/HG_FULL_mirror.svg",
+      "bytes": 909209,
+      "sha256": "37de9a12551e981d8bae95c94509471bc31b6fdba255d4eed38993dc71125b86"
+    },
+    {
+      "file": "贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "贴图/HG_FULL_normal.svg",
+      "bytes": 909160,
+      "sha256": "d5cb91801ef19632d3d689a14ae7c7470cc2cfc1134c13ab2f1a7ed051c22312"
+    },
+    {
+      "file": "贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "贴图/HG_ICON.svg",
+      "bytes": 191862,
+      "sha256": "80c2316e01e2cf210de1177de28969f4e7b2010dc43853c167091c171749da40"
+    },
+    {
+      "file": "贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "贴图/NAME_B1.svg",
+      "bytes": 341,
+      "sha256": "6073aa7118494136319fbff49a766ab92e168c00ba04046ea2a6b4c3a0949b6c"
+    },
+    {
+      "file": "贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "贴图/NAME_B2.svg",
+      "bytes": 341,
+      "sha256": "e8941ef2cfc38808cafbd2e522ed97dd15b7e0087f65593ac98514a585252bcb"
+    },
+    {
+      "file": "贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "贴图/NAME_B3.svg",
+      "bytes": 341,
+      "sha256": "25c838f9b407e117474a56e62d1c8ed654f70fda3fad6587fd3b823e442fa65b"
+    },
+    {
+      "file": "贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "贴图/NAME_BW.svg",
+      "bytes": 341,
+      "sha256": "6df12805b1cd280f937d80221fd1a21537e4918146d94f541200fd1105129942"
+    },
+    {
+      "file": "贴图/品牌文字源.json",
+      "bytes": 337,
+      "sha256": "c3bd7c4b625cd9ef397a740daf157ff4e889ada8e8c8e1328b92c0d20ae0cab0"
+    },
+    {
+      "file": "预览/00_P4-M1外观对照.png",
+      "bytes": 1949855,
+      "sha256": "637ed63cb6d25901c3f7049b447c797f42474c2414f90e077f0c9656914e5783"
+    },
+    {
+      "file": "预览/01_完整外观.png",
+      "bytes": 2008107,
+      "sha256": "646c36331f667aa90b93731eff5965933525dd09de4ff7f65fb1ad98ab9ac75b"
+    },
+    {
+      "file": "预览/02_正面低机位.png",
+      "bytes": 1792227,
+      "sha256": "286117bec631c1418ab5d9aeb081a77453b4551121e19a3ec43ca0eee6826951"
+    },
+    {
+      "file": "预览/03_背面与新楼梯.png",
+      "bytes": 2136195,
+      "sha256": "4645050e87cba051b3fdded81e063fc2a3e60f7826d83cc1d2175f0df776dc11"
+    },
+    {
+      "file": "预览/04_二楼剖开总览.png",
+      "bytes": 2258281,
+      "sha256": "b4eb40731ae970edd5e36ed4ffa206603fe900505d600bdc21d7ee633e0934db"
+    },
+    {
+      "file": "预览/05_后侧通路.png",
+      "bytes": 2127176,
+      "sha256": "ee2ead10c04076b1b4622e5c2813859a8a7b8603618ebc375eff4853001b795c"
+    },
+    {
+      "file": "预览/06_后侧楼梯剖面.png",
+      "bytes": 2103481,
+      "sha256": "2f28b052f4e78dcef3e6d2a9532c1ebbd88ea54d549e431c33c6271ed6d9de3d"
+    },
+    {
+      "file": "预览/07_二楼正投影.png",
+      "bytes": 1893651,
+      "sha256": "eb7f6541e6ab6c2cff48bd09850c7c32979f5bf3fa24dbd65363be3f72b6385f"
+    },
+    {
+      "file": "预览/08_屋顶正投影.png",
+      "bytes": 1821263,
+      "sha256": "39b40fe978123c414d9a845ccad02356971898b4cd3cc15334ea05963c50d62e"
+    },
+    {
+      "file": "预览/09_客厅正向.png",
+      "bytes": 1882009,
+      "sha256": "0f7dc6c60c93d60bd11c7be4934d8c52884406afeb689466933a1fb7c377f185"
+    },
+    {
+      "file": "预览/10_客厅反向.png",
+      "bytes": 1939139,
+      "sha256": "134d9c973fdc8b575f8a9b1c1bc8c3d03e784a8c960a228960ad60bc37d7ec3d"
+    },
+    {
+      "file": "预览/11_餐厅正向.png",
+      "bytes": 1915184,
+      "sha256": "1e4d9a5bbd708b4a7d1206773d1907dedfabc662652163db617e69203fb86cfc"
+    },
+    {
+      "file": "预览/12_餐厅反向.png",
+      "bytes": 1918768,
+      "sha256": "65f462d5e166674431a6e00e48bf08e45708bd44fa72541cac78a23240287a2d"
+    },
+    {
+      "file": "预览/13_客厅竖屏.png",
+      "bytes": 1515858,
+      "sha256": "91eed10eaa390b95cd15462d38fd0d1d964cd951ad2b0fb2bf4fb7dae29a0db5"
+    },
+    {
+      "file": "预览/14_餐厅竖屏.png",
+      "bytes": 1490219,
+      "sha256": "a9ad9aa02a0284471780096c617c0ef64b5924519c31f54a580fc09ce66205bc"
+    }
+  ]
+}

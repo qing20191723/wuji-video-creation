@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">03 / 后侧双跑梯剖面</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">22级 × 150mm；每跑10个280mm踏面；正面旧箱体移除</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P4-M2 · 2026-10-23    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">横轴：建筑Y坐标（向北）</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">一、二跑侧面重叠投影</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">二楼通道 +3.30</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">转台 +4.95</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">屋顶出口 +6.60</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">平台净深至少1.50m</text>
+<text x="1430.00" y="381.00" font-size="16" font-weight="400" text-anchor="start">楼梯顶口设局部雨棚</text>
+<text x="1430.00" y="410.00" font-size="16" font-weight="400" text-anchor="start">支承与排水非施工验算</text>
+<path d="M106.98,1037.55 L701.32,1037.55" fill="none" stroke="#a1ada6" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="705.57" y="1037.55" font-size="12" font-weight="400" text-anchor="start">+0.00</text>
+<path d="M106.98,757.36 L701.32,757.36" fill="none" stroke="#a1ada6" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="705.57" y="757.36" font-size="12" font-weight="400" text-anchor="start">+3.30</text>
+<path d="M106.98,617.26 L701.32,617.26" fill="none" stroke="#a1ada6" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="705.57" y="617.26" font-size="12" font-weight="400" text-anchor="start">+4.95</text>
+<path d="M106.98,477.17 L701.32,477.17" fill="none" stroke="#a1ada6" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="705.57" y="477.17" font-size="12" font-weight="400" text-anchor="start">+6.60</text>
+<path d="M106.98,269.15 L701.32,269.15" fill="none" stroke="#a1ada6" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="705.57" y="269.15" font-size="12" font-weight="400" text-anchor="start">+9.05</text>
+<rect x="259.81" y="744.62" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="473.77" y="604.53" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="283.58" y="731.89" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="450.00" y="591.79" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="307.36" y="719.15" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="426.23" y="579.06" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="331.13" y="706.42" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="402.45" y="566.32" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="354.91" y="693.68" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="378.68" y="553.58" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="378.68" y="680.94" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="354.91" y="540.85" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="402.45" y="668.21" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="331.13" y="528.11" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="426.23" y="655.47" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="307.36" y="515.38" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="450.00" y="642.74" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="283.58" y="502.64" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="473.77" y="630.00" width="23.77" height="15.28" fill="#788e87" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="259.81" y="489.91" width="23.77" height="15.28" fill="#c5d3cc" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="123.96" y="757.36" width="144.34" height="18.68" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="497.55" y="617.26" width="127.36" height="18.68" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="123.96" y="477.17" width="144.34" height="18.68" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="119.72" y="260.66" width="182.55" height="8.49" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<path d="M259.81,663.96 L497.55,523.87" fill="none" stroke="#243b40" stroke-width="3"/>
+<path d="M497.55,523.87 L259.81,383.77" fill="none" stroke="#243b40" stroke-width="3"/>
+<rect x="123.11" y="495.85" width="10.19" height="541.70" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="615.57" y="635.94" width="10.19" height="401.60" fill="#5b7472" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="162.4867924528302" y="714.6415094339624" width="58.800000000000004" height="20" fill="white" fill-opacity=".9" rx="3"/>
+<text x="191.89" y="727.64" font-size="13" font-weight="400" text-anchor="middle">二楼入口</text>
+<rect x="156.6367924528302" y="438.6981132075473" width="70.5" height="20" fill="white" fill-opacity=".9" rx="3"/>
+<text x="191.89" y="451.70" font-size="13" font-weight="400" text-anchor="middle">屋顶连接桥</text>
+<rect x="179.4679245283019" y="226.43396226415098" width="58.800000000000004" height="20" fill="white" fill-opacity=".9" rx="3"/>
+<text x="208.87" y="239.43" font-size="13" font-weight="400" text-anchor="middle">轻薄雨棚</text>
+</svg>

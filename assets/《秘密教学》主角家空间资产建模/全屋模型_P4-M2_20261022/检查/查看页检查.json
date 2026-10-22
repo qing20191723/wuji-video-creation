@@ -1,0 +1,109 @@
+{
+  "images": [
+    {
+      "src": "图纸/01_二楼整体平面.png",
+      "width": 3600,
+      "height": 2480
+    },
+    {
+      "src": "图纸/02_屋顶平面.png",
+      "width": 3600,
+      "height": 2480
+    },
+    {
+      "src": "图纸/03_楼梯剖面.png",
+      "width": 3600,
+      "height": 2480
+    },
+    {
+      "src": "图纸/04_客餐厅品牌布置.png",
+      "width": 3600,
+      "height": 2480
+    },
+    {
+      "src": "图纸/05_外部总平面.png",
+      "width": 3600,
+      "height": 2480
+    },
+    {
+      "src": "预览/00_P4-M1外观对照.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/01_完整外观.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/02_正面低机位.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/03_背面与新楼梯.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/04_二楼剖开总览.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/05_后侧通路.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/06_后侧楼梯剖面.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/07_二楼正投影.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/08_屋顶正投影.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/09_客厅正向.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/10_客厅反向.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/11_餐厅正向.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/12_餐厅反向.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/13_客厅竖屏.png",
+      "width": 900,
+      "height": 1600
+    },
+    {
+      "src": "预览/14_餐厅竖屏.png",
+      "width": 900,
+      "height": 1600
+    }
+  ],
+  "missing": [],
+  "overflow": false,
+  "mobileOverflow": false,
+  "errors": [],
+  "horizontalFlipToggle": true
+}

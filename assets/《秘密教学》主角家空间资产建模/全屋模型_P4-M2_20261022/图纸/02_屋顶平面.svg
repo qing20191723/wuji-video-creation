@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">02 / 屋顶平面 · 开放出口与轻薄雨棚</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">+6.60主屋面；不再设置封闭的第三层楼梯箱体</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P4-M2 · 2026-10-23    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">绿灰：主屋面 +6.60</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">浅灰：低屋面 +3.30</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">木色：二楼庭院与阳台</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">橙线：上梯后进入主屋面</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">雨棚底 +9.05 / 顶 +9.15</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">新通路避开卧室外窗</text>
+<text x="1430.00" y="381.00" font-size="16" font-weight="400" text-anchor="start">公共阳台与私人阳台分隔</text>
+<path d="M1299.48,500.06 L1299.48,454.28" fill="none" stroke="#38796c" stroke-width="3"/>
+<text x="1299.48" y="446.65" font-size="18" font-weight="400" text-anchor="start">N</text>
+<rect x="257.88" y="858.71" width="587.57" height="133.54" fill="#e8e6df" stroke="#e8e6df" stroke-width="0" rx="0"/>
+<rect x="112.89" y="858.71" width="148.80" height="133.54" fill="#e8e6df" stroke="#e8e6df" stroke-width="0" rx="0"/>
+<rect x="257.88" y="461.91" width="843.20" height="396.80" fill="#e8e6df" stroke="#e8e6df" stroke-width="0" rx="0"/>
+<rect x="261.69" y="858.71" width="839.38" height="68.68" fill="#e8e6df" stroke="#e8e6df" stroke-width="0" rx="0"/>
+<rect x="257.88" y="858.71" width="587.57" height="133.54" fill="#becfc8" stroke="#becfc8" stroke-width="0" rx="0"/>
+<rect x="112.89" y="858.71" width="148.80" height="133.54" fill="#becfc8" stroke="#becfc8" stroke-width="0" rx="0"/>
+<rect x="257.88" y="614.52" width="305.23" height="251.82" fill="#becfc8" stroke="#becfc8" stroke-width="0" rx="0"/>
+<rect x="555.48" y="584.00" width="217.48" height="282.34" fill="#becfc8" stroke="#becfc8" stroke-width="0" rx="0"/>
+<rect x="765.32" y="622.15" width="305.23" height="244.18" fill="#becfc8" stroke="#becfc8" stroke-width="0" rx="0"/>
+<rect x="1070.55" y="629.78" width="76.31" height="228.92" fill="#e3d5bf" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="845.45" y="866.34" width="396.80" height="175.51" fill="#e7d5b9" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="952.28" y="872.06" width="91.57" height="30.52" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="998.06" y="889.23" font-size="10" font-weight="400" text-anchor="middle">T01</text>
+<rect x="978.98" y="904.49" width="38.15" height="20.98" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="998.06" y="916.89" font-size="10" font-weight="400" text-anchor="middle">T02</text>
+<rect x="948.46" y="988.43" width="28.62" height="30.52" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="962.77" y="1005.60" font-size="10" font-weight="400" text-anchor="middle">T03</text>
+<rect x="1015.23" y="988.43" width="28.62" height="30.52" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="1029.54" y="1005.60" font-size="10" font-weight="400" text-anchor="middle">T04</text>
+<rect x="1219.35" y="872.06" width="17.17" height="164.06" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="1227.94" y="956.00" font-size="10" font-weight="400" text-anchor="middle">T05</text>
+<rect x="883.60" y="1018.95" width="232.74" height="17.17" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="999.97" y="1029.45" font-size="10" font-weight="400" text-anchor="middle">T06</text>
+<rect x="851.17" y="988.43" width="24.80" height="45.78" fill="#c8d0c3" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="863.57" y="1013.23" font-size="10" font-weight="400" text-anchor="middle">T07</text>
+<rect x="1158.31" y="687.02" width="53.42" height="179.32" fill="#d7e9df" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1158.31" y="625.97" width="124.00" height="64.86" fill="#d7e9df" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1177.38" y="465.72" width="99.20" height="164.06" fill="#e1e4e0" stroke="#899a95" stroke-width="1" rx="0"/>
+<path d="M1177.38,629.78 L1223.17,629.78" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,629.78 L1276.58,629.78" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,619.10 L1223.17,619.10" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,619.10 L1276.58,619.10" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,608.42 L1223.17,608.42" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,608.42 L1276.58,608.42" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,597.74 L1223.17,597.74" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,597.74 L1276.58,597.74" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,587.05 L1223.17,587.05" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,587.05 L1276.58,587.05" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,576.37 L1223.17,576.37" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,576.37 L1276.58,576.37" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,565.69 L1223.17,565.69" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,565.69 L1276.58,565.69" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,555.00 L1223.17,555.00" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,555.00 L1276.58,555.00" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,544.32 L1223.17,544.32" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,544.32 L1276.58,544.32" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,533.64 L1223.17,533.64" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,533.64 L1276.58,533.64" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1177.38,522.95 L1223.17,522.95" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1230.80,522.95 L1276.58,522.95" fill="none" stroke="#718980" stroke-width="1"/>
+<path d="M1223.17,629.78 L1223.17,522.95" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M1230.80,629.78 L1230.80,522.95" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M1253.69,618.34 L1253.69,496.25" fill="none" stroke="#38796c" stroke-width="3"/>
+<path d="M1253.69,496.25 L1200.28,496.25" fill="none" stroke="#38796c" stroke-width="3"/>
+<path d="M1200.28,496.25 L1200.28,618.34" fill="none" stroke="#38796c" stroke-width="3"/>
+<path d="M1200.28,618.34 L1205.26,608.03" fill="none" stroke="#38796c" stroke-width="3"/>
+<path d="M1200.28,618.34 L1195.30,608.03" fill="none" stroke="#38796c" stroke-width="3"/>
+<rect x="1184.9846153846154" y="474.8" width="84.0" height="17" fill="white" fill-opacity=".9" rx="3"/>
+<text x="1226.98" y="484.80" font-size="10" font-weight="400" text-anchor="middle">转台 +4.95</text>
+<path d="M1150.68,862.52 L1150.68,625.97" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M1066.74,862.52 L1150.68,862.52" fill="none" stroke="#243b40" stroke-width="3"/>
+<rect x="1066.74" y="625.97" width="158.34" height="64.86" fill="#b1d1cb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1171.66" y="610.71" width="57.23" height="82.03" fill="none" stroke="#416d76" stroke-width="1" rx="0"/>
+<path d="M1200.28,629.78 L1200.28,658.40" fill="none" stroke="#b36c31" stroke-width="3"/>
+<path d="M1200.28,658.40 L1043.85,658.40" fill="none" stroke="#b36c31" stroke-width="3"/>
+<path d="M1043.85,658.40 L1054.15,663.38" fill="none" stroke="#b36c31" stroke-width="3"/>
+<path d="M1043.85,658.40 L1054.15,653.42" fill="none" stroke="#b36c31" stroke-width="3"/>
+<rect x="1149.3153846153846" y="752.3230769230769" width="71.4" height="18" fill="white" fill-opacity=".9" rx="3"/>
+<text x="1185.02" y="763.32" font-size="11" font-weight="400" text-anchor="middle">独立公共通道</text>
+<rect x="957.2153846153846" y="983.0615384615385" width="58.800000000000004" height="20" fill="white" fill-opacity=".9" rx="3"/>
+<text x="986.62" y="996.06" font-size="13" font-weight="400" text-anchor="middle">公共庭院</text>
+<rect x="560.2807692307692" y="755.7692307692307" width="165.9" height="26" fill="white" fill-opacity=".9" rx="3"/>
+<text x="643.23" y="774.77" font-size="19" font-weight="400" text-anchor="middle">主屋面 +6.60</text>
+<rect x="603.6576923076923" y="494.6923076923077" width="117.3" height="20" fill="white" fill-opacity=".9" rx="3"/>
+<text x="662.31" y="507.69" font-size="13" font-weight="400" text-anchor="middle">低屋面 / 仅检修</text>
+</svg>

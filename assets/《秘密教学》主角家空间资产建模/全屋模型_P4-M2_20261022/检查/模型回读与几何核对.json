@@ -1,0 +1,1203 @@
+{
+  "revision": "P4-M2",
+  "passed": 231,
+  "total": 231,
+  "failed": [],
+  "checks": [
+    {
+      "name": "P4确认基线SHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "室内家具数据原样保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "非屋顶梯间房间原样保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "直梯数据原样保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具存在_C01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C08",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_C09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_C09",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B08",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B09",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B11",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B12",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_B13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_B13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A08",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A09",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A11",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A12",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_A13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_A13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_BW1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_BW1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_BW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_BW2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_BW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_BW3",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_M07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_M07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_K07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_K07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_D01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_D01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC3",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC5",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_DC6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_DC6",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_D02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_D02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_L06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_L06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_LA1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_LA1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_LA2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_LA2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_LA3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_LA3",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_R1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_R2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_E1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_E1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_WC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_WC1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_WC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_WC2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_ST1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_ST1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_MW1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_MW1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_MW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_MW2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "家具存在_MW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具主体占地_MW3",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "用户指定尺寸_A01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "用户指定尺寸_C01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "用户指定尺寸_C02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "子豪门中心9.65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "浴室真实玻璃门",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "舒亚对面落地窗保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院双扇玻璃门",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "两段楼梯踏步数",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "二楼公共通路开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 153,
+        "collisions": []
+      }
+    },
+    {
+      "name": "庭院入口及主通道开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 112,
+        "collisions": []
+      }
+    },
+    {
+      "name": "后侧室外楼梯入口开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 275,
+        "collisions": []
+      }
+    },
+    {
+      "name": "薇亚入口开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 20,
+        "collisions": []
+      }
+    },
+    {
+      "name": "子豪入口开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 25,
+        "collisions": []
+      }
+    },
+    {
+      "name": "舒亚入口开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 24,
+        "collisions": []
+      }
+    },
+    {
+      "name": "浴室入口开放门扇时连续通行",
+      "passed": true,
+      "detail": {
+        "radius": 0.18,
+        "samples": 21,
+        "collisions": []
+      }
+    },
+    {
+      "name": "ST12洞口没有楼板封堵",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "ST23洞口没有楼板封堵",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "ST12踏步中心垂直净空>=2.2m",
+      "passed": true,
+      "detail": 3.23
+    },
+    {
+      "name": "ST23踏步中心垂直净空>=2.2m",
+      "passed": true,
+      "detail": "open"
+    },
+    {
+      "name": "固定门牌_薇亚の窝",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "固定门牌_子豪の窝",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "固定门牌_舒亚の窝",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "固定门牌_公共浴室",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "41个品牌位置固定",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "完整版域名完整",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "全部位图内嵌",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "全屋保存未残留剖切隐藏",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "模型不依赖相机朝向约束",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "M1室内家具门窗门牌直梯护栏真实网格包围盒不变",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "旧正面梯间墙体和支柱已移除",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "旧屋顶入口已封闭",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "主屋面取消旧梯间外凸",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "户外通道净宽至少1.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "转接平台栏杆间净深至少1.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "阳台外侧公私分隔仍完整",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "公共庭院到新楼梯人体通行和2.2米净高",
+      "passed": true,
+      "detail": {
+        "samples": 364,
+        "hits": []
+      }
+    },
+    {
+      "name": "公共庭院到新楼梯下方连续踏面",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "屋顶出口连接人体通行和2.2米净高",
+      "passed": true,
+      "detail": {
+        "samples": 84,
+        "hits": []
+      }
+    },
+    {
+      "name": "屋顶出口连接下方连续踏面",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "双跑梯人体通行和2.2米净高",
+      "passed": true,
+      "detail": {
+        "samples": 195,
+        "hits": []
+      }
+    },
+    {
+      "name": "双跑梯下方连续踏面",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "BR_L_N真实浮雕图标及文字",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_N均匀缩放无镜头约束",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_N非发光材质",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_M真实浮雕图标及文字",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_M均匀缩放无镜头约束",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_M非发光材质",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_TABLE真实浮雕图标及文字",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_TABLE均匀缩放无镜头约束",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_TABLE非发光材质",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_TABLE真实浮雕图标及文字",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_TABLE均匀缩放无镜头约束",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_TABLE非发光材质",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_TABLE底座落桌且不超桌边",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_D_TABLE底座落桌且不超桌边",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BR_L_N避让门窗家具",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "BR_D_M避让门窗家具",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "GLB实际二进制",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GLB网格数与Blend一致",
+      "passed": true,
+      "detail": {
+        "blend": 1375,
+        "glb": 1375
+      }
+    },
+    {
+      "name": "GLB坐标回读误差<=2mm",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "保留认可原图_EP7-OK-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留认可原图_EP7-OK-07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留M3_建模方案.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留M3_秘密教学_P2.4-M3.blend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留M3_秘密教学_P2.4-M3.glb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "保留M3_空间数据.json",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}
