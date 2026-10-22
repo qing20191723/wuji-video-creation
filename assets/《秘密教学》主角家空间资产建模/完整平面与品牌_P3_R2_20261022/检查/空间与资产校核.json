@@ -1,0 +1,2018 @@
+{
+  "revision": "P3-R2-20261022",
+  "checks": [
+    {
+      "name": "家具尺寸:C01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.5,
+          2.2
+        ],
+        "expected": [
+          1.5,
+          2.2
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.7,
+          0.6
+        ],
+        "expected": [
+          0.7,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.0,
+          0.65
+        ],
+        "expected": [
+          2,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.3,
+          0.45
+        ],
+        "expected": [
+          2.3,
+          0.45
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          4.0
+        ],
+        "expected": [
+          0.65,
+          4.0
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C07",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.18,
+          0.6
+        ],
+        "expected": [
+          0.18,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C08",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.8,
+          2.8
+        ],
+        "expected": [
+          2.8,
+          2.8
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:C09",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.45,
+          0.6
+        ],
+        "expected": [
+          0.45,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:C09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.2,
+          1.8
+        ],
+        "expected": [
+          2.2,
+          1.8
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.45,
+          1.95
+        ],
+        "expected": [
+          0.45,
+          1.95
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          1.65
+        ],
+        "expected": [
+          0.65,
+          1.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          1.3
+        ],
+        "expected": [
+          0.65,
+          1.3
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.15,
+          0.55
+        ],
+        "expected": [
+          0.15,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B07",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.4
+        ],
+        "expected": [
+          0.6,
+          0.4
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B08",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.4,
+          0.45
+        ],
+        "expected": [
+          0.4,
+          0.45
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B09",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.85,
+          0.9
+        ],
+        "expected": [
+          0.85,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B10",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.8,
+          2.4
+        ],
+        "expected": [
+          2.8,
+          2.4
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B11",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.2,
+          0.7
+        ],
+        "expected": [
+          1.2,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B12",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.75,
+          0.55
+        ],
+        "expected": [
+          0.75,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:B13",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.2,
+          0.4
+        ],
+        "expected": [
+          1.2,
+          0.4
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:B13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          3.9,
+          2.52
+        ],
+        "expected": [
+          3.9,
+          2.52
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.4,
+          1.4
+        ],
+        "expected": [
+          0.4,
+          1.4
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.8,
+          0.65
+        ],
+        "expected": [
+          1.8,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          1.3
+        ],
+        "expected": [
+          0.6,
+          1.3
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A07",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.55,
+          0.55
+        ],
+        "expected": [
+          0.55,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A08",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.2,
+          0.75
+        ],
+        "expected": [
+          0.2,
+          0.75
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A09",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.7,
+          0.6
+        ],
+        "expected": [
+          1.7,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A10",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.5,
+          2.5
+        ],
+        "expected": [
+          2.5,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A11",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.75,
+          1.3
+        ],
+        "expected": [
+          0.75,
+          1.3
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A12",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.7,
+          0.7
+        ],
+        "expected": [
+          0.7,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:A13",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.1,
+          1.1
+        ],
+        "expected": [
+          1.1,
+          1.1
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:A13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具在房间内:BW1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具在房间内:BW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具在房间内:BW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.2,
+          2.0
+        ],
+        "expected": [
+          2.2,
+          2.0
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.55
+        ],
+        "expected": [
+          0.6,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.9,
+          0.6
+        ],
+        "expected": [
+          1.9,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.3,
+          0.6
+        ],
+        "expected": [
+          1.3,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.55,
+          0.55
+        ],
+        "expected": [
+          0.55,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:M07",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.85,
+          0.55
+        ],
+        "expected": [
+          0.85,
+          0.55
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:M07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.95,
+          1.0
+        ],
+        "expected": [
+          0.95,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          3.45,
+          0.65
+        ],
+        "expected": [
+          3.45,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          2.3
+        ],
+        "expected": [
+          0.65,
+          2.3
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          0.9
+        ],
+        "expected": [
+          0.65,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1,
+          0.65
+        ],
+        "expected": [
+          1,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.65,
+          1.75
+        ],
+        "expected": [
+          0.65,
+          1.75
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:K07",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.0,
+          0.65
+        ],
+        "expected": [
+          2.0,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:K07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:D01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.1,
+          1.0
+        ],
+        "expected": [
+          2.1,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:D01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC2",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC3",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC4",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC5",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:DC6",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          0.5
+        ],
+        "expected": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:DC6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:D02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.45,
+          0.9
+        ],
+        "expected": [
+          0.45,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:D02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L01",
+      "passed": true,
+      "detail": {
+        "actual": [
+          3.9,
+          0.95
+        ],
+        "expected": [
+          3.9,
+          0.95
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L02",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.95,
+          1.2
+        ],
+        "expected": [
+          0.95,
+          1.2
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L03",
+      "passed": true,
+      "detail": {
+        "actual": [
+          4.3,
+          2.5
+        ],
+        "expected": [
+          4.3,
+          2.5
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L04",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.4,
+          0.8
+        ],
+        "expected": [
+          1.4,
+          0.8
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L05",
+      "passed": true,
+      "detail": {
+        "actual": [
+          3.1,
+          0.4
+        ],
+        "expected": [
+          3.1,
+          0.4
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:L06",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.5,
+          1.3
+        ],
+        "expected": [
+          0.5,
+          1.3
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:L06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:LA1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.7,
+          1.6
+        ],
+        "expected": [
+          0.7,
+          1.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:LA1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:LA2",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.7,
+          0.65
+        ],
+        "expected": [
+          2.7,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:LA2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:LA3",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          0.6
+        ],
+        "expected": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:LA3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:R1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2,
+          0.85
+        ],
+        "expected": [
+          2,
+          0.85
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:R1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:R2",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.2,
+          0.45
+        ],
+        "expected": [
+          1.2,
+          0.45
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:R2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:E1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.4,
+          1.6
+        ],
+        "expected": [
+          0.4,
+          1.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:E1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:WC1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.75,
+          0.8
+        ],
+        "expected": [
+          0.75,
+          0.8
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:WC1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:WC2",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.1,
+          0.6
+        ],
+        "expected": [
+          1.1,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:WC2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:ST1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          2.3,
+          0.6
+        ],
+        "expected": [
+          2.3,
+          0.6
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:ST1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:MW1",
+      "passed": true,
+      "detail": {
+        "actual": [
+          1.7,
+          0.75
+        ],
+        "expected": [
+          1.7,
+          0.75
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:MW1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:MW2",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.6,
+          1.2
+        ],
+        "expected": [
+          0.6,
+          1.2
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:MW2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "家具尺寸:MW3",
+      "passed": true,
+      "detail": {
+        "actual": [
+          0.7,
+          0.75
+        ],
+        "expected": [
+          0.7,
+          0.75
+        ]
+      }
+    },
+    {
+      "name": "家具在房间内:MW3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "使用空间:B1-床南侧",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B1-床尾南段",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B1-衣柜前",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B1-阳台通路",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B1-书桌椅后",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B1-镜前",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B3-床左通路",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B3-衣架前",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:B3-椅后",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:BW-入口与转身",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "使用空间:BW-坐便前",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_B3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_B3",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_B2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_B2",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_B1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:W_B30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_B20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_B10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_B11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:G_BALCONY",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:G_BATH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_SHUYA_OPPOSITE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_STAIR_STRIP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_PLATFORM_SIDE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_PLATFORM_END",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W_BATH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:D_ROOF_ACCESS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_ROOF_ACCESS",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_RS_ENTRY",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_RS_ENTRY",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:W101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:D101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D101",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:W103",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W109",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W110",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:W111",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "洞口在墙段内:D106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D106",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D107",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D104",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D105",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D108",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_MAIN_NEW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_MAIN_NEW",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "洞口在墙段内:D_STAIR_EXIT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "开门扫掠:D_STAIR_EXIT",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "房间通行:B1[15.4, 4.5]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B1[17.9, 5.5]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B1[18.45, 5.6]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.05,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B1[20, 4.0]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B1[19.0, 6.9]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B3[1.2, 3.5]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B3[3.5, 4.1]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B3[5.0, 3.3]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B3[5.6, 5.4]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B2[10.4, 3.4]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B2[10.4, 6.8]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:B2[11.8, 8.1]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:BW[-1.0, 0.6]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:BW[-2.0, -0.5]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "房间通行:BW[-1.9, 1.0]",
+      "passed": true,
+      "detail": {
+        "nearest_distance": 0.0,
+        "reachable": true
+      }
+    },
+    {
+      "name": "R1二姐床贴右墙",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R2床尾小书架与床居中对齐",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R2床尾小书架间距保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R1大姐床尾靠近电脑桌",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R1子豪门位置",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "二姐床头书桌入口同墙",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "二姐原图左右次序",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "浴室玻璃门位于走廊尽头",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "舒亚对面仍为落地窗",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "楼梯层高闭合:ST12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "楼梯层高闭合:ST23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "直梯跑长",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "上下平台投影一致",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "通顶楼梯净空预留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "品牌不面向摄影机",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "完整版含永久域名",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原交付未修改:建模方案.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原交付未修改:秘密教学_P2.4-M3.blend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原交付未修改:秘密教学_P2.4-M3.glb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原交付未修改:空间数据.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "认可原图未修改:EP7-OK-07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "整组镜像像素核对",
+      "passed": true,
+      "detail": {
+        "mean_error": 0.022116776315789472,
+        "note": "浏览器亚像素栅格化允许<1/255平均差"
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "limitations": [
+    "本版为内部先行设计稿，尺寸及新外轮廓待用户验收；不是施工图。",
+    "二姐V3俯拍含额外门，与正面参考不一致；采用正面单入口关系，不新增该门。",
+    "浴室玻璃门暂按双扇推拉表达，具体门框、五金需近景参考校准。",
+    "一楼既有内部布局保持；新增公共连接通路及浴室下方设备/支承区域属于设计新增。",
+    "新增屋顶楼梯间与外挑区域的结构支承、防水和管线尚未进行工程设计。",
+    "固定品牌布置已设计；全屋材质模型及其镜面反射、最终机位遮挡须在后续整模中验证。"
+  ],
+  "not_claimed": [
+    "真实梁底净空及结构验算",
+    "整屋渲染的品牌遮挡和镜面反射",
+    "用户平面验收"
+  ]
+}

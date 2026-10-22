@@ -1,0 +1,248 @@
+{
+  "assets": [
+    {
+      "id": "NAME_B1",
+      "kind": "nameplate",
+      "width": 0.44,
+      "height": 0.19,
+      "meshes": 2,
+      "files": [
+        "NAME_B1.blend",
+        "NAME_B1.glb",
+        "NAME_B1_预览.png"
+      ]
+    },
+    {
+      "id": "NAME_B2",
+      "kind": "nameplate",
+      "width": 0.44,
+      "height": 0.19,
+      "meshes": 2,
+      "files": [
+        "NAME_B2.blend",
+        "NAME_B2.glb",
+        "NAME_B2_预览.png"
+      ]
+    },
+    {
+      "id": "NAME_B3",
+      "kind": "nameplate",
+      "width": 0.44,
+      "height": 0.19,
+      "meshes": 2,
+      "files": [
+        "NAME_B3.blend",
+        "NAME_B3.glb",
+        "NAME_B3_预览.png"
+      ]
+    },
+    {
+      "id": "NAME_BW",
+      "kind": "nameplate",
+      "width": 0.44,
+      "height": 0.19,
+      "meshes": 2,
+      "files": [
+        "NAME_BW.blend",
+        "NAME_BW.glb",
+        "NAME_BW_预览.png"
+      ]
+    },
+    {
+      "id": "HG_PLAQUE_normal",
+      "kind": "non_emissive",
+      "width": 1.6,
+      "height": 0.76,
+      "meshes": 2,
+      "files": [
+        "HG_PLAQUE_normal.blend",
+        "HG_PLAQUE_normal.glb",
+        "HG_PLAQUE_normal_预览.png"
+      ]
+    },
+    {
+      "id": "HG_NEON_normal",
+      "kind": "glyph_emission",
+      "width": 1.6,
+      "height": 0.76,
+      "meshes": 8,
+      "files": [
+        "HG_NEON_normal.blend",
+        "HG_NEON_normal.glb",
+        "HG_NEON_normal_预览.png"
+      ]
+    },
+    {
+      "id": "HG_SCULPTURE_normal",
+      "kind": "sculpture",
+      "width": 0.5,
+      "height": 0.65,
+      "meshes": 4,
+      "files": [
+        "HG_SCULPTURE_normal.blend",
+        "HG_SCULPTURE_normal.glb",
+        "HG_SCULPTURE_normal_预览.png"
+      ]
+    },
+    {
+      "id": "HG_PLAQUE_mirror",
+      "kind": "non_emissive",
+      "width": 1.6,
+      "height": 0.76,
+      "meshes": 2,
+      "files": [
+        "HG_PLAQUE_mirror.blend",
+        "HG_PLAQUE_mirror.glb",
+        "HG_PLAQUE_mirror_预览.png"
+      ]
+    },
+    {
+      "id": "HG_NEON_mirror",
+      "kind": "glyph_emission",
+      "width": 1.6,
+      "height": 0.76,
+      "meshes": 8,
+      "files": [
+        "HG_NEON_mirror.blend",
+        "HG_NEON_mirror.glb",
+        "HG_NEON_mirror_预览.png"
+      ]
+    },
+    {
+      "id": "HG_SCULPTURE_mirror",
+      "kind": "sculpture",
+      "width": 0.5,
+      "height": 0.65,
+      "meshes": 4,
+      "files": [
+        "HG_SCULPTURE_mirror.blend",
+        "HG_SCULPTURE_mirror.glb",
+        "HG_SCULPTURE_mirror_预览.png"
+      ]
+    }
+  ],
+  "glyphs": [
+    {
+      "name": "NAME_B1_固定字形",
+      "text": "薇亚の窝",
+      "vertices": 10380
+    },
+    {
+      "name": "NAME_B2_固定字形",
+      "text": "子豪の窝",
+      "vertices": 9980
+    },
+    {
+      "name": "NAME_B3_固定字形",
+      "text": "舒亚の窝",
+      "vertices": 8230
+    },
+    {
+      "name": "NAME_BW_固定字形",
+      "text": "公共浴室",
+      "vertices": 6890
+    },
+    {
+      "name": "黄瓜_本体发光",
+      "text": "黄瓜",
+      "vertices": 2790
+    },
+    {
+      "name": "短剧_本体发光",
+      "text": "短剧",
+      "vertices": 3620
+    },
+    {
+      "name": "永久域名_本体发光",
+      "text": "hgdju.com",
+      "vertices": 14780
+    },
+    {
+      "name": "底座品牌文字",
+      "text": "黄瓜短剧",
+      "vertices": 6410
+    },
+    {
+      "name": "黄瓜_本体发光",
+      "text": "黄瓜",
+      "vertices": 2790
+    },
+    {
+      "name": "短剧_本体发光",
+      "text": "短剧",
+      "vertices": 3620
+    },
+    {
+      "name": "永久域名_本体发光",
+      "text": "hgdju.com",
+      "vertices": 14780
+    },
+    {
+      "name": "底座品牌文字",
+      "text": "黄瓜短剧",
+      "vertices": 6410
+    },
+    {
+      "character": "薇",
+      "vertices": 423
+    },
+    {
+      "character": "亚",
+      "vertices": 70
+    },
+    {
+      "character": "の",
+      "vertices": 278
+    },
+    {
+      "character": "窝",
+      "vertices": 267
+    },
+    {
+      "character": "子",
+      "vertices": 77
+    },
+    {
+      "character": "豪",
+      "vertices": 376
+    },
+    {
+      "character": "舒",
+      "vertices": 208
+    },
+    {
+      "character": "公",
+      "vertices": 175
+    },
+    {
+      "character": "共",
+      "vertices": 87
+    },
+    {
+      "character": "浴",
+      "vertices": 273
+    },
+    {
+      "character": "室",
+      "vertices": 154
+    },
+    {
+      "character": "黄",
+      "vertices": 111
+    },
+    {
+      "character": "瓜",
+      "vertices": 168
+    },
+    {
+      "character": "短",
+      "vertices": 204
+    },
+    {
+      "character": "剧",
+      "vertices": 158
+    }
+  ],
+  "format": "Blender4.5.9 / GLB2.0",
+  "emission": "独立字形及图标自发光；背光为单独可选关闭层"
+}

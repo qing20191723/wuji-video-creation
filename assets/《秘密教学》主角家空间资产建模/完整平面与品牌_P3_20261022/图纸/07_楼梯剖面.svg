@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">07 / 楼梯纵剖与楼层对应</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">层高3.30m，板厚0.22m沿用暂定基线；洞口随楼梯确定</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P3-R1 · 2026-10-22    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">直梯：22级 × 0.15m</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">水平段：21步 × 0.36m</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">净宽：1.30m</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">通顶双跑：每跑11级</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">每跑10步 × 0.28m</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">净宽：1.20m</text>
+<text x="1430.00" y="381.00" font-size="16" font-weight="400" text-anchor="start">图中绿色为通行方向</text>
+<text x="1430.00" y="410.00" font-size="16" font-weight="400" text-anchor="start">洞口不放梁；梁底待设计</text>
+<path d="M1280.40,571.60 L1280.40,497.20" fill="none" stroke="#38796c" stroke-width="3"/>
+<text x="1280.40" y="484.80" font-size="18" font-weight="400" text-anchor="start">N</text>
+<path d="M152.00,1018.00 L1237.00,1018.00" fill="none" stroke="#889b91" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="1243.20" y="1018.00" font-size="14" font-weight="400" text-anchor="start">一楼 ±0.00</text>
+<path d="M152.00,813.40 L1237.00,813.40" fill="none" stroke="#889b91" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="1243.20" y="813.40" font-size="14" font-weight="400" text-anchor="start">二楼 +3.30</text>
+<path d="M152.00,608.80 L1237.00,608.80" fill="none" stroke="#889b91" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="1243.20" y="608.80" font-size="14" font-weight="400" text-anchor="start">屋顶 +6.60</text>
+<path d="M245.00,1008.70 L267.32,1008.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M245.00,1018.00 L245.00,1008.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M267.32,999.40 L289.64,999.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M267.32,1008.70 L267.32,999.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M289.64,990.10 L311.96,990.10" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M289.64,999.40 L289.64,990.10" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M311.96,980.80 L334.28,980.80" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M311.96,990.10 L311.96,980.80" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M334.28,971.50 L356.60,971.50" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M334.28,980.80 L334.28,971.50" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M356.60,962.20 L378.92,962.20" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M356.60,971.50 L356.60,962.20" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M378.92,952.90 L401.24,952.90" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M378.92,962.20 L378.92,952.90" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M401.24,943.60 L423.56,943.60" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M401.24,952.90 L401.24,943.60" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M423.56,934.30 L445.88,934.30" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M423.56,943.60 L423.56,934.30" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M445.88,925.00 L468.20,925.00" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M445.88,934.30 L445.88,925.00" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M468.20,915.70 L490.52,915.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M468.20,925.00 L468.20,915.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M490.52,906.40 L512.84,906.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M490.52,915.70 L490.52,906.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M512.84,897.10 L535.16,897.10" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M512.84,906.40 L512.84,897.10" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M535.16,887.80 L557.48,887.80" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M535.16,897.10 L535.16,887.80" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M557.48,878.50 L579.80,878.50" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M557.48,887.80 L557.48,878.50" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M579.80,869.20 L602.12,869.20" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M579.80,878.50 L579.80,869.20" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M602.12,859.90 L624.44,859.90" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M602.12,869.20 L602.12,859.90" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M624.44,850.60 L646.76,850.60" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M624.44,859.90 L624.44,850.60" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M646.76,841.30 L669.08,841.30" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M646.76,850.60 L646.76,841.30" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M669.08,832.00 L691.40,832.00" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M669.08,841.30 L669.08,832.00" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M691.40,822.70 L713.72,822.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M691.40,832.00 L691.40,822.70" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M713.72,813.40 L736.04,813.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<path d="M713.72,822.70 L713.72,813.40" fill="none" stroke="#243b40" stroke-width="2"/>
+<rect x="152.00" y="813.40" width="93.00" height="13.64" fill="#c1c9c1" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="713.72" y="813.40" width="374.48" height="13.64" fill="#c1c9c1" stroke="#899a95" stroke-width="1" rx="0"/>
+<text x="400.00" y="757.60" font-size="18" font-weight="400" text-anchor="start">直梯上方完整开洞</text>
+<path d="M821.60,804.10 L838.96,804.10" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M821.60,813.40 L821.60,804.10" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M838.96,794.80 L856.32,794.80" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M838.96,804.10 L838.96,794.80" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M856.32,785.50 L873.68,785.50" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M856.32,794.80 L856.32,785.50" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M873.68,776.20 L891.04,776.20" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M873.68,785.50 L873.68,776.20" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M891.04,766.90 L908.40,766.90" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M891.04,776.20 L891.04,766.90" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M908.40,757.60 L925.76,757.60" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M908.40,766.90 L908.40,757.60" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M925.76,748.30 L943.12,748.30" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M925.76,757.60 L925.76,748.30" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M943.12,739.00 L960.48,739.00" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M943.12,748.30 L943.12,739.00" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M960.48,729.70 L977.84,729.70" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M960.48,739.00 L960.48,729.70" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M977.84,720.40 L995.20,720.40" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M977.84,729.70 L977.84,720.40" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M995.20,711.10 L1012.56,711.10" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M995.20,720.40 L995.20,711.10" fill="none" stroke="#38796c" stroke-width="2"/>
+<path d="M1012.56,701.80 L995.20,701.80" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M1012.56,711.10 L1012.56,701.80" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M995.20,692.50 L977.84,692.50" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M995.20,701.80 L995.20,692.50" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M977.84,683.20 L960.48,683.20" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M977.84,692.50 L977.84,683.20" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M960.48,673.90 L943.12,673.90" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M960.48,683.20 L960.48,673.90" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M943.12,664.60 L925.76,664.60" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M943.12,673.90 L943.12,664.60" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M925.76,655.30 L908.40,655.30" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M925.76,664.60 L925.76,655.30" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M908.40,646.00 L891.04,646.00" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M908.40,655.30 L908.40,646.00" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M891.04,636.70 L873.68,636.70" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M891.04,646.00 L891.04,636.70" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M873.68,627.40 L856.32,627.40" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M873.68,636.70 L873.68,627.40" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M856.32,618.10 L838.96,618.10" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M856.32,627.40 L856.32,618.10" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M838.96,608.80 L821.60,608.80" fill="none" stroke="#b36c31" stroke-width="2"/>
+<path d="M838.96,618.10 L838.96,608.80" fill="none" stroke="#b36c31" stroke-width="2"/>
+<text x="815.40" y="553.00" font-size="17" font-weight="400" text-anchor="start">通顶双跑梯（展开示意）</text>
+<text x="245.00" y="993.20" font-size="16" font-weight="400" text-anchor="start">下平台B</text>
+<text x="158.20" y="794.80" font-size="16" font-weight="400" text-anchor="start">端部C</text>
+<text x="734.80" y="794.80" font-size="16" font-weight="400" text-anchor="start">上平台A</text>
+</svg>

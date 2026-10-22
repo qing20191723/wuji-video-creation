@@ -1,0 +1,160 @@
+{
+  "revision": "P4-M1",
+  "files": [
+    {
+      "file": "交付说明.md",
+      "bytes": 2383,
+      "sha256": "b3c022ae6fe1fb7cc3aea14ca4230484d9f371f00c169af6e2f800ab26283909"
+    },
+    {
+      "file": "数据/品牌固定变换.json",
+      "bytes": 17769,
+      "sha256": "384ebfb1e4d0d27039cff7cd95e534c23de6b5a722f0a4d8b28e43354401ce8b"
+    },
+    {
+      "file": "数据/模型空间数据.json",
+      "bytes": 478111,
+      "sha256": "ae1da298890e2083a2fb678899ef91110bb5d15296cbcf225b5812a8b48aa1e9"
+    },
+    {
+      "file": "检查/查看页检查.json",
+      "bytes": 952,
+      "sha256": "7d422b181b421626177f4010f851804d5340daabb87817bc66862ebecb795e9f"
+    },
+    {
+      "file": "检查/模型回读与几何核对.json",
+      "bytes": 20798,
+      "sha256": "2e73e5c0f6186dd4eaceb53c2c7d6e9503bee1e766774eb599df5f9d0b305d93"
+    },
+    {
+      "file": "模型/秘密教学_P4-M1.blend",
+      "bytes": 5911742,
+      "sha256": "edad1df53c8b8669d5ca84e971c84cb610113131b799321dca001a1d0bd9826e"
+    },
+    {
+      "file": "模型/秘密教学_P4-M1.glb",
+      "bytes": 8342688,
+      "sha256": "dedb0fa95afe3044e71182e8cbf4000af228c69e23bdfb02e5c1b091bd8b19fa"
+    },
+    {
+      "file": "统一查看页.html",
+      "bytes": 4965,
+      "sha256": "bf9de4726a4f3013c4dd121e61ca316e61d79cb60e54f615c90a5bfb0f5e051e"
+    },
+    {
+      "file": "贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "贴图/HG_FULL_mirror.svg",
+      "bytes": 909209,
+      "sha256": "37de9a12551e981d8bae95c94509471bc31b6fdba255d4eed38993dc71125b86"
+    },
+    {
+      "file": "贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "贴图/HG_FULL_normal.svg",
+      "bytes": 909160,
+      "sha256": "d5cb91801ef19632d3d689a14ae7c7470cc2cfc1134c13ab2f1a7ed051c22312"
+    },
+    {
+      "file": "贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "贴图/HG_ICON.svg",
+      "bytes": 191862,
+      "sha256": "80c2316e01e2cf210de1177de28969f4e7b2010dc43853c167091c171749da40"
+    },
+    {
+      "file": "贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "贴图/NAME_B1.svg",
+      "bytes": 341,
+      "sha256": "6073aa7118494136319fbff49a766ab92e168c00ba04046ea2a6b4c3a0949b6c"
+    },
+    {
+      "file": "贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "贴图/NAME_B2.svg",
+      "bytes": 341,
+      "sha256": "e8941ef2cfc38808cafbd2e522ed97dd15b7e0087f65593ac98514a585252bcb"
+    },
+    {
+      "file": "贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "贴图/NAME_B3.svg",
+      "bytes": 341,
+      "sha256": "25c838f9b407e117474a56e62d1c8ed654f70fda3fad6587fd3b823e442fa65b"
+    },
+    {
+      "file": "贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "贴图/NAME_BW.svg",
+      "bytes": 341,
+      "sha256": "6df12805b1cd280f937d80221fd1a21537e4918146d94f541200fd1105129942"
+    },
+    {
+      "file": "贴图/品牌文字源.json",
+      "bytes": 337,
+      "sha256": "c3bd7c4b625cd9ef397a740daf157ff4e889ada8e8c8e1328b92c0d20ae0cab0"
+    },
+    {
+      "file": "预览/01_完整外观.png",
+      "bytes": 1949855,
+      "sha256": "637ed63cb6d25901c3f7049b447c797f42474c2414f90e077f0c9656914e5783"
+    },
+    {
+      "file": "预览/02_二楼剖开总览.png",
+      "bytes": 2233818,
+      "sha256": "241bcad3243e4c0cfbaf293d53b9c54ae29712a5128f7f73197ae77027d06d0f"
+    },
+    {
+      "file": "预览/03_一楼剖开总览.png",
+      "bytes": 2207609,
+      "sha256": "5132d1831d2d7511ff8d9c3e14a6df2c9a39767e50c220e6148bb04ce1d7ba81"
+    },
+    {
+      "file": "预览/04_公共庭院.png",
+      "bytes": 2119877,
+      "sha256": "b94c50e1e290cf281e1145e11e5147384f59191433147c0b69269fa69ca5e4d3"
+    },
+    {
+      "file": "预览/05_走廊朝浴室.png",
+      "bytes": 1892673,
+      "sha256": "231f545e2f855229f1e1de49890c29f152e44ed140cfe59816214760ce9fb2e4"
+    },
+    {
+      "file": "预览/06_大姐卧室.png",
+      "bytes": 1950146,
+      "sha256": "81f7f442fff16a79bbb091ae8ab07aba9b145593f1556e462fa060232eafd943"
+    },
+    {
+      "file": "预览/07_二楼正投影.png",
+      "bytes": 1902122,
+      "sha256": "539dcc0ec6ecb92d3733ca757ec3da05ba90378558dad14ff4bdcfaa48c4961b"
+    },
+    {
+      "file": "预览/08_屋顶楼梯剖开.png",
+      "bytes": 2139411,
+      "sha256": "90bcc907304a7d6f7ee5f0cdd4a1e338cc7307ea2637194a0bc4461796c4f902"
+    }
+  ]
+}

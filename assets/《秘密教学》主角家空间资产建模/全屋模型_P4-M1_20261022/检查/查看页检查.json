@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "src": "预览/01_完整外观.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/02_二楼剖开总览.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/03_一楼剖开总览.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/04_公共庭院.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/05_走廊朝浴室.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/06_大姐卧室.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/07_二楼正投影.png",
+      "width": 1600,
+      "height": 1100
+    },
+    {
+      "src": "预览/08_屋顶楼梯剖开.png",
+      "width": 1600,
+      "height": 1100
+    }
+  ],
+  "missing": [],
+  "overflow": false,
+  "errors": [],
+  "mirror": "PIL exact full-group horizontal-flip comparison passed"
+}

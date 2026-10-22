@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "file": "01_二楼整体平面_公共庭院.svg",
+      "outside": []
+    },
+    {
+      "file": "02_公共庭院放大.svg",
+      "outside": []
+    },
+    {
+      "file": "03_一楼整体平面_檐下空间.svg",
+      "outside": []
+    },
+    {
+      "file": "04_屋顶与高低屋面.svg",
+      "outside": []
+    },
+    {
+      "file": "05_上下层对应.svg",
+      "outside": []
+    },
+    {
+      "file": "06_外部总平面.svg",
+      "outside": []
+    },
+    {
+      "file": "07_体量与庭院剖面示意.svg",
+      "outside": []
+    }
+  ],
+  "broken": []
+}

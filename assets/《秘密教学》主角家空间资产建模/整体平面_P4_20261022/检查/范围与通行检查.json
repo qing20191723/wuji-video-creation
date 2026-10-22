@@ -1,0 +1,495 @@
+{
+  "revision": "P4-20261022",
+  "checks": [
+    {
+      "name": "确认基线保持:rooms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "确认基线保持:furniture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "确认基线保持:walls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "确认基线保持:stairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_B3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_B2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_B30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_B20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_B10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_B11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:G_BALCONY",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:G_BATH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_SHUYA_OPPOSITE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_STAIR_STRIP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_PLATFORM_SIDE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W_BATH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_ROOF_ACCESS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_RS_ENTRY",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W103",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W109",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W110",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:W111",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_MAIN_NEW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "原洞口保持:D_STAIR_EXIT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:B3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:B2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:B1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:H2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:BW",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:RS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院不占用:BAL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院物件边界:T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entry_clear:T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_path:T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T01/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T02/T03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T02/T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T02/T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T02/T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T02/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T03/T04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T03/T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T03/T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T03/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T04/T05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T04/T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T04/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T05/T06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T05/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "庭院无穿插:T06/T07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "玻璃门接公共平台",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "舒亚对面落地窗未改",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "公共庭院与私人阳台分隔",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "概念支承不占一楼室内:[15.55, -2.8]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "概念支承不占一楼室内:[19.2, -2.8]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "概念支承不占一楼室内:[23, -2.8]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "概念支承不占一楼室内:[23, 1.45]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "基线文件未改",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true,
+  "not_claimed": [
+    "结构荷载、梁柱净空及施工合规验算",
+    "最终光照、反射及场景机位验收"
+  ]
+}

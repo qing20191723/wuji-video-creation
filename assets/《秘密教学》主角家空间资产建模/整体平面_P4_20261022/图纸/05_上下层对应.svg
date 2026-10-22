@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">05 / 上下层对应 · 庭院向外增设</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">灰色为一楼投影；彩色为二楼空间；外部结构从室内边界向外组织</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P4 · 2026-10-22    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">灰色：一楼建筑范围</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">彩色：二楼确认室内</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">木色：新增公共庭院</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">虚线：庭院向下投影</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">原房间外墙无需内移</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">新支承避开原室内家具</text>
+<text x="1430.00" y="381.00" font-size="16" font-weight="400" text-anchor="start">低屋面不误算二楼房间</text>
+<path d="M1296.60,320.13 L1296.60,270.03" fill="none" stroke="#38796c" stroke-width="3"/>
+<text x="1296.60" y="261.68" font-size="18" font-weight="400" text-anchor="start">N</text>
+<rect x="123.40" y="787.74" width="158.65" height="70.98" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="123.40" y="712.59" width="158.65" height="75.15" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="282.05" y="787.74" width="4.18" height="70.98" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="282.05" y="712.59" width="4.18" height="75.15" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="282.05" y="278.38" width="4.18" height="434.21" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="286.23" y="787.74" width="638.79" height="70.98" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="286.23" y="712.59" width="638.79" height="75.15" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="286.23" y="278.38" width="638.79" height="434.21" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="925.02" y="712.59" width="279.73" height="75.15" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="925.02" y="278.38" width="279.73" height="434.21" fill="#dfe2dc" stroke="#dfe2dc" stroke-width="0" rx="0"/>
+<rect x="286.23" y="453.74" width="321.48" height="258.86" fill="#e4e8f0" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="410.9" y="572.2" width="72.1" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="446.97" y="583.16" font-size="11" font-weight="400" text-anchor="middle">B3 舒亚卧室</text>
+<rect x="616.06" y="420.34" width="221.28" height="292.26" fill="#e6eddf" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="690.7" y="555.5" width="72.1" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="726.70" y="566.46" font-size="11" font-weight="400" text-anchor="middle">B2 子豪卧室</text>
+<rect x="845.69" y="462.09" width="317.31" height="250.51" fill="#f3e2e7" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="968.3" y="576.3" width="72.1" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="1004.34" y="587.34" font-size="11" font-weight="400" text-anchor="middle">B1 薇亚卧室</text>
+<rect x="286.23" y="720.94" width="630.44" height="66.80" fill="#edf2e9" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="556.8" y="743.3" width="89.2" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="601.45" y="754.34" font-size="11" font-weight="400" text-anchor="middle">H2 二楼公共走廊</text>
+<rect x="286.23" y="787.74" width="62.63" height="62.63" fill="#edf2e9" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="298.7" y="808.1" width="37.7" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="317.54" y="819.06" font-size="11" font-weight="400" text-anchor="middle">端部C</text>
+<rect x="664.49" y="787.74" width="252.18" height="62.63" fill="#edf2e9" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="767.4" y="808.1" width="46.3" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="790.58" y="819.06" font-size="11" font-weight="400" text-anchor="middle">上平台A</text>
+<rect x="131.75" y="720.94" width="146.13" height="129.43" fill="#deedf0" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="168.8" y="774.7" width="72.1" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="204.81" y="785.66" font-size="11" font-weight="400" text-anchor="middle">BW 公共浴室</text>
+<rect x="728.79" y="862.90" width="167.00" height="179.53" fill="#e8e5ee" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1171.35" y="462.09" width="83.50" height="250.51" fill="#dce6da" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1172.8" y="576.3" width="80.6" height="18" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="1213.10" y="587.34" font-size="11" font-weight="400" text-anchor="middle">BAL 大姐阳台</text>
+<rect x="925.02" y="720.94" width="329.83" height="192.05" fill="#e1caa8" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1060.5" y="793.6" width="58.8" height="22" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="1089.93" y="808.62" font-size="15" font-weight="400" text-anchor="middle">公共庭院</text>
+<circle cx="935.4545454545455" cy="904.6464646464647" r="6.68013468013468" fill="#52685f" stroke="#819088"/>
+<circle cx="1087.8451178451178" cy="904.6464646464647" r="6.68013468013468" fill="#52685f" stroke="#819088"/>
+<circle cx="1246.4983164983164" cy="904.6464646464647" r="6.68013468013468" fill="#52685f" stroke="#819088"/>
+<circle cx="1246.4983164983164" cy="727.2053872053872" r="6.68013468013468" fill="#52685f" stroke="#819088"/>
+<rect x="348.86" y="796.09" width="315.64" height="54.28" fill="#e4e6e1" stroke="#899a95" stroke-width="1" rx="0"/>
+<path d="M348.86,850.37 L348.86,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M363.89,850.37 L363.89,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M378.92,850.37 L378.92,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M393.95,850.37 L393.95,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M408.98,850.37 L408.98,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M424.01,850.37 L424.01,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M439.04,850.37 L439.04,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M454.07,850.37 L454.07,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M469.10,850.37 L469.10,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M484.13,850.37 L484.13,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M499.16,850.37 L499.16,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M514.19,850.37 L514.19,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M529.22,850.37 L529.22,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M544.25,850.37 L544.25,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M559.28,850.37 L559.28,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M574.31,850.37 L574.31,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M589.34,850.37 L589.34,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M604.37,850.37 L604.37,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M619.40,850.37 L619.40,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M634.43,850.37 L634.43,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M649.46,850.37 L649.46,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M664.49,850.37 L664.49,796.09" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M357.21,823.23 L656.14,823.23" fill="none" stroke="#38796c" stroke-width="3"/>
+<text x="506.67" y="789.83" font-size="13" font-weight="400" text-anchor="middle">直梯 ↑ 22×150 / 踏步360</text>
+<rect x="737.14" y="875.42" width="108.55" height="158.65" fill="#e4e6e1" stroke="#899a95" stroke-width="1" rx="0"/>
+<path d="M737.14,875.42 L787.24,875.42" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,875.42 L845.69,875.42" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,887.11 L787.24,887.11" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,887.11 L845.69,887.11" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,898.80 L787.24,898.80" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,898.80 L845.69,898.80" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,910.49 L787.24,910.49" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,910.49 L845.69,910.49" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,922.18 L787.24,922.18" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,922.18 L845.69,922.18" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,933.87 L787.24,933.87" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,933.87 L845.69,933.87" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,945.56 L787.24,945.56" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,945.56 L845.69,945.56" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,957.25 L787.24,957.25" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,957.25 L845.69,957.25" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,968.94 L787.24,968.94" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,968.94 L845.69,968.94" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,980.63 L787.24,980.63" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,980.63 L845.69,980.63" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M737.14,992.32 L787.24,992.32" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<path d="M795.59,992.32 L845.69,992.32" fill="none" stroke="#8c9a94" stroke-width="1"/>
+<text x="791.41" y="1013.20" font-size="11" font-weight="400" text-anchor="middle">折返平台</text>
+<text x="762.19" y="900.47" font-size="22" font-weight="400" text-anchor="start">↑</text>
+<text x="820.64" y="900.47" font-size="22" font-weight="400" text-anchor="start">↓</text>
+<text x="728.79" y="1065.39" font-size="13" font-weight="400" text-anchor="start">通顶楼梯间</text>
+</svg>

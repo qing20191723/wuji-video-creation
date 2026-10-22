@@ -1,0 +1,4239 @@
+{
+  "revision": "P3-R1-20261022",
+  "status": "按用户三处定位修订；待用户平面验收；未回写M3",
+  "units": "m",
+  "rooms": [
+    {
+      "id": "B3",
+      "name": "舒亚卧室",
+      "level": 2,
+      "box": [
+        0,
+        1.8,
+        7.7,
+        8.0
+      ],
+      "color": "#e4e8f0",
+      "net_area": 47.74,
+      "source": "家具布置推导；M3只用于未改变家具尺寸"
+    },
+    {
+      "id": "B2",
+      "name": "子豪卧室",
+      "level": 2,
+      "box": [
+        7.9,
+        1.8,
+        13.2,
+        8.8
+      ],
+      "color": "#e6eddf",
+      "net_area": 37.1,
+      "source": "家具布置推导；M3只用于未改变家具尺寸"
+    },
+    {
+      "id": "B1",
+      "name": "薇亚卧室",
+      "level": 2,
+      "box": [
+        13.399999999999999,
+        1.8,
+        21.0,
+        7.8
+      ],
+      "color": "#f3e2e7",
+      "net_area": 45.6,
+      "source": "家具布置推导；M3只用于未改变家具尺寸"
+    },
+    {
+      "id": "H2",
+      "name": "二楼公共走廊",
+      "level": 2,
+      "box": [
+        0,
+        0,
+        15.1,
+        1.6
+      ],
+      "color": "#edf2e9",
+      "net_area": 24.16,
+      "source": "按三房入口连接后确定"
+    },
+    {
+      "id": "C",
+      "name": "舒亚端二楼收头",
+      "level": 2,
+      "box": [
+        0,
+        -1.5,
+        1.5,
+        0
+      ],
+      "color": "#edf2e9",
+      "net_area": 2.25,
+      "source": "保留短端部地面/落地窗关系"
+    },
+    {
+      "id": "A",
+      "name": "上平台及端部通路",
+      "level": 2,
+      "box": [
+        9.06,
+        -1.5,
+        15.1,
+        0
+      ],
+      "color": "#edf2e9",
+      "net_area": 9.06,
+      "source": "直梯上平台延展接全屋；尺寸为新设计"
+    },
+    {
+      "id": "BW",
+      "name": "公共浴室",
+      "level": 2,
+      "box": [
+        -3.7,
+        -1.5,
+        -0.2,
+        1.6
+      ],
+      "color": "#deedf0",
+      "net_area": 10.85,
+      "source": "V3设施关系；入口使用用户确认玻璃门"
+    },
+    {
+      "id": "RS",
+      "name": "通顶楼梯间",
+      "level": 2,
+      "box": [
+        10.6,
+        -6.1,
+        14.6,
+        -1.8
+      ],
+      "color": "#e8e5ee",
+      "net_area": 17.2,
+      "source": "本轮授权设计：公共上平台旁双跑楼梯"
+    },
+    {
+      "id": "RS3",
+      "name": "屋顶出入口小房子",
+      "level": 3,
+      "box": [
+        10.6,
+        -6.1,
+        14.6,
+        -1.8
+      ],
+      "color": "#e3e7eb",
+      "net_area": 17.2,
+      "source": "灰色体量参考V3，位置由楼梯路线推导"
+    },
+    {
+      "id": "BAL",
+      "name": "大姐阳台",
+      "level": 2,
+      "box": [
+        21.2,
+        1.8,
+        23.2,
+        7.8
+      ],
+      "color": "#dce6da",
+      "net_area": 12.0,
+      "source": "宽度由室内阳台通路向外安排"
+    },
+    {
+      "id": "L",
+      "name": "客厅",
+      "level": 1,
+      "box": [
+        0.2,
+        2.0,
+        9.8,
+        7.6
+      ],
+      "color": "#eee9df",
+      "polygon": null,
+      "net_area": 53.76,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "K",
+      "name": "厨房",
+      "level": 1,
+      "box": [
+        0.2,
+        7.8,
+        4.6,
+        12.0
+      ],
+      "color": "#deebe7",
+      "polygon": null,
+      "net_area": 18.48,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "D",
+      "name": "餐厅",
+      "level": 1,
+      "box": [
+        4.6,
+        7.8,
+        9.8,
+        12.0
+      ],
+      "color": "#f0e9d8",
+      "polygon": null,
+      "net_area": 21.84,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "MH",
+      "name": "主卧通道",
+      "level": 1,
+      "box": [
+        10,
+        7.3,
+        13.8,
+        8.9
+      ],
+      "color": "#e0efeb",
+      "polygon": null,
+      "net_area": 6.08,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "MB",
+      "name": "主卧",
+      "level": 1,
+      "box": [
+        14,
+        7.2,
+        19.8,
+        12.0
+      ],
+      "color": "#ecdfdf",
+      "polygon": null,
+      "net_area": 27.84,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "MW",
+      "name": "主卫",
+      "level": 1,
+      "box": [
+        20,
+        7.2,
+        21.8,
+        12.0
+      ],
+      "color": "#dcebef",
+      "polygon": null,
+      "net_area": 8.64,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "LA",
+      "name": "洗衣房",
+      "level": 1,
+      "box": [
+        10,
+        9.1,
+        13.8,
+        12.0
+      ],
+      "color": "#e0e9e6",
+      "polygon": null,
+      "net_area": 11.02,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "E",
+      "name": "玄关",
+      "level": 1,
+      "box": [
+        10,
+        2.0,
+        11.2,
+        7.1
+      ],
+      "color": "#e4efeb",
+      "polygon": null,
+      "net_area": 6.12,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "R",
+      "name": "阅读与公共通路",
+      "level": 1,
+      "box": [
+        11.2,
+        4.4,
+        18,
+        7.0
+      ],
+      "color": "#eee9df",
+      "polygon": null,
+      "net_area": 17.68,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "WC",
+      "name": "客卫",
+      "level": 1,
+      "box": [
+        18.2,
+        2.0,
+        21.8,
+        4.2
+      ],
+      "color": "#dcebef",
+      "polygon": null,
+      "net_area": 7.92,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "ST",
+      "name": "储物",
+      "level": 1,
+      "box": [
+        18.2,
+        4.4,
+        21.8,
+        7.0
+      ],
+      "color": "#e6e5dc",
+      "polygon": null,
+      "net_area": 9.36,
+      "source": "M3一楼内部关系整块保留；向北平移1.8m接公共通路"
+    },
+    {
+      "id": "F1H",
+      "name": "一楼连接通路",
+      "level": 1,
+      "box": [
+        0,
+        0,
+        22,
+        1.8
+      ],
+      "color": "#edf2e9",
+      "net_area": 39.6,
+      "source": "新楼梯下平台接玄关和公共区"
+    },
+    {
+      "id": "B",
+      "name": "一楼下平台",
+      "level": 1,
+      "box": [
+        0,
+        -1.5,
+        1.5,
+        0
+      ],
+      "color": "#edf2e9",
+      "net_area": 2.25,
+      "source": "位于C平台下方；接一楼公共通路"
+    },
+    {
+      "id": "SUP",
+      "name": "浴室下方设备/支承预留",
+      "level": 1,
+      "box": [
+        -3.7,
+        -1.5,
+        -0.2,
+        1.8
+      ],
+      "color": "#eee9df",
+      "net_area": 11.55,
+      "source": "设计新增；不冒充漫画原有房间"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "C01",
+      "name": "灰蓝格床（床头南）",
+      "level": 2,
+      "box": [
+        6.2,
+        1.8,
+        7.7,
+        4.0
+      ],
+      "kind": "bed",
+      "color": "#99a2b8",
+      "room": "B3",
+      "head": "S"
+    },
+    {
+      "id": "C02",
+      "name": "床尾小书架",
+      "level": 2,
+      "box": [
+        5.8,
+        4.2,
+        6.5,
+        4.8
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C03",
+      "name": "电脑桌 / 与床头及入口同墙",
+      "level": 2,
+      "box": [
+        2.55,
+        1.8,
+        4.55,
+        2.45
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": "S"
+    },
+    {
+      "id": "C04",
+      "name": "白色电脑椅",
+      "level": 2,
+      "box": [
+        3.2,
+        2.85,
+        3.8,
+        3.45
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C05",
+      "name": "窗下收藏矮柜",
+      "level": 2,
+      "box": [
+        2.2,
+        7.55,
+        4.5,
+        8.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C06",
+      "name": "衣物架 / 收藏柜",
+      "level": 2,
+      "box": [
+        0,
+        3.4,
+        0.65,
+        7.4
+      ],
+      "kind": "rack",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C07",
+      "name": "落地镜",
+      "level": 2,
+      "box": [
+        0,
+        2.5,
+        0.18,
+        3.1
+      ],
+      "kind": "mirror",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C08",
+      "name": "星形地毯",
+      "level": 2,
+      "box": [
+        2.2,
+        4.3,
+        5,
+        7.1
+      ],
+      "kind": "starrug",
+      "color": "#b5b7d1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "C09",
+      "name": "床与书桌之间抽屉柜",
+      "level": 2,
+      "box": [
+        4.7,
+        1.8,
+        5.15,
+        2.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B3",
+      "head": null
+    },
+    {
+      "id": "B01",
+      "name": "绿色床（床头东）",
+      "level": 2,
+      "box": [
+        10.8,
+        3.3,
+        13.0,
+        5.1
+      ],
+      "kind": "bed",
+      "color": "#9cae85",
+      "room": "B2",
+      "head": "E"
+    },
+    {
+      "id": "B02",
+      "name": "电视矮柜",
+      "level": 2,
+      "box": [
+        7.9,
+        3.45,
+        8.35,
+        5.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B03",
+      "name": "电脑桌",
+      "level": 2,
+      "box": [
+        7.9,
+        6.8,
+        8.55,
+        8.45
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B04",
+      "name": "电脑椅",
+      "level": 2,
+      "box": [
+        8.9,
+        7.25,
+        9.5,
+        7.85
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B05",
+      "name": "窗边衣柜",
+      "level": 2,
+      "box": [
+        12.55,
+        7.5,
+        13.2,
+        8.8
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B06",
+      "name": "穿衣镜",
+      "level": 2,
+      "box": [
+        13.05,
+        6.9,
+        13.2,
+        7.45
+      ],
+      "kind": "mirror",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B07",
+      "name": "衣帽架",
+      "level": 2,
+      "box": [
+        12.6,
+        5.9,
+        13.2,
+        6.3
+      ],
+      "kind": "rack",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B08",
+      "name": "吉他 / 床头侧",
+      "level": 2,
+      "box": [
+        12.05,
+        5.25,
+        12.45,
+        5.7
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B09",
+      "name": "望远镜",
+      "level": 2,
+      "box": [
+        10.5,
+        7.65,
+        11.35,
+        8.55
+      ],
+      "kind": "scope",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B10",
+      "name": "灰地毯",
+      "level": 2,
+      "box": [
+        8.5,
+        3.65,
+        11.3,
+        6.05
+      ],
+      "kind": "rug",
+      "color": "#ccc9c4",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B11",
+      "name": "矮茶几",
+      "level": 2,
+      "box": [
+        8.9,
+        4.5,
+        10.1,
+        5.2
+      ],
+      "kind": "table",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B12",
+      "name": "入口抽屉柜",
+      "level": 2,
+      "box": [
+        10.65,
+        1.8,
+        11.4,
+        2.35
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "B13",
+      "name": "入口书架",
+      "level": 2,
+      "box": [
+        11.9,
+        1.8,
+        13.1,
+        2.2
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B2",
+      "head": null
+    },
+    {
+      "id": "A01",
+      "name": "大床 / 按用户定位延长，床宽保持",
+      "level": 2,
+      "box": [
+        13.6,
+        4.9,
+        17.5,
+        7.42
+      ],
+      "kind": "bed",
+      "color": "#b7b7bb",
+      "room": "B1",
+      "head": "W",
+      "revision_note": "R1床长3.90m、宽2.52m；床尾距电脑桌左边0.20m；取代本轮初稿等比1.20方案"
+    },
+    {
+      "id": "A02",
+      "name": "床头柜",
+      "level": 2,
+      "box": [
+        13.8,
+        4.2,
+        14.4,
+        4.8
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A03",
+      "name": "白色书架",
+      "level": 2,
+      "box": [
+        13.4,
+        2.8,
+        13.8,
+        4.2
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A04",
+      "name": "电脑桌 / 第二窗下",
+      "level": 2,
+      "box": [
+        17.7,
+        7.15,
+        19.5,
+        7.8
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A05",
+      "name": "电脑椅",
+      "level": 2,
+      "box": [
+        18.25,
+        5.95,
+        18.85,
+        6.55
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A06",
+      "name": "梳妆台 / 东墙",
+      "level": 2,
+      "box": [
+        20.4,
+        6.45,
+        21.0,
+        7.75
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A07",
+      "name": "粉色圆凳",
+      "level": 2,
+      "box": [
+        19.45,
+        6.6,
+        20.0,
+        7.15
+      ],
+      "kind": "circle",
+      "color": "#d8b2bd",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A08",
+      "name": "穿衣镜",
+      "level": 2,
+      "box": [
+        20.8,
+        5.2,
+        21.0,
+        5.95
+      ],
+      "kind": "mirror",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A09",
+      "name": "衣柜 / 南墙",
+      "level": 2,
+      "box": [
+        17.7,
+        1.8,
+        19.4,
+        2.4
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A10",
+      "name": "粉色圆毯",
+      "level": 2,
+      "box": [
+        16.7,
+        2.8,
+        19.2,
+        5.3
+      ],
+      "kind": "roundrug",
+      "color": "#d6a3b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A11",
+      "name": "健身车 / 阳台旁",
+      "level": 2,
+      "box": [
+        19.8,
+        1.95,
+        20.55,
+        3.25
+      ],
+      "kind": "bike",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A12",
+      "name": "瑜伽球",
+      "level": 2,
+      "box": [
+        14.3,
+        3.3,
+        15.0,
+        4.0
+      ],
+      "kind": "circle",
+      "color": "#ce8ba2",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "A13",
+      "name": "黑黄蹦床",
+      "level": 2,
+      "box": [
+        15.7,
+        1.9,
+        16.8,
+        3.0
+      ],
+      "kind": "trampoline",
+      "color": "#d9c8b1",
+      "room": "B1",
+      "head": null
+    },
+    {
+      "id": "BW1",
+      "color": "#becabf",
+      "kind": "sink",
+      "head": null,
+      "room": "BW",
+      "level": 2,
+      "box": [
+        -1.65,
+        -1.5,
+        -0.25,
+        -0.9
+      ],
+      "name": "台盆"
+    },
+    {
+      "id": "BW2",
+      "color": "#becabf",
+      "kind": "shower",
+      "head": null,
+      "room": "BW",
+      "level": 2,
+      "box": [
+        -3.7,
+        -1.5,
+        -2.4,
+        -0.2
+      ],
+      "name": "玻璃淋浴区"
+    },
+    {
+      "id": "BW3",
+      "color": "#becabf",
+      "kind": "wc",
+      "head": null,
+      "room": "BW",
+      "level": 2,
+      "box": [
+        -3.3,
+        0.65,
+        -2.5,
+        1.4
+      ],
+      "name": "坐便"
+    },
+    {
+      "id": "M01",
+      "name": "酒红床（床头西）",
+      "level": 1,
+      "box": [
+        14.2,
+        9.3,
+        16.4,
+        11.3
+      ],
+      "kind": "bed",
+      "color": "#9f626d",
+      "room": "MB",
+      "head": "W"
+    },
+    {
+      "id": "M02",
+      "name": "窗侧床头柜",
+      "level": 1,
+      "box": [
+        14.2,
+        11.35,
+        14.8,
+        11.95
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "M03",
+      "name": "门侧床头柜",
+      "level": 1,
+      "box": [
+        14.2,
+        8.7,
+        14.8,
+        9.25
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "M04",
+      "name": "衣柜",
+      "level": 1,
+      "box": [
+        15,
+        7.2,
+        16.9,
+        7.8
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "M05",
+      "name": "深木梳妆台",
+      "level": 1,
+      "box": [
+        17.25,
+        7.2,
+        18.55,
+        7.8
+      ],
+      "kind": "desk",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "M06",
+      "name": "梳妆椅",
+      "level": 1,
+      "box": [
+        17.6,
+        8.15,
+        18.15,
+        8.7
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "M07",
+      "name": "衣架",
+      "level": 1,
+      "box": [
+        18.9,
+        7.2,
+        19.75,
+        7.75
+      ],
+      "kind": "rack",
+      "color": "#d9c8b1",
+      "room": "MB",
+      "head": null
+    },
+    {
+      "id": "K01",
+      "name": "冰箱",
+      "level": 1,
+      "box": [
+        0.2,
+        11.0,
+        1.15,
+        12.0
+      ],
+      "kind": "fridge",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K02",
+      "name": "水槽台面",
+      "level": 1,
+      "box": [
+        1.15,
+        11.35,
+        4.6,
+        12.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K03",
+      "name": "灶台台面",
+      "level": 1,
+      "box": [
+        0.2,
+        8.7,
+        0.85,
+        11.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K04",
+      "name": "灶台/烟机",
+      "level": 1,
+      "box": [
+        0.2,
+        9.9,
+        0.85,
+        10.8
+      ],
+      "kind": "hob",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K05",
+      "name": "横窗下水槽",
+      "level": 1,
+      "box": [
+        2,
+        11.35,
+        3,
+        12.0
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K06",
+      "name": "开放半岛",
+      "level": 1,
+      "box": [
+        3.95,
+        9.6,
+        4.6,
+        11.35
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "K07",
+      "name": "南侧操作台",
+      "level": 1,
+      "box": [
+        0.2,
+        8.0,
+        2.2,
+        8.65
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "K",
+      "head": null
+    },
+    {
+      "id": "D01",
+      "name": "六人玻璃餐桌",
+      "level": 1,
+      "box": [
+        6.3,
+        9.3,
+        8.4,
+        10.3
+      ],
+      "kind": "table",
+      "color": "#dce9e7",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC1",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        6.5,
+        8.65,
+        7,
+        9.15
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC2",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        7.65,
+        8.65,
+        8.15,
+        9.15
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC3",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        6.5,
+        10.45,
+        7,
+        10.95
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC4",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        7.65,
+        10.45,
+        8.15,
+        10.95
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC5",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        5.65,
+        9.55,
+        6.15,
+        10.05
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "DC6",
+      "name": "餐椅",
+      "level": 1,
+      "box": [
+        8.55,
+        9.55,
+        9.05,
+        10.05
+      ],
+      "kind": "chair",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "D02",
+      "name": "餐厅壁架",
+      "level": 1,
+      "box": [
+        9.35,
+        11.1,
+        9.8,
+        12.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "D",
+      "head": null
+    },
+    {
+      "id": "L01",
+      "name": "浅灰长沙发",
+      "level": 1,
+      "box": [
+        1.7,
+        2.3,
+        5.6,
+        3.25
+      ],
+      "kind": "sofa",
+      "color": "#cfd3d1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "L02",
+      "name": "贵妃位",
+      "level": 1,
+      "box": [
+        1.7,
+        3.25,
+        2.65,
+        4.45
+      ],
+      "kind": "sofa",
+      "color": "#cfd3d1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "L03",
+      "name": "抽象地毯",
+      "level": 1,
+      "box": [
+        2.3,
+        3.6,
+        6.6,
+        6.1
+      ],
+      "kind": "rug",
+      "color": "#d3ccc1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "L04",
+      "name": "玻璃茶几",
+      "level": 1,
+      "box": [
+        3.3,
+        4.25,
+        4.7,
+        5.05
+      ],
+      "kind": "table",
+      "color": "#d9c8b1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "L05",
+      "name": "电视柜",
+      "level": 1,
+      "box": [
+        4.25,
+        7.2,
+        7.35,
+        7.6
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "L06",
+      "name": "参考书架",
+      "level": 1,
+      "box": [
+        8.9,
+        6.3,
+        9.4,
+        7.6
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "L",
+      "head": null
+    },
+    {
+      "id": "LA1",
+      "name": "洗烘设备",
+      "level": 1,
+      "box": [
+        12.9,
+        10.25,
+        13.6,
+        11.85
+      ],
+      "kind": "washer",
+      "color": "#d9c8b1",
+      "room": "LA",
+      "head": null
+    },
+    {
+      "id": "LA2",
+      "name": "洗衣台",
+      "level": 1,
+      "box": [
+        10.2,
+        11.35,
+        12.9,
+        12.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "LA",
+      "head": null
+    },
+    {
+      "id": "LA3",
+      "name": "洗衣篮",
+      "level": 1,
+      "box": [
+        10.2,
+        10.1,
+        10.8,
+        10.7
+      ],
+      "kind": "circle",
+      "color": "#d9c8b1",
+      "room": "LA",
+      "head": null
+    },
+    {
+      "id": "R1",
+      "name": "阅读双椅",
+      "level": 1,
+      "box": [
+        15,
+        5.5,
+        17,
+        6.35
+      ],
+      "kind": "sofa",
+      "color": "#d9c8b1",
+      "room": "R",
+      "head": null
+    },
+    {
+      "id": "R2",
+      "name": "书架",
+      "level": 1,
+      "box": [
+        16.6,
+        6.55,
+        17.8,
+        7.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "R",
+      "head": null
+    },
+    {
+      "id": "E1",
+      "name": "鞋柜",
+      "level": 1,
+      "box": [
+        11.2,
+        5.4,
+        11.6,
+        7.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "R",
+      "head": null
+    },
+    {
+      "id": "WC1",
+      "name": "坐便",
+      "level": 1,
+      "box": [
+        20.8,
+        3.1,
+        21.55,
+        3.9
+      ],
+      "kind": "wc",
+      "color": "#d9c8b1",
+      "room": "WC",
+      "head": null
+    },
+    {
+      "id": "WC2",
+      "name": "台盆",
+      "level": 1,
+      "box": [
+        19.3,
+        3.6,
+        20.4,
+        4.2
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "WC",
+      "head": null
+    },
+    {
+      "id": "ST1",
+      "name": "储物柜",
+      "level": 1,
+      "box": [
+        19.5,
+        6.4,
+        21.8,
+        7.0
+      ],
+      "kind": "cabinet",
+      "color": "#d9c8b1",
+      "room": "ST",
+      "head": null
+    },
+    {
+      "id": "MW1",
+      "name": "浴缸",
+      "level": 1,
+      "box": [
+        20.05,
+        11.2,
+        21.75,
+        11.95
+      ],
+      "kind": "tub",
+      "color": "#d9c8b1",
+      "room": "MW",
+      "head": null
+    },
+    {
+      "id": "MW2",
+      "name": "台盆",
+      "level": 1,
+      "box": [
+        21.2,
+        8.7,
+        21.8,
+        9.9
+      ],
+      "kind": "sink",
+      "color": "#d9c8b1",
+      "room": "MW",
+      "head": null
+    },
+    {
+      "id": "MW3",
+      "name": "坐便",
+      "level": 1,
+      "box": [
+        20.15,
+        7.5,
+        20.85,
+        8.25
+      ],
+      "kind": "wc",
+      "color": "#d9c8b1",
+      "room": "MW",
+      "head": null
+    }
+  ],
+  "walls": [
+    {
+      "id": "B3S",
+      "level": 2,
+      "a": [
+        -0.1,
+        1.7
+      ],
+      "b": [
+        7.8,
+        1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B3N",
+      "level": 2,
+      "a": [
+        -0.1,
+        8.1
+      ],
+      "b": [
+        7.8,
+        8.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B3W",
+      "level": 2,
+      "a": [
+        -0.1,
+        1.7
+      ],
+      "b": [
+        -0.1,
+        8.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B3E",
+      "level": 2,
+      "a": [
+        7.8,
+        1.7
+      ],
+      "b": [
+        7.8,
+        8.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B2S",
+      "level": 2,
+      "a": [
+        7.800000000000001,
+        1.7
+      ],
+      "b": [
+        13.299999999999999,
+        1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B2N",
+      "level": 2,
+      "a": [
+        7.800000000000001,
+        8.9
+      ],
+      "b": [
+        13.299999999999999,
+        8.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B2W",
+      "level": 2,
+      "a": [
+        7.800000000000001,
+        1.7
+      ],
+      "b": [
+        7.800000000000001,
+        8.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B2E",
+      "level": 2,
+      "a": [
+        13.299999999999999,
+        1.7
+      ],
+      "b": [
+        13.299999999999999,
+        8.9
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B1S",
+      "level": 2,
+      "a": [
+        13.299999999999999,
+        1.7
+      ],
+      "b": [
+        21.1,
+        1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B1N",
+      "level": 2,
+      "a": [
+        13.299999999999999,
+        7.8999999999999995
+      ],
+      "b": [
+        21.1,
+        7.8999999999999995
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B1W",
+      "level": 2,
+      "a": [
+        13.299999999999999,
+        1.7
+      ],
+      "b": [
+        13.299999999999999,
+        7.8999999999999995
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "B1E",
+      "level": 2,
+      "a": [
+        21.1,
+        1.7
+      ],
+      "b": [
+        21.1,
+        7.8999999999999995
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "H_W",
+      "level": 2,
+      "a": [
+        -0.1,
+        -1.6
+      ],
+      "b": [
+        -0.1,
+        1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "H_E",
+      "level": 2,
+      "a": [
+        15.2,
+        -1.6
+      ],
+      "b": [
+        15.2,
+        1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "H_S",
+      "level": 2,
+      "a": [
+        -0.1,
+        -1.6
+      ],
+      "b": [
+        15.2,
+        -1.6
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "GUARD",
+      "level": 2,
+      "a": [
+        1.5,
+        -0.1
+      ],
+      "b": [
+        9.06,
+        -0.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "BWS",
+      "level": 2,
+      "a": [
+        -3.8000000000000003,
+        -1.6
+      ],
+      "b": [
+        -0.1,
+        -1.6
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "BWN",
+      "level": 2,
+      "a": [
+        -3.8000000000000003,
+        1.7000000000000002
+      ],
+      "b": [
+        -0.1,
+        1.7000000000000002
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "BWW",
+      "level": 2,
+      "a": [
+        -3.8000000000000003,
+        -1.6
+      ],
+      "b": [
+        -3.8000000000000003,
+        1.7000000000000002
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "RSS",
+      "level": 2,
+      "a": [
+        10.5,
+        -6.199999999999999
+      ],
+      "b": [
+        14.7,
+        -6.199999999999999
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "RSN",
+      "level": 2,
+      "a": [
+        10.5,
+        -1.7
+      ],
+      "b": [
+        14.7,
+        -1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "RSW",
+      "level": 2,
+      "a": [
+        10.5,
+        -6.199999999999999
+      ],
+      "b": [
+        10.5,
+        -1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "RSE",
+      "level": 2,
+      "a": [
+        14.7,
+        -6.199999999999999
+      ],
+      "b": [
+        14.7,
+        -1.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-S",
+      "level": 1,
+      "a": [
+        0.1,
+        1.9000000000000001
+      ],
+      "b": [
+        21.9,
+        1.9000000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-N",
+      "level": 1,
+      "a": [
+        0.1,
+        12.100000000000001
+      ],
+      "b": [
+        21.9,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-W",
+      "level": 1,
+      "a": [
+        0.1,
+        1.9000000000000001
+      ],
+      "b": [
+        0.1,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-E",
+      "level": 1,
+      "a": [
+        21.9,
+        1.9000000000000001
+      ],
+      "b": [
+        21.9,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MW",
+      "level": 1,
+      "a": [
+        13.9,
+        7.1
+      ],
+      "b": [
+        13.9,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-MS",
+      "level": 1,
+      "a": [
+        13.9,
+        7.1
+      ],
+      "b": [
+        21.9,
+        7.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-BATH",
+      "level": 1,
+      "a": [
+        19.9,
+        7.1
+      ],
+      "b": [
+        19.9,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-HN",
+      "level": 1,
+      "a": [
+        9.9,
+        9.0
+      ],
+      "b": [
+        13.9,
+        9.0
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-HS",
+      "level": 1,
+      "a": [
+        10,
+        7.2
+      ],
+      "b": [
+        13.9,
+        7.2
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-LW",
+      "level": 1,
+      "a": [
+        9.9,
+        9.0
+      ],
+      "b": [
+        9.9,
+        12.100000000000001
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WCE",
+      "level": 1,
+      "a": [
+        18.1,
+        1.9000000000000001
+      ],
+      "b": [
+        18.1,
+        7.1
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-WCN",
+      "level": 1,
+      "a": [
+        18.1,
+        4.3
+      ],
+      "b": [
+        21.9,
+        4.3
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "1-TV",
+      "level": 1,
+      "a": [
+        4.2,
+        7.7
+      ],
+      "b": [
+        7.4,
+        7.7
+      ],
+      "thickness": 0.2
+    },
+    {
+      "id": "F1H_S",
+      "level": 1,
+      "a": [
+        0,
+        -0.1
+      ],
+      "b": [
+        22,
+        -0.1
+      ],
+      "thickness": 0.2
+    }
+  ],
+  "openings": [
+    {
+      "id": "D_B3",
+      "wall": "B3S",
+      "level": 2,
+      "start": 0.9,
+      "end": 1.8,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "D_B2",
+      "wall": "B2S",
+      "level": 2,
+      "start": 9.15,
+      "end": 10.15,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "D_B1",
+      "wall": "B1S",
+      "level": 2,
+      "start": 13.599999999999998,
+      "end": 14.499999999999998,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "W_B30",
+      "wall": "B3N",
+      "level": 2,
+      "start": 2.2,
+      "end": 5.4,
+      "type": "window",
+      "sill": 0.6,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_B20",
+      "wall": "B2N",
+      "level": 2,
+      "start": 9.1,
+      "end": 12.3,
+      "type": "window",
+      "sill": 0.6,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_B10",
+      "wall": "B1N",
+      "level": 2,
+      "start": 13.749999999999998,
+      "end": 16.349999999999998,
+      "type": "window",
+      "sill": 0.6,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_B11",
+      "wall": "B1N",
+      "level": 2,
+      "start": 17.549999999999997,
+      "end": 19.65,
+      "type": "window",
+      "sill": 0.6,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "G_BALCONY",
+      "wall": "B1E",
+      "level": 2,
+      "start": 3.45,
+      "end": 4.75,
+      "type": "glass",
+      "sill": 0,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "G_BATH",
+      "wall": "H_W",
+      "level": 2,
+      "start": 0.2,
+      "end": 1.4,
+      "type": "glass",
+      "sill": 0,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_SHUYA_OPPOSITE",
+      "wall": "H_S",
+      "level": 2,
+      "start": 0.15,
+      "end": 1.4,
+      "type": "window",
+      "sill": 0.03,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_STAIR_STRIP",
+      "wall": "H_S",
+      "level": 2,
+      "start": 1.95,
+      "end": 8.65,
+      "type": "window",
+      "sill": 0.65,
+      "head": 1.25,
+      "side": 1
+    },
+    {
+      "id": "W_PLATFORM_SIDE",
+      "wall": "H_S",
+      "level": 2,
+      "start": 9.35,
+      "end": 10.35,
+      "type": "window",
+      "sill": 0.03,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_PLATFORM_END",
+      "wall": "H_E",
+      "level": 2,
+      "start": -1.45,
+      "end": 1.45,
+      "type": "window",
+      "sill": 0.03,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "W_BATH",
+      "wall": "BWW",
+      "level": 2,
+      "start": -0.05,
+      "end": 1.3,
+      "type": "window",
+      "sill": 0.6,
+      "head": 2.8,
+      "side": 1
+    },
+    {
+      "id": "D_ROOF_ACCESS",
+      "wall": "H_S",
+      "level": 2,
+      "start": 13.4,
+      "end": 14.4,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "D_RS_ENTRY",
+      "wall": "RSN",
+      "level": 2,
+      "start": 13.4,
+      "end": 14.4,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "W101",
+      "wall": "1-S",
+      "level": 1,
+      "start": 0.6,
+      "end": 4.1,
+      "type": "window",
+      "sill": 0.25,
+      "head": 2.8
+    },
+    {
+      "id": "W102",
+      "wall": "1-S",
+      "level": 1,
+      "start": 5.1,
+      "end": 9.4,
+      "type": "window",
+      "sill": 0.25,
+      "head": 2.8
+    },
+    {
+      "id": "D101",
+      "wall": "1-S",
+      "level": 1,
+      "start": 10.05,
+      "end": 11.05,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "W103",
+      "wall": "1-S",
+      "level": 1,
+      "start": 12.1,
+      "end": 16.5,
+      "type": "window",
+      "sill": 0.4,
+      "head": 2.8
+    },
+    {
+      "id": "W104",
+      "wall": "1-S",
+      "level": 1,
+      "start": 19,
+      "end": 21,
+      "type": "window",
+      "sill": 1.5,
+      "head": 2.8
+    },
+    {
+      "id": "W105",
+      "wall": "1-N",
+      "level": 1,
+      "start": 1.5,
+      "end": 3.5,
+      "type": "window",
+      "sill": 1.15,
+      "head": 1.75
+    },
+    {
+      "id": "W106",
+      "wall": "1-N",
+      "level": 1,
+      "start": 5.6,
+      "end": 9,
+      "type": "window",
+      "sill": 0.5,
+      "head": 2.8
+    },
+    {
+      "id": "W107",
+      "wall": "1-N",
+      "level": 1,
+      "start": 10.6,
+      "end": 12.9,
+      "type": "window",
+      "sill": 1.1,
+      "head": 2.8
+    },
+    {
+      "id": "W108",
+      "wall": "1-N",
+      "level": 1,
+      "start": 14.7,
+      "end": 19.3,
+      "type": "window",
+      "sill": 0.3,
+      "head": 2.8
+    },
+    {
+      "id": "W109",
+      "wall": "1-N",
+      "level": 1,
+      "start": 20.3,
+      "end": 21.5,
+      "type": "window",
+      "sill": 1.5,
+      "head": 2.2
+    },
+    {
+      "id": "W110",
+      "wall": "1-W",
+      "level": 1,
+      "start": 3.0,
+      "end": 6.6,
+      "type": "window",
+      "sill": 0.3,
+      "head": 2.8
+    },
+    {
+      "id": "W111",
+      "wall": "1-E",
+      "level": 1,
+      "start": 7.8999999999999995,
+      "end": 9.8,
+      "type": "window",
+      "sill": 1.5,
+      "head": 2.8
+    },
+    {
+      "id": "D106",
+      "wall": "1-MW",
+      "level": 1,
+      "start": 7.6,
+      "end": 8.6,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "D107",
+      "wall": "1-BATH",
+      "level": 1,
+      "start": 10.100000000000001,
+      "end": 11.0,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "D104",
+      "wall": "1-HN",
+      "level": 1,
+      "start": 10.5,
+      "end": 11.4,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "D105",
+      "wall": "1-WCE",
+      "level": 1,
+      "start": 2.3,
+      "end": 3.2,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "D108",
+      "wall": "1-WCE",
+      "level": 1,
+      "start": 5.2,
+      "end": 6.1,
+      "type": "door",
+      "side": 1,
+      "head": 2.2
+    },
+    {
+      "id": "D_MAIN_NEW",
+      "wall": "F1H_S",
+      "level": 1,
+      "start": 10.0,
+      "end": 11.4,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    },
+    {
+      "id": "D_STAIR_EXIT",
+      "wall": "F1H_S",
+      "level": 1,
+      "start": 0.2,
+      "end": 1.3,
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "side": 1
+    }
+  ],
+  "stairs": [
+    {
+      "id": "ST12",
+      "from_level": 1,
+      "to_level": 2,
+      "footprint": [
+        1.5,
+        -1.5,
+        9.06,
+        -0.2
+      ],
+      "rises": 22,
+      "rise": 0.15,
+      "treads": 21,
+      "tread": 0.36,
+      "width": 1.3,
+      "direction": "+X",
+      "floor_height": 3.3,
+      "opening": [
+        1.5,
+        -1.5,
+        9.06,
+        -0.2
+      ],
+      "guard_height": 1.1
+    },
+    {
+      "id": "ST23",
+      "from_level": 2,
+      "to_level": 3,
+      "footprint": [
+        10.8,
+        -5.9,
+        13.4,
+        -2.1
+      ],
+      "rises": 22,
+      "rise": 0.15,
+      "treads_per_flight": 10,
+      "tread": 0.28,
+      "width": 1.2,
+      "landing_depth": 1.0,
+      "floor_height": 3.3,
+      "opening": [
+        10.8,
+        -5.9,
+        13.4,
+        -2.1
+      ],
+      "direction": "U",
+      "clear_height": 2.2
+    }
+  ],
+  "brands": [
+    {
+      "id": "BR_B1_N",
+      "room": "B1",
+      "level": 2,
+      "carrier": "床头西墙品牌画",
+      "position": [
+        13.42,
+        6.15,
+        5.2
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        1.1,
+        0.55
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B1_M",
+      "room": "B1",
+      "level": 2,
+      "carrier": "东墙梳妆台上实体牌",
+      "position": [
+        20.98,
+        7.1,
+        5.4
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        1.2,
+        0.6
+      ],
+      "variant": "mirror",
+      "kind": "plaque",
+      "light": "backlight",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B2_N",
+      "room": "B2",
+      "level": 2,
+      "carrier": "电视屏幕品牌壁纸",
+      "position": [
+        7.92,
+        4.1,
+        4.7
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        0.5
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B2_M",
+      "room": "B2",
+      "level": 2,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        13.18,
+        5.300000000000001,
+        4.949999999999999
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B3_N",
+      "room": "B3",
+      "level": 2,
+      "carrier": "书桌上方原装饰墙",
+      "position": [
+        3.55,
+        1.82,
+        5.1
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "size": [
+        0.8,
+        0.4
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B3_M",
+      "room": "B3",
+      "level": 2,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        7.680000000000001,
+        4.9,
+        4.949999999999999
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_L_N",
+      "room": "L",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        0.22,
+        4.8,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_L_M",
+      "room": "L",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        9.780000000000001,
+        4.8,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_K_N",
+      "room": "K",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        0.22,
+        9.9,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_K_M",
+      "room": "K",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        4.58,
+        9.9,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_D_N",
+      "room": "D",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        4.619999999999999,
+        9.9,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_D_M",
+      "room": "D",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        9.780000000000001,
+        9.9,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_MB_N",
+      "room": "MB",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        14.02,
+        9.6,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_MB_M",
+      "room": "MB",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        19.78,
+        9.6,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_MW_N",
+      "room": "MW",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        20.02,
+        9.6,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_MW_M",
+      "room": "MW",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        21.78,
+        9.6,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_WC_N",
+      "room": "WC",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        18.22,
+        3.1,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_WC_M",
+      "room": "WC",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        21.78,
+        3.1,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_LA_N",
+      "room": "LA",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        10.02,
+        10.55,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_LA_M",
+      "room": "LA",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        13.780000000000001,
+        10.55,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_R_N",
+      "room": "R",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        11.219999999999999,
+        5.7,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_R_M",
+      "room": "R",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        17.98,
+        5.7,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_ST_N",
+      "room": "ST",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        18.22,
+        5.7,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_ST_M",
+      "room": "ST",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        21.78,
+        5.7,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_E_N",
+      "room": "E",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        10.02,
+        4.55,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_E_M",
+      "room": "E",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        11.18,
+        4.55,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_SUP_N",
+      "room": "SUP",
+      "level": 1,
+      "carrier": "已有墙面品牌画",
+      "position": [
+        -3.68,
+        0.15000000000000002,
+        1.8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        0.36
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_SUP_M",
+      "room": "SUP",
+      "level": 1,
+      "carrier": "已有柜面/屏幕或墙画",
+      "position": [
+        -0.22,
+        0.15000000000000002,
+        1.65
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "texture",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_BW_N",
+      "room": "BW",
+      "level": 2,
+      "carrier": "台盆上方墙画",
+      "position": [
+        -1.0,
+        -1.48,
+        5.1
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_BW_M",
+      "room": "BW",
+      "level": 2,
+      "carrier": "坐便侧墙装饰",
+      "position": [
+        -2.9,
+        1.58,
+        5.1
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_H2_N",
+      "room": "H2",
+      "level": 2,
+      "carrier": "卧室门之间品牌画",
+      "position": [
+        12.4,
+        1.68,
+        5.15
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "size": [
+        0.8,
+        0.4
+      ],
+      "variant": "normal",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_H2_M",
+      "room": "H2",
+      "level": 2,
+      "carrier": "浴室侧端墙品牌画",
+      "position": [
+        -0.08,
+        -0.55,
+        5.1
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "mirror",
+      "kind": "art",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_RS_N",
+      "room": "RS",
+      "level": 2,
+      "carrier": "楼梯间平台实物铭牌",
+      "position": [
+        14.58,
+        -3.3,
+        5.1
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        0.3
+      ],
+      "variant": "normal",
+      "kind": "plaque",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_BAL_M",
+      "room": "BAL",
+      "level": 2,
+      "carrier": "阳台边柜小型牌",
+      "position": [
+        22.0,
+        7.75,
+        4.2
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "size": [
+        0.45,
+        0.225
+      ],
+      "variant": "mirror",
+      "kind": "plaque",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_EXT_N",
+      "room": "EXT",
+      "level": 1,
+      "carrier": "车库右侧入户墙实体霓虹牌",
+      "position": [
+        18.5,
+        -16.58,
+        1.7
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "size": [
+        1.6,
+        0.8
+      ],
+      "variant": "normal",
+      "kind": "neon",
+      "light": "glyph_emission",
+      "main": true,
+      "master": "HG_FULL_normal",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_EXT_M",
+      "room": "EXT",
+      "level": 1,
+      "carrier": "庭院侧墙品牌画",
+      "position": [
+        25.58,
+        -8.5,
+        1.8
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "size": [
+        1.2,
+        0.6
+      ],
+      "variant": "mirror",
+      "kind": "plaque",
+      "light": "none",
+      "main": true,
+      "master": "HG_FULL_mirror",
+      "domain": "hgdju.com",
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B1_STAND",
+      "room": "B1",
+      "level": 2,
+      "carrier": "床头柜立体摆件",
+      "position": [
+        13.95,
+        4.5,
+        4.35
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "size": [
+        0.22,
+        0.32
+      ],
+      "variant": "normal",
+      "kind": "sculpture",
+      "light": "none",
+      "main": false,
+      "master": "HG_ICON",
+      "domain": null,
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    },
+    {
+      "id": "BR_B1_FABRIC",
+      "room": "B1",
+      "level": 2,
+      "carrier": "床尾织物局部印花",
+      "position": [
+        16.0,
+        6.15,
+        4.0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "size": [
+        0.22,
+        0.22
+      ],
+      "variant": "normal",
+      "kind": "icon_texture",
+      "light": "none",
+      "main": false,
+      "master": "HG_ICON",
+      "domain": null,
+      "fixed_to_carrier": true,
+      "camera_facing": false
+    }
+  ],
+  "cameras": [
+    {
+      "id": "CAM_B3_EW",
+      "room": "B3",
+      "position": [
+        0.8,
+        4.9,
+        4.85
+      ],
+      "target": [
+        7.7,
+        4.9,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_B3_WE",
+      "room": "B3",
+      "position": [
+        6.9,
+        4.9,
+        4.85
+      ],
+      "target": [
+        0,
+        4.9,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_B2_EW",
+      "room": "B2",
+      "position": [
+        8.700000000000001,
+        5.300000000000001,
+        4.85
+      ],
+      "target": [
+        13.2,
+        5.300000000000001,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_B2_WE",
+      "room": "B2",
+      "position": [
+        12.399999999999999,
+        5.300000000000001,
+        4.85
+      ],
+      "target": [
+        7.9,
+        5.300000000000001,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_B1_EW",
+      "room": "B1",
+      "position": [
+        14.2,
+        4.8,
+        4.85
+      ],
+      "target": [
+        21.0,
+        4.8,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_B1_WE",
+      "room": "B1",
+      "position": [
+        20.2,
+        4.8,
+        4.85
+      ],
+      "target": [
+        13.399999999999999,
+        4.8,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_BW_EW",
+      "room": "BW",
+      "position": [
+        -2.9000000000000004,
+        0.050000000000000044,
+        4.85
+      ],
+      "target": [
+        -0.2,
+        0.050000000000000044,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_BW_WE",
+      "room": "BW",
+      "position": [
+        -1.0,
+        0.050000000000000044,
+        4.85
+      ],
+      "target": [
+        -3.7,
+        0.050000000000000044,
+        4.85
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_L_EW",
+      "room": "L",
+      "position": [
+        1.0,
+        4.8,
+        1.55
+      ],
+      "target": [
+        9.8,
+        4.8,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_L_WE",
+      "room": "L",
+      "position": [
+        9.0,
+        4.8,
+        1.55
+      ],
+      "target": [
+        0.2,
+        4.8,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_K_EW",
+      "room": "K",
+      "position": [
+        1.0,
+        9.9,
+        1.55
+      ],
+      "target": [
+        4.6,
+        9.9,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_K_WE",
+      "room": "K",
+      "position": [
+        3.8,
+        9.9,
+        1.55
+      ],
+      "target": [
+        0.2,
+        9.9,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_D_EW",
+      "room": "D",
+      "position": [
+        5.3999999999999995,
+        9.9,
+        1.55
+      ],
+      "target": [
+        9.8,
+        9.9,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_D_WE",
+      "room": "D",
+      "position": [
+        9.0,
+        9.9,
+        1.55
+      ],
+      "target": [
+        4.6,
+        9.9,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_MB_EW",
+      "room": "MB",
+      "position": [
+        14.8,
+        9.6,
+        1.55
+      ],
+      "target": [
+        19.8,
+        9.6,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_MB_WE",
+      "room": "MB",
+      "position": [
+        19.0,
+        9.6,
+        1.55
+      ],
+      "target": [
+        14,
+        9.6,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_MW_EW",
+      "room": "MW",
+      "position": [
+        20.8,
+        9.6,
+        1.55
+      ],
+      "target": [
+        21.8,
+        9.6,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_MW_WE",
+      "room": "MW",
+      "position": [
+        21.0,
+        9.6,
+        1.55
+      ],
+      "target": [
+        20,
+        9.6,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_LA_EW",
+      "room": "LA",
+      "position": [
+        10.8,
+        10.55,
+        1.55
+      ],
+      "target": [
+        13.8,
+        10.55,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_LA_WE",
+      "room": "LA",
+      "position": [
+        13.0,
+        10.55,
+        1.55
+      ],
+      "target": [
+        10,
+        10.55,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_R_EW",
+      "room": "R",
+      "position": [
+        12.0,
+        5.7,
+        1.55
+      ],
+      "target": [
+        18,
+        5.7,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_R_WE",
+      "room": "R",
+      "position": [
+        17.2,
+        5.7,
+        1.55
+      ],
+      "target": [
+        11.2,
+        5.7,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_WC_EW",
+      "room": "WC",
+      "position": [
+        19.0,
+        3.1,
+        1.55
+      ],
+      "target": [
+        21.8,
+        3.1,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_WC_WE",
+      "room": "WC",
+      "position": [
+        21.0,
+        3.1,
+        1.55
+      ],
+      "target": [
+        18.2,
+        3.1,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_ST_EW",
+      "room": "ST",
+      "position": [
+        19.0,
+        5.7,
+        1.55
+      ],
+      "target": [
+        21.8,
+        5.7,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    },
+    {
+      "id": "CAM_ST_WE",
+      "room": "ST",
+      "position": [
+        21.0,
+        5.7,
+        1.55
+      ],
+      "target": [
+        18.2,
+        5.7,
+        1.55
+      ],
+      "lens": 24,
+      "aspect": "9:16",
+      "status": "固定布置覆盖预检机位；最终无遮挡渲染待整模"
+    }
+  ],
+  "clearances": [
+    {
+      "id": "B1-床南侧",
+      "room": "B1",
+      "box": [
+        14.399999999999999,
+        4.0,
+        17.5,
+        4.9
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B1-床尾南段",
+      "room": "B1",
+      "box": [
+        17.5,
+        4.9,
+        18.25,
+        5.85
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B1-衣柜前",
+      "room": "B1",
+      "box": [
+        17.7,
+        2.4,
+        19.4,
+        3.3
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B1-阳台通路",
+      "room": "B1",
+      "box": [
+        19.2,
+        3.45,
+        21.0,
+        4.75
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B1-书桌椅后",
+      "room": "B1",
+      "box": [
+        17.7,
+        5.05,
+        19.049999999999997,
+        5.95
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B1-镜前",
+      "room": "B1",
+      "box": [
+        19.799999999999997,
+        5.2,
+        20.799999999999997,
+        5.95
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B3-床左通路",
+      "room": "B3",
+      "box": [
+        4.55,
+        2.45,
+        5.4,
+        4
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B3-衣架前",
+      "room": "B3",
+      "box": [
+        0.65,
+        3.4,
+        1.55,
+        7.3
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "B3-椅后",
+      "room": "B3",
+      "box": [
+        2.55,
+        3.45,
+        4.55,
+        4.3
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "BW-入口与转身",
+      "room": "BW",
+      "box": [
+        -2.25,
+        -0.7,
+        -0.3,
+        0.6
+      ],
+      "purpose": "使用空间；非家具实体"
+    },
+    {
+      "id": "BW-坐便前",
+      "room": "BW",
+      "box": [
+        -2.5,
+        0.6,
+        -1.6,
+        1.4
+      ],
+      "purpose": "使用空间；非家具实体"
+    }
+  ],
+  "routes": [
+    {
+      "id": "R12",
+      "level": 1,
+      "points": [
+        [
+          10.7,
+          -0.8
+        ],
+        [
+          10.7,
+          0.8
+        ],
+        [
+          0.75,
+          0.8
+        ],
+        [
+          0.75,
+          -0.8
+        ],
+        [
+          1.5,
+          -0.8
+        ],
+        [
+          9.06,
+          -0.8
+        ]
+      ],
+      "note": "一楼入口→公共通路→下平台→直梯"
+    },
+    {
+      "id": "R2",
+      "level": 2,
+      "points": [
+        [
+          9.06,
+          -0.8
+        ],
+        [
+          10,
+          -0.8
+        ],
+        [
+          10,
+          0.8
+        ],
+        [
+          0.6,
+          0.8
+        ]
+      ],
+      "note": "上平台→三房走廊→浴室"
+    },
+    {
+      "id": "R23",
+      "level": 2,
+      "points": [
+        [
+          10,
+          -0.8
+        ],
+        [
+          13.9,
+          -0.8
+        ],
+        [
+          13.9,
+          -2.3
+        ],
+        [
+          12.8,
+          -2.3
+        ],
+        [
+          12.8,
+          -5.4
+        ],
+        [
+          11.4,
+          -5.4
+        ],
+        [
+          11.4,
+          -2.3
+        ]
+      ],
+      "note": "公共上平台→新增双跑楼梯→屋顶"
+    }
+  ],
+  "unresolved": [
+    "本版为内部先行设计稿，尺寸及新外轮廓待用户验收；不是施工图。",
+    "二姐V3俯拍含额外门，与正面参考不一致；采用正面单入口关系，不新增该门。",
+    "浴室玻璃门暂按双扇推拉表达，具体门框、五金需近景参考校准。",
+    "一楼既有内部布局保持；新增公共连接通路及浴室下方设备/支承区域属于设计新增。",
+    "新增屋顶楼梯间与外挑区域的结构支承、防水和管线尚未进行工程设计。",
+    "固定品牌布置已设计；全屋材质模型及其镜面反射、最终机位遮挡须在后续整模中验证。"
+  ],
+  "site": {
+    "building_bounds": [
+      -3.9,
+      -6.3,
+      23.4,
+      12.2
+    ],
+    "bounds": [
+      -5.9,
+      -16.6,
+      25.6,
+      15.2
+    ],
+    "garage_outer": [
+      4.5,
+      -16.6,
+      16.5,
+      -10.8
+    ],
+    "garage_net": [
+      4.7,
+      -16.4,
+      16.3,
+      -11.0
+    ],
+    "front_garden_depth": 4.5,
+    "path_width": 1.4,
+    "pedestrian_gate": [
+      20.3,
+      21.9
+    ],
+    "source": "从房间与楼梯间最外边界向外推导；非旧地块限额"
+  },
+  "roof_outline": [
+    [
+      -3.9,
+      -1.7,
+      0,
+      1.8
+    ],
+    [
+      0,
+      -1.7,
+      22,
+      12.2
+    ],
+    [
+      10.4,
+      -6.3,
+      14.8,
+      -1.7
+    ],
+    [
+      21,
+      1.6,
+      23.4,
+      8
+    ]
+  ],
+  "design_order": [
+    "摆放各房间家具",
+    "留使用通路",
+    "家具包络推导房间尺寸",
+    "拼合房间并连接走廊",
+    "安排上下楼路线",
+    "推导建筑外轮廓",
+    "推导地块与花园"
+  ],
+  "authorization_updates": [
+    "2026-10-22 用户允许重新安排三间卧室门距并延展走廊，内部布局正确优先。",
+    "床等比例调整，其余既有家具尺寸不变。",
+    "公共浴室沿用V3内部；二姐布局本轮修正；屋顶小房子可合理设计。",
+    "R1最新图示：子豪门移至x38.5%位置；大姐床向电脑桌延长且宽度暂保持；二姐床贴右墙；入口小柜移开门扇。"
+  ]
+}

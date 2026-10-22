@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "BR_B1_N",
+    "room": "B1",
+    "level": 2,
+    "carrier": "床头西墙品牌画",
+    "position": [
+      13.42,
+      6.15,
+      5.2
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      1.1,
+      0.55
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_M",
+    "room": "B1",
+    "level": 2,
+    "carrier": "东墙梳妆台上实体牌",
+    "position": [
+      20.98,
+      7.1,
+      5.4
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      1.2,
+      0.6
+    ],
+    "variant": "mirror",
+    "kind": "plaque",
+    "light": "backlight",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B2_N",
+    "room": "B2",
+    "level": 2,
+    "carrier": "电视屏幕品牌壁纸",
+    "position": [
+      7.92,
+      4.1,
+      4.7
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      1.0,
+      0.5
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B2_M",
+    "room": "B2",
+    "level": 2,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      13.18,
+      5.300000000000001,
+      4.949999999999999
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B3_N",
+    "room": "B3",
+    "level": 2,
+    "carrier": "书桌上方原装饰墙",
+    "position": [
+      3.55,
+      1.82,
+      5.1
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "size": [
+      0.8,
+      0.4
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B3_M",
+    "room": "B3",
+    "level": 2,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      7.680000000000001,
+      4.9,
+      4.949999999999999
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_L_N",
+    "room": "L",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      0.22,
+      4.8,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_L_M",
+    "room": "L",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      9.780000000000001,
+      4.8,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_K_N",
+    "room": "K",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      0.22,
+      9.9,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_K_M",
+    "room": "K",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      4.58,
+      9.9,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_D_N",
+    "room": "D",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      4.619999999999999,
+      9.9,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_D_M",
+    "room": "D",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      9.780000000000001,
+      9.9,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MB_N",
+    "room": "MB",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      14.02,
+      9.6,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MB_M",
+    "room": "MB",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      19.78,
+      9.6,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MW_N",
+    "room": "MW",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      20.02,
+      9.6,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MW_M",
+    "room": "MW",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      21.78,
+      9.6,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_WC_N",
+    "room": "WC",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      18.22,
+      3.1,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_WC_M",
+    "room": "WC",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      21.78,
+      3.1,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_LA_N",
+    "room": "LA",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      10.02,
+      10.55,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_LA_M",
+    "room": "LA",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      13.780000000000001,
+      10.55,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_R_N",
+    "room": "R",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      11.219999999999999,
+      5.7,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_R_M",
+    "room": "R",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      17.98,
+      5.7,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_ST_N",
+    "room": "ST",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      18.22,
+      5.7,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_ST_M",
+    "room": "ST",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      21.78,
+      5.7,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_E_N",
+    "room": "E",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      10.02,
+      4.55,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_E_M",
+    "room": "E",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      11.18,
+      4.55,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_SUP_N",
+    "room": "SUP",
+    "level": 1,
+    "carrier": "已有墙面品牌画",
+    "position": [
+      -3.68,
+      0.15000000000000002,
+      1.8
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_SUP_M",
+    "room": "SUP",
+    "level": 1,
+    "carrier": "已有柜面/屏幕或墙画",
+    "position": [
+      -0.22,
+      0.15000000000000002,
+      1.65
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "texture",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BW_N",
+    "room": "BW",
+    "level": 2,
+    "carrier": "台盆上方墙画",
+    "position": [
+      -1.0,
+      -1.48,
+      5.1
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BW_M",
+    "room": "BW",
+    "level": 2,
+    "carrier": "坐便侧墙装饰",
+    "position": [
+      -2.9,
+      1.58,
+      5.1
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_H2_N",
+    "room": "H2",
+    "level": 2,
+    "carrier": "卧室门之间品牌画",
+    "position": [
+      12.4,
+      1.68,
+      5.15
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.8,
+      0.4
+    ],
+    "variant": "normal",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_H2_M",
+    "room": "H2",
+    "level": 2,
+    "carrier": "浴室侧端墙品牌画",
+    "position": [
+      -0.08,
+      -0.55,
+      5.1
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "kind": "art",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_RS_N",
+    "room": "RS",
+    "level": 2,
+    "carrier": "楼梯间平台实物铭牌",
+    "position": [
+      14.58,
+      -3.3,
+      5.1
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "normal",
+    "kind": "plaque",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BAL_M",
+    "room": "BAL",
+    "level": 2,
+    "carrier": "阳台边柜小型牌",
+    "position": [
+      22.0,
+      7.75,
+      4.2
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.45,
+      0.225
+    ],
+    "variant": "mirror",
+    "kind": "plaque",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_EXT_N",
+    "room": "EXT",
+    "level": 1,
+    "carrier": "车库右侧入户墙实体霓虹牌",
+    "position": [
+      18.5,
+      -16.58,
+      1.7
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      1.6,
+      0.8
+    ],
+    "variant": "normal",
+    "kind": "neon",
+    "light": "glyph_emission",
+    "main": true,
+    "master": "HG_FULL_normal",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_EXT_M",
+    "room": "EXT",
+    "level": 1,
+    "carrier": "庭院侧墙品牌画",
+    "position": [
+      25.58,
+      -8.5,
+      1.8
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      1.2,
+      0.6
+    ],
+    "variant": "mirror",
+    "kind": "plaque",
+    "light": "none",
+    "main": true,
+    "master": "HG_FULL_mirror",
+    "domain": "hgdju.com",
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_STAND",
+    "room": "B1",
+    "level": 2,
+    "carrier": "床头柜立体摆件",
+    "position": [
+      13.95,
+      4.5,
+      4.35
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.22,
+      0.32
+    ],
+    "variant": "normal",
+    "kind": "sculpture",
+    "light": "none",
+    "main": false,
+    "master": "HG_ICON",
+    "domain": null,
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_FABRIC",
+    "room": "B1",
+    "level": 2,
+    "carrier": "床尾织物局部印花",
+    "position": [
+      16.0,
+      6.15,
+      4.0
+    ],
+    "normal": [
+      0,
+      0,
+      1
+    ],
+    "size": [
+      0.22,
+      0.22
+    ],
+    "variant": "normal",
+    "kind": "icon_texture",
+    "light": "none",
+    "main": false,
+    "master": "HG_ICON",
+    "domain": null,
+    "fixed_to_carrier": true,
+    "camera_facing": false
+  }
+]

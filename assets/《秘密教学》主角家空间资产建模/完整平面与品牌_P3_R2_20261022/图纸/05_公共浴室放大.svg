@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">05 / 公共浴室 · V3设施关系</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">净尺寸 3.50 × 3.10 m  |  净面积 10.85 ㎡  |  先布置、后测算</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P3-R2 · 2026-10-22    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">从走廊向内看：</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">左前台盆 / 左后淋浴</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">右后坐便 / 后墙窗</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">入口为浴室玻璃门</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">舒亚对面落地窗不变</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">推拉细节为设计暂定</text>
+<path d="M970.43,532.17 L970.43,297.39" fill="none" stroke="#38796c" stroke-width="3"/>
+<text x="970.43" y="258.26" font-size="18" font-weight="400" text-anchor="start">N</text>
+<rect x="246.52" y="316.96" width="684.78" height="606.52" fill="#deedf0" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="530.22" y="512.61" width="381.52" height="254.35" fill="#d7eadb" stroke="#75a185" stroke-width="1" rx="0"/>
+<rect x="481.30" y="356.09" width="176.09" height="156.52" fill="#d7eadb" stroke="#75a185" stroke-width="1" rx="0"/>
+<rect x="647.61" y="806.09" width="273.91" height="117.39" fill="#becabf" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="784.57" y="874.57" font-size="14" font-weight="400" text-anchor="middle">BW1</text>
+<rect x="246.52" y="669.13" width="254.35" height="254.35" fill="#becabf" stroke="#8b9993" stroke-width="1" rx="3"/>
+<path d="M500.87,923.48 L500.87,669.13" fill="none" stroke="#3f9eb4" stroke-width="3"/>
+<path d="M246.52,669.13 L500.87,669.13" fill="none" stroke="#3f9eb4" stroke-width="3"/>
+<text x="373.70" y="806.09" font-size="14" font-weight="400" text-anchor="middle">BW2</text>
+<rect x="324.78" y="356.09" width="156.52" height="146.74" fill="#becabf" stroke="#8b9993" stroke-width="1" rx="3"/>
+<text x="403.04" y="439.24" font-size="14" font-weight="400" text-anchor="middle">BW3</text>
+<path d="M950.87,943.04 L950.87,590.87" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M950.87,590.87 L950.87,356.09" fill="none" stroke="#319bb1" stroke-width="4"/>
+<text x="950.87" y="473.48" font-size="10" font-weight="400" text-anchor="start">玻璃</text>
+<path d="M950.87,356.09 L950.87,297.39" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M226.96,943.04 L950.87,943.04" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M226.96,297.39 L950.87,297.39" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M226.96,943.04 L226.96,639.78" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M226.96,639.78 L226.96,375.65" fill="none" stroke="#319bb1" stroke-width="4"/>
+<path d="M226.96,375.65 L226.96,297.39" fill="none" stroke="#40585c" stroke-width="25.434782608695656"/>
+<path d="M246.52,972.39 L931.30,972.39" fill="none" stroke="#b36c31" stroke-width="1"/>
+<text x="588.91" y="1031.09" font-size="15" font-weight="400" text-anchor="middle" style="fill:#b36c31">3.50 m</text>
+<text x="960.65" y="620.22" font-size="14" font-weight="400" text-anchor="start" style="fill:#b36c31">3.10 m</text>
+<text x="1430.00" y="560.00" font-size="14" font-weight="400" text-anchor="start">BW1  台盆</text>
+<text x="1430.00" y="587.00" font-size="14" font-weight="400" text-anchor="start">BW2  玻璃淋浴区</text>
+<text x="1430.00" y="614.00" font-size="14" font-weight="400" text-anchor="start">BW3  坐便</text>
+</svg>

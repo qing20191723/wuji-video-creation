@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1240" viewBox="0 0 1800 1240"><style>text{font-family:"Microsoft YaHei",sans-serif;fill:#243b40}</style><rect width="1800" height="1240" fill="#f8f7f2"/>
+<text x="65.00" y="65.00" font-size="32" font-weight="700" text-anchor="start">07 / 南侧体量与庭院剖面示意</text>
+<text x="65.00" y="105.00" font-size="17" font-weight="400" text-anchor="start">示意用于核对空间层次；不作为梁柱、基础或防水施工图</text>
+<path d="M65 126H1735" stroke="#bccbc1"/>
+<text x="65.00" y="1190.00" font-size="17" font-weight="400" text-anchor="start">P4 · 2026-10-22    先家具 → 内部范围 → 楼层整合 → 外轮廓    |    影视空间设计稿 · 待验收</text>
+<text x="1430.00" y="165.00" font-size="23" font-weight="700" text-anchor="start">图纸说明</text>
+<text x="1430.00" y="207.00" font-size="16" font-weight="400" text-anchor="start">一楼 ±0.00</text>
+<text x="1430.00" y="236.00" font-size="16" font-weight="400" text-anchor="start">二楼 / 庭院 +3.30</text>
+<text x="1430.00" y="265.00" font-size="16" font-weight="400" text-anchor="start">主屋面 +6.60</text>
+<text x="1430.00" y="294.00" font-size="16" font-weight="400" text-anchor="start">梯间顶部 +9.20 暂定</text>
+<text x="1430.00" y="323.00" font-size="16" font-weight="400" text-anchor="start">庭院采用外侧支承概念</text>
+<text x="1430.00" y="352.00" font-size="16" font-weight="400" text-anchor="start">庭院下方为开放檐下区</text>
+<text x="1430.00" y="381.00" font-size="16" font-weight="400" text-anchor="start">室内尺度沿用确认平面</text>
+<path d="M131.33,1038.67 L1247.33,1038.67" fill="none" stroke="#9daea3" stroke-width="1" stroke-dasharray="8 5"/>
+<text x="1255.60" y="1038.67" font-size="13" font-weight="400" text-anchor="start">+0.00</text>
+<path d="M131.33,902.27 L1247.33,902.27" fill="none" stroke="#9daea3" stroke-width="1" stroke-dasharray="8 5"/>
+<text x="1255.60" y="902.27" font-size="13" font-weight="400" text-anchor="start">+3.30</text>
+<path d="M131.33,765.87 L1247.33,765.87" fill="none" stroke="#9daea3" stroke-width="1" stroke-dasharray="8 5"/>
+<text x="1255.60" y="765.87" font-size="13" font-weight="400" text-anchor="start">+6.60</text>
+<path d="M131.33,658.40 L1247.33,658.40" fill="none" stroke="#9daea3" stroke-width="1" stroke-dasharray="8 5"/>
+<text x="1255.60" y="658.40" font-size="13" font-weight="400" text-anchor="start">+9.20</text>
+<rect x="255.33" y="765.87" width="876.27" height="272.80" fill="#eee5d6" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="693.47" y="658.40" width="165.33" height="107.47" fill="#69767a" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="887.73" y="902.27" width="330.67" height="9.09" fill="#b9c6b9" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="893.11" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1043.97" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1201.04" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<path d="M887.73,856.80 L1218.40,856.80" fill="none" stroke="#243b40" stroke-width="3"/>
+<path d="M887.73,902.27 L887.73,856.80" fill="none" stroke="#243b40" stroke-width="1"/>
+<path d="M970.40,902.27 L970.40,856.80" fill="none" stroke="#243b40" stroke-width="1"/>
+<path d="M1053.07,902.27 L1053.07,856.80" fill="none" stroke="#243b40" stroke-width="1"/>
+<path d="M1135.73,902.27 L1135.73,856.80" fill="none" stroke="#243b40" stroke-width="1"/>
+<path d="M1218.40,902.27 L1218.40,856.80" fill="none" stroke="#243b40" stroke-width="1"/>
+<rect x="887.73" y="912.60" width="326.53" height="126.07" fill="#f7f4eb" stroke="#c0c9bd" stroke-width="1" rx="0"/>
+<rect x="893.11" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1043.97" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1201.04" y="911.36" width="9.92" height="127.31" fill="#b8c3bb" stroke="#899a95" stroke-width="1" rx="0"/>
+<rect x="1011.7" y="960.7" width="74.4" height="23" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="1048.93" y="976.67" font-size="16" font-weight="400" text-anchor="middle">檐下室外区</text>
+<rect x="1021.1" y="873.8" width="55.7" height="21" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="1048.93" y="887.80" font-size="14" font-weight="400" text-anchor="middle">公共庭院</text>
+<rect x="496.5" y="822.3" width="96.2" height="25" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="544.67" y="840.27" font-size="18" font-weight="400" text-anchor="middle">确认室内空间</text>
+<rect x="748.3" y="710.5" width="55.7" height="21" rx="4" fill="#ffffff" fill-opacity=".88"/>
+<text x="776.13" y="724.53" font-size="14" font-weight="400" text-anchor="middle">屋顶梯间</text>
+</svg>

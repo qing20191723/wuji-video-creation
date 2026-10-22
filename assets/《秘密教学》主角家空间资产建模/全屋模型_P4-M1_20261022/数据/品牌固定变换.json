@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "BR_B1_N",
+    "plan_position": [
+      13.42,
+      6.15,
+      5.2
+    ],
+    "realized_position": [
+      13.437999725341797,
+      6.159999847412109,
+      5.199999809265137
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      1.1,
+      0.55
+    ],
+    "variant": "normal",
+    "carrier": "B2E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_M",
+    "plan_position": [
+      20.98,
+      7.1,
+      5.4
+    ],
+    "realized_position": [
+      20.961999893188477,
+      7.071666717529297,
+      5.400000095367432
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      1.2,
+      0.6
+    ],
+    "variant": "mirror",
+    "carrier": "B1E",
+    "light": "backlight",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B2_N",
+    "plan_position": [
+      7.92,
+      4.1,
+      4.7
+    ],
+    "realized_position": [
+      7.938000202178955,
+      4.083333492279053,
+      4.699999809265137
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      1.0,
+      0.5
+    ],
+    "variant": "normal",
+    "carrier": "B3E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B2_M",
+    "plan_position": [
+      13.18,
+      5.300000000000001,
+      4.949999999999999
+    ],
+    "realized_position": [
+      13.16200065612793,
+      5.300000190734863,
+      4.949999809265137
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "B2E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B3_N",
+    "plan_position": [
+      3.55,
+      1.82,
+      5.1
+    ],
+    "realized_position": [
+      3.509999990463257,
+      1.8380000591278076,
+      5.099999904632568
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "size": [
+      0.8,
+      0.4
+    ],
+    "variant": "normal",
+    "carrier": "B3S",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B3_M",
+    "plan_position": [
+      7.680000000000001,
+      4.9,
+      4.949999999999999
+    ],
+    "realized_position": [
+      7.6620001792907715,
+      4.900000095367432,
+      4.949999809265137
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "B3E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_L_N",
+    "plan_position": [
+      0.22,
+      4.8,
+      1.8
+    ],
+    "realized_position": [
+      0.23800000548362732,
+      7.030666828155518,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-W",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_L_M",
+    "plan_position": [
+      9.780000000000001,
+      4.8,
+      1.65
+    ],
+    "realized_position": [
+      7.050000190734863,
+      7.561999797821045,
+      1.649999976158142
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-TV",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_K_N",
+    "plan_position": [
+      0.22,
+      9.9,
+      1.8
+    ],
+    "realized_position": [
+      0.23800000548362732,
+      9.899999618530273,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-W",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_K_M",
+    "plan_position": [
+      4.58,
+      9.9,
+      1.65
+    ],
+    "realized_position": [
+      4.25,
+      11.962000846862793,
+      1.649999976158142
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-N",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_D_N",
+    "plan_position": [
+      4.619999999999999,
+      9.9,
+      1.8
+    ],
+    "realized_position": [
+      5.010000228881836,
+      7.8379998207092285,
+      1.7999999523162842
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-TV",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_D_M",
+    "plan_position": [
+      9.780000000000001,
+      9.9,
+      1.65
+    ],
+    "realized_position": [
+      9.76200008392334,
+      9.886666297912598,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-LW",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MB_N",
+    "plan_position": [
+      14.02,
+      9.6,
+      1.8
+    ],
+    "realized_position": [
+      14.037999153137207,
+      9.600000381469727,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-MW",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MB_M",
+    "plan_position": [
+      19.78,
+      9.6,
+      1.65
+    ],
+    "realized_position": [
+      19.761999130249023,
+      9.600000381469727,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-BATH",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MW_N",
+    "plan_position": [
+      20.02,
+      9.6,
+      1.8
+    ],
+    "realized_position": [
+      20.038000106811523,
+      9.600000381469727,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-BATH",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_MW_M",
+    "plan_position": [
+      21.78,
+      9.6,
+      1.65
+    ],
+    "realized_position": [
+      21.761999130249023,
+      10.146666526794434,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_WC_N",
+    "plan_position": [
+      18.22,
+      3.1,
+      1.8
+    ],
+    "realized_position": [
+      18.238000869750977,
+      3.559999942779541,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-WCE",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_WC_M",
+    "plan_position": [
+      21.78,
+      3.1,
+      1.65
+    ],
+    "realized_position": [
+      21.761999130249023,
+      3.0999999046325684,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_LA_N",
+    "plan_position": [
+      10.02,
+      10.55,
+      1.8
+    ],
+    "realized_position": [
+      10.037999153137207,
+      10.550000190734863,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-LW",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_LA_M",
+    "plan_position": [
+      13.780000000000001,
+      10.55,
+      1.65
+    ],
+    "realized_position": [
+      13.76200008392334,
+      10.550000190734863,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-MW",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_R_N",
+    "plan_position": [
+      11.219999999999999,
+      5.7,
+      1.8
+    ],
+    "realized_position": [
+      11.609999656677246,
+      7.061999797821045,
+      1.7999999523162842
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-HS",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_R_M",
+    "plan_position": [
+      17.98,
+      5.7,
+      1.65
+    ],
+    "realized_position": [
+      17.961999893188477,
+      6.428333282470703,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-WCE",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_ST_N",
+    "plan_position": [
+      18.22,
+      5.7,
+      1.8
+    ],
+    "realized_position": [
+      18.238000869750977,
+      6.4713335037231445,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-WCE",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_ST_M",
+    "plan_position": [
+      21.78,
+      5.7,
+      1.65
+    ],
+    "realized_position": [
+      21.761999130249023,
+      5.699999809265137,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-E",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_E_N",
+    "plan_position": [
+      10.02,
+      4.55,
+      1.8
+    ],
+    "realized_position": [
+      10.40999984741211,
+      7.061999797821045,
+      1.7999999523162842
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "1-HS",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_E_M",
+    "plan_position": [
+      11.18,
+      4.55,
+      1.65
+    ],
+    "realized_position": [
+      10.850000381469727,
+      7.061999797821045,
+      1.649999976158142
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "1-HS",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_SUP_N",
+    "plan_position": [
+      -3.68,
+      0.15000000000000002,
+      1.8
+    ],
+    "realized_position": [
+      -3.6619999408721924,
+      0.15000000596046448,
+      1.7999999523162842
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.72,
+      0.36
+    ],
+    "variant": "normal",
+    "carrier": "SUP_W",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_SUP_M",
+    "plan_position": [
+      -0.22,
+      0.15000000000000002,
+      1.65
+    ],
+    "realized_position": [
+      -0.23800000548362732,
+      0.15000000596046448,
+      1.649999976158142
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "F1_CIRC_W",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BW_N",
+    "plan_position": [
+      -1.0,
+      -1.48,
+      5.1
+    ],
+    "realized_position": [
+      -1.0166666507720947,
+      -1.4620000123977661,
+      5.099999904632568
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "normal",
+    "carrier": "BWS",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BW_M",
+    "plan_position": [
+      -2.9,
+      1.58,
+      5.1
+    ],
+    "realized_position": [
+      -2.883333444595337,
+      1.562000036239624,
+      5.099999904632568
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "BWN",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_H2_N",
+    "plan_position": [
+      12.4,
+      1.68,
+      5.15
+    ],
+    "realized_position": [
+      12.390000343322754,
+      1.562000036239624,
+      5.150000095367432
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.8,
+      0.4
+    ],
+    "variant": "normal",
+    "carrier": "B2S",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_H2_M",
+    "plan_position": [
+      -0.08,
+      -0.55,
+      5.1
+    ],
+    "realized_position": [
+      0.3499999940395355,
+      1.562000036239624,
+      5.099999904632568
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "mirror",
+    "carrier": "B3S",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_RS_N",
+    "plan_position": [
+      14.58,
+      -3.3,
+      5.1
+    ],
+    "realized_position": [
+      14.562000274658203,
+      -3.2899999618530273,
+      5.099999904632568
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      0.6,
+      0.3
+    ],
+    "variant": "normal",
+    "carrier": "RSE",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_BAL_M",
+    "plan_position": [
+      22.0,
+      7.75,
+      4.2
+    ],
+    "realized_position": [
+      22,
+      7.75,
+      4.13
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.45,
+      0.225
+    ],
+    "variant": "mirror",
+    "carrier": "BAL rail",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_EXT_N",
+    "plan_position": [
+      18.5,
+      -16.82,
+      1.7
+    ],
+    "realized_position": [
+      18.5,
+      -16.838,
+      1.7
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      1.6,
+      0.8
+    ],
+    "variant": "normal",
+    "carrier": "site_wall",
+    "light": "glyph_emission",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_EXT_M",
+    "plan_position": [
+      25.98,
+      -8.5,
+      1.8
+    ],
+    "realized_position": [
+      25.762,
+      -8.5,
+      1.8
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "size": [
+      1.2,
+      0.6
+    ],
+    "variant": "mirror",
+    "carrier": "site_wall",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_STAND",
+    "plan_position": [
+      13.95,
+      4.5,
+      4.35
+    ],
+    "realized_position": [
+      14.1,
+      4.5,
+      4.136615384615385
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.22,
+      0.32
+    ],
+    "variant": "normal",
+    "carrier": "A02 top",
+    "light": "none",
+    "domain": null,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_B1_FABRIC",
+    "plan_position": [
+      16.0,
+      6.15,
+      4.0
+    ],
+    "realized_position": [
+      16,
+      6.15,
+      3.862
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.22,
+      0.22
+    ],
+    "variant": "normal",
+    "carrier": "A01 mattress",
+    "light": "none",
+    "domain": null,
+    "camera_facing": false
+  },
+  {
+    "id": "BR_TERRACE_N",
+    "plan_position": [
+      18.5,
+      1.68,
+      5.05
+    ],
+    "realized_position": [
+      18.5,
+      1.56,
+      5.05
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ],
+    "size": [
+      0.7,
+      0.35
+    ],
+    "variant": "normal",
+    "carrier": "B1S",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  },
+  {
+    "id": "BR_TERRACE_M",
+    "plan_position": [
+      16.11,
+      -2.1,
+      4.1
+    ],
+    "realized_position": [
+      16.138,
+      -2.1,
+      4.1
+    ],
+    "normal": [
+      1,
+      0,
+      0
+    ],
+    "size": [
+      0.4,
+      0.2
+    ],
+    "variant": "mirror",
+    "carrier": "T07",
+    "light": "none",
+    "domain": "hgdju.com",
+    "camera_facing": false
+  }
+]

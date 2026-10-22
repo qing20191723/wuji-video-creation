@@ -18,4 +18,15 @@ vendor/* -whitespace
 平面确认/走廊原始参考/*.png filter=lfs diff=lfs merge=lfs -text
 平面确认/走廊原始参考/*.jpg filter=lfs diff=lfs merge=lfs -text
 
+# P3/P4 approved-plan and rebuilt-model deliveries.
+# Preserve artifact bytes so recorded SHA-256 values survive checkout.
+完整平面与品牌_P3_20261022/** -text whitespace=cr-at-eol
+完整平面与品牌_P3_R2_20261022/** -text whitespace=cr-at-eol
+整体平面_P4_20261022/** -text whitespace=cr-at-eol
+全屋模型_P4-M1_20261022/** -text whitespace=cr-at-eol
+完整平面与品牌_P3_20261022/**/*.png filter=lfs diff=lfs merge=lfs -text
+完整平面与品牌_P3_R2_20261022/**/*.png filter=lfs diff=lfs merge=lfs -text
+整体平面_P4_20261022/**/*.png filter=lfs diff=lfs merge=lfs -text
+全屋模型_P4-M1_20261022/**/*.png filter=lfs diff=lfs merge=lfs -text
+
 白模当前/空间/**/原始参考/*.png filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,21 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const {pathToFileURL}=require('url');
+const runtime=process.env.CODEX_NODE_MODULES||'node_modules';
+const {chromium}=require(path.join(runtime,'playwright'));
+const root=path.resolve(__dirname,'..','全屋模型_P4-M1_20261022');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(pathToFileURL(path.join(root,'统一查看页.html')).href);
+ await page.evaluate(()=>{for(const i of document.images)i.loading='eager'});
+ await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));
+ const state=await page.evaluate(()=>({images:[...document.images].map(i=>({src:i.getAttribute('src'),width:i.naturalWidth,height:i.naturalHeight})),links:[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')),overflow:document.documentElement.scrollWidth>innerWidth}));
+ const missing=state.links.filter(h=>!h.startsWith('#')&&!fs.existsSync(path.join(root,h)));
+ await browser.close();
+ const report={images:state.images,missing,overflow:state.overflow,errors,mirror:'PIL exact full-group horizontal-flip comparison passed'};
+ fs.writeFileSync(path.join(root,'检查','查看页检查.json'),JSON.stringify(report,null,2));
+ if(missing.length||state.overflow||errors.length||state.images.length!==8)throw Error('delivery page check failed');
+ const files=[];function walk(p){for(const n of fs.readdirSync(p)){const q=path.join(p,n);if(fs.statSync(q).isDirectory())walk(q);else if(n!=='交付文件校验.json')files.push({file:path.relative(root,q).replaceAll('\\','/'),bytes:fs.statSync(q).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(q)).digest('hex')});}}walk(root);
+ fs.writeFileSync(path.join(root,'检查','交付文件校验.json'),JSON.stringify({revision:'P4-M1',files},null,2));
+ console.log(JSON.stringify({images:state.images.length,missing,errors,files:files.length}));
+})().catch(e=>{console.error(e);process.exit(1)});

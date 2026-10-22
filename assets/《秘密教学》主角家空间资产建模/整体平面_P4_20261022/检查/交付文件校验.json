@@ -1,0 +1,115 @@
+{
+  "revision": "P4-20261022",
+  "files": [
+    {
+      "file": "图纸/01_二楼整体平面_公共庭院.png",
+      "bytes": 294669,
+      "sha256": "a9d7eb12233697a8b4ec193305580716bdbbf9f3d8585b0ff2770c7b6af280c5"
+    },
+    {
+      "file": "图纸/01_二楼整体平面_公共庭院.svg",
+      "bytes": 32463,
+      "sha256": "6cbdd3fe4c11709a1705d18b08af117a14a0caf399b903f402de13cf2adfa334"
+    },
+    {
+      "file": "图纸/02_公共庭院放大.png",
+      "bytes": 248906,
+      "sha256": "766e57657b6567523509ad7fd113cfe1abcd9fdb08ce80d207e45da911f64c1e"
+    },
+    {
+      "file": "图纸/02_公共庭院放大.svg",
+      "bytes": 8800,
+      "sha256": "f7a6b3a64f5c7e85329a9718ea2bb4fbfe7266421130b8a21d17cda0045199f6"
+    },
+    {
+      "file": "图纸/03_一楼整体平面_檐下空间.png",
+      "bytes": 270175,
+      "sha256": "aed1236bc4fa4d352e722982524a7bcd421bc58e87b7fc69c02d1d240033c439"
+    },
+    {
+      "file": "图纸/03_一楼整体平面_檐下空间.svg",
+      "bytes": 24820,
+      "sha256": "7defea0b8eb209834342a0bd24f8171fd3120ab3952a55e8a675ff3aece93d8d"
+    },
+    {
+      "file": "图纸/04_屋顶与高低屋面.png",
+      "bytes": 181697,
+      "sha256": "2b5c9c7f06bbe118b485a5b2becce4260702be5d0d2402b05a6f976394f27b69"
+    },
+    {
+      "file": "图纸/04_屋顶与高低屋面.svg",
+      "bytes": 12728,
+      "sha256": "11ac048bb31a3ac118420010393b298cfc46f73dbe1b06c95a800e74505a2451"
+    },
+    {
+      "file": "图纸/05_上下层对应.png",
+      "bytes": 217670,
+      "sha256": "b9f6d4c11efa66699132ac5240b39f85b675779418ddc0d71c9760d1d7f12b2f"
+    },
+    {
+      "file": "图纸/05_上下层对应.svg",
+      "bytes": 11247,
+      "sha256": "5e983b41f2300fa33c6aeae94a273f7f200f0bbf37b6ab946cec6fddc5f162bd"
+    },
+    {
+      "file": "图纸/06_外部总平面.png",
+      "bytes": 203294,
+      "sha256": "a7a9ea698c8728a6ae6fc83f224140b1325333ec784455a83785448328b38e58"
+    },
+    {
+      "file": "图纸/06_外部总平面.svg",
+      "bytes": 13172,
+      "sha256": "51f7523783af7b04dbf8d58e73a9f4a4e9cae65b6d37a83266cd9d672e42c62a"
+    },
+    {
+      "file": "图纸/07_体量与庭院剖面示意.png",
+      "bytes": 178338,
+      "sha256": "1ea781f37f1b498c673938eada2d172755579813c648980b8eb866110b094ac4"
+    },
+    {
+      "file": "图纸/07_体量与庭院剖面示意.svg",
+      "bytes": 5024,
+      "sha256": "4ba58130467dec516f6b6725868445f84074b905330da23b759cb6267abfa4bf"
+    },
+    {
+      "file": "数据/室内确认基线.json",
+      "bytes": 339,
+      "sha256": "1bf33adaa0b943ab7d7a3413013c731e22dc5ed222df826a1a51bdfec15be886"
+    },
+    {
+      "file": "数据/整体空间方案_P4.json",
+      "bytes": 89546,
+      "sha256": "761793fabb9b30480a0805f96b7a7e76c7145208c015890b26ce11dc4ae8ff19"
+    },
+    {
+      "file": "数据/新增外部尺寸.csv",
+      "bytes": 665,
+      "sha256": "f21770ea938bb50abbbf17f7983aca03c7dc321487fc4cd650c8d2ec944f928c"
+    },
+    {
+      "file": "数据/用户确认记录.json",
+      "bytes": 424,
+      "sha256": "199f6639f6664c98e9fe00d334d7f645ea99f0934056043d81a07e6193f0fdae"
+    },
+    {
+      "file": "检查/图纸输出检查.json",
+      "bytes": 600,
+      "sha256": "4e428c8d13730f09b5d8ab7c782e2d73181ec63e2db65e1aad5576f1b15cbb81"
+    },
+    {
+      "file": "检查/范围与通行检查.json",
+      "bytes": 9988,
+      "sha256": "ef6bc692a2e2449946bef06794311b08449f80972bf6c0d95d8d6d8bc70f4e0a"
+    },
+    {
+      "file": "统一查看页.html",
+      "bytes": 5654,
+      "sha256": "d04be856f0b86dc7b9d24d5db5434466f333758f7b8bf16a58e6ae0ac7bc0a2e"
+    },
+    {
+      "file": "设计说明.md",
+      "bytes": 2141,
+      "sha256": "69af9acc633ae97cdec3fe19879cda3a4698a28166539efb3e948b618026d696"
+    }
+  ]
+}

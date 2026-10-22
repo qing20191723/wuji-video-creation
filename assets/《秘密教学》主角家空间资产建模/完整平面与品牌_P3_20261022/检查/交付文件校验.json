@@ -1,0 +1,410 @@
+{
+  "revision": "P3-R1-20261022",
+  "files": [
+    {
+      "file": "交付说明.md",
+      "bytes": 1835,
+      "sha256": "e585a19ccf0631ff80786def67c3630d3b0500d082e5c85e66eaf94ace5cf834"
+    },
+    {
+      "file": "品牌贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "品牌贴图/HG_FULL_mirror.svg",
+      "bytes": 909209,
+      "sha256": "37de9a12551e981d8bae95c94509471bc31b6fdba255d4eed38993dc71125b86"
+    },
+    {
+      "file": "品牌贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "品牌贴图/HG_FULL_normal.svg",
+      "bytes": 909160,
+      "sha256": "d5cb91801ef19632d3d689a14ae7c7470cc2cfc1134c13ab2f1a7ed051c22312"
+    },
+    {
+      "file": "品牌贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "品牌贴图/HG_ICON.svg",
+      "bytes": 191862,
+      "sha256": "80c2316e01e2cf210de1177de28969f4e7b2010dc43853c167091c171749da40"
+    },
+    {
+      "file": "品牌贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "品牌贴图/NAME_B1.svg",
+      "bytes": 341,
+      "sha256": "6073aa7118494136319fbff49a766ab92e168c00ba04046ea2a6b4c3a0949b6c"
+    },
+    {
+      "file": "品牌贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "品牌贴图/NAME_B2.svg",
+      "bytes": 341,
+      "sha256": "e8941ef2cfc38808cafbd2e522ed97dd15b7e0087f65593ac98514a585252bcb"
+    },
+    {
+      "file": "品牌贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "品牌贴图/NAME_B3.svg",
+      "bytes": 341,
+      "sha256": "25c838f9b407e117474a56e62d1c8ed654f70fda3fad6587fd3b823e442fa65b"
+    },
+    {
+      "file": "品牌贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "品牌贴图/NAME_BW.svg",
+      "bytes": 341,
+      "sha256": "6df12805b1cd280f937d80221fd1a21537e4918146d94f541200fd1105129942"
+    },
+    {
+      "file": "品牌贴图/品牌文字源.json",
+      "bytes": 337,
+      "sha256": "c3bd7c4b625cd9ef397a740daf157ff4e889ada8e8c8e1328b92c0d20ae0cab0"
+    },
+    {
+      "file": "图纸/01_一楼家具平面.png",
+      "bytes": 267391,
+      "sha256": "4f8a19fe7b4826426bdcdedda6c82caff8ae1f0e90d1f109e7dd838de200a5c8"
+    },
+    {
+      "file": "图纸/01_一楼家具平面.svg",
+      "bytes": 22645,
+      "sha256": "8cdfea064a75dfa02b83c0ae6c427f615da52cfb89e24721bd9022285ff84dd1"
+    },
+    {
+      "file": "图纸/02_二楼家具平面.png",
+      "bytes": 265835,
+      "sha256": "848e0119f3a87f5922484d077ce3b5d2e1fb921400ec5419b6a3cef21bb71380"
+    },
+    {
+      "file": "图纸/02_二楼家具平面.svg",
+      "bytes": 24071,
+      "sha256": "b14c0e7eb56d69568f15cad6b101913824eaaf2785c5984354580f16c6b5b222"
+    },
+    {
+      "file": "图纸/03_大姐卧室放大.png",
+      "bytes": 283590,
+      "sha256": "4886bcdd2d5cbb60f2d163c10515b556b56d498eb6ae222687776edcb037df56"
+    },
+    {
+      "file": "图纸/03_大姐卧室放大.svg",
+      "bytes": 8770,
+      "sha256": "aba6a4cdd6cbe7df952ce2210f502f68a99c85f0ed82983f388e9d70ccfeaff4"
+    },
+    {
+      "file": "图纸/04_二姐卧室放大.png",
+      "bytes": 219450,
+      "sha256": "1379a9bd5478233d8544c5e74c47d025c9f605956c5900367f0439725a5bfa88"
+    },
+    {
+      "file": "图纸/04_二姐卧室放大.svg",
+      "bytes": 6721,
+      "sha256": "564fbe6f5ec40ee942eec4da593da87be5c0f59d06e1e8a5af3ef27c131a5a2d"
+    },
+    {
+      "file": "图纸/05_公共浴室放大.png",
+      "bytes": 175934,
+      "sha256": "e85324fb906b1abdb5e3dbf660c073478d6f463d11d5917f83fc03c3488d1274"
+    },
+    {
+      "file": "图纸/05_公共浴室放大.svg",
+      "bytes": 4461,
+      "sha256": "0e6e5c71f9f93a94adff28b8b96d0875bc4bc22021af81f798c679d30cdf756d"
+    },
+    {
+      "file": "图纸/06_屋顶平面.png",
+      "bytes": 160868,
+      "sha256": "150448f6d783a74a868c0e544f510ef554e3245c732f88584dfb0830c6221fc5"
+    },
+    {
+      "file": "图纸/06_屋顶平面.svg",
+      "bytes": 4920,
+      "sha256": "f9ad838554b00fd7bb148f156faacfe5b23cd5f2c25a4b4c7c6ddfbae98d2f40"
+    },
+    {
+      "file": "图纸/07_楼梯剖面.png",
+      "bytes": 191543,
+      "sha256": "9be5a2315d7cdec4dfbe96ebec2c2c97f9496fadf3ba1008f1a3b3cf30b442eb"
+    },
+    {
+      "file": "图纸/07_楼梯剖面.svg",
+      "bytes": 11211,
+      "sha256": "50746e8f9614d9b501b71ee31b188f69f79abac153eb73248ac857b005ec167c"
+    },
+    {
+      "file": "图纸/08_总平面.png",
+      "bytes": 188212,
+      "sha256": "11970adc0bcd6427071711b6997e70305afaa7180d76fb289afc6fad7b52f16b"
+    },
+    {
+      "file": "图纸/08_总平面.svg",
+      "bytes": 4460,
+      "sha256": "b327733a7bfec691808924a96363a5a3daa48c99f7e2f40f0091c1f1d762dbac"
+    },
+    {
+      "file": "图纸/09_1楼品牌布置.png",
+      "bytes": 249167,
+      "sha256": "9256187ea92da1feccc766870d4ab7dd64ac0b479d7fe8dd7b722cc47f2582f9"
+    },
+    {
+      "file": "图纸/09_1楼品牌布置.svg",
+      "bytes": 18598,
+      "sha256": "d86898a07a2bb8150d3d5d64d753ff12e2d93e79f290b3505c0ca3ba4a5163ad"
+    },
+    {
+      "file": "图纸/10_2楼品牌布置.png",
+      "bytes": 252118,
+      "sha256": "29bc9e0fa29be66315490c8bee15936b937082e790e26a1c20cc26aa835da843"
+    },
+    {
+      "file": "图纸/10_2楼品牌布置.svg",
+      "bytes": 15778,
+      "sha256": "c09944561eb3cee593730bdffd19f6cde1739d4f4404ebac8deca828b1b8e8b7"
+    },
+    {
+      "file": "数据/Logo轮廓.json",
+      "bytes": 6500,
+      "sha256": "5ba9262d72e72488435ac2efff808dfd511b34ac1136f9719b33a135f438a557"
+    },
+    {
+      "file": "数据/品牌固定台账.json",
+      "bytes": 18697,
+      "sha256": "90a48847832853c6d54aa899b52e59bdaaa8875e491046da71b41bde093a6d8b"
+    },
+    {
+      "file": "数据/品牌覆盖.csv",
+      "bytes": 4438,
+      "sha256": "c172fefbb2401f720cb0e994f6e52ba0816d2d00956599487323641672e18de1"
+    },
+    {
+      "file": "数据/家具尺寸.csv",
+      "bytes": 4169,
+      "sha256": "50be44aca460fbf9d5ba83cb29e35ed0adc1fccf4f4ea5fbd083df48d43a99d7"
+    },
+    {
+      "file": "数据/房间尺寸.csv",
+      "bytes": 2568,
+      "sha256": "e715ab2004acc7fa7bb13278a15fa74e17e603777b11e9aca732b144e1991185"
+    },
+    {
+      "file": "数据/房间独立布局.json",
+      "bytes": 3346,
+      "sha256": "ef041f7c334ffa20b783f91cc40b1e64bd4cf9ca53f6447094b72d2c4db96e32"
+    },
+    {
+      "file": "数据/机位预检表.json",
+      "bytes": 7989,
+      "sha256": "543acd64b62a37c5a3d0fd5c6186f43d41e84c6e34b0fcbd04dcf6696d56c246"
+    },
+    {
+      "file": "数据/空间方案_P3.json",
+      "bytes": 78756,
+      "sha256": "f412b814870b55deae132f69e45ccc2a377c8cfdb4b5e666dbceeb9ae7181797"
+    },
+    {
+      "file": "检查/图纸与贴图输出检查.json",
+      "bytes": 1117,
+      "sha256": "5e428bdbc32c2f3b9ef24864608066aa64e567fe4ff71296ae8a640bfe4fd7c9"
+    },
+    {
+      "file": "检查/模型回读检查.json",
+      "bytes": 2067,
+      "sha256": "c0416b9d9a9ea664d48fd47b119b35d1c8f7c59c1c2609a5056de26f068a2841"
+    },
+    {
+      "file": "检查/模型构建结果.json",
+      "bytes": 5042,
+      "sha256": "7a85fa2f95c1d94eae58883854c6dac81cefeb98f4f983c5d3453ded3ccb9bcb"
+    },
+    {
+      "file": "检查/空间与资产校核.json",
+      "bytes": 37648,
+      "sha256": "b47ac08ae9df49e1f25d32b5f1a072d18906529441b75d863541fc8a6b972d75"
+    },
+    {
+      "file": "独立模型/HG_NEON_mirror.blend",
+      "bytes": 797249,
+      "sha256": "05f1268a33832c56fed047df9287faca4f9f26e89f9183b66e041552b5946bf4"
+    },
+    {
+      "file": "独立模型/HG_NEON_mirror.glb",
+      "bytes": 1114100,
+      "sha256": "ab982793d652c0f3daee966424a48e8c23b5be4e67c6eea51b5fa30cc033f12a"
+    },
+    {
+      "file": "独立模型/HG_NEON_mirror_预览.png",
+      "bytes": 632558,
+      "sha256": "3f71c7aba8bf05905ea93074aa478228c005fa0b5c8fa39826815291d3e8fcaf"
+    },
+    {
+      "file": "独立模型/HG_NEON_normal.blend",
+      "bytes": 810576,
+      "sha256": "5110979b85bf82d17701ee0d4bbf0492464d6bd39ac261b0bec5b73b956dba8d"
+    },
+    {
+      "file": "独立模型/HG_NEON_normal.glb",
+      "bytes": 1113920,
+      "sha256": "5af49e16216b82d1bd1979d4d462fe5d3d77edb3e2f05607794a36b50286175d"
+    },
+    {
+      "file": "独立模型/HG_NEON_normal_预览.png",
+      "bytes": 628689,
+      "sha256": "c4fdfde5308b07c285f4880b4a47460529e0f7413a159a5736cd02b5b3acb928"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_mirror.blend",
+      "bytes": 447409,
+      "sha256": "57c125c19c44fa4881b00ab15805af30c20b72fe97b827236472045c8b59ddc0"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_mirror.glb",
+      "bytes": 401184,
+      "sha256": "5084429114dac44c207f94b031329820d7e1b034b984895e1a74b05ff8402a54"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_mirror_预览.png",
+      "bytes": 667664,
+      "sha256": "ea202d00b0bce295529a2fb6eb8139432e2132ef231fbdeb16584b0c604f0ed0"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_normal.blend",
+      "bytes": 446539,
+      "sha256": "4a6ab8f83be79fec3d8e270e090a472f5511416f3bc916df1e4228d4fd1b3f3c"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_normal.glb",
+      "bytes": 399288,
+      "sha256": "c1037263556c55220d433e8de93b5a75c18c2336d64f32629c324a1c9c87418b"
+    },
+    {
+      "file": "独立模型/HG_PLAQUE_normal_预览.png",
+      "bytes": 666958,
+      "sha256": "259b73129187b205b0b1e5003a99d3f06cc82d148579a82bc0760fd580b98b33"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_mirror.blend",
+      "bytes": 398164,
+      "sha256": "fa4077f7a797a17a25949b26ff4fa01da1fd5c27908993d6a54052e079467a8f"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_mirror.glb",
+      "bytes": 463700,
+      "sha256": "ce8583df14387182a956719686654b68bfe8aa719d40b78e2285678441eb2aa9"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_mirror_预览.png",
+      "bytes": 321341,
+      "sha256": "74baf95a8d9f696b64c2890c4a16fdd2de505f766ec6893b0bc89489270e2000"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_normal.blend",
+      "bytes": 404829,
+      "sha256": "f61d59ba133cdbde7e9df242cc96eae8b67e5d0248180ce93ff5f328e74c8991"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_normal.glb",
+      "bytes": 463604,
+      "sha256": "a62094f1b8ccea788d25cae557751d16d4a926d120b6c3b9a9148dc2881cb3bc"
+    },
+    {
+      "file": "独立模型/HG_SCULPTURE_normal_预览.png",
+      "bytes": 324219,
+      "sha256": "060afee25ddf89bd7231665a3d45067433ad3392a23606c3f919a2738bbb11c7"
+    },
+    {
+      "file": "独立模型/NAME_B1.blend",
+      "bytes": 369883,
+      "sha256": "15d94402686bc2018deb62579ad390be1978bd20d105f2f1d8dc85b412cb8ff2"
+    },
+    {
+      "file": "独立模型/NAME_B1.glb",
+      "bytes": 459536,
+      "sha256": "ede95961be94ab4cacaa857216fafe0a3766b9b5f6fc9c31decadea7f26c7019"
+    },
+    {
+      "file": "独立模型/NAME_B1_预览.png",
+      "bytes": 320409,
+      "sha256": "6be5f06bded47512f194253a19b2494eaa41fc5dbe770e00d357d4387ccd9419"
+    },
+    {
+      "file": "独立模型/NAME_B2.blend",
+      "bytes": 359845,
+      "sha256": "6a0803a9b9fbfbf3bb5e737147d59d0887c54f8ccd0f05e8e89060734f114d49"
+    },
+    {
+      "file": "独立模型/NAME_B2.glb",
+      "bytes": 442944,
+      "sha256": "c117ae8cda920fcf357cfd8ebb5482e39d6682dd7e5e1382b023d6b7517c56b9"
+    },
+    {
+      "file": "独立模型/NAME_B2_预览.png",
+      "bytes": 308365,
+      "sha256": "2ef64f73b31b4f25007659b3929300e528b3d6d7a5f94d890ce2b95f1632a22d"
+    },
+    {
+      "file": "独立模型/NAME_B3.blend",
+      "bytes": 308452,
+      "sha256": "efc1b307ff1bbb7121f6a4490eeaf2cebfa6d964970770925075a7c48ebb10f5"
+    },
+    {
+      "file": "独立模型/NAME_B3.glb",
+      "bytes": 370216,
+      "sha256": "6ab3b72793a56fd9d6d04e9c0c702d12397924e5a23a9404eec91fd6be293738"
+    },
+    {
+      "file": "独立模型/NAME_B3_预览.png",
+      "bytes": 311148,
+      "sha256": "cb4660c903580b18ef386a8498bc604c86dc6dba3315d7719af4d0b21d15bc36"
+    },
+    {
+      "file": "独立模型/NAME_BW.blend",
+      "bytes": 262479,
+      "sha256": "0ed56cfe7850a3ffd0ab131249b794bf101345594b4509e5d063de58391136c8"
+    },
+    {
+      "file": "独立模型/NAME_BW.glb",
+      "bytes": 316068,
+      "sha256": "9bd89ee4e66b112794110f1c4db0a0d31c8b44e5c38e1a8f3ab29ea6eb5a1ce6"
+    },
+    {
+      "file": "独立模型/NAME_BW_预览.png",
+      "bytes": 308634,
+      "sha256": "2f172856809792eaf3d3593f7cb923bf3c08df9f4c148102c1a0ebe60ed12347"
+    },
+    {
+      "file": "独立模型/资产库总览.png",
+      "bytes": 1343725,
+      "sha256": "e4ae11a688a3fe43843889a6394b6a125ed5fb5ac1224b41c232d8b4da08a559"
+    },
+    {
+      "file": "独立模型/门牌与品牌资产库_P3.blend",
+      "bytes": 10174595,
+      "sha256": "72b702eb10bd3ef6b7872b1145057a99423077d122c659d17ac8dd262bb5519d"
+    },
+    {
+      "file": "统一查看页.html",
+      "bytes": 18154,
+      "sha256": "a42c200233261f4240b46f9fc2f1c291dc2cd93ac1eb7c642e9694c98e2450c5"
+    }
+  ]
+}

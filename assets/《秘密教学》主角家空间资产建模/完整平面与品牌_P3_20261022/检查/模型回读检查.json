@@ -1,0 +1,112 @@
+[
+  {
+    "asset": "HG_NEON_mirror",
+    "glb_meshes": 7,
+    "glb_vertices": 23681,
+    "blend_scenes": [
+      "HG_NEON_mirror"
+    ],
+    "blend_meshes": 8,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "HG_NEON_normal",
+    "glb_meshes": 7,
+    "glb_vertices": 23681,
+    "blend_scenes": [
+      "HG_NEON_normal"
+    ],
+    "blend_meshes": 8,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "HG_PLAQUE_mirror",
+    "glb_meshes": 2,
+    "glb_vertices": 604,
+    "blend_scenes": [
+      "HG_PLAQUE_mirror"
+    ],
+    "blend_meshes": 2,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "HG_PLAQUE_normal",
+    "glb_meshes": 2,
+    "glb_vertices": 604,
+    "blend_scenes": [
+      "HG_PLAQUE_normal"
+    ],
+    "blend_meshes": 2,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "HG_SCULPTURE_mirror",
+    "glb_meshes": 4,
+    "glb_vertices": 7982,
+    "blend_scenes": [
+      "HG_SCULPTURE_mirror"
+    ],
+    "blend_meshes": 4,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "HG_SCULPTURE_normal",
+    "glb_meshes": 4,
+    "glb_vertices": 7982,
+    "blend_scenes": [
+      "HG_SCULPTURE_normal"
+    ],
+    "blend_meshes": 4,
+    "images": 1,
+    "passed": true
+  },
+  {
+    "asset": "NAME_B1",
+    "glb_meshes": 2,
+    "glb_vertices": 11103,
+    "blend_scenes": [
+      "NAME_B1"
+    ],
+    "blend_meshes": 2,
+    "images": 0,
+    "passed": true
+  },
+  {
+    "asset": "NAME_B2",
+    "glb_meshes": 2,
+    "glb_vertices": 10706,
+    "blend_scenes": [
+      "NAME_B2"
+    ],
+    "blend_meshes": 2,
+    "images": 0,
+    "passed": true
+  },
+  {
+    "asset": "NAME_B3",
+    "glb_meshes": 2,
+    "glb_vertices": 8956,
+    "blend_scenes": [
+      "NAME_B3"
+    ],
+    "blend_meshes": 2,
+    "images": 0,
+    "passed": true
+  },
+  {
+    "asset": "NAME_BW",
+    "glb_meshes": 2,
+    "glb_vertices": 7675,
+    "blend_scenes": [
+      "NAME_BW"
+    ],
+    "blend_meshes": 2,
+    "images": 0,
+    "passed": true
+  }
+]
