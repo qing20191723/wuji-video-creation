@@ -1,0 +1,33 @@
+{
+  "version": "P2.4-M3",
+  "status": "最后已保存建模基线；不是无瑕疵最终验收模型",
+  "known_issues": [
+    "二姐房间布局仍有错误",
+    "二楼外部仍有瑕疵",
+    "后续确认的公共浴室位置及玻璃门尚未同步进模型"
+  ],
+  "model_files": [
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/白模当前/模型/建模方案.json",
+      "sha256": "e8a8dd9f167dcad9f7ca5c63c4b6875b8610974ea4ce007e2401093b67a045f4",
+      "bytes": 80868
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/白模当前/模型/秘密教学_P2.4-M3.blend",
+      "sha256": "2a1097d7e2849f4b8f217e08b8df234c1e1e7302e85dd79602e9381acc03747a",
+      "bytes": 7892729
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/白模当前/模型/秘密教学_P2.4-M3.glb",
+      "sha256": "5f1ee9aa54de8e015471a410b8b145193a56f168d92550fb943dcd517b1bfd60",
+      "bytes": 2206768
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/白模当前/模型/空间数据.json",
+      "sha256": "fef4792526d51dcccdc33c4590b3f5991c66d4aac86b602a1daca8aef08d5ddf",
+      "bytes": 3086116
+    }
+  ],
+  "approved_images_manifest": "assets/秘密教学第7集合格资产/合格资产清单.json",
+  "approved_image_count": 7
+}
