@@ -1,0 +1,622 @@
+{
+  "delivery_commit": "6ac4bd100bdc84ba19b375a6e9030e7cbf8d83bb",
+  "branch": "codex/20261014-secret-teaching-home-assets",
+  "verified_date": "2026-10-22",
+  "artifact_manifest_entries": 215,
+  "remote_lfs_references": 122,
+  "unique_remote_lfs_objects": 76,
+  "result": "全部一致",
+  "method": "git lfs fetch origin 到独立空缓存；逐一读取远端下载实体并与Git指针及本地交付清单SHA-256交叉校验。文本及SVG用交付提交中的原始Git blob核对。",
+  "files": [
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/品牌贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/01_一楼家具平面.png",
+      "bytes": 267391,
+      "sha256": "4f8a19fe7b4826426bdcdedda6c82caff8ae1f0e90d1f109e7dd838de200a5c8"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/02_二楼家具平面.png",
+      "bytes": 265835,
+      "sha256": "848e0119f3a87f5922484d077ce3b5d2e1fb921400ec5419b6a3cef21bb71380"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/03_大姐卧室放大.png",
+      "bytes": 283590,
+      "sha256": "4886bcdd2d5cbb60f2d163c10515b556b56d498eb6ae222687776edcb037df56"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/04_二姐卧室放大.png",
+      "bytes": 219450,
+      "sha256": "1379a9bd5478233d8544c5e74c47d025c9f605956c5900367f0439725a5bfa88"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/05_公共浴室放大.png",
+      "bytes": 175934,
+      "sha256": "e85324fb906b1abdb5e3dbf660c073478d6f463d11d5917f83fc03c3488d1274"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/06_屋顶平面.png",
+      "bytes": 160868,
+      "sha256": "150448f6d783a74a868c0e544f510ef554e3245c732f88584dfb0830c6221fc5"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/07_楼梯剖面.png",
+      "bytes": 191543,
+      "sha256": "9be5a2315d7cdec4dfbe96ebec2c2c97f9496fadf3ba1008f1a3b3cf30b442eb"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/08_总平面.png",
+      "bytes": 188212,
+      "sha256": "11970adc0bcd6427071711b6997e70305afaa7180d76fb289afc6fad7b52f16b"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/09_1楼品牌布置.png",
+      "bytes": 249167,
+      "sha256": "9256187ea92da1feccc766870d4ab7dd64ac0b479d7fe8dd7b722cc47f2582f9"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/图纸/10_2楼品牌布置.png",
+      "bytes": 252118,
+      "sha256": "29bc9e0fa29be66315490c8bee15936b937082e790e26a1c20cc26aa835da843"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_mirror.blend",
+      "bytes": 797249,
+      "sha256": "05f1268a33832c56fed047df9287faca4f9f26e89f9183b66e041552b5946bf4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_mirror.glb",
+      "bytes": 1114100,
+      "sha256": "ab982793d652c0f3daee966424a48e8c23b5be4e67c6eea51b5fa30cc033f12a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_mirror_预览.png",
+      "bytes": 632558,
+      "sha256": "3f71c7aba8bf05905ea93074aa478228c005fa0b5c8fa39826815291d3e8fcaf"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_normal.blend",
+      "bytes": 810576,
+      "sha256": "5110979b85bf82d17701ee0d4bbf0492464d6bd39ac261b0bec5b73b956dba8d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_normal.glb",
+      "bytes": 1113920,
+      "sha256": "5af49e16216b82d1bd1979d4d462fe5d3d77edb3e2f05607794a36b50286175d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_NEON_normal_预览.png",
+      "bytes": 628689,
+      "sha256": "c4fdfde5308b07c285f4880b4a47460529e0f7413a159a5736cd02b5b3acb928"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_mirror.blend",
+      "bytes": 447409,
+      "sha256": "57c125c19c44fa4881b00ab15805af30c20b72fe97b827236472045c8b59ddc0"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_mirror.glb",
+      "bytes": 401184,
+      "sha256": "5084429114dac44c207f94b031329820d7e1b034b984895e1a74b05ff8402a54"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_mirror_预览.png",
+      "bytes": 667664,
+      "sha256": "ea202d00b0bce295529a2fb6eb8139432e2132ef231fbdeb16584b0c604f0ed0"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_normal.blend",
+      "bytes": 446539,
+      "sha256": "4a6ab8f83be79fec3d8e270e090a472f5511416f3bc916df1e4228d4fd1b3f3c"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_normal.glb",
+      "bytes": 399288,
+      "sha256": "c1037263556c55220d433e8de93b5a75c18c2336d64f32629c324a1c9c87418b"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_PLAQUE_normal_预览.png",
+      "bytes": 666958,
+      "sha256": "259b73129187b205b0b1e5003a99d3f06cc82d148579a82bc0760fd580b98b33"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_mirror.blend",
+      "bytes": 398164,
+      "sha256": "fa4077f7a797a17a25949b26ff4fa01da1fd5c27908993d6a54052e079467a8f"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_mirror.glb",
+      "bytes": 463700,
+      "sha256": "ce8583df14387182a956719686654b68bfe8aa719d40b78e2285678441eb2aa9"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_mirror_预览.png",
+      "bytes": 321341,
+      "sha256": "74baf95a8d9f696b64c2890c4a16fdd2de505f766ec6893b0bc89489270e2000"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_normal.blend",
+      "bytes": 404829,
+      "sha256": "f61d59ba133cdbde7e9df242cc96eae8b67e5d0248180ce93ff5f328e74c8991"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_normal.glb",
+      "bytes": 463604,
+      "sha256": "a62094f1b8ccea788d25cae557751d16d4a926d120b6c3b9a9148dc2881cb3bc"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/HG_SCULPTURE_normal_预览.png",
+      "bytes": 324219,
+      "sha256": "060afee25ddf89bd7231665a3d45067433ad3392a23606c3f919a2738bbb11c7"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B1.blend",
+      "bytes": 369883,
+      "sha256": "15d94402686bc2018deb62579ad390be1978bd20d105f2f1d8dc85b412cb8ff2"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B1.glb",
+      "bytes": 459536,
+      "sha256": "ede95961be94ab4cacaa857216fafe0a3766b9b5f6fc9c31decadea7f26c7019"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B1_预览.png",
+      "bytes": 320409,
+      "sha256": "6be5f06bded47512f194253a19b2494eaa41fc5dbe770e00d357d4387ccd9419"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B2.blend",
+      "bytes": 359845,
+      "sha256": "6a0803a9b9fbfbf3bb5e737147d59d0887c54f8ccd0f05e8e89060734f114d49"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B2.glb",
+      "bytes": 442944,
+      "sha256": "c117ae8cda920fcf357cfd8ebb5482e39d6682dd7e5e1382b023d6b7517c56b9"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B2_预览.png",
+      "bytes": 308365,
+      "sha256": "2ef64f73b31b4f25007659b3929300e528b3d6d7a5f94d890ce2b95f1632a22d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B3.blend",
+      "bytes": 308452,
+      "sha256": "efc1b307ff1bbb7121f6a4490eeaf2cebfa6d964970770925075a7c48ebb10f5"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B3.glb",
+      "bytes": 370216,
+      "sha256": "6ab3b72793a56fd9d6d04e9c0c702d12397924e5a23a9404eec91fd6be293738"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_B3_预览.png",
+      "bytes": 311148,
+      "sha256": "cb4660c903580b18ef386a8498bc604c86dc6dba3315d7719af4d0b21d15bc36"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_BW.blend",
+      "bytes": 262479,
+      "sha256": "0ed56cfe7850a3ffd0ab131249b794bf101345594b4509e5d063de58391136c8"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_BW.glb",
+      "bytes": 316068,
+      "sha256": "9bd89ee4e66b112794110f1c4db0a0d31c8b44e5c38e1a8f3ab29ea6eb5a1ce6"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/NAME_BW_预览.png",
+      "bytes": 308634,
+      "sha256": "2f172856809792eaf3d3593f7cb923bf3c08df9f4c148102c1a0ebe60ed12347"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/资产库总览.png",
+      "bytes": 1343725,
+      "sha256": "e4ae11a688a3fe43843889a6394b6a125ed5fb5ac1224b41c232d8b4da08a559"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_20261022/独立模型/门牌与品牌资产库_P3.blend",
+      "bytes": 10174595,
+      "sha256": "72b702eb10bd3ef6b7872b1145057a99423077d122c659d17ac8dd262bb5519d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/品牌贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/01_一楼家具平面.png",
+      "bytes": 267347,
+      "sha256": "314c515c39db0ae572dc7257be239a7ec84a25f6ab9245fba69bd9e5dad4626c"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/02_二楼家具平面.png",
+      "bytes": 265831,
+      "sha256": "afa7097398c3a85d06f5f2567bdb2c11e839d618dc1746b25b3c7dd741c7f6c7"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/03_大姐卧室放大.png",
+      "bytes": 283549,
+      "sha256": "c0aefdc045a6c9f3f086243ed502d9fe2f1f5b78192b6ef70c1aa85b1c89269c"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/04_二姐卧室放大.png",
+      "bytes": 220810,
+      "sha256": "e007f26560826fa96b8b35c549a00c630b5235d65a0a7232e959e97a97cb7bf3"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/05_公共浴室放大.png",
+      "bytes": 175885,
+      "sha256": "2af1654c2805a04ead4cb19179127b9d038c3d83ac2d49ced7c04b5f38a61ba3"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/06_屋顶平面.png",
+      "bytes": 160827,
+      "sha256": "5477aa0d4947b2c6a3c218b9f0729d0e8bc28c67a33a39f56e1cdbdad6fb9737"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/07_楼梯剖面.png",
+      "bytes": 191494,
+      "sha256": "edf5fe5e3d608afc4897ea53eff5a8812f4919d2f92ba9e8afb833fb331bf50b"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/08_总平面.png",
+      "bytes": 188164,
+      "sha256": "95bf9750f6796044d39121e8dfef0ab1dafe69f9f6039a66d8eee61571a92cde"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/09_1楼品牌布置.png",
+      "bytes": 249122,
+      "sha256": "519f2018675878443e588e5506c8cfd2a9a360fee9bf1c866193a9181d6e1d29"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/图纸/10_2楼品牌布置.png",
+      "bytes": 252095,
+      "sha256": "821bdbb046ae41eb544872e9cf520efa0be3e3a7e3e8f4ef7e22e7af591a9c19"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_mirror.blend",
+      "bytes": 797249,
+      "sha256": "05f1268a33832c56fed047df9287faca4f9f26e89f9183b66e041552b5946bf4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_mirror.glb",
+      "bytes": 1114100,
+      "sha256": "ab982793d652c0f3daee966424a48e8c23b5be4e67c6eea51b5fa30cc033f12a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_mirror_预览.png",
+      "bytes": 632558,
+      "sha256": "3f71c7aba8bf05905ea93074aa478228c005fa0b5c8fa39826815291d3e8fcaf"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_normal.blend",
+      "bytes": 810576,
+      "sha256": "5110979b85bf82d17701ee0d4bbf0492464d6bd39ac261b0bec5b73b956dba8d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_normal.glb",
+      "bytes": 1113920,
+      "sha256": "5af49e16216b82d1bd1979d4d462fe5d3d77edb3e2f05607794a36b50286175d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_NEON_normal_预览.png",
+      "bytes": 628689,
+      "sha256": "c4fdfde5308b07c285f4880b4a47460529e0f7413a159a5736cd02b5b3acb928"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_mirror.blend",
+      "bytes": 447409,
+      "sha256": "57c125c19c44fa4881b00ab15805af30c20b72fe97b827236472045c8b59ddc0"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_mirror.glb",
+      "bytes": 401184,
+      "sha256": "5084429114dac44c207f94b031329820d7e1b034b984895e1a74b05ff8402a54"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_mirror_预览.png",
+      "bytes": 667664,
+      "sha256": "ea202d00b0bce295529a2fb6eb8139432e2132ef231fbdeb16584b0c604f0ed0"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_normal.blend",
+      "bytes": 446539,
+      "sha256": "4a6ab8f83be79fec3d8e270e090a472f5511416f3bc916df1e4228d4fd1b3f3c"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_normal.glb",
+      "bytes": 399288,
+      "sha256": "c1037263556c55220d433e8de93b5a75c18c2336d64f32629c324a1c9c87418b"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_PLAQUE_normal_预览.png",
+      "bytes": 666958,
+      "sha256": "259b73129187b205b0b1e5003a99d3f06cc82d148579a82bc0760fd580b98b33"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_mirror.blend",
+      "bytes": 398164,
+      "sha256": "fa4077f7a797a17a25949b26ff4fa01da1fd5c27908993d6a54052e079467a8f"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_mirror.glb",
+      "bytes": 463700,
+      "sha256": "ce8583df14387182a956719686654b68bfe8aa719d40b78e2285678441eb2aa9"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_mirror_预览.png",
+      "bytes": 321341,
+      "sha256": "74baf95a8d9f696b64c2890c4a16fdd2de505f766ec6893b0bc89489270e2000"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_normal.blend",
+      "bytes": 404829,
+      "sha256": "f61d59ba133cdbde7e9df242cc96eae8b67e5d0248180ce93ff5f328e74c8991"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_normal.glb",
+      "bytes": 463604,
+      "sha256": "a62094f1b8ccea788d25cae557751d16d4a926d120b6c3b9a9148dc2881cb3bc"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/HG_SCULPTURE_normal_预览.png",
+      "bytes": 324219,
+      "sha256": "060afee25ddf89bd7231665a3d45067433ad3392a23606c3f919a2738bbb11c7"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B1.blend",
+      "bytes": 369883,
+      "sha256": "15d94402686bc2018deb62579ad390be1978bd20d105f2f1d8dc85b412cb8ff2"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B1.glb",
+      "bytes": 459536,
+      "sha256": "ede95961be94ab4cacaa857216fafe0a3766b9b5f6fc9c31decadea7f26c7019"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B1_预览.png",
+      "bytes": 320409,
+      "sha256": "6be5f06bded47512f194253a19b2494eaa41fc5dbe770e00d357d4387ccd9419"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B2.blend",
+      "bytes": 359845,
+      "sha256": "6a0803a9b9fbfbf3bb5e737147d59d0887c54f8ccd0f05e8e89060734f114d49"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B2.glb",
+      "bytes": 442944,
+      "sha256": "c117ae8cda920fcf357cfd8ebb5482e39d6682dd7e5e1382b023d6b7517c56b9"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B2_预览.png",
+      "bytes": 308365,
+      "sha256": "2ef64f73b31b4f25007659b3929300e528b3d6d7a5f94d890ce2b95f1632a22d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B3.blend",
+      "bytes": 308452,
+      "sha256": "efc1b307ff1bbb7121f6a4490eeaf2cebfa6d964970770925075a7c48ebb10f5"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B3.glb",
+      "bytes": 370216,
+      "sha256": "6ab3b72793a56fd9d6d04e9c0c702d12397924e5a23a9404eec91fd6be293738"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_B3_预览.png",
+      "bytes": 311148,
+      "sha256": "cb4660c903580b18ef386a8498bc604c86dc6dba3315d7719af4d0b21d15bc36"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_BW.blend",
+      "bytes": 262479,
+      "sha256": "0ed56cfe7850a3ffd0ab131249b794bf101345594b4509e5d063de58391136c8"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_BW.glb",
+      "bytes": 316068,
+      "sha256": "9bd89ee4e66b112794110f1c4db0a0d31c8b44e5c38e1a8f3ab29ea6eb5a1ce6"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/NAME_BW_预览.png",
+      "bytes": 308634,
+      "sha256": "2f172856809792eaf3d3593f7cb923bf3c08df9f4c148102c1a0ebe60ed12347"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/资产库总览.png",
+      "bytes": 1343725,
+      "sha256": "e4ae11a688a3fe43843889a6394b6a125ed5fb5ac1224b41c232d8b4da08a559"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/完整平面与品牌_P3_R2_20261022/独立模型/门牌与品牌资产库_P3.blend",
+      "bytes": 10174595,
+      "sha256": "72b702eb10bd3ef6b7872b1145057a99423077d122c659d17ac8dd262bb5519d"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/01_二楼整体平面_公共庭院.png",
+      "bytes": 294669,
+      "sha256": "a9d7eb12233697a8b4ec193305580716bdbbf9f3d8585b0ff2770c7b6af280c5"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/02_公共庭院放大.png",
+      "bytes": 248906,
+      "sha256": "766e57657b6567523509ad7fd113cfe1abcd9fdb08ce80d207e45da911f64c1e"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/03_一楼整体平面_檐下空间.png",
+      "bytes": 270175,
+      "sha256": "aed1236bc4fa4d352e722982524a7bcd421bc58e87b7fc69c02d1d240033c439"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/04_屋顶与高低屋面.png",
+      "bytes": 181697,
+      "sha256": "2b5c9c7f06bbe118b485a5b2becce4260702be5d0d2402b05a6f976394f27b69"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/05_上下层对应.png",
+      "bytes": 217670,
+      "sha256": "b9f6d4c11efa66699132ac5240b39f85b675779418ddc0d71c9760d1d7f12b2f"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/06_外部总平面.png",
+      "bytes": 203294,
+      "sha256": "a7a9ea698c8728a6ae6fc83f224140b1325333ec784455a83785448328b38e58"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/整体平面_P4_20261022/图纸/07_体量与庭院剖面示意.png",
+      "bytes": 178338,
+      "sha256": "1ea781f37f1b498c673938eada2d172755579813c648980b8eb866110b094ac4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/模型/秘密教学_P4-M1.blend",
+      "bytes": 5911742,
+      "sha256": "edad1df53c8b8669d5ca84e971c84cb610113131b799321dca001a1d0bd9826e"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/模型/秘密教学_P4-M1.glb",
+      "bytes": 8342688,
+      "sha256": "dedb0fa95afe3044e71182e8cbf4000af228c69e23bdfb02e5c1b091bd8b19fa"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/HG_FULL_mirror.png",
+      "bytes": 377289,
+      "sha256": "b314f5ddba21de89bd7a71e9b8d362e22715587ad1c50223c2e497f8811c79bf"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/HG_FULL_normal.png",
+      "bytes": 375407,
+      "sha256": "ff9f1ad1cce2b4fa845c8b66b9d2a7ab3e08b9b584a2e953b9f58dbe12195189"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/HG_ICON.png",
+      "bytes": 143794,
+      "sha256": "72938a6d18dbe8889d38c0e3eae5edecedd8f26adf95d739133b03962ef2c27a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/NAME_B1.png",
+      "bytes": 36625,
+      "sha256": "8dc25353d0e02f0e238b4ce57bcc64bf207cf6bb23c14ae88ffc0397b2662f00"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/NAME_B2.png",
+      "bytes": 34463,
+      "sha256": "c38ddf6929cd7da08033e1b39e39c433c94558ec0c3d795f3522bf4a4e49a48a"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/NAME_B3.png",
+      "bytes": 34178,
+      "sha256": "f8672b41989b2877965085d2d485158c4202e5a797a458cc4a867e9cb4833e42"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/贴图/NAME_BW.png",
+      "bytes": 36831,
+      "sha256": "d094f63e80d83121a5294909ffd04a2cc81f6d6985f9dde7fe8b3362532069b4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/01_完整外观.png",
+      "bytes": 1949855,
+      "sha256": "637ed63cb6d25901c3f7049b447c797f42474c2414f90e077f0c9656914e5783"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/02_二楼剖开总览.png",
+      "bytes": 2233818,
+      "sha256": "241bcad3243e4c0cfbaf293d53b9c54ae29712a5128f7f73197ae77027d06d0f"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/03_一楼剖开总览.png",
+      "bytes": 2207609,
+      "sha256": "5132d1831d2d7511ff8d9c3e14a6df2c9a39767e50c220e6148bb04ce1d7ba81"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/04_公共庭院.png",
+      "bytes": 2119877,
+      "sha256": "b94c50e1e290cf281e1145e11e5147384f59191433147c0b69269fa69ca5e4d3"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/05_走廊朝浴室.png",
+      "bytes": 1892673,
+      "sha256": "231f545e2f855229f1e1de49890c29f152e44ed140cfe59816214760ce9fb2e4"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/06_大姐卧室.png",
+      "bytes": 1950146,
+      "sha256": "81f7f442fff16a79bbb091ae8ab07aba9b145593f1556e462fa060232eafd943"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/07_二楼正投影.png",
+      "bytes": 1902122,
+      "sha256": "539dcc0ec6ecb92d3733ca757ec3da05ba90378558dad14ff4bdcfaa48c4961b"
+    },
+    {
+      "file": "assets/《秘密教学》主角家空间资产建模/全屋模型_P4-M1_20261022/预览/08_屋顶楼梯剖开.png",
+      "bytes": 2139411,
+      "sha256": "90bcc907304a7d6f7ee5f0cdd4a1e338cc7307ea2637194a0bc4461796c4f902"
+    }
+  ]
+}
