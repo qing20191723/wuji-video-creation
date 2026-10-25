@@ -1,6 +1,6 @@
 {
   "revision": "P4-M2",
-  "presets": 51,
+  "presets": 176,
   "modelLoads": true,
   "saveAndRestore": true,
   "overwriteKeepsSingleRecord": true,
@@ -365,6 +365,881 @@
       "name": "整体高位俯看",
       "hit": "wall_9_7",
       "distance": 46.578192232618136,
+      "finite": true
+    },
+    {
+      "id": "A11",
+      "name": "西南角看全景",
+      "hit": "A05_back",
+      "distance": 5.891456354265648,
+      "finite": true
+    },
+    {
+      "id": "A12",
+      "name": "东南角看全景",
+      "hit": "A01_headboard",
+      "distance": 8.133656692425243,
+      "finite": true
+    },
+    {
+      "id": "A13",
+      "name": "西北角看全景",
+      "hit": "A11_frame",
+      "distance": 7.637492701324837,
+      "finite": true
+    },
+    {
+      "id": "A14",
+      "name": "东北角看全景",
+      "hit": "wall_5_0",
+      "distance": 8.727637886793604,
+      "finite": true
+    },
+    {
+      "id": "A15",
+      "name": "南侧朝北墙",
+      "hit": "wall_6_2",
+      "distance": 5.362583814830211,
+      "finite": true
+    },
+    {
+      "id": "A16",
+      "name": "北侧朝南墙",
+      "hit": "wall_0_10",
+      "distance": 5.362583671442594,
+      "finite": true
+    },
+    {
+      "id": "A17",
+      "name": "西侧朝东墙",
+      "hit": "wall_7_2",
+      "distance": 6.959476822504534,
+      "finite": true
+    },
+    {
+      "id": "A18",
+      "name": "东侧朝西墙",
+      "hit": "wall_5_0",
+      "distance": 6.959476249519736,
+      "finite": true
+    },
+    {
+      "id": "A19",
+      "name": "西南侧低机位",
+      "hit": "A05_back",
+      "distance": 5.856411902252766,
+      "finite": true
+    },
+    {
+      "id": "A20",
+      "name": "东南侧坐姿视线",
+      "hit": "A01_mattress",
+      "distance": 4.53878370506147,
+      "finite": true
+    },
+    {
+      "id": "A21",
+      "name": "西北侧高位俯看",
+      "hit": "A10_rug",
+      "distance": 5.830727189578554,
+      "finite": true
+    },
+    {
+      "id": "A22",
+      "name": "东北侧高位俯看",
+      "hit": "finish_B1",
+      "distance": 5.854741904406239,
+      "finite": true
+    },
+    {
+      "id": "A23",
+      "name": "中央高位俯拍",
+      "hit": "A01_frame",
+      "distance": 2.5174507803896926,
+      "finite": true
+    },
+    {
+      "id": "A24",
+      "name": "电脑桌正向细看",
+      "hit": "A04_monitor",
+      "distance": 2.085214423313737,
+      "finite": true
+    },
+    {
+      "id": "A25",
+      "name": "梳妆台正向细看",
+      "hit": "A06_mirror",
+      "distance": 2.176402702967932,
+      "finite": true
+    },
+    {
+      "id": "Z04",
+      "name": "西南角看全景",
+      "hit": "B05_body",
+      "distance": 7.021395893542173,
+      "finite": true
+    },
+    {
+      "id": "Z05",
+      "name": "东南角看全景",
+      "hit": "B04_back",
+      "distance": 5.91275467831864,
+      "finite": true
+    },
+    {
+      "id": "Z06",
+      "name": "西北角看全景",
+      "hit": "wall_0_7",
+      "distance": 7.822081306289058,
+      "finite": true
+    },
+    {
+      "id": "Z07",
+      "name": "东北角看全景",
+      "hit": "wall_0_5",
+      "distance": 7.57707664759663,
+      "finite": true
+    },
+    {
+      "id": "Z08",
+      "name": "南侧朝北墙",
+      "hit": "W_B20_pane",
+      "distance": 6.4545981313476535,
+      "finite": true
+    },
+    {
+      "id": "Z09",
+      "name": "北侧朝南墙",
+      "hit": "wall_0_7",
+      "distance": 6.360443861469394,
+      "finite": true
+    },
+    {
+      "id": "Z10",
+      "name": "西侧朝东墙",
+      "hit": "wall_5_0",
+      "distance": 4.664688381137216,
+      "finite": true
+    },
+    {
+      "id": "Z11",
+      "name": "东侧朝西墙",
+      "hit": "wall_3_0",
+      "distance": 4.664687998462521,
+      "finite": true
+    },
+    {
+      "id": "Z12",
+      "name": "西南侧低机位",
+      "hit": "B05_body",
+      "distance": 6.9683283712398225,
+      "finite": true
+    },
+    {
+      "id": "Z13",
+      "name": "东南侧坐姿视线",
+      "hit": "wall_4_0",
+      "distance": 7.837139375753195,
+      "finite": true
+    },
+    {
+      "id": "Z14",
+      "name": "西北侧高位俯看",
+      "hit": "B01_mattress",
+      "distance": 4.517225990187437,
+      "finite": true
+    },
+    {
+      "id": "Z15",
+      "name": "东北侧高位俯看",
+      "hit": "B11_leg_092008",
+      "distance": 4.940932180554769,
+      "finite": true
+    },
+    {
+      "id": "Z16",
+      "name": "中央高位俯拍",
+      "hit": "B10_rug",
+      "distance": 2.710608543222386,
+      "finite": true
+    },
+    {
+      "id": "Z17",
+      "name": "床头侧近景",
+      "hit": "B01_headboard",
+      "distance": 2.7438852942293237,
+      "finite": true
+    },
+    {
+      "id": "Z18",
+      "name": "床尾方向反打",
+      "hit": "B02_body",
+      "distance": 4.6570232459687055,
+      "finite": true
+    },
+    {
+      "id": "Z19",
+      "name": "绿色床长边侧面",
+      "hit": "B01_mattress",
+      "distance": 2.7330078224360186,
+      "finite": true
+    },
+    {
+      "id": "Z20",
+      "name": "电视矮柜正向",
+      "hit": "B02_body",
+      "distance": 2.5164456564458852,
+      "finite": true
+    },
+    {
+      "id": "Z21",
+      "name": "电脑桌正向细看",
+      "hit": "B03_monitor",
+      "distance": 2.665604635482989,
+      "finite": true
+    },
+    {
+      "id": "Z22",
+      "name": "电脑桌侧向",
+      "hit": "B03_monitor",
+      "distance": 2.278237082370233,
+      "finite": true
+    },
+    {
+      "id": "Z23",
+      "name": "窗边望远镜",
+      "hit": "B09_tube",
+      "distance": 1.5631832602326874,
+      "finite": true
+    },
+    {
+      "id": "Z24",
+      "name": "入口书架方向",
+      "hit": "B13_shelf3",
+      "distance": 1.582826754822022,
+      "finite": true
+    },
+    {
+      "id": "Z25",
+      "name": "穿衣区与窗边衣柜",
+      "hit": "B05_body",
+      "distance": 1.9489111043742153,
+      "finite": true
+    },
+    {
+      "id": "S04",
+      "name": "西南角看全景",
+      "hit": "wall_3_0",
+      "distance": 8.934208618056783,
+      "finite": true
+    },
+    {
+      "id": "S05",
+      "name": "东南角看全景",
+      "hit": "C06_post2",
+      "distance": 8.110487019040853,
+      "finite": true
+    },
+    {
+      "id": "S06",
+      "name": "西北角看全景",
+      "hit": "C01_headboard",
+      "distance": 8.825028750052933,
+      "finite": true
+    },
+    {
+      "id": "S07",
+      "name": "东北角看全景",
+      "hit": "wall_2_3",
+      "distance": 8.934208378233807,
+      "finite": true
+    },
+    {
+      "id": "S08",
+      "name": "南侧朝北墙",
+      "hit": "W_B30_pane",
+      "distance": 5.656293686880294,
+      "finite": true
+    },
+    {
+      "id": "S09",
+      "name": "北侧朝南墙",
+      "hit": "wall_0_3",
+      "distance": 5.562088512148422,
+      "finite": true
+    },
+    {
+      "id": "S10",
+      "name": "西侧朝东墙",
+      "hit": "wall_3_0",
+      "distance": 6.85962525698667,
+      "finite": true
+    },
+    {
+      "id": "S11",
+      "name": "东侧朝西墙",
+      "hit": "C06_post2",
+      "distance": 6.408471886082163,
+      "finite": true
+    },
+    {
+      "id": "S12",
+      "name": "西南侧低机位",
+      "hit": "wall_3_0",
+      "distance": 8.883649349794046,
+      "finite": true
+    },
+    {
+      "id": "S13",
+      "name": "东南侧坐姿视线",
+      "hit": "C06_base",
+      "distance": 8.122191852666052,
+      "finite": true
+    },
+    {
+      "id": "S14",
+      "name": "西北侧高位俯看",
+      "hit": "finish_B3",
+      "distance": 5.978380409500089,
+      "finite": true
+    },
+    {
+      "id": "S15",
+      "name": "东北侧高位俯看",
+      "hit": "finish_B3",
+      "distance": 5.97838040950009,
+      "finite": true
+    },
+    {
+      "id": "S16",
+      "name": "中央高位俯拍",
+      "hit": "C08_rug",
+      "distance": 2.7106085432223868,
+      "finite": true
+    },
+    {
+      "id": "S17",
+      "name": "床头正向细看",
+      "hit": "C01_headboard",
+      "distance": 3.8325616290619426,
+      "finite": true
+    },
+    {
+      "id": "S18",
+      "name": "床侧看贴墙关系",
+      "hit": "C01_mattress",
+      "distance": 2.927781514414655,
+      "finite": true
+    },
+    {
+      "id": "S19",
+      "name": "床尾小书架正向",
+      "hit": "C02_shelf5",
+      "distance": 2.132804308618135,
+      "finite": true
+    },
+    {
+      "id": "S20",
+      "name": "电脑桌正向细看",
+      "hit": "C03_monitor",
+      "distance": 2.4984149580768067,
+      "finite": true
+    },
+    {
+      "id": "S21",
+      "name": "电脑桌侧向",
+      "hit": "C03_monitor",
+      "distance": 2.3352668003219805,
+      "finite": true
+    },
+    {
+      "id": "S22",
+      "name": "窗下收藏柜",
+      "hit": "W_B30_pane",
+      "distance": 2.5892960531152927,
+      "finite": true
+    },
+    {
+      "id": "S23",
+      "name": "衣物架与收藏柜正向",
+      "hit": "C06_post2",
+      "distance": 2.475781687648937,
+      "finite": true
+    },
+    {
+      "id": "S24",
+      "name": "床侧回看房门",
+      "hit": "D_B3_leaf",
+      "distance": 4.61657835673251,
+      "finite": true
+    },
+    {
+      "id": "S25",
+      "name": "星形地毯与活动区",
+      "hit": "C08_rug",
+      "distance": 2.9322766842349535,
+      "finite": true
+    },
+    {
+      "id": "M01",
+      "name": "西南角看全景",
+      "hit": "wall_18_2",
+      "distance": 6.605139576133542,
+      "finite": true
+    },
+    {
+      "id": "M02",
+      "name": "东南角看全景",
+      "hit": "M02_body",
+      "distance": 5.89534305680752,
+      "finite": true
+    },
+    {
+      "id": "M03",
+      "name": "西北角看全景",
+      "hit": "M07_post2",
+      "distance": 6.464699623733331,
+      "finite": true
+    },
+    {
+      "id": "M04",
+      "name": "东北角看全景",
+      "hit": "wall_16_0",
+      "distance": 6.605140554642657,
+      "finite": true
+    },
+    {
+      "id": "M05",
+      "name": "南侧朝北墙",
+      "hit": "W108_pane",
+      "distance": 4.062053221914585,
+      "finite": true
+    },
+    {
+      "id": "M06",
+      "name": "北侧朝南墙",
+      "hit": "wall_17_0",
+      "distance": 4.166678447295406,
+      "finite": true
+    },
+    {
+      "id": "M07",
+      "name": "西侧朝东墙",
+      "hit": "wall_18_0",
+      "distance": 5.163120656438299,
+      "finite": true
+    },
+    {
+      "id": "M08",
+      "name": "东侧朝西墙",
+      "hit": "wall_16_2",
+      "distance": 5.1631214213215495,
+      "finite": true
+    },
+    {
+      "id": "M09",
+      "name": "西南侧低机位",
+      "hit": "wall_18_2",
+      "distance": 6.5311184550166645,
+      "finite": true
+    },
+    {
+      "id": "M10",
+      "name": "东南侧坐姿视线",
+      "hit": "M01_mattress",
+      "distance": 3.607802311243546,
+      "finite": true
+    },
+    {
+      "id": "M11",
+      "name": "西北侧高位俯看",
+      "hit": "finish_MB",
+      "distance": 4.56610523225682,
+      "finite": true
+    },
+    {
+      "id": "M12",
+      "name": "东北侧高位俯看",
+      "hit": "finish_MB",
+      "distance": 4.566105232256824,
+      "finite": true
+    },
+    {
+      "id": "M13",
+      "name": "中央高位俯拍",
+      "hit": "finish_MB",
+      "distance": 2.716787816874243,
+      "finite": true
+    },
+    {
+      "id": "M14",
+      "name": "床头正向细看",
+      "hit": "M01_headboard",
+      "distance": 3.9221653745738307,
+      "finite": true
+    },
+    {
+      "id": "M15",
+      "name": "床头侧回看床尾",
+      "hit": "wall_18_0",
+      "distance": 5.184644128441423,
+      "finite": true
+    },
+    {
+      "id": "M16",
+      "name": "床北侧朝梳妆区",
+      "hit": "M05_mirror",
+      "distance": 4.629246260778362,
+      "finite": true
+    },
+    {
+      "id": "M17",
+      "name": "床南侧看床面",
+      "hit": "M01_mattress",
+      "distance": 2.536964271926039,
+      "finite": true
+    },
+    {
+      "id": "M18",
+      "name": "梳妆台正向",
+      "hit": "M05_mirror",
+      "distance": 3.3181733824640522,
+      "finite": true
+    },
+    {
+      "id": "M19",
+      "name": "梳妆台侧向",
+      "hit": "M05_mirror",
+      "distance": 2.559293629730979,
+      "finite": true
+    },
+    {
+      "id": "M20",
+      "name": "衣柜正向",
+      "hit": "M04_body",
+      "distance": 1.2237646711052586,
+      "finite": true
+    },
+    {
+      "id": "M21",
+      "name": "窗侧床头柜近景",
+      "hit": "M02_body",
+      "distance": 1.6119188705483907,
+      "finite": true
+    },
+    {
+      "id": "M22",
+      "name": "门侧床头柜近景",
+      "hit": "M03_body",
+      "distance": 1.8253751196486305,
+      "finite": true
+    },
+    {
+      "id": "M23",
+      "name": "衣架与东侧通路",
+      "hit": "wall_17_0",
+      "distance": 2.7476150286564773,
+      "finite": true
+    },
+    {
+      "id": "L05",
+      "name": "西南角看全景",
+      "hit": "L06_side1",
+      "distance": 9.108093189317568,
+      "finite": true
+    },
+    {
+      "id": "L06",
+      "name": "东南角看全景",
+      "hit": "wall_14_2",
+      "distance": 10.126389175515724,
+      "finite": true
+    },
+    {
+      "id": "L07",
+      "name": "西北角看全景",
+      "hit": "D101_leaf",
+      "distance": 10.990691084902341,
+      "finite": true
+    },
+    {
+      "id": "L08",
+      "name": "东北角看全景",
+      "hit": "L02_back",
+      "distance": 7.093917189211842,
+      "finite": true
+    },
+    {
+      "id": "L09",
+      "name": "南侧朝北墙",
+      "hit": "wall_24_0",
+      "distance": 4.963705933553512,
+      "finite": true
+    },
+    {
+      "id": "L10",
+      "name": "北侧朝南墙",
+      "hit": "wall_12_6",
+      "distance": 4.963706148724375,
+      "finite": true
+    },
+    {
+      "id": "L11",
+      "name": "西侧朝东墙",
+      "hit": "wall_22_2",
+      "distance": 17.16387292388733,
+      "finite": true
+    },
+    {
+      "id": "L12",
+      "name": "东侧朝西墙",
+      "hit": "W110_mullion",
+      "distance": 9.037304317831364,
+      "finite": true
+    },
+    {
+      "id": "L13",
+      "name": "西南侧低机位",
+      "hit": "L02_back",
+      "distance": 1.304838342269344,
+      "finite": true
+    },
+    {
+      "id": "L14",
+      "name": "东南侧坐姿视线",
+      "hit": "wall_14_2",
+      "distance": 10.137291651790578,
+      "finite": true
+    },
+    {
+      "id": "L15",
+      "name": "西北侧高位俯看",
+      "hit": "L03_rug",
+      "distance": 6.767030254346711,
+      "finite": true
+    },
+    {
+      "id": "L16",
+      "name": "东北侧高位俯看",
+      "hit": "L04_top",
+      "distance": 5.564991946451217,
+      "finite": true
+    },
+    {
+      "id": "L17",
+      "name": "中央高位俯拍",
+      "hit": "L03_rug",
+      "distance": 2.710608617843317,
+      "finite": true
+    },
+    {
+      "id": "L18",
+      "name": "沙发正面与茶几关系",
+      "hit": "L01_back",
+      "distance": 4.130325823729981,
+      "finite": true
+    },
+    {
+      "id": "L19",
+      "name": "长沙发东侧斜拍",
+      "hit": "L01_back",
+      "distance": 4.725360704976391,
+      "finite": true
+    },
+    {
+      "id": "L20",
+      "name": "贵妃位侧面",
+      "hit": "wall_14_1_sill",
+      "distance": 4.587258710684778,
+      "finite": true
+    },
+    {
+      "id": "L21",
+      "name": "茶几桌面俯看",
+      "hit": "外边框003",
+      "distance": 1.9915502796264497,
+      "finite": true
+    },
+    {
+      "id": "L22",
+      "name": "电视墙主品牌正向",
+      "hit": "黑底",
+      "distance": 2.178638045012687,
+      "finite": true
+    },
+    {
+      "id": "L23",
+      "name": "主墙右侧辅助品牌",
+      "hit": "wall_13_4",
+      "distance": 7.516736104599341,
+      "finite": true
+    },
+    {
+      "id": "L24",
+      "name": "西窗侧回看沙发",
+      "hit": "L01_back",
+      "distance": 5.716500933188512,
+      "finite": true
+    },
+    {
+      "id": "L25",
+      "name": "参考书架正向",
+      "hit": "L06_side1",
+      "distance": 2.10290316478625,
+      "finite": true
+    },
+    {
+      "id": "D04",
+      "name": "西南角看全景",
+      "hit": "D02_body",
+      "distance": 5.196141433585388,
+      "finite": true
+    },
+    {
+      "id": "D05",
+      "name": "东南角看全景",
+      "hit": "K02_body",
+      "distance": 5.76644986937077,
+      "finite": true
+    },
+    {
+      "id": "D06",
+      "name": "西北角看全景",
+      "hit": "wall_20_0",
+      "distance": 6.902696507762612,
+      "finite": true
+    },
+    {
+      "id": "D07",
+      "name": "东北角看全景",
+      "hit": "wall_24_0",
+      "distance": 6.0505117935379635,
+      "finite": true
+    },
+    {
+      "id": "D08",
+      "name": "南侧朝北墙",
+      "hit": "W106_pane",
+      "distance": 3.6644384766494578,
+      "finite": true
+    },
+    {
+      "id": "D09",
+      "name": "北侧朝南墙",
+      "hit": "wall_24_0",
+      "distance": 3.569911065849202,
+      "finite": true
+    },
+    {
+      "id": "D10",
+      "name": "西侧朝东墙",
+      "hit": "wall_21_0",
+      "distance": 4.565047070206336,
+      "finite": true
+    },
+    {
+      "id": "D11",
+      "name": "东侧朝西墙",
+      "hit": "K03_body",
+      "distance": 8.874968296719222,
+      "finite": true
+    },
+    {
+      "id": "D12",
+      "name": "西南侧低机位",
+      "hit": "D01_top",
+      "distance": 1.4281255006280067,
+      "finite": true
+    },
+    {
+      "id": "D13",
+      "name": "东南侧坐姿视线",
+      "hit": "D01_top",
+      "distance": 1.9847416674184157,
+      "finite": true
+    },
+    {
+      "id": "D14",
+      "name": "西北侧高位俯看",
+      "hit": "D01_top",
+      "distance": 2.856066166474424,
+      "finite": true
+    },
+    {
+      "id": "D15",
+      "name": "东北侧高位俯看",
+      "hit": "D01_top",
+      "distance": 2.856066166474424,
+      "finite": true
+    },
+    {
+      "id": "D16",
+      "name": "中央高位俯拍",
+      "hit": "D01_top",
+      "distance": 1.9567463159285088,
+      "finite": true
+    },
+    {
+      "id": "D17",
+      "name": "餐桌南侧朝北窗",
+      "hit": "W106_pane",
+      "distance": 4.0086604346067185,
+      "finite": true
+    },
+    {
+      "id": "D18",
+      "name": "餐桌北侧朝客厅",
+      "hit": "wall_24_0",
+      "distance": 3.6531160741351325,
+      "finite": true
+    },
+    {
+      "id": "D19",
+      "name": "餐桌东端朝厨房",
+      "hit": "K06_body",
+      "distance": 4.763799550662606,
+      "finite": true
+    },
+    {
+      "id": "D20",
+      "name": "餐桌西端朝品牌墙",
+      "hit": "wall_21_0",
+      "distance": 4.602321969638962,
+      "finite": true
+    },
+    {
+      "id": "D21",
+      "name": "南侧餐椅坐姿反打",
+      "hit": "W106_pane",
+      "distance": 3.6448627463142116,
+      "finite": true
+    },
+    {
+      "id": "D22",
+      "name": "北侧餐椅坐姿反打",
+      "hit": "wall_24_0",
+      "distance": 3.4664999660565248,
+      "finite": true
+    },
+    {
+      "id": "D23",
+      "name": "镜像主品牌正向",
+      "hit": "黑底001",
+      "distance": 2.3310773200678176,
+      "finite": true
+    },
+    {
+      "id": "D24",
+      "name": "餐厅壁架侧拍",
+      "hit": "wall_21_0",
+      "distance": 2.211329080599213,
+      "finite": true
+    },
+    {
+      "id": "D25",
+      "name": "品牌摆件北侧斜拍",
+      "hit": "黄瓜_本体发光004",
+      "distance": 1.4101540406753466,
       "finite": true
     }
   ]

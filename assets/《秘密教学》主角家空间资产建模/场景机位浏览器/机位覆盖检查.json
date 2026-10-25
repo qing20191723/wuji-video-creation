@@ -1,0 +1,1600 @@
+{
+  "preset_total": 176,
+  "expanded_rooms": [
+    {
+      "room": "B1",
+      "name": "薇亚卧室",
+      "total": 25,
+      "reviewImages": [
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A19",
+        "A23",
+        "A24"
+      ]
+    },
+    {
+      "room": "B2",
+      "name": "子豪卧室",
+      "total": 25,
+      "reviewImages": [
+        "Z04",
+        "Z05",
+        "Z06",
+        "Z07",
+        "Z08",
+        "Z12",
+        "Z16",
+        "Z17"
+      ]
+    },
+    {
+      "room": "B3",
+      "name": "舒亚卧室",
+      "total": 25,
+      "reviewImages": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S12",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "room": "MB",
+      "name": "一楼主卧",
+      "total": 25,
+      "reviewImages": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M09",
+        "M13",
+        "M14"
+      ]
+    },
+    {
+      "room": "L",
+      "name": "客厅",
+      "total": 25,
+      "reviewImages": [
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L13",
+        "L17",
+        "L18"
+      ]
+    },
+    {
+      "room": "D",
+      "name": "餐厅",
+      "total": 25,
+      "reviewImages": [
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D12",
+        "D16",
+        "D17"
+      ]
+    }
+  ],
+  "probe": [
+    {
+      "id": "A11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A20",
+      "aspect": "9:16",
+      "nearObstructedRays": 3,
+      "totalRays": 25
+    },
+    {
+      "id": "A20",
+      "aspect": "16:9",
+      "nearObstructedRays": 1,
+      "totalRays": 25
+    },
+    {
+      "id": "A21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A24",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A24",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A25",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "A25",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z04",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z04",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z05",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z05",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z06",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z06",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z07",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z07",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z08",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z08",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z09",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z09",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z10",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z10",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z20",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z20",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z24",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z24",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z25",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "Z25",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S04",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S04",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S05",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S05",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S06",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S06",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S07",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S07",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S08",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S08",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S09",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S09",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S10",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S10",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S20",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S20",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S24",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S24",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S25",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "S25",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M01",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M01",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M02",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M02",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M03",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M03",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M04",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M04",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M05",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M05",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M06",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M06",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M07",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M07",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M08",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M08",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M09",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M09",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M10",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M10",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M20",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M20",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "M23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L05",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L05",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L06",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L06",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L07",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L07",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L08",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L08",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L09",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L09",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L10",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L10",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L20",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L20",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L24",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L24",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L25",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "L25",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D04",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D04",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D05",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D05",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D06",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D06",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D07",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D07",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D08",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D08",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D09",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D09",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D10",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D10",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D11",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D11",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D12",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D12",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D13",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D13",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D14",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D14",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D15",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D15",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D16",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D16",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D17",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D17",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D18",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D18",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D19",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D19",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D20",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D20",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D21",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D21",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D22",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D22",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D23",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D23",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D24",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D24",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D25",
+      "aspect": "9:16",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    },
+    {
+      "id": "D25",
+      "aspect": "16:9",
+      "nearObstructedRays": 0,
+      "totalRays": 25
+    }
+  ],
+  "nearOcclusionCheck": true,
+  "categoryFilterWorks": true,
+  "modelGeometryModified": false
+}
