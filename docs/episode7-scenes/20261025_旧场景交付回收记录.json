@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-25",
+  "action": "仅回收明确被替代的本地交付与旧备份；无永久删除",
+  "directories": [
+    {
+      "name": "全屋模型_P4-M1_20261022",
+      "status": "已在系统回收站确认",
+      "files": null,
+      "error": null
+    },
+    {
+      "name": "完整平面与品牌_P3-R1_20261022",
+      "status": "回收失败，保留剩余文件",
+      "files": 83,
+      "error": "Exception calling \"DeleteDirectory\" with \"3\" argument(s): \"Attempted to perform an unauthorized operation.\""
+    },
+    {
+      "name": "完整平面与品牌_P3-R2_20261022",
+      "status": "回收失败，保留剩余文件",
+      "files": 83,
+      "error": "Exception calling \"DeleteDirectory\" with \"3\" argument(s): \"Attempted to perform an unauthorized operation.\""
+    },
+    {
+      "name": "整体平面_P4_20261022",
+      "status": "回收失败，保留剩余文件",
+      "files": 23,
+      "error": "Exception calling \"DeleteDirectory\" with \"3\" argument(s): \"Attempted to perform an unauthorized operation.\""
+    },
+    {
+      "name": "建模交付",
+      "status": "已移入系统回收站",
+      "files": 6,
+      "error": null
+    },
+    {
+      "name": "备份_19白枕旧版_20261022",
+      "status": "已移入系统回收站",
+      "files": 2,
+      "error": null
+    },
+    {
+      "name": "备份_品牌统一前_20261022",
+      "status": "已移入系统回收站",
+      "files": 13,
+      "error": null
+    },
+    {
+      "name": "备份_全量重建前_20261022",
+      "status": "已移入系统回收站",
+      "files": 16,
+      "error": null
+    },
+    {
+      "name": "备份_R9替换前_01_02_20261022_190201012",
+      "status": "已移入系统回收站",
+      "files": 2,
+      "error": null
+    },
+    {
+      "name": "临时_R9批量核验_20261022_192014298732",
+      "status": "已移入系统回收站",
+      "files": 22,
+      "error": null
+    }
+  ],
+  "protected_file_count": 81,
+  "protected_hashes_unchanged": true,
+  "preserved": [
+    "P4-M2",
+    "R9当前场景",
+    "认可日景参考",
+    "未核实替代关系的R6与待修素材"
+  ],
+  "note": "仓库历史构建依赖不纳入当前浏览入口，Git历史未改写。"
+}

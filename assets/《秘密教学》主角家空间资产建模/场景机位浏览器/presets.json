@@ -1,0 +1,1018 @@
+{
+  "schema": "scene-camera-presets/1",
+  "revision": "P4-M2",
+  "coordinate_system": "Blender Z-up, metres",
+  "rooms": [
+    {
+      "id": "B1",
+      "name": "薇亚卧室"
+    },
+    {
+      "id": "H2",
+      "name": "楼道与直梯"
+    },
+    {
+      "id": "B2",
+      "name": "子豪卧室"
+    },
+    {
+      "id": "B3",
+      "name": "舒亚卧室"
+    },
+    {
+      "id": "BW",
+      "name": "公共浴室"
+    },
+    {
+      "id": "L",
+      "name": "客厅"
+    },
+    {
+      "id": "D",
+      "name": "餐厅与厨房"
+    },
+    {
+      "id": "F1",
+      "name": "一楼其他空间"
+    },
+    {
+      "id": "COURT",
+      "name": "庭院与屋顶"
+    },
+    {
+      "id": "EXT",
+      "name": "别墅外观"
+    }
+  ],
+  "shots": [
+    {
+      "id": "A01",
+      "room": "B1",
+      "name": "床尾看床头",
+      "position": [
+        19.8,
+        5.8,
+        4.95
+      ],
+      "target": [
+        14.1,
+        6.15,
+        4.25
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A02",
+      "room": "B1",
+      "name": "床头看床尾",
+      "position": [
+        14.1,
+        6.15,
+        4.95
+      ],
+      "target": [
+        19.7,
+        6.5,
+        4.55
+      ],
+      "fov": 64,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A03",
+      "room": "B1",
+      "name": "床南侧看床头",
+      "position": [
+        16.2,
+        3.5,
+        4.95
+      ],
+      "target": [
+        14.7,
+        6.15,
+        4.25
+      ],
+      "fov": 64,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A04",
+      "room": "B1",
+      "name": "床南侧看床尾",
+      "position": [
+        16.2,
+        3.5,
+        4.95
+      ],
+      "target": [
+        19.6,
+        6.4,
+        4.55
+      ],
+      "fov": 64,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A05",
+      "room": "B1",
+      "name": "入口看卧室全貌",
+      "position": [
+        14.6,
+        2.45,
+        4.95
+      ],
+      "target": [
+        17,
+        5.8,
+        4.45
+      ],
+      "fov": 72,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A06",
+      "room": "B1",
+      "name": "窗侧回看房门",
+      "position": [
+        19.8,
+        6.0,
+        4.95
+      ],
+      "target": [
+        14.05,
+        1.8,
+        4.4
+      ],
+      "fov": 65,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A07",
+      "room": "B1",
+      "name": "阳台看向大床",
+      "position": [
+        22.1,
+        4.1,
+        4.95
+      ],
+      "target": [
+        15.2,
+        6.1,
+        4.35
+      ],
+      "fov": 65,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A08",
+      "room": "B1",
+      "name": "床面高位俯拍",
+      "position": [
+        15.7,
+        5.8,
+        6.05
+      ],
+      "target": [
+        15.6,
+        6.2,
+        4.05
+      ],
+      "fov": 60,
+      "type": "高位细节",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A09",
+      "room": "B1",
+      "name": "书桌与梳妆区",
+      "position": [
+        18.1,
+        4.9,
+        4.8
+      ],
+      "target": [
+        19.3,
+        7.05,
+        4.45
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "A10",
+      "room": "B1",
+      "name": "床头与柜面近景",
+      "position": [
+        15.0,
+        4.1,
+        4.6
+      ],
+      "target": [
+        13.8,
+        5.7,
+        4.35
+      ],
+      "fov": 48,
+      "type": "细节机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H01",
+      "room": "H2",
+      "name": "走廊朝公共浴室",
+      "position": [
+        14.5,
+        0.8,
+        4.95
+      ],
+      "target": [
+        -0.1,
+        0.8,
+        4.65
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H02",
+      "room": "H2",
+      "name": "走廊反向朝庭院",
+      "position": [
+        0.65,
+        0.8,
+        4.95
+      ],
+      "target": [
+        14.4,
+        0.8,
+        4.65
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H03",
+      "room": "H2",
+      "name": "薇亚房门正向",
+      "position": [
+        14.05,
+        -0.8,
+        4.85
+      ],
+      "target": [
+        14.05,
+        1.7,
+        4.55
+      ],
+      "fov": 68,
+      "type": "房门与门牌",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H04",
+      "room": "H2",
+      "name": "子豪门旁低机位",
+      "position": [
+        11.1,
+        0.55,
+        4.15
+      ],
+      "target": [
+        9.65,
+        1.7,
+        4.65
+      ],
+      "fov": 65,
+      "type": "低机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H05",
+      "room": "H2",
+      "name": "舒亚端与落地窗",
+      "position": [
+        2.2,
+        1,
+        4.95
+      ],
+      "target": [
+        0.8,
+        -1.5,
+        4.55
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "H06",
+      "room": "H2",
+      "name": "上平台俯看直梯",
+      "position": [
+        10.8,
+        -0.8,
+        4.95
+      ],
+      "target": [
+        3,
+        -0.8,
+        1.7
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "Z01",
+      "room": "B2",
+      "name": "床尾看向床头",
+      "position": [
+        9.0,
+        3.7,
+        4.95
+      ],
+      "target": [
+        12.6,
+        4.2,
+        4.2
+      ],
+      "fov": 64,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "Z02",
+      "room": "B2",
+      "name": "床头回看电视柜",
+      "position": [
+        12.6,
+        4.25,
+        4.95
+      ],
+      "target": [
+        8.0,
+        4.4,
+        4.45
+      ],
+      "fov": 65,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "Z03",
+      "room": "B2",
+      "name": "入口朝窗边书桌",
+      "position": [
+        9.8,
+        2.5,
+        4.95
+      ],
+      "target": [
+        9.5,
+        7.5,
+        4.55
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "S01",
+      "room": "B3",
+      "name": "房门看床与床尾柜",
+      "position": [
+        1.4,
+        2.6,
+        4.95
+      ],
+      "target": [
+        6.6,
+        3.6,
+        4.35
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "S02",
+      "room": "B3",
+      "name": "窗侧回看书桌与床",
+      "position": [
+        5.2,
+        7.0,
+        4.95
+      ],
+      "target": [
+        4.8,
+        2.4,
+        4.3
+      ],
+      "fov": 65,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "S03",
+      "room": "B3",
+      "name": "床尾朝床头",
+      "position": [
+        6.1,
+        5.4,
+        4.85
+      ],
+      "target": [
+        6.95,
+        2.5,
+        4.15
+      ],
+      "fov": 60,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "W01",
+      "room": "BW",
+      "name": "入口看台盆与淋浴",
+      "position": [
+        -0.7,
+        0.85,
+        4.9
+      ],
+      "target": [
+        -2.3,
+        -0.7,
+        4.3
+      ],
+      "fov": 75,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "W02",
+      "room": "BW",
+      "name": "浴室内回看玻璃门",
+      "position": [
+        -2.7,
+        0,
+        4.9
+      ],
+      "target": [
+        -0.1,
+        0.8,
+        4.5
+      ],
+      "fov": 72,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": false
+    },
+    {
+      "id": "L01",
+      "room": "L",
+      "name": "沙发区看电视与主标识",
+      "position": [
+        4.3,
+        3.5,
+        1.65
+      ],
+      "target": [
+        5.65,
+        7.5,
+        1.65
+      ],
+      "fov": 66,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "L02",
+      "room": "L",
+      "name": "电视侧回看沙发",
+      "position": [
+        5.7,
+        6.6,
+        1.65
+      ],
+      "target": [
+        3.6,
+        3.1,
+        0.9
+      ],
+      "fov": 67,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "L03",
+      "room": "L",
+      "name": "窗边斜看客厅",
+      "position": [
+        0.9,
+        5.5,
+        1.65
+      ],
+      "target": [
+        5.2,
+        4.2,
+        1.1
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "L04",
+      "room": "L",
+      "name": "茶几镜像品牌近景",
+      "position": [
+        4.2,
+        3.5,
+        1.0
+      ],
+      "target": [
+        4.22,
+        4.7,
+        0.65
+      ],
+      "fov": 45,
+      "type": "品牌细节",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "D01",
+      "room": "D",
+      "name": "餐厅朝镜像主标识",
+      "position": [
+        5.4,
+        8.3,
+        1.65
+      ],
+      "target": [
+        9.65,
+        10,
+        1.7
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "D02",
+      "room": "D",
+      "name": "餐厅反向朝客厅",
+      "position": [
+        8.7,
+        11.35,
+        1.65
+      ],
+      "target": [
+        5.6,
+        8.1,
+        1.35
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "D03",
+      "room": "D",
+      "name": "餐桌实体品牌近景",
+      "position": [
+        7.5,
+        10.95,
+        1.25
+      ],
+      "target": [
+        7.5,
+        9.8,
+        0.9
+      ],
+      "fov": 45,
+      "type": "品牌细节",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "K01",
+      "room": "D",
+      "name": "厨房入口看操作区",
+      "position": [
+        3.15,
+        8.9,
+        1.65
+      ],
+      "target": [
+        1.85,
+        11.4,
+        1.25
+      ],
+      "fov": 73,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "K02",
+      "room": "D",
+      "name": "水槽侧朝餐厅",
+      "position": [
+        2.75,
+        10.75,
+        1.65
+      ],
+      "target": [
+        7.4,
+        9.8,
+        1.3
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F01",
+      "room": "F1",
+      "name": "玄关朝阅读区",
+      "position": [
+        10.7,
+        4.0,
+        1.65
+      ],
+      "target": [
+        15.8,
+        5.8,
+        1.3
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F02",
+      "room": "F1",
+      "name": "阅读区回看入口",
+      "position": [
+        16.4,
+        4.8,
+        1.6
+      ],
+      "target": [
+        11.1,
+        5.1,
+        1.4
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F03",
+      "room": "F1",
+      "name": "主卧床尾看床头",
+      "position": [
+        18.8,
+        10.3,
+        1.65
+      ],
+      "target": [
+        14.4,
+        10.3,
+        1.05
+      ],
+      "fov": 65,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F04",
+      "room": "F1",
+      "name": "主卧反向看梳妆区",
+      "position": [
+        14.7,
+        10.35,
+        1.65
+      ],
+      "target": [
+        18.0,
+        7.8,
+        1.15
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F05",
+      "room": "F1",
+      "name": "洗衣房工作区",
+      "position": [
+        11.3,
+        9.8,
+        1.6
+      ],
+      "target": [
+        12.3,
+        11.3,
+        1.05
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F06",
+      "room": "F1",
+      "name": "客卫内部",
+      "position": [
+        18.8,
+        2.7,
+        1.6
+      ],
+      "target": [
+        20.4,
+        3.6,
+        1.1
+      ],
+      "fov": 75,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F07",
+      "room": "F1",
+      "name": "主卫浴缸方向",
+      "position": [
+        20.6,
+        8.7,
+        1.6
+      ],
+      "target": [
+        20.9,
+        11.6,
+        0.95
+      ],
+      "fov": 70,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "F08",
+      "room": "F1",
+      "name": "储物区",
+      "position": [
+        18.8,
+        5.3,
+        1.6
+      ],
+      "target": [
+        21.0,
+        6.6,
+        1.2
+      ],
+      "fov": 72,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": false
+    },
+    {
+      "id": "T01",
+      "room": "COURT",
+      "name": "公共庭院看休息区",
+      "position": [
+        15.9,
+        -1.3,
+        4.95
+      ],
+      "target": [
+        20.3,
+        -0.9,
+        4.2
+      ],
+      "fov": 68,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": true
+    },
+    {
+      "id": "T02",
+      "room": "COURT",
+      "name": "庭院回看公共入口",
+      "position": [
+        23.7,
+        -2,
+        4.95
+      ],
+      "target": [
+        15.2,
+        -0.25,
+        4.6
+      ],
+      "fov": 66,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": true
+    },
+    {
+      "id": "T03",
+      "room": "COURT",
+      "name": "阳台外公共通道",
+      "position": [
+        24.2,
+        2.2,
+        4.95
+      ],
+      "target": [
+        24.2,
+        7.5,
+        4.85
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": true
+    },
+    {
+      "id": "T04",
+      "room": "COURT",
+      "name": "后侧双跑梯入口",
+      "position": [
+        25.9,
+        6.8,
+        4.95
+      ],
+      "target": [
+        25.9,
+        10.8,
+        6.0
+      ],
+      "fov": 66,
+      "type": "空间正反机位",
+      "floor": 3.3,
+      "exterior": true
+    },
+    {
+      "id": "T05",
+      "room": "COURT",
+      "name": "屋顶回看轻薄雨棚",
+      "position": [
+        20,
+        7.0,
+        8.2
+      ],
+      "target": [
+        24.8,
+        7.2,
+        7.85
+      ],
+      "fov": 64,
+      "type": "空间正反机位",
+      "floor": 6.6,
+      "exterior": true
+    },
+    {
+      "id": "E01",
+      "room": "EXT",
+      "name": "正面街景",
+      "position": [
+        11,
+        -30,
+        3.4
+      ],
+      "target": [
+        11,
+        2,
+        3.8
+      ],
+      "fov": 58,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": true
+    },
+    {
+      "id": "E02",
+      "room": "EXT",
+      "name": "正面斜角",
+      "position": [
+        37,
+        -31,
+        10
+      ],
+      "target": [
+        11,
+        3,
+        3.6
+      ],
+      "fov": 58,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": true
+    },
+    {
+      "id": "E03",
+      "room": "EXT",
+      "name": "背面与外部楼梯",
+      "position": [
+        35,
+        24,
+        10
+      ],
+      "target": [
+        17,
+        7,
+        4.4
+      ],
+      "fov": 62,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": true
+    },
+    {
+      "id": "E04",
+      "room": "EXT",
+      "name": "入户品牌与大门",
+      "position": [
+        17,
+        -20,
+        2.2
+      ],
+      "target": [
+        17,
+        -10.5,
+        2.1
+      ],
+      "fov": 58,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": true
+    },
+    {
+      "id": "E05",
+      "room": "EXT",
+      "name": "整体高位俯看",
+      "position": [
+        39,
+        -34,
+        28
+      ],
+      "target": [
+        11,
+        2,
+        3.2
+      ],
+      "fov": 60,
+      "type": "空间正反机位",
+      "floor": 0,
+      "exterior": true
+    }
+  ]
+}

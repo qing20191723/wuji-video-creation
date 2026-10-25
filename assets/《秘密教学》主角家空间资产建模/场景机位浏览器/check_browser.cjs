@@ -1,0 +1,26 @@
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const {chromium}=require(path.join(process.env.CODEX_NODE_MODULES||'node_modules','playwright'));
+const out=process.env.STUDIO_CHECK_DIR||'local-assets/tmp/shot-studio-check';fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});
+ const page=await browser.newPage({viewport:{width:1600,height:1080},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(process.env.STUDIO_TEST_URL||'http://127.0.0.1:8778');await page.waitForFunction(()=>window.shotStudio?.ready,{},{timeout:90000});await page.waitForTimeout(500);
+ await page.screenshot({path:path.join(out,'01_工作台.png')});
+ const cameraChecks=await page.evaluate(async()=>{const THREE=await import('/vendor/three.module.js'),s=window.shotStudio;return s.presets.shots.map(p=>{s.setPreset(p);s.scene.updateMatrixWorld(true);const ray=new THREE.Raycaster(s.camera.position,s.controls.target.clone().sub(s.camera.position).normalize(),0,300);const hits=ray.intersectObjects(s.meshes,false);return {id:p.id,name:p.name,hit:hits[0]?.object.name,distance:hits[0]?.distance,finite:[...s.camera.position.toArray(),...s.camera.quaternion.toArray()].every(Number.isFinite)};});});
+ for(const id of ['A01','A04','H01','W01','L01','D01','T03','E02']){await page.evaluate(id=>{const s=window.shotStudio;s.setPreset(s.presets.shots.find(p=>p.id===id));},id);await page.waitForTimeout(100);await page.locator('#view').screenshot({path:path.join(out,id+'.png')});}
+ await page.evaluate(()=>{const s=window.shotStudio;s.setPreset(s.presets.shots[0]);s.controls.target.x+=.3;s.camera.position.y+=.4;s.controls.update();});
+ const before=await page.evaluate(()=>({position:window.shotStudio.camera.position.toArray(),target:window.shotStudio.controls.target.toArray()}));
+ await page.locator('#shot-name').fill('测试镜头 · 可恢复构图');await page.locator('#notes').fill('验证：保留固定空间，不自动生图');
+ await page.locator('#save').click();await page.waitForFunction(()=>window.shotStudio.state.selectedId);const sid=await page.evaluate(()=>window.shotStudio.state.selectedId);
+ await page.locator('#request').click();await page.waitForFunction(()=>!document.querySelector('#handoff').hidden);
+ const data=await page.evaluate(()=>fetch('/api/state').then(r=>r.json()));const entry=data.shots.find(s=>s.id===sid);assert(entry.requested);assert(entry.preview.mirrored===false);assert(entry.aspect==='9:16');assert.deepStrictEqual(entry.camera.position,before.position.map(x=>Math.round(x*1e6)/1e6));
+ await page.reload();await page.waitForFunction(()=>window.shotStudio?.ready);await page.evaluate(s=>window.shotStudio.loadSaved(s),entry);
+ assert.deepStrictEqual(await page.evaluate(()=>window.shotStudio.camera.position.toArray().map(x=>Math.round(x*1e6)/1e6)),entry.camera.position);
+ await page.locator('[data-ratio="16:9"]').click();await page.locator('#save').click();await page.waitForFunction(()=>!document.querySelector('#save').disabled);
+ const after=await page.evaluate(()=>fetch('/api/state').then(r=>r.json()));assert.equal(after.shots.filter(s=>s.id===sid).length,1);assert.equal(after.shots.find(s=>s.id===sid).aspect,'16:9');
+ const normal=await page.evaluate(()=>window.shotStudio.snapshot().png);await page.locator('#flip').check();const flipped=await page.evaluate(()=>window.shotStudio.snapshot().png);assert.equal(normal,flipped);
+ await page.locator('#view-mode').selectOption('floor2');assert(await page.locator('#request').isDisabled());await page.screenshot({path:path.join(out,'02_剖切定位.png')});await page.locator('#view-mode').selectOption('full');
+ const desktopOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await page.setViewportSize({width:390,height:844});await page.waitForTimeout(100);const mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await page.screenshot({path:path.join(out,'03_窄屏.png'),fullPage:true});
+ const rejectedOrigin=await page.evaluate(()=>fetch('/api/shots',{method:'POST',body:'{}',headers:{'Content-Type':'application/json'}}).then(r=>r.status));assert.equal(rejectedOrigin,403);
+ await browser.close();
+ const report={revision:'P4-M2',presets:cameraChecks.length,modelLoads:true,saveAndRestore:true,overwriteKeepsSingleRecord:true,requestPersists:true,flipDoesNotAlterCapture:true,cutawayCannotRequestGeneration:true,unauthorizedPostRejected:true,desktopOverflow,mobileOverflow,errors,cameraChecks};fs.writeFileSync(path.join(out,'浏览器检查.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,cameraChecks:cameraChecks.filter(c=>!c.finite||c.distance<.2)},null,2));assert(!errors.length&&!desktopOverflow&&!mobileOverflow);assert(cameraChecks.every(c=>c.finite&&(!c.distance||c.distance>=.2)));
+})().catch(e=>{console.error(e);process.exit(1)});

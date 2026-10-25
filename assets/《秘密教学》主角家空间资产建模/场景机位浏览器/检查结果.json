@@ -1,0 +1,371 @@
+{
+  "revision": "P4-M2",
+  "presets": 51,
+  "modelLoads": true,
+  "saveAndRestore": true,
+  "overwriteKeepsSingleRecord": true,
+  "requestPersists": true,
+  "flipDoesNotAlterCapture": true,
+  "cutawayCannotRequestGeneration": true,
+  "unauthorizedPostRejected": true,
+  "desktopOverflow": false,
+  "mobileOverflow": false,
+  "errors": [],
+  "cameraChecks": [
+    {
+      "id": "A01",
+      "name": "床尾看床头",
+      "hit": "A01_headboard",
+      "distance": 5.982607130556733,
+      "finite": true
+    },
+    {
+      "id": "A02",
+      "name": "床头看床尾",
+      "hit": "wall_7_2",
+      "distance": 6.931009307216447,
+      "finite": true
+    },
+    {
+      "id": "A03",
+      "name": "床南侧看床头",
+      "hit": "wall_6_1_sill",
+      "distance": 5.069943441997037,
+      "finite": true
+    },
+    {
+      "id": "A04",
+      "name": "床南侧看床尾",
+      "hit": "wall_7_2",
+      "distance": 6.33409017883585,
+      "finite": true
+    },
+    {
+      "id": "A05",
+      "name": "入口看卧室全貌",
+      "hit": "W_B11_pane",
+      "distance": 6.746017456713828,
+      "finite": true
+    },
+    {
+      "id": "A06",
+      "name": "窗侧回看房门",
+      "hit": "D_B1_leaf",
+      "distance": 7.282063343399615,
+      "finite": true
+    },
+    {
+      "id": "A07",
+      "name": "阳台看向大床",
+      "hit": "G_BALCONY_leaf",
+      "distance": 1.0385167017300334,
+      "finite": true
+    },
+    {
+      "id": "A08",
+      "name": "床面高位俯拍",
+      "hit": "A01_mattress",
+      "distance": 2.236053268305827,
+      "finite": true
+    },
+    {
+      "id": "A09",
+      "name": "书桌与梳妆区",
+      "hit": "wall_6_4",
+      "distance": 3.354512418803863,
+      "finite": true
+    },
+    {
+      "id": "A10",
+      "name": "床头与柜面近景",
+      "hit": "A01_headboard",
+      "distance": 2.0155640045814347,
+      "finite": true
+    },
+    {
+      "id": "H01",
+      "name": "走廊朝公共浴室",
+      "hit": "G_BATH_leaf",
+      "distance": 14.597080601428015,
+      "finite": true
+    },
+    {
+      "id": "H02",
+      "name": "走廊反向朝庭院",
+      "hit": "W_COURT_SIDE_N_pane",
+      "distance": 14.547461109689912,
+      "finite": true
+    },
+    {
+      "id": "H03",
+      "name": "薇亚房门正向",
+      "hit": "D_B1_leaf",
+      "distance": 2.5003101607167855,
+      "finite": true
+    },
+    {
+      "id": "H04",
+      "name": "子豪门旁低机位",
+      "hit": "D_B2_leaf",
+      "distance": 1.8878568509385545,
+      "finite": true
+    },
+    {
+      "id": "H05",
+      "name": "舒亚端与落地窗",
+      "hit": "W_SHUYA_OPPOSITE_pane",
+      "distance": 3.001875636412238,
+      "finite": true
+    },
+    {
+      "id": "H06",
+      "name": "上平台俯看直梯",
+      "hit": "wall_26_0",
+      "distance": 11.700000000000001,
+      "finite": true
+    },
+    {
+      "id": "Z01",
+      "name": "床尾看向床头",
+      "hit": "B01_headboard",
+      "distance": 3.964726262647203,
+      "finite": true
+    },
+    {
+      "id": "Z02",
+      "name": "床头回看电视柜",
+      "hit": "wall_3_0",
+      "distance": 4.730166463944048,
+      "finite": true
+    },
+    {
+      "id": "Z03",
+      "name": "入口朝窗边书桌",
+      "hit": "W_B20_pane",
+      "distance": 6.425890088719952,
+      "finite": true
+    },
+    {
+      "id": "S01",
+      "name": "房门看床与床尾柜",
+      "hit": "wall_3_0",
+      "distance": 6.456488605113759,
+      "finite": true
+    },
+    {
+      "id": "S02",
+      "name": "窗侧回看书桌与床",
+      "hit": "wall_0_3",
+      "distance": 5.27108776289985,
+      "finite": true
+    },
+    {
+      "id": "S03",
+      "name": "床尾朝床头",
+      "hit": "C01_headboard",
+      "distance": 3.6860501393286573,
+      "finite": true
+    },
+    {
+      "id": "W01",
+      "name": "入口看台盆与淋浴",
+      "hit": "BW2_screen",
+      "distance": 2.4512453404451735,
+      "finite": true
+    },
+    {
+      "id": "W02",
+      "name": "浴室内回看玻璃门",
+      "hit": "G_BATH_leaf",
+      "distance": 2.7432003105341263,
+      "finite": true
+    },
+    {
+      "id": "L01",
+      "name": "沙发区看电视与主标识",
+      "hit": "wall_24_0",
+      "distance": 4.327211839823776,
+      "finite": true
+    },
+    {
+      "id": "L02",
+      "name": "电视侧回看沙发",
+      "hit": "L01_back",
+      "distance": 4.918342945980172,
+      "finite": true
+    },
+    {
+      "id": "L03",
+      "name": "窗边斜看客厅",
+      "hit": "wall_12_11_sill",
+      "distance": 12.184737475222072,
+      "finite": true
+    },
+    {
+      "id": "L04",
+      "name": "茶几镜像品牌近景",
+      "hit": "finish_L",
+      "distance": 3.529023056439358,
+      "finite": true
+    },
+    {
+      "id": "D01",
+      "name": "餐厅朝镜像主标识",
+      "hit": "黑底001",
+      "distance": 4.644981274141163,
+      "finite": true
+    },
+    {
+      "id": "D02",
+      "name": "餐厅反向朝客厅",
+      "hit": "wall_24_0",
+      "distance": 4.916901737466541,
+      "finite": true
+    },
+    {
+      "id": "D03",
+      "name": "餐桌实体品牌近景",
+      "hit": "黑底004",
+      "distance": 1.187529335633588,
+      "finite": true
+    },
+    {
+      "id": "K01",
+      "name": "厨房入口看操作区",
+      "hit": "W105B",
+      "distance": 3.517718104122604,
+      "finite": true
+    },
+    {
+      "id": "K02",
+      "name": "水槽侧朝餐厅",
+      "hit": "wall_21_0",
+      "distance": 7.21516512408502,
+      "finite": true
+    },
+    {
+      "id": "F01",
+      "name": "玄关朝阅读区",
+      "hit": "wall_22_4",
+      "distance": 7.75752462517916,
+      "finite": true
+    },
+    {
+      "id": "F02",
+      "name": "阅读区回看入口",
+      "hit": "W110_pane",
+      "distance": 16.331660640746318,
+      "finite": true
+    },
+    {
+      "id": "F03",
+      "name": "主卧床尾看床头",
+      "hit": "M01_headboard",
+      "distance": 4.4917864143968,
+      "finite": true
+    },
+    {
+      "id": "F04",
+      "name": "主卧反向看梳妆区",
+      "hit": "wall_17_0",
+      "distance": 5.188603082783766,
+      "finite": true
+    },
+    {
+      "id": "F05",
+      "name": "洗衣房工作区",
+      "hit": "wall_13_5_sill",
+      "distance": 2.7643850784547057,
+      "finite": true
+    },
+    {
+      "id": "F06",
+      "name": "客卫内部",
+      "hit": "wall_23_0",
+      "distance": 3.1710499984763936,
+      "finite": true
+    },
+    {
+      "id": "F07",
+      "name": "主卫浴缸方向",
+      "hit": "wall_13_9_sill",
+      "distance": 3.399063439876236,
+      "finite": true
+    },
+    {
+      "id": "F08",
+      "name": "储物区",
+      "hit": "wall_17_0",
+      "distance": 3.382350448189225,
+      "finite": true
+    },
+    {
+      "id": "T01",
+      "name": "公共庭院看休息区",
+      "hit": "T05_planter",
+      "distance": 9.370096745650482,
+      "finite": true
+    },
+    {
+      "id": "T02",
+      "name": "庭院回看公共入口",
+      "hit": "D_COURT_meeting_stile",
+      "distance": 8.66745109139314,
+      "finite": true
+    },
+    {
+      "id": "T03",
+      "name": "阳台外公共通道",
+      "hit": "ST23_midlanding",
+      "distance": 8.401495442508793,
+      "finite": true
+    },
+    {
+      "id": "T04",
+      "name": "后侧双跑梯入口",
+      "finite": true
+    },
+    {
+      "id": "T05",
+      "name": "屋顶回看轻薄雨棚",
+      "hit": "canopy_wind_screen",
+      "distance": 5.298587994790154,
+      "finite": true
+    },
+    {
+      "id": "E01",
+      "name": "正面街景",
+      "hit": "wall_9_7",
+      "distance": 28.302210825808032,
+      "finite": true
+    },
+    {
+      "id": "E02",
+      "name": "正面斜角",
+      "hit": "wall_9_7",
+      "distance": 37.295201176731425,
+      "finite": true
+    },
+    {
+      "id": "E03",
+      "name": "背面与外部楼梯",
+      "hit": "W_B11_pane",
+      "distance": 24.031415890641526,
+      "finite": true
+    },
+    {
+      "id": "E04",
+      "name": "入户品牌与大门",
+      "hit": "site_wall4",
+      "distance": 3.2001765159359588,
+      "finite": true
+    },
+    {
+      "id": "E05",
+      "name": "整体高位俯看",
+      "hit": "wall_9_7",
+      "distance": 46.578192232618136,
+      "finite": true
+    }
+  ]
+}
