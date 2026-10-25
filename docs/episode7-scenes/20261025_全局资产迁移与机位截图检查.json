@@ -1,0 +1,28 @@
+{
+  "revision": "P4-M2",
+  "cameras": 176,
+  "screenshots": 352,
+  "unique_images": 352,
+  "groups": {
+    "卧室/大姐卧室_薇亚": 25,
+    "楼道与直梯": 6,
+    "卧室/男主卧室_子豪": 25,
+    "卧室/二姐卧室_舒亚": 25,
+    "公共浴室": 2,
+    "客厅": 25,
+    "餐厅": 25,
+    "厨房": 2,
+    "一楼其他空间": 6,
+    "卧室/一楼主卧": 25,
+    "公共庭院与屋顶": 5,
+    "别墅外观": 5
+  },
+  "model_sha256": "63a80e2d2058052db01ad6d76f44a25a22b12bb556d87599c9e92e2b136851da",
+  "all_hashes_and_dimensions_match": true,
+  "all_nonblank": true,
+  "gallery_filter_zoom_search": true,
+  "migrated_model_files": 52,
+  "migrated_workbench_files": 22,
+  "new_root": "local-assets/current",
+  "status": "模型截图待用户检查；尚未进行实际场景图渲染"
+}
