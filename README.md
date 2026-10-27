@@ -1,5 +1,8 @@
 # 无极视频创作
 
+> 公开协作入口：[协作原则](CONTRIBUTING.md) · [吴子豪主角家建模](docs/collaboration/吴子豪主角家建模协作.md) · [可转发给 GPT 的指令](docs/collaboration/GPT协作指令.txt)。主角家建模请切换到 `codex/20261014-secret-teaching-home-assets`；main 不是场景资产全集。旧私有副本需重新 clone，不能合并旧历史。
+
+
 `wuji-video-creation` 是影视技能的唯一源码。现有入口 `skills/seedance-film-production/` 升级为 **Skill 3.2.0 / Schema 2.0**，沿用 Codex、Grok Build、Hermes 的共用安装方式。
 
 ## 创作流程
