@@ -1,5 +1,8 @@
 # 无极视频创作
 
+> 公开协作入口：[协作原则](CONTRIBUTING.md) · [吴子豪主角家建模](docs/collaboration/吴子豪主角家建模协作.md) · [可转发给 GPT 的指令](docs/collaboration/GPT协作指令.txt)。主角家建模请切换到 `codex/20261014-secret-teaching-home-assets`；main 不是场景资产全集。旧私有副本需重新 clone，不能合并旧历史。
+
+
 模型、合格原图及新对话交接统一入口：[当前资产交付](当前资产交付.md)。请读取 `codex/20261014-secret-teaching-home-assets` 分支；模型及7张PNG使用Git LFS。
 
 本机分类截图入口：全局通用资产下的 `新版空间环境资产/机位截图总览.html`，包含176个机位的352张横竖模型截图；当前建模文件和工作台位于其 `建模项目/` 子目录。
