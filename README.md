@@ -1,5 +1,8 @@
 # 无极视频创作
 
+> 公开协作入口：[协作原则](CONTRIBUTING.md) · [吴子豪主角家建模](docs/collaboration/吴子豪主角家建模协作.md) · [可转发给 GPT 的指令](docs/collaboration/GPT协作指令.txt)。主角家建模请切换到 `codex/20261014-secret-teaching-home-assets`；main 不是场景资产全集。旧私有副本需重新 clone，不能合并旧历史。
+
+
 `wuji-video-creation` 是无极 AI 视频创作与品牌剪辑协作项目的私有事实源，用于维护协作 SOP、版本规则、AI 影视生产方法及后续可复用的项目文档。
 
 ## 当前基线
