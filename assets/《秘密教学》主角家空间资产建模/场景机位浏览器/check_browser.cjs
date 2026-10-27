@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
-const {chromium}=require(path.join(process.env.CODEX_NODE_MODULES||'node_modules','playwright'));
+const {chromium}=require(process.env.CODEX_NODE_MODULES ? path.join(process.env.CODEX_NODE_MODULES,'playwright') : 'playwright');
 const out=process.env.STUDIO_CHECK_DIR||'local-assets/tmp/shot-studio-check';fs.mkdirSync(out,{recursive:true});
-(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true,args:['--enable-unsafe-swiftshader']});
  const page=await browser.newPage({viewport:{width:1600,height:1080},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
  await page.goto(process.env.STUDIO_TEST_URL||'http://127.0.0.1:8778');await page.waitForFunction(()=>window.shotStudio?.ready,{},{timeout:90000});await page.waitForTimeout(500);
  await page.screenshot({path:path.join(out,'01_工作台.png')});

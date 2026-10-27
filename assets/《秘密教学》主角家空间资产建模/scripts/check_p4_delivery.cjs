@@ -4,7 +4,7 @@ const runtime=process.env.CODEX_NODE_MODULES||'node_modules';
 const {chromium}=require(path.join(runtime,'playwright'));
 const root=path.resolve(__dirname,'..','全屋模型_P4-M1_20261022');
 (async()=>{
- const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true});
  const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
  await page.goto(pathToFileURL(path.join(root,'统一查看页.html')).href);
  await page.evaluate(()=>{for(const i of document.images)i.loading='eager'});

@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
 const {chromium}=require('playwright'),sharp=require('sharp');
 const R=path.resolve(__dirname,'..');
-(async()=>{const b=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--allow-file-access-from-files']});
+(async()=>{const b=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true,args:['--allow-file-access-from-files']});
 const p=await b.newPage({viewport:{width:1600,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
 await p.goto(pathToFileURL(path.join(R,'打开检查模型.html')).href);await p.waitForFunction(()=>window.review?.ready);
 const results=[];for(const id of ['AX1','AX2','AXS','C01','C02','C03','EXT']){await p.evaluate(id=>review.setCamera(id),id);await p.waitForTimeout(150);results.push(id);}

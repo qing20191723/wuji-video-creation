@@ -1,0 +1,8 @@
+{
+  "name": "wuji-video-creation",
+  "private": true,
+  "description": "Optional browser verification tools for scene contributors",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

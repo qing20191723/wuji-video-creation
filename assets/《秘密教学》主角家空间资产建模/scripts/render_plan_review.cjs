@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path'),{pathToFileURL}=require('url');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..','平面确认');
 (async()=>{
- const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true});
  const errors=[],results=[];
  const selected=process.argv.slice(2);
  for(const name of fs.readdirSync(root).filter(n=>n.endsWith('.svg')&&(!selected.length||selected.includes(n)))){

@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
-const {chromium}=require(path.join(process.env.CODEX_NODE_MODULES||'node_modules','playwright'));
+const {chromium}=require(process.env.CODEX_NODE_MODULES ? path.join(process.env.CODEX_NODE_MODULES,'playwright') : 'playwright');
 const out=process.env.STUDIO_CHECK_DIR||'local-assets/tmp/shot-studio-c2-check';fs.mkdirSync(out,{recursive:true});
-(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});try{
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true,args:['--enable-unsafe-swiftshader']});try{
  const page=await browser.newPage({viewport:{width:1600,height:1000}});await page.goto(process.env.STUDIO_TEST_URL||'http://127.0.0.1:8779');await page.waitForFunction(()=>window.shotStudio?.ready);
  const probe=await page.evaluate(async()=>{const T=await import('/vendor/three.module.js'),s=window.shotStudio,report=[];for(const p of s.presets.shots.filter(p=>p.coverage_expansion)){s.setPreset(p);s.camera.updateMatrixWorld(true);for(const aspect of ['9:16','16:9']){s.setRatio(aspect);s.camera.updateMatrixWorld(true);let close=0;for(const x of [-.6,-.3,0,.3,.6])for(const y of [-.6,-.3,0,.3,.6]){const r=new T.Raycaster();r.setFromCamera(new T.Vector2(x,y),s.camera);const h=r.intersectObjects(s.meshes,false)[0];if(h&&h.distance<.25)close++;}report.push({id:p.id,aspect,nearObstructedRays:close,totalRays:25});}}return report;});
  assert(probe.every(p=>p.nearObstructedRays<8),'A near surface fills the camera frame');

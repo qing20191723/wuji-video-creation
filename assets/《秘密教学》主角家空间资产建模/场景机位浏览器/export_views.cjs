@@ -1,11 +1,11 @@
 // Export fixed-model camera references, not AI-rendered final scene assets.
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const {chromium}=require(path.join(process.env.CODEX_NODE_MODULES||'node_modules','playwright'));
+const {chromium}=require(process.env.CODEX_NODE_MODULES ? path.join(process.env.CODEX_NODE_MODULES,'playwright') : 'playwright');
 const out=process.env.SCENE_EXPORT_DIR;if(!out)throw Error('Set SCENE_EXPORT_DIR to the review delivery folder');
 const folders={B1:'卧室/大姐卧室_薇亚',B2:'卧室/男主卧室_子豪',B3:'卧室/二姐卧室_舒亚',MB:'卧室/一楼主卧',L:'客厅',D:'餐厅',K:'厨房',H2:'楼道与直梯',BW:'公共浴室',F1:'一楼其他空间',COURT:'公共庭院与屋顶',EXT:'别墅外观'};
 const clean=s=>s.replace(/[<>:"/\\|?*\x00-\x1f]/g,'_');
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
-(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--enable-unsafe-swiftshader']});try{
+(async()=>{const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true,args:['--enable-unsafe-swiftshader']});try{
  const page=await browser.newPage({viewport:{width:1600,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
  await page.goto(process.env.STUDIO_TEST_URL||'http://127.0.0.1:8765');await page.waitForFunction(()=>window.shotStudio?.ready,null,{timeout:90000});
  const info=await page.evaluate(async()=>({presets:window.shotStudio.presets,state:await(await fetch('/api/state')).json()}));

@@ -1,9 +1,9 @@
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const {pathToFileURL}=require('url');
-const {chromium}=require(path.join(process.env.CODEX_NODE_MODULES||'node_modules','playwright'));
+const {chromium}=require(process.env.CODEX_NODE_MODULES ? path.join(process.env.CODEX_NODE_MODULES,'playwright') : 'playwright');
 const root=path.resolve(__dirname,'..','全屋模型_P4-M2_20261022');
 (async()=>{
- const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||undefined,headless:true});
  const page=await browser.newPage({viewport:{width:1800,height:1240},deviceScaleFactor:2});
  for(const name of fs.readdirSync(path.join(root,'图纸')).filter(n=>n.endsWith('.svg'))){
   await page.goto(pathToFileURL(path.join(root,'图纸',name)).href);await page.evaluate(()=>document.fonts.ready);
