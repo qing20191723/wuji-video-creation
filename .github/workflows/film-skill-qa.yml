@@ -50,6 +50,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git diff --check "${{ github.event.pull_request.base.sha }}"...HEAD
+          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            git diff-tree --check --root -r HEAD
           else
             git diff --check "${{ github.event.before }}" HEAD
           fi
