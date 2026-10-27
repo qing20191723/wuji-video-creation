@@ -1,8 +1,12 @@
+# 当前协作状态（2026-10-27）
+
+本仓库为脱敏重建版。协作以 CONTRIBUTING.md 和 docs/collaboration/吴子豪主角家建模协作.md 为准；下方历史版本、旧 SHA 与本机验证记录不代表本轮重新验收。主角家模型专题仍在独立分支，未整体合入 main。
+
 # 项目状态
 
 - 项目：无极视频创作
 - 仓库：`qing20191723/wuji-video-creation`
-- 可见性：Private
+- 可见性：以 GitHub 当前设置为准
 - 状态：active
 - 更新日期：2026-08-27
 
