@@ -50,3 +50,10 @@ Thumbs.db
 desktop.ini
 .idea/
 .vscode/
+
+# Private workstation inputs and camera sessions
+local-assets/
+local-user/
+**/我的镜头/
+*.local.json
+*.local.env
